@@ -1,5 +1,8 @@
-# cppstat
-C++ Compiler Support Status page
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="Misc/LogoDark.png">
+  <source media="(prefers-color-scheme: light)" srcset="Misc/LogoLight.png">
+  <img alt="Logo" src="Misc/LogoLight.png">
+</picture>
 
 [https://cppstat.dev](https://cppstat.dev)
 
