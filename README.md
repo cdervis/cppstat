@@ -1,9 +1,9 @@
 <div class="title-block" style="text-align: center;" align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="misc/LogoDark.png">
-  <source media="(prefers-color-scheme: light)" srcset="misc/LogoLight.png">
-  <img alt="Logo" src="misc/LogoLight.png" width="500">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logo_dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="assets/logo_light.png">
+  <img alt="Logo" src="assets/logo_light.png" width="500">
 </picture>
 
 **[cppstat.dev]**
@@ -13,9 +13,9 @@
 ---
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="misc/cover-dark.webp">
-  <source media="(prefers-color-scheme: light)" srcset="misc/cover-light.webp">
-  <img alt="Logo" src="misc/cover-light.webp" width="800">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/cover_dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="assets/cover_light.webp">
+  <img alt="Logo" src="assets/cover_light.webp" width="800">
 </picture>
 
 </div>
@@ -83,7 +83,7 @@ As a **full** reference example, here is the definition of P2465 at the time of 
 
 Which will look like the following on cppstat:
 
-![Feature Example](misc/feature_example.webp)
+![Feature Example](assets/feature_example.webp)
 
 ### Feature Content
 
