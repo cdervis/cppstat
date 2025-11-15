@@ -1,0 +1,1601 @@
+---
+infos:
+  - name: GCC
+    desc: This applies to GCC in general, not any specific version.
+    refs:
+      - 'https://gcc.gnu.org/'
+
+  - name: Clang
+    desc: This applies to Clang in general, not any specific version.
+    refs:
+      - 'https://clang.llvm.org/'
+
+  - name: MSVC
+    desc: This applies to MSVC in general, not any specific version.
+    refs:
+      - 'https://visualstudio.com/'
+
+  - name: Apple Clang
+    desc: This applies to the Apple Clang compiler in general, not any specific version.
+    refs:
+      - 'https://developer.apple.com/xcode/cpp/'
+
+  - name: GCC 3.1
+    released: May, 2002
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.1/'
+  - name: GCC 3.2
+    released: May, 2003
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.2/'
+  - name: GCC 3.3.1
+    released: July, 2002
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.1/'
+  - name: GCC 3.2.1
+    released: August, 2002
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.2/'
+  - name: GCC 3.2.2
+    released: February, 2003
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.2/'
+  - name: GCC 3.2.3
+    released: April, 2003
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.2/'
+  - name: GCC 3.3
+    released: May, 2003
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.3/'
+  - name: GCC 3.3.1
+    released: August, 2003
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.3/'
+  - name: GCC 3.3.2
+    released: October, 2003
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.3/'
+  - name: GCC 3.3.3
+    released: February, 2004
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.3/'
+  - name: GCC 3.4.0
+    released: April, 2004
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.4/'
+  - name: GCC 3.3.4
+    released: May, 2004
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.3/'
+  - name: GCC 3.4.1
+    released: July, 2004
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.4/'
+  - name: GCC 3.4.2
+    released: September, 2004
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.4/'
+  - name: GCC 3.3.5
+    released: September, 2004
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.3/'
+  - name: GCC 3.4.3
+    released: November, 2004
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.4/'
+  - name: GCC 4
+    released: April, 2005
+    refs:
+      - 'https://gcc.gnu.org/gcc-4.0/'
+  - name: GCC 3.3.6
+    released: May, 2005
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.3/'
+  - name: GCC 3.4.4
+    released: May, 2005
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.4/'
+  - name: GCC 4.0.1
+    released: July, 2005
+    refs:
+      - 'https://gcc.gnu.org/gcc-4.0/'
+  - name: GCC 4.0.2
+    released: September, 2005
+    refs:
+      - 'https://gcc.gnu.org/gcc-4.0/'
+  - name: GCC 3.4.5
+    released: November, 2005
+    refs:
+      - 'https://gcc.gnu.org/gcc-3.4/'
+  - name: GCC 4.1
+    released: February 28, 2006
+    refs:
+      - https://gcc.gnu.org/gcc-4.1/
+  - name: GCC 3.4.6
+    released: March 6, 2006
+    refs:
+      - https://gcc.gnu.org/gcc-3.4/
+  - name: GCC 4.0.3
+    released: March 10, 2006
+    refs:
+      - https://gcc.gnu.org/gcc-4.0/
+  - name: GCC 4.1.1
+    released: May 24, 2006
+    refs:
+      - https://gcc.gnu.org/gcc-4.1/
+  - name: GCC 4.0.4
+    released: January 31, 2007
+    refs:
+      - https://gcc.gnu.org/gcc-4.0/
+  - name: GCC 4.1.2
+    released: February 13, 2007
+    refs:
+      - https://gcc.gnu.org/gcc-4.1/
+  - name: GCC 4.2
+    released: May 13, 2007
+    refs:
+      - https://gcc.gnu.org/gcc-4.2/
+  - name: GCC 4.2.1
+    released: July 18, 2007
+    refs:
+      - https://gcc.gnu.org/gcc-4.2/
+  - name: GCC 4.2.2
+    released: October 7, 2007
+    refs:
+      - https://gcc.gnu.org/gcc-4.2/
+  - name: GCC 4.2.3
+    released: February 1, 2008
+    refs:
+      - https://gcc.gnu.org/gcc-4.2/
+  - name: GCC 4.3
+    released: March 5, 2008
+    refs:
+      - https://gcc.gnu.org/gcc-4.3/
+  - name: GCC 4.2.4
+    released: May 19, 2008
+    refs:
+      - https://gcc.gnu.org/gcc-4.2/
+  - name: GCC 4.3.1
+    released: June 6, 2008
+    refs:
+      - https://gcc.gnu.org/gcc-4.3/
+  - name: GCC 4.3.2
+    released: August 27, 2008
+    refs:
+      - https://gcc.gnu.org/gcc-4.3/
+  - name: GCC 4.3.3
+    released: January 24, 2009
+    refs:
+      - https://gcc.gnu.org/gcc-4.3/
+  - name: GCC 4.4
+    released: April 21, 2009
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.4.1
+    released: July 22, 2009
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.3.4
+    released: August 4, 2009
+    refs:
+      - https://gcc.gnu.org/gcc-4.3/
+  - name: GCC 4.4.2
+    released: October 15, 2009
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.4.3
+    released: January 21, 2010
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.5
+    released: April 14, 2010
+    refs:
+      - https://gcc.gnu.org/gcc-4.5/
+  - name: GCC 4.4.4
+    released: April 29, 2010
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.3.5
+    released: May 22, 2010
+    refs:
+      - https://gcc.gnu.org/gcc-4.3/
+  - name: GCC 4.5.1
+    released: July 31, 2010
+    refs:
+      - https://gcc.gnu.org/gcc-4.5/
+  - name: GCC 4.4.5
+    released: October 1, 2010
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.5.2
+    released: December 16, 2010
+    refs:
+      - https://gcc.gnu.org/gcc-4.5/
+  - name: GCC 4.6
+    released: March 25, 2011
+    refs:
+      - https://gcc.gnu.org/gcc-4.6/
+  - name: GCC 4.4.6
+    released: April 16, 2011
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.5.3
+    released: April 28, 2011
+    refs:
+      - https://gcc.gnu.org/gcc-4.5/
+  - name: GCC 4.3.6
+    released: June 27, 2011
+    refs:
+      - https://gcc.gnu.org/gcc-4.3/
+  - name: GCC 4.6.1
+    released: June 27, 2011
+    refs:
+      - https://gcc.gnu.org/gcc-4.6/
+  - name: GCC 4.6.2
+    released: October 26, 2011
+    refs:
+      - https://gcc.gnu.org/gcc-4.6/
+  - name: GCC 4.6.3
+    released: March 1, 2012
+    refs:
+      - https://gcc.gnu.org/gcc-4.6/
+  - name: GCC 4.4.7
+    released: March 13, 2012
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.7
+    released: March 22, 2012
+    refs:
+      - https://gcc.gnu.org/gcc-4.7/
+  - name: GCC 4.7.1
+    released: June 14, 2012
+    refs:
+      - https://gcc.gnu.org/gcc-4.7/
+  - name: GCC 4.5.4
+    released: July 2, 2012
+    refs:
+      - https://gcc.gnu.org/gcc-4.5/
+  - name: GCC 4.7.2
+    released: September 20, 2012
+    refs:
+      - https://gcc.gnu.org/gcc-4.7/
+  - name: GCC 4.8
+    released: March 22, 2013
+    refs:
+      - https://gcc.gnu.org/gcc-4.8/
+  - name: GCC 4.7.3
+    released: April 11, 2013
+    refs:
+      - https://gcc.gnu.org/gcc-4.7/
+  - name: GCC 4.6.4
+    released: April 12, 2013
+    refs:
+      - https://gcc.gnu.org/gcc-4.6/
+  - name: GCC 4.8.1
+    released: May 31, 2013
+    refs:
+      - https://gcc.gnu.org/gcc-4.8/
+  - name: GCC 4.8.2
+    released: October 16, 2013
+    refs:
+      - https://gcc.gnu.org/gcc-4.8/
+  - name: GCC 4.9
+    released: April 22, 2014
+    refs:
+      - https://gcc.gnu.org/gcc-4.9/
+  - name: GCC 4.8.3
+    released: May 22, 2014
+    refs:
+      - https://gcc.gnu.org/gcc-4.8/
+  - name: GCC 4.7.4
+    released: June 12, 2014
+    refs:
+      - https://gcc.gnu.org/gcc-4.7/
+  - name: GCC 4.9.1
+    released: July 16, 2014
+    refs:
+      - https://gcc.gnu.org/gcc-4.9/
+  - name: GCC 4.9.2
+    released: October 30, 2014
+    refs:
+      - https://gcc.gnu.org/gcc-4.9/
+  - name: GCC 4.8.4
+    released: December 19, 2014
+    refs:
+      - https://gcc.gnu.org/gcc-4.8/
+  - name: GCC 5.1
+    released: April 22, 2015
+    refs:
+      - https://gcc.gnu.org/gcc-5/
+  - name: GCC 4.8.5
+    released: June 23, 2015
+    refs:
+      - https://gcc.gnu.org/gcc-4.8/
+  - name: GCC 4.9.3
+    released: June 26, 2015
+    refs:
+      - https://gcc.gnu.org/gcc-4.9/
+  - name: GCC 5.2
+    released: July 16, 2015
+    refs:
+      - https://gcc.gnu.org/gcc-5/
+  - name: GCC 5.3
+    released: December 4, 2015
+    refs:
+      - https://gcc.gnu.org/gcc-5/
+  - name: GCC 6.1
+    released: April 27, 2016
+    refs:
+      - https://gcc.gnu.org/gcc-6/
+  - name: GCC 5.4
+    released: June 3, 2016
+    refs:
+      - https://gcc.gnu.org/gcc-5/
+  - name: GCC 4.9.4
+    released: August 3, 2016
+    refs:
+      - https://gcc.gnu.org/gcc-4.9/
+  - name: GCC 6.2
+    released: August 22, 2016
+    refs:
+      - https://gcc.gnu.org/gcc-6/
+  - name: GCC 6.3
+    released: December 21, 2016
+    refs:
+      - https://gcc.gnu.org/gcc-6/
+  - name: GCC 7.1
+    released: May 2, 2017
+    refs:
+      - https://gcc.gnu.org/gcc-7/
+  - name: GCC 6.4
+    released: July 4, 2017
+    refs:
+      - https://gcc.gnu.org/gcc-6/
+  - name: GCC 7.2
+    released: August 14, 2017
+    refs:
+      - https://gcc.gnu.org/gcc-7/
+  - name: GCC 5.5
+    released: October 10, 2017
+    refs:
+      - https://gcc.gnu.org/gcc-5/
+  - name: GCC 7.3
+    released: January 25, 2018
+    refs:
+      - https://gcc.gnu.org/gcc-7/
+  - name: GCC 8.1
+    released: May 2, 2018
+    refs:
+      - https://gcc.gnu.org/gcc-8/
+  - name: GCC 8.2
+    released: December 6, 2018
+    refs:
+      - https://gcc.gnu.org/gcc-8/
+  - name: GCC 6.5
+    released: October, 2018
+    refs:
+      - 'https://gcc.gnu.org/gcc-6/'
+  - name: GCC 7.4
+    released: December, 2018
+    refs:
+      - 'https://gcc.gnu.org/gcc-7/'
+  - name: GCC 8.3
+    released: February, 2019
+    refs:
+      - 'https://gcc.gnu.org/gcc-8/'
+  - name: GCC 9.1
+    released: May, 2019
+    refs:
+      - 'https://gcc.gnu.org/gcc-9/'
+  - name: GCC 9.2
+    released: August, 2019
+    refs:
+      - 'https://gcc.gnu.org/gcc-9/'
+  - name: GCC 7.5
+    released: November, 2019
+    refs:
+      - 'https://gcc.gnu.org/gcc-7/'
+  - name: GCC 8.4
+    released: March, 2020
+    refs:
+      - 'https://gcc.gnu.org/gcc-8/'
+  - name: GCC 9.3
+    released: March, 2020
+    refs:
+      - 'https://gcc.gnu.org/gcc-9/'
+  - name: GCC 10.1
+    released: May, 2020
+    refs:
+      - 'https://gcc.gnu.org/gcc-10/'
+  - name: GCC 10.2
+    released: July, 2020
+    refs:
+      - 'https://gcc.gnu.org/gcc-10/'
+  - name: GCC 10.3
+    released: April, 2021
+    refs:
+      - 'https://gcc.gnu.org/gcc-10/'
+  - name: GCC 11.1
+    released: April, 2021
+    refs:
+      - 'https://gcc.gnu.org/gcc-11/'
+  - name: GCC 8.5
+    released: May, 2021
+    refs:
+      - 'https://gcc.gnu.org/gcc-8/'
+  - name: GCC 9.4
+    released: June, 2021
+    refs:
+      - 'https://gcc.gnu.org/gcc-9/'
+  - name: GCC 11.2
+    released: July, 2021
+    refs:
+      - 'https://gcc.gnu.org/gcc-11/'
+  - name: GCC 11.3
+    released: April, 2022
+    refs:
+      - 'https://gcc.gnu.org/gcc-11/'
+  - name: GCC 12.1
+    released: May, 2022
+    refs:
+      - 'https://gcc.gnu.org/gcc-12/'
+  - name: GCC 9.5
+    released: May, 2022
+    refs:
+      - 'https://gcc.gnu.org/gcc-9/'
+  - name: GCC 10.4
+    released: June, 2022
+    refs:
+      - 'https://gcc.gnu.org/gcc-10/'
+  - name: GCC 12.2
+    released: August, 2022
+    refs:
+      - 'https://gcc.gnu.org/gcc-12/'
+  - name: GCC 13.1
+    released: April, 2023
+    refs:
+      - 'https://gcc.gnu.org/gcc-13/'
+  - name: GCC 12.3
+    released: May, 2023
+    refs:
+      - 'https://gcc.gnu.org/gcc-12/'
+  - name: GCC 11.4
+    released: May, 2023
+    refs:
+      - 'https://gcc.gnu.org/gcc-11/'
+  - name: GCC 10.5
+    released: July, 2023
+    refs:
+      - 'https://gcc.gnu.org/gcc-10/'
+  - name: GCC 13.2
+    released: July, 2023
+    refs:
+      - 'https://gcc.gnu.org/gcc-13/'
+  - name: GCC 14.1
+    released: May 7, 2024
+    refs:
+      - 'https://gcc.gnu.org/gcc-14/'
+  - name: GCC 13.3
+    released: May 21, 2024
+    refs:
+      - 'https://gcc.gnu.org/gcc-13/'
+  - name: GCC 12.4
+    released: June 20, 2024
+    refs:
+      - 'https://gcc.gnu.org/gcc-12/'
+  - name: GCC 11.5
+    released: July 19, 2024
+    refs:
+      - 'https://gcc.gnu.org/gcc-11/'
+  - name: GCC 14.2
+    released: August 1, 2024
+    refs:
+      - 'https://gcc.gnu.org/gcc-14/'
+  - name: GCC 15.1
+    released: April 25, 2025
+    refs:
+      - 'https://gcc.gnu.org/gcc-15/'
+
+  - name: GCC 14.3
+    released: May 23, 2025
+    refs:
+      - 'https://gcc.gnu.org/gcc-14/'
+
+  - name: GCC 13.4
+    released: June 5, 2025
+    refs:
+      - 'https://gcc.gnu.org/gcc-13/'
+
+  - name: GCC 12.5
+    released: July 11, 2025
+    refs:
+      - 'https://gcc.gnu.org/gcc-12/'
+
+  - name: GCC 15.2
+    released: August 8, 2025
+    refs:
+      - 'https://gcc.gnu.org/gcc-15/'
+
+  - name: GCC 16
+    released: TBD
+    refs:
+      - https://gcc.gnu.org/gcc-16/changes.html
+
+
+  - name: Clang 1
+    released: October 24, 2003
+
+  - name: Clang 1.1
+    released: December 17, 2003
+
+  - name: Clang 1.2
+    released: March 19, 2004
+
+  - name: Clang 1.3
+    released: August 13, 2004
+
+  - name: Clang 1.4
+    released: December 9, 2004
+
+  - name: Clang 1.5
+    released: May 18, 2005
+
+  - name: Clang 1.6
+    released: November 8, 2005
+
+  - name: Clang 1.7
+    released: April 20, 2006
+
+  - name: Clang 1.8
+    released: August 9, 2006
+
+  - name: Clang 1.9
+    released: November 19, 2006
+
+  - name: Clang 2
+    released: May 23, 2007
+
+  - name: Clang 2.1
+    released: September 26, 2007
+
+  - name: Clang 2.2
+    released: February 11, 2008
+
+  - name: Clang 2.3
+    released: June 9, 2008
+
+  - name: Clang 2.4
+    released: November 9, 2008
+
+  - name: Clang 2.5
+    released: March 2, 2009
+
+  - name: Clang 2.6
+    released: October 23, 2009
+
+  - name: Clang 2.7
+    released: April 27, 2010
+
+  - name: Clang 2.8
+    released: October 5, 2010
+
+  - name: Clang 2.9
+    released: April 6, 2011
+
+  - name: Clang 3
+    released: December 1, 2011
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.1
+    released: May 22, 2012
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.2
+    released: December 20, 2012
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.3
+    released: June 17, 2013
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.4
+    released: January 2, 2014
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.4.1
+    released: May 7, 2014
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.4.2
+    released: June 19, 2024
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.5
+    released: September 3, 2014
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.5.1
+    released: January 20, 2015
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.5.2
+    released: April 2, 2015
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.6
+    released: February 27, 2015
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.6.1
+    released: May 26, 2015
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.6.2
+    released: July 16, 2015
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.7
+    released: September 1, 2015
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.7.1
+    released: January 5, 2016
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.8
+    released: March 8, 2016
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.8.1
+    released: July 11, 2016
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.9
+    released: September 2, 2016
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 3.9.1
+    released: December 23, 2016
+    refs:
+      - 'https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html'
+
+  - name: Clang 4
+    released: March 13, 2017
+    refs:
+      - 'https://releases.llvm.org/4.0.0/docs/ReleaseNotes.html'
+
+  - name: Clang 4.0.1
+    released: July 4, 2017
+    refs:
+      - 'https://releases.llvm.org/4.0.0/docs/ReleaseNotes.html'
+
+  - name: Clang 5
+    released: September 7, 2017
+    refs:
+      - 'https://releases.llvm.org/5.0.0/docs/ReleaseNotes.html'
+
+  - name: Clang 5.0.1
+    released: December 21, 2017
+    refs:
+      - 'https://releases.llvm.org/5.0.0/docs/ReleaseNotes.html'
+
+  - name: Clang 6
+    released: March 8, 2018
+    refs:
+      - 'https://releases.llvm.org/6.0.0/docs/ReleaseNotes.html'
+
+  - name: Clang 5.0.2
+    released: May 16, 2018
+    refs:
+      - 'https://releases.llvm.org/5.0.0/docs/ReleaseNotes.html'
+
+  - name: Clang 6.0.1
+    released: July 5, 2018
+    refs:
+      - 'https://releases.llvm.org/6.0.1/docs/ReleaseNotes.html'
+
+  - name: Clang 7
+    released: September 19, 2018
+    refs:
+      - 'https://releases.llvm.org/7.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 7.0.1
+    released: December, 2018
+    refs:
+      - 'https://releases.llvm.org/7.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 8
+    released: March 20, 2019
+    refs:
+      - 'https://releases.llvm.org/8.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 7.1.0
+    released: May 10, 2019
+    refs:
+      - 'https://releases.llvm.org/7.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 8.0.1
+    released: July 19, 2019
+    refs:
+      - 'https://releases.llvm.org/8.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 9
+    released: September 19, 2019
+    refs:
+      - 'https://releases.llvm.org/9.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 9.0.1
+    released: December 20, 2019
+    refs:
+      - 'https://releases.llvm.org/9.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 10
+    released: March 24, 2020
+    refs:
+      - 'https://releases.llvm.org/10.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 10.0.1
+    released: August 6, 2020
+    refs:
+      - 'https://releases.llvm.org/10.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 11
+    released: October 12, 2020
+    refs:
+      - 'https://releases.llvm.org/11.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 11.0.1
+    released: January 14, 2021
+    refs:
+      - 'https://releases.llvm.org/11.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 11.1.0
+    released: February 25, 2021
+    refs:
+      - 'https://releases.llvm.org/11.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 12
+    released: April 14, 2021
+    refs:
+      - 'https://releases.llvm.org/12.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 12.0.1
+    released: July 8, 2021
+    refs:
+      - 'https://releases.llvm.org/12.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 13
+    released: October 4, 2021
+    refs:
+      - 'https://releases.llvm.org/13.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 13.0.1
+    released: February 7, 2022
+    refs:
+      - 'https://releases.llvm.org/13.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 14
+    released: March 25, 2022
+    refs:
+      - 'https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 14.0.1
+    released: April 12, 2022
+    refs:
+      - 'https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 14.0.2
+    released: April 26, 2022
+    refs:
+      - 'https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 14.0.3
+    released: April 29, 2022
+    refs:
+      - 'https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 14.0.4
+    released: May 24, 2022
+    refs:
+      - 'https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 14.0.5
+    released: June 10, 2022
+    refs:
+      - 'https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 14.0.6
+    released: June 24, 2022
+    refs:
+      - 'https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 15
+    released: September 6, 2022
+    refs:
+      - 'https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 15.0.1
+    released: September 20, 2022
+    refs:
+      - 'https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 15.0.2
+    released: October 4, 2022
+    refs:
+      - 'https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 15.0.3
+    released: October 18, 2022
+    refs:
+      - 'https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 15.0.4
+    released: November 2, 2022
+    refs:
+      - 'https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 15.0.5
+    released: November 16, 2022
+    refs:
+      - 'https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 15.0.6
+    released: November 29, 2022
+    refs:
+      - 'https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 15.0.7
+    released: January 12, 2023
+    refs:
+      - 'https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 16
+    released: March 17, 2023
+    refs:
+      - 'https://releases.llvm.org/16.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 16.0.1
+    released: April 5, 2023
+    refs:
+      - 'https://releases.llvm.org/16.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 16.0.2
+    released: April 19, 2023
+    refs:
+      - 'https://releases.llvm.org/16.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 16.0.3
+    released: May 3, 2023
+    refs:
+      - 'https://releases.llvm.org/16.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 16.0.4
+    released: May 16, 2023
+    refs:
+      - 'https://releases.llvm.org/16.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 16.0.5
+    released: June 2, 2023
+    refs:
+      - 'https://releases.llvm.org/16.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 16.0.6
+    released: June 13, 2023
+    refs:
+      - 'https://releases.llvm.org/16.0.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 17.0.1
+    released: September 9, 2023
+    refs:
+      - 'https://releases.llvm.org/17.0.1/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 17.0.2
+    released: October 3, 2023
+    refs:
+      - 'https://releases.llvm.org/17.0.1/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 17.0.3
+    released: October 17, 2023
+    refs:
+      - 'https://releases.llvm.org/17.0.1/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 17.0.4
+    released: October 31, 2023
+    refs:
+      - 'https://releases.llvm.org/17.0.1/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 17.0.5
+    released: November 14, 2023
+    refs:
+      - 'https://releases.llvm.org/17.0.1/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 17.0.6
+    released: November 28, 2023
+    refs:
+      - 'https://releases.llvm.org/17.0.1/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 18.1
+    released: March 5, 2024
+    refs:
+      - 'https://releases.llvm.org/18.1.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 18.1.1
+    released: March 8, 2024
+    refs:
+      - 'https://releases.llvm.org/18.1.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 18.1.2
+    released: March 19, 2024
+    refs:
+      - 'https://releases.llvm.org/18.1.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 18.1.3
+    released: April 4, 2024
+    refs:
+      - 'https://releases.llvm.org/18.1.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 18.1.4
+    released: April 17, 2024
+    refs:
+      - 'https://releases.llvm.org/18.1.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 18.1.5
+    released: May 2, 2024
+    refs:
+      - 'https://releases.llvm.org/18.1.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 18.1.6
+    released: May 18, 2024
+    refs:
+      - 'https://releases.llvm.org/18.1.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 19.1.0
+    released: September 17, 2024
+    refs:
+      - 'https://releases.llvm.org/19.1.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 19.1.1
+    released: October 1, 2024
+    refs:
+      - 'https://releases.llvm.org/19.1.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 20.1.0
+    released: March 4, 2025
+    refs:
+      - 'https://releases.llvm.org/20.1.0/tools/clang/docs/ReleaseNotes.html'
+
+  - name: Clang 21.1.0
+    released: August 26, 2025
+    refs:
+      - https://releases.llvm.org/21.1.0/tools/clang/docs/ReleaseNotes.html
+      - https://github.com/llvm/llvm-project/releases/tag/llvmorg-21.1.0
+
+  - name: Clang 22
+    released: TBD
+    refs:
+      - 'https://clang.llvm.org/docs/ReleaseNotes.html'
+
+  - name: MSVC 19.0
+    released: July 20, 2015
+    part_of: 'Visual Studio 2015 (14.0)'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2015-rtm-vs
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.10
+    released: March 7, 2017
+    part_of: 'Visual Studio 2017'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes-v15.0
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.11
+    released: August 14, 2017
+    part_of: 'Visual Studio 2017 version 15.3'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes-v15.3
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.12
+    released: December 4, 2017
+    part_of: 'Visual Studio 2017 version 15.5'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes-v15.5
+      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
+
+  - name: MSVC 19.13
+    released: March 5, 2018
+    part_of: 'Visual Studio 2017 version 15.6'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes-v15.6
+      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
+
+  - name: MSVC 19.14
+    released: May 7, 2018
+    part_of: 'Visual Studio 2017 version 15.7'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes-v15.7
+      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
+
+  - name: MSVC 19.15
+    released: August 14, 2018
+    part_of: 'Visual Studio 2017 version 15.8'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes-v15.8
+      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
+
+  - name: MSVC 19.16
+    released: November 13, 2018
+    part_of: 'Visual Studio 2017 version 15.9'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes
+      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
+
+  - name: MSVC 19.20
+    released: April 2, 2019
+    part_of: 'Visual Studio 2019 RTW 16.0'
+    refs:
+      - 'https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.0'
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.21
+    released: May 21, 2019
+    part_of: 'Visual Studio 2019 version 16.1'
+    refs:
+      - 'https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.1'
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.22
+    released: July 24, 2019
+    part_of: 'Visual Studio 2019 version 16.2'
+    refs:
+      - 'https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.2'
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.23
+    released: September 23, 2019
+    part_of: 'Visual Studio 2019 version 16.3'
+    refs:
+      - 'https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.3'
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.24
+    released: December 3, 2019
+    part_of: 'Visual Studio 2019 version 16.4'
+    refs:
+      - 'https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.4'
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.25
+    released: March 16, 2020
+    part_of: 'Visual Studio 2019 version 16.5'
+    refs:
+      - 'https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.5'
+      - 'https://github.com/microsoft/STL/wiki/VS-2019-Changelog#vs-2019-165'
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.26
+    released: May 19, 2020
+    part_of: 'Visual Studio 2019 version 16.6'
+    refs:
+      - 'https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.6'
+      - 'https://github.com/microsoft/STL/wiki/VS-2019-Changelog#vs-2019-166'
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.27
+    released: August 5, 2020
+    part_of: 'Visual Studio 2019 version 16.7'
+    refs:
+      - 'https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.7'
+      - 'https://github.com/microsoft/STL/wiki/VS-2019-Changelog#vs-2019-167'
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.28
+    released: November 10, 2020
+    part_of:
+      - 'Visual Studio 2019 version 16.8'
+      - 'Visual Studio 2019 version 16.9'
+    refs:
+      - 'https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.8'
+      - 'https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.9'
+      - 'https://github.com/microsoft/STL/wiki/VS-2019-Changelog#vs-2019-169'
+      - 'https://github.com/microsoft/STL/wiki/VS-2019-Changelog#vs-2019-168'
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.29
+    released: May 25, 2021
+    part_of: 'Visual Studio 2019 version 16.10'
+    refs:
+      - 'https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.10'
+      - 'https://github.com/microsoft/STL/wiki/VS-2019-Changelog#vs-2019-1610'
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.30
+    released: November 8, 2021
+    part_of: 'Visual Studio 2022 RTW 17.0'
+    refs:
+      - 'https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.0'
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.31
+    released: February 15, 2022
+    part_of: 'Visual Studio 2022 version 17.1'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.1
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.32
+    released: May 10, 2022
+    part_of: 'Visual Studio 2022 version 17.2'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.2
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.33
+    released: August 9, 2022
+    part_of: 'Visual Studio 2022 version 17.3'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.3
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.34
+    released: November 8, 2022
+    part_of: 'Visual Studio 2022 version 17.4'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.4
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.35
+    released: February 21, 2023
+    part_of: 'Visual Studio 2022 version 17.5'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.5
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.36
+    released: May 16, 2023
+    part_of: 'Visual Studio 2022 version 17.6'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.6
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.37
+    released: August 8, 2023
+    part_of: 'Visual Studio 2022 version 17.7'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.7
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.38
+    released: November 14, 2023
+    part_of: 'Visual Studio 2022 version 17.8'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.8
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.39
+    released: February 13, 2024
+    part_of: 'Visual Studio 2022 version 17.9'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.9
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.40
+    released: May 21, 2024
+    part_of: 'Visual Studio 2022 version 17.10'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.10
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.41
+    released: August 13, 2024
+    part_of: 'Visual Studio 2022 version 17.11'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.11
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.42
+    released: November 12, 2024
+    part_of: 'Visual Studio 2022 version 17.12'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.12
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.43
+    released: February 11, 2025
+    part_of: 'Visual Studio 2022 version 17.13'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.13
+      - 'https://learn.microsoft.com/en-us/cpp/overview/compiler-versions'
+
+  - name: MSVC 19.44
+    released: May 13, 2025
+    part_of: 'Visual Studio 2022 version 17.14'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes
+      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
+
+  - name: MSVC 19.50
+    released: September 9, 2025
+    part_of: 'Visual Studio 2026 version 18.0 (Insiders)'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/vs18/release-notes-insiders
+      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
+
+  - name: MSVC 19.51
+    released: October 23, 2025
+    part_of: 'Visual Studio 2026 version 18.0 (Insiders)'
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/vs18/release-notes-insiders
+      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
+
+  - name: Xcode 10
+    released: September 17, 2018
+    requires: macOS 10.13.6 (High Sierra)
+    apple_clang: 10.0.0 (clang-1000.11.45.2)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-10-release-notes
+
+  - name: Xcode 10.1
+    released: October 30, 2018
+    requires: macOS 10.13.6 (High Sierra)
+    apple_clang: 10.0.0 (clang-1000.11.45.5)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-10_1-release-notes
+
+  - name: Xcode 10.2
+    released: March 25, 2019
+    requires: macOS 10.14.3 (Mojave)
+    apple_clang: 10.0.1 (clang-1001.0.46.3)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-10_2-release-notes
+
+  - name: Xcode 10.2.1
+    released: April 17, 2019
+    requires: macOS 10.14.3 (Mojave)
+    apple_clang: 10.0.1 (clang-1001.0.46.4)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-10_2_1-release-notes
+
+  - name: Xcode 10.3
+    released: July 22, 2019
+    requires: macOS 10.14.3 (Mojave)
+    apple_clang: 10.0.1 (clang-1001.0.46.4)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-10_3-release-notes
+
+  - name: Xcode 11
+    released: September 20, 2019
+    requires: macOS 10.14.4 (Mojave)
+    apple_clang: 11.0.0 (clang-1100.0.33.8)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-11-release-notes
+
+  - name: Xcode 11.1
+    released: October 7, 2019
+    requires: macOS 10.14.4 (Mojave)
+    apple_clang: 11.0.0 (clang-1100.0.33.8)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-11_1-release-notes
+
+  - name: Xcode 11.2
+    released: October 31, 2019
+    requires: macOS 10.14.4 (Mojave)
+    apple_clang: 11.0.0 (clang-1100.0.33.12)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-11_2-release-notes
+
+  - name: Xcode 11.2.1
+    released: November 12, 2019
+    requires: macOS 10.14.4 (Mojave)
+    apple_clang: 11.0.0 (clang-1100.0.33.12)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-11_2_1-release-notes
+
+  - name: Xcode 11.3
+    released: December 10, 2019
+    requires: macOS 10.14.4 (Mojave)
+    apple_clang: 11.0.0 (clang-1100.0.33.16)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-11_3-release-notes
+
+  - name: Xcode 11.3.1
+    released: January 13, 2020
+    requires: macOS 10.14.4 (Mojave)
+    apple_clang: 11.0.0 (clang-1100.0.33.17)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-11_3_1-release-notes
+
+  - name: Xcode 11.4
+    released: March 24, 2020
+    requires: macOS 10.15.2 (Catalina)
+    apple_clang: 11.0.3 (clang-1103.0.32.29)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-11_4-release-notes
+
+  - name: Xcode 11.4.1
+    released: April 16, 2020
+    requires: macOS 10.15.2 (Catalina)
+    apple_clang: 11.0.3 (clang-1103.0.32.59)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-11_4_1-release-notes
+
+  - name: Xcode 11.5
+    released: May 20, 2020
+    requires: macOS 10.15.2 (Catalina)
+    apple_clang: 11.0.3 (clang-1103.0.32.62)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-11_5-release-notes
+
+  - name: Xcode 11.6
+    released: July 15, 2020
+    requires: macOS 10.15.2 (Catalina)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-11_6-release-notes
+
+  - name: Xcode 11.7
+    released: September 1, 2020
+    requires: macOS 10.15.2 (Catalina)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-11_7-release-notes
+
+  - name: Xcode 12
+    released: September 17, 2020
+    requires: macOS 10.15.4 (Catalina)
+    apple_clang: 12.0.0 (clang-1200.0.32.2)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-12-release-notes
+
+  - name: Xcode 12.0.1
+    released: September 24, 2020
+    requires: macOS 10.15.4 (Catalina)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-12_0_1-release-notes
+
+  - name: Xcode 12.1
+    released: October 20, 2020
+    requires: macOS 10.15.4 (Catalina)
+    apple_clang: 12.0.0 (clang-1200.0.32.21)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-12_1-release-notes
+
+  - name: Xcode 12.2
+    released: November 12, 2020
+    requires: macOS 10.15.4 (Catalina)
+    apple_clang: 12.0.0 (clang-1200.0.32.27)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-12_2-release-notes
+
+  - name: Xcode 12.3
+    released: December 14, 2020
+    requires: macOS 10.15.4 (Catalina)
+    apple_clang: 12.0.0 (clang-1200.0.32.28)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-12_3-release-notes
+
+  - name: Xcode 12.4
+    released: January 26, 2021
+    requires: macOS 10.15.4 (Catalina)
+    apple_clang: 12.0.0 (clang-1200.0.32.29)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-12_4-release-notes
+
+  - name: Xcode 12.5
+    released: April 26, 2021
+    requires: macOS 11.0 (Big Sur)
+    apple_clang: 12.0.5 (clang-1205.0.22.9)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5-release-notes
+
+  - name: Xcode 12.5.1
+    released: June 21, 2021
+    requires: macOS 11.0 (Big Sur)
+    apple_clang: 12.0.5 (clang-1205.0.22.11)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5_1-release-notes
+
+  - name: Xcode 13
+    released: September 20, 2021
+    requires: macOS 11.3 (Big Sur)
+    apple_clang: 13.0.0 (clang-1300.0.29.3)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-13-release-notes
+
+  - name: Xcode 13.1
+    released: October 25, 2021
+    requires: macOS 11.3 (Big Sur)
+    apple_clang: 13.0.0 (clang-1300.0.29.3)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-13_1-release-notes
+
+  - name: Xcode 13.2
+    released: December 13, 2021
+    requires: macOS 11.3 (Big Sur)
+    apple_clang: 13.0.0 (clang-1300.0.29.30)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes
+
+  - name: Xcode 13.2.1
+    released: December 17, 2021
+    requires: macOS 11.3 (Big Sur)
+    apple_clang: 13.0.0 (clang-1300.0.29.30)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2_1-release-notes
+
+  - name: Xcode 13.3
+    released: March 14, 2022
+    requires: macOS 12.0 (Monterey)
+    apple_clang: 13.1.6 (clang-1316.0.21.2)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes
+
+  - name: Xcode 13.3.1
+    released: April 11, 2022
+    requires: macOS 12.0 (Monterey)
+    apple_clang: 13.1.6 (clang-1316.0.21.2.3)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3_1-release-notes
+
+  - name: Xcode 13.4
+    released: May 16, 2022
+    requires: macOS 12.0 (Monterey)
+    apple_clang: 13.1.6 (clang-1316.0.21.2.5)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4-release-notes
+
+  - name: Xcode 13.4.1
+    released: June 2, 2022
+    requires: macOS 12.0 (Monterey)
+    apple_clang: 13.1.6 (clang-1316.0.21.2.5)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4_1-release-notes
+
+  - name: Xcode 14
+    released: September 12, 2022
+    requires: macOS 12.5 (Monterey)
+    apple_clang: 14.0.0 (clang-1400.0.29.102)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes
+
+  - name: Xcode 14.0.1
+    released: September 26, 2022
+    requires: macOS 12.5 (Monterey)
+    apple_clang: 14.0.0 (clang-1400.0.29.102)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-14_0_1-release-notes
+
+  - name: Xcode 14.1
+    released: November 1, 2022
+    requires: macOS 12.5 (Monterey)
+    apple_clang: 14.0.0 (clang-1400.0.29.202)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-14_1-release-notes
+
+  - name: Xcode 14.2
+    released: December 13, 2022
+    requires: macOS 12.5 (Monterey)
+    apple_clang: 14.0.0 (clang-1400.0.29.202)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-14_2-release-notes
+
+  - name: Xcode 14.3
+    released: March 30, 2023
+    requires: macOS 13.0 (Ventura)
+    apple_clang: 14.0.3 (clang-1403.0.22.14.1)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-14_3-release-notes
+
+  - name: Xcode 14.3.1
+    released: June 1, 2023
+    requires: macOS 13.0 (Ventura)
+    apple_clang: 14.0.3 (clang-1403.0.22.14.1)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-14_3_1-release-notes
+
+  - name: Xcode 15
+    released: September 18, 2023
+    requires: macOS 13.5 (Ventura)
+    apple_clang: 15.0.0 (clang-1500.0.40.1)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes
+
+  - name: Xcode 15.0.1
+    released: October 18, 2023
+    requires: macOS 13.5 (Ventura)
+    apple_clang: 15.0.0 (clang-1500.0.40.1)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-15_0_1-release-notes
+
+  - name: Xcode 15.1
+    released: December 11, 2023
+    requires: macOS 13.5 (Ventura)
+    apple_clang: 15.0.0 (clang-1500.1.0.2.5)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-15_1-release-notes
+
+  - name: Xcode 15.2
+    released: January 8, 2024
+    requires: macOS 13.5 (Ventura)
+    apple_clang: 15.0.0 (clang-1500.1.0.2.5)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-15_2-release-notes
+
+  - name: Xcode 15.3
+    released: March 5, 2024
+    requires: macOS 14.0 (Sonoma)
+    apple_clang: 15.0.0 (clang-1500.3.9.4)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-15_3-release-notes
+
+  - name: Xcode 15.4
+    released: May 13, 2024
+    requires: macOS 14.0 (Sonoma)
+    apple_clang: 15.0.0 (clang-1500.3.9.4)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-15_4-release-notes
+
+  - name: Xcode 16
+    released: September 16, 2024
+    requires: macOS 14.5 (Sonoma)
+    apple_clang: 16.0.0 (clang-1600.0.26.3)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-16-release-notes
+
+  - name: Xcode 16.1
+    released: October 28, 2024
+    requires: macOS 14.5 (Sonoma)
+    apple_clang: 16.0.0 (clang-1600.0.26.4)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-16_1-release-notes
+
+  - name: Xcode 16.2
+    released: December 11, 2024
+    requires: macOS 14.5 (Sonoma)
+    apple_clang: 16.0.0 (clang-1600.0.26.6)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-16_2-release-notes
+
+  - name: Xcode 16.3
+    released: March 31, 2025
+    requires: macOS 15.2 (Sequoia)
+    apple_clang: 17.0.0 (clang-1700.0.13.3)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-16_3-release-notes
+
+  - name: Xcode 16.4
+    released: May 27, 2025
+    requires: macOS 15.3 (Sequoia)
+    apple_clang: 17.0.0 (clang-1700.0.13.5)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-16_4-release-notes
+
+  - name: Xcode 26
+    released: September 15, 2025
+    requires: macOS 26 (Tahoe)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-26-release-notes
+
+  - name: Xcode 26.1
+    released: November 3, 2025
+    requires: macOS 26 (Tahoe)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-26_1-release-notes
