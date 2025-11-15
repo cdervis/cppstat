@@ -3,7 +3,7 @@ name: Incorrect support information
 about: File an issue about incorrect support information.
 title: "[incorrect info]"
 labels: incorrect-info
-assignees: cemdervis
+assignees: cdervis
 
 ---
 
