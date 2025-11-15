@@ -35,6 +35,8 @@ Alternatively, you can [submit a ticket](https://github.com/cdervis/cppstat/issu
 
 If you are a toolchain or compiler vendor, feel free to request full editorial access.
 
+---
+
 ### Feature Lists
 
 Features are declared in the `data/features_cpp<version>.yaml` files.
@@ -84,6 +86,8 @@ As a **full** reference example, here is the definition of P2465 at the time of 
 Which will look like the following on cppstat:
 
 ![Feature Example](assets/feature_example.webp)
+
+---
 
 ### Feature Content
 
