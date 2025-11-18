@@ -750,6 +750,7 @@ features:
       - GCC 13
       - Clang 16
       - MSVC 19.33
+      - Xcode 16.1
 
   - desc: 'A type trait to detect reference binding to temporary'
     paper: P2255
