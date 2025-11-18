@@ -1412,6 +1412,7 @@ features:
       - Clang 13
       - MSVC 19.20
       - MSVC 19.30
+      - Xcode 16.1
     ftm:
       - name: __cpp_lib_variant
         value: 202102L
