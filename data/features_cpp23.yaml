@@ -1424,6 +1424,7 @@ features:
       - GCC 11
       - Clang 16
       - MSVC 19.30
+      - Xcode 16.1
 
   - desc: 'Repairing input range adaptors and `std::counted_iterator`'
     paper: P2259
