@@ -1529,6 +1529,7 @@ features:
       - GCC 13
       - Clang 21
       - MSVC 19.31
+      - Xcode 16.1
 
   - desc: 'Cleaning up integer-class types'
     paper: P2393
