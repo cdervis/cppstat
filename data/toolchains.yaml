@@ -1235,17 +1235,17 @@ infos:
       - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
 
   - name: MSVC 19.50
-    released: September 9, 2025
-    part_of: 'Visual Studio 2026 version 18.0 (Insiders)'
+    released: November 11, 2025
+    part_of: 'Visual Studio 2026 version 18.0'
     refs:
-      - https://learn.microsoft.com/en-us/visualstudio/releases/vs18/release-notes-insiders
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes
       - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
-
+  
   - name: MSVC 19.51
-    released: October 23, 2025
-    part_of: 'Visual Studio 2026 version 18.0 (Insiders)'
+    released: TBD
+    part_of: 'Visual Studio 2026 TBD'
     refs:
-      - https://learn.microsoft.com/en-us/visualstudio/releases/vs18/release-notes-insiders
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes
       - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
 
   - name: Xcode 10
