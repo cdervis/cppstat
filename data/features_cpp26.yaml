@@ -1541,6 +1541,7 @@ features:
     lib: true
     support:
       - GCC 15
+      - MSVC 19.51
 
   - desc: 'Allow attaching `main` to the global module'
     paper: P3618
