@@ -81,46 +81,46 @@ features:
         msg: "Calls `__builtin_expect(false, ...)` instead of using C++26 contracts when a hardened precondition is violated."
     ftm:
       - name: __cpp_lib_hardened_array
-        desc: "Hardened <code>std::array</code>"
+        desc: "Hardened `std::array`"
         value: 202502L
       - name: __cpp_lib_hardened_basic_string
-        desc: "Hardened <code>std::basic_string"
+        desc: "Hardened `std::basic_string`"
         value: 202502L
       - name: __cpp_lib_hardened_basic_string_view
-        desc: "Hardened <code>std::basic_string_view</code>"
+        desc: "Hardened `std::basic_string_view`"
         value: 202502L
       - name: __cpp_lib_hardened_bitset
-        desc: "Hardened <code>std::bitset</code>"
+        desc: "Hardened `std::bitset`"
         value: 202502L
       - name: __cpp_lib_hardened_deque
-        desc: "Hardened <code>std::deque</code>"
+        desc: "Hardened `std::deque`"
         value: 202502L
       - name: __cpp_lib_hardened_expected
-        desc: "Hardened <code>std::expected</code>"
+        desc: "Hardened `std::expected`"
         value: 202502L
       - name: __cpp_lib_hardened_forward_list
-        desc: "Hardened <code>std::forward_list</code>"
+        desc: "Hardened `std::forward_list`"
         value: 202502L
       - name: __cpp_lib_hardened_inplace_vector
-        desc: "Hardened <code>std::inplace_vector</code>"
+        desc: "Hardened `std::inplace_vector`"
         value: 202502L
       - name: __cpp_lib_hardened_list
-        desc: "Hardened <code>std::list</code>"
+        desc: "Hardened `std::list`"
         value: 202502L
       - name: __cpp_lib_hardened_mdspan
-        desc: "Hardened <code>std::mdspan</code>"
+        desc: "Hardened `std::mdspan`"
         value: 202502L
       - name: __cpp_lib_hardened_optional
-        desc: "Hardened <code>std::optional</code>"
+        desc: "Hardened `std::optional`"
         value: 202502L
       - name: __cpp_lib_hardened_span
-        desc: "Hardened <code>std::span</code>"
+        desc: "Hardened `std::span`"
         value: 202502L
       - name: __cpp_lib_hardened_valarray
-        desc: "Hardened <code>std::valarray</code>"
+        desc: "Hardened `std::valarray`"
         value: 202502L
       - name: __cpp_lib_hardened_vector
-        desc: "Hardened <code>std::vector</code>"
+        desc: "Hardened `std::vector`"
         value: 202502L
     content: 'p3471_hardening.md'
 
