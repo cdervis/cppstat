@@ -1493,8 +1493,10 @@ features:
     ftm:
       - name: __cpp_lib_optional
         value: 202106L
-      - name: __cpp_lib_optional
+        desc: '`constexpr` `std::optional` is available'
+      - name: __cpp_lib_variant
         value: 202106L
+        desc: '`constexpr` `std::variant` is available'
 
   - desc: 'Superior string splitting (`views::lazy_split()` and redesigned `views::split()`)'
     paper: P2210
