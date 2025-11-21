@@ -205,6 +205,7 @@ features:
     support:
       - GCC 13
       - Clang 15
+      - MSVC 19.50
       - Xcode 15
 
   - desc: 'Named universal character escapes'
