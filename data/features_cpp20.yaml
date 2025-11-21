@@ -1700,7 +1700,7 @@ features:
       - name: __cpp_impl_three_way_comparison
         value: 201711L
 
-  - desc: 'Add wait/notify to `std::atomic_ref<T>`'
+  - desc: '`std::atomic_ref::wait()`, `std::atomic_ref::notify_one()` and `std::atomic_ref::notify_all()`'
     paper: P1643
     lib: true
     support:
