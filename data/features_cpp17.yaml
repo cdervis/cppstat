@@ -1,6 +1,6 @@
 ---
 features:
-  - desc: 'New Rules for auto deduction from braced-init-list'
+  - desc: 'New Rules for `auto` deduction from braced-init-list'
     paper: N3922
     support:
       - GCC 5
@@ -162,7 +162,7 @@ features:
       - name: __cpp_fold_expressions
         value: 201603L
 
-  - desc: 'Lambda capture of `*this` by value as `[=,*this]`'
+  - desc: 'Lambda capture of `*this` by value as `[=, *this]`'
     paper: P0018
     support:
       - GCC 7
@@ -178,7 +178,7 @@ features:
       - MSVC 19.11
       - Xcode
 
-  - desc: 'Wording for `constexpr` lambda'
+  - desc: '`constexpr` lambdas'
     paper: P0170
     support:
       - GCC 7
@@ -679,7 +679,7 @@ features:
       - name: __cpp_lib_array_constexpr
         value: 201603L
 
-  - desc: 'constexpr `std::atomic<T>::is_always_lock_free()`'
+  - desc: '`constexpr` `std::atomic::is_always_lock_free()`'
     paper: P0152
     lib: true
     support:

@@ -1,6 +1,6 @@
 ---
 features:
-  - desc: 'Allow Lambda capture `[=, this]`'
+  - desc: 'Allow lambda capture `[=, this]`'
     paper: P0409
     support:
       - GCC 8
@@ -147,7 +147,7 @@ features:
       - MSVC 19.22
       - Xcode 10.2
 
-  - desc: 'const mismatch with defaulted copy constructor'
+  - desc: '`const` mismatch with defaulted copy constructor'
     paper: P0641
     support:
       - GCC 9

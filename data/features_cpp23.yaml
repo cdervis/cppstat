@@ -95,7 +95,7 @@ features:
       - name: __cpp_explicit_this_parameter
         value: 202110L
 
-  - desc: 'Proposed resolution for CWG2692 static and explicit object member functions with the same parameter-type-lists'
+  - desc: 'Proposed resolution for [CWG2692](https://wg21.link/CWG2692) static and explicit object member functions with the same parameter-type-lists'
     paper: P2797
     support:
       - GCC 14
@@ -494,7 +494,7 @@ features:
       - name: __cpp_lib_spanstream
         value: 202106L
 
-  - desc: '`out_ptr` - a scalable output pointer abstraction (`std::out_ptr()` and `std::inout_ptr()`)'
+  - desc: '`std::out_ptr()` and `std::inout_ptr()`'
     paper: P1132
     lib: true
     support:
@@ -752,7 +752,7 @@ features:
       - MSVC 19.33
       - Xcode 16.1
 
-  - desc: 'A type trait to detect reference binding to temporary'
+  - desc: '`std::reference_constructs_from_temporary` and `std::reference_converts_from_temporary`'
     paper: P2255
     lib: true
     support:
@@ -936,7 +936,7 @@ features:
     support:
       - GCC 13
 
-  - desc: '`stride_view` (`views::stride()`)'
+  - desc: '`ranges::stride_view` and `views::stride()`'
     paper: P1899
     lib: true
     support:
@@ -1139,7 +1139,7 @@ features:
       - name: __cpp_lib_constexpr_bitset
         value: 202207L
 
-  - desc: '`std::basic_string::substr()` &&'
+  - desc: '`std::basic_string::substr()` `&&`'
     paper: P2438
     lib: true
     support:
@@ -1472,7 +1472,7 @@ features:
       - target: MSVC 19.29
         msg: 'The split_view part is missing.'
 
-  - desc: '`constexpr` for `std::optional` and `std::variant`'
+  - desc: '`constexpr` `std::optional` and `std::variant`'
     paper: P2231
     lib: true
     support:
