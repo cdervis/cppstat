@@ -368,6 +368,8 @@ features:
   - desc: '`std::optional<T&>`'
     paper: P2988
     lib: true
+    support:
+      - Clang 22
     ftm:
       - name: __cpp_lib_freestanding_optional
         value: 202506L
