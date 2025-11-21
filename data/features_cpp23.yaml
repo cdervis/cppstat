@@ -100,6 +100,7 @@ features:
     support:
       - GCC 14
       - Clang 19
+      - MSVC 19.50
       - Xcode 16.3
 
   - desc: 'Decay-copy in the language (`auto(x)` and `auto{x}`)'
