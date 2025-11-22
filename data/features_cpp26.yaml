@@ -1549,12 +1549,12 @@ features:
       - GCC 16
       - Clang 21 (partial)
 
-  - desc: '`constexpr std::format`'
+  - desc: '`constexpr` `std::format()`'
     paper: P3391
     lib: true
     ftm:
       - name: __cpp_lib_constexpr_format
-      - value: 202511L
+        value: 202511L
 
   - desc: 'Fix erroneous behaviour termination semantics for C++26'
     paper: P3684
