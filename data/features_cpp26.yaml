@@ -1551,3 +1551,7 @@ features:
 
   - desc: 'Fix erroneous behaviour termination semantics for C++26'
     paper: P3684
+
+  - desc: "Standard library hardening should not use the 'observe' semantic"
+    paper: P3878
+    lib: true
