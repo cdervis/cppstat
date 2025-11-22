@@ -1555,3 +1555,10 @@ features:
   - desc: "Standard library hardening should not use the 'observe' semantic"
     paper: P3878
     lib: true
+
+  - desc: 'Library Support for Expansion Statements'
+    paper: P1789
+    lib: true
+    ftm:
+      - name:  __cpp_lib_integer_sequence
+        value: 202511L
