@@ -1548,3 +1548,10 @@ features:
     support:
       - GCC 16
       - Clang 21 (partial)
+
+  - desc: '`constexpr std::format`'
+    paper: P3391
+    lib: true
+    ftm:
+      - name: __cpp_lib_constexpr_format
+      - value: 202511L
