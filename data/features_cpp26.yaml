@@ -1548,3 +1548,6 @@ features:
     support:
       - GCC 16
       - Clang 21 (partial)
+
+  - desc: 'Fix erroneous behaviour termination semantics for C++26'
+    paper: P3684
