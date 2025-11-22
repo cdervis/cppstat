@@ -1547,7 +1547,7 @@ features:
     paper: P3618
     support:
       - GCC 16
-      - Clang 21 (partial)
+      - Clang 21
 
   - desc: '`constexpr` `std::format()`'
     paper: P3391
