@@ -1240,7 +1240,7 @@ infos:
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes
       - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
-  
+
   - name: MSVC 19.51
     released: TBD
     part_of: 'Visual Studio 2026 TBD'
