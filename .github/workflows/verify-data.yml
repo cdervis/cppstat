@@ -1,4 +1,4 @@
-name: CI
+name: 'Verify data'
 
 on:
   pull_request:
@@ -6,7 +6,7 @@ on:
 
 jobs:
  yamllint:
-    name: 'Yamllint'
+    name: 'YAML lint'
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout'
