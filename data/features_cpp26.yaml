@@ -1567,5 +1567,5 @@ features:
     paper: P1789
     lib: true
     ftm:
-      - name:  __cpp_lib_integer_sequence
+      - name: __cpp_lib_integer_sequence
         value: 202511L
