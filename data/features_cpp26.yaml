@@ -1544,7 +1544,7 @@ features:
       - GCC 15
       - MSVC 19.51
 
-  - desc: 'Allow attaching `main` to the global module'
+  - desc: 'Allow attaching `main()` to the global module'
     paper: P3618
     support:
       - GCC 16
