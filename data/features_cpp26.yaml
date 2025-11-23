@@ -422,7 +422,7 @@ features:
       - name: __cpp_lib_submdspan
         value: 202403L
 
-  - desc: "Better mdspan's [CTAD](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction.html)"
+  - desc: "Better `std::mdspan`'s [CTAD](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction.html)"
     paper: P3029
     lib: true
     support:
