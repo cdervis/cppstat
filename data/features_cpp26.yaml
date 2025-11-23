@@ -823,7 +823,7 @@ features:
       - name: __cpp_lib_fstream_native_handle
         value: 202306L
 
-  - desc: 'Interfacing stringstreams with `std::string_view`'
+  - desc: 'Interfacing `std::stringstream` with `std::string_view`'
     paper: P2495
     lib: true
     support:
