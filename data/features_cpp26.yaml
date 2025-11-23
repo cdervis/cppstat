@@ -840,6 +840,7 @@ features:
     support:
       - Clang 18
       - Xcode 16
+      - GCC 16
     ftm:
       - name: __cpp_lib_bitset
         value: 202306L
