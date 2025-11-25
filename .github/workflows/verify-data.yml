@@ -1,22 +1,22 @@
-name: 'Verify data'
+name: "Verify data"
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
- yamllint:
-    name: 'YAML lint'
+  yamllint:
+    name: "YAML lint"
     runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout'
+      - name: "Checkout"
         uses: actions/checkout@v4
-        
-      - name: 'YAML lint'
+
+      - name: "YAML lint"
         uses: karancode/yamllint-github-action@master
         with:
-          yamllint_file_or_dir: 'data'
+          yamllint_file_or_dir: "."
           yamllint_strict: false
           yamllint_comment: false
