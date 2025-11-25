@@ -26,7 +26,7 @@ cppstat is a site that lists C++ features and their respective support by compil
 
 ## Contributing
 
-cppstat is generated from YAML data files in the `data` directory.
+cppstat is generated from YAML data files in the root directory.
 The files are maintained as a best-effort and contributions are always welcome.
 
 You can edit these files directly via GitHub's web interface and commit your changes for approval.
@@ -39,7 +39,7 @@ If you are a toolchain or compiler vendor, feel free to request full editorial a
 
 ### Feature Lists
 
-Features are declared in the `data/features_cpp<version>.yaml` files.
+Features are declared in the `features_cpp<version>.yaml` files.
 Each standard version of C++ has its own file; for example, `features_cpp23.yaml` contains all features of C++23.
 
 A feature has the following properties:
@@ -94,7 +94,7 @@ Which will look like the following on cppstat:
 Every feature can have an in-depth explanation hidden behind its info button.
 
 The `content` property of a feature specifies the **Markdown file** that describes the feature.
-This file is expected to be in the `data/content` folder.
+This file is expected to be in the `content` folder.
 
 For example, the feature P2589 (`static operator[]`) is defined as follows:
 
@@ -104,7 +104,7 @@ For example, the feature P2589 (`static operator[]`) is defined as follows:
   content: p2589_static_subscript_operator.md
 ```
 
-This feature's explanation is therefore expected to be in `data/content/p2589_static_subscript_operator.md`.
+This feature's explanation is therefore expected to be in `content/p2589_static_subscript_operator.md`.
 
 > [!NOTE]  
 > Although the name of the file **does not matter**, it should at least include the paper's name.
@@ -113,7 +113,7 @@ This feature's explanation is therefore expected to be in `data/content/p2589_st
 
 ### Toolchains
 
-Toolchains are declared in the `data/toolchains.yaml` file.
+Toolchains are declared in the `toolchains.yaml` file.
 
 Note that the list does not contain every possible toolchain release, but rather the toolchains that are referenced by a feature.
 This is mostly major and minor releases, very rarely revisions.
