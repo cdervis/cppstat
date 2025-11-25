@@ -1,6 +1,6 @@
 ---
 features:
-  - desc: 'New Rules for `auto` deduction from braced-init-list'
+  - desc: "New Rules for `auto` deduction from braced-init-list"
     paper: N3922
     support:
       - GCC 5
@@ -8,7 +8,7 @@ features:
       - MSVC 19.0
       - Xcode
 
-  - desc: 'Allow `typename` in a template template parameter'
+  - desc: "Allow `typename` in a template template parameter"
     paper: N4051
     support:
       - GCC 5
@@ -16,7 +16,7 @@ features:
       - MSVC 19.0
       - Xcode
 
-  - desc: 'Removing trigraphs??!'
+  - desc: "Removing trigraphs??!"
     paper: N4086
     support:
       - GCC 5
@@ -24,7 +24,7 @@ features:
       - MSVC 16.0
       - Xcode
 
-  - desc: 'Nested `namespace` definition'
+  - desc: "Nested `namespace` definition"
     paper: N4230
     support:
       - GCC 6
@@ -32,7 +32,7 @@ features:
       - MSVC 19.0
       - Xcode
 
-  - desc: 'Extending `static_assert`, v2'
+  - desc: "Extending `static_assert`, v2"
     paper: N3928
     support:
       - GCC 6
@@ -42,9 +42,9 @@ features:
     ftm:
       - name: __cpp_static_assert
         value: 201411L
-        desc: '`static_assert()` with no message (single argument)'
+        desc: "`static_assert()` with no message (single argument)"
 
-  - desc: 'Attributes for namespaces and enumerators'
+  - desc: "Attributes for namespaces and enumerators"
     paper: N4266
     support:
       - GCC 4.9 (partial)
@@ -54,7 +54,7 @@ features:
       - Xcode
     hints:
       - target: GCC 4.9
-        msg: 'Only attributes for namespaces are supported.'
+        msg: "Only attributes for namespaces are supported."
     ftm:
       - name: __cpp_enumerator_attributes
         value: 201411L
@@ -63,7 +63,7 @@ features:
         value: 201411L
         desc: Attributes for namespaces are supported
 
-  - desc: 'Adding `u8` character literals'
+  - desc: "Adding `u8` character literals"
     paper: N4267
     support:
       - GCC 6
@@ -75,7 +75,7 @@ features:
         value: 201411L
         desc: Allow constant evaluation for all constant template arguments
 
-  - desc: 'Allow constant evaluation for all non-type template arguments'
+  - desc: "Allow constant evaluation for all non-type template arguments"
     paper: N4268
     support:
       - GCC 6
@@ -83,7 +83,7 @@ features:
       - MSVC 19.12
       - Xcode
 
-  - desc: 'Unary folds and empty parameter packs'
+  - desc: "Unary folds and empty parameter packs"
     paper: P0036
     support:
       - GCC 6
@@ -91,7 +91,7 @@ features:
       - MSVC 19.12
       - Xcode
 
-  - desc: 'Remove deprecated use of the `register` keyword'
+  - desc: "Remove deprecated use of the `register` keyword"
     paper: P0001
     support:
       - GCC 7
@@ -99,7 +99,7 @@ features:
       - MSVC 19.11
       - Xcode
 
-  - desc: 'Remove deprecated `operator++(bool)`'
+  - desc: "Remove deprecated `operator++(bool)`"
     paper: P0002
     support:
       - GCC 7
@@ -107,7 +107,7 @@ features:
       - MSVC 19.11
       - Xcode
 
-  - desc: 'Make exception specifications be part of the type system'
+  - desc: "Make exception specifications be part of the type system"
     paper: P0012
     support:
       - GCC 7
@@ -118,7 +118,7 @@ features:
       - name: __cpp_noexcept_function_type
         value: 201510L
 
-  - desc: '`__has_include`'
+  - desc: "`__has_include`"
     paper: P0061
     support:
       - GCC 5
@@ -126,7 +126,7 @@ features:
       - MSVC 19.11
       - Xcode
 
-  - desc: 'Rewording inheriting constructors'
+  - desc: "Rewording inheriting constructors"
     paper: P00136
     support:
       - GCC 7
@@ -135,12 +135,12 @@ features:
       - Xcode
     hints:
       - target: MSVC 19.14
-        msg: 'Not supported in C++14 mode.'
+        msg: "Not supported in C++14 mode."
     ftm:
       - name: __cpp_inheriting_constructors
         value: 201511L
 
-  - desc: 'Extension to aggregate initialization'
+  - desc: "Extension to aggregate initialization"
     paper: P0017
     support:
       - GCC 7
@@ -151,7 +151,7 @@ features:
       - name: __cpp_aggregate_bases
         value: 201603L
 
-  - desc: 'Folding expressions'
+  - desc: "Folding expressions"
     paper: N4295
     support:
       - GCC 6
@@ -162,7 +162,7 @@ features:
       - name: __cpp_fold_expressions
         value: 201603L
 
-  - desc: 'Lambda capture of `*this` by value as `[=, *this]`'
+  - desc: "Lambda capture of `*this` by value as `[=, *this]`"
     paper: P0018
     support:
       - GCC 7
@@ -170,7 +170,7 @@ features:
       - MSVC 19.11
       - Xcode
 
-  - desc: 'Construction rules for `enum class` values'
+  - desc: "Construction rules for `enum class` values"
     paper: P0138
     support:
       - GCC 7
@@ -178,7 +178,7 @@ features:
       - MSVC 19.11
       - Xcode
 
-  - desc: '`constexpr` lambdas'
+  - desc: "`constexpr` lambdas"
     paper: P0170
     support:
       - GCC 7
@@ -189,7 +189,7 @@ features:
       - name: __cpp_constexpr
         value: 201603L
 
-  - desc: 'Generalizing the range-based `for` loop'
+  - desc: "Generalizing the range-based `for` loop"
     paper: P0184
     support:
       - GCC 6
@@ -200,7 +200,7 @@ features:
       - name: __cpp_range_based_for
         value: 201603L
 
-  - desc: 'Attribute `[[fallthrough]]`'
+  - desc: "Attribute `[[fallthrough]]`"
     paper: P0188
     support:
       - GCC 7
@@ -208,7 +208,7 @@ features:
       - MSVC 19.10
       - Xcode
 
-  - desc: 'Attribute `[[nodiscard]]`'
+  - desc: "Attribute `[[nodiscard]]`"
     paper: P0189
     support:
       - GCC 7
@@ -216,7 +216,7 @@ features:
       - MSVC 19.11
       - Xcode
 
-  - desc: 'Attribute `[[maybe_unused]]`'
+  - desc: "Attribute `[[maybe_unused]]`"
     paper: P0212
     support:
       - GCC 7
@@ -224,7 +224,7 @@ features:
       - MSVC 19.11
       - Xcode
 
-  - desc: 'Hexadecimal floating literals'
+  - desc: "Hexadecimal floating literals"
     paper: P0245
     support:
       - GCC 3
@@ -235,7 +235,7 @@ features:
       - name: __cpp_hex_float
         value: 201603L
 
-  - desc: 'Using attribute namespaces without repetition'
+  - desc: "Using attribute namespaces without repetition"
     paper: P0028
     support:
       - GCC 7
@@ -243,7 +243,7 @@ features:
       - MSVC 19.11
       - Xcode
 
-  - desc: 'Dynamic memory allocation for over-aligned data'
+  - desc: "Dynamic memory allocation for over-aligned data"
     paper: P0035
     support:
       - GCC 7
@@ -254,7 +254,7 @@ features:
       - name: __cpp_aligned_new
         value: 201606L
 
-  - desc: 'Declaring non-type template parameters with `auto`'
+  - desc: "Declaring non-type template parameters with `auto`"
     paper: P0127
     support:
       - GCC 7
@@ -265,7 +265,7 @@ features:
       - name: __cpp_nontype_template_parameter_auto
         value: 201606L
 
-  - desc: 'Guaranteed copy elision'
+  - desc: "Guaranteed copy elision"
     paper: P0135
     support:
       - GCC 7
@@ -276,7 +276,7 @@ features:
       - name: __cpp_guaranteed_copy_elision
         value: 201606L
 
-  - desc: 'Replacement of class objects containing reference members'
+  - desc: "Replacement of class objects containing reference members"
     paper: P0137
     support:
       - GCC 7
@@ -284,7 +284,7 @@ features:
       - MSVC 19.14
       - Xcode
 
-  - desc: 'Refining expression evaluation order for idiomatic C++'
+  - desc: "Refining expression evaluation order for idiomatic C++"
     paper: P0145
     support:
       - GCC 7
@@ -292,7 +292,7 @@ features:
       - MSVC 19.14
       - Xcode
 
-  - desc: 'Proposed wording for structured bindings'
+  - desc: "Proposed wording for structured bindings"
     paper: P0217
     support:
       - GCC 7
@@ -303,7 +303,7 @@ features:
       - name: __cpp_structured_bindings
         value: 201606L
 
-  - desc: 'Standard and non-standard attributes (ignoring unknown attributes)'
+  - desc: "Standard and non-standard attributes (ignoring unknown attributes)"
     paper: P0283
     support:
       - GCC
@@ -311,7 +311,7 @@ features:
       - MSVC 19.0
       - Xcode
 
-  - desc: '`constexpr if` statements'
+  - desc: "`constexpr if` statements"
     paper: P0292
     support:
       - GCC 7
@@ -322,7 +322,7 @@ features:
       - name: __cpp_if_constexpr
         value: 201606L
 
-  - desc: 'Init-statements for `if` and `switch`'
+  - desc: "Init-statements for `if` and `switch`"
     paper: P0305
     support:
       - GCC 7
@@ -330,7 +330,7 @@ features:
       - MSVC 19.11
       - Xcode
 
-  - desc: '`inline` variables'
+  - desc: "`inline` variables"
     paper: P0386
     support:
       - GCC 7
@@ -341,7 +341,7 @@ features:
       - name: __cpp_inline_variables
         value: 201606L
 
-  - desc: 'Removing deprecated exception specifications from C++17'
+  - desc: "Removing deprecated exception specifications from C++17"
     paper: P0003
     support:
       - GCC 7
@@ -349,7 +349,7 @@ features:
       - MSVC 19.12
       - Xcode
 
-  - desc: 'Pack expansions in `using`-declarations'
+  - desc: "Pack expansions in `using`-declarations"
     paper: P0195
     support:
       - GCC 7
@@ -360,7 +360,7 @@ features:
       - name: __cpp_variadic_using
         value: 201611L
 
-  - desc: 'Matching of `template` template-arguments excludes compatible templates'
+  - desc: "Matching of `template` template-arguments excludes compatible templates"
     paper: P0522
     support:
       - GCC 7
@@ -382,7 +382,7 @@ features:
       - name: __cpp_deduction_guides
         value: 201703L
 
-  - desc: '`std::void_t`'
+  - desc: "`std::void_t`"
     paper: N3911
     lib: true
     support:
@@ -394,7 +394,7 @@ features:
       - name: __cpp_lib_void_t
         value: 201411L
 
-  - desc: '`std::uncaught_exceptions()`'
+  - desc: "`std::uncaught_exceptions()`"
     paper: N4259
     lib: true
     support:
@@ -406,7 +406,7 @@ features:
       - name: __cpp_lib_uncaught_exceptions
         value: 201411L
 
-  - desc: '`std::size()`, `std::empty()` and `std::data()`'
+  - desc: "`std::size()`, `std::empty()` and `std::data()`"
     paper: N4280
     lib: true
     support:
@@ -418,7 +418,7 @@ features:
       - name: __cpp_lib_nonmember_container_access
         value: 201411L
 
-  - desc: 'Cleaning‐up `noexcept` in the library'
+  - desc: "Cleaning‐up `noexcept` in the library"
     paper: N4258
     lib: true
     support:
@@ -430,7 +430,7 @@ features:
       - name: __cpp_lib_allocator_traits_is_always_equal
         value: 201411L
 
-  - desc: '`std::invoke()`'
+  - desc: "`std::invoke()`"
     paper: N4169
     lib: true
     support:
@@ -442,7 +442,7 @@ features:
       - name: __cpp_lib_invoke
         value: 201411L
 
-  - desc: '`try_emplace()` and `insert_or_assign()` for `std::map` and `std::unordered_map`'
+  - desc: "`try_emplace()` and `insert_or_assign()` for `std::map` and `std::unordered_map`"
     paper: N4279
     lib: true
     support:
@@ -453,12 +453,12 @@ features:
     ftm:
       - name: __cpp_lib_map_try_emplace
         value: 201411L
-        desc: '`std::map::try_emplace()` and `std::map::insert_or_assign()`'
+        desc: "`std::map::try_emplace()` and `std::map::insert_or_assign()`"
       - name: __cpp_lib_unordered_map_try_emplace
         value: 201411L
-        desc: '`std::unordered_map::try_emplace()` and `std::unordered_map::insert_or_assign()`'
+        desc: "`std::unordered_map::try_emplace()` and `std::unordered_map::insert_or_assign()`"
 
-  - desc: 'Improving `std::pair` and `std::tuple`'
+  - desc: "Improving `std::pair` and `std::tuple`"
     paper: N4387
     lib: true
     support:
@@ -467,7 +467,7 @@ features:
       - MSVC 19.0
       - Xcode
 
-  - desc: '`std::bool_constant`'
+  - desc: "`std::bool_constant`"
     paper: N4389
     lib: true
     support:
@@ -479,7 +479,7 @@ features:
       - name: __cpp_lib_bool_constant
         value: 201505L
 
-  - desc: '`std::shared_mutex`'
+  - desc: "`std::shared_mutex`"
     paper: N4508
     lib: true
     support:
@@ -491,7 +491,7 @@ features:
       - name: __cpp_lib_shared_mutex
         value: 201505L
 
-  - desc: 'Minimal incomplete type support for `std::forward_list`, `std::list` and `std::vector`'
+  - desc: "Minimal incomplete type support for `std::forward_list`, `std::list` and `std::vector`"
     paper: N4510
     lib: true
     support:
@@ -503,7 +503,7 @@ features:
       - name: __cpp_lib_incomplete_container_elements
         value: 201505L
 
-  - desc: 'Adopt type traits variable templates from library fundamentals TS for C++17'
+  - desc: "Adopt type traits variable templates from library fundamentals TS for C++17"
     paper: P0006
     lib: true
     support:
@@ -515,7 +515,7 @@ features:
       - name: __cpp_lib_type_trait_variable_templates
         value: 201510L
 
-  - desc: 'Logical operator type traits'
+  - desc: "Logical operator type traits"
     paper: P0013
     lib: true
     support:
@@ -527,7 +527,7 @@ features:
       - name: __cpp_lib_logical_traits
         value: 201510L
 
-  - desc: 'Constant View: A proposal for a `std::as_const()` helper function template'
+  - desc: "Constant View: A proposal for a `std::as_const()` helper function template"
     paper: P0007
     lib: true
     support:
@@ -536,7 +536,7 @@ features:
       - MSVC 19.0
       - Xcode
 
-  - desc: 'Rounding functions for `chrono::duration` and `chrono::time_point`'
+  - desc: "Rounding functions for `chrono::duration` and `chrono::time_point`"
     paper: P0092
     lib: true
     support:
@@ -548,7 +548,7 @@ features:
       - name: __cpp_lib_chrono
         value: 201510L
 
-  - desc: 'Making `std::owner_less` more flexible (`std::owner_less<void>`)'
+  - desc: "Making `std::owner_less` more flexible (`std::owner_less<void>`)"
     paper: P0074
     lib: true
     support:
@@ -560,7 +560,7 @@ features:
       - name: __cpp_lib_transparent_operators
         value: 201510L
 
-  - desc: '`std::not_fn`'
+  - desc: "`std::not_fn`"
     paper:
       - P0005
       - P0358
@@ -574,7 +574,7 @@ features:
       - name: __cpp_lib_not_fn
         value: 201603L
 
-  - desc: 'The parallelism TS should be standardized (parallel algorithms)'
+  - desc: "The parallelism TS should be standardized (parallel algorithms)"
     paper: P0024
     lib: true
     support:
@@ -587,7 +587,7 @@ features:
       - name: __cpp_lib_parallel_algorithm
         value: 201603L
 
-  - desc: '`std::clamp()`'
+  - desc: "`std::clamp()`"
     paper: P0025
     lib: true
     support:
@@ -599,7 +599,7 @@ features:
       - name: __cpp_lib_clamp
         value: 201603L
 
-  - desc: '(`nothrow`-)swappable traits'
+  - desc: "(`nothrow`-)swappable traits"
     paper: P0185
     lib: true
     support:
@@ -611,7 +611,7 @@ features:
       - name: __cpp_lib_is_swappable
         value: 201603L
 
-  - desc: 'Polymorphic memory resources'
+  - desc: "Polymorphic memory resources"
     paper: P0220
     lib: true
     support:
@@ -623,7 +623,7 @@ features:
       - name: __cpp_lib_memory_resource
         value: 201603L
 
-  - desc: '[Searchers](https://en.cppreference.com/w/cpp/functional.html#Searchers), `std::apply()` and `std::sample()`'
+  - desc: "[Searchers](https://en.cppreference.com/w/cpp/functional.html#Searchers), `std::apply()` and `std::sample()`"
     paper: P0220
     lib: true
     support:
@@ -634,15 +634,15 @@ features:
     ftm:
       - name: __cpp_lib_apply
         value: 201603L
-        desc: 'std::apply()'
+        desc: "std::apply()"
       - name: __cpp_lib_boyer_moore_searcher
         value: 201603L
-        desc: 'Searchers'
+        desc: "Searchers"
       - name: __cpp_lib_sample
         value: 201603L
-        desc: 'std::sample()'
+        desc: "std::sample()"
 
-  - desc: '[Mathematical special functions](https://en.cppreference.com/w/cpp/numeric/special_math.html)'
+  - desc: "[Mathematical special functions](https://en.cppreference.com/w/cpp/numeric/special_math.html)"
     paper: P0226
     lib: true
     support:
@@ -652,7 +652,7 @@ features:
       - name: __cpp_lib_math_special_functions
         value: 201603L
 
-  - desc: '`constexpr` `std::addressof()`'
+  - desc: "`constexpr` `std::addressof()`"
     paper: LWG2296
     lib: true
     support:
@@ -662,12 +662,12 @@ features:
       - Xcode 15 (hint)
     hints:
       - target: Xcode 15
-        msg: 'Supported, but the feature-testing macro (`__cpp_lib_addressof_constexpr`) is not set.'
+        msg: "Supported, but the feature-testing macro (`__cpp_lib_addressof_constexpr`) is not set."
     ftm:
       - name: __cpp_lib_addressof_constexpr
         value: 201603L
 
-  - desc: '`constexpr` for `std::reverse_iterator`, `std::move_iterator`, `std::array` and range access'
+  - desc: "`constexpr` for `std::reverse_iterator`, `std::move_iterator`, `std::array` and range access"
     paper: P0031
     lib: true
     support:
@@ -679,7 +679,7 @@ features:
       - name: __cpp_lib_array_constexpr
         value: 201603L
 
-  - desc: '`constexpr` `std::atomic::is_always_lock_free()`'
+  - desc: "`constexpr` `std::atomic::is_always_lock_free()`"
     paper: P0152
     lib: true
     support:
@@ -691,7 +691,7 @@ features:
       - name: __cpp_lib_atomic_is_always_lock_free
         value: 201603L
 
-  - desc: '`std::enable_shared_from_this::weak_from_this()`'
+  - desc: "`std::enable_shared_from_this::weak_from_this()`"
     paper: P0033
     lib: true
     support:
@@ -703,7 +703,7 @@ features:
       - name: __cpp_lib_enable_shared_from_this
         value: 201603L
 
-  - desc: '3-argument overload of `std::hypot()`'
+  - desc: "3-argument overload of `std::hypot()`"
     paper: P0030
     lib: true
     support:
@@ -715,7 +715,7 @@ features:
       - name: __cpp_lib_hypot
         value: 201603L
 
-  - desc: '`std::byte`'
+  - desc: "`std::byte`"
     paper: P0298
     lib: true
     support:
@@ -727,7 +727,7 @@ features:
       - name: __cpp_lib_byte
         value: 201603L
 
-  - desc: '`std::string_view`'
+  - desc: "`std::string_view`"
     paper:
       - N3921
       - P0220
@@ -743,7 +743,7 @@ features:
       - name: __cpp_lib_string_view
         value: 201606L
 
-  - desc: '`std::any`'
+  - desc: "`std::any`"
     paper:
       - P0220
       - P0032
@@ -757,7 +757,7 @@ features:
       - name: __cpp_lib_any
         value: 201606L
 
-  - desc: '`std::optional`'
+  - desc: "`std::optional`"
     paper: P0220
     lib: true
     support:
@@ -769,7 +769,7 @@ features:
       - name: __cpp_lib_optional
         value: 201606L
 
-  - desc: 'C++17 should refer to C11 instead of C99'
+  - desc: "C++17 should refer to C11 instead of C99"
     paper: P0063
     lib: true
     support:
@@ -779,7 +779,7 @@ features:
       - MSVC 19.28
       - Xcode 10
 
-  - desc: 'Splicing maps and sets (`std::map::extract()`, `std::map::merge()` etc)'
+  - desc: "Splicing maps and sets (`std::map::extract()`, `std::map::merge()` etc)"
     paper: P0083
     lib: true
     support:
@@ -791,7 +791,7 @@ features:
       - name: __cpp_lib_node_extract
         value: 201606L
 
-  - desc: '`emplace()` return type in containers (instead of `void`)'
+  - desc: "`emplace()` return type in containers (instead of `void`)"
     paper: P0084
     lib: true
     support:
@@ -800,7 +800,7 @@ features:
       - MSVC 19.11
       - Xcode
 
-  - desc: '`std::variant`'
+  - desc: "`std::variant`"
     paper: P0088
     lib: true
     support:
@@ -812,7 +812,7 @@ features:
       - name: __cpp_lib_variant
         value: 201606L
 
-  - desc: '`std::make_from_tuple()`'
+  - desc: "`std::make_from_tuple()`"
     paper: P0209
     lib: true
     support:
@@ -824,7 +824,7 @@ features:
       - name: __cpp_lib_make_from_tuple
         value: 201606L
 
-  - desc: '`std::has_unique_object_representations`'
+  - desc: "`std::has_unique_object_representations`"
     paper: P0258
     lib: true
     support:
@@ -836,7 +836,7 @@ features:
       - name: __cpp_lib_has_unique_object_representations
         value: 201606L
 
-  - desc: '`std::gcd()` and `std::lcm()`'
+  - desc: "`std::gcd()` and `std::lcm()`"
     paper: P0295
     lib: true
     support:
@@ -848,7 +848,7 @@ features:
       - name: __cpp_lib_gcd_lcm
         value: 201606L
 
-  - desc: 'Replacement of class objects containing reference members (`std::launder()`)'
+  - desc: "Replacement of class objects containing reference members (`std::launder()`)"
     paper: P0137
     lib: true
     support:
@@ -860,8 +860,7 @@ features:
       - name: __cpp_lib_launder
         value: 201606L
 
-
-  - desc: '[Extending memory management tools](https://en.cppreference.com/w/cpp/memory.html#Uninitialized_storage)'
+  - desc: "[Extending memory management tools](https://en.cppreference.com/w/cpp/memory.html#Uninitialized_storage)"
     paper: P0040
     lib: true
     support:
@@ -872,7 +871,7 @@ features:
       - name: __cpp_lib_raw_memory_algorithms
         value: 201606L
 
-  - desc: '`std::shared_ptr::weak_type`'
+  - desc: "`std::shared_ptr::weak_type`"
     paper: P0163
     lib: true
     support:
@@ -884,7 +883,7 @@ features:
       - name: __cpp_lib_shared_ptr_weak_type
         value: 201606L
 
-  - desc: 'Elementary string conversions (`std::to_chars()` and `std::from_chars()`)'
+  - desc: "Elementary string conversions (`std::to_chars()` and `std::from_chars()`)"
     paper: P0067
     lib: true
     support:
@@ -900,26 +899,26 @@ features:
       - Xcode 10 (partial)
     hints:
       - target: GCC 8
-        msg: 'No support for floating-point types, only integer types.'
+        msg: "No support for floating-point types, only integer types."
       - target: Clang 7
-        msg: 'Adds `std::to_chars()` support for `float` and `double`.'
+        msg: "Adds `std::to_chars()` support for `float` and `double`."
       - target: Clang 14
-        msg: 'Adds `std::from_chars()` support for `float` and `double`.'
+        msg: "Adds `std::from_chars()` support for `float` and `double`."
       - target: Clang 20
-        msg: 'Support is complete except for `long double`.'
+        msg: "Support is complete except for `long double`."
       - target: MSVC 19.14
-        msg: 'No support for floating-point types, only integer types.'
+        msg: "No support for floating-point types, only integer types."
       - target: MSVC 19.15
-        msg: 'Adds `std::from_chars()` support for `float` and `double`.'
+        msg: "Adds `std::from_chars()` support for `float` and `double`."
       - target: MSVC 19.16
         msg: 'Adds shortest round-trip decimal overloads of floating-point `std::to_chars()`, e.g. `"%.8e"` and `"%.16e"`.'
       - target: Xcode 10
-        msg: 'No support for floating-point types, only integer types.'
+        msg: "No support for floating-point types, only integer types."
     ftm:
       - name: __cpp_lib_to_chars
         value: 201611L
 
-  - desc: '`std::shared_ptr` and `std::weak_ptr` with array support'
+  - desc: "`std::shared_ptr` and `std::weak_ptr` with array support"
     paper: P0414
     lib: true
     support:
@@ -928,7 +927,7 @@ features:
       - MSVC 19.12
       - Xcode 12
 
-  - desc: '`constexpr` for all member functions of `chrono::duration` and `chrono::time_point`'
+  - desc: "`constexpr` for all member functions of `chrono::duration` and `chrono::time_point`"
     paper: P0505
     lib: true
     support:
@@ -940,7 +939,7 @@ features:
       - name: __cpp_lib_chrono
         value: 201611L
 
-  - desc: '`std::shared_ptr<T[]>`'
+  - desc: "`std::shared_ptr<T[]>`"
     paper: P0497
     lib: true
     support:
@@ -950,12 +949,12 @@ features:
       - Xcode 15 (hint)
     hints:
       - target: Xcode 15
-        msg: 'Supported, but the feature-testing macro (`__cpp_lib_shared_ptr_arrays`) is not set.'
+        msg: "Supported, but the feature-testing macro (`__cpp_lib_shared_ptr_arrays`) is not set."
     ftm:
       - name: __cpp_lib_shared_ptr_arrays
         value: 201611L
 
-  - desc: '`constexpr` `std::char_traits`'
+  - desc: "`constexpr` `std::char_traits`"
     paper: P0426
     lib: true
     support:
@@ -967,7 +966,7 @@ features:
       - name: __cpp_lib_constexpr_string
         value: 201611L
 
-  - desc: '[File system library](https://en.cppreference.com/w/cpp/filesystem.html) (`std::filesystem`)'
+  - desc: "[File system library](https://en.cppreference.com/w/cpp/filesystem.html) (`std::filesystem`)"
     paper:
       - P0218
       - P0219
@@ -981,7 +980,7 @@ features:
       - name: __cpp_lib_filesystem
         value: 201703L
 
-  - desc: '[Hardware interference size](https://en.cppreference.com/w/cpp/thread/hardware_destructive_interference_size.html) (reading cache line size)'
+  - desc: "[Hardware interference size](https://en.cppreference.com/w/cpp/thread/hardware_destructive_interference_size.html) (reading cache line size)"
     paper: P0154
     lib: true
     support:
@@ -992,12 +991,12 @@ features:
       - Xcode 16.3 (hint)
     hints:
       - target: Xcode 16.3
-        msg: 'Supported, but the feature-testing macro (`__cpp_lib_hardware_interference_size`) is not set.'
+        msg: "Supported, but the feature-testing macro (`__cpp_lib_hardware_interference_size`) is not set."
     ftm:
       - name: __cpp_lib_hardware_interference_size
         value: 201703L
 
-  - desc: '`std::scoped_lock`'
+  - desc: "`std::scoped_lock`"
     paper: P0156
     lib: true
     support:
@@ -1009,7 +1008,7 @@ features:
       - name: __cpp_lib_scoped_lock
         value: 201703L
 
-  - desc: '`std::is_aggregate`'
+  - desc: "`std::is_aggregate`"
     paper: LWG2911
     lib: true
     support:
@@ -1021,7 +1020,7 @@ features:
       - name: __cpp_lib_is_aggregate
         value: 201703L
 
-  - desc: '`std::is_invocable` and `std::invoke_result`'
+  - desc: "`std::is_invocable` and `std::invoke_result`"
     paper: P0604
     lib: true
     support:
@@ -1033,7 +1032,7 @@ features:
       - name: __cpp_lib_is_invocable
         value: 201703L
 
-  - desc: '`std::hash<filesystem::path>`'
+  - desc: "`std::hash<filesystem::path>`"
     paper: LWG3657
     lib: true
     support:

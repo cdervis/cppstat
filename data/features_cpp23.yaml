@@ -1,6 +1,6 @@
 ---
 features:
-  - desc: 'Literal suffix for (signed) `size_t` (`uz/t`)'
+  - desc: "Literal suffix for (signed) `size_t` (`uz/t`)"
     paper: P0330
     support:
       - GCC 11
@@ -12,7 +12,7 @@ features:
         value: 202011L
     content: p0330_literal_suffix_size_t.md
 
-  - desc: '_Down with ()!_ (relax `()` rules for lambdas)'
+  - desc: "_Down with ()!_ (relax `()` rules for lambdas)"
     paper: P1102
     support:
       - GCC 11
@@ -20,7 +20,7 @@ features:
       - MSVC 19.44
       - Xcode 13.4.1
 
-  - desc: '`if consteval`'
+  - desc: "`if consteval`"
     paper: P1938
     support:
       - GCC 12
@@ -31,7 +31,7 @@ features:
       - name: __cpp_if_consteval
         value: 202106L
 
-  - desc: 'Removing garbage collection support'
+  - desc: "Removing garbage collection support"
     paper: P2186
     support:
       - GCC 12
@@ -44,7 +44,7 @@ features:
       - target: Xcode
         msg: "Not applicable to Xcode / Apple Clang."
 
-  - desc: 'Narrowing contextual conversions to `bool` (in `static_assert` and `constexpr if`)'
+  - desc: "Narrowing contextual conversions to `bool` (in `static_assert` and `constexpr if`)"
     paper: P1401
     support:
       - GCC 9
@@ -59,14 +59,14 @@ features:
       - target: MSVC 19.21
         msg: "Compiles, but emits a warning: warning C4305: 'if': truncation from 'int' to 'bool'"
 
-  - desc: 'Trimming whitespaces before line splicing'
+  - desc: "Trimming whitespaces before line splicing"
     paper: P2223
     support:
       - GCC
       - Clang
       - Xcode
 
-  - desc: 'Make declaration order layout mandated'
+  - desc: "Make declaration order layout mandated"
     paper: P1847
     support:
       - GCC
@@ -74,7 +74,7 @@ features:
       - MSVC 19.30
       - Xcode
 
-  - desc: 'Remove mixed wide string literal concatenation'
+  - desc: "Remove mixed wide string literal concatenation"
     paper: P2201
     support:
       - GCC
@@ -82,7 +82,7 @@ features:
       - MSVC
       - Xcode
 
-  - desc: 'Explicit object member functions (deducing `this`)'
+  - desc: "Explicit object member functions (deducing `this`)"
     paper: P0847
     support:
       - GCC 14
@@ -95,7 +95,7 @@ features:
       - name: __cpp_explicit_this_parameter
         value: 202110L
 
-  - desc: 'Proposed resolution for [CWG2692](https://wg21.link/CWG2692) static and explicit object member functions with the same parameter-type-lists'
+  - desc: "Proposed resolution for [CWG2692](https://wg21.link/CWG2692) static and explicit object member functions with the same parameter-type-lists"
     paper: P2797
     support:
       - GCC 14
@@ -103,7 +103,7 @@ features:
       - MSVC 19.50
       - Xcode 16.3
 
-  - desc: 'Decay-copy in the language (`auto(x)` and `auto{x}`)'
+  - desc: "Decay-copy in the language (`auto(x)` and `auto{x}`)"
     paper: P0849
     support:
       - GCC 12
@@ -114,7 +114,7 @@ features:
       - name: __cpp_auto_cast
         value: 202110L
 
-  - desc: 'Add support for preprocessing directives `#elifdef` and `#elifndef`'
+  - desc: "Add support for preprocessing directives `#elifdef` and `#elifndef`"
     paper: P2334
     support:
       - GCC 12
@@ -122,7 +122,7 @@ features:
       - MSVC 19.40
       - Xcode 13.4.1
 
-  - desc: 'Non-literal variables (and labels and gotos) in `constexpr` functions'
+  - desc: "Non-literal variables (and labels and gotos) in `constexpr` functions"
     paper: P2242
     support:
       - GCC 12
@@ -133,7 +133,7 @@ features:
       - name: __cpp_constexpr
         value: 202110L
 
-  - desc: 'Consistent character literal encoding'
+  - desc: "Consistent character literal encoding"
     paper: P2316
     support:
       - GCC
@@ -141,14 +141,14 @@ features:
       - MSVC 19.30
       - Xcode
 
-  - desc: 'Character sets and encodings'
+  - desc: "Character sets and encodings"
     paper: P2314
     support:
       - GCC 10
       - Clang
       - Xcode
 
-  - desc: 'Extend init-statement (of `for` loop) to allow alias-declaration'
+  - desc: "Extend init-statement (of `for` loop) to allow alias-declaration"
     paper: P2360
     support:
       - GCC 12
@@ -157,9 +157,9 @@ features:
       - Xcode 14
     hints:
       - target: MSVC 19.50
-        msg: 'Compiles, but no IntelliSense support yet.'
+        msg: "Compiles, but no IntelliSense support yet."
 
-  - desc: 'Multidimensional subscript operator (`operator[x, y]`)'
+  - desc: "Multidimensional subscript operator (`operator[x, y]`)"
     paper: P2128
     support:
       - GCC 12
@@ -170,7 +170,7 @@ features:
       - name: __cpp_multidimensional_subscript
         value: 202110L
 
-  - desc: 'Attributes on lambdas'
+  - desc: "Attributes on lambdas"
     paper: P2173
     support:
       - GCC 9
@@ -178,7 +178,7 @@ features:
       - MSVC 19.44
       - Xcode 13.4.1
 
-  - desc: '`#warning`'
+  - desc: "`#warning`"
     paper: P2437
     support:
       - GCC 13
@@ -186,21 +186,21 @@ features:
       - MSVC 19.50
       - Xcode 15
 
-  - desc: 'Remove non-encodable wide character literals and multicharacter wide character literals'
+  - desc: "Remove non-encodable wide character literals and multicharacter wide character literals"
     paper: P2362
     support:
       - GCC 13
       - Clang 14
       - Xcode 15
 
-  - desc: 'Labels at the end of compound statements'
+  - desc: "Labels at the end of compound statements"
     paper: P2324
     support:
       - GCC 13
       - Clang 16
       - Xcode 16
 
-  - desc: 'Delimited escape sequences'
+  - desc: "Delimited escape sequences"
     paper: P2290
     support:
       - GCC 13
@@ -208,7 +208,7 @@ features:
       - MSVC 19.50
       - Xcode 15
 
-  - desc: 'Named universal character escapes'
+  - desc: "Named universal character escapes"
     paper: P2071
     support:
       - GCC 13
@@ -218,7 +218,7 @@ features:
       - name: __cpp_named_character_escapes
         value: 202207L
 
-  - desc: 'Relaxing some `constexpr` restrictions'
+  - desc: "Relaxing some `constexpr` restrictions"
     paper: P2448
     support:
       - GCC 13
@@ -228,7 +228,7 @@ features:
       - name: __cpp_constexpr
         value: 202207L
 
-  - desc: 'Simpler implicit move'
+  - desc: "Simpler implicit move"
     paper: P2266
     support:
       - GCC 13
@@ -238,7 +238,7 @@ features:
       - name: __cpp_implicit_move
         value: 202207L
 
-  - desc: '`static operator()` (static call operator)'
+  - desc: "`static operator()` (static call operator)"
     paper: P1169
     support:
       - GCC 13
@@ -249,28 +249,28 @@ features:
       - name: __cpp_static_call_operator
         value: 202207L
 
-  - desc: 'Requirements for optional extended floating-point types'
+  - desc: "Requirements for optional extended floating-point types"
     paper: P1467
     support:
       - GCC 13
       - MSVC (hint)
     hints:
       - target: MSVC
-        msg: 'Not applicable to MSVC.'
+        msg: "Not applicable to MSVC."
 
-  - desc: 'Class template argument deduction from inherited constructors'
+  - desc: "Class template argument deduction from inherited constructors"
     paper: P2582
     support:
       - GCC 14
 
-  - desc: 'Attribute `[[assume]]`'
+  - desc: "Attribute `[[assume]]`"
     paper: P1774
     support:
       - GCC 13
       - Clang 19
       - Xcode 16.3
 
-  - desc: 'Support for UTF-8 as a portable source file encoding'
+  - desc: "Support for UTF-8 as a portable source file encoding"
     paper: P2295
     support:
       - GCC 13
@@ -278,7 +278,7 @@ features:
       - MSVC 19
       - Xcode 15
 
-  - desc: '`static operator[]`'
+  - desc: "`static operator[]`"
     paper: P2589
     support:
       - GCC 13
@@ -290,7 +290,7 @@ features:
         value: 202211L
     content: p2589_static_subscript_operator.md
 
-  - desc: 'Permitting static `constexpr` variables in `constexpr` functions'
+  - desc: "Permitting static `constexpr` variables in `constexpr` functions"
     paper: P2647
     support:
       - GCC 13
@@ -300,7 +300,7 @@ features:
       - name: __cpp_constexpr
         value: 202211L
 
-  - desc: 'Extending the lifetime of temporaries in range-based `for` loop initializer'
+  - desc: "Extending the lifetime of temporaries in range-based `for` loop initializer"
     paper:
       - P2644
       - P2718
@@ -312,10 +312,10 @@ features:
       - name: __cpp_range_based_for
         value: 202211L
 
-  - desc: 'Declarations and where to find them'
+  - desc: "Declarations and where to find them"
     paper: P1787
 
-  - desc: 'Change scope of lambda trailing-return-type'
+  - desc: "Change scope of lambda trailing-return-type"
     paper:
       - P2036
       - P2579
@@ -324,13 +324,13 @@ features:
       - Clang 17
       - Xcode 16.3
 
-  - desc: 'Meaningful exports'
+  - desc: "Meaningful exports"
     paper: P2615
     support:
       - GCC 15
       - Clang 17
 
-  - desc: '`consteval` needs to propagate up'
+  - desc: "`consteval` needs to propagate up"
     paper: P2564
     support:
       - GCC 14
@@ -340,21 +340,21 @@ features:
       - name: __cpp_consteval
         value: 202211L
 
-  - desc: 'C++ identifier syntax using Unicode Standard Annex 31'
+  - desc: "C++ identifier syntax using Unicode Standard Annex 31"
     paper: P1949
     support:
       - GCC 12
       - Clang 14
       - Xcode 14
 
-  - desc: 'Allow duplicate attributes'
+  - desc: "Allow duplicate attributes"
     paper: P2156
     support:
       - GCC 11
       - Clang 13
       - Xcode 13.4.1
 
-  - desc: 'Adjusting the value of feature-test macro `__cpp_concepts`'
+  - desc: "Adjusting the value of feature-test macro `__cpp_concepts`"
     paper: P2493
     support:
       - GCC 12
@@ -362,7 +362,7 @@ features:
       - MSVC 19.32
       - Xcode 16.4
 
-  - desc: 'Relax requirements on `wchar_t` to match existing practices'
+  - desc: "Relax requirements on `wchar_t` to match existing practices"
     paper: P2460
     support:
       - GCC
@@ -370,21 +370,21 @@ features:
       - MSVC
       - Xcode 15
 
-  - desc: 'Using unknown pointers and references in constant expressions'
+  - desc: "Using unknown pointers and references in constant expressions"
     paper: P2280
     support:
       - GCC 14
       - Clang 20
       - MSVC 19.50
 
-  - desc: 'The equality operator you are looking for'
+  - desc: "The equality operator you are looking for"
     paper: P2468
     support:
       - GCC 13
       - Clang 16
       - Xcode 16
 
-  - desc: '`char8_t` compatibility and portability fix'
+  - desc: "`char8_t` compatibility and portability fix"
     paper: P2513
     support:
       - GCC 13
@@ -395,7 +395,7 @@ features:
       - name: __cpp_char8_t
         value: 202207L
 
-  - desc: '`<stacktrace>`'
+  - desc: "`<stacktrace>`"
     paper: P0881
     lib: true
     support:
@@ -409,7 +409,7 @@ features:
       - name: __cpp_lib_stacktrace
         value: 202011L
 
-  - desc: 'Add a `pmr` alias for `std::stacktrace`'
+  - desc: "Add a `pmr` alias for `std::stacktrace`"
     paper: P2301
     lib: true
     support:
@@ -423,7 +423,7 @@ features:
       - name: __cpp_lib_stacktrace
         value: 202011L
 
-  - desc: '`<stdatomic.h>`'
+  - desc: "`<stdatomic.h>`"
     paper: P0943
     lib: true
     support:
@@ -435,7 +435,7 @@ features:
       - name: __cpp_lib_stdatomic_h
         value: 202011L
 
-  - desc: '`std::is_scoped_enum`'
+  - desc: "`std::is_scoped_enum`"
     paper: P1048
     lib: true
     support:
@@ -447,7 +447,7 @@ features:
       - name: __cpp_lib_is_scoped_enum
         value: 202011L
 
-  - desc: '`std::basic_string::contains()` and `std::basic_string_view::contains()`'
+  - desc: "`std::basic_string::contains()` and `std::basic_string_view::contains()`"
     paper: P1679
     lib: true
     support:
@@ -459,7 +459,7 @@ features:
       - name: __cpp_lib_string_contains
         value: 202011L
 
-  - desc: '`std::to_underlying()`'
+  - desc: "`std::to_underlying()`"
     paper: P1682
     lib: true
     support:
@@ -471,11 +471,11 @@ features:
       - name: __cpp_lib_to_underlying
         value: 202102L
 
-  - desc: 'Relaxing requirements for `chrono::time_point::clock`'
+  - desc: "Relaxing requirements for `chrono::time_point::clock`"
     paper: P2212
     lib: true
 
-  - desc: 'Providing size feedback in the Allocator interface'
+  - desc: "Providing size feedback in the Allocator interface"
     paper: P0401
     lib: true
     support:
@@ -486,7 +486,7 @@ features:
       - name: __cpp_lib_allocate_at_least
         value: 202302L
 
-  - desc: '`<spanstream>`: stringstream with `std::span`-based buffer'
+  - desc: "`<spanstream>`: stringstream with `std::span`-based buffer"
     paper: P0448
     lib: true
     support:
@@ -496,7 +496,7 @@ features:
       - name: __cpp_lib_spanstream
         value: 202106L
 
-  - desc: '`std::out_ptr()` and `std::inout_ptr()`'
+  - desc: "`std::out_ptr()` and `std::inout_ptr()`"
     paper: P1132
     lib: true
     support:
@@ -508,7 +508,7 @@ features:
       - name: __cpp_lib_out_ptr
         value: 202106L
 
-  - desc: '`constexpr` `std::type_info::operator==()`'
+  - desc: "`constexpr` `std::type_info::operator==()`"
     paper: P1328
     lib: true
     support:
@@ -521,7 +521,7 @@ features:
       - name: __cpp_lib_constexpr_typeinfo
         value: 202106L
 
-  - desc: 'Iterator pair constructors for `std::stack` and `std::queue`'
+  - desc: "Iterator pair constructors for `std::stack` and `std::queue`"
     paper: P1425
     lib: true
     support:
@@ -533,7 +533,7 @@ features:
       - name: __cpp_lib_adaptor_iterator_pair_constructor
         value: 202106L
 
-  - desc: 'Non-deduction context for allocators in container deduction guides'
+  - desc: "Non-deduction context for allocators in container deduction guides"
     paper: P1518
     lib: true
     support:
@@ -542,7 +542,7 @@ features:
       - MSVC 19.31
       - Xcode 13.4.1
 
-  - desc: '`ranges::starts_with()` and `ranges::ends_with()`'
+  - desc: "`ranges::starts_with()` and `ranges::ends_with()`"
     paper: P1659
     lib: true
     support:
@@ -553,12 +553,12 @@ features:
       - Xcode 16
     hints:
       - target: Clang 17
-        msg: 'Implements `std::ranges::starts_with()` only.'
+        msg: "Implements `std::ranges::starts_with()` only."
     ftm:
       - name: __cpp_lib_ranges_starts_ends_with
         value: 202106L
 
-  - desc: 'Prohibiting `std::basic_string` and `std::basic_string_view` construction from `nullptr`'
+  - desc: "Prohibiting `std::basic_string` and `std::basic_string_view` construction from `nullptr`"
     paper: P2166
     lib: true
     support:
@@ -567,7 +567,7 @@ features:
       - MSVC 19.30
       - Xcode 13.4.1
 
-  - desc: '`std::invoke_r()`'
+  - desc: "`std::invoke_r()`"
     paper: P2136
     lib: true
     support:
@@ -579,7 +579,7 @@ features:
       - name: __cpp_lib_invoke_r
         value: 202106L
 
-  - desc: 'Range constructor for `std::basic_string_view`'
+  - desc: "Range constructor for `std::basic_string_view`"
     paper: P1989
     lib: true
     support:
@@ -597,7 +597,7 @@ features:
       - MSVC 19.30
       - Xcode 14.3
 
-  - desc: 'Remove garbage collection and reachability-based leak detection (library support)'
+  - desc: "Remove garbage collection and reachability-based leak detection (library support)"
     paper: P2186
     lib: true
     support:
@@ -606,7 +606,7 @@ features:
       - MSVC 19.30
       - Xcode 14.3
 
-  - desc: 'zip: `views::zip()`, `views::zip_transform()`, `views::adjacent()` and `views::adjacent_transform()`'
+  - desc: "zip: `views::zip()`, `views::zip_transform()`, `views::adjacent()` and `views::adjacent_transform()`"
     paper: P2321
     lib: true
     support:
@@ -616,12 +616,12 @@ features:
       - Xcode 14.3
     hints:
       - target: Clang 15
-        msg: 'Only implements tuple specializations and `views::zip()`.'
+        msg: "Only implements tuple specializations and `views::zip()`."
     ftm:
       - name: __cpp_lib_ranges_zip
         value: 202110L
 
-  - desc: 'Heterogeneous erasure overloads for associative containers'
+  - desc: "Heterogeneous erasure overloads for associative containers"
     paper: P2077
     lib: true
     support:
@@ -630,7 +630,7 @@ features:
       - name: __cpp_lib_associative_heterogeneous_erasure
         value: 202110L
 
-  - desc: '`std::byteswap()`'
+  - desc: "`std::byteswap()`"
     paper: P1272
     lib: true
     support:
@@ -642,7 +642,7 @@ features:
       - name: __cpp_lib_byteswap
         value: 202110L
 
-  - desc: 'Printing volatile `T*`'
+  - desc: "Printing volatile `T*`"
     paper: P1147
     lib: true
     support:
@@ -651,7 +651,7 @@ features:
       - MSVC 19.31
       - Xcode 14.3
 
-  - desc: '`std::basic_string::resize_and_overwrite()`'
+  - desc: "`std::basic_string::resize_and_overwrite()`"
     paper: P1072
     lib: true
     support:
@@ -663,7 +663,7 @@ features:
       - name: __cpp_lib_string_resize_and_overwrite
         value: 202110L
 
-  - desc: 'Monadic operations for `std::optional` (`and_then()`, `or_else()`, `transform()`)'
+  - desc: "Monadic operations for `std::optional` (`and_then()`, `or_else()`, `transform()`)"
     paper: P0798
     lib: true
     support:
@@ -675,7 +675,7 @@ features:
       - name: __cpp_lib_optional
         value: 202110L
 
-  - desc: '`std::move_only_function`'
+  - desc: "`std::move_only_function`"
     paper: P0288
     lib: true
     support:
@@ -685,7 +685,7 @@ features:
       - name: __cpp_lib_move_only_function
         value: 202110L
 
-  - desc: 'Add a conditional `noexcept` specification to `std::exchange()`'
+  - desc: "Add a conditional `noexcept` specification to `std::exchange()`"
     paper: P2401
     lib: true
     support:
@@ -694,7 +694,7 @@ features:
       - MSVC 19.25
       - Xcode 14.3
 
-  - desc: 'Require `std::span` and `std::basic_string_view` to be [TriviallyCopyable](https://en.cppreference.com/w/cpp/named_req/TriviallyCopyable)'
+  - desc: "Require `std::span` and `std::basic_string_view` to be [TriviallyCopyable](https://en.cppreference.com/w/cpp/named_req/TriviallyCopyable)"
     paper: P2251
     lib: true
     support:
@@ -712,7 +712,7 @@ features:
       - MSVC
       - Xcode
 
-  - desc: '`std::expected` (`<expected>`)'
+  - desc: "`std::expected` (`<expected>`)"
     paper:
       - P0323
       - P2549
@@ -726,14 +726,14 @@ features:
       - name: __cpp_lib_expected
         value: 202202L
 
-  - desc: '`constexpr` for `<cmath>` and `<cstdlib>`'
+  - desc: "`constexpr` for `<cmath>` and `<cstdlib>`"
     paper: P0533
     lib: true
     ftm:
       - name: __cpp_lib_constexpr_cmath
         value: 202202L
 
-  - desc: '`std::unreachable()`'
+  - desc: "`std::unreachable()`"
     paper: P0627
     lib: true
     support:
@@ -745,7 +745,7 @@ features:
       - name: __cpp_lib_unreachable
         value: 202202L
 
-  - desc: 'Deprecating `std::aligned_storage` and `std::aligned_union`'
+  - desc: "Deprecating `std::aligned_storage` and `std::aligned_union`"
     paper: P1413
     lib: true
     support:
@@ -754,7 +754,7 @@ features:
       - MSVC 19.33
       - Xcode 16.1
 
-  - desc: '`std::reference_constructs_from_temporary` and `std::reference_converts_from_temporary`'
+  - desc: "`std::reference_constructs_from_temporary` and `std::reference_converts_from_temporary`"
     paper: P2255
     lib: true
     support:
@@ -765,16 +765,16 @@ features:
       - Xcode 16.3
     hints:
       - target: GCC 13
-        msg: 'Missing changes to `std::tuple`.'
+        msg: "Missing changes to `std::tuple`."
       - target: Clang 21
-        msg: 'Only type traits are implemented.'
+        msg: "Only type traits are implemented."
       - target: MSVC 19.50
-        msg: 'Currently only supported by the STL in conjunction with Clang.'
+        msg: "Currently only supported by the STL in conjunction with Clang."
     ftm:
       - name: __cpp_lib_reference_from_temporary
         value: 202202L
 
-  - desc: '`constexpr` `std::unique_ptr`'
+  - desc: "`constexpr` `std::unique_ptr`"
     paper: P2273
     lib: true
     support:
@@ -786,7 +786,7 @@ features:
       - name: __cpp_lib_constexpr_memory
         value: 202202L
 
-  - desc: 'Constructing containers and strings from ranges with `ranges::to()`, tagged constructors, insert and assign member functions'
+  - desc: "Constructing containers and strings from ranges with `ranges::to()`, tagged constructors, insert and assign member functions"
     paper: P1206
     lib: true
     support:
@@ -801,7 +801,7 @@ features:
       - name: __cpp_lib_ranges_to_container
         value: 202202L
 
-  - desc: 'Pipe support for user-defined range adaptors (`ranges::range_adaptor_closure` and `std::bind_back()`)'
+  - desc: "Pipe support for user-defined range adaptors (`ranges::range_adaptor_closure` and `std::bind_back()`)"
     paper: P2387
     lib: true
     support:
@@ -816,7 +816,7 @@ features:
       - name: __cpp_lib_ranges
         value: 202202L
 
-  - desc: '`ranges::iota()`, `ranges::shift_left()` and `ranges::shift_right()`'
+  - desc: "`ranges::iota()`, `ranges::shift_left()` and `ranges::shift_right()`"
     paper: P2440
     lib: true
     support:
@@ -825,16 +825,16 @@ features:
       - Clang 21 (partial)
     hints:
       - target: GCC 13
-        msg: 'Only `ranges::iota()1 is implemented.'
+        msg: "Only `ranges::iota()1 is implemented."
       - target: Clang 21
-        msg: 'Only `ranges::iota()` is implemented. ([GitHub PR](https://github.com/llvm/llvm-project/pull/68494))'
+        msg: "Only `ranges::iota()` is implemented. ([GitHub PR](https://github.com/llvm/llvm-project/pull/68494))"
     ftm:
       - name: __cpp_lib_ranges_iota
         value: 202202L
       - name: __cpp_lib_shift
         value: 202202L
 
-  - desc: '`views::join_with()`'
+  - desc: "`views::join_with()`"
     paper: P2441
     lib: true
     support:
@@ -845,7 +845,7 @@ features:
       - name: __cpp_lib_ranges_join_with
         value: 202202L
 
-  - desc: '`views::chunk()` and `views::slide()`'
+  - desc: "`views::chunk()` and `views::slide()`"
     paper: P2442
     lib: true
     support:
@@ -857,7 +857,7 @@ features:
       - name: __cpp_lib_ranges_slide
         value: 202202L
 
-  - desc: '`views::chunk_by()`'
+  - desc: "`views::chunk_by()`"
     paper: P2443
     lib: true
     support:
@@ -869,7 +869,7 @@ features:
       - name: __cpp_lib_ranges_chunk_by
         value: 202202L
 
-  - desc: '`std::mdspan`: a non-owning multidimensional array reference (`<mdspan>`)'
+  - desc: "`std::mdspan`: a non-owning multidimensional array reference (`<mdspan>`)"
     paper:
       - P0009
       - P2599
@@ -886,20 +886,20 @@ features:
       - name: __cpp_lib_mdspan
         value: 202207L
 
-  - desc: 'Referencing the Unicode Standard'
+  - desc: "Referencing the Unicode Standard"
     paper: P2736
     lib: true
     support:
       - Clang 19
       - Xcode 16
 
-  - desc: 'De-deprecating volatile compound operations.'
+  - desc: "De-deprecating volatile compound operations."
     paper: P2327
     lib: true
     support:
       - Xcode 15
 
-  - desc: '`std::flat_map` (`<flat_map>`)'
+  - desc: "`std::flat_map` (`<flat_map>`)"
     paper: P0429
     lib: true
     support:
@@ -910,7 +910,7 @@ features:
       - name: __cpp_lib_flat_map
         value: 202207L
 
-  - desc: '`std::flat_set` (`<flat_set>`)'
+  - desc: "`std::flat_set` (`<flat_set>`)"
     paper: P1222
     lib: true
     support:
@@ -920,7 +920,7 @@ features:
       - name: __cpp_lib_flat_set
         value: 202207L
 
-  - desc: '`ranges::find_last()`, `ranges::find_last_if()` and `ranges::find_last_if_not()`'
+  - desc: "`ranges::find_last()`, `ranges::find_last_if()` and `ranges::find_last_if_not()`"
     paper: P1223
     lib: true
     support:
@@ -932,13 +932,13 @@ features:
       - name: __cpp_lib_ranges_find_last
         value: 202207L
 
-  - desc: 'Freestanding library: Easy `<utility>`, `<ranges>` and `<iterator>`'
+  - desc: "Freestanding library: Easy `<utility>`, `<ranges>` and `<iterator>`"
     paper: P1642
     lib: true
     support:
       - GCC 13
 
-  - desc: '`ranges::stride_view` and `views::stride()`'
+  - desc: "`ranges::stride_view` and `views::stride()`"
     paper: P1899
     lib: true
     support:
@@ -948,7 +948,7 @@ features:
       - name: __cpp_lib_ranges_stride
         value: 202207L
 
-  - desc: 'Compatibility between `std::tuple` and tuple-like objects'
+  - desc: "Compatibility between `std::tuple` and tuple-like objects"
     paper: P2165
     lib: true
     support:
@@ -959,16 +959,16 @@ features:
       - Xcode (partial)
     hints:
       - target: Clang 2.9
-        msg: 'Changes of `tuple`, `adjacent_view`, and `cartesian_product_view` are not yet implemented.'
+        msg: "Changes of `tuple`, `adjacent_view`, and `cartesian_product_view` are not yet implemented."
       - target: MSVC 19.36
-        msg: 'Implemented for `std::pair`.'
+        msg: "Implemented for `std::pair`."
       - target: Xcode
-        msg: 'Only the part for `zip_view` is implemented.'
+        msg: "Only the part for `zip_view` is implemented."
     ftm:
       - name: __cpp_lib_tuple_like
         value: 202207L
 
-  - desc: 'Rectifying constant iterators, sentinels and ranges (`views::as_const()`)'
+  - desc: "Rectifying constant iterators, sentinels and ranges (`views::as_const()`)"
     paper: P2278
     lib: true
     support:
@@ -982,7 +982,7 @@ features:
       - name: __cpp_lib_ranges_as_const
         value: 202207L
 
-  - desc: 'Formatting ranges'
+  - desc: "Formatting ranges"
     paper: P2286
     lib: true
     support:
@@ -996,18 +996,18 @@ features:
       - Xcode 15
     hints:
       - target: GCC 15
-        msg: 'Missing formatter specializations for `queue`, `stack`, and `priority_queue`.'
+        msg: "Missing formatter specializations for `queue`, `stack`, and `priority_queue`."
       - target: MSVC 19.37
-        msg: '2022.7: Implemented the `?` format specifier for strings and characters.'
+        msg: "2022.7: Implemented the `?` format specifier for strings and characters."
       - target: MSVC 19.39
-        msg: '2022.9: Implemented `formatter::set_debug_format()`, `formattable`, `range_format`, and `format_kind`.'
+        msg: "2022.9: Implemented `formatter::set_debug_format()`, `formattable`, `range_format`, and `format_kind`."
       - target: MSVC 19.41
-        msg: '2022.11: Implemented formatter for `std::pair` and `std::tuple`. Also `range_formatter`.'
+        msg: "2022.11: Implemented formatter for `std::pair` and `std::tuple`. Also `range_formatter`."
     ftm:
       - name: __cpp_lib_format_ranges
         value: 202207L
 
-  - desc: 'Improve default container formatting'
+  - desc: "Improve default container formatting"
     paper: P2585
     lib: true
     support:
@@ -1017,12 +1017,12 @@ features:
       - Xcode 15
     hints:
       - target: Clang 16
-        msg: 'Specializations for string and debug_string are not done.'
+        msg: "Specializations for string and debug_string are not done."
     ftm:
       - name: __cpp_lib_format_ranges
         value: 202207L
 
-  - desc: 'Formatted output library (`<print>`)'
+  - desc: "Formatted output library (`<print>`)"
     paper:
       - P2093
       - P2539
@@ -1036,14 +1036,14 @@ features:
       - Xcode 16
     hints:
       - target: Clang 17
-        msg: 'Overloads for `std::ostream` are not implemented.'
+        msg: "Overloads for `std::ostream` are not implemented."
       - target: Xcode 15
-        msg: 'Overloads for `std::ostream` are not implemented.'
+        msg: "Overloads for `std::ostream` are not implemented."
     ftm:
       - name: __cpp_lib_print
         value: 202207L
 
-  - desc: 'Formatting `std::thread::id` and `std::stacktrace`'
+  - desc: "Formatting `std::thread::id` and `std::stacktrace`"
     paper: P2693
     lib: true
     support:
@@ -1053,12 +1053,12 @@ features:
       - Xcode 15
     hints:
       - target: Clang 17
-        msg: '`std::stacktrace` is not implemented yet.'
+        msg: "`std::stacktrace` is not implemented yet."
     ftm:
       - name: __cpp_lib_formatters
         value: 202302L
 
-  - desc: '`constexpr` for integral overloads of `std::to_chars()` and `std::from_chars()`'
+  - desc: "`constexpr` for integral overloads of `std::to_chars()` and `std::from_chars()`"
     paper: P2291
     lib: true
     support:
@@ -1070,7 +1070,7 @@ features:
       - name: __cpp_lib_constexpr_charconv
         value: 202207L
 
-  - desc: '`ranges::contains()` and `ranges::contains_subrange()`'
+  - desc: "`ranges::contains()` and `ranges::contains_subrange()`"
     paper: P2302
     lib: true
     support:
@@ -1082,14 +1082,14 @@ features:
       - Xcode 16.3
     hints:
       - target: Clang 18
-        msg: 'std::ranges::contains_subrange is not implemented'
+        msg: "std::ranges::contains_subrange is not implemented"
       - target: Xcode 16
-        msg: 'std::ranges::contains_subrange is not implemented'
+        msg: "std::ranges::contains_subrange is not implemented"
     ftm:
       - name: __cpp_lib_ranges_contains
         value: 202207L
 
-  - desc: 'Ranges fold algorithms'
+  - desc: "Ranges fold algorithms"
     paper: P2322
     lib: true
     support:
@@ -1099,7 +1099,7 @@ features:
       - name: __cpp_lib_ranges_fold
         value: 202207L
 
-  - desc: '`views::cartesian_product()`'
+  - desc: "`views::cartesian_product()`"
     paper:
       - P2374
       - P2540
@@ -1111,7 +1111,7 @@ features:
       - name: __cpp_lib_ranges_cartesian_product
         value: 202207L
 
-  - desc: 'Adding move-only types support for comparison concepts (`std::equality_comparable`, `std::totally_ordered`, `std::three_way_comparable`)'
+  - desc: "Adding move-only types support for comparison concepts (`std::equality_comparable`, `std::totally_ordered`, `std::three_way_comparable`)"
     paper: P2404
     lib: true
     support:
@@ -1120,7 +1120,7 @@ features:
       - name: __cpp_lib_concepts
         value: 202207L
 
-  - desc: 'Ranges iterators as inputs to non-ranges algorithms'
+  - desc: "Ranges iterators as inputs to non-ranges algorithms"
     paper: P2408
     lib: true
     support:
@@ -1129,7 +1129,7 @@ features:
       - name: __cpp_lib_algorithm_iterator_requirements
         value: 202207L
 
-  - desc: '`constexpr` `std::bitset`'
+  - desc: "`constexpr` `std::bitset`"
     paper: P2417
     lib: true
     support:
@@ -1141,7 +1141,7 @@ features:
       - name: __cpp_lib_constexpr_bitset
         value: 202207L
 
-  - desc: '`std::basic_string::substr()` `&&`'
+  - desc: "`std::basic_string::substr()` `&&`"
     paper: P2438
     lib: true
     support:
@@ -1149,7 +1149,7 @@ features:
       - MSVC 19.34
       - Xcode 15
 
-  - desc: '`views::as_rvalue()`'
+  - desc: "`views::as_rvalue()`"
     paper: P2446
     lib: true
     support:
@@ -1161,7 +1161,7 @@ features:
       - name: __cpp_lib_ranges_as_rvalue
         value: 202207L
 
-  - desc: 'Standard library modules (`import std`)'
+  - desc: "Standard library modules (`import std`)"
     paper: P2465
     lib: true
     support:
@@ -1172,16 +1172,16 @@ features:
       - MSVC 19.36
     hints:
       - target: GCC 15
-        msg: 'Requires enabling compiler flag `-fmodules` to enable experimental modules support.'
+        msg: "Requires enabling compiler flag `-fmodules` to enable experimental modules support."
       - target: Clang 17
-        msg: 'Experimental support only.'
+        msg: "Experimental support only."
       - target: MSVC 19.35
-        msg: 'Modules work, but you have to manually add them to your Visual Studio project.'
+        msg: "Modules work, but you have to manually add them to your Visual Studio project."
     ftm:
       - name: __cpp_lib_modules
         value: 202207L
 
-  - desc: '`std::forward_like()`'
+  - desc: "`std::forward_like()`"
     paper: P2445
     lib: true
     support:
@@ -1193,7 +1193,7 @@ features:
       - name: __cpp_lib_forward_like
         value: 202207L
 
-  - desc: 'Support exclusive mode for `std::fstream`'
+  - desc: "Support exclusive mode for `std::fstream`"
     paper: P2467
     lib: true
     support:
@@ -1205,7 +1205,7 @@ features:
       - name: __cpp_lib_ios_noreplace
         value: 202207L
 
-  - desc: '`views::repeat()`'
+  - desc: "`views::repeat()`"
     paper: P2474
     lib: true
     support:
@@ -1217,7 +1217,7 @@ features:
       - name: __cpp_lib_ranges_repeat
         value: 202207L
 
-  - desc: 'Relaxing range adaptors to allow for move-only types'
+  - desc: "Relaxing range adaptors to allow for move-only types"
     paper: P2494
     lib: true
     support:
@@ -1229,7 +1229,7 @@ features:
       - name: __cpp_lib_ranges
         value: 202207L
 
-  - desc: '`std::basic_string_view` range constructor should be `explicit`'
+  - desc: "`std::basic_string_view` range constructor should be `explicit`"
     paper: P2499
     lib: true
     support:
@@ -1238,7 +1238,7 @@ features:
       - MSVC 19.34
       - Xcode 15
 
-  - desc: '`std::generator`: synchronous coroutine generator for ranges'
+  - desc: "`std::generator`: synchronous coroutine generator for ranges"
     paper:
       - P2502
       - P2787
@@ -1250,7 +1250,7 @@ features:
       - name: __cpp_lib_generator
         value: 202207L
 
-  - desc: 'Add a conditional `noexcept` specification to `std::apply()`'
+  - desc: "Add a conditional `noexcept` specification to `std::apply()`"
     paper: P2517
     lib: true
     support:
@@ -1259,7 +1259,7 @@ features:
       - MSVC 19.34
       - Xcode 16
 
-  - desc: 'Explicit lifetime management (`std::start_lifetime_as()`)'
+  - desc: "Explicit lifetime management (`std::start_lifetime_as()`)"
     paper:
       - P2590
       - P2679
@@ -1270,7 +1270,7 @@ features:
       - name: __cpp_lib_start_lifetime_as
         value: 202207L
 
-  - desc: 'Clarify handling of encodings in localized formatting of chrono types'
+  - desc: "Clarify handling of encodings in localized formatting of chrono types"
     paper: P2419
     lib: true
     support:
@@ -1280,7 +1280,7 @@ features:
       - name: __cpp_lib_format
         value: 202207L
 
-  - desc: '`std::move_iterator<T*>` should be a random access iterator'
+  - desc: "`std::move_iterator<T*>` should be a random access iterator"
     paper: P2520
     lib: true
     support:
@@ -1292,7 +1292,7 @@ features:
       - name: __cpp_lib_move_iterator_concept
         value: 202207L
 
-  - desc: 'Deduction guides update for `static operator()`'
+  - desc: "Deduction guides update for `static operator()`"
     paper: P1169
     lib: true
     support:
@@ -1301,14 +1301,14 @@ features:
       - MSVC 19.39
       - Xcode 15
 
-  - desc: 'Standard names and library support for extended floating-point types'
+  - desc: "Standard names and library support for extended floating-point types"
     paper: P1467
     lib: true
     support:
       - GCC 13
       - MSVC 19.37
 
-  - desc: 'Monadic operations for `std::expected` (`and_then()`, `or_else()`, `transform()`)'
+  - desc: "Monadic operations for `std::expected` (`and_then()`, `or_else()`, `transform()`)"
     paper: P2505
     lib: true
     support:
@@ -1320,7 +1320,7 @@ features:
       - name: __cpp_lib_expected
         value: 202211L
 
-  - desc: '`views::enumerate()`'
+  - desc: "`views::enumerate()`"
     paper: P2164
     lib: true
     support:
@@ -1330,7 +1330,7 @@ features:
       - name: __cpp_lib_ranges_enumerate
         value: 202302L
 
-  - desc: 'A trait for implicit lifetime types (`std::is_implicit_lifetime`)'
+  - desc: "A trait for implicit lifetime types (`std::is_implicit_lifetime`)"
     paper: P2674
     lib: true
     support:
@@ -1339,12 +1339,12 @@ features:
       - Xcode 26
     hints:
       - target: MSVC 19.50
-        msg: 'Currently only supported by the STL in conjunction with Clang.'
+        msg: "Currently only supported by the STL in conjunction with Clang."
     ftm:
       - name: __cpp_lib_is_implicit_lifetime
         value: 202302L
 
-  - desc: '`std::common_reference_t` of `std::reference_wrapper` should be a reference type'
+  - desc: "`std::common_reference_t` of `std::reference_wrapper` should be a reference type"
     paper: P2655
     lib: true
     support:
@@ -1352,21 +1352,21 @@ features:
       - MSVC 19.37
     hints:
       - target: Clang 21
-        msg: 'The feature is implemented as a defect report to C++20.'
+        msg: "The feature is implemented as a defect report to C++20."
     ftm:
       - name: __cpp_lib_common_reference
         value: 202302L
       - name: __cpp_lib_common_reference_wrapper
         value: 202302L
 
-  - desc: 'Disallowing user specialization of `std::allocator_traits`'
+  - desc: "Disallowing user specialization of `std::allocator_traits`"
     paper: P2652
     lib: true
     support:
       - Clang 19
       - MSVC 19.37
 
-  - desc: 'Deprecating `std::numeric_limits::has_denorm`'
+  - desc: "Deprecating `std::numeric_limits::has_denorm`"
     paper: P2614
     lib: true
     support:
@@ -1374,7 +1374,7 @@ features:
       - MSVC 19.37
       - Xcode 16
 
-  - desc: 'Making multi-param constructors of views explicit'
+  - desc: "Making multi-param constructors of views explicit"
     paper: P2711
     lib: true
     support:
@@ -1385,9 +1385,9 @@ features:
       - target: Clang 17
         msg: "`join_with_view` has not been done yet since this type is not implemented yet."
       - target: MSVC 19.36
-        msg: 'Treated as a defect report against C++20.'
+        msg: "Treated as a defect report against C++20."
 
-  - desc: 'Relaxing Ranges Just A Smidge'
+  - desc: "Relaxing Ranges Just A Smidge"
     paper: P2609
     lib: true
     support:
@@ -1399,7 +1399,7 @@ features:
       - name: __cpp_lib_ranges
         value: 202302L
 
-  - desc: 'Stashing stashing iterators for proper flattening'
+  - desc: "Stashing stashing iterators for proper flattening"
     paper: P2770
     lib: true
     support:
@@ -1407,7 +1407,7 @@ features:
       - Clang 21
       - MSVC 19.37
 
-  - desc: '`std::visit()` for classes derived from `std::variant`'
+  - desc: "`std::visit()` for classes derived from `std::variant`"
     paper: P2162
     lib: true
     support:
@@ -1420,7 +1420,7 @@ features:
       - name: __cpp_lib_variant
         value: 202102L
 
-  - desc: 'Conditionally borrowed ranges'
+  - desc: "Conditionally borrowed ranges"
     paper: P2017
     lib: true
     support:
@@ -1429,7 +1429,7 @@ features:
       - MSVC 19.30
       - Xcode 16.1
 
-  - desc: 'Repairing input range adaptors and `std::counted_iterator`'
+  - desc: "Repairing input range adaptors and `std::counted_iterator`"
     paper: P2259
     lib: true
     support:
@@ -1438,9 +1438,9 @@ features:
       - MSVC 19.31
     hints:
       - target: MSVC 19.30
-        msg: 'The counted_iterator part is implemented; the input range adaptors part is not implemented yet.'
+        msg: "The counted_iterator part is implemented; the input range adaptors part is not implemented yet."
 
-  - desc: '`views::join()` should join all views of ranges'
+  - desc: "`views::join()` should join all views of ranges"
     paper: P2328
     lib: true
     support:
@@ -1449,7 +1449,7 @@ features:
       - MSVC 19.30
       - Xcode 14.3
 
-  - desc: 'Views should not be required to be default-constructible'
+  - desc: "Views should not be required to be default-constructible"
     paper: P2325
     lib: true
     support:
@@ -1461,7 +1461,7 @@ features:
       - name: __cpp_lib_ranges
         value: 202106L
 
-  - desc: 'Range adaptor objects bind arguments by value'
+  - desc: "Range adaptor objects bind arguments by value"
     paper: P2281
     lib: true
     support:
@@ -1472,9 +1472,9 @@ features:
       - Xcode 14.3
     hints:
       - target: MSVC 19.29
-        msg: 'The split_view part is missing.'
+        msg: "The split_view part is missing."
 
-  - desc: '`constexpr` `std::optional` and `std::variant`'
+  - desc: "`constexpr` `std::optional` and `std::variant`"
     paper: P2231
     lib: true
     support:
@@ -1487,20 +1487,20 @@ features:
       - Xcode 16.3
     hints:
       - target: GCC 11.3
-        msg: 'Only the `std::optional` part is implemented.'
+        msg: "Only the `std::optional` part is implemented."
       - target: Clang 13
-        msg: 'Only the `std::optional` part is implemented.'
+        msg: "Only the `std::optional` part is implemented."
       - target: Xcode 13.4.1
-        msg: 'Only the `std::optional` part is implemented.'
+        msg: "Only the `std::optional` part is implemented."
     ftm:
       - name: __cpp_lib_optional
         value: 202106L
-        desc: '`constexpr` `std::optional` is available'
+        desc: "`constexpr` `std::optional` is available"
       - name: __cpp_lib_variant
         value: 202106L
-        desc: '`constexpr` `std::variant` is available'
+        desc: "`constexpr` `std::variant` is available"
 
-  - desc: 'Superior string splitting (`views::lazy_split()` and redesigned `views::split()`)'
+  - desc: "Superior string splitting (`views::lazy_split()` and redesigned `views::split()`)"
     paper: P2210
     lib: true
     support:
@@ -1509,7 +1509,7 @@ features:
       - MSVC 19.31
       - Xcode 15
 
-  - desc: 'Fix `ranges::istream_view`'
+  - desc: "Fix `ranges::istream_view`"
     paper: P2432
     lib: true
     support:
@@ -1518,7 +1518,7 @@ features:
       - MSVC 19.31
       - Xcode 15
 
-  - desc: 'What is a view?'
+  - desc: "What is a view?"
     paper: P2415
     lib: true
     support:
@@ -1527,7 +1527,7 @@ features:
       - MSVC 19.31
       - Xcode 14.3
 
-  - desc: 'Fixing locale handling in chrono formatters'
+  - desc: "Fixing locale handling in chrono formatters"
     paper: P2372
     lib: true
     support:
@@ -1536,13 +1536,13 @@ features:
       - MSVC 19.31
       - Xcode 16.1
 
-  - desc: 'Cleaning up integer-class types'
+  - desc: "Cleaning up integer-class types"
     paper: P2393
     lib: true
     support:
       - MSVC 19.32
 
-  - desc: '`std::format()` improvements'
+  - desc: "`std::format()` improvements"
     paper: P2216
     lib: true
     support:
@@ -1551,7 +1551,7 @@ features:
       - MSVC 19.32
       - Xcode 14.3
 
-  - desc: 'Add support for `std::generator`-like types to `std::format()`'
+  - desc: "Add support for `std::generator`-like types to `std::format()`"
     paper: P2418
     lib: true
     support:
@@ -1560,7 +1560,7 @@ features:
       - MSVC 19.32
       - Xcode 14.3
 
-  - desc: '`std::basic_format_string`'
+  - desc: "`std::basic_format_string`"
     paper: P2508
     lib: true
     support:
@@ -1569,7 +1569,7 @@ features:
       - MSVC 19.35
       - Xcode 14.3
 
-  - desc: 'Poison Pills are Too Toxic'
+  - desc: "Poison Pills are Too Toxic"
     paper: P2602
     lib: true
     support:
@@ -1581,7 +1581,7 @@ features:
       - name: __cpp_lib_ranges
         value: 202211L
 
-  - desc: '`std::format()` fill character allowances'
+  - desc: "`std::format()` fill character allowances"
     paper: P2572
     lib: true
     support:
@@ -1606,7 +1606,7 @@ features:
       - MSVC 19.36
     hints:
       - target: MSVC 19.28
-        msg: 'Implemented, but no feature-testing macro is available.'
+        msg: "Implemented, but no feature-testing macro is available."
     ftm:
       - name: __cpp_lib_barrier
         value: 202302L

@@ -1,6 +1,6 @@
 ---
 features:
-  - desc: 'Allow lambda capture `[=, this]`'
+  - desc: "Allow lambda capture `[=, this]`"
     paper: P0409
     support:
       - GCC 8
@@ -8,7 +8,7 @@ features:
       - MSVC 19.22
       - Xcode 10
 
-  - desc: '`__VA_OPT__`'
+  - desc: "`__VA_OPT__`"
     paper:
       - P0306
       - P1042
@@ -21,11 +21,11 @@ features:
       - Xcode 12
     hints:
       - target: GCC 8
-        msg: 'Designated initializers are supported, except <code>#__VA_OPT__</code> support. <code>__VA_OPT__</code> is supported though.'
+        msg: "Designated initializers are supported, except <code>#__VA_OPT__</code> support. <code>__VA_OPT__</code> is supported though."
       - target: GCC 10
-        msg: 'No placemarker token handling changes'
+        msg: "No placemarker token handling changes"
 
-  - desc: 'Designated initializers'
+  - desc: "Designated initializers"
     paper: P0329
     support:
       - GCC 4.7 (partial)
@@ -36,15 +36,15 @@ features:
       - Xcode 12
     hints:
       - target: GCC 4.7
-        msg: 'As non-standard extension that formed the basis for P0329, missing brace initializers.'
+        msg: "As non-standard extension that formed the basis for P0329, missing brace initializers."
       - target: Clang 3
-        msg: 'Full C99-compatible superset of P0329, missing brace initializers.'
+        msg: "Full C99-compatible superset of P0329, missing brace initializers."
 
     ftm:
       - name: __cpp_designated_initializers
         value: 201707L
 
-  - desc: 'Familiar template syntax for generic lambdas (template-able lambdas)'
+  - desc: "Familiar template syntax for generic lambdas (template-able lambdas)"
     paper: P0428
     support:
       - GCC 8
@@ -55,7 +55,7 @@ features:
       - name: __cpp_generic_lambdas
         value: 201707L
 
-  - desc: 'Default member initializers for bit-fields'
+  - desc: "Default member initializers for bit-fields"
     paper: P0683
     support:
       - GCC 8
@@ -63,7 +63,7 @@ features:
       - MSVC 19.25
       - Xcode 10
 
-  - desc: 'Initializer list constructors in class template argument deduction'
+  - desc: "Initializer list constructors in class template argument deduction"
     paper: P0702
     support:
       - GCC 8
@@ -71,7 +71,7 @@ features:
       - MSVC 19.14
       - Xcode
 
-  - desc: '`const&`-qualified pointers to members'
+  - desc: "`const&`-qualified pointers to members"
     paper: P0704
     support:
       - GCC 8
@@ -79,7 +79,7 @@ features:
       - MSVC 19.0
       - Xcode 10
 
-  - desc: 'Concepts'
+  - desc: "Concepts"
     paper: P0734
     support:
       - GCC 5 (partial)
@@ -89,14 +89,14 @@ features:
       - Xcode 12 (partial)
     hints:
       - target: GCC 5
-        msg: 'TS-only'
+        msg: "TS-only"
       - target: Xcode 12
         msg: 'The following papers are not implemented: <a href=\"https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2103r0.html\">P2103 R0</a>, DR1496, DR1734 and <a href=\"https://wg21.link/P0848\">P0848</a>.'
     ftm:
       - name: __cpp_concepts
         value: 201907L
 
-  - desc: 'Wording for lambdas in unevaluated contexts'
+  - desc: "Wording for lambdas in unevaluated contexts"
     paper: P0315
     support:
       - GCC 9
@@ -107,13 +107,13 @@ features:
       - Xcode 13.4.1 (partial)
     hints:
       - target: Clang 13
-        msg: 'Not supported: [temp.deduct/9]'
+        msg: "Not supported: [temp.deduct/9]"
       - target: Clang 14
-        msg: 'temp.over.link changes'
+        msg: "temp.over.link changes"
       - target: Xcode 13.4.1
-        msg: 'Not supported: [temp.deduct/9]'
+        msg: "Not supported: [temp.deduct/9]"
 
-  - desc: 'Three-way comparison operator (`operator<=>`)'
+  - desc: "Three-way comparison operator (`operator<=>`)"
     paper: P0515
     support:
       - GCC 10
@@ -125,13 +125,13 @@ features:
       - name: __cpp_impl_three_way_comparison
         value: 201907L
 
-  - desc: 'Simplifying implicit lambda capture'
+  - desc: "Simplifying implicit lambda capture"
     paper: P0588
     support:
       - GCC 8
       - MSVC 19.24
 
-  - desc: 'init-statements for range-based for'
+  - desc: "init-statements for range-based for"
     paper: P0614
     support:
       - GCC 9
@@ -139,7 +139,7 @@ features:
       - MSVC 19.25
       - Xcode 11
 
-  - desc: 'Default constructible and assignable stateless lambdas'
+  - desc: "Default constructible and assignable stateless lambdas"
     paper: P0624
     support:
       - GCC 9
@@ -147,7 +147,7 @@ features:
       - MSVC 19.22
       - Xcode 10.2
 
-  - desc: '`const` mismatch with defaulted copy constructor'
+  - desc: "`const` mismatch with defaulted copy constructor"
     paper: P0641
     support:
       - GCC 9
@@ -155,7 +155,7 @@ features:
       - MSVC 19.0
       - Xcode 10.2
 
-  - desc: 'Access checking on specializations'
+  - desc: "Access checking on specializations"
     paper: P0692
     support:
       - GCC
@@ -163,7 +163,7 @@ features:
       - Clang 14
       - MSVC 19.26
       - Xcode 14
-  - desc: 'ADL and function templates that are not visible'
+  - desc: "ADL and function templates that are not visible"
     paper: P0846
     support:
       - GCC 9
@@ -171,7 +171,7 @@ features:
       - MSVC 19.21
       - Xcode 11.4
 
-  - desc: 'Specify when `constexpr` function definitions are needed for constant evaluation'
+  - desc: "Specify when `constexpr` function definitions are needed for constant evaluation"
     paper: P0859
     support:
       - GCC 5.2 (partial)
@@ -184,7 +184,7 @@ features:
       - name: __cpp_constexpr_in_decltype
         value: 201711L
 
-  - desc: 'Fixing functionality gaps in constraints'
+  - desc: "Fixing functionality gaps in constraints"
     paper: P0857
     support:
       - GCC 10
@@ -192,21 +192,21 @@ features:
       - Clang 16
       - Xcode 12
 
-  - desc: 'Attributes `[[likely]]` and `[[unlikely]]`'
+  - desc: "Attributes `[[likely]]` and `[[unlikely]]`"
     paper: P0479
     support:
       - GCC 9
       - Clang 12
       - MSVC 19.26
       - Xcode 13
-  - desc: 'Down with `typename`!'
+  - desc: "Down with `typename`!"
     paper: P0634
     support:
       - GCC 9
       - Clang 16
       - MSVC 19.29
       - Xcode 16
-  - desc: 'Pack-expansions in lambda init-captures'
+  - desc: "Pack-expansions in lambda init-captures"
     paper: P0780
     support:
       - GCC 9
@@ -217,14 +217,14 @@ features:
       - name: __cpp_init_captures
         value: 201803L
 
-  - desc: 'Language support for empty objects (`[[no_unique_address]]` attribute)'
+  - desc: "Language support for empty objects (`[[no_unique_address]]` attribute)"
     paper: P0840
     support:
       - GCC 9
       - Clang 9
       - MSVC 19.28
       - Xcode 11.4
-  - desc: 'Conditionally trivial special member functions'
+  - desc: "Conditionally trivial special member functions"
     paper: P0848
     support:
       - GCC 10
@@ -235,7 +235,7 @@ features:
       - name: __cpp_concepts
         value: 202002L
 
-  - desc: 'Relaxing the structured bindings customization point finding rules'
+  - desc: "Relaxing the structured bindings customization point finding rules"
     paper: P0961
     support:
       - GCC 8
@@ -243,7 +243,7 @@ features:
       - MSVC 19.20
       - Xcode 10.2
 
-  - desc: 'Relaxing the range-`for` loop customization point finding rules'
+  - desc: "Relaxing the range-`for` loop customization point finding rules"
     paper: P0962
     support:
       - GCC 8
@@ -251,7 +251,7 @@ features:
       - MSVC 19.25
       - Xcode 11
 
-  - desc: 'Allow structured bindings to accessible members'
+  - desc: "Allow structured bindings to accessible members"
     paper: P0969
     support:
       - GCC 8
@@ -259,7 +259,7 @@ features:
       - MSVC 19.20
       - Xcode 10.2
 
-  - desc: 'Destroying operator delete'
+  - desc: "Destroying operator delete"
     paper: P0722
     support:
       - GCC 9
@@ -270,7 +270,7 @@ features:
       - name: __cpp_impl_destroying_delete
         value: 201806L
 
-  - desc: 'Class types in non-type template parameters'
+  - desc: "Class types in non-type template parameters"
     paper: P0732
     support:
       - GCC 9
@@ -280,7 +280,7 @@ features:
       - Xcode 13 (partial)
       - Xcode 16.3
 
-  - desc: 'Deprecate implicit capture of this via `[=]`'
+  - desc: "Deprecate implicit capture of this via `[=]`"
     paper: P0806
     support:
       - GCC 9
@@ -288,7 +288,7 @@ features:
       - MSVC 19.22
       - Xcode 10.2
 
-  - desc: '`explicit(bool)`'
+  - desc: "`explicit(bool)`"
     paper: P0892
     support:
       - GCC 9
@@ -299,7 +299,7 @@ features:
       - name: __cpp_conditional_explicit
         value: 201806L
 
-  - desc: 'Integrating feature-test macros'
+  - desc: "Integrating feature-test macros"
     paper: P0941
     support:
       - GCC 5
@@ -308,7 +308,7 @@ features:
       - MSVC 19.20
       - Xcode
 
-  - desc: 'Prohibit aggregates with user-declared constructors'
+  - desc: "Prohibit aggregates with user-declared constructors"
     paper: P1008
     support:
       - GCC 9
@@ -316,7 +316,7 @@ features:
       - MSVC 19.20
       - Xcode 10.2
 
-  - desc: 'Allowing virtual function calls in constant expressions'
+  - desc: "Allowing virtual function calls in constant expressions"
     paper: P1064
     support:
       - GCC 9
@@ -327,7 +327,7 @@ features:
       - name: __cpp_constexpr
         value: 201907L
 
-  - desc: 'Consistency improvements for comparisons'
+  - desc: "Consistency improvements for comparisons"
     paper: P1120
     support:
       - GCC 10
@@ -336,7 +336,7 @@ features:
       - MSVC 19.22
       - Xcode 12
 
-  - desc: '`char8_t`: A type for UTF-8 characters and strings'
+  - desc: "`char8_t`: A type for UTF-8 characters and strings"
     paper: P0482
     support:
       - GCC 9
@@ -347,7 +347,7 @@ features:
       - name: __cpp_char8_t
         value: 201811L
 
-  - desc: '`std::is_constant_evaluated()`'
+  - desc: "`std::is_constant_evaluated()`"
     paper: P0595
     support:
       - GCC 9
@@ -359,7 +359,7 @@ features:
       - name: __cpp_lib_is_constant_evaluated
         value: 201811L
 
-  - desc: '`constexpr` try-catch blocks'
+  - desc: "`constexpr` try-catch blocks"
     paper: P1002
     support:
       - GCC 9
@@ -367,7 +367,7 @@ features:
       - MSVC 19.25
       - Xcode 10.2
 
-  - desc: 'Immediate functions (`consteval`)'
+  - desc: "Immediate functions (`consteval`)"
     paper: P1073
     support:
       - GCC 10 (partial)
@@ -382,7 +382,7 @@ features:
       - name: __cpp_consteval
         value: 201811L
 
-  - desc: 'Nested inline namespaces'
+  - desc: "Nested inline namespaces"
     paper: P1094
     support:
       - GCC 9
@@ -390,7 +390,7 @@ features:
       - MSVC 19.27
       - Xcode 10.2
 
-  - desc: 'Yet another approach for constrained declarations'
+  - desc: "Yet another approach for constrained declarations"
     paper: P1141
     support:
       - GCC 10
@@ -407,7 +407,7 @@ features:
       - MSVC
       - Xcode 11.4
 
-  - desc: '`dynamic_cast` and polymorphic `typeid` in constant expressions'
+  - desc: "`dynamic_cast` and polymorphic `typeid` in constant expressions"
     paper: P1327
     support:
       - GCC 10
@@ -415,7 +415,7 @@ features:
       - MSVC 19.28
       - Xcode 11.4
 
-  - desc: 'Changing the active member of a `union` inside `constexpr`'
+  - desc: "Changing the active member of a `union` inside `constexpr`"
     paper: P1330
     support:
       - GCC 9
@@ -426,7 +426,7 @@ features:
       - name: __cpp_constexpr
         value: 202002L
 
-  - desc: 'Coroutines'
+  - desc: "Coroutines"
     paper: P0912
     support:
       - GCC 10
@@ -446,7 +446,7 @@ features:
         value: 201902L
         desc: Coroutines library support
 
-  - desc: 'Parenthesized initialization of aggregates'
+  - desc: "Parenthesized initialization of aggregates"
     paper:
       - P0960
       - P1975
@@ -459,7 +459,7 @@ features:
       - name: __cpp_aggregate_paren_init
         value: 201902L
 
-  - desc: 'Array size deduction in `new`-expressions'
+  - desc: "Array size deduction in `new`-expressions"
     paper: P1009
     support:
       - GCC 11
@@ -467,7 +467,7 @@ features:
       - MSVC 19.27
       - Xcode 11.4
 
-  - desc: 'Modules'
+  - desc: "Modules"
     paper:
       - P1103
       - P1703
@@ -509,7 +509,7 @@ features:
       - name: __cpp_modules
         value: 201907L
 
-  - desc: 'Stronger Unicode requirements'
+  - desc: "Stronger Unicode requirements"
     paper:
       - P1041
       - P1139
@@ -519,7 +519,7 @@ features:
       - MSVC 19.0
       - Xcode
 
-  - desc: '`<=>` `!=` `==`'
+  - desc: "`<=>` `!=` `==`"
     paper: P1185
     support:
       - GCC 10
@@ -527,7 +527,7 @@ features:
       - MSVC 19.22
       - Xcode 12
 
-  - desc: 'Explicitly defaulted functions with different exception specifications'
+  - desc: "Explicitly defaulted functions with different exception specifications"
     paper: P1286
     support:
       - GCC 10
@@ -535,7 +535,7 @@ features:
       - MSVC 19.28
       - Xcode 11.4
 
-  - desc: 'Structured binding extensions'
+  - desc: "Structured binding extensions"
     paper:
       - P1091
       - P1381
@@ -547,7 +547,7 @@ features:
       - MSVC 19.24
       - Xcode 16
 
-  - desc: 'Permit conversions to arrays of unknown bound'
+  - desc: "Permit conversions to arrays of unknown bound"
     paper: P0388
     support:
       - GCC 10
@@ -555,7 +555,7 @@ features:
       - MSVC 19.27
       - Xcode 14
 
-  - desc: '`constexpr` container operations'
+  - desc: "`constexpr` container operations"
     paper: P0784
     support:
       - GCC 10
@@ -566,7 +566,7 @@ features:
       - name: __cpp_constexpr_dynamic_alloc
         value: 201907L
 
-  - desc: 'Deprecating some uses of `volatile`'
+  - desc: "Deprecating some uses of `volatile`"
     paper: P1152
     support:
       - GCC 10
@@ -574,7 +574,7 @@ features:
       - MSVC 19.27
       - Xcode 12
 
-  - desc: '`constinit`'
+  - desc: "`constinit`"
     paper: P1143
     support:
       - GCC 10
@@ -585,7 +585,7 @@ features:
       - name: __cpp_constinit
         value: 201907L
 
-  - desc: 'Missing feature test macros'
+  - desc: "Missing feature test macros"
     paper: P1353R0
     support:
       - GCC 9
@@ -593,7 +593,7 @@ features:
       - MSVC 19.29
       - Xcode
 
-  - desc: 'Deprecate comma operator in subscripts'
+  - desc: "Deprecate comma operator in subscripts"
     paper: P1161
     support:
       - GCC 10
@@ -609,7 +609,7 @@ features:
       - MSVC 19.25
       - Xcode 11.4
 
-  - desc: 'Permitting trivial default initialization in `constexpr` contexts'
+  - desc: "Permitting trivial default initialization in `constexpr` contexts"
     paper: P1331
     support:
       - GCC 10
@@ -617,7 +617,7 @@ features:
       - MSVC 19.27
       - Xcode 12
 
-  - desc: 'Unevaluated `asm`-declaration in `constexpr` functions'
+  - desc: "Unevaluated `asm`-declaration in `constexpr` functions"
     paper: P1668
     support:
       - GCC 10
@@ -625,7 +625,7 @@ features:
       - MSVC 19.28
       - Xcode 12
 
-  - desc: '`using` enum'
+  - desc: "`using` enum"
     paper: P1099
     support:
       - GCC 11
@@ -636,7 +636,7 @@ features:
       - name: __cpp_using_enum
         value: 201907L
 
-  - desc: 'Synthesizing Three-way comparison for specified comparison category'
+  - desc: "Synthesizing Three-way comparison for specified comparison category"
     paper: P1186
     support:
       - GCC 11
@@ -644,7 +644,7 @@ features:
       - MSVC 19.24
       - Xcode 12
 
-  - desc: '`[[nodiscard]]` for constructors'
+  - desc: "`[[nodiscard]]` for constructors"
     paper: P1771
     support:
       - GCC 10
@@ -652,7 +652,7 @@ features:
       - MSVC 19.24
       - Xcode 11.4
 
-  - desc: 'Class template argument deduction for alias templates'
+  - desc: "Class template argument deduction for alias templates"
     paper: P1814
     support:
       - GCC 10
@@ -662,7 +662,7 @@ features:
       - name: __cpp_deduction_guides
         value: 201907L
 
-  - desc: 'Class template argument deduction for aggregates'
+  - desc: "Class template argument deduction for aggregates"
     paper:
       - P1816
       - P2082
@@ -675,7 +675,7 @@ features:
       - name: __cpp_deduction_guides
         value: 201907L
 
-  - desc: 'Implicit move for more local objects and rvalue references'
+  - desc: "Implicit move for more local objects and rvalue references"
     paper: P1825
     support:
       - GCC 11
@@ -683,7 +683,7 @@ features:
       - MSVC 19.24
       - Xcode 13.4.1
 
-  - desc: 'Allow defaulting comparisons by value'
+  - desc: "Allow defaulting comparisons by value"
     paper: P1946
     support:
       - GCC 10
@@ -691,7 +691,7 @@ features:
       - MSVC 19.25
       - Xcode 12
 
-  - desc: 'Remove `std::weak_equality` and `std::strong_equality`'
+  - desc: "Remove `std::weak_equality` and `std::strong_equality`"
     paper: P1959
     support:
       - GCC 10
@@ -699,7 +699,7 @@ features:
       - MSVC 19.25
       - Xcode 12
 
-  - desc: 'Inconsistencies with constant template parameters'
+  - desc: "Inconsistencies with constant template parameters"
     paper: P1907
     support:
       - GCC 10 (partial)
@@ -711,7 +711,7 @@ features:
       - name: __cpp_nontype_template_args
         value: 201911L
 
-  - desc: 'Pseudo-destructors end object lifetimes'
+  - desc: "Pseudo-destructors end object lifetimes"
     paper: P0593
     support:
       - GCC 11
@@ -719,7 +719,7 @@ features:
       - MSVC
       - Xcode 12.5
 
-  - desc: '`std::endian`'
+  - desc: "`std::endian`"
     paper: P0463
     lib: true
     support:
@@ -731,7 +731,7 @@ features:
       - name: __cpp_lib_endian
         value: 201907L
 
-  - desc: 'Extending `std::make_shared()` to support arrays'
+  - desc: "Extending `std::make_shared()` to support arrays"
     paper: P0674
     lib: true
     support:
@@ -743,7 +743,7 @@ features:
       - name: __cpp_lib_shared_ptr_arrays
         value: 201707L
 
-  - desc: 'Floating Point Atomic'
+  - desc: "Floating Point Atomic"
     paper: P0020
     lib: true
     support:
@@ -755,7 +755,7 @@ features:
       - name: __cpp_lib_atomic_float
         value: 201711L
 
-  - desc: 'C++ Synchronized Buffered Ostream (`std::basic_osyncstream`)'
+  - desc: "C++ Synchronized Buffered Ostream (`std::basic_osyncstream`)"
     paper: P0053
     lib: true
     support:
@@ -766,7 +766,7 @@ features:
       - name: __cpp_lib_syncbuf
         value: 201803L
 
-  - desc: 'Add `constexpr` modifiers to functions in `<algorithm>` and `<utility>`'
+  - desc: "Add `constexpr` modifiers to functions in `<algorithm>` and `<utility>`"
     paper: P0202
     lib: true
     support:
@@ -780,7 +780,7 @@ features:
       - name: __cpp_lib_constexpr_algorithms
         value: 201806L
 
-  - desc: '`constexpr` for `std::complex`'
+  - desc: "`constexpr` for `std::complex`"
     paper: P0415
     lib: true
     support:
@@ -794,7 +794,7 @@ features:
       - name: __cpp_lib_constexpr_complex
         value: 201711L
 
-  - desc: 'Make `std::memory_order` a scoped enumeration (`enum class`)'
+  - desc: "Make `std::memory_order` a scoped enumeration (`enum class`)"
     paper: P0439
     lib: true
     support:
@@ -803,7 +803,7 @@ features:
       - MSVC 19.25
       - Xcode 11.4
 
-  - desc: 'String prefix and suffix checking: `std::string` and `std::string_view` `starts_with()` and `ends_with()`'
+  - desc: "String prefix and suffix checking: `std::string` and `std::string_view` `starts_with()` and `ends_with()`"
     paper: P0457
     lib: true
     support:
@@ -812,7 +812,7 @@ features:
       - MSVC 19.21
       - Xcode 10
 
-  - desc: 'Library support for `operator<=>` (`<compare>`)'
+  - desc: "Library support for `operator<=>` (`<compare>`)"
     paper: P0768
     lib: true
     support:
@@ -827,7 +827,7 @@ features:
       - name: __cpp_lib_three_way_comparison
         value: 201907L
 
-  - desc: 'Transformation trait `std::remove_cvref`'
+  - desc: "Transformation trait `std::remove_cvref`"
     paper: P0550
     lib: true
     support:
@@ -839,7 +839,7 @@ features:
       - name: __cpp_lib_remove_cvref
         value: 201711L
 
-  - desc: '`[[nodiscard]]` in the library'
+  - desc: "`[[nodiscard]]` in the library"
     paper: P0600
     lib: true
     support:
@@ -851,7 +851,7 @@ features:
       - Xcode 10 (partial)
       - Xcode 15
 
-  - desc: 'Using `std::move()` in numeric algorithms'
+  - desc: "Using `std::move()` in numeric algorithms"
     paper: P0616
     lib: true
     support:
@@ -860,7 +860,7 @@ features:
       - MSVC 19.23
       - Xcode 13
 
-  - desc: 'Utility to convert a pointer to a raw pointer (`std::to_address()`)'
+  - desc: "Utility to convert a pointer to a raw pointer (`std::to_address()`)"
     paper: P0653
     lib: true
     support:
@@ -872,7 +872,7 @@ features:
       - name: __cpp_lib_to_address
         value: 201711L
 
-  - desc: 'Atomic `std::shared_ptr` and `std::weak_ptr`'
+  - desc: "Atomic `std::shared_ptr` and `std::weak_ptr`"
     paper: P0718
     lib: true
     support:
@@ -882,7 +882,7 @@ features:
       - name: __cpp_lib_atomic_shared_ptr
         value: 201711L
 
-  - desc: '`std::span`'
+  - desc: "`std::span`"
     paper: P0122
     lib: true
     support:
@@ -894,7 +894,7 @@ features:
       - name: __cpp_lib_span
         value: 202002L
 
-  - desc: 'Extending `<chrono>` to calendars and time zones'
+  - desc: "Extending `<chrono>` to calendars and time zones"
     paper: P0355
     lib: true
     support:
@@ -909,7 +909,7 @@ features:
       - name: __cpp_lib_chrono
         value: 201907L
 
-  - desc: '`<version>`'
+  - desc: "`<version>`"
     paper: P0754
     lib: true
     support:
@@ -918,7 +918,7 @@ features:
       - MSVC 19.22
       - Xcode 10
 
-  - desc: 'Comparing unordered containers'
+  - desc: "Comparing unordered containers"
     paper: P0809
     lib: true
     support:
@@ -927,7 +927,7 @@ features:
       - MSVC 16.0
       - Xcode
 
-  - desc: '[ConstexprIterator](https://en.cppreference.com/w/cpp/named_req/ConstexprIterator) requirements'
+  - desc: "[ConstexprIterator](https://en.cppreference.com/w/cpp/named_req/ConstexprIterator) requirements"
     paper: P0858
     lib: true
     support:
@@ -941,7 +941,7 @@ features:
       - name: __cpp_lib_array_constexpr
         value: 201811L
 
-  - desc: '`std::basic_string::reserve()` should not shrink'
+  - desc: "`std::basic_string::reserve()` should not shrink"
     paper: P0966
     lib: true
     support:
@@ -950,14 +950,14 @@ features:
       - MSVC 19.25
       - Xcode 10.2
 
-  - desc: 'Atomic compare-and-exchange with padding bits'
+  - desc: "Atomic compare-and-exchange with padding bits"
     paper: P0528
     lib: true
     support:
       - GCC 13
       - MSVC 19.28
 
-  - desc: '`std::atomic_ref`'
+  - desc: "`std::atomic_ref`"
     paper: P0019
     lib: true
     support:
@@ -969,7 +969,7 @@ features:
       - name: __cpp_lib_atomic_ref
         value: 201806L
 
-  - desc: '`contains()` member function of associative containers, e.g. `std::map::contains()`'
+  - desc: "`contains()` member function of associative containers, e.g. `std::map::contains()`"
     paper: P0458
     lib: true
     support:
@@ -978,7 +978,7 @@ features:
       - MSVC 19.21
       - Xcode 13.4.1
 
-  - desc: 'Guaranteed copy elision for piecewise construction'
+  - desc: "Guaranteed copy elision for piecewise construction"
     paper: P0475
     lib: true
     support:
@@ -987,7 +987,7 @@ features:
       - MSVC 19.29
       - Xcode
 
-  - desc: '`std::bit_cast()`'
+  - desc: "`std::bit_cast()`"
     paper: P0476
     lib: true
     support:
@@ -999,7 +999,7 @@ features:
       - name: __cpp_lib_bit_cast
         value: 201806L
 
-  - desc: 'Integral power-of-2 operations: `std::bit_ceil()`, `std::bit_floor()`, `std::bit_width()`, `std::has_single_bit()`'
+  - desc: "Integral power-of-2 operations: `std::bit_ceil()`, `std::bit_floor()`, `std::bit_width()`, `std::has_single_bit()`"
     paper:
       - P0556
       - P1956
@@ -1016,7 +1016,7 @@ features:
       - name: __cpp_lib_int_pow2
         value: 202002L
 
-  - desc: 'Improving the return value of erase-like algorithms'
+  - desc: "Improving the return value of erase-like algorithms"
     paper: P0646
     lib: true
     support:
@@ -1028,7 +1028,7 @@ features:
       - name: __cpp_lib_list_remove_return_type
         value: 201806L
 
-  - desc: '`std::destroying_delete_t`'
+  - desc: "`std::destroying_delete_t`"
     paper: P0722
     lib: true
     support:
@@ -1040,7 +1040,7 @@ features:
       - name: __cpp_lib_destroying_delete
         value: 201806L
 
-  - desc: '`std::is_convertible`'
+  - desc: "`std::is_convertible`"
     paper: P0758
     lib: true
     support:
@@ -1052,7 +1052,7 @@ features:
       - name: __cpp_lib_is_nothrow_convertible
         value: 201806L
 
-  - desc: 'Add `std::shift_left()` and `std::shift_right()` to `<algorithm>`'
+  - desc: "Add `std::shift_left()` and `std::shift_right()` to `<algorithm>`"
     paper: P0769
     lib: true
     support:
@@ -1064,7 +1064,7 @@ features:
       - name: __cpp_lib_shift
         value: 201806L
 
-  - desc: '`constexpr` for `std::swap()` and swap related functions'
+  - desc: "`constexpr` for `std::swap()` and swap related functions"
     paper: P0879
     lib: true
     support:
@@ -1073,7 +1073,7 @@ features:
       - MSVC 19.26
       - Xcode 13.4.1
 
-  - desc: '`std::type_identity`'
+  - desc: "`std::type_identity`"
     paper: P0887
     lib: true
     support:
@@ -1085,7 +1085,7 @@ features:
       - name: __cpp_lib_type_identity
         value: 201806L
 
-  - desc: 'Concepts library'
+  - desc: "Concepts library"
     paper: P0898
     lib: true
     support:
@@ -1097,7 +1097,7 @@ features:
       - name: __cpp_lib_concepts
         value: 202002L
 
-  - desc: '`constexpr` comparison operators for `std::array`'
+  - desc: "`constexpr` comparison operators for `std::array`"
     paper: P1023
     lib: true
     support:
@@ -1106,7 +1106,7 @@ features:
       - MSVC 19.27
       - Xcode 10.2
 
-  - desc: '`std::unwrap_ref_decay` and `std::unwrap_reference`'
+  - desc: "`std::unwrap_ref_decay` and `std::unwrap_reference`"
     paper: P0318
     lib: true
     support:
@@ -1118,7 +1118,7 @@ features:
       - name: __cpp_lib_unwrap_ref
         value: 201811L
 
-  - desc: '`std::bind_front()`'
+  - desc: "`std::bind_front()`"
     paper: P0356
     lib: true
     support:
@@ -1130,7 +1130,7 @@ features:
       - name: __cpp_lib_bind_front
         value: 201907L
 
-  - desc: '`std::reference_wrapper` for incomplete types'
+  - desc: "`std::reference_wrapper` for incomplete types"
     paper: P0357
     lib: true
     support:
@@ -1139,7 +1139,7 @@ features:
       - MSVC 19.26
       - Xcode 10.2
 
-  - desc: 'Fixing `operator>>(basic_istream&, CharT*)`'
+  - desc: "Fixing `operator>>(basic_istream&, CharT*)`"
     paper: P0487
     lib: true
     support:
@@ -1148,7 +1148,7 @@ features:
       - MSVC 19.23
       - Xcode 10.2
 
-  - desc: 'Library support for `char8_t`'
+  - desc: "Library support for `char8_t`"
     paper: P0482
     lib: true
     support:
@@ -1162,7 +1162,7 @@ features:
       - name: __cpp_lib_char8_t
         value: 201907L
 
-  - desc: 'Utility functions to implement uses-allocator construction'
+  - desc: "Utility functions to implement uses-allocator construction"
     paper: P0591
     lib: true
     support:
@@ -1171,7 +1171,7 @@ features:
       - MSVC 19.29
       - Xcode 15
 
-  - desc: '`std::variant` and `std::optional` should propagate copy/move triviality'
+  - desc: "`std::variant` and `std::optional` should propagate copy/move triviality"
     paper: P0602
     lib: true
     support:
@@ -1180,7 +1180,7 @@ features:
       - MSVC 19.11
       - Xcode 10.2
 
-  - desc: 'A sane `std::variant` converting constructor'
+  - desc: "A sane `std::variant` converting constructor"
     paper: P0608
     lib: true
     support:
@@ -1199,7 +1199,7 @@ features:
       - MSVC 19.22
       - Xcode
 
-  - desc: 'The One Ranges Proposal'
+  - desc: "The One Ranges Proposal"
     paper: P0896
     lib: true
     support:
@@ -1212,7 +1212,7 @@ features:
       - name: __cpp_lib_ranges
         value: 201911L
 
-  - desc: 'Heterogeneous lookup for unordered associative containers'
+  - desc: "Heterogeneous lookup for unordered associative containers"
     paper:
       - P0919
       - P1690
@@ -1227,7 +1227,7 @@ features:
       - name: __cpp_lib_generic_unordered_lookup
         value: 201811L
 
-  - desc: '`<chrono>` `zero()`, `min()` and `max()` should be `noexcept`'
+  - desc: "`<chrono>` `zero()`, `min()` and `max()` should be `noexcept`"
     paper: P0972
     lib: true
     support:
@@ -1236,7 +1236,7 @@ features:
       - MSVC 19.14
       - Xcode 10.2
 
-  - desc: '`constexpr` in `std::pointer_traits`'
+  - desc: "`constexpr` in `std::pointer_traits`"
     paper: P1006
     lib: true
     support:
@@ -1248,7 +1248,7 @@ features:
       - name: __cpp_lib_constexpr_memory
         value: 201811L
 
-  - desc: '`std::assume_aligned()`'
+  - desc: "`std::assume_aligned()`"
     paper: P1007
     lib: true
     support:
@@ -1261,7 +1261,7 @@ features:
       - name: __cpp_lib_assume_aligned
         value: 201811L
 
-  - desc: 'Smart pointer creation with default initialization (e.g. `std::make_unique_for_overwrite()`)'
+  - desc: "Smart pointer creation with default initialization (e.g. `std::make_unique_for_overwrite()`)"
     paper:
       - P1020
       - P1973
@@ -1276,7 +1276,7 @@ features:
       - name: __cpp_lib_smart_ptr_for_overwrite
         value: 202002L
 
-  - desc: 'Misc `constexpr` bits'
+  - desc: "Misc `constexpr` bits"
     paper: P1032
     lib: true
     support:
@@ -1298,7 +1298,7 @@ features:
       - name: __cpp_lib_constexpr_string_view
         value: 201811L
 
-  - desc: 'Remove comparison operators of `std::span`'
+  - desc: "Remove comparison operators of `std::span`"
     paper: P1085
     lib: true
     support:
@@ -1307,7 +1307,7 @@ features:
       - MSVC 19.26
       - Xcode 10.2
 
-  - desc: 'Make stateful allocator propagation more consistent for `operator+(basic_string)`'
+  - desc: "Make stateful allocator propagation more consistent for `operator+(basic_string)`"
     paper: P1165
     lib: true
     support:
@@ -1316,7 +1316,7 @@ features:
       - MSVC 19.26
       - Xcode 14.3
 
-  - desc: 'Consistent container erasure (`std::erase()` and `std::erase_if()`)'
+  - desc: "Consistent container erasure (`std::erase()` and `std::erase_if()`)"
     paper:
       - P1209
       - P1115
@@ -1334,14 +1334,14 @@ features:
       - name: __cpp_lib_erase_if
         value: 202002L
 
-  - desc: 'Standard library header units'
+  - desc: "Standard library header units"
     paper: P1502
     lib: true
     support:
       - GCC 11
       - MSVC 19.29
 
-  - desc: '`pmr::polymorphic_allocator<>` as a vocabulary type'
+  - desc: "`pmr::polymorphic_allocator<>` as a vocabulary type"
     paper: P0339
     lib: true
     support:
@@ -1353,7 +1353,7 @@ features:
       - name: __cpp_lib_polymorphic_allocator
         value: 201902L
 
-  - desc: 'Target Vectorization Policies from Parallelism V2 TS to C++20 (`std::execution::unseq`)'
+  - desc: "Target Vectorization Policies from Parallelism V2 TS to C++20 (`std::execution::unseq`)"
     paper: P1001
     lib: true
     support:
@@ -1367,7 +1367,7 @@ features:
       - target: Clang 17
         msg: Not supported by Clang on macOS.
 
-  - desc: '`std::lerp()` and `std::midpoint()`'
+  - desc: "`std::lerp()` and `std::midpoint()`"
     paper: P0811
     lib: true
     support:
@@ -1380,7 +1380,7 @@ features:
       - name: __cpp_lib_interpolate
         value: 201902L
 
-  - desc: 'Usability enhancements for `std::span`'
+  - desc: "Usability enhancements for `std::span`"
     paper: P1024
     lib: true
     support:
@@ -1390,7 +1390,7 @@ features:
       - MSVC 19.26
       - Xcode 11.4
 
-  - desc: 'Make `filesystem::create_directory()` intuitive'
+  - desc: "Make `filesystem::create_directory()` intuitive"
     paper: P1164
     lib: true
     support:
@@ -1399,7 +1399,7 @@ features:
       - MSVC 19.20
       - Xcode 13
 
-  - desc: '`std::ssize()` and unsigned extent for `std::span`'
+  - desc: "`std::ssize()` and unsigned extent for `std::span`"
     paper: P1227
     lib: true
     support:
@@ -1411,7 +1411,7 @@ features:
       - name: __cpp_lib_ssize
         value: 201902L
 
-  - desc: 'Traits for (un)bounded arrays'
+  - desc: "Traits for (un)bounded arrays"
     paper: P1357
     lib: true
     support:
@@ -1423,7 +1423,7 @@ features:
       - name: __cpp_lib_bounded_array_traits
         value: 201902L
 
-  - desc: '`std::to_array()`'
+  - desc: "`std::to_array()`"
     paper: P0325
     lib: true
     support:
@@ -1444,7 +1444,7 @@ features:
       - MSVC 19.29
       - Xcode 15
 
-  - desc: 'Layout-compatibility and pointer-interconvertibility traits'
+  - desc: "Layout-compatibility and pointer-interconvertibility traits"
     paper: P0466
     lib: true
     support:
@@ -1456,7 +1456,7 @@ features:
       - name: __cpp_lib_is_pointer_interconvertible
         value: 201907L
 
-  - desc: 'Bit operations: `std::rotl()`, `rotr()`, `countl_zero()`, `countl_one()`, `countr_zero()`, `countr_one()`, `popcount()`'
+  - desc: "Bit operations: `std::rotl()`, `rotr()`, `countl_zero()`, `countl_one()`, `countr_zero()`, `countr_one()`, `popcount()`"
     paper: P0553
     lib: true
     support:
@@ -1469,7 +1469,7 @@ features:
       - name: __cpp_lib_bitops
         value: 201907L
 
-  - desc: 'Mathematical constants'
+  - desc: "Mathematical constants"
     paper: P0631
     lib: true
     support:
@@ -1481,7 +1481,7 @@ features:
       - name: __cpp_lib_math_constants
         value: 201907L
 
-  - desc: 'Text formatting (`std::format()`)'
+  - desc: "Text formatting (`std::format()`)"
     paper: P0645
     lib: true
     support:
@@ -1494,7 +1494,7 @@ features:
       - name: __cpp_lib_format
         value: 201907L
 
-  - desc: '`std::stop_token` and `std::jthread`'
+  - desc: "`std::stop_token` and `std::jthread`"
     paper: P0660
     lib: true
     support:
@@ -1506,16 +1506,16 @@ features:
       - Xcode 26
     hints:
       - target: Clang 17
-        msg: 'Guarded behind compiler flag <code>-fexperimental-library</code>.'
+        msg: "Guarded behind compiler flag <code>-fexperimental-library</code>."
       - target: MSVC 19.28
-        msg: 'MSVC 19.28 is available with VS 16.8 and VS 16.9. This feature is supported starting with VS 16.9, which is identifiable by checking <code>_MSC_FULL_VER == 192829910</code>.'
+        msg: "MSVC 19.28 is available with VS 16.8 and VS 16.9. This feature is supported starting with VS 16.9, which is identifiable by checking <code>_MSC_FULL_VER == 192829910</code>."
       - target: Xcode 16.4
-        msg: 'Guarded behind compiler flag <code>-fexperimental-library</code>.'
+        msg: "Guarded behind compiler flag <code>-fexperimental-library</code>."
     ftm:
       - name: __cpp_lib_jthread
         value: 201911L
 
-  - desc: '`constexpr` `std::allocator` and related utilities'
+  - desc: "`constexpr` `std::allocator` and related utilities"
     paper: P0784
     lib: true
     support:
@@ -1527,7 +1527,7 @@ features:
       - name: __cpp_lib_constexpr_dynamic_alloc
         value: 201907L
 
-  - desc: '`constexpr` `std::string`'
+  - desc: "`constexpr` `std::string`"
     paper:
       - P0426
       - P1032
@@ -1543,7 +1543,7 @@ features:
       - name: __cpp_lib_constexpr_string
         value: 201907L
 
-  - desc: '`constexpr` `std::vector`'
+  - desc: "`constexpr` `std::vector`"
     paper: P1004
     lib: true
     support:
@@ -1556,7 +1556,7 @@ features:
       - name: __cpp_lib_constexpr_vector
         value: 201907L
 
-  - desc: 'Input range adaptors'
+  - desc: "Input range adaptors"
     paper: P1035
     lib: true
     support:
@@ -1565,7 +1565,7 @@ features:
       - MSVC 19.29
       - Xcode 15
 
-  - desc: '`constexpr` `std::invoke()` and related utilities'
+  - desc: "`constexpr` `std::invoke()` and related utilities"
     paper: P1065
     lib: true
     support:
@@ -1574,7 +1574,7 @@ features:
       - MSVC 19.28
       - Xcode 13
 
-  - desc: 'Atomic waiting and notifying, `std::counting_semaphore`, `std::latch` and `std::barrier`'
+  - desc: "Atomic waiting and notifying, `std::counting_semaphore`, `std::latch` and `std::barrier`"
     paper: P1135
     lib: true
     support:
@@ -1584,7 +1584,7 @@ features:
       - Xcode 13.4.1 (hint)
     hints:
       - target: Xcode 13.4.1
-        msg: 'Minimum deployment target: macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0'
+        msg: "Minimum deployment target: macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0"
     ftm:
       - name: __cpp_lib_atomic_flag_test
         value: 201907L
@@ -1599,7 +1599,7 @@ features:
       - name: __cpp_lib_semaphore
         value: 201907L
 
-  - desc: 'Add `max()` to latch and barrier'
+  - desc: "Add `max()` to latch and barrier"
     paper: P1865
     lib: true
     support:
@@ -1609,9 +1609,9 @@ features:
       - Xcode (hint)
     hints:
       - target: Xcode
-        msg: 'Minimum deployment target: macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0'
+        msg: "Minimum deployment target: macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0"
 
-  - desc: '`std::source_location`'
+  - desc: "`std::source_location`"
     paper: P1208
     lib: true
     support:
@@ -1623,7 +1623,7 @@ features:
       - name: __cpp_lib_source_location
         value: 201907L
 
-  - desc: 'The Mothership has Landed: Adding `<=>` to the Library'
+  - desc: "The Mothership has Landed: Adding `<=>` to the Library"
     paper: P1614
     lib: true
     support:
@@ -1632,7 +1632,7 @@ features:
       - MSVC 19.29
       - Xcode 16.3
 
-  - desc: 'Integration of chrono with text formatting'
+  - desc: "Integration of chrono with text formatting"
     paper: P1361
     lib: true
     support:
@@ -1641,7 +1641,7 @@ features:
       - MSVC 19.29
       - Xcode 26
 
-  - desc: '`constexpr` default constructor of `std::atomic` and `std::atomic_flag`'
+  - desc: "`constexpr` default constructor of `std::atomic` and `std::atomic_flag`"
     paper: P0883
     lib: true
     support:
@@ -1653,7 +1653,7 @@ features:
       - name: __cpp_lib_atomic_value_initialization
         value: 201911L
 
-  - desc: '`constexpr` for numeric algorithms'
+  - desc: "`constexpr` for numeric algorithms"
     paper: P1645
     lib: true
     support:
@@ -1665,7 +1665,7 @@ features:
       - name: __cpp_lib_constexpr_numeric
         value: 201911L
 
-  - desc: 'Safe integral comparisons'
+  - desc: "Safe integral comparisons"
     paper: P0586
     lib: true
     support:
@@ -1677,7 +1677,7 @@ features:
       - name: __cpp_lib_integer_comparison_functions
         value: 202002L
 
-  - desc: 'Reviewing deprecated facilities of C++17 for C++20'
+  - desc: "Reviewing deprecated facilities of C++17 for C++20"
     paper: P0619
     lib: true
     support:
@@ -1687,9 +1687,9 @@ features:
       - Xcode 26
     hints:
       - target: Clang 20
-        msg: 'Removed headers are still provided as an extension, but with deprecation warnings.'
+        msg: "Removed headers are still provided as an extension, but with deprecation warnings."
 
-  - desc: 'Symmetry for spaceship'
+  - desc: "Symmetry for spaceship"
     paper: P0905
     lib: true
     support:
@@ -1700,14 +1700,14 @@ features:
       - name: __cpp_impl_three_way_comparison
         value: 201711L
 
-  - desc: '`std::atomic_ref::wait()`, `std::atomic_ref::notify_one()` and `std::atomic_ref::notify_all()`'
+  - desc: "`std::atomic_ref::wait()`, `std::atomic_ref::notify_one()` and `std::atomic_ref::notify_all()`"
     paper: P1643
     lib: true
     support:
       - Clang 19
       - Xcode 16.3
 
-  - desc: '`std::basic_istream_view::iterator` should not be copyable'
+  - desc: "`std::basic_istream_view::iterator` should not be copyable"
     paper: P1638
     lib: true
     support:
@@ -1723,21 +1723,21 @@ features:
       - MSVC 19.29
       - Xcode 15
 
-  - desc: 'Ranges adaptors for non-copyable iterators'
+  - desc: "Ranges adaptors for non-copyable iterators"
     paper: P1862
     lib: true
     support:
       - Clang 16
       - Xcode 15
 
-  - desc: '`ranges::elements_view` needs its own sentinel'
+  - desc: "`ranges::elements_view` needs its own sentinel"
     paper: P1994
     lib: true
     support:
       - Clang 16
       - Xcode 15
 
-  - desc: '`char8_t` backward compatibility remediation'
+  - desc: "`char8_t` backward compatibility remediation"
     paper: P1423
     lib: true
     support:
@@ -1749,7 +1749,7 @@ features:
       - name: __cpp_lib_char8_t
         value: 201907L
 
-  - desc: 'Concept traits should be named after concepts'
+  - desc: "Concept traits should be named after concepts"
     paper: P1871
     lib: true
     support:
