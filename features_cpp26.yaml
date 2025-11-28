@@ -1117,15 +1117,6 @@ features:
       - name: __cpp_lib_ranges_as_const
         value: 202311L
 
-  - desc: "`std::make_format_args()` now accepts only lvalue references instead of forwarding references"
-    paper: P2905
-    lib: true
-    support:
-      - GCC 14
-      - Clang 18
-      - MSVC 19.40
-      - Xcode 16
-
   - desc: "Fix formatting of code units as integers (_Dude, where's my char?_)"
     paper: P2909
     lib: true
