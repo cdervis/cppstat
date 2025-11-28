@@ -484,7 +484,7 @@ features:
       - P2615
       - P2788
     support:
-      - GCC 11 (hint)
+      - GCC 11 (partial)
       - GCC 15 (hint)
       - GCC 16 (hint)
       - Clang 17 (hint)
@@ -493,20 +493,19 @@ features:
       - Xcode 26 (hint)
     hints:
       - target: GCC 11
-        msg: Supports the majority of modules proposals, except for P1815, private module fragments, parser-level global module entity merging and global module implications of <code>extern \"C/C++\"</code> (P1103).
+        msg: Supports the majority of modules features, except for P1815, private module fragments, parser-level global module entity merging and global module implications of <code>extern \"C/C++\"</code> (P1103).
       - target: GCC 15
-        msg: In addition to GCC 11, supports P2615 (Meaningful exports).
+        msg: In addition to GCC 11, supports P2615.
       - target: GCC 16
-        msg: In addition to GCC 15, supports P1766 (Mitigating minor modules maladies).
+        msg: In addition to GCC 15, supports P1766 and P1815.
       - target: Clang 17
-        msg: Supports the majority of modules proposals, except for P1857, and P1815 is supported on all targets except Windows.
+        msg: Supports the majority of modules features, except for P1857, and P1815 is supported on all targets except Windows.
       - target: Xcode 26
         msg: >
           Apple Clang requires the `-fcxx-modules` flag **in addition to** `-fmodules`.<br/><br/>
           Xcode 26 does not ship the `clang-scan-deps` utility that is required by certain build system generators
           like CMake, in order to scan module dependencies.<br/>
           This means that C++ modules cannot be used in conjunction with CMake's Xcode generator (`-G Xcode`).
-
     ftm:
       - name: __cpp_modules
         value: 201907L
