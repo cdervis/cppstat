@@ -418,7 +418,7 @@ features:
       - name: __cpp_lib_nonmember_container_access
         value: 201411L
 
-  - desc: "Cleaning‐up `noexcept` in the library"
+  - desc: "Cleaning-up `noexcept` in the library"
     paper: N4258
     lib: true
     support:
