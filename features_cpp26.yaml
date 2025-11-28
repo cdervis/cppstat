@@ -704,7 +704,7 @@ features:
       - name: _cpp_lib_text_encoding
         value: 202306L
 
-  - desc: "`to_string` or not `to_string` (Arithmetic overloads of `std::to_string()` and `std::to_wstring()` use `std::format()`)"
+  - desc: "Arithmetic overloads of `std::to_string()` and `std::to_wstring()` use `std::format()`"
     paper: P2587
     lib: true
     support:
