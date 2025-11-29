@@ -736,6 +736,8 @@ features:
   - desc: "Hashing support for `chrono` value classes"
     paper: P2592
     lib: true
+    support:
+      - GCC 16
     ftm:
       - name: __cpp_lib_chrono
         value: 202306L
