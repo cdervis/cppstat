@@ -1381,6 +1381,7 @@ features:
     paper: P2711
     lib: true
     support:
+      - GCC 16
       - Clang 17 (partial)
       - MSVC 19.36 (hint)
       - Xcode 15
