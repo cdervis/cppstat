@@ -891,6 +891,7 @@ features:
     paper: P2714
     lib: true
     support:
+      - GCC 16
       - Clang 20 (partial)
     ftm:
       - name: __cpp_lib_bind_front
