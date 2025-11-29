@@ -212,7 +212,7 @@ features:
       - target: Clang 19
         msg: >
           Supported as an extension.<br>
-          Use the flag <code>-Wno-c23-extensions</code> to suppress warnings related to <code>#embed</code>.<br>
+          Use the flag `-Wno-c23-extensions`` to suppress warnings related to `#embed`.<br>
           Although this is a C++26 feature, this is available in Clang starting with C++20 (`-std=c++20`).<br>
           Clang does not define the `__cpp_pp_embed` feature-testing macro yet.
 
@@ -898,13 +898,13 @@ features:
     ftm:
       - name: __cpp_lib_bind_front
         value: 202306L
-        desc: <code>std::bind_front()</code> is available
+        desc: `std::bind_front()` is available
       - name: __cpp_lib_bind_back
         value: 202306L
-        desc: <code>std::bind_back()</code> is available
+        desc: `std::bind_back()` is available
       - name: __cpp_lib_not_fn
         value: 202306L
-        desc: <code>std::not_fn</code> is available
+        desc: `std::not_fn` is available
 
   - desc: "`std::submdspan()`"
     paper:
@@ -1188,10 +1188,10 @@ features:
     ftm:
       - name: __cpp_lib_constrained_equality
         value: 202403L
-        desc: "Constrained relational operators for <code>std::pair</code>, <code>std::tuple</code>, <code>std::optional</code> and <code>std::variant</code>"
+        desc: "Constrained relational operators for `std::pair`, `std::tuple`, `std::optional` and `std::variant`"
       - name: __cpp_lib_reference_wrapper
         value: 202403L
-        desc: "Comparisons for <code>std::reference_wrapper</code>"
+        desc: "Comparisons for `std::reference_wrapper`"
 
   - desc: "Atomic minimum/maximum"
     paper: P0493
@@ -1457,10 +1457,10 @@ features:
     ftm:
       - name: __cpp_lib_indirect
         value: 202502L
-        desc: "<code>std::indirect</code> is available"
+        desc: "`std::indirect` is available"
       - name: __cpp_lib_polymorphic
         value: 202502L
-        desc: "<code>std::polymorphic</code> is available"
+        desc: "`std::polymorphic` is available"
 
   - desc: "`constexpr` containers and adaptors"
     paper: P3372
