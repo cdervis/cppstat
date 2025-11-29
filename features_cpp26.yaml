@@ -1248,6 +1248,7 @@ features:
       - P3235
     lib: true
     support:
+      - GCC 16
       - MSVC 19.43
     ftm:
       - name: __cpp_lib_print
