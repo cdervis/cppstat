@@ -952,12 +952,15 @@ features:
     paper: P2165
     lib: true
     support:
-      - GCC 14
+      - GCC 14 (partial)
+      - GCC 16
       - Clang 2.9 (partial)
       - MSVC 19.36 (partial)
       - MSVC 19.37
       - Xcode (partial)
     hints:
+      - target: GCC 14
+        msg: "Some views incorrectly still return `std::pair` instead of `std::tuple`"
       - target: Clang 2.9
         msg: "Changes of `tuple`, `adjacent_view`, and `cartesian_product_view` are not yet implemented."
       - target: MSVC 19.36
