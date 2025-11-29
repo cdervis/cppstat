@@ -369,6 +369,7 @@ features:
     paper: P2988
     lib: true
     support:
+      - GCC 16
       - Clang 22
     ftm:
       - name: __cpp_lib_freestanding_optional
