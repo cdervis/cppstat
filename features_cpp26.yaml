@@ -874,6 +874,8 @@ features:
   - desc: "`std::function_ref`: type-erased callable reference"
     paper: P0792
     lib: true
+    support:
+      - GCC 16
     ftm:
       - name: __cpp_lib_function_ref
         value: 202306L
