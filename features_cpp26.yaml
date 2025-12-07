@@ -212,7 +212,7 @@ features:
       - target: Clang 19
         msg: >
           Supported as an extension.<br>
-          Use the flag `-Wno-c23-extensions`` to suppress warnings related to `#embed`.<br>
+          Use the flag `-Wno-c23-extensions` to suppress warnings related to `#embed`.<br>
           Although this is a C++26 feature, this is available in Clang starting with C++20 (`-std=c++20`).<br>
           Clang does not define the `__cpp_pp_embed` feature-testing macro yet.
 
