@@ -714,7 +714,7 @@ features:
       - name: __cpp_lib_to_string
         value: 202306L
 
-  - desc: "Type checking format args"
+  - desc: "Type-checking format args"
     paper: P2757
     lib: true
     support:
