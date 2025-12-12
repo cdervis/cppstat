@@ -1589,14 +1589,21 @@ infos:
 
   - name: Xcode 26
     released: September 15, 2025
-    requires: macOS 26 (Tahoe)
+    requires: macOS 15.6 (Sequoia)
     apple_clang: 17.0.0 (clang-1700.3.19.1)
     refs:
       - https://developer.apple.com/documentation/xcode-release-notes/xcode-26-release-notes
 
   - name: Xcode 26.1
     released: November 3, 2025
-    requires: macOS 26 (Tahoe)
+    requires: macOS 15.6 (Sequoia)
     apple_clang: 17.0.0 (clang-1700.4.4.1)
     refs:
       - https://developer.apple.com/documentation/xcode-release-notes/xcode-26_1-release-notes
+
+  - name: Xcode 26.2
+    released: December 12, 2025
+    requires: macOS 15.6 (Sequoia)
+    apple_clang: 17.0.0 (clang-1700.6.3.2)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-26_2-release-notes
