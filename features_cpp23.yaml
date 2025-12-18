@@ -787,7 +787,7 @@ features:
       - name: __cpp_lib_constexpr_memory
         value: 202202L
 
-  - desc: "Constructing containers and strings from ranges with `ranges::to()`, tagged constructors, insert and assign member functions"
+  - desc: "Conversions from ranges to containers (`ranges::to()`)"
     paper: P1206
     lib: true
     support:
@@ -1093,7 +1093,7 @@ features:
       - name: __cpp_lib_ranges_contains
         value: 202207L
 
-  - desc: "Ranges fold algorithms"
+  - desc: "Ranges fold algorithms (`ranges::fold()`)"
     paper: P2322
     lib: true
     support:
