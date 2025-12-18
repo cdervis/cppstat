@@ -376,6 +376,7 @@ features:
       - GCC 14
       - Clang 20
       - MSVC 19.50
+    keywords: ["constexpr"]
 
   - desc: "The equality operator you are looking for"
     paper: P2468
