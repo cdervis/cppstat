@@ -58,6 +58,7 @@ A feature has the following properties:
   - `name`: The name of the FTM, e.g. `__cpp_lib_not_fn`
   - `value`: The value of the FTM, e.g. `201603L`
 - `content`: Information about the feature (see below)
+- `keywords`: A list of keywords to categorize the feature. The feature will be included in search results when searching for these keywords.
 
 As a **full** reference example, here is the definition of P2465 at the time of writing:
 
