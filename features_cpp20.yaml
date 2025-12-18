@@ -326,6 +326,7 @@ features:
     ftm:
       - name: __cpp_constexpr
         value: 201907L
+    keywords: ["constexpr"]
 
   - desc: "Consistency improvements for comparisons"
     paper: P1120
