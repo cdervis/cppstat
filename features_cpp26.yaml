@@ -15,6 +15,7 @@ features:
   - desc: "Splicing a base class subobject"
     paper: P3293
     lib: true
+    keywords: ["reflection"]
 
   - desc: "`define_static_{string,object,array}`"
     paper: P3491
@@ -22,6 +23,7 @@ features:
     ftm:
       - name: __cpp_lib_define_static
         value: 202506L
+    keywords: ["reflection"]
 
   - desc: "Function Parameter Reflection in Reflection for C++26"
     paper: P3096
@@ -34,6 +36,7 @@ features:
     ftm:
       - name: __cpp_expansion_statements
         value: 202506L
+    keywords: ["reflection"]
 
   - desc: "Error Handling in Reflection"
     paper: P3560
