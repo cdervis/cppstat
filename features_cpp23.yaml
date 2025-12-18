@@ -1086,9 +1086,9 @@ features:
       - Xcode 16.3
     hints:
       - target: Clang 18
-        msg: "std::ranges::contains_subrange is not implemented"
+        msg: "`ranges::contains_subrange()` is not implemented."
       - target: Xcode 16
-        msg: "std::ranges::contains_subrange is not implemented"
+        msg: "`ranges::contains_subrange()` is not implemented."
     ftm:
       - name: __cpp_lib_ranges_contains
         value: 202207L
