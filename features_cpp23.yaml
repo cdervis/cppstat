@@ -826,7 +826,7 @@ features:
       - Clang 21 (partial)
     hints:
       - target: GCC 13
-        msg: "Only `ranges::iota()1 is implemented."
+        msg: "Only `ranges::iota()` is implemented."
       - target: Clang 21
         msg: "Only `ranges::iota()` is implemented. ([GitHub PR](https://github.com/llvm/llvm-project/pull/68494))"
     ftm:
