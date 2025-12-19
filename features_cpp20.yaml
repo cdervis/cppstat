@@ -658,8 +658,11 @@ features:
     paper: P1814
     support:
       - GCC 10
-      - Clang 19
+      - Clang 19 (partial)
       - MSVC 19.27
+    hints:
+      - target: Clang 19
+        msg: "This feature has been initially completed, but the feature macro `__cpp_deduction_guides` has not been updated."
     ftm:
       - name: __cpp_deduction_guides
         value: 201907L
