@@ -488,7 +488,8 @@ features:
       - GCC 11 (partial)
       - GCC 15 (hint)
       - GCC 16 (hint)
-      - Clang 17 (hint)
+      - Clang 17 (partial)
+      - Clang 22 (partial)
       - MSVC 19.0 (partial)
       - MSVC 19.28
       - Xcode 26 (hint)
@@ -501,6 +502,8 @@ features:
         msg: In addition to GCC 15, supports P1766 and P1815.
       - target: Clang 17
         msg: Supports the majority of modules features, except for P1857, and P1815 is supported on all targets except Windows.
+      - target: Clang 22
+        msg: In addition to Clang 17, supports P1857 (partially).
       - target: Xcode 26
         msg: >
           Apple Clang requires the `-fcxx-modules` flag **in addition to** `-fmodules`.<br/><br/>
