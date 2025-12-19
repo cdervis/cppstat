@@ -1120,7 +1120,11 @@ features:
     paper: P2404
     lib: true
     support:
+      - Clang 22 (hint)
       - MSVC 19.36
+    hints:
+      - target: Clang 22
+        msg: "Implemented as a defect report (DR) for C++20."
     ftm:
       - name: __cpp_lib_concepts
         value: 202207L
