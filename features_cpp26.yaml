@@ -1617,7 +1617,7 @@ features:
     paper: P3878
     lib: true
 
-  - desc: "Make `execution::when_all() a Ronseal Algorithm`"
+  - desc: "Make `execution::when_all()` a Ronseal Algorithm"
     paper: P3887
     lib: true
 
@@ -1631,7 +1631,7 @@ features:
     ftm:
       - name: __cpp_lib_linalg
         value: 202511L
-  
+
   - desc: "`constexpr` `std::format()`"
     paper: P3391
     lib: true
@@ -1645,4 +1645,3 @@ features:
 
   - desc: "Fix erroneous behaviour termination semantics for C++26"
     paper: P3684
-
