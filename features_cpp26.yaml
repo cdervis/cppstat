@@ -1550,18 +1550,52 @@ features:
       - GCC 16
       - Clang 21
 
-  - desc: "`constexpr` `std::format()`"
-    paper: P3391
+  - desc: "Wording for NB comment resolution on trivial relocation"
+    paper: P3920
     lib: true
-    ftm:
-      - name: __cpp_lib_constexpr_format
-        value: 202511L
 
-  - desc: "Fix erroneous behaviour termination semantics for C++26"
-    paper: P3684
+  - desc: "Resolve inconsistencies in begin/end for `std::valarray` and braced initializer lists"
+    paper: P3016
+    lib: true
 
-  - desc: "Standard library hardening should not use the 'observe' semantic"
-    paper: P3878
+  - desc: "`flat_meow` fixes"
+    paper: P3567
+    lib: true
+
+  - desc: "Future-proof `submdspan_mapping`"
+    paper: P3663
+    lib: true
+
+  - desc: "Assorted NB comment resolutions for Kona 2025"
+    paper: P3914
+    lib: true
+
+  - desc: "Make `std::optional<T&>` trivially copyable"
+    paper: P3836
+    lib: true
+
+  - desc: "Proposed Resolution for NB Comment GB13-309 `std::atomic_ref<T>` is not convertible to `std::atomic_ref<const T>`"
+    paper: P3860
+    lib: true
+
+  - desc: "When Do You Know `execution::connect()` Doesn’t Throw?"
+    paper: P3388
+    lib: true
+
+  - desc: "Rename `std::nontype`, and make it broadly useful"
+    paper: P3774
+    lib: true
+
+  - desc: "Remove `evaluation_exception()` from contract-violation handling for C++26"
+    paper: P3819
+    lib: true
+
+  - desc: "Harmonize proxy-reference operations (LWG3638 and LWG4187)"
+    paper: P3612
+    lib: true
+
+  - desc: "Fix for `std::type_order` template definition"
+    paper: P3778
     lib: true
 
   - desc: "Library Support for Expansion Statements"
@@ -1571,3 +1605,44 @@ features:
       - name: __cpp_lib_integer_sequence
         value: 202511L
     keywords: ["reflection"]
+
+  - desc: "Missing deduction guide from `simd::mask` to `simd::vec`"
+    paper: P3922
+    lib: true
+    ftm:
+      - name: __cpp_lib_simd
+        value: 202511L
+
+  - desc: "Standard library hardening should not use the 'observe' semantic"
+    paper: P3878
+    lib: true
+
+  - desc: "Make `execution::when_all() a Ronseal Algorithm`
+    paper: P3887
+    lib: true
+
+  - desc: "Additional NB comment resolutions for Kona 2025"
+    paper: P3923
+    lib: true
+
+  - desc: "Fix C++26 by making the rank-1, rank-2, rank-k, and rank-2k updates consistent with the BLAS"
+    paper: P3371
+    lib: true
+    ftm:
+      - name: __cpp_lib_linalg
+        value: 202511L
+  
+  - desc: "`constexpr` `std::format()`"
+    paper: P3391
+    lib: true
+    ftm:
+      - name: __cpp_lib_constexpr_format
+        value: 202511L
+
+  - desc: "Optimize for `std::optional` in range adaptors"
+    paper: P3913
+    lib: true
+
+  - desc: "Fix erroneous behaviour termination semantics for C++26"
+    paper: P3684
+
