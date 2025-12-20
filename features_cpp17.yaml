@@ -127,7 +127,7 @@ features:
       - Xcode
 
   - desc: "Rewording inheriting constructors"
-    paper: P00136
+    paper: P0136
     support:
       - GCC 7
       - Clang 3.9
