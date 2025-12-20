@@ -966,7 +966,7 @@ features:
       - name: __cpp_lib_constexpr_string
         value: 201611L
 
-  - desc: "[File system library](https://en.cppreference.com/w/cpp/filesystem.html) (`std::filesystem`)"
+  - desc: "File system library (`std::filesystem` and `<filesystem>`)"
     paper:
       - P0218
       - P0219
