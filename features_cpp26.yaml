@@ -1471,26 +1471,37 @@ features:
     ftm:
       - name: __cpp_lib_constexpr_deque
         value: 202502L
+        desc: "`constexpr` `std::deque`"
       - name: __cpp_lib_constexpr_flat_map
         value: 202502L
+        desc: "`constexpr` `std::flat_map`"
       - name: __cpp_lib_constexpr_flat_set
         value: 202502L
+        desc: "`constexpr` `std::flat_set`"
       - name: __cpp_lib_constexpr_forward_list
         value: 202502L
+        desc: "`constexpr` `std::forward_list`"
       - name: __cpp_lib_constexpr_list
         value: 202502L
+        desc: "`constexpr` `std::list`"
       - name: __cpp_lib_constexpr_map
         value: 202502L
+        desc: "`constexpr` `std::map`"
       - name: __cpp_lib_constexpr_queue
         value: 202502L
+        desc: "`constexpr` `std::queue`"
       - name: __cpp_lib_constexpr_set
         value: 202502L
+        desc: "`constexpr` `std::set`"
       - name: __cpp_lib_constexpr_stack
         value: 202502L
+        desc: "`constexpr` `std::stack`"
       - name: __cpp_lib_constexpr_unordered_map
         value: 202502L
+        desc: "`constexpr` `std::unordered_map`"
       - name: __cpp_lib_constexpr_unordered_set
         value: 202502L
+        desc: "`constexpr` `std::unordered_set`"
 
   - desc: "`constexpr` `std::inplace_vector` for non-trivial types"
     paper: P3074
