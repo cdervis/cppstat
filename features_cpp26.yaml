@@ -1187,7 +1187,7 @@ features:
       - target: Clang 19
         msg: "Constrained equality is not implemented."
       - target: Clang 22
-        msg: "The changes to `tuple`'s equality overload from [P2165](https://wg21.link/P2165) are not yet implemented."
+        msg: "The changes to `tuple`'s equality overload from P2165 are not yet implemented."
     ftm:
       - name: __cpp_lib_constrained_equality
         value: 202403L
