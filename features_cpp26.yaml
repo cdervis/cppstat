@@ -1572,6 +1572,8 @@ features:
   - desc: "`flat_meow` fixes"
     paper: P3567
     lib: true
+    support:
+      - Clang 22
 
   - desc: "Future-proof `submdspan_mapping`"
     paper: P3663
