@@ -307,6 +307,7 @@ features:
     paper: P2795
     support:
       - GCC 16
+    keywords: ["safety"]
 
   - desc: '= delete("should have a reason");'
     paper: P2573
