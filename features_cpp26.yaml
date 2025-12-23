@@ -394,6 +394,7 @@ features:
     ftm:
       - name: __cpp_lib_debugging
         value: 202311L
+    keywords: ["debugger", "breakpoint"]
     content: p2546_debugging.md
 
   - desc: "Variadic friends"
