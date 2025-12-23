@@ -63,6 +63,7 @@ features:
       - name: __cpp_lib_contracts
         value: 202502L
         desc: "Library API is available. This is a separate macro to allow for mixing language (compiler) support with different standard library implementations, where this macro specifies the level of support for contracts by that standard library implementation."
+    keywords: ["safety"]
     content: p2900.md
 
   - desc: "Standard library hardening"
@@ -125,6 +126,7 @@ features:
       - name: __cpp_lib_hardened_vector
         desc: "Hardened `std::vector`"
         value: 202502L
+    keywords: ["safety"]
     content: "p3471_hardening.md"
 
   - desc: "Minor additions to C++26 standard library hardening"
@@ -136,6 +138,7 @@ features:
     hints:
       - target: MSVC 19.50
         msg: Partial support only due to the lack of Contracts. Support starting with Visual Studio 2026 18.0 Preview 2. ([GitHub Issue](https://github.com/microsoft/STL/pull/5650))
+    keywords: ["safety"]
 
   - desc: "Trivial Relocatability For C++26"
     paper: P2786
@@ -1630,6 +1633,7 @@ features:
   - desc: "Standard library hardening should not use the 'observe' semantic"
     paper: P3878
     lib: true
+    keywords: ["safety"]
 
   - desc: "Make `execution::when_all()` a Ronseal Algorithm"
     paper: P3887
