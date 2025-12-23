@@ -672,6 +672,7 @@ features:
       - GCC 15
       - Clang 20
       - Xcode 16
+    keywords: ["safety"]
 
   - desc: "C++26 should refer to C23 not C17"
     paper: P3348
@@ -693,6 +694,7 @@ features:
     paper: P1494
     support:
       - GCC 16
+    keywords: ["safety"]
 
   - desc: "Testing for success or failure of `<charconv>` functions"
     lib: true
@@ -814,6 +816,7 @@ features:
     ftm:
       - name: __cpp_lib_associative_heterogeneous_insertion
         value: 202306L
+    keywords: ["insert", "insert_or_assign", "bucket", "map", "set", "unordered", "emplace", "multiset", "multimap"]
 
   - desc: "Enabling the use of `std::weak_ptr` as keys in unordered associative containers"
     paper: P1901
@@ -977,6 +980,7 @@ features:
     ftm:
       - name: __cpp_lib_saturation_arithmetic
         value: 202311L
+    keywords: ["math"]
 
   - desc: "A free function linear algebra interface based on the BLAS (`<linalg>`)"
     paper:
@@ -987,6 +991,7 @@ features:
     ftm:
       - name: __cpp_lib_linalg
         value: 202311L
+    keywords: ["math"]
 
   - desc: "Make `assert()` macro user friendly for C and C++"
     paper: P2264
@@ -1242,6 +1247,7 @@ features:
     lib: true
     support:
       - Clang 19
+    keywords: ["safety"]
 
   - desc: "Remove deprecated `std::shared_ptr` atomic access APIs from C++26"
     paper: P2869
@@ -1266,7 +1272,7 @@ features:
         value: 202403L
     keywords: ["format"]
 
-  - desc: "Remove nodiscard annotations from the standard library specification"
+  - desc: "Remove `[[nodiscard]]` annotations from the standard library specification"
     paper: P2422
     lib: true
     support:
@@ -1298,6 +1304,7 @@ features:
     ftm:
       - name: __cpp_lib_philox_engine
         value: 202406L
+    keywords: ["random"]
 
   - desc: "Give `std::optional` range support"
     paper: P3168
@@ -1402,7 +1409,7 @@ features:
       - name: __cpp_lib_constexpr_atomic
         value: 202411L
 
-  - desc: 'Wording for "constexpr for specialized memory algorithms"'
+  - desc: 'Wording for "`constexpr` for specialized memory algorithms"'
     paper: P3508
     lib: true
     support:
@@ -1541,6 +1548,7 @@ features:
     ftm:
       - name: __cpp_lib_hive
         value: 202502L
+    keywords: ["container"]
 
   - desc: "Freestanding library: `<algorithm>`, `<numeric>`, and `<random>`"
     paper: P2976
@@ -1676,3 +1684,4 @@ features:
 
   - desc: "Fix erroneous behaviour termination semantics for C++26"
     paper: P3684
+    keywords: ["safety"]
