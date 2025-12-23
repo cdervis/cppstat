@@ -1581,6 +1581,13 @@ features:
     lib: true
     support:
       - Clang 22
+    ftm:
+      - name: __cpp_lib_flat_map
+        value: 202511L
+        desc: "Fixes for `std::flat_map` and `std::flat_multimap`"
+      - name: __cpp_lib_flat_set
+        value: 202511L
+        desc: "Fixes for `std::flat_set` and `std::flat_multiset`"
     keywords: ["insert_range", "map", "multimap", "set", "multiset"]
 
   - desc: "Future-proof `submdspan_mapping`"
