@@ -346,6 +346,7 @@ features:
       - Clang 19
       - Xcode 16.3
     content: p2809_trivial_infinite_loops_ub.md
+    keywords: ["safety"]
 
   - desc: "`constexpr` placement `new`"
     paper: P2747
@@ -371,6 +372,7 @@ features:
     ftm:
       - name: __cpp_structured_bindings
         value: 202406L
+    keywords: ["decompose"]
 
   - desc: "`std::optional<T&>`"
     paper: P2988
