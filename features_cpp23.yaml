@@ -311,6 +311,7 @@ features:
     ftm:
       - name: __cpp_range_based_for
         value: 202211L
+    keywords: ["safety"]
 
   - desc: "Declarations and where to find them"
     paper: P1787
