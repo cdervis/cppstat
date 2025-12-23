@@ -287,6 +287,7 @@ features:
       - Clang 7
       - MSVC 19.22
       - Xcode 10.2
+    keywords: ["lambda"]
 
   - desc: "`explicit(bool)`"
     paper: P0892
