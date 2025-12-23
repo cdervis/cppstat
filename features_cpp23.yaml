@@ -630,6 +630,7 @@ features:
     ftm:
       - name: __cpp_lib_associative_heterogeneous_erasure
         value: 202110L
+    keywords: ["erase"]
 
   - desc: "`std::byteswap()`"
     paper: P1272
