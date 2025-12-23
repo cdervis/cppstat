@@ -1581,6 +1581,7 @@ features:
     lib: true
     support:
       - Clang 22
+    keywords: ["insert_range", "map", "multimap", "set", "multiset"]
 
   - desc: "Future-proof `submdspan_mapping`"
     paper: P3663
