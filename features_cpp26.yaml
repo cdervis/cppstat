@@ -1059,6 +1059,7 @@ features:
     paper: P0952
     lib: true
     support:
+      - GCC 16
       - MSVC 19.42
 
   - desc: "Remove deprecated `std::allocator` typedef from C++26 (`std::allocator::is_always_equal()`)"
