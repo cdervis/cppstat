@@ -429,6 +429,8 @@ features:
   - desc: "Padded `std::mdspan` layouts"
     paper: P2642
     lib: true
+    support:
+      - GCC 16
     ftm:
       - name: __cpp_lib_submdspan
         value: 202403L
