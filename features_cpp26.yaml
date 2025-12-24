@@ -1585,6 +1585,11 @@ features:
 
   - desc: "Wording for NB comment resolution on trivial relocation"
     paper: P3920
+    support:
+      - GCC
+      - Clang
+      - MSVC
+      - Xcode
     lib: true
 
   - desc: "Resolve inconsistencies in begin/end for `std::valarray` and braced initializer lists"
