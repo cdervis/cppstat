@@ -1621,6 +1621,8 @@ features:
   - desc: "Make `std::optional<T&>` trivially copyable"
     paper: P3836
     lib: true
+    support:
+      - Clang 22
 
   - desc: "Proposed Resolution for NB Comment GB13-309 `std::atomic_ref<T>` is not convertible to `std::atomic_ref<const T>`"
     paper: P3860
