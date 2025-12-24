@@ -926,6 +926,8 @@ features:
       - P2630
       - P3355
     lib: true
+    support:
+      - GCC 16
     ftm:
       - name: __cpp_lib_submdspan
         value: 202306L
