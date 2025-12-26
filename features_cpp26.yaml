@@ -1651,6 +1651,8 @@ features:
   - desc: "Library Support for Expansion Statements"
     paper: P1789
     lib: true
+    support:
+      - Clang 22
     ftm:
       - name: __cpp_lib_integer_sequence
         value: 202511L
