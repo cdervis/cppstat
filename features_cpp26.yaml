@@ -753,6 +753,7 @@ features:
     lib: true
     support:
       - GCC 16
+      - Clang 22
     ftm:
       - name: __cpp_lib_chrono
         value: 202306L
