@@ -452,6 +452,8 @@ features:
     ftm:
       - name: __cpp_lib_exception_ptr_cast
         value: 202506L
+    support:
+      - GCC 16
 
   - desc: "Standardized `constexpr` type ordering"
     paper: P2830
