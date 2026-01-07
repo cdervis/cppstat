@@ -1329,6 +1329,7 @@ features:
     paper: P3168
     lib: true
     support:
+      - GCC 16
       - Clang 22
     ftm:
       - name: __cpp_lib_optional_range_support
