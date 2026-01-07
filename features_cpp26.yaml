@@ -485,6 +485,7 @@ features:
 
   - desc: "Interleaved complex values support in `std::simd`"
     paper: P2663
+    lib: true
     ftm:
       - name: __cpp_lib_simd_complex
         value: 202502L
