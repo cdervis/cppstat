@@ -897,8 +897,9 @@ features:
     paper: P2736
     lib: true
     support:
-      - Clang 19
-      - Xcode 16
+      - GCC
+      - Clang
+      - Xcode
 
   - desc: "De-deprecating volatile compound operations."
     paper: P2327
