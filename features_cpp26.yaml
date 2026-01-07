@@ -449,6 +449,9 @@ features:
   - desc: "Inspecting `std::exception_ptr` should be `constexpr`"
     paper: P3748
     lib: true
+    ftm:
+      - name: __cpp_lib_exception_ptr_cast
+        value: 202506L
 
   - desc: "Standardized `constexpr` type ordering"
     paper: P2830
