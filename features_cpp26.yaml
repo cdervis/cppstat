@@ -574,6 +574,7 @@ features:
     paper: P3060
     lib: true
     support:
+      - GCC 16
       - Clang 22
     ftm:
       - name: __cpp_lib_ranges_indices
