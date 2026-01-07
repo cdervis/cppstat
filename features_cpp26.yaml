@@ -591,6 +591,7 @@ features:
     paper: P3223
     lib: true
     support:
+      - GCC 16
       - Clang 22
       - MSVC 19.50
 
