@@ -1762,6 +1762,7 @@ features:
     paper: P1871
     lib: true
     support:
+      - GCC 10
       - Clang 14
       - Xcode
       - MSVC 19.27
