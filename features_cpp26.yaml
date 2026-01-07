@@ -455,6 +455,11 @@ features:
   - desc: "Standardized `constexpr` type ordering"
     paper: P2830
     lib: true
+    ftm:
+      - name: __cpp_lib_type_order
+        value: 202506L
+    support:
+      - GCC 16
 
   - desc: "`execution::write_env` and unstoppable sender adaptors"
     paper: P3284
