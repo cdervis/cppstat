@@ -1420,6 +1420,7 @@ features:
     paper: P3323
     lib: true
     support:
+      - GCC 16
       - MSVC 19.44
 
   - desc: "`constexpr` `std::atomic` and `std::atomic_ref`"
