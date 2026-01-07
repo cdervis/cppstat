@@ -1488,6 +1488,8 @@ features:
     ftm:
       - name: __cpp_lib_constexpr_exceptions
         value: 202411L
+    support:
+      - GCC 16
 
   - desc: "Defang and deprecate `std::memory_order::consume`"
     paper: P3475
