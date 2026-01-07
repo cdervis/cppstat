@@ -1716,7 +1716,7 @@ features:
       - Clang 19
       - Xcode 16.3
 
-  - desc: "`std::basic_istream_view::iterator` should not be copyable"
+  - desc: "`ranges::basic_istream_view::iterator` should not be copyable"
     paper: P1638
     lib: true
     support:
