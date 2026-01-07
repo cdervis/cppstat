@@ -1736,6 +1736,7 @@ features:
     paper: P1862
     lib: true
     support:
+      - GCC 10
       - Clang 16
       - Xcode 15
 
