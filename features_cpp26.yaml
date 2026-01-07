@@ -492,6 +492,7 @@ features:
 
   - desc: "Extend `<bit>` header function with overloads for `std::simd`"
     paper: P2933
+    lib: true
     ftm:
       - name: __cpp_lib_simd
         value: 202506L
