@@ -1365,6 +1365,7 @@ features:
     paper: P2655
     lib: true
     support:
+      - GCC 16
       - Clang 21 (hint)
       - MSVC 19.37
     hints:
