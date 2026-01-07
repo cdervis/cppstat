@@ -466,6 +466,9 @@ features:
   - desc: "Parallel range algorithms"
     paper: P3179
     lib: true
+    ftm:
+      - name: __cpp_lib_parallel_algorithm
+        value: 202506L
 
   - desc: "Reconsider parallel `ranges::rotate_copy()` and `ranges::reverse_copy()`"
     paper: P3709
