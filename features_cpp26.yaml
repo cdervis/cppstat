@@ -490,6 +490,7 @@ features:
       - name: __cpp_lib_string_subview
         value: 202506L
     support:
+      - GCC 16
       - Clang 22
 
   - desc: "Interleaved complex values support in `std::simd`"
