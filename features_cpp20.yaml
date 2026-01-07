@@ -1720,6 +1720,7 @@ features:
     paper: P1638
     lib: true
     support:
+      - GCC 11
       - Clang 16
       - Xcode 15
 
