@@ -445,6 +445,8 @@ features:
   - desc: "Inspecting `std::exception_ptr`"
     paper: P2927
     lib: true
+    support:
+      - GCC 16
 
   - desc: "Inspecting `std::exception_ptr` should be `constexpr`"
     paper: P3748
