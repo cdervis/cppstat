@@ -10,7 +10,6 @@ features:
 
   - desc: "Annotations for Reflection"
     paper: P3394
-    lib: true
 
   - desc: "Splicing a base class subobject"
     paper: P3293
