@@ -1713,6 +1713,7 @@ features:
     paper: P1643
     lib: true
     support:
+      - GCC 11
       - Clang 19
       - Xcode 16.3
 
