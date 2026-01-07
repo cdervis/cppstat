@@ -486,6 +486,9 @@ features:
   - desc: "`std::string::subview()`"
     paper: P3044
     lib: true
+    ftm:
+      - name: __cpp_lib_string_subview
+        value: 202506L
     support:
       - Clang 22
 
