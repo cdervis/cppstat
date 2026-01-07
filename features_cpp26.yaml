@@ -1309,6 +1309,8 @@ features:
   - desc: "`std::inplace_vector`: dynamically-resizable vector with fixed capacity (`<inplace_vector>`)"
     paper: P0843
     lib: true
+    support:
+      - GCC 16
     ftm:
       - name: __cpp_lib_inplace_vector
         value: 202406L
