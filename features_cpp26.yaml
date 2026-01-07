@@ -1321,6 +1321,8 @@ features:
     ftm:
       - name: __cpp_lib_philox_engine
         value: 202406L
+    support:
+      - GCC 16
     keywords: ["random"]
 
   - desc: "Give `std::optional` range support"
