@@ -1351,6 +1351,7 @@ features:
     paper: P2674
     lib: true
     support:
+      - GCC 16
       - Clang 20
       - MSVC 19.50 (partial)
       - Xcode 26
