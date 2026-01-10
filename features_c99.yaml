@@ -1,0 +1,141 @@
+features:
+  - desc: "Universal-character-names in [identifiers](https://en.cppreference.com/w/c/language/identifiers.html)"
+    support:
+      - GCC 3.1
+      - Clang
+      - MSVC
+  - desc: "Increased [translation limits](https://en.cppreference.com/w/c/language/identifiers.html#Translation_limits)"
+    paper: N590
+    support:
+      - GCC
+      - Clang
+  - desc: "`//` comments"
+    paper: N644
+    support:
+      - GCC
+      - Clang
+      - MSVC
+  - desc: "`restrict` pointers"
+    paper: N448
+    support:
+      - GCC
+      - Clang
+      - MSVC (partial)
+    hints:
+      - target: MSVC
+        msg: "Requires /std:c11 or later."
+  - desc: "Enhanced [arithmetic types](https://en.cppreference.com/w/c/language/arithmetic_types.html)"
+    paper:
+      - N815
+      - N601
+      - N620
+      - N638
+      - N657
+      - N694
+      - N809
+    support:
+      - GCC
+      - Clang (partial)
+  - desc: "Flexible array members"
+    support:
+      - GCC 3
+      - Clang
+      - Xcode
+  - desc: "[Variable-length array](https://en.cppreference.com/w/c/language/array.html#Variable-length_arrays) (VLA) types"
+    paper: N683
+    support:
+      - GCC
+      - Clang
+  - desc: "Variably-modified (VM) types"
+    paper: N2778
+    support:
+      - Clang
+  - desc: "Designated initializers"
+    paper: N494
+    support:
+      - GCC 3
+      - Clang
+      - MSVC
+  - desc: "Non-constant initializers"
+    support:
+      - GCC
+  - desc: "Idempotent cvr-qualifiers"
+    paper: N505
+    support:
+      - GCC 3
+  - desc: "Trailing comma in _enumerator-list_"
+    support:
+      - GCC
+      - Clang
+      - MSVC
+  - desc: "Hexadecimal [floating constants](https://en.cppreference.com/w/c/language/floating_constant.html)"
+    paper: N308
+    support:
+      - GCC 2.8
+      - Clang
+      - MSVC
+  - desc: "[Compound literals](https://en.cppreference.com/w/c/language/compound_literal.html)"
+    paper: N716
+    support:
+      - GCC 3.1
+      - Clang
+      - MSVC
+  - desc: "Floating-point environment"
+    support:
+      - GCC (partial)
+      - Clang (partial)
+  - desc: "Requiring truncation for divisions of signed integer types"
+    paper: N617
+    support:
+      - GCC
+  - desc: "Implicit `return 0;` in the [`main()` function](https://en.cppreference.com/w/c/language/main_function.html)"
+    support:
+      - GCC
+      - Clang
+      - MSVC
+  - desc: "Declarations and statements in mixed order"
+    paper: N740
+    support:
+      - GCC 3
+      - Clang
+      - MSVC
+  - desc: "_init-statement_ in `for` loops"
+    support:
+      - GCC
+      - Clang
+      - MSVC
+  - desc: "`inline` functions"
+    paper: N741
+    support:
+      - GCC 4.3
+      - Clang
+      - MSVC
+  - desc: "Predefined variable `__func__`"
+    paper: N611
+    support:
+      - GCC 3
+      - Clang
+      - MSVC
+  - desc: "Cvr-qualifiers and `static` in `[]` within function declarations"
+    support:
+      - GCC 3.1
+      - Clang
+  - desc: "[Variadic macros](https://en.cppreference.com/w/c/preprocessor/replace.html)"
+    paper: N707
+    support:
+      - GCC 3
+      - Clang
+      - MSVC
+  - desc: "`_Pragma` preprocessor operator"
+    paper: N634
+    support:
+      - GCC 3
+      - Clang
+      - MSVC (partial)
+    hints:
+      - target: MSVC
+        msg: "Requires /std:c11 or later."
+  - desc: "Standard pragmas for floating-point evaluation"
+    paper:
+      - N631
+      - N696

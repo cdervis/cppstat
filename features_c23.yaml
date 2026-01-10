@@ -1,0 +1,274 @@
+features:
+  - desc: "`static_assert` with no message"
+    paper: N3020
+    support:
+      - GCC 9
+      - Clang 9
+      - MSVC
+      - Xcode
+  - desc: "`[[nodiscard]]`"
+    paper: N2267
+    support:
+      - GCC 10
+      - Clang 9
+      - Xcode
+  - desc: "`[[maybe_unused]]`"
+    paper: N2270
+    support:
+      - GCC 10
+      - Clang 9
+      - Xcode
+  - desc: "`[[deprecated]]`"
+    paper: N2334
+    support:
+      - GCC 10
+      - Clang 9
+      - Xcode
+  - desc: "[Attributes](https://en.cppreference.com/w/c/language/attributes.html)"
+    paper:
+      - N2335
+      - N2554
+    support:
+      - GCC 10
+      - Clang 9
+      - Xcode
+  - desc: "IEEE 754 decimal floating-point types"
+    paper: N2341
+    support:
+      - GCC 4.2 (partial)
+      - GCC 12
+  - desc: "`[[fallthrough]]`"
+    paper: N2408
+    support:
+      - GCC 10
+      - Clang 9
+      - Xcode
+  - desc: "[u8 character constants](https://en.cppreference.com/w/c/language/character_constant.html)"
+    paper: N2418
+    support:
+      - GCC 10
+      - Clang 15
+  - desc: "Removal of [function definitions](https://en.cppreference.com/w/c/language/function_definition.html) without prototype"
+    paper: N2432
+    support:
+      - GCC 10
+      - Clang 15
+  - desc: "`[[nodiscard]]` with message"
+    paper: N2448
+    support:
+      - GCC 11
+      - Clang 10
+  - desc: "Unnamed parameters in function definitions"
+    paper: N2480
+    support:
+      - GCC 11
+      - Clang 11
+  - desc: "[Labels](https://en.cppreference.com/w/c/language/statements.html#Labels) before declarations and end of blocks"
+    paper: N2508
+    support:
+      - GCC 11
+      - Clang 16
+      - MSVC (partial)
+  - desc: "[Binary integer constants](https://en.cppreference.com/w/c/language/integer_constant.html)"
+    paper: N2549
+    support:
+      - GCC 4.3 (hint)
+      - GCC 11
+      - Clang 2.9 (hint)
+      - Clang 9
+      - MSVC 19.0 (hint)
+      - Xcode
+    hints:
+      - target: GCC 4.3
+        msg: "Supported as an extension."
+      - target: Clang 2.9
+        msg: "Supported as an extension."
+      - target: MSVC 19.0
+        msg: "Supported as an extension."
+  - desc: "[__has_c_attribute](https://en.cppreference.com/w/c/language/attributes.html#Attribute_testing) in preprocessor conditionals"
+    paper: N2553
+    support:
+      - GCC 11
+      - Clang 9
+      - Xcode
+  - desc: "Allow duplicate attributes"
+    paper: N2557
+    support:
+      - GCC 11
+      - Clang 13
+      - Xcode
+  - desc: "IEEE 754 interchange and extended types"
+    paper: N2601
+    support:
+      - GCC 7 (partial)
+      - GCC 14
+      - Clang 6 (partial)
+      - Xcode (partial)
+    hints:
+      - target: GCC 7
+        msg: "Only TS 18661-3 mentioned; the status of conformance is unknown."
+      - target: Clang 6
+        msg: "Only `_Float16` is supported."
+      - target: Xcode
+        msg: "Only `_Float16` is supported."
+  - desc: "Digit separators"
+    paper: N2626
+    support:
+      - GCC 12
+      - Clang 13
+      - MSVC 19.0 (hint)
+      - Xcode
+    hints:
+      - target: MSVC 19.0
+        msg: "Supported as an extension."
+  - desc: "[`#elifdef` and `#elifndef`](https://en.cppreference.com/w/c/preprocessor/conditional.html)"
+    paper: N2645
+    support:
+      - GCC 12
+      - Clang 13
+      - MSVC 19.40
+      - Xcode 13.3
+  - desc: "Type change of [u8 string literals](https://en.cppreference.com/w/c/language/string_literal.html)"
+    paper: N2653
+    support:
+      - GCC 13
+  - desc: "`[[maybe_unused]]` for labels"
+    paper: N2662
+    support:
+      - GCC 11
+      - Clang 16
+  - desc: "`#warning`"
+    paper: N2686
+    support:
+      - GCC
+      - Clang
+  - desc: "Bit-precise integer types (`_BitInt`)"
+    paper: N2763
+    support:
+      - GCC 14 (partial)
+      - Clang 15
+    hints:
+      - target: GCC 14
+        msg: "Only supported on IA-32, x86-64 and AArch64 LE."
+  - desc: "`[[noreturn]]`"
+    paper: N2764
+    support:
+      - GCC 13
+      - Clang 15
+  - desc: "Suffixes for bit-precise integer constants"
+    paper: N2775
+    support:
+      - GCC 14
+      - Clang 15
+  - desc: "`__has_include` in preprocessor conditionals"
+    paper: N2799
+    support:
+      - GCC 5
+      - Clang
+      - MSVC 19.11
+      - Xcode
+  - desc: "Identifier Syntax using Unicode Standard Annex 31"
+    paper: N2836
+    support:
+      - GCC 13
+      - Clang 15
+  - desc: "Removal of [function declarations](https://en.cppreference.com/w/c/language/function_declaration.html) without prototype"
+    paper: N2841
+    support:
+      - GCC 13
+      - Clang 15
+  - desc: "[Empty initializers](https://en.cppreference.com/w/c/language/initialization.html#Empty_initialization)"
+    paper: N2900
+    support:
+      - GCC 13 (partial)
+      - Clang (partial)
+      - Xcode (partial)
+    hints:
+      - target: GCC 13
+        msg: "Supported as an extension. Missing support for scalars and variable-length arrays (VLAs)."
+      - target: Clang
+        msg: "Supported as an extension. Missing support for scalars and variable-length arrays (VLAs)."
+      - target: Xcode
+        msg: "Supported as an extension. Missing support for scalars and variable-length arrays (VLAs)."
+  - desc: "`typeof` and `typeof_unqual`"
+    paper:
+      - N2927
+      - N2930
+    support:
+      - GCC 13 (hint)
+      - Clang 16 (hint)
+      - MSVC 19.39
+      - Xcode (partial)
+    hints:
+      - target: GCC 13
+        msg: "Prior to GCC 13: Supported as an extension. Only typeof (and `__typeof__` in strict modes) supported."
+      - target: Clang 16
+        msg: "Prior to Clang 16: Supported as an extension. Only typeof (and `__typeof__` in strict modes) supported."
+      - target: Xcode
+        msg: "Supported as an extension. Only typeof (and `__typeof__` in strict modes) supported."
+  - desc: "New spelling of keywords"
+    paper: N2934
+    support:
+      - GCC 13
+      - Clang 16 (partial)
+  - desc: "Predefined `true` and `false`"
+    paper: N2935
+    support:
+      - GCC 13
+      - Clang 15
+  - desc: "`[[unsequenced]]` and `[[reproducible]]`"
+    paper: N2956
+    support:
+      - GCC 15
+  - desc: "Relax requirements for [variadic parameter list](https://en.cppreference.com/w/c/language/variadic.html)"
+    paper: N2975
+    support:
+      - GCC 13
+      - Clang 16
+  - desc: "Type inference in object definitions"
+    paper: N3007
+    support:
+      - GCC 13
+      - Clang 18
+  - desc: "`#embed`"
+    paper: N3017
+    support:
+      - GCC 15
+      - Clang 19
+  - desc: "`constexpr` objects"
+    paper: N3018
+    support:
+      - GCC 13
+      - Clang 19
+  - desc: "Improved Normal Enumerations"
+    paper: N3029
+    support:
+      - GCC 13
+      - Clang 20 (hint)
+    hints:
+      - target: Clang 20
+        msg: "Supported as an extension with incomplete diagnostics in earlier versions."
+  - desc: "Enumerations with fixed underlying types"
+    paper: N3030
+    support:
+      - GCC 13
+      - Clang 20 (hint)
+    hints:
+      - target: Clang 20
+        msg: "Supported as an extension with incomplete diagnostics in earlier versions."
+  - desc: "`__VA_OPT__`"
+    paper: N3033
+    support:
+      - GCC 8
+      - GCC 13
+      - Clang 12 (partial)
+      - MSVC 19.39
+  - desc: "Storage-class specifiers for compound literals"
+    paper: N3038
+    support:
+      - GCC 13
+  - desc: "`nullptr`"
+    paper: N3042
+    support:
+      - GCC 13
+      - Clang 16 (partial)
