@@ -1625,6 +1625,8 @@ features:
   - desc: "Resolve inconsistencies in begin/end for `std::valarray` and braced initializer lists"
     paper: P3016
     lib: true
+    support:
+      - MSVC 19.51
 
   - desc: "`flat_meow` fixes"
     paper: P3567
