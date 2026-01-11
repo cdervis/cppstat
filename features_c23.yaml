@@ -1,3 +1,4 @@
+---
 features:
   - desc: "`static_assert` with no message"
     paper: N3020
