@@ -1,0 +1,82 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+title: Feature List Schema
+type: object
+required:
+  - features
+properties:
+  features:
+    type: array
+    items:
+      $ref: "#/definitions/feature"
+definitions:
+  feature:
+    type: object
+    required:
+      - desc
+    additionalProperties: false
+    properties:
+      desc:
+        type: string
+        description: "The title and / or description of the feature. Supports Markdown."
+      paper:
+        description: "One or multiple paper numbers that belong to the feature."
+        oneOf:
+          - type: string
+          - type: array
+            items:
+              type: string
+      lib:
+        type: boolean
+        default: false
+        description: "If true, the feature counts as a standard library feature."
+      support:
+        type: array
+        description: "A list of toolchains that support the feature."
+        items:
+          type: string
+          pattern: "^(GCC|Clang|MSVC|Xcode)( [0-9]+(\\.[0-9]+)*)?( \\((partial|hint)\\))?$"
+      hints:
+        type: array
+        description: "A list of hints targeting toolchains in the support list."
+        items:
+          type: object
+          required:
+            - target
+            - msg
+          additionalProperties: false
+          properties:
+            target:
+              type: string
+              description: "The toolchain that this hint targets."
+            msg:
+              type: string
+              description: "The reason for partial support, or the hint. Supports Markdown."
+      ftm:
+        type: array
+        description: "A list of feature-testing macros (FTM) for the feature."
+        items:
+          type: object
+          required:
+            - name
+            - value
+          additionalProperties: false
+          properties:
+            name:
+              type: string
+              description: "The name of the FTM."
+            value:
+              oneOf:
+                - type: string
+                - type: integer
+              description: "The value of the FTM."
+            desc:
+              type: string
+              description: "Optional description of what this FTM specifically refers to."
+      content:
+        type: string
+        description: "Information about the feature (e.g. a filename)."
+      keywords:
+        type: array
+        description: "A list of keywords to categorize the feature."
+        items:
+          type: string
