@@ -20,3 +20,19 @@ jobs:
           yamllint_file_or_dir: "*.yaml"
           yamllint_strict: false
           yamllint_comment: false
+
+      - name: "Set up Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: "Install dependencies"
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install PyYAML jsonschema
+
+      - name: "Verify features"
+        run: |
+          for file in features_c*.yaml; do
+            python3 verify_features.py "$file"
+          done
