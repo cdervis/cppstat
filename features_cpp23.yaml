@@ -73,6 +73,7 @@ features:
       - Clang
       - MSVC 19.30
       - Xcode
+    unknown: true
 
   - desc: "Remove mixed wide string literal concatenation"
     paper: P2201
@@ -210,6 +211,8 @@ features:
     hints:
       - target: MSVC 19.50
         msg: "Only supports octal and hexadecimal escape sequences, no universal character name escape sequences."
+      - target: GCC 16
+        msg: "Invalid"
 
   - desc: "Named universal character escapes"
     paper: P2071
