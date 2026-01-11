@@ -22,7 +22,7 @@
 
 ---
 
-cppstat is a site that lists C++ features and their respective support by compilers and standard libraries, designed as a simple, quickly searchable table.
+cppstat is a site that lists C and C++ features and their respective support by compilers and standard libraries, designed as a simple, quickly searchable table.
 
 ## Contributing
 
@@ -40,7 +40,7 @@ If you are a toolchain or compiler vendor, feel free to request full editorial a
 ### Feature Lists
 
 Features are declared in the `features_cpp<version>.yaml` files.
-Each standard version of C++ has its own file; for example, `features_cpp23.yaml` contains all features of C++23.
+Each standard version of C and C++ has its own file; for example, `features_cpp23.yaml` contains all features of C++23.
 
 A feature has the following properties:
 
