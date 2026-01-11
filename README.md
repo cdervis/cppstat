@@ -1,11 +1,5 @@
 <div class="title-block" style="text-align: center;" align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/logo_dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="assets/logo_light.png">
-  <img alt="Logo" src="assets/logo_light.png" width="500">
-</picture>
-
 **[cppstat.dev]**
 
 [cppstat.dev]: https://cppstat.dev
