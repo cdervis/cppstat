@@ -406,7 +406,6 @@ features:
     support:
       - GCC 15
       - Clang 20
-      - Invalid
     ftm:
       - name: __cpp_variadic_friend
         value: 202403L
