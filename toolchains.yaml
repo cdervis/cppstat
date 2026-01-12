@@ -20,6 +20,11 @@ infos:
     refs:
       - "https://developer.apple.com/xcode/cpp/"
 
+  - name: Xcode
+    desc: This applies to Xcode compiler in general, not any specific version.
+    refs:
+      - "https://developer.apple.com/xcode/cpp/"
+
   - name: GCC 3.1
     released: May, 2002
     refs:
