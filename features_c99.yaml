@@ -161,3 +161,11 @@ features:
     paper:
       - N631
       - N696
+    support:
+      - Clang (partial)
+      - Xcode (partial)
+    hints:
+      - target: Clang
+        msg: "`STDC FENV_ACCESS ON` is not supported."
+      - target: Xcode
+        msg: "`STDC FENV_ACCESS ON` is not supported."
