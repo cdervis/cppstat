@@ -71,6 +71,8 @@ features:
     paper: N505
     support:
       - GCC 3
+      - Clang
+      - Xcode
   - desc: "Trailing comma in _enumerator-list_"
     support:
       - GCC
