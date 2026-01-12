@@ -1,7 +1,7 @@
 ---
 features:
   - desc: "`static_assert` with no message"
-    paper: N3020
+    paper: N2265
     support:
       - GCC 9
       - Clang 9
