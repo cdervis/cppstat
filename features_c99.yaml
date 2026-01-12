@@ -100,6 +100,8 @@ features:
     paper: N617
     support:
       - GCC
+      - Clang
+      - Xcode
   - desc: "Implicit `return 0;` in the [`main()` function](https://en.cppreference.com/w/c/language/main_function.html)"
     support:
       - GCC
