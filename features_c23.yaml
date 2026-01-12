@@ -246,6 +246,7 @@ features:
     support:
       - GCC 13
       - Clang 18
+      - Xcode 16.4
   - desc: "`#embed`"
     paper: N3017
     support:
@@ -256,6 +257,7 @@ features:
     support:
       - GCC 13
       - Clang 19
+      - Xcode 16.4
   - desc: "Improved Normal Enumerations"
     paper: N3029
     support:
