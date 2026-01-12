@@ -116,6 +116,7 @@ features:
       - GCC 3
       - Clang
       - MSVC
+      - Xcode
   - desc: "_init-statement_ in `for` loops"
     support:
       - GCC
@@ -140,6 +141,7 @@ features:
     support:
       - GCC 3.1
       - Clang
+      - Xcode
   - desc: "[Variadic macros](https://en.cppreference.com/w/c/preprocessor/replace.html)"
     paper: N707
     support:
