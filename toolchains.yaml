@@ -21,7 +21,7 @@ infos:
       - "https://developer.apple.com/xcode/cpp/"
 
   - name: Xcode
-    desc: This applies to Xcode compiler in general, not any specific version.
+    desc: This applies to Xcode in general, not any specific version.
     refs:
       - "https://developer.apple.com/xcode/cpp/"
 
