@@ -49,27 +49,32 @@ features:
     support:
       - GCC 10
       - Clang 15
+      - Xcode 16.1
   - desc: "Removal of [function definitions](https://en.cppreference.com/w/c/language/function_definition.html) without prototype"
     paper: N2432
     support:
       - GCC 10
       - Clang 15
+      - Xcode 16.1
   - desc: "`[[nodiscard]]` with message"
     paper: N2448
     support:
       - GCC 11
       - Clang 10
+      - Xcode 16.1
   - desc: "Unnamed parameters in function definitions"
     paper: N2480
     support:
       - GCC 11
       - Clang 11
+      - Xcode 16.1
   - desc: "[Labels](https://en.cppreference.com/w/c/language/statements.html#Labels) before declarations and end of blocks"
     paper: N2508
     support:
       - GCC 11
       - Clang 16
       - MSVC (partial)
+      - Xcode 16.1
   - desc: "[Binary integer constants](https://en.cppreference.com/w/c/language/integer_constant.html)"
     paper: N2549
     support:
@@ -138,16 +143,19 @@ features:
     support:
       - GCC 11
       - Clang 16
+      - Xcode 16.1
   - desc: "`#warning`"
     paper: N2686
     support:
       - GCC
       - Clang
+      - Xcode 16.1
   - desc: "Bit-precise integer types (`_BitInt`)"
     paper: N2763
     support:
       - GCC 14 (partial)
       - Clang 15
+      - Xcode 16.1
     hints:
       - target: GCC 14
         msg: "Only supported on IA-32, x86-64 and AArch64 LE."
@@ -156,11 +164,13 @@ features:
     support:
       - GCC 13
       - Clang 15
+      - Xcode 16.1
   - desc: "Suffixes for bit-precise integer constants"
     paper: N2775
     support:
       - GCC 14
       - Clang 15
+      - Xcode 16.1
   - desc: "`__has_include` in preprocessor conditionals"
     paper: N2799
     support:
@@ -173,11 +183,13 @@ features:
     support:
       - GCC 13
       - Clang 15
+      - Xcode 16.1
   - desc: "Removal of [function declarations](https://en.cppreference.com/w/c/language/function_declaration.html) without prototype"
     paper: N2841
     support:
       - GCC 13
       - Clang 15
+      - Xcode 16.1
   - desc: "[Empty initializers](https://en.cppreference.com/w/c/language/initialization.html#Empty_initialization)"
     paper: N2900
     support:
@@ -212,11 +224,13 @@ features:
     support:
       - GCC 13
       - Clang 16 (partial)
+      - Xcode 16.1
   - desc: "Predefined `true` and `false`"
     paper: N2935
     support:
       - GCC 13
       - Clang 15
+      - Xcode 16.1
   - desc: "`[[unsequenced]]` and `[[reproducible]]`"
     paper: N2956
     support:
@@ -226,6 +240,7 @@ features:
     support:
       - GCC 13
       - Clang 16
+      - Xcode 16.1
   - desc: "Type inference in object definitions"
     paper: N3007
     support:
@@ -246,6 +261,7 @@ features:
     support:
       - GCC 13
       - Clang 20 (hint)
+      - Xcode 16.1
     hints:
       - target: Clang 20
         msg: "Supported as an extension with incomplete diagnostics in earlier versions."
@@ -254,6 +270,7 @@ features:
     support:
       - GCC 13
       - Clang 20 (hint)
+      - Xcode 16.1
     hints:
       - target: Clang 20
         msg: "Supported as an extension with incomplete diagnostics in earlier versions."
@@ -264,6 +281,7 @@ features:
       - GCC 13
       - Clang 12 (partial)
       - MSVC 19.39
+      - Xcode 16.1
   - desc: "Storage-class specifiers for compound literals"
     paper: N3038
     support:
@@ -273,3 +291,4 @@ features:
     support:
       - GCC 13
       - Clang 16 (partial)
+      - Xcode 16.1
