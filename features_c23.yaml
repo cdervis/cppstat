@@ -252,6 +252,7 @@ features:
     support:
       - GCC 15
       - Clang 19
+      - Xcode 26
   - desc: "`constexpr` objects"
     paper: N3018
     support:
