@@ -5,6 +5,7 @@ features:
       - GCC 3.1
       - Clang
       - MSVC
+      - Xcode
   - desc: "Increased [translation limits](https://en.cppreference.com/w/c/language/identifiers.html#Translation_limits)"
     paper: N590
     support:
@@ -16,12 +17,14 @@ features:
       - GCC
       - Clang
       - MSVC
+      - Xcode
   - desc: "`restrict` pointers"
     paper: N448
     support:
       - GCC
       - Clang
       - MSVC (partial)
+      - Xcode
     hints:
       - target: MSVC
         msg: "Requires /std:c11 or later."
@@ -37,6 +40,7 @@ features:
     support:
       - GCC
       - Clang (partial)
+      - Xcode (partial)
   - desc: "Flexible array members"
     support:
       - GCC 3
@@ -47,16 +51,19 @@ features:
     support:
       - GCC
       - Clang
+      - Xcode
   - desc: "Variably-modified (VM) types"
     paper: N2778
     support:
       - Clang
+      - Xcode
   - desc: "Designated initializers"
     paper: N494
     support:
       - GCC 3
       - Clang
       - MSVC
+      - Xcode
   - desc: "Non-constant initializers"
     support:
       - GCC
@@ -69,22 +76,26 @@ features:
       - GCC
       - Clang
       - MSVC
+      - Xcode
   - desc: "Hexadecimal [floating constants](https://en.cppreference.com/w/c/language/floating_constant.html)"
     paper: N308
     support:
       - GCC 2.8
       - Clang
       - MSVC
+      - Xcode
   - desc: "[Compound literals](https://en.cppreference.com/w/c/language/compound_literal.html)"
     paper: N716
     support:
       - GCC 3.1
       - Clang
       - MSVC
+      - Xcode
   - desc: "Floating-point environment"
     support:
       - GCC (partial)
       - Clang (partial)
+      - Xcode (partial)
   - desc: "Requiring truncation for divisions of signed integer types"
     paper: N617
     support:
@@ -94,6 +105,7 @@ features:
       - GCC
       - Clang
       - MSVC
+      - Xcode
   - desc: "Declarations and statements in mixed order"
     paper: N740
     support:
@@ -105,18 +117,21 @@ features:
       - GCC
       - Clang
       - MSVC
+      - Xcode
   - desc: "`inline` functions"
     paper: N741
     support:
       - GCC 4.3
       - Clang
       - MSVC
+      - Xcode
   - desc: "Predefined variable `__func__`"
     paper: N611
     support:
       - GCC 3
       - Clang
       - MSVC
+      - Xcode
   - desc: "Cvr-qualifiers and `static` in `[]` within function declarations"
     support:
       - GCC 3.1
@@ -127,12 +142,14 @@ features:
       - GCC 3
       - Clang
       - MSVC
+      - Xcode
   - desc: "`_Pragma` preprocessor operator"
     paper: N634
     support:
       - GCC 3
       - Clang
       - MSVC (partial)
+      - Xcode
     hints:
       - target: MSVC
         msg: "Requires /std:c11 or later."
