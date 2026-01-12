@@ -11,6 +11,7 @@ features:
     support:
       - GCC
       - Clang
+      - Xcode
   - desc: "`//` comments"
     paper: N644
     support:
