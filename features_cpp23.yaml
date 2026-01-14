@@ -1400,6 +1400,7 @@ features:
     support:
       - GCC 16
       - Clang 17 (partial)
+      - Clang 21
       - MSVC 19.36 (hint)
       - Xcode 15
     hints:
