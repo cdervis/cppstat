@@ -65,6 +65,7 @@ features:
       - GCC
       - Clang
       - Xcode
+      - MSVC 19.50
 
   - desc: "Make declaration order layout mandated"
     paper: P1847
@@ -205,7 +206,7 @@ features:
     support:
       - GCC 13
       - Clang 15
-      - MSVC 19.50 (partial)
+      - MSVC 19.50
       - Xcode 15
     hints:
       - target: MSVC 19.50
@@ -237,6 +238,7 @@ features:
       - GCC 13
       - Clang 13
       - Xcode 26
+      - MSVC 19.50
     ftm:
       - name: __cpp_implicit_move
         value: 202207L
@@ -318,6 +320,8 @@ features:
 
   - desc: "Declarations and where to find them"
     paper: P1787
+    support:
+      - MSVC
 
   - desc: "Change scope of lambda trailing-return-type"
     paper:
@@ -327,6 +331,7 @@ features:
       - GCC 16
       - Clang 17
       - Xcode 16.3
+      - MSVC 19.50
 
   - desc: "Meaningful exports"
     paper: P2615
@@ -350,6 +355,7 @@ features:
       - GCC 12
       - Clang 14
       - Xcode 14
+      - MSVC 19.50
 
   - desc: "Allow duplicate attributes"
     paper: P2156
@@ -357,6 +363,7 @@ features:
       - GCC 11
       - Clang 13
       - Xcode 13.4.1
+      - MSVC 19.50
 
   - desc: "Adjusting the value of feature-test macro `__cpp_concepts`"
     paper: P2493
@@ -388,6 +395,7 @@ features:
       - GCC 13
       - Clang 16
       - Xcode 16
+      - MSVC 19.36
 
   - desc: "`char8_t` compatibility and portability fix"
     paper: P2513
@@ -900,6 +908,7 @@ features:
       - GCC
       - Clang
       - Xcode
+      - MSVC 19.37
 
   - desc: "De-deprecating volatile compound operations."
     paper: P2327
@@ -945,6 +954,7 @@ features:
     lib: true
     support:
       - GCC 13
+      - MSVC 19.38
 
   - desc: "`ranges::stride_view` and `views::stride()`"
     paper: P1899
@@ -1026,6 +1036,7 @@ features:
       - Clang 16 (partial)
       - Clang 17
       - Xcode 15
+      - MSVC 19.42
     hints:
       - target: Clang 16
         msg: "Specializations for string and debug_string are not done."
