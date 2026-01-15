@@ -329,6 +329,7 @@ features:
       - GCC 16
       - Clang 17
       - Xcode 16.3
+      - MSVC 14.50
 
   - desc: "Meaningful exports"
     paper: P2615
