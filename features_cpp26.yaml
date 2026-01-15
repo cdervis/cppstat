@@ -957,10 +957,14 @@ features:
   - desc: "Freestanding language: Optional `::operator new`"
     paper: P2013
     lib: true
+    support:
+      - MSVC 19.38
 
   - desc: "Freestanding `std::char_traits`, `std::errc` and facilities in: `<charconv>`, `<cstdlib>`, `<cstring>`, `<cwchar>`"
     paper: P2338
     lib: true
+    support:
+      - MSVC 19.38
     ftm:
       - name: __cpp_lib_freestanding_char_traits
         value: 202306L
@@ -977,6 +981,8 @@ features:
   - desc: "Freestanding Feature-Test Macros and Implementation-Defined Extensions"
     paper: P2198
     lib: true
+    support:
+      - MSVC 19.38
     ftm:
       - name: __cpp_lib_freestanding_feature_test_macros
         value: 202306L
@@ -1123,7 +1129,7 @@ features:
     lib: true
     support:
       - GCC 14
-      - MSVC 19.40
+      - MSVC 19.42
     ftm:
       - name: __cpp_lib_freestanding_algorithm
         value: 202311L
