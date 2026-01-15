@@ -318,6 +318,8 @@ features:
 
   - desc: "Declarations and where to find them"
     paper: P1787
+    support:
+      - MSVC Yes
 
   - desc: "Change scope of lambda trailing-return-type"
     paper:
@@ -350,6 +352,7 @@ features:
       - GCC 12
       - Clang 14
       - Xcode 14
+      - MSVC 14.50
 
   - desc: "Allow duplicate attributes"
     paper: P2156
@@ -357,6 +360,7 @@ features:
       - GCC 11
       - Clang 13
       - Xcode 13.4.1
+      - MSVC 14.50
 
   - desc: "Adjusting the value of feature-test macro `__cpp_concepts`"
     paper: P2493
@@ -388,6 +392,7 @@ features:
       - GCC 13
       - Clang 16
       - Xcode 16
+      - MSVC 17.6
 
   - desc: "`char8_t` compatibility and portability fix"
     paper: P2513
@@ -906,6 +911,7 @@ features:
     lib: true
     support:
       - Xcode 15
+      - MSVC 17.14
 
   - desc: "`std::flat_map` (`<flat_map>`)"
     paper: P0429
