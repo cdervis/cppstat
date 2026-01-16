@@ -487,6 +487,9 @@ features:
     lib: true
     support:
       - MSVC
+      - GCC 11
+      - Clang 17
+      - Xcode 16.1
 
   - desc: "Providing size feedback in the Allocator interface"
     paper: P0401
