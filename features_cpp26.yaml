@@ -138,23 +138,6 @@ features:
         msg: Partial support only due to the lack of Contracts. Support starting with Visual Studio 2026 18.0 Preview 2. ([GitHub Issue](https://github.com/microsoft/STL/pull/5650))
     keywords: ["safety"]
 
-  - desc: "Trivial Relocatability For C++26"
-    paper: P2786
-    support:
-      - GCC 16 (hint)
-      - Clang 21 (partial)
-    hints:
-      - target: GCC 16
-        msg: "GCC defines the `__cpp_trivially_relocatable` macro for this feature."
-      - target: Clang 21
-        msg: "The feature-testing macro `__cpp_trivial_relocatability` is not set yet."
-    ftm:
-      - name: __cpp_trivial_relocatability
-        value: 202502L
-      - name: __cpp_trivially_relocatable
-        desc: Core feature (GCC only)
-        value: 202502L
-
   - desc: "[Pack indexing](https://en.cppreference.com/w/cpp/language/pack_indexing.html)"
     paper: P2662
     support:
