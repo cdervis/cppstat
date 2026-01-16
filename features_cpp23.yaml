@@ -336,7 +336,7 @@ features:
     support:
       - GCC 15
       - Clang 17
-      - MSVC Yes
+      - MSVC
 
   - desc: "`consteval` needs to propagate up"
     paper: P2564
@@ -913,7 +913,7 @@ features:
     lib: true
     support:
       - Xcode 15
-      - MSVC 17.14
+      - MSVC 19.34
 
   - desc: "`std::flat_map` (`<flat_map>`)"
     paper: P0429
