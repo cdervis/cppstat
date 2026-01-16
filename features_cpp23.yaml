@@ -485,6 +485,8 @@ features:
   - desc: "Relaxing requirements for `chrono::time_point::clock`"
     paper: P2212
     lib: true
+    support:
+      - MSVC
 
   - desc: "Providing size feedback in the Allocator interface"
     paper: P0401
