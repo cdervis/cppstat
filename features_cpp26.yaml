@@ -664,7 +664,7 @@ features:
       - Clang 22 (partial)
     hints:
       - target: GCC 16
-        msg: 'No <a href=\"https://gcc.gnu.org/bugzilla/show_bug.cgi?id=117784\">references to constexpr variables</a>'
+        msg: 'No [references to constexpr variables](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=117784).'
       - target: Clang 22
         msg: "References to `constexpr` and decomposition of tuple-like types are not supported (only arrays and aggregates are)."
 
