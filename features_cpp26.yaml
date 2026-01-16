@@ -20,6 +20,8 @@ features:
   - desc: "`define_static_{string,object,array}`"
     paper: P3491
     lib: true
+    support:
+      - GCC 16
     ftm:
       - name: __cpp_lib_define_static
         value: 202506L
