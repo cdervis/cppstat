@@ -1293,7 +1293,6 @@ features:
     lib: true
     support:
       - GCC 16
-      - Clang 22
     ftm:
       - name: __cpp_lib_start_lifetime_as
         value: 202207L
