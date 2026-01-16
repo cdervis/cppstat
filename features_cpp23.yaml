@@ -336,7 +336,7 @@ features:
     support:
       - GCC 15
       - Clang 17
-      - MSVC
+      - MSVC 19.28
 
   - desc: "`consteval` needs to propagate up"
     paper: P2564
