@@ -17,6 +17,8 @@ features:
 
   - desc: "Splicing a base class subobject"
     paper: P3293
+    support:
+      - GCC 16
     keywords: ["reflection"]
 
   - desc: "`define_static_{string,object,array}`"
