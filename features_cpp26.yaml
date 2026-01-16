@@ -12,6 +12,8 @@ features:
 
   - desc: "Annotations for Reflection"
     paper: P3394
+    support:
+      - GCC 16
 
   - desc: "Splicing a base class subobject"
     paper: P3293
