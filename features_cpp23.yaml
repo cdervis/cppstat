@@ -208,9 +208,6 @@ features:
       - Clang 15
       - MSVC 19.50
       - Xcode 15
-    hints:
-      - target: MSVC 19.50
-        msg: "Only supports octal and hexadecimal escape sequences, no universal character name escape sequences."
 
   - desc: "Named universal character escapes"
     paper: P2071
