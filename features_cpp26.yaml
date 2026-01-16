@@ -34,6 +34,8 @@ features:
   - desc: "Function Parameter Reflection in Reflection for C++26"
     paper: P3096
     lib: true
+    support:
+      - GCC 16
 
   - desc: "Expansion Statements (`template for`)"
     paper: P1306
