@@ -3,6 +3,8 @@ features:
   - desc: "Reflection for C++26 (`<meta>`)"
     paper: P2996
     lib: true
+    support:
+      - GCC 16
     ftm:
       - name: __cpp_impl_reflection
         value: 202506L
@@ -10,14 +12,20 @@ features:
 
   - desc: "Annotations for Reflection"
     paper: P3394
+    support:
+      - GCC 16
 
   - desc: "Splicing a base class subobject"
     paper: P3293
+    support:
+      - GCC 16
     keywords: ["reflection"]
 
   - desc: "`define_static_{string,object,array}`"
     paper: P3491
     lib: true
+    support:
+      - GCC 16
     ftm:
       - name: __cpp_lib_define_static
         value: 202506L
@@ -26,6 +34,8 @@ features:
   - desc: "Function Parameter Reflection in Reflection for C++26"
     paper: P3096
     lib: true
+    support:
+      - GCC 16
 
   - desc: "Expansion Statements (`template for`)"
     paper: P1306
@@ -137,23 +147,6 @@ features:
       - target: MSVC 19.50
         msg: Partial support only due to the lack of Contracts. Support starting with Visual Studio 2026 18.0 Preview 2. ([GitHub Issue](https://github.com/microsoft/STL/pull/5650))
     keywords: ["safety"]
-
-  - desc: "Trivial Relocatability For C++26"
-    paper: P2786
-    support:
-      - GCC 16 (hint)
-      - Clang 21 (partial)
-    hints:
-      - target: GCC 16
-        msg: "GCC defines the `__cpp_trivially_relocatable` macro for this feature."
-      - target: Clang 21
-        msg: "The feature-testing macro `__cpp_trivial_relocatability` is not set yet."
-    ftm:
-      - name: __cpp_trivial_relocatability
-        value: 202502L
-      - name: __cpp_trivially_relocatable
-        desc: Core feature (GCC only)
-        value: 202502L
 
   - desc: "[Pack indexing](https://en.cppreference.com/w/cpp/language/pack_indexing.html)"
     paper: P2662
@@ -957,10 +950,14 @@ features:
   - desc: "Freestanding language: Optional `::operator new`"
     paper: P2013
     lib: true
+    support:
+      - MSVC 19.38
 
   - desc: "Freestanding `std::char_traits`, `std::errc` and facilities in: `<charconv>`, `<cstdlib>`, `<cstring>`, `<cwchar>`"
     paper: P2338
     lib: true
+    support:
+      - MSVC 19.38
     ftm:
       - name: __cpp_lib_freestanding_char_traits
         value: 202306L
@@ -977,6 +974,8 @@ features:
   - desc: "Freestanding Feature-Test Macros and Implementation-Defined Extensions"
     paper: P2198
     lib: true
+    support:
+      - MSVC 19.38
     ftm:
       - name: __cpp_lib_freestanding_feature_test_macros
         value: 202306L
@@ -1123,7 +1122,7 @@ features:
     lib: true
     support:
       - GCC 14
-      - MSVC 19.40
+      - MSVC 19.42
     ftm:
       - name: __cpp_lib_freestanding_algorithm
         value: 202311L

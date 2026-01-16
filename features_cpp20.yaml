@@ -1705,6 +1705,7 @@ features:
       - GCC 10
       - Clang 7
       - Xcode 16.3
+      - MSVC
     ftm:
       - name: __cpp_impl_three_way_comparison
         value: 201711L
@@ -1716,6 +1717,7 @@ features:
       - GCC 11
       - Clang 19
       - Xcode 16.3
+      - MSVC 19.28
 
   - desc: "`ranges::basic_istream_view::iterator` should not be copyable"
     paper: P1638
@@ -1724,6 +1726,7 @@ features:
       - GCC 11
       - Clang 16
       - Xcode 15
+      - MSVC 19.29
 
   - desc: "Output `chrono::day`s with 'd' suffix"
     paper: P1650
@@ -1741,6 +1744,7 @@ features:
       - GCC 10
       - Clang 16
       - Xcode 15
+      - MSVC 19.29
 
   - desc: "`ranges::elements_view` needs its own sentinel"
     paper: P1994
@@ -1749,6 +1753,7 @@ features:
       - GCC 10
       - Clang 16
       - Xcode 15
+      - MSVC 19.29
 
   - desc: "`char8_t` backward compatibility remediation"
     paper: P1423
