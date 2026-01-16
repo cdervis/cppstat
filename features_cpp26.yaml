@@ -3,6 +3,8 @@ features:
   - desc: "Reflection for C++26 (`<meta>`)"
     paper: P2996
     lib: true
+    support:
+      - GCC 16
     ftm:
       - name: __cpp_impl_reflection
         value: 202506L
