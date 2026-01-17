@@ -354,6 +354,7 @@ features:
       - GCC 5
       - Clang 3.4
       - MSVC 19.0
+      - Xcode 15
     ftm:
       - name: __cpp_lib_is_final
         value: 201402L
