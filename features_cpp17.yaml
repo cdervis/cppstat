@@ -865,11 +865,11 @@ features:
     lib: true
     support:
       - GCC 7
-      - Clang 17 (partial)
+      - Clang 4 (partial)
       - MSVC 19.11
       - Xcode 15 (partial)
     hints:
-      - target: Clang 17
+      - target: Clang 4
         msg: "The parallel versions (`std::execution::par`) are not implemented yet. ([Issue](https://github.com/llvm/llvm-project/issues/103640))"
       - target: Xcode 15
         msg: "The parallel versions (`std::execution::par`) are not implemented yet. ([Issue](https://github.com/llvm/llvm-project/issues/103640))"
