@@ -1,0 +1,545 @@
+---
+features:
+  - desc: "C99 [preprocessor](https://cppreference.com/w/cpp/preprocessor.html)"
+    paper: N1653
+    support:
+      - GCC 4.3
+      - Clang
+      - MSVC 19.0 (partial)
+      - MSVC 19.26
+      - Xcode
+    hints:
+      - target: MSVC 19.0
+        msg: "Buggy variadic macros."
+
+  - desc: "`static_assert`"
+    paper: N1720
+    support:
+      - GCC 4.3
+      - Clang 2.9
+      - MSVC 16.0
+      - Xcode
+    ftm:
+      - name: __cpp_static_assert
+        value: 200410L
+
+  - desc: "Right angle brackets"
+    paper: N1757
+    support:
+      - GCC 4.3
+      - Clang
+      - MSVC 14.0
+      - Xcode
+
+  - desc: "Extended `friend` declarations"
+    paper: N1791
+    support:
+      - GCC 4.7
+      - Clang 2.9
+      - MSVC 16.0
+      - Xcode
+
+  - desc: "[`long long`](https://cppreference.com/w/cpp/language/types.html#long_long)"
+    paper: N1811
+    support:
+      - GCC
+      - Clang
+      - MSVC 14.0
+      - Xcode
+
+  - desc: "[`auto`](https://cppreference.com/w/cpp/language/auto.html)"
+    paper: N1984
+    support:
+      - GCC 4.4
+      - Clang
+      - MSVC 16.0
+      - Xcode
+    ftm:
+      - name: __cpp_auto_type
+        value: 200704L
+
+  - desc: "[Delegating constructors](https://cppreference.com/w/cpp/language/initializer_list.html#Delegating_constructor)"
+    paper: N1986
+    support:
+      - GCC 4.7
+      - Clang 3.0
+      - MSVC 18.0
+      - Xcode
+    ftm:
+      - name: __cpp_delegating_constructors
+        value: 200604L
+
+  - desc: "`extern template`"
+    paper: N1987
+    support:
+      - GCC 3.3
+      - Clang
+      - MSVC 12.0
+      - Xcode
+
+  - desc: "`constexpr`"
+    paper: N2235
+    support:
+      - GCC 4.6
+      - Clang 3.1
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_constexpr
+        value: 200704L
+
+  - desc: "[`char16_t`](https://cppreference.com/w/cpp/language/types.html#char16_t) and [`char32_t`](https://cppreference.com/w/cpp/language/types.html#char32_t)"
+    paper: N2249
+    support:
+      - GCC 4.4
+      - Clang 2.9
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_unicode_characters
+        value: 200704L
+
+  - desc: "[Type traits](https://cppreference.com/w/cpp/meta.html#Type_traits) (compiler support)"
+    paper: [N2255, N2984, N3142]
+    support:
+      - GCC 4.3 (partial)
+      - GCC 4.8 (partial)
+      - GCC 5
+      - Clang 3.0
+      - MSVC 14.0 (partial)
+      - MSVC 19.0
+      - Xcode
+    hints:
+      - target: GCC 4.3
+        msg: "The first version that contains incomplete and obsolete `type_traits` as defined in N2518."
+      - target: GCC 4.8
+        msg: "Lack of `__is_trivial(ly)*`."
+
+  - desc: "[Template aliases](https://cppreference.com/w/cpp/language/type_alias.html)"
+    paper: N2258
+    support:
+      - GCC 4.7
+      - Clang 3.0
+      - MSVC 18.0
+      - Xcode
+    ftm:
+      - name: __cpp_alias_templates
+        value: 200704L
+
+  - desc: "`alignas`"
+    paper: N2341
+    support:
+      - GCC 4.8
+      - Clang 3.0
+      - MSVC 19.0
+      - Xcode
+
+  - desc: "`alignof`"
+    paper: N2341
+    support:
+      - GCC 4.5
+      - Clang 2.9
+      - MSVC 19.0
+      - Xcode
+
+  - desc: "Defaulted and deleted functions"
+    paper: N2346
+    support:
+      - GCC 4.4
+      - Clang 3.0
+      - MSVC 18.0
+      - Xcode
+
+  - desc: "[Strongly-typed `enum`](https://cppreference.com/w/cpp/language/enum.html#Scoped_enumerations)"
+    paper: N2347
+    support:
+      - GCC 4.4
+      - Clang 2.9
+      - MSVC 17.0
+      - Xcode
+
+  - desc: "[Atomic operations](https://cppreference.com/w/cpp/atomic.html#Atomic_operations)"
+    paper: N2427
+    support:
+      - GCC 4.4
+      - Clang 3.1
+      - MSVC 17.0
+      - Xcode
+
+  - desc: "`nullptr`"
+    paper: N2431
+    support:
+      - GCC 4.6
+      - Clang 2.9
+      - MSVC 16.0
+      - Xcode
+    ftm:
+      - name: __cpp_nullptr
+        value: 200704L
+
+  - desc: "Explicit [conversion operators](https://cppreference.com/w/cpp/language/cast_operator.html)"
+    paper: N2437
+    support:
+      - GCC 4.5
+      - Clang 3.0
+      - MSVC 18.0
+      - Xcode
+
+  - desc: "Ref-qualifiers"
+    paper: N2439
+    support:
+      - GCC 4.8.1
+      - Clang 2.9
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_ref_qualifiers
+        value: 200710L
+
+  - desc: "Unicode [string literals](https://cppreference.com/w/cpp/language/string_literal.html)"
+    paper: N2442
+    support:
+      - GCC 4.4
+      - Clang 3.0
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_unicode_literals
+        value: 200710L
+
+  - desc: "Raw string literals"
+    paper: N2442
+    support:
+      - GCC 4.5
+      - Clang
+      - MSVC 18.0
+      - Xcode
+    ftm:
+      - name: __cpp_raw_strings
+        value: 200710L
+
+  - desc: "[Inline namespaces](https://cppreference.com/w/cpp/language/namespace.html#Inline_namespaces)"
+    paper: N2535
+    support:
+      - GCC 4.4
+      - Clang 2.9
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_inline_namespaces
+        value: 200809L
+
+  - desc: "[Inheriting constructors](https://cppreference.com/w/cpp/language/using_declaration.html#Inheriting_constructors)"
+    paper: N2540
+    support:
+      - GCC 4.8
+      - Clang 3.3
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_inheriting_constructors
+        value: 200802L
+
+  - desc: "[Trailing function return types](https://cppreference.com/w/cpp/language/function.html#Function_declaration)"
+    paper: N2541
+    support:
+      - GCC 4.4
+      - Clang 2.9
+      - MSVC 16.0
+      - Xcode
+    ftm:
+      - name: __cpp_trailing_return
+        value: 200710L
+
+  - desc: "Unrestricted [unions](https://cppreference.com/w/cpp/language/union.html)"
+    paper: N2544
+    support:
+      - GCC 4.6
+      - Clang 3.0
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_unrestricted_unions
+        value: 200811L
+
+  - desc: "[Variadic templates](https://cppreference.com/w/cpp/language/parameter_pack.html)"
+    paper: [N2242, N2555]
+    support:
+      - GCC 4.4
+      - Clang 2.9
+      - MSVC 18.0
+      - Xcode
+    ftm:
+      - name: __cpp_variadic_templates
+        value: 200704L
+
+  - desc: "[Expression SFINAE](https://cppreference.com/w/cpp/language/sfinae.html#Expression_SFINAE)"
+    paper: N2634
+    support:
+      - GCC 4.4
+      - Clang 2.9
+      - MSVC 19.14
+      - Xcode
+    ftm:
+      - name: __cpp_expression_sfinae
+        value: 200704L
+
+  - desc: "Local and unnamed types as template parameters"
+    paper: N2657
+    support:
+      - GCC 4.5
+      - Clang 2.9
+      - MSVC 16.0
+      - Xcode
+    ftm:
+      - name: __cpp_local_type_template_args
+        value: 200704L
+
+  - desc: "[Thread-local storage](https://cppreference.com/w/cpp/language/storage_duration.html)"
+    paper: N2659
+    support:
+      - GCC 4.4 (partial)
+      - GCC 4.8
+      - Clang 3.3
+      - MSVC 16.0 (partial)
+      - MSVC 19.0
+      - Xcode
+    hints:
+      - target: Clang 3.3
+        msg: "Requires libc++abi 3.6 or later, or libsupc++ 4.8 or later."
+    ftm:
+      - name: __cpp_threadsafe_static_init
+        value: 200806L
+
+  - desc: "Dynamic initialization and destruction with concurrency ([magic statics](https://cppreference.com/w/cpp/language/storage_duration.html#Static_local_variables))"
+    paper: N2660
+    support:
+      - GCC 4.3
+      - Clang 2.9
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_threadsafe_static_init
+        value: 200806L
+
+  - desc: "[Initializer lists](https://cppreference.com/w/cpp/language/list_initialization.html)"
+    paper: N2672
+    support:
+      - GCC 4.4
+      - Clang 3.1
+      - MSVC 18.0
+      - Xcode
+    ftm:
+      - name: __cpp_initializer_lists
+        value: 200806L
+
+  - desc: "[Non-static data member initializers](https://cppreference.com/w/cpp/language/data_members.html#Member_initialization)"
+    paper: N2756
+    support:
+      - GCC 4.7
+      - Clang 3.0
+      - MSVC 18.0
+      - Xcode
+    ftm:
+      - name: __cpp_nsdmi
+        value: 200809L
+
+  - desc: "[Attributes](https://cppreference.com/w/cpp/language/attributes.html), (`[[noreturn]]`)"
+    paper: N2761
+    support:
+      - GCC 4.8
+      - Clang 3.3
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_attributes
+        value: 200809L
+      - name: __has_cpp_attribute(noreturn)
+        value: 200809L
+
+  - desc: "`[[carries_dependency]]`"
+    paper: [N2556, N2643]
+    support:
+      - Clang 3.3
+    ftm:
+      - name: __has_cpp_attribute(carries_dependency)
+        value: 200809L
+
+  - desc: "[Forward (opaque) `enum` declarations](https://cppreference.com/w/cpp/language/enum.html)"
+    paper: N2764
+    support:
+      - GCC 4.6
+      - Clang 3.1
+      - MSVC 17.0
+      - Xcode
+    ftm:
+      - name: __cpp_forward_enum
+        value: 200809L
+
+  - desc: "[User-defined literals](https://cppreference.com/w/cpp/language/user_literal.html)"
+    paper: N2765
+    support:
+      - GCC 4.7
+      - Clang 3.1
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_user_defined_literals
+        value: 200809L
+
+  - desc: "[Rvalue references](https://cppreference.com/w/cpp/language/reference.html#Rvalue_references)"
+    paper: [N2118, N2844, CWG1138]
+    support:
+      - GCC 4.3 (partial)
+      - GCC 4.5
+      - Clang 2.9
+      - MSVC 16.0 (partial)
+      - MSVC 17.0
+      - Xcode
+    ftm:
+      - name: __cpp_rvalue_references
+        value: 200610L
+
+  - desc: "[Lambda expressions](https://cppreference.com/w/cpp/language/lambda.html)"
+    paper: [N2550, N2658, N2927]
+    support:
+      - GCC 4.5
+      - Clang 3.1
+      - MSVC 16.0 (partial)
+      - MSVC 17.0
+      - Xcode
+    ftm:
+      - name: __cpp_lambdas
+        value: 200907L
+
+  - desc: "[Range-for loop](https://cppreference.com/w/cpp/language/range-for.html)"
+    paper: [N2930, N3271]
+    support:
+      - GCC 4.6
+      - Clang 3.0
+      - MSVC 17.0
+      - Xcode
+    ftm:
+      - name: __cpp_range_based_for
+        value: 200907L
+
+  - desc: "`noexcept`"
+    paper: N3050
+    support:
+      - GCC 4.6
+      - Clang 3.0
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_noexcept_function_type
+        value: 201510L
+
+  - desc: "Defaulted move [special member functions](https://cppreference.com/w/cpp/language/member_functions.html#Special_member_functions)"
+    paper: N3053
+    support:
+      - GCC 4.6
+      - Clang 3.0
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_noexcept_function_type
+        value: 201510L
+
+  - desc: "`override` and `final`"
+    paper: [N2928, N3206, N3272]
+    support:
+      - GCC 4.7
+      - Clang 2.9
+      - MSVC 14.0 (partial)
+      - MSVC 17.0
+      - Xcode
+
+  - desc: "`decltype`"
+    paper: [N2343, N3276]
+    support:
+      - GCC 4.3 (partial)
+      - GCC 4.8.1
+      - Clang 2.9
+      - MSVC 16.0 (partial)
+      - MSVC 17.0
+      - Xcode
+    ftm:
+      - name: __cpp_decltype
+        value: 200707L
+
+  - desc: "Regular expressions library (`<regex>`)"
+    paper: N1429
+    lib: true
+    support:
+      - GCC 4.9
+      - Clang 2.8
+      - MSVC
+      - Xcode
+
+  - desc: "[Type traits](https://cppreference.com/w/cpp/meta.html#Type_traits)"
+    paper: [N1836, N2240, N2244, N2255, N2342, N2984, N3142]
+    lib: true
+    support:
+      - GCC 4.3 (partial)
+      - GCC 4.8 (partial)
+      - GCC 5
+      - Clang 3.0
+      - MSVC 14.0
+      - MSVC 19.0
+      - Xcode
+    hints:
+      - target: GCC 4.3
+        msg: "The first version that contains incomplete and obsolete `type_traits` as defined in N2518."
+      - target: GCC 4.8
+        msg: "Lack of `__is_trivial(ly)*`."
+      - target: MSVC 14.0
+        msg: "The first version that contains incomplete and obsolete `type_traits` as defined in N2518."
+
+  - desc: "Member functions: `cbegin`, `cend`, `crbegin`, `crend`"
+    paper: [N1913, LWG1192]
+    lib: true
+    support:
+      - GCC 4.3 (partial)
+      - GCC 4.5
+      - Clang
+      - MSVC 16.0
+      - Xcode
+    hints:
+      - target: GCC 4.3
+        msg: "Only supports N1913."
+
+  - desc: "[Garbage Collection](https://cppreference.com/w/cpp/header/memory.html#Functions) ([library support](https://cppreference.com/w/cpp/memory.html#Garbage_collector_support))"
+    paper: N2670
+    lib: true
+    support:
+      - GCC 6 (hint)
+      - Clang 3.4 (hint)
+      - MSVC 19.0 (hint)
+      - Xcode (hint)
+    hints:
+      - target: GCC 6
+        msg: "No-op library API."
+      - target: Clang 3.4
+        msg: "No-op library API."
+      - target: MSVC 19.0
+        msg: "No-op library API."
+      - target: Xcode
+        msg: "No-op library API."
+
+  - desc: "[Money, Time, and hexfloat I/O manipulators](https://en.cppreference.com/w/cpp/io/manip)"
+    paper: [N2071, N2072]
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.8
+      - MSVC 19.0
+      - Xcode
+
+  - desc: "Disallowing [COW (copy-on-write)](https://cppreference.com/w/cpp/language/acronyms.html) `std::basic_string`"
+    paper: N2668
+    lib: true
+    support:
+      - GCC 5
+      - Clang
+      - MSVC
+      - Xcode
