@@ -1,0 +1,393 @@
+---
+features:
+  - desc: "Tweaked wording for [contextual conversions](https://cppreference.com/w/cpp/language/implicit_cast.html#Contextual_conversions)"
+    paper: N3323
+    support:
+      - GCC 4.9
+      - Clang 3.4
+      - MSVC 18.0
+      - Xcode
+
+  - desc: "[Binary literals](https://cppreference.com/w/cpp/language/integer_literal.html)"
+    paper: N3472
+    support:
+      - GCC 4.3 (partial)
+      - GCC 4.9
+      - Clang 2.9
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_binary_literals
+        value: 201304L
+
+  - desc: "`decltype(auto)`, Return type deduction for normal functions"
+    paper: N3638
+    support:
+      - GCC 4.8 (partial)
+      - GCC 4.9
+      - Clang 3.3 (partial)
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    hints:
+      - target: GCC 4.8
+        msg: "N3386 version"
+      - target: Clang 3.3
+        msg: "Only `decltype(auto)` is supported."
+    ftm:
+      - name: __cpp_decltype_auto
+        value: 201304L
+      - name: __cpp_return_type_deduction
+        value: 201304L
+
+  - desc: "Initialized/Generalized lambda captures (init-capture)"
+    paper: N3648
+    support:
+      - GCC 4.5 (partial)
+      - GCC 4.9
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_init_captures
+        value: 201304L
+
+  - desc: "[Generic lambda expressions](https://cppreference.com/w/cpp/language/lambda.html#Explanation)"
+    paper: N3649
+    support:
+      - GCC 4.9
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_generic_lambdas
+        value: 201304L
+
+  - desc: "[Variable templates](https://cppreference.com/w/cpp/language/variable_template.html)"
+    paper: N3651
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_variable_templates
+        value: 201304L
+
+  - desc: "Relaxed `constexpr` restrictions"
+    paper: N3652
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.10
+      - Xcode
+    ftm:
+      - name: __cpp_constexpr
+        value: 201304L
+
+  - desc: "Aggregates with [default member initializers](https://cppreference.com/w/cpp/language/data_members.html#Member_initialization)"
+    paper: N3653
+    support:
+      - GCC 5
+      - Clang 3.3
+      - MSVC 19.10
+      - Xcode
+    ftm:
+      - name: __cpp_aggregate_nsdmi
+        value: 201304L
+
+  - desc: "Omitting/extending [memory allocations](https://cppreference.com/w/cpp/language/new.html#Allocation)"
+    paper: N3664
+    support:
+      - Clang 3.4
+      - Xcode
+
+  - desc: "`[[deprecated]]` attribute"
+    paper: N3760
+    support:
+      - GCC 4.9
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __has_cpp_attribute(deprecated)
+        value: 201309L
+
+  - desc: "[Sized deallocation](https://cppreference.com/w/cpp/language/delete.html)"
+    paper: N3778
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_sized_deallocation
+        value: 201309L
+
+  - desc: "[Single quote](https://cppreference.com/w/cpp/language/integer_literal.html#Single_quote) as digit separator"
+    paper: N3781
+    support:
+      - GCC 4.9
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_digit_separators
+        value: 201309L
+
+  - desc: "`constexpr` for `<complex>`"
+    paper: N3302
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+
+  - desc: "Transparent [operator function objects](https://cppreference.com/w/cpp/functional.html#Operator_function_objects)"
+    paper: N3421
+    lib: true
+    support:
+      - GCC 4.9
+      - Clang 3.4
+      - MSVC 18.0
+      - Xcode
+
+  - desc: "`std::result_of` and SFINAE"
+    paper: N3462
+    lib: true
+    support:
+      - GCC 5
+      - Clang
+      - MSVC 19.0
+      - Xcode
+
+  - desc: "`constexpr` for `<chrono>`"
+    paper: N3469
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+
+  - desc: "`constexpr` for `<array>`"
+    paper: N3470
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+
+  - desc: "`constexpr` for `<initializer_list>`, `<utility>` and `<tuple>`"
+    paper: N3471
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+
+  - desc: "Improved `std::integral_constant`"
+    paper: N3545
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+
+  - desc: "[User-defined literals](https://cppreference.com/w/cpp/language/user_literal.html#Standard_library) for `<chrono>` and `<string>`"
+    paper: N3642
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_lib_chrono_udls
+        value: 201304L
+      - name: __cpp_lib_string_udls
+        value: 201304L
+
+  - desc: "[Null forward iterators](https://cppreference.com/w/cpp/named_req/ForwardIterator.html#Singular_iterators)"
+    paper: N3644
+    lib: true
+    support:
+      - GCC 5
+      - GCC 10
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+
+  - desc: "`std::quoted()`"
+    paper: N3654
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_lib_quoted_string_io
+        value: 201304L
+
+  - desc: "Alias templates for [transformation traits](https://cppreference.com/w/cpp/meta.html#Type_transformations)"
+    paper: N3655
+    lib: true
+    support:
+      - GCC 4.9
+      - Clang 3.4
+      - MSVC 18.0
+
+  - desc: "`std::make_unique()`"
+    paper: N3656
+    lib: true
+    support:
+      - GCC 4.9
+      - Clang 3.4
+      - MSVC 18.0
+      - Xcode
+    ftm:
+      - name: __cpp_lib_make_unique
+        value: 201304L
+
+  - desc: "Heterogeneous associative lookup"
+    paper: N3657
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_lib_generic_associative_lookup
+        value: 201304L
+
+  - desc: "`std::integer_sequence`"
+    paper: N3658
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_lib_integer_sequence
+        value: 201304L
+
+  - desc: "`std::exchange()`"
+    paper: N3668
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_lib_exchange_function
+        value: 201304L
+
+  - desc: "Fixing `constexpr` member functions without `const`"
+    paper: N3669
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+
+  - desc: "Addressing tuples by type: `std::get<T>()`"
+    paper: N3670
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_lib_tuples_by_type
+        value: 201304L
+
+  - desc: "Dual-range `std::equal()`, `std::is_permutation()`, `std::mismatch()`"
+    paper: N3671
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_lib_robust_nonmodifying_seq_ops
+        value: 201304L
+
+  - desc: "[User-defined literals for `std::complex`](https://cppreference.com/w/cpp/numeric/complex/operator%2522%2522i.html)"
+    paper: N3779
+    lib: true
+    support:
+      - GCC 4.9
+      - Clang 3.4
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_lib_complex_udls
+        value: 201309L
+
+  - desc: "`std::is_null_pointer`"
+    paper: LWG2247
+    lib: true
+    support:
+      - GCC 4.9
+      - Clang 3.4
+      - MSVC 19.0
+    ftm:
+      - name: __cpp_lib_is_null_pointer
+        value: 201309L
+
+  - desc: "`std::is_final`"
+    paper: LWG2112
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+    ftm:
+      - name: __cpp_lib_is_final
+        value: 201402L
+
+  - desc: "`std::make_reverse_iterator()`"
+    paper: LWG2285
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.4
+      - MSVC 19.0
+    ftm:
+      - name: __cpp_lib_make_reverse_iterator
+        value: 201402L
+
+  - desc: "`std::shared_timed_mutex`"
+    paper: N3659
+    lib: true
+    support:
+      - GCC 4.9
+      - Clang 3.5
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_lib_shared_timed_mutex
+        value: 201402L
+
+  - desc: "`std::tuple_element_t`"
+    paper: N3887
+    lib: true
+    support:
+      - GCC 5
+      - Clang 3.5
+      - MSVC 19.0
+      - Xcode
+    ftm:
+      - name: __cpp_lib_tuple_element_t
+        value: 201402L
