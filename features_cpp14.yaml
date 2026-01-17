@@ -342,6 +342,7 @@ features:
       - GCC 4.9
       - Clang 3.4
       - MSVC 19.0
+      - Xcode 15
     ftm:
       - name: __cpp_lib_is_null_pointer
         value: 201309L
