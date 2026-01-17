@@ -49,6 +49,8 @@ features:
   - desc: "Error Handling in Reflection"
     paper: P3560
     lib: true
+    support:
+      - GCC 16
     ftm:
       - name: __cpp_lib_reflection
         value: 202506L
