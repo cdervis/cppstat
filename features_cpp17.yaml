@@ -865,8 +865,12 @@ features:
     lib: true
     support:
       - GCC 7
-      - Clang 4
+      - Clang 17 (partial)
       - MSVC 19.11
+      - Xcode 15 (partial)
+    hints:
+      - target: Clang 17
+        msg: "The parallel versions (`std::execution::par`) are not implemented yet. ([Issue](The parallel versions are not implemented yet.))"
     ftm:
       - name: __cpp_lib_raw_memory_algorithms
         value: 201606L
