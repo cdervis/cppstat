@@ -91,7 +91,7 @@ features:
       - target: GCC 5
         msg: "TS-only"
       - target: Xcode 12
-        msg: 'The following papers are not implemented: [P2103](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2103r0.html), DR1496, DR1734 and [P0848](https://wg21.link/P0848)."
+        msg: "The following papers are not implemented: [P2103](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2103r0.html), DR1496, DR1734 and [P0848](https://wg21.link/P0848)."
     ftm:
       - name: __cpp_concepts
         value: 201907L
