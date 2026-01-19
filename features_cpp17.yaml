@@ -737,7 +737,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.10
+      - MSVC 19.11
       - Xcode 10
     ftm:
       - name: __cpp_lib_string_view
@@ -751,7 +751,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.11
+      - MSVC 19.10
       - Xcode 10
     ftm:
       - name: __cpp_lib_any
@@ -901,7 +901,7 @@ features:
       - MSVC 19.14 (partial)
       - MSVC 19.15 (partial)
       - MSVC 19.16 (partial)
-      - MSVC 19.23
+      - MSVC 19.24
       - Xcode 10 (partial)
     hints:
       - target: GCC 8

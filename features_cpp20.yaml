@@ -17,7 +17,7 @@ features:
       - GCC 10 (partial)
       - GCC 12
       - Clang 9
-      - MSVC 19.21
+      - MSVC 19.25
       - Xcode 12
     hints:
       - target: GCC 8
@@ -429,7 +429,9 @@ features:
         value: 202002L
 
   - desc: "Coroutines"
-    paper: P0912
+    paper:
+      - P0912
+      - LWG3393
     support:
       - GCC 10 (hint)
       - Clang 8 (partial)
@@ -522,7 +524,7 @@ features:
     support:
       - GCC 10
       - Clang
-      - MSVC 19.0
+      - MSVC 19.26
       - Xcode
 
   - desc: "`<=>` `!=` `==`"
@@ -1614,7 +1616,7 @@ features:
     support:
       - GCC 11
       - Clang 11
-      - MSVC 19.29
+      - MSVC 19.28
       - Xcode (hint)
     hints:
       - target: Xcode

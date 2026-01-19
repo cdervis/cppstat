@@ -372,10 +372,12 @@ features:
         value: 201402L
 
   - desc: "`std::shared_timed_mutex`"
-    paper: N3659
+    paper:
+      - N3659
+      - N3891
     lib: true
     support:
-      - GCC 4.9
+      - GCC 5
       - Clang 3.5
       - MSVC 19.0
       - Xcode
