@@ -51,7 +51,7 @@ features:
       - Clang 13 (partial)
       - Clang 14
       - MSVC 19.21 (hint)
-      - MSVC 19.32
+      - MSVC 19.44
       - Xcode 14
     hints:
       - target: Clang 13
@@ -80,7 +80,7 @@ features:
     support:
       - GCC
       - Clang
-      - MSVC
+      - MSVC 19.44
       - Xcode
 
   - desc: "Explicit object member functions (deducing `this`)"
@@ -277,7 +277,7 @@ features:
     support:
       - GCC 13
       - Clang 15
-      - MSVC 19
+      - MSVC 19.0
       - Xcode 15
 
   - desc: "`static operator[]`"
@@ -368,7 +368,7 @@ features:
     support:
       - GCC 12
       - Clang 19
-      - MSVC 19.32
+      - MSVC 19.50
       - Xcode 16.4
 
   - desc: "Relax requirements on `wchar_t` to match existing practices"
@@ -376,7 +376,7 @@ features:
     support:
       - GCC
       - Clang
-      - MSVC
+      - MSVC 19.44
       - Xcode 15
 
   - desc: "Using unknown pointers and references in constant expressions"
@@ -628,7 +628,7 @@ features:
     support:
       - GCC 13
       - Clang 15 (partial)
-      - MSVC 19.33
+      - MSVC 19.37
       - Xcode 14.3
     hints:
       - target: Clang 15
@@ -709,7 +709,7 @@ features:
     support:
       - GCC 12
       - Clang 14
-      - MSVC 19.25
+      - MSVC 19.31
       - Xcode 14.3
 
   - desc: "Require `std::span` and `std::basic_string_view` to be [TriviallyCopyable](https://en.cppreference.com/w/cpp/named_req/TriviallyCopyable)"
@@ -718,7 +718,7 @@ features:
     support:
       - GCC
       - Clang
-      - MSVC
+      - MSVC 19.31
       - Xcode
 
   - desc: 'Clarifying the status of the "C headers"'
@@ -779,7 +779,7 @@ features:
       - GCC 13 (partial)
       - GCC 14
       - Clang 21 (partial)
-      - MSVC 19.50 (partial)
+      - MSVC 19.51 (partial)
       - Xcode 16.3
     hints:
       - target: GCC 13
@@ -1368,7 +1368,7 @@ features:
     support:
       - GCC 16
       - Clang 20
-      - MSVC 19.50 (partial)
+      - MSVC 19.51 (partial)
       - Xcode 26
     hints:
       - target: MSVC 19.50
