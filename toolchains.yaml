@@ -1285,94 +1285,94 @@ infos:
 
   - name: Xcode 2.5
     released: October 29, 2007
-
+  
   - name: Xcode 3
     released: October 25, 2007
-  
+
   - name: Xcode 3.1
     released: July 10, 2008
-  
+
   - name: Xcode 3.2
     released: August 26, 2009
-  
+
   - name: Xcode 4
     released: March 9, 2011
-  
+
   - name: Xcode 4.1
     released: July 20, 2011
-  
+
   - name: Xcode 4.2
     released: October 12, 2011
-  
+
   - name: Xcode 4.3
     released: February 12, 2012
-  
+
   - name: Xcode 4.4
     released: March 15, 2012
-  
+
   - name: Xcode 4.5
     released: September 19, 2012
-  
+
   - name: Xcode 4.6
     released: January 28, 2013
-  
+
   - name: Xcode 5
     released: September 16, 2013
-  
+
   - name: Xcode 5.1
     released: March 10, 2014
-  
+
   - name: Xcode 6
     released: September 9, 2014
-  
+
   - name: Xcode 6.1
     released: October 20, 2014
-  
+
   - name: Xcode 6.2
     released: March 9, 2015
-  
+
   - name: Xcode 6.3
     released: April 8, 2015
-  
+
   - name: Xcode 6.4
     released: June 30, 2015
-  
+
   - name: Xcode 7
     released: September 16, 2015
-  
+
   - name: Xcode 7.1
     released: October 21, 2015
-  
+
   - name: Xcode 7.2
     released: December 8, 2015
-  
+
   - name: Xcode 7.3
     released: March 21, 2016
-  
+
   - name: Xcode 8
     released: September 13, 2016
-  
+
   - name: Xcode 8.1
     released: October 27, 2016
-  
+
   - name: Xcode 8.2
     released: December 12, 2016
-  
+
   - name: Xcode 8.3
     released: March 27, 2017
-  
+
   - name: Xcode 9
     released: September 12, 2017
-  
+
   - name: Xcode 9.1
     released: October 31, 2017
-  
+
   - name: Xcode 9.2
     released: December 4, 2017
-  
+
   - name: Xcode 9.3
     released: March 29, 2018
-  
+
   - name: Xcode 9.4
     released: May 29, 2018
 
