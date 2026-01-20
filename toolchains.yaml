@@ -2,11 +2,13 @@
 infos:
   - name: GCC
     desc: This applies to GCC in general, not any specific version.
+    released: May, 2002
     refs:
       - "https://gcc.gnu.org/"
 
   - name: Clang
     desc: This applies to Clang in general, not any specific version.
+    released: October 24, 2003
     refs:
       - "https://clang.llvm.org/"
 
@@ -17,11 +19,13 @@ infos:
 
   - name: Apple Clang
     desc: This applies to the Apple Clang compiler in general, not any specific version.
+    released: September 28, 2003
     refs:
       - "https://developer.apple.com/xcode/cpp/"
 
   - name: Xcode
     desc: This applies to Xcode in general, not any specific version.
+    released: September 28, 2003
     refs:
       - "https://developer.apple.com/xcode/cpp/"
 
