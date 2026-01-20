@@ -81,6 +81,7 @@ features:
 
   - desc: "Concepts"
     paper: P0734
+    summary: "Concepts are predicates that constrain template arguments. They provide clear error messages and enable function overloading based on type properties."
     support:
       - GCC 5 (partial)
       - GCC 10
