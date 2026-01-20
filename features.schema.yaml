@@ -26,6 +26,9 @@ definitions:
           - type: array
             items:
               type: string
+      summary:
+        type: string
+        description: "A brief description of the feature. Shown when hovering over the info button of a feature."
       lib:
         type: boolean
         default: false
