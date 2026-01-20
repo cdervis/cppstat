@@ -903,6 +903,7 @@ features:
       - MSVC 19.16 (partial)
       - MSVC 19.24
       - Xcode 10 (partial)
+      - Xcode 14.3 (partial)
     hints:
       - target: GCC 8
         msg: "No support for floating-point types, only integer types."
@@ -920,6 +921,8 @@ features:
         msg: 'Adds shortest round-trip decimal overloads of floating-point `std::to_chars()`, e.g. `"%.8e"` and `"%.16e"`.'
       - target: Xcode 10
         msg: "No support for floating-point types, only integer types."
+      - target: Xcode 14.3
+        msg: "Adds support for floating-point types."
     ftm:
       - name: __cpp_lib_to_chars
         value: 201611L
