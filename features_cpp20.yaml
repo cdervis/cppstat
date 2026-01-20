@@ -1777,3 +1777,15 @@ features:
       - Clang 14
       - Xcode
       - MSVC 19.27
+
+  - desc: "Converting from `T*` to `bool` should be considered narrowing"
+    paper: P1957
+    support:
+      - GCC 10 (hint)
+      - GCC 11
+      - Clang 18
+      - MSVC 19.27
+      - Xcode 13
+    hints:
+      - target: GCC 10
+        msg: "In C++20 mode only. (`-std=c++20`)"
