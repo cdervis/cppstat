@@ -2,6 +2,7 @@
 features:
   - desc: "Reflection for C++26 (`<meta>`)"
     paper: P2996
+    summary: "Reflection allows programs to inspect and manipulate their own structure at compile time. This is one of the most significant additions to C++26."
     lib: true
     support:
       - GCC 16
@@ -39,6 +40,7 @@ features:
 
   - desc: "Expansion Statements (`template for`)"
     paper: P1306
+    summary: "`template for` iterates over compile-time ranges like tuples and reflection results."
     support:
       - GCC 16
     ftm:
@@ -66,6 +68,7 @@ features:
 
   - desc: "Contracts for C++ (`<contracts>`)"
     paper: P2900
+    summary: "Contracts let you specify preconditions, postconditions, and assertions that document and enforce function requirements."
     ftm:
       - name: __cpp_contracts
         value: 202502L
@@ -152,6 +155,7 @@ features:
 
   - desc: "[Pack indexing](https://en.cppreference.com/w/cpp/language/pack_indexing.html)"
     paper: P2662
+    summary: "Pack indexing provides direct access to elements in a parameter pack using `...[N]` syntax."
     support:
       - GCC 15
       - Clang 19
@@ -177,6 +181,7 @@ features:
 
   - desc: "User-generated `static_assert` messages"
     paper: P2741
+    summary: "`static_assert` can now use user-generated strings, not just string literals."
     support:
       - GCC 14
       - Clang 17
@@ -188,6 +193,7 @@ features:
 
   - desc: "A nice placeholder with no name (using `_` as a variable name)"
     paper: P2169
+    summary: "The underscore `_` can now be used as a placeholder variable name that doesn't actually bind a name."
     support:
       - GCC 14
       - Clang 18
@@ -199,6 +205,7 @@ features:
 
   - desc: "`#embed` - a scannable, tooling-friendly binary resource inclusion mechanism"
     paper: P1967
+    summary: "`#embed` allows you to include binary files directly into your source code at compile time."
     support:
       - GCC 15 (hint)
       - Clang 19 (hint)
@@ -302,8 +309,9 @@ features:
       - GCC 16
     keywords: ["safety"]
 
-  - desc: '= delete("should have a reason");'
+  - desc: "= delete(\"should have a reason\");"
     paper: P2573
+    summary: "Deleted functions can now include a message explaining why they're deleted."
     support:
       - GCC 15
       - Clang 19
@@ -343,6 +351,7 @@ features:
 
   - desc: "`constexpr` placement `new`"
     paper: P2747
+    summary: "Placement `new` can now be used in constant expressions."
     support:
       - GCC 15
       - Clang 20
@@ -355,6 +364,7 @@ features:
 
   - desc: "Structured binding declaration as a condition"
     paper: P0963
+    summary: "Structured bindings can now be used directly in `if` and `while` conditions."
     support:
       - GCC 15
       - Clang 6 (partial)
@@ -369,6 +379,7 @@ features:
 
   - desc: "`std::optional<T&>`"
     paper: P2988
+    summary: "`std::optional` can now hold references, not just values."
     lib: true
     support:
       - GCC 16
@@ -384,6 +395,7 @@ features:
     paper:
       - P2546
       - P2810
+    summary: "The `<debugging>` header provides portable debugging utilities."
     lib: true
     support:
       - GCC 16 (hint)
@@ -398,6 +410,7 @@ features:
 
   - desc: "Variadic friends"
     paper: P2893
+    summary: "Class templates can now declare all types in a parameter pack as friends."
     support:
       - GCC 15
       - Clang 20
@@ -437,6 +450,7 @@ features:
 
   - desc: "Inspecting `std::exception_ptr`"
     paper: P2927
+    summary: "Query exception information without rethrowing."
     lib: true
     support:
       - GCC 16
@@ -452,6 +466,7 @@ features:
 
   - desc: "Standardized `constexpr` type ordering"
     paper: P2830
+    summary: "A standard way to order types at compile time."
     lib: true
     ftm:
       - name: __cpp_lib_type_order
@@ -465,6 +480,7 @@ features:
 
   - desc: "Parallel range algorithms"
     paper: P3179
+    summary: "Range algorithms now support parallel execution policies."
     lib: true
     ftm:
       - name: __cpp_lib_parallel_algorithm
@@ -579,6 +595,7 @@ features:
 
   - desc: "Add `std::views::indices(n)`"
     paper: P3060
+    summary: "Generate a range of indices from 0 to n-1."
     lib: true
     support:
       - GCC 16
@@ -604,6 +621,7 @@ features:
 
   - desc: "`std::constant_wrapper`"
     paper: P2781
+    summary: "Wrap compile-time constants as types for template metaprogramming."
     lib: true
     support:
       - GCC 16
@@ -622,6 +640,7 @@ features:
 
   - desc: "Add a coroutine task type"
     paper: P3552
+    summary: "A standard coroutine task type for async operations."
     lib: true
     ftm:
       - name: __cpp_lib_task
@@ -652,6 +671,7 @@ features:
 
   - desc: "[Structured bindings](https://en.cppreference.com/w/cpp/language/structured_binding.html) can introduce a pack"
     paper: P1061
+    summary: "Structured bindings can now capture remaining elements into a parameter pack."
     support:
       - GCC 16
       - Clang 21
@@ -666,12 +686,13 @@ features:
       - Clang 22 (partial)
     hints:
       - target: GCC 16
-        msg: 'No [references to constexpr variables](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=117784).'
+        msg: "No [references to constexpr variables](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=117784)."
       - target: Clang 22
         msg: "References to `constexpr` and decomposition of tuple-like types are not supported (only arrays and aggregates are)."
 
   - desc: "Allowing exception throwing in constant-evaluation (`constexpr` exceptions)"
     paper: P3068
+    summary: "Exceptions can now be thrown and caught during constant evaluation."
     support:
       - GCC 16
     ftm:
@@ -776,6 +797,7 @@ features:
 
   - desc: "Read-copy update (RCU) (`<rcu>`)"
     paper: P2545
+    summary: "RCU provides efficient concurrent reads with minimal synchronization."
     lib: true
     ftm:
       - name: __cpp_lib_rcu
@@ -783,6 +805,7 @@ features:
 
   - desc: "Hazard pointers (`<hazard_pointer>`)"
     paper: P2530
+    summary: "Hazard pointers enable safe memory reclamation in lock-free data structures."
     lib: true
     ftm:
       - name: __cpp_lib_hazard_pointer
@@ -809,6 +832,7 @@ features:
 
   - desc: "Member `visit` (`std::variant::visit()`)"
     paper: P2637
+    summary: "`std::variant` now has a member `.visit()` function."
     lib: true
     support:
       - GCC 15
@@ -905,6 +929,7 @@ features:
 
   - desc: "`std::function_ref`: type-erased callable reference"
     paper: P0792
+    summary: "A lightweight, non-owning reference to a callable."
     lib: true
     support:
       - GCC 16
@@ -914,6 +939,7 @@ features:
 
   - desc: "`std::copyable_function`"
     paper: P2548
+    summary: "A `std::function` variant that guarantees copyability and const-correctness."
     lib: true
     ftm:
       - name: __cpp_lib_copyable_function
@@ -942,6 +968,7 @@ features:
     paper:
       - P2630
       - P3355
+    summary: "Extract sub-views from multidimensional spans."
     lib: true
     support:
       - GCC 16
@@ -973,6 +1000,7 @@ features:
         value: 202306L
       - name: __cpp_lib_freestanding_errc
         value: 202306L
+
   - desc: "Freestanding Feature-Test Macros and Implementation-Defined Extensions"
     paper: P2198
     lib: true
@@ -997,8 +1025,10 @@ features:
         value: 202306L
       - name: __cpp_lib_freestanding_utility
         value: 202306L
+
   - desc: "Saturation arithmetic"
     paper: P0543
+    summary: "Arithmetic operations that clamp to min/max instead of overflowing."
     lib: true
     support:
       - GCC 14
@@ -1313,6 +1343,7 @@ features:
     paper:
       - P2300
       - P3396
+    summary: "A framework for asynchronous and parallel programming based on senders and receivers."
     lib: true
     ftm:
       - name: __cpp_lib_senders
@@ -1321,6 +1352,7 @@ features:
 
   - desc: "`std::inplace_vector`: dynamically-resizable vector with fixed capacity (`<inplace_vector>`)"
     paper: P0843
+    summary: "A fixed-capacity vector that stores elements inline without heap allocation."
     lib: true
     support:
       - GCC 16
@@ -1340,6 +1372,7 @@ features:
 
   - desc: "Give `std::optional` range support"
     paper: P3168
+    summary: "`std::optional` is now a range containing zero or one elements."
     lib: true
     support:
       - GCC 16
@@ -1393,6 +1426,7 @@ features:
 
   - desc: "`views::cache_latest()` (`views::cache_latest_view`)"
     paper: P3138
+    summary: "Cache the most recent element for repeated access."
     lib: true
     support:
       - GCC 15
@@ -1443,7 +1477,7 @@ features:
       - name: __cpp_lib_constexpr_atomic
         value: 202411L
 
-  - desc: 'Wording for "`constexpr` for specialized memory algorithms"'
+  - desc: "Wording for \"`constexpr` for specialized memory algorithms\""
     paper: P3508
     lib: true
     support:
@@ -1467,6 +1501,7 @@ features:
 
   - desc: "`std::simd` (`<simd>`)"
     paper: P1928
+    summary: "Portable SIMD (Single Instruction, Multiple Data) vector types."
     lib: true
     ftm:
       - name: __cpp_lib_simd
@@ -1506,6 +1541,7 @@ features:
 
   - desc: "`std::indirect` and `std::polymorphic`: Vocabulary Types for Composite Class Design"
     paper: P3019
+    summary: "Value-semantic wrappers for indirect and polymorphic ownership."
     lib: true
     support:
       - GCC 16
@@ -1519,6 +1555,7 @@ features:
 
   - desc: "`constexpr` containers and adaptors"
     paper: P3372
+    summary: "More standard containers work at compile time."
     lib: true
     ftm:
       - name: __cpp_lib_constexpr_deque
@@ -1564,6 +1601,7 @@ features:
 
   - desc: "`views::to_input()` (`ranges::to_input_view`)"
     paper: P3137
+    summary: "Convert any range to an input range."
     lib: true
     support:
       - GCC 15
@@ -1573,6 +1611,7 @@ features:
 
   - desc: "`ranges::approximately_sized_range` and `ranges::reserve_hint()`"
     paper: P2846
+    summary: "Ranges can provide size hints for better allocation."
     lib: true
     ftm:
       - name: __cpp_lib_ranges_reserve_hint
@@ -1580,6 +1619,7 @@ features:
 
   - desc: "`std::hive` (`<hive>`)"
     paper: P0447
+    summary: "A container optimized for frequent insert/erase with stable iterators."
     lib: true
     ftm:
       - name: __cpp_lib_hive
@@ -1720,6 +1760,7 @@ features:
 
   - desc: "`constexpr` `std::format()`"
     paper: P3391
+    summary: "`std::format()` can now be used at compile time."
     lib: true
     ftm:
       - name: __cpp_lib_constexpr_format

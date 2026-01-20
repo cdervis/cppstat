@@ -26,6 +26,7 @@ features:
 
   - desc: "Nested `namespace` definition"
     paper: N4230
+    summary: "Define nested namespaces with single declaration."
     support:
       - GCC 6
       - Clang 3.6
@@ -120,6 +121,7 @@ features:
 
   - desc: "`__has_include`"
     paper: P0061
+    summary: "Check if a header file exists."
     support:
       - GCC 5
       - Clang
@@ -153,6 +155,7 @@ features:
 
   - desc: "Folding expressions"
     paper: N4295
+    summary: "Reduce parameter packs with operators."
     support:
       - GCC 6
       - Clang 3.6
@@ -164,6 +167,7 @@ features:
 
   - desc: "Lambda capture of `*this` by value as `[=, *this]`"
     paper: P0018
+    summary: "Capture the current object by value with `[*this]`."
     support:
       - GCC 7
       - Clang 3.9
@@ -180,6 +184,7 @@ features:
 
   - desc: "`constexpr` lambdas"
     paper: P0170
+    summary: "Lambdas can be used in constant expressions."
     support:
       - GCC 7
       - Clang 5
@@ -202,6 +207,7 @@ features:
 
   - desc: "Attribute `[[fallthrough]]`"
     paper: P0188
+    summary: "Indicate intentional switch case fallthrough."
     support:
       - GCC 7
       - Clang 3.9
@@ -210,6 +216,7 @@ features:
 
   - desc: "Attribute `[[nodiscard]]`"
     paper: P0189
+    summary: "Warn when return value is discarded."
     support:
       - GCC 7
       - Clang 3.9
@@ -218,6 +225,7 @@ features:
 
   - desc: "Attribute `[[maybe_unused]]`"
     paper: P0212
+    summary: "Suppress warnings for unused entities."
     support:
       - GCC 7
       - Clang 3.9
@@ -256,6 +264,7 @@ features:
 
   - desc: "Declaring non-type template parameters with `auto`"
     paper: P0127
+    summary: "Use `auto` to deduce non-type template parameter types."
     support:
       - GCC 7
       - Clang 4
@@ -267,6 +276,7 @@ features:
 
   - desc: "Guaranteed copy elision"
     paper: P0135
+    summary: "Certain copies must be elided, not just allowed."
     support:
       - GCC 7
       - Clang 4
@@ -294,6 +304,7 @@ features:
 
   - desc: "Proposed wording for structured bindings"
     paper: P0217
+    summary: "Decompose objects into named variables."
     support:
       - GCC 7
       - Clang 4
@@ -313,6 +324,7 @@ features:
 
   - desc: "`constexpr if` statements"
     paper: P0292
+    summary: "Compile-time conditional compilation within functions."
     support:
       - GCC 7
       - Clang 3.9
@@ -324,6 +336,7 @@ features:
 
   - desc: "Init-statements for `if` and `switch`"
     paper: P0305
+    summary: "Initialize variables within if/switch statements."
     support:
       - GCC 7
       - Clang 3.9
@@ -332,6 +345,7 @@ features:
 
   - desc: "`inline` variables"
     paper: P0386
+    summary: "Variables can be `inline`, allowing definition in headers."
     support:
       - GCC 7
       - Clang 3.9
@@ -371,8 +385,9 @@ features:
       - name: __cpp_template_template_args
         value: 201611L
 
-  - desc: Template argument deduction for class templates ([CTAD](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction.html))
+  - desc: "Template argument deduction for class templates ([CTAD](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction.html))"
     paper: P0091
+    summary: "Deduce template arguments from constructor arguments."
     support:
       - GCC 7
       - Clang 5
@@ -717,6 +732,7 @@ features:
 
   - desc: "`std::byte`"
     paper: P0298
+    summary: "A type for raw memory representation."
     lib: true
     support:
       - GCC 7
@@ -733,6 +749,7 @@ features:
       - P0220
       - P0254
       - P0403
+    summary: "Non-owning reference to a character sequence."
     lib: true
     support:
       - GCC 7
@@ -759,6 +776,7 @@ features:
 
   - desc: "`std::optional`"
     paper: P0220
+    summary: "A wrapper that may or may not hold a value."
     lib: true
     support:
       - GCC 7
@@ -802,6 +820,7 @@ features:
 
   - desc: "`std::variant`"
     paper: P0088
+    summary: "Type-safe discriminated union."
     lib: true
     support:
       - GCC 7
@@ -918,7 +937,7 @@ features:
       - target: MSVC 19.15
         msg: "Adds `std::from_chars()` support for `float` and `double`."
       - target: MSVC 19.16
-        msg: 'Adds shortest round-trip decimal overloads of floating-point `std::to_chars()`, e.g. `"%.8e"` and `"%.16e"`.'
+        msg: "Adds shortest round-trip decimal overloads of floating-point `std::to_chars()`, e.g. `\"%.8e\"` and `\"%.16e\"`."
       - target: Xcode 10
         msg: "No support for floating-point types, only integer types."
       - target: Xcode 14.3
@@ -979,6 +998,7 @@ features:
     paper:
       - P0218
       - P0219
+    summary: "Standard library for file and directory operations."
     lib: true
     support:
       - GCC 8
