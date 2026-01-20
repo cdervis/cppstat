@@ -27,6 +27,7 @@ features:
 
   - desc: "Designated initializers"
     paper: P0329
+    summary: "Initialize aggregate members by name."
     support:
       - GCC 4.7 (partial)
       - GCC 8
@@ -39,13 +40,13 @@ features:
         msg: "As non-standard extension that formed the basis for P0329, missing brace initializers."
       - target: Clang 3
         msg: "Full C99-compatible superset of P0329, missing brace initializers."
-
     ftm:
       - name: __cpp_designated_initializers
         value: 201707L
 
   - desc: "Familiar template syntax for generic lambdas (template-able lambdas)"
     paper: P0428
+    summary: "Template syntax for lambda parameters."
     support:
       - GCC 8
       - Clang 9
@@ -116,6 +117,7 @@ features:
 
   - desc: "Three-way comparison operator (`operator<=>`)"
     paper: P0515
+    summary: "The \"spaceship operator\" for simplified comparisons."
     support:
       - GCC 10
       - Clang 8 (partial)
@@ -134,6 +136,7 @@ features:
 
   - desc: "init-statements for range-based for"
     paper: P0614
+    summary: "Add initialization to range-based for loops."
     support:
       - GCC 9
       - Clang 8
@@ -164,6 +167,7 @@ features:
       - Clang 14
       - MSVC 19.26
       - Xcode 14
+
   - desc: "ADL and function templates that are not visible"
     paper: P0846
     support:
@@ -195,11 +199,13 @@ features:
 
   - desc: "Attributes `[[likely]]` and `[[unlikely]]`"
     paper: P0479
+    summary: "Hint to the compiler about branch probability."
     support:
       - GCC 9
       - Clang 12
       - MSVC 19.26
       - Xcode 13
+
   - desc: "Down with `typename`!"
     paper: P0634
     support:
@@ -207,8 +213,10 @@ features:
       - Clang 16
       - MSVC 19.29
       - Xcode 16
+
   - desc: "Pack-expansions in lambda init-captures"
     paper: P0780
+    summary: "Capture parameter packs in lambda expressions."
     support:
       - GCC 9
       - Clang 9
@@ -220,11 +228,13 @@ features:
 
   - desc: "Language support for empty objects (`[[no_unique_address]]` attribute)"
     paper: P0840
+    summary: "Allow empty class members to share address with other members."
     support:
       - GCC 9
       - Clang 9
       - MSVC 19.28
       - Xcode 11.4
+
   - desc: "Conditionally trivial special member functions"
     paper: P0848
     support:
@@ -262,6 +272,7 @@ features:
 
   - desc: "Destroying operator delete"
     paper: P0722
+    summary: "Custom deallocation with access to the object."
     support:
       - GCC 9
       - Clang 6
@@ -288,10 +299,12 @@ features:
       - Clang 7
       - MSVC 19.22
       - Xcode 10.2
-    keywords: ["lambda"]
+    keywords:
+      - lambda
 
   - desc: "`explicit(bool)`"
     paper: P0892
+    summary: "Conditionally explicit constructors and conversions."
     support:
       - GCC 9
       - Clang 9
@@ -328,7 +341,8 @@ features:
     ftm:
       - name: __cpp_constexpr
         value: 201907L
-    keywords: ["constexpr"]
+    keywords:
+      - constexpr
 
   - desc: "Consistency improvements for comparisons"
     paper: P1120
@@ -341,6 +355,7 @@ features:
 
   - desc: "`char8_t`: A type for UTF-8 characters and strings"
     paper: P0482
+    summary: "A distinct type for UTF-8 encoded characters and strings."
     support:
       - GCC 9
       - Clang 7
@@ -352,12 +367,13 @@ features:
 
   - desc: "`std::is_constant_evaluated()`"
     paper: P0595
+    summary: "Detect if code is running at compile time or runtime."
+    lib: true
     support:
       - GCC 9
       - Clang 9
       - MSVC 19.25
       - Xcode 11.4
-    lib: true
     ftm:
       - name: __cpp_lib_is_constant_evaluated
         value: 201811L
@@ -372,6 +388,7 @@ features:
 
   - desc: "Immediate functions (`consteval`)"
     paper: P1073
+    summary: "Functions that must be evaluated at compile time."
     support:
       - GCC 10 (partial)
       - GCC 11
@@ -404,6 +421,7 @@ features:
 
   - desc: "Signed integers are two's complement"
     paper: P1236
+    summary: "Signed integers are guaranteed to use two's complement representation."
     support:
       - GCC 9
       - Clang 9
@@ -433,6 +451,7 @@ features:
     paper:
       - P0912
       - LWG3393
+    summary: "Suspendable functions for async programming and generators."
     support:
       - GCC 10 (hint)
       - Clang 8 (partial)
@@ -443,15 +462,14 @@ features:
       - Xcode 10.2 (partial)
     hints:
       - target: GCC 10
-        msg: Requires `-fcoroutines`. Starting with GCC 11, this is implicitly enabled by `-std=c++20`.
+        msg: "Requires `-fcoroutines`. Starting with GCC 11, this is implicitly enabled by `-std=c++20`."
       - target: Clang 17
-        msg: Fully supported on all targets except Windows, which still has some stability and ABI issues.
+        msg: "Fully supported on all targets except Windows, which still has some stability and ABI issues."
     ftm:
       - name: __cpp_impl_coroutine
         value: 201902L
       - name: __cpp_lib_coroutine
         value: 201902L
-        desc: Coroutines library support
 
   - desc: "Parenthesized initialization of aggregates"
     paper:
@@ -488,6 +506,7 @@ features:
       - P2115
       - P2615
       - P2788
+    summary: "Modern alternative to header files with better encapsulation and faster builds."
     support:
       - GCC 11 (partial)
       - GCC 15 (hint)
@@ -499,21 +518,21 @@ features:
       - Xcode 26 (hint)
     hints:
       - target: GCC 11
-        msg: Supports the majority of modules features, except for P1815, private module fragments, parser-level global module entity merging and global module implications of <code>extern \"C/C++\"</code> (P1103).
+        msg: "Supports the majority of modules features, except for P1815, private module fragments, parser-level global module entity merging and global module implications of <code>extern \\\"C/C++\\\"</code> (P1103)."
       - target: GCC 15
-        msg: In addition to GCC 11, supports P2615.
+        msg: "In addition to GCC 11, supports P2615."
       - target: GCC 16
-        msg: In addition to GCC 15, supports P1766 and P1815.
+        msg: "In addition to GCC 15, supports P1766 and P1815."
       - target: Clang 17
-        msg: Supports the majority of modules features, except for P1857, and P1815 is supported on all targets except Windows.
+        msg: "Supports the majority of modules features, except for P1857, and P1815 is supported on all targets except Windows."
       - target: Clang 21
         msg: "In addition to Clang 17, partially supports P1857, with the following note: _The restriction that '[a] module directive may only appear as the first preprocessing tokens in a file' is enforced starting in Clang 21._"
       - target: Xcode 26
         msg: >
-          Apple Clang requires the `-fcxx-modules` flag **in addition to** `-fmodules`.<br/><br/>
-          Xcode 26 does not ship the `clang-scan-deps` utility that is required by certain build system generators
-          like CMake, in order to scan module dependencies.<br/>
-          This means that C++ modules cannot be used in conjunction with CMake's Xcode generator (`-G Xcode`).
+          Apple Clang requires the `-fcxx-modules` flag **in addition to** `-fmodules`.<br/><br/> Xcode 26
+          does not ship the `clang-scan-deps` utility that is required by certain build system generators like
+          CMake, in order to scan module dependencies.<br/> This means that C++ modules cannot be used in
+          conjunction with CMake's Xcode generator (`-G Xcode`).
     ftm:
       - name: __cpp_modules
         value: 201907L
@@ -577,6 +596,7 @@ features:
 
   - desc: "Deprecating some uses of `volatile`"
     paper: P1152
+    summary: "Certain volatile operations are deprecated."
     support:
       - GCC 10
       - Clang 10
@@ -585,6 +605,7 @@ features:
 
   - desc: "`constinit`"
     paper: P1143
+    summary: "Ensure static/thread-local variables are constant-initialized."
     support:
       - GCC 10
       - Clang 10
@@ -610,8 +631,9 @@ features:
       - MSVC 19.25
       - Xcode 11.4
 
-  - desc: '`[[nodiscard("should have a reason")]]`'
+  - desc: "`[[nodiscard(\"should have a reason\")]]`"
     paper: P1301
+    summary: "Add explanation to [[nodiscard]] warnings."
     support:
       - GCC 10
       - Clang 9
@@ -636,6 +658,7 @@ features:
 
   - desc: "`using` enum"
     paper: P1099
+    summary: "Import enum members into the current scope."
     support:
       - GCC 11
       - Clang 13
@@ -1042,6 +1065,7 @@ features:
 
   - desc: "`std::destroying_delete_t`"
     paper: P0722
+    summary: "Custom deallocation with access to the object."
     lib: true
     support:
       - GCC 9
@@ -1162,6 +1186,7 @@ features:
 
   - desc: "Library support for `char8_t`"
     paper: P0482
+    summary: "A distinct type for UTF-8 encoded characters and strings."
     lib: true
     support:
       - GCC 9
@@ -1372,12 +1397,12 @@ features:
       - GCC 9
       - Clang 17 (hint)
       - MSVC 19.28
+    hints:
+      - target: Clang 17
+        msg: "Not supported by Clang on macOS."
     ftm:
       - name: __cpp_lib_execution
         value: 201902L
-    hints:
-      - target: Clang 17
-        msg: Not supported by Clang on macOS.
 
   - desc: "`std::lerp()` and `std::midpoint()`"
     paper: P0811
