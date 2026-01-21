@@ -5,7 +5,7 @@ features:
     support:
       - GCC 5
       - Clang 3.8
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "Allow `typename` in a template template parameter"
@@ -13,7 +13,7 @@ features:
     support:
       - GCC 5
       - Clang 3.5
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "Removing trigraphs??!"
@@ -21,7 +21,7 @@ features:
     support:
       - GCC 5
       - Clang 3.5
-      - MSVC 16.0
+      - MSVC 10.0
       - Xcode
 
   - desc: "Nested `namespace` definition"
@@ -30,7 +30,7 @@ features:
     support:
       - GCC 6
       - Clang 3.6
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "Extending `static_assert`, v2"
@@ -38,7 +38,7 @@ features:
     support:
       - GCC 6
       - Clang 2.5
-      - MSVC 19.10
+      - MSVC 14.10
       - Xcode
     ftm:
       - name: __cpp_static_assert
@@ -51,7 +51,7 @@ features:
       - GCC 4.9 (partial)
       - GCC 6
       - Clang 3.6
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     hints:
       - target: GCC 4.9
@@ -69,7 +69,7 @@ features:
     support:
       - GCC 6
       - Clang 3.6
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_nontype_template_args
@@ -81,7 +81,7 @@ features:
     support:
       - GCC 6
       - Clang 3.6
-      - MSVC 19.12
+      - MSVC 14.12
       - Xcode
 
   - desc: "Unary folds and empty parameter packs"
@@ -89,7 +89,7 @@ features:
     support:
       - GCC 6
       - Clang 3.9
-      - MSVC 19.12
+      - MSVC 14.12
       - Xcode
 
   - desc: "Remove deprecated use of the `register` keyword"
@@ -97,7 +97,7 @@ features:
     support:
       - GCC 7
       - Clang 3.8
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
 
   - desc: "Remove deprecated `operator++(bool)`"
@@ -105,7 +105,7 @@ features:
     support:
       - GCC 7
       - Clang 3.8
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
 
   - desc: "Make exception specifications be part of the type system"
@@ -113,7 +113,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.12
+      - MSVC 14.12
       - Xcode
     ftm:
       - name: __cpp_noexcept_function_type
@@ -125,7 +125,7 @@ features:
     support:
       - GCC 5
       - Clang
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
 
   - desc: "Rewording inheriting constructors"
@@ -133,10 +133,10 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.14 (hint)
+      - MSVC 14.14 (hint)
       - Xcode
     hints:
-      - target: MSVC 19.14
+      - target: MSVC 14.14
         msg: "Not supported in C++14 mode."
     ftm:
       - name: __cpp_inheriting_constructors
@@ -147,7 +147,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.14
+      - MSVC 14.14
       - Xcode
     ftm:
       - name: __cpp_aggregate_bases
@@ -159,7 +159,7 @@ features:
     support:
       - GCC 6
       - Clang 3.6
-      - MSVC 19.12
+      - MSVC 14.12
       - Xcode
     ftm:
       - name: __cpp_fold_expressions
@@ -171,7 +171,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
 
   - desc: "Construction rules for `enum class` values"
@@ -179,7 +179,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
 
   - desc: "`constexpr` lambdas"
@@ -188,7 +188,7 @@ features:
     support:
       - GCC 7
       - Clang 5
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
     ftm:
       - name: __cpp_constexpr
@@ -199,7 +199,7 @@ features:
     support:
       - GCC 6
       - Clang 3.9
-      - MSVC 19.10
+      - MSVC 14.10
       - Xcode
     ftm:
       - name: __cpp_range_based_for
@@ -211,7 +211,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.10
+      - MSVC 14.10
       - Xcode
 
   - desc: "Attribute `[[nodiscard]]`"
@@ -220,7 +220,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
 
   - desc: "Attribute `[[maybe_unused]]`"
@@ -229,7 +229,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
 
   - desc: "Hexadecimal floating literals"
@@ -237,7 +237,7 @@ features:
     support:
       - GCC 3
       - Clang
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
     ftm:
       - name: __cpp_hex_float
@@ -248,7 +248,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
 
   - desc: "Dynamic memory allocation for over-aligned data"
@@ -256,7 +256,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.12
+      - MSVC 14.12
       - Xcode 10
     ftm:
       - name: __cpp_aligned_new
@@ -268,7 +268,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.14
+      - MSVC 14.14
       - Xcode
     ftm:
       - name: __cpp_nontype_template_parameter_auto
@@ -280,7 +280,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.13
+      - MSVC 14.13
       - Xcode
     ftm:
       - name: __cpp_guaranteed_copy_elision
@@ -291,7 +291,7 @@ features:
     support:
       - GCC 7
       - Clang 6
-      - MSVC 19.14
+      - MSVC 14.14
       - Xcode
 
   - desc: "Refining expression evaluation order for idiomatic C++"
@@ -299,7 +299,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.14
+      - MSVC 14.14
       - Xcode
 
   - desc: "Proposed wording for structured bindings"
@@ -308,7 +308,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
     ftm:
       - name: __cpp_structured_bindings
@@ -319,7 +319,7 @@ features:
     support:
       - GCC
       - Clang 3.9
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "`constexpr if` statements"
@@ -328,7 +328,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
     ftm:
       - name: __cpp_if_constexpr
@@ -340,7 +340,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
 
   - desc: "`inline` variables"
@@ -349,7 +349,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.12
+      - MSVC 14.12
       - Xcode
     ftm:
       - name: __cpp_inline_variables
@@ -360,7 +360,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.12
+      - MSVC 14.12
       - Xcode
 
   - desc: "Pack expansions in `using`-declarations"
@@ -368,7 +368,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.14
+      - MSVC 14.14
       - Xcode
     ftm:
       - name: __cpp_variadic_using
@@ -379,7 +379,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.12
+      - MSVC 14.12
       - Xcode
     ftm:
       - name: __cpp_template_template_args
@@ -391,7 +391,7 @@ features:
     support:
       - GCC 7
       - Clang 5
-      - MSVC 19.14
+      - MSVC 14.14
       - Xcode
     ftm:
       - name: __cpp_deduction_guides
@@ -403,7 +403,7 @@ features:
     support:
       - GCC 6
       - Clang 3.6
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_void_t
@@ -415,7 +415,7 @@ features:
     support:
       - GCC 6
       - Clang 3.6
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_uncaught_exceptions
@@ -427,7 +427,7 @@ features:
     support:
       - GCC 6
       - Clang 3.6
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_nonmember_container_access
@@ -439,7 +439,7 @@ features:
     support:
       - GCC 6
       - Clang 3.7
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode 15
     ftm:
       - name: __cpp_lib_allocator_traits_is_always_equal
@@ -451,7 +451,7 @@ features:
     support:
       - GCC 6
       - Clang 3.7
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_invoke
@@ -463,7 +463,7 @@ features:
     support:
       - GCC 6
       - Clang 3.7
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_map_try_emplace
@@ -479,7 +479,7 @@ features:
     support:
       - GCC 6
       - Clang 4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "`std::bool_constant`"
@@ -488,7 +488,7 @@ features:
     support:
       - GCC 6
       - Clang 4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_bool_constant
@@ -500,7 +500,7 @@ features:
     support:
       - GCC 6
       - Clang 3.7
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_shared_mutex
@@ -512,7 +512,7 @@ features:
     support:
       - GCC 3
       - Clang 3.6
-      - MSVC 18.0
+      - MSVC 12.0
       - Xcode
     ftm:
       - name: __cpp_lib_incomplete_container_elements
@@ -524,7 +524,7 @@ features:
     support:
       - GCC 7
       - Clang 3.8
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_type_trait_variable_templates
@@ -536,7 +536,7 @@ features:
     support:
       - GCC 6
       - Clang 3.8
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_logical_traits
@@ -548,7 +548,7 @@ features:
     support:
       - GCC 7
       - Clang 3.8
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "Rounding functions for `chrono::duration` and `chrono::time_point`"
@@ -557,7 +557,7 @@ features:
     support:
       - GCC 7
       - Clang 3.8
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_chrono
@@ -569,7 +569,7 @@ features:
     support:
       - GCC 7
       - Clang 3.8
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_transparent_operators
@@ -583,7 +583,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.12
+      - MSVC 14.12
       - Xcode
     ftm:
       - name: __cpp_lib_not_fn
@@ -595,7 +595,7 @@ features:
     support:
       - GCC 9
       - Clang 17 (partial)
-      - MSVC 19.14
+      - MSVC 14.14
     ftm:
       - name: __cpp_lib_execution
         value: 201603L
@@ -608,7 +608,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode 10
     ftm:
       - name: __cpp_lib_clamp
@@ -620,7 +620,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode 10
     ftm:
       - name: __cpp_lib_is_swappable
@@ -632,7 +632,7 @@ features:
     support:
       - GCC 9
       - Clang 16
-      - MSVC 19.13
+      - MSVC 14.13
       - Xcode 15
     ftm:
       - name: __cpp_lib_memory_resource
@@ -644,7 +644,7 @@ features:
     support:
       - GCC 7
       - Clang 16
-      - MSVC 19.13
+      - MSVC 14.13
       - Xcode
     ftm:
       - name: __cpp_lib_apply
@@ -662,7 +662,7 @@ features:
     lib: true
     support:
       - GCC 7
-      - MSVC 19.14
+      - MSVC 14.14
     ftm:
       - name: __cpp_lib_math_special_functions
         value: 201603L
@@ -673,7 +673,7 @@ features:
     support:
       - GCC 7
       - Clang
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode 15 (hint)
     hints:
       - target: Xcode 15
@@ -688,7 +688,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
     ftm:
       - name: __cpp_lib_array_constexpr
@@ -700,7 +700,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
     ftm:
       - name: __cpp_lib_atomic_is_always_lock_free
@@ -712,7 +712,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.12
+      - MSVC 14.12
       - Xcode
     ftm:
       - name: __cpp_lib_enable_shared_from_this
@@ -724,7 +724,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.14
+      - MSVC 14.14
       - Xcode
     ftm:
       - name: __cpp_lib_hypot
@@ -737,7 +737,7 @@ features:
     support:
       - GCC 7
       - Clang 5
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
     ftm:
       - name: __cpp_lib_byte
@@ -754,7 +754,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode 10
     ftm:
       - name: __cpp_lib_string_view
@@ -768,7 +768,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.10
+      - MSVC 14.10
       - Xcode 10
     ftm:
       - name: __cpp_lib_any
@@ -781,7 +781,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.10
+      - MSVC 14.10
       - Xcode 10
     ftm:
       - name: __cpp_lib_optional
@@ -793,8 +793,8 @@ features:
     support:
       - GCC 9
       - Clang 7
-      - MSVC 19.0 (partial)
-      - MSVC 19.28
+      - MSVC 14.0 (partial)
+      - MSVC 14.28
       - Xcode 10
 
   - desc: "Splicing maps and sets (`std::map::extract()`, `std::map::merge()` etc)"
@@ -803,7 +803,7 @@ features:
     support:
       - GCC 7
       - Clang 8
-      - MSVC 19.12
+      - MSVC 14.12
       - Xcode 10
     ftm:
       - name: __cpp_lib_node_extract
@@ -815,7 +815,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
 
   - desc: "`std::variant`"
@@ -825,7 +825,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.10
+      - MSVC 14.10
       - Xcode 10
     ftm:
       - name: __cpp_lib_variant
@@ -837,7 +837,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.10
+      - MSVC 14.10
       - Xcode
     ftm:
       - name: __cpp_lib_make_from_tuple
@@ -849,7 +849,7 @@ features:
     support:
       - GCC 7
       - Clang 6
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
     ftm:
       - name: __cpp_lib_has_unique_object_representations
@@ -861,7 +861,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
     ftm:
       - name: __cpp_lib_gcd_lcm
@@ -873,7 +873,7 @@ features:
     support:
       - GCC 7
       - Clang 6
-      - MSVC 19.14
+      - MSVC 14.14
       - Xcode
     ftm:
       - name: __cpp_lib_launder
@@ -885,7 +885,7 @@ features:
     support:
       - GCC 7
       - Clang 4 (partial)
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode 15 (partial)
     hints:
       - target: Clang 4
@@ -902,7 +902,7 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 19.10
+      - MSVC 14.10
       - Xcode
     ftm:
       - name: __cpp_lib_shared_ptr_weak_type
@@ -917,10 +917,10 @@ features:
       - Clang 7 (partial)
       - Clang 14 (partial)
       - Clang 20 (partial)
-      - MSVC 19.14 (partial)
-      - MSVC 19.15 (partial)
-      - MSVC 19.16 (partial)
-      - MSVC 19.24
+      - MSVC 14.14 (partial)
+      - MSVC 14.15 (partial)
+      - MSVC 14.16 (partial)
+      - MSVC 14.24
       - Xcode 10 (partial)
       - Xcode 14.3 (partial)
     hints:
@@ -932,12 +932,12 @@ features:
         msg: "Adds `std::from_chars()` support for `float` and `double`."
       - target: Clang 20
         msg: "Support is complete except for `long double`."
-      - target: MSVC 19.14
+      - target: MSVC 14.14
         msg: "No support for floating-point types, only integer types."
-      - target: MSVC 19.15
+      - target: MSVC 14.15
         msg: "Adds `std::from_chars()` support for `float` and `double`."
-      - target: MSVC 19.16
-        msg: "Adds shortest round-trip decimal overloads of floating-point `std::to_chars()`, e.g. `\"%.8e\"` and `\"%.16e\"`."
+      - target: MSVC 14.16
+        msg: 'Adds shortest round-trip decimal overloads of floating-point `std::to_chars()`, e.g. `"%.8e"` and `"%.16e"`.'
       - target: Xcode 10
         msg: "No support for floating-point types, only integer types."
       - target: Xcode 14.3
@@ -952,7 +952,7 @@ features:
     support:
       - GCC 7
       - Clang 11
-      - MSVC 19.12
+      - MSVC 14.12
       - Xcode 12
 
   - desc: "`constexpr` for all member functions of `chrono::duration` and `chrono::time_point`"
@@ -961,7 +961,7 @@ features:
     support:
       - GCC 7
       - Clang 4
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
     ftm:
       - name: __cpp_lib_chrono
@@ -973,7 +973,7 @@ features:
     support:
       - GCC 5
       - Clang 11
-      - MSVC 19.12
+      - MSVC 14.12
       - Xcode 15 (hint)
     hints:
       - target: Xcode 15
@@ -988,7 +988,7 @@ features:
     support:
       - GCC 8
       - Clang 4
-      - MSVC 19.14
+      - MSVC 14.14
       - Xcode
     ftm:
       - name: __cpp_lib_constexpr_string
@@ -1003,7 +1003,7 @@ features:
     support:
       - GCC 8
       - Clang 7
-      - MSVC 19.14
+      - MSVC 14.14
       - Xcode 11
     ftm:
       - name: __cpp_lib_filesystem
@@ -1016,7 +1016,7 @@ features:
       - GCC 12
       - Clang 15 (partial)
       - Clang 19
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode 16.3 (hint)
     hints:
       - target: Xcode 16.3
@@ -1031,7 +1031,7 @@ features:
     support:
       - GCC 7
       - Clang 5
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
     ftm:
       - name: __cpp_lib_scoped_lock
@@ -1043,7 +1043,7 @@ features:
     support:
       - GCC 7
       - Clang 5
-      - MSVC 19.15
+      - MSVC 14.15
       - Xcode
     ftm:
       - name: __cpp_lib_is_aggregate
@@ -1055,7 +1055,7 @@ features:
     support:
       - GCC 7
       - Clang
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
     ftm:
       - name: __cpp_lib_is_invocable
@@ -1067,5 +1067,5 @@ features:
     support:
       - GCC 11.4
       - Clang 17
-      - MSVC 19.32
+      - MSVC 14.32
       - Xcode 15

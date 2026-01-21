@@ -85,14 +85,14 @@ features:
     support:
       - GCC 15 (partial)
       - Clang 18 (partial)
-      - MSVC 19.44 (partial)
+      - MSVC 14.44 (partial)
       - Xcode 16 (partial)
     hints:
       - target: GCC 15
         msg: "Calls `abort()` instead of using C++26 contracts when a hardened precondition is violated."
       - target: Clang 18
         msg: "Calls `__builtin_expect(false, ...)` instead of using C++26 contracts when a hardened precondition is violated."
-      - target: MSVC 19.44
+      - target: MSVC 14.44
         msg: "Calls `__fastfail()` instead of using C++26 contracts when a hardened precondition is violated."
       - target: Xcode 16
         msg: "Calls `__builtin_expect(false, ...)` instead of using C++26 contracts when a hardened precondition is violated."
@@ -147,9 +147,9 @@ features:
     lib: true
     content: p3697_minor_additions_to_hardening.md
     support:
-      - MSVC 19.50 (partial)
+      - MSVC 14.50 (partial)
     hints:
-      - target: MSVC 19.50
+      - target: MSVC 14.50
         msg: Partial support only due to the lack of Contracts. Support starting with Visual Studio 2026 18.0 Preview 2. ([GitHub Issue](https://github.com/microsoft/STL/pull/5650))
     keywords: ["safety"]
 
@@ -309,7 +309,7 @@ features:
       - GCC 16
     keywords: ["safety"]
 
-  - desc: "= delete(\"should have a reason\");"
+  - desc: '= delete("should have a reason");'
     paper: P2573
     summary: "Deleted functions can now include a message explaining why they're deleted."
     support:
@@ -577,7 +577,7 @@ features:
     paper: P3503
     lib: true
     support:
-      - MSVC 19.51
+      - MSVC 14.51
 
   - desc: "Atomic floating-point min/max"
     paper: P3008
@@ -617,7 +617,7 @@ features:
     support:
       - GCC 16
       - Clang 22
-      - MSVC 19.50
+      - MSVC 14.50
 
   - desc: "`std::constant_wrapper`"
     paper: P2781
@@ -780,7 +780,7 @@ features:
     support:
       - GCC 14
       - Clang 17
-      - MSVC 19.40
+      - MSVC 14.40
     ftm:
       - name: __cpp_lib_format
         value: 202304L
@@ -817,7 +817,7 @@ features:
     support:
       - GCC 14
       - Clang 18
-      - MSVC 19.38
+      - MSVC 14.38
       - Xcode 16
 
   - desc: "`constexpr` stable sorting"
@@ -859,7 +859,18 @@ features:
     ftm:
       - name: __cpp_lib_associative_heterogeneous_insertion
         value: 202306L
-    keywords: ["insert", "insert_or_assign", "bucket", "map", "set", "unordered", "emplace", "multiset", "multimap"]
+    keywords:
+      [
+        "insert",
+        "insert_or_assign",
+        "bucket",
+        "map",
+        "set",
+        "unordered",
+        "emplace",
+        "multiset",
+        "multimap",
+      ]
 
   - desc: "Enabling the use of `std::weak_ptr` as keys in unordered associative containers"
     paper: P1901
@@ -980,13 +991,13 @@ features:
     paper: P2013
     lib: true
     support:
-      - MSVC 19.38
+      - MSVC 14.38
 
   - desc: "Freestanding `std::char_traits`, `std::errc` and facilities in: `<charconv>`, `<cstdlib>`, `<cstring>`, `<cwchar>`"
     paper: P2338
     lib: true
     support:
-      - MSVC 19.38
+      - MSVC 14.38
     ftm:
       - name: __cpp_lib_freestanding_char_traits
         value: 202306L
@@ -1005,7 +1016,7 @@ features:
     paper: P2198
     lib: true
     support:
-      - MSVC 19.38
+      - MSVC 14.38
     ftm:
       - name: __cpp_lib_freestanding_feature_test_macros
         value: 202306L
@@ -1060,7 +1071,7 @@ features:
     support:
       - GCC 14
       - Clang 18
-      - MSVC 19.40
+      - MSVC 14.40
       - Xcode 16
     ftm:
       - name: __cpp_lib_format
@@ -1115,7 +1126,7 @@ features:
     lib: true
     support:
       - GCC 16
-      - MSVC 19.42
+      - MSVC 14.42
 
   - desc: "Remove deprecated `std::allocator` typedef from C++26 (`std::allocator::is_always_equal()`)"
     paper: P2868
@@ -1144,7 +1155,7 @@ features:
     lib: true
     support:
       - GCC 14
-      - MSVC 19.40
+      - MSVC 14.40
     ftm:
       - name: __cpp_lib_freestanding_cstring
         value: 202311L
@@ -1154,7 +1165,7 @@ features:
     lib: true
     support:
       - GCC 14
-      - MSVC 19.42
+      - MSVC 14.42
     ftm:
       - name: __cpp_lib_freestanding_algorithm
         value: 202311L
@@ -1172,7 +1183,7 @@ features:
     lib: true
     support:
       - GCC 14
-      - MSVC 19.42
+      - MSVC 14.42
     ftm:
       - name: __cpp_lib_freestanding_expected
         value: 202311L
@@ -1191,7 +1202,7 @@ features:
     lib: true
     support:
       - GCC 14
-      - MSVC 19.40
+      - MSVC 14.40
     ftm:
       - name: __cpp_lib_ranges_as_const
         value: 202311L
@@ -1202,7 +1213,7 @@ features:
     support:
       - GCC 13.3
       - Clang 18
-      - MSVC 19.40
+      - MSVC 14.40
       - Xcode 16
     ftm:
       - name: __cpp_lib_format_uchar
@@ -1286,7 +1297,7 @@ features:
     support:
       - GCC 14
       - Clang 19
-      - MSVC 19.41
+      - MSVC 14.41
       - Xcode 16.3
     ftm:
       - name: __cpp_lib_print
@@ -1298,7 +1309,7 @@ features:
     lib: true
     support:
       - Clang 15
-      - MSVC 19.41
+      - MSVC 14.41
 
   - desc: "Remove deprecated strstreams from C++26"
     paper: P2867
@@ -1324,7 +1335,7 @@ features:
     lib: true
     support:
       - GCC 16
-      - MSVC 19.43
+      - MSVC 14.43
     ftm:
       - name: __cpp_lib_print
         value: 202403L
@@ -1398,7 +1409,7 @@ features:
     support:
       - GCC 15
       - Clang 19
-      - MSVC 19.42
+      - MSVC 14.42
 
   - desc: "Removing the common reference requirement from the indirectly invocable concepts"
     paper: P2997
@@ -1406,7 +1417,7 @@ features:
     support:
       - GCC 15
       - Clang 19
-      - MSVC 19.42
+      - MSVC 14.42
 
   - desc: "Deprecate the notion of trivial types (`std::is_trivial` and `std::is_trivial_v`)"
     paper: P3247
@@ -1421,7 +1432,7 @@ features:
     support:
       - GCC
       - Clang 14
-      - MSVC 19.39
+      - MSVC 14.39
       - Xcode 14.3
 
   - desc: "`views::cache_latest()` (`views::cache_latest_view`)"
@@ -1468,7 +1479,7 @@ features:
     lib: true
     support:
       - GCC 16
-      - MSVC 19.44
+      - MSVC 14.44
 
   - desc: "`constexpr` `std::atomic` and `std::atomic_ref`"
     paper: P3309
@@ -1477,7 +1488,7 @@ features:
       - name: __cpp_lib_constexpr_atomic
         value: 202411L
 
-  - desc: "Wording for \"`constexpr` for specialized memory algorithms\""
+  - desc: 'Wording for "`constexpr` for specialized memory algorithms"'
     paper: P3508
     lib: true
     support:
@@ -1537,7 +1548,7 @@ features:
     support:
       - GCC 15
       - Clang 21
-      - MSVC 19.50
+      - MSVC 14.50
 
   - desc: "`std::indirect` and `std::polymorphic`: Vocabulary Types for Composite Class Design"
     paper: P3019
@@ -1646,7 +1657,7 @@ features:
     lib: true
     support:
       - GCC 15
-      - MSVC 19.51
+      - MSVC 14.51
 
   - desc: "Allow attaching `main()` to the global module"
     paper: P3618
@@ -1667,7 +1678,7 @@ features:
     paper: P3016
     lib: true
     support:
-      - MSVC 19.51
+      - MSVC 14.51
 
   - desc: "`flat_meow` fixes"
     paper: P3567

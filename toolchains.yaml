@@ -1002,123 +1002,185 @@ infos:
     refs:
       - "https://clang.llvm.org/docs/ReleaseNotes.html"
 
-  - name: MSVC 19.0
+  - name: MSVC 7.0
+    released: February, 2002
+    mscver: 1300
+    toolset: v70
+    part_of: "Visual Studio .NET 2002"
+
+  - name: MSVC 7.10
+    released: April, 2003
+    mscver: 1310
+    toolset: v71
+    part_of: "Visual Studio .NET 2003"
+
+  - name: MSVC 8.0
+    released: November, 2005
+    mscver: 1400
+    toolset: v80
+    part_of: "Visual Studio 2005"
+
+  - name: MSVC 9.0
+    released: November, 2007
+    mscver: 1500
+    toolset: v90
+    part_of: "Visual Studio 2008"
+
+  - name: MSVC 10.0
+    released: April, 2010
+    mscver: 1600
+    toolset: v100
+    part_of: "Visual Studio 2010"
+
+  - name: MSVC 11.0
+    released: September, 2012
+    mscver: 1700
+    toolset: v110
+    part_of: "Visual Studio 2012"
+
+  - name: MSVC 12.0
+    released: October, 2013
+    mscver: 1800
+    toolset: v120
+    part_of: "Visual Studio 2013"
+
+  - name: MSVC 14.0
     released: July 20, 2015
-    part_of: "Visual Studio 2015 (14.0)"
+    mscver: 1900
+    toolset: v140
+    part_of: "Visual Studio 2015"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2015-rtm-vs
       - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.10
+  - name: MSVC 14.10
     released: March 7, 2017
+    mscver: 1910
+    toolset: v141
     part_of: "Visual Studio 2017"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes-v15.0
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.11
+  - name: MSVC 14.11
     released: August 14, 2017
+    mscver: 1911
+    toolset: v141
     part_of: "Visual Studio 2017 version 15.3"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes-v15.3
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.12
+  - name: MSVC 14.12
     released: December 4, 2017
+    mscver: 1912
+    toolset: v141
     part_of: "Visual Studio 2017 version 15.5"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes-v15.5
-      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
 
-  - name: MSVC 19.13
+  - name: MSVC 14.13
     released: March 5, 2018
+    mscver: 1913
+    toolset: v141
     part_of: "Visual Studio 2017 version 15.6"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes-v15.6
-      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
 
-  - name: MSVC 19.14
+  - name: MSVC 14.14
     released: May 7, 2018
+    mscver: 1914
+    toolset: v141
     part_of: "Visual Studio 2017 version 15.7"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes-v15.7
-      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
 
-  - name: MSVC 19.15
+  - name: MSVC 14.15
     released: August 14, 2018
+    mscver: 1915
+    toolset: v141
     part_of: "Visual Studio 2017 version 15.8"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes-v15.8
-      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
 
-  - name: MSVC 19.16
+  - name: MSVC 14.16
     released: November 13, 2018
+    mscver: 1916
+    toolset: v141
     part_of: "Visual Studio 2017 version 15.9"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releasenotes/vs2017-relnotes
-      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
 
-  - name: MSVC 19.20
+  - name: MSVC 14.20
     released: April 2, 2019
-    part_of: "Visual Studio 2019 RTW 16.0"
+    mscver: 1920
+    toolset: v142
+    part_of: "Visual Studio 2019 version 16.0"
     refs:
       - "https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.0"
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.21
+  - name: MSVC 14.21
     released: May 21, 2019
+    mscver: 1921
+    toolset: v142
     part_of: "Visual Studio 2019 version 16.1"
     refs:
       - "https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.1"
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.22
+  - name: MSVC 14.22
     released: July 24, 2019
+    mscver: 1922
+    toolset: v142
     part_of: "Visual Studio 2019 version 16.2"
     refs:
       - "https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.2"
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.23
+  - name: MSVC 14.23
     released: September 23, 2019
+    mscver: 1923
+    toolset: v142
     part_of: "Visual Studio 2019 version 16.3"
     refs:
       - "https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.3"
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.24
+  - name: MSVC 14.24
     released: December 3, 2019
+    mscver: 1924
+    toolset: v142
     part_of: "Visual Studio 2019 version 16.4"
     refs:
       - "https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.4"
       - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.25
+  - name: MSVC 14.25
     released: March 16, 2020
+    mscver: 1925
+    toolset: v142
     part_of: "Visual Studio 2019 version 16.5"
     refs:
       - "https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.5"
       - "https://github.com/microsoft/STL/wiki/VS-2019-Changelog#vs-2019-165"
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.26
+  - name: MSVC 14.26
     released: May 19, 2020
+    mscver: 1926
+    toolset: v142
     part_of: "Visual Studio 2019 version 16.6"
     refs:
       - "https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.6"
       - "https://github.com/microsoft/STL/wiki/VS-2019-Changelog#vs-2019-166"
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.27
+  - name: MSVC 14.27
     released: August 5, 2020
+    mscver: 1927
+    toolset: v142
     part_of: "Visual Studio 2019 version 16.7"
     refs:
       - "https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.7"
       - "https://github.com/microsoft/STL/wiki/VS-2019-Changelog#vs-2019-167"
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.28
+  - name: MSVC 14.28
     released: November 10, 2020
+    mscver: 1928
+    toolset: v142
     part_of:
       - "Visual Studio 2019 version 16.8"
       - "Visual Studio 2019 version 16.9"
@@ -1127,134 +1189,149 @@ infos:
       - "https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.9"
       - "https://github.com/microsoft/STL/wiki/VS-2019-Changelog#vs-2019-169"
       - "https://github.com/microsoft/STL/wiki/VS-2019-Changelog#vs-2019-168"
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.29
+  - name: MSVC 14.29
     released: May 25, 2021
+    mscver: 1929
+    toolset: v142
     part_of: "Visual Studio 2019 version 16.10"
     refs:
       - "https://learn.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.10"
       - "https://github.com/microsoft/STL/wiki/VS-2019-Changelog#vs-2019-1610"
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.30
+  - name: MSVC 14.30
     released: November 8, 2021
-    part_of: "Visual Studio 2022 RTW 17.0"
+    mscver: 1930
+    toolset: v143
+    part_of: "Visual Studio 2022 version 17.0"
     refs:
       - "https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.0"
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.31
+  - name: MSVC 14.31
     released: February 15, 2022
+    mscver: 1931
+    toolset: v143
     part_of: "Visual Studio 2022 version 17.1"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.1
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.32
+  - name: MSVC 14.32
     released: May 10, 2022
+    mscver: 1932
+    toolset: v143
     part_of: "Visual Studio 2022 version 17.2"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.2
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.33
+  - name: MSVC 14.33
     released: August 9, 2022
+    mscver: 1933
+    toolset: v143
     part_of: "Visual Studio 2022 version 17.3"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.3
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.34
+  - name: MSVC 14.34
     released: November 8, 2022
+    mscver: 1934
+    toolset: v143
     part_of: "Visual Studio 2022 version 17.4"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.4
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.35
+  - name: MSVC 14.35
     released: February 21, 2023
+    mscver: 1935
+    toolset: v143
     part_of: "Visual Studio 2022 version 17.5"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.5
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.36
+  - name: MSVC 14.36
     released: May 16, 2023
+    mscver: 1936
+    toolset: v143
     part_of: "Visual Studio 2022 version 17.6"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.6
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.37
+  - name: MSVC 14.37
     released: August 8, 2023
+    mscver: 1937
+    toolset: v143
     part_of: "Visual Studio 2022 version 17.7"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.7
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.38
+  - name: MSVC 14.38
     released: November 14, 2023
+    mscver: 1938
+    toolset: v143
     part_of: "Visual Studio 2022 version 17.8"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.8
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.39
+  - name: MSVC 14.39
     released: February 13, 2024
+    mscver: 1939
+    toolset: v143
     part_of: "Visual Studio 2022 version 17.9"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.9
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.40
+  - name: MSVC 14.40
     released: May 21, 2024
+    mscver: 1940
+    toolset: v143
     part_of: "Visual Studio 2022 version 17.10"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.10
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.41
+  - name: MSVC 14.41
     released: August 13, 2024
+    mscver: 1941
+    toolset: v143
     part_of: "Visual Studio 2022 version 17.11"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.11
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.42
+  - name: MSVC 14.42
     released: November 12, 2024
+    mscver: 1942
+    toolset: v143
     part_of: "Visual Studio 2022 version 17.12"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.12
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.43
+  - name: MSVC 14.43
     released: February 11, 2025
+    mscver: 1943
+    toolset: v143
     part_of: "Visual Studio 2022 version 17.13"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes-v17.13
-      - "https://learn.microsoft.com/en-us/cpp/overview/compiler-versions"
 
-  - name: MSVC 19.44
+  - name: MSVC 14.44
     released: May 13, 2025
+    mscver: 1943
+    toolset: v143
     part_of: "Visual Studio 2022 version 17.14"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2022/release-notes
-      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
 
-  - name: MSVC 19.50
+  - name: MSVC 14.50
     released: November 11, 2025
+    mscver: 1950
+    toolset: v150
     part_of: "Visual Studio 2026 version 18.0"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes
-      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
 
-  - name: MSVC 19.51
+  - name: MSVC 14.51
     released: TBD
     part_of: "Visual Studio 2026 TBD"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes
-      - https://learn.microsoft.com/en-us/cpp/overview/compiler-versions
 
   - name: Xcode 1
     released: September 28, 2003

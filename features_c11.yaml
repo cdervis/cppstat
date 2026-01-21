@@ -5,85 +5,85 @@ features:
     support:
       - GCC 4.7.1
       - Clang 3.1
-      - MSVC 19.28
+      - MSVC 14.28
       - Xcode 16.1
   - desc: "Generic selection (`_Generic`)"
     paper: N1441
     support:
       - GCC 4.9
       - Clang 3.1
-      - MSVC 19.27
+      - MSVC 14.27
       - Xcode 16.1
   - desc: "Anonymous structures and unions"
     paper: N1444
     support:
       - GCC 4.7.1
       - Clang 3.1
-      - MSVC 19.27
+      - MSVC 14.27
       - Xcode 16.1
   - desc: "Alignment support (`_Alignas`, `_Alignof`, `<stdalign.h>`)"
     paper: N1353
     support:
       - GCC 4.7.1
       - Clang 3.3
-      - MSVC 19.27
+      - MSVC 14.27
       - Xcode 16.1
   - desc: "Atomic operations (`_Atomic`, `<stdatomic.h>`)"
     paper: N1485
     support:
       - GCC 4.9
       - Clang 3.6
-      - MSVC 19.35 (hint)
+      - MSVC 14.35 (hint)
       - Xcode 16.1
     hints:
-      - target: MSVC 19.35
+      - target: MSVC 14.35
         msg: "Requires enabling the `/experimental:c11atomics` compiler flag."
   - desc: "Thread-local storage (`_Thread_local`)"
     paper: N1287
     support:
       - GCC 4.9
       - Clang 3.3
-      - MSVC 19.37
+      - MSVC 14.37
       - Xcode 16.1
   - desc: "Multi-threading support (`<threads.h>`)"
     paper: N1437
     support:
       - GCC 4.7.1
-      - MSVC 19.39
+      - MSVC 14.39
       - Clang 3.3
   - desc: "Noreturn function specifier (`_Noreturn`, `<stdnoreturn.h>`)"
     paper: N1478
     support:
       - GCC 4.7.1
       - Clang 3.3
-      - MSVC 19.28
+      - MSVC 14.28
       - Xcode 16.1
   - desc: "Unicode support (`<uchar.h>`, `u/U` prefixes)"
     paper: N1487
     support:
       - GCC 4.7.1
-      - MSVC 19.20
+      - MSVC 14.20
       - Clang 3.3
   - desc: 'Exclusive create-and-open mode for `fopen()` ("x")'
     paper: N1339
     support:
       - GCC 4.7.1
       - Clang 3.1
-      - MSVC 19.20
+      - MSVC 14.20
       - Xcode 16.1
   - desc: "Quick exit (`quick_exit()`, `at_quick_exit()`)"
     paper: N1327
     support:
       - GCC 4.7.1
       - Clang 3.3
-      - MSVC 19.20
+      - MSVC 14.20
       - Xcode 16.1
   - desc: "`timespec_get()` function"
     paper: N1499
     support:
       - GCC 4.7.1
       - Clang 3.3
-      - MSVC 19.20
+      - MSVC 14.20
       - Xcode 16.1
   - desc: "Macros for complex number types (`CMPLX`)"
     paper: N1464

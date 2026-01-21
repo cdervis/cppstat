@@ -6,7 +6,7 @@ features:
     support:
       - GCC 11
       - Clang 13
-      - MSVC 19.43
+      - MSVC 14.43
       - Xcode 13.4.1
     ftm:
       - name: __cpp_size_t_suffix
@@ -19,7 +19,7 @@ features:
     support:
       - GCC 11
       - Clang 13
-      - MSVC 19.44
+      - MSVC 14.44
       - Xcode 13.4.1
 
   - desc: "`if consteval`"
@@ -28,7 +28,7 @@ features:
     support:
       - GCC 12
       - Clang 14
-      - MSVC 19.44
+      - MSVC 14.44
       - Xcode 14
     ftm:
       - name: __cpp_if_consteval
@@ -39,7 +39,7 @@ features:
     support:
       - GCC 12
       - Clang (hint)
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode (hint)
     hints:
       - target: Clang
@@ -53,13 +53,13 @@ features:
       - GCC 9
       - Clang 13 (partial)
       - Clang 14
-      - MSVC 19.21 (hint)
-      - MSVC 19.44
+      - MSVC 14.21 (hint)
+      - MSVC 14.44
       - Xcode 14
     hints:
       - target: Clang 13
         msg: "noexcept specifiers changes missing"
-      - target: MSVC 19.21
+      - target: MSVC 14.21
         msg: "Compiles, but emits a warning: warning C4305: 'if': truncation from 'int' to 'bool'"
 
   - desc: "Trimming whitespaces before line splicing"
@@ -68,14 +68,14 @@ features:
       - GCC
       - Clang
       - Xcode
-      - MSVC 19.50
+      - MSVC 14.50
 
   - desc: "Make declaration order layout mandated"
     paper: P1847
     support:
       - GCC
       - Clang
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode
 
   - desc: "Remove mixed wide string literal concatenation"
@@ -83,18 +83,18 @@ features:
     support:
       - GCC
       - Clang
-      - MSVC 19.44
+      - MSVC 14.44
       - Xcode
 
   - desc: "Explicit object member functions (deducing `this`)"
     paper: P0847
-    summary: "Member functions can now have an explicit \"self\" parameter, enabling perfect forwarding and CRTP simplification."
+    summary: 'Member functions can now have an explicit "self" parameter, enabling perfect forwarding and CRTP simplification.'
     support:
       - GCC 14
       - Clang 18
       - Clang 19
-      - MSVC 19.32
-      - MSVC 19.43
+      - MSVC 14.32
+      - MSVC 14.43
       - Xcode 16.3
     ftm:
       - name: __cpp_explicit_this_parameter
@@ -105,7 +105,7 @@ features:
     support:
       - GCC 14
       - Clang 19
-      - MSVC 19.50
+      - MSVC 14.50
       - Xcode 16.3
 
   - desc: "Decay-copy in the language (`auto(x)` and `auto{x}`)"
@@ -114,7 +114,7 @@ features:
     support:
       - GCC 12
       - Clang 15
-      - MSVC 19.50
+      - MSVC 14.50
       - Xcode 14.3
     ftm:
       - name: __cpp_auto_cast
@@ -126,7 +126,7 @@ features:
     support:
       - GCC 12
       - Clang 13
-      - MSVC 19.40
+      - MSVC 14.40
       - Xcode 13.4.1
 
   - desc: "Non-literal variables (and labels and gotos) in `constexpr` functions"
@@ -135,7 +135,7 @@ features:
     support:
       - GCC 12
       - Clang 15
-      - MSVC 19.43
+      - MSVC 14.43
       - Xcode 14.3
     ftm:
       - name: __cpp_constexpr
@@ -146,7 +146,7 @@ features:
     support:
       - GCC
       - Clang
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode
 
   - desc: "Character sets and encodings"
@@ -162,10 +162,10 @@ features:
     support:
       - GCC 12
       - Clang 14
-      - MSVC 19.50 (hint)
+      - MSVC 14.50 (hint)
       - Xcode 14
     hints:
-      - target: MSVC 19.50
+      - target: MSVC 14.50
         msg: "Compiles, but no IntelliSense support yet."
 
   - desc: "Multidimensional subscript operator (`operator[x, y]`)"
@@ -174,7 +174,7 @@ features:
     support:
       - GCC 12
       - Clang 15
-      - MSVC 19.42
+      - MSVC 14.42
       - Xcode 14.3
     ftm:
       - name: __cpp_multidimensional_subscript
@@ -186,7 +186,7 @@ features:
     support:
       - GCC 9
       - Clang 13
-      - MSVC 19.44
+      - MSVC 14.44
       - Xcode 13.4.1
 
   - desc: "`#warning`"
@@ -195,7 +195,7 @@ features:
     support:
       - GCC 13
       - Clang
-      - MSVC 19.50
+      - MSVC 14.50
       - Xcode 15
 
   - desc: "Remove non-encodable wide character literals and multicharacter wide character literals"
@@ -219,7 +219,7 @@ features:
     support:
       - GCC 13
       - Clang 15
-      - MSVC 19.50
+      - MSVC 14.50
       - Xcode 15
 
   - desc: "Named universal character escapes"
@@ -251,7 +251,7 @@ features:
       - GCC 13
       - Clang 13
       - Xcode 26
-      - MSVC 19.50
+      - MSVC 14.50
     ftm:
       - name: __cpp_implicit_move
         value: 202207L
@@ -262,7 +262,7 @@ features:
     support:
       - GCC 13
       - Clang 16
-      - MSVC 19.44
+      - MSVC 14.44
       - Xcode 16
     ftm:
       - name: __cpp_static_call_operator
@@ -296,7 +296,7 @@ features:
     support:
       - GCC 13
       - Clang 15
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode 15
 
   - desc: "`static operator[]`"
@@ -304,7 +304,7 @@ features:
     support:
       - GCC 13
       - Clang 16
-      - MSVC 19.44
+      - MSVC 14.44
       - Xcode 16
     ftm:
       - name: __cpp_multidimensional_subscript
@@ -347,14 +347,14 @@ features:
       - GCC 16
       - Clang 17
       - Xcode 16.3
-      - MSVC 19.50
+      - MSVC 14.50
 
   - desc: "Meaningful exports"
     paper: P2615
     support:
       - GCC 15
       - Clang 17
-      - MSVC 19.28
+      - MSVC 14.28
 
   - desc: "`consteval` needs to propagate up"
     paper: P2564
@@ -373,7 +373,7 @@ features:
       - GCC 12
       - Clang 14
       - Xcode 14
-      - MSVC 19.50
+      - MSVC 14.50
 
   - desc: "Allow duplicate attributes"
     paper: P2156
@@ -381,14 +381,14 @@ features:
       - GCC 11
       - Clang 13
       - Xcode 13.4.1
-      - MSVC 19.50
+      - MSVC 14.50
 
   - desc: "Adjusting the value of feature-test macro `__cpp_concepts`"
     paper: P2493
     support:
       - GCC 12
       - Clang 19
-      - MSVC 19.50
+      - MSVC 14.50
       - Xcode 16.4
 
   - desc: "Relax requirements on `wchar_t` to match existing practices"
@@ -396,7 +396,7 @@ features:
     support:
       - GCC
       - Clang
-      - MSVC 19.44
+      - MSVC 14.44
       - Xcode 15
 
   - desc: "Using unknown pointers and references in constant expressions"
@@ -404,7 +404,7 @@ features:
     support:
       - GCC 14
       - Clang 20
-      - MSVC 19.50
+      - MSVC 14.50
     keywords: ["constexpr"]
 
   - desc: "The equality operator you are looking for"
@@ -413,14 +413,14 @@ features:
       - GCC 13
       - Clang 16
       - Xcode 16
-      - MSVC 19.36
+      - MSVC 14.36
 
   - desc: "`char8_t` compatibility and portability fix"
     paper: P2513
     support:
       - GCC 13
       - Clang 16
-      - MSVC 19.34
+      - MSVC 14.34
       - Xcode 16
     ftm:
       - name: __cpp_char8_t
@@ -432,7 +432,7 @@ features:
     support:
       - GCC 12 (partial)
       - GCC 14
-      - MSVC 19.34
+      - MSVC 14.34
     hints:
       - target: GCC 12
         msg: "Enabled by building GCC with `--enable-libstdcxx-backtrace=yes`, requires linking against `-lstdc++_libbacktrace`"
@@ -446,7 +446,7 @@ features:
     support:
       - GCC 12 (partial)
       - GCC 14
-      - MSVC 19.34
+      - MSVC 14.34
     hints:
       - target: GCC 12
         msg: "Enabled by building GCC with `--enable-libstdcxx-backtrace=yes`, requires linking against `-lstdc++_libbacktrace`"
@@ -460,7 +460,7 @@ features:
     support:
       - GCC 12
       - Clang 15
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode 14.3
     ftm:
       - name: __cpp_lib_stdatomic_h
@@ -472,7 +472,7 @@ features:
     support:
       - GCC 11
       - Clang 12
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode 13
     ftm:
       - name: __cpp_lib_is_scoped_enum
@@ -484,7 +484,7 @@ features:
     support:
       - GCC 11
       - Clang 12
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode 13
     ftm:
       - name: __cpp_lib_string_contains
@@ -496,7 +496,7 @@ features:
     support:
       - GCC 11
       - Clang 13
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode 13.4.1
     ftm:
       - name: __cpp_lib_to_underlying
@@ -516,7 +516,7 @@ features:
     lib: true
     support:
       - Clang 15
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode 14.3
     ftm:
       - name: __cpp_lib_allocate_at_least
@@ -527,7 +527,7 @@ features:
     lib: true
     support:
       - GCC 12
-      - MSVC 19.31
+      - MSVC 14.31
     ftm:
       - name: __cpp_lib_spanstream
         value: 202106L
@@ -538,7 +538,7 @@ features:
     support:
       - GCC 14
       - Clang 19
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode 16.4
     ftm:
       - name: __cpp_lib_out_ptr
@@ -550,8 +550,8 @@ features:
     support:
       - GCC 12
       - Clang 17
-      - MSVC 19.33
-      - MSVC 19.34
+      - MSVC 14.33
+      - MSVC 14.34
       - Xcode 15
     ftm:
       - name: __cpp_lib_constexpr_typeinfo
@@ -563,7 +563,7 @@ features:
     support:
       - GCC 12
       - Clang 14
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode 14.3
     ftm:
       - name: __cpp_lib_adaptor_iterator_pair_constructor
@@ -575,7 +575,7 @@ features:
     support:
       - GCC 12
       - Clang 13
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode 13.4.1
 
   - desc: "`ranges::starts_with()` and `ranges::ends_with()`"
@@ -585,7 +585,7 @@ features:
       - GCC 16
       - Clang 17 (partial)
       - Clang 19
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode 16
     hints:
       - target: Clang 17
@@ -600,7 +600,7 @@ features:
     support:
       - GCC 12
       - Clang 13
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode 13.4.1
 
   - desc: "`std::invoke_r()`"
@@ -609,7 +609,7 @@ features:
     support:
       - GCC 12
       - Clang 17
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode 15
     ftm:
       - name: __cpp_lib_invoke_r
@@ -621,7 +621,7 @@ features:
     support:
       - GCC 11
       - Clang 14
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode 14.3
 
   - desc: "Default template arguments for `std::pair`'s forwarding constructor"
@@ -630,7 +630,7 @@ features:
     support:
       - GCC 14
       - Clang 14
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode 14.3
 
   - desc: "Remove garbage collection and reachability-based leak detection (library support)"
@@ -639,7 +639,7 @@ features:
     support:
       - GCC 12
       - Clang 14
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode 14.3
 
   - desc: "zip: `views::zip()`, `views::zip_transform()`, `views::adjacent()` and `views::adjacent_transform()`"
@@ -648,7 +648,7 @@ features:
     support:
       - GCC 13
       - Clang 15 (partial)
-      - MSVC 19.37
+      - MSVC 14.37
       - Xcode 14.3
     hints:
       - target: Clang 15
@@ -661,7 +661,7 @@ features:
     paper: P2077
     lib: true
     support:
-      - MSVC 19.32
+      - MSVC 14.32
     ftm:
       - name: __cpp_lib_associative_heterogeneous_erasure
         value: 202110L
@@ -673,7 +673,7 @@ features:
     support:
       - GCC 12
       - Clang 14
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode 14.3
     ftm:
       - name: __cpp_lib_byteswap
@@ -685,7 +685,7 @@ features:
     support:
       - GCC 11.3
       - Clang 14
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode 14.3
 
   - desc: "`std::basic_string::resize_and_overwrite()`"
@@ -694,7 +694,7 @@ features:
     support:
       - GCC 12
       - Clang 14
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode 14.3
     ftm:
       - name: __cpp_lib_string_resize_and_overwrite
@@ -706,7 +706,7 @@ features:
     support:
       - GCC 12
       - Clang 14
-      - MSVC 19.32
+      - MSVC 14.32
       - Xcode 14.3
     ftm:
       - name: __cpp_lib_optional
@@ -718,7 +718,7 @@ features:
     support:
       - GCC 12
       - Clang 17
-      - MSVC 19.32
+      - MSVC 14.32
     ftm:
       - name: __cpp_lib_move_only_function
         value: 202110L
@@ -729,7 +729,7 @@ features:
     support:
       - GCC 12
       - Clang 14
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode 14.3
 
   - desc: "Require `std::span` and `std::basic_string_view` to be [TriviallyCopyable](https://en.cppreference.com/w/cpp/named_req/TriviallyCopyable)"
@@ -738,10 +738,10 @@ features:
     support:
       - GCC
       - Clang
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode
 
-  - desc: "Clarifying the status of the \"C headers\""
+  - desc: 'Clarifying the status of the "C headers"'
     paper: P2340
     lib: true
     support:
@@ -758,7 +758,7 @@ features:
     support:
       - GCC 12
       - Clang 16
-      - MSVC 19.33
+      - MSVC 14.33
       - Xcode 15
     ftm:
       - name: __cpp_lib_expected
@@ -777,7 +777,7 @@ features:
     support:
       - GCC 12
       - Clang 15
-      - MSVC 19.32
+      - MSVC 14.32
       - Xcode 14.3
     ftm:
       - name: __cpp_lib_unreachable
@@ -789,7 +789,7 @@ features:
     support:
       - GCC 13
       - Clang 16
-      - MSVC 19.33
+      - MSVC 14.33
       - Xcode 16.1
 
   - desc: "`std::reference_constructs_from_temporary` and `std::reference_converts_from_temporary`"
@@ -799,14 +799,14 @@ features:
       - GCC 13 (partial)
       - GCC 14
       - Clang 21 (partial)
-      - MSVC 19.51 (partial)
+      - MSVC 14.51 (partial)
       - Xcode 16.3
     hints:
       - target: GCC 13
         msg: "Missing changes to `std::tuple`."
       - target: Clang 21
         msg: "Only type traits are implemented."
-      - target: MSVC 19.50
+      - target: MSVC 14.50
         msg: "Currently only supported by the STL in conjunction with Clang."
     ftm:
       - name: __cpp_lib_reference_from_temporary
@@ -818,7 +818,7 @@ features:
     support:
       - GCC 12
       - Clang 16
-      - MSVC 19.33
+      - MSVC 14.33
       - Xcode 15
     ftm:
       - name: __cpp_lib_constexpr_memory
@@ -831,7 +831,7 @@ features:
       - GCC 14 (partial)
       - GCC 15
       - Clang 17
-      - MSVC 19.34
+      - MSVC 14.34
       - Xcode 15
     ftm:
       - name: __cpp_lib_containers_ranges
@@ -846,7 +846,7 @@ features:
       - GCC 13 (partial)
       - GCC 14
       - Clang 19
-      - MSVC 19.34
+      - MSVC 14.34
       - Xcode 16.3
     ftm:
       - name: __cpp_lib_bind_back
@@ -859,7 +859,7 @@ features:
     lib: true
     support:
       - GCC 13 (partial)
-      - MSVC 19.34
+      - MSVC 14.34
       - Clang 21 (partial)
     hints:
       - target: GCC 13
@@ -878,7 +878,7 @@ features:
     support:
       - GCC 13
       - Clang 21
-      - MSVC 19.34
+      - MSVC 14.34
     ftm:
       - name: __cpp_lib_ranges_join_with
         value: 202202L
@@ -888,7 +888,7 @@ features:
     lib: true
     support:
       - GCC 13
-      - MSVC 19.33
+      - MSVC 14.33
     ftm:
       - name: __cpp_lib_ranges_chunk
         value: 202202L
@@ -901,7 +901,7 @@ features:
     support:
       - GCC 13
       - Clang 18
-      - MSVC 19.33
+      - MSVC 14.33
       - Xcode 16
     ftm:
       - name: __cpp_lib_ranges_chunk_by
@@ -918,7 +918,7 @@ features:
     support:
       - GCC 16
       - Clang 18
-      - MSVC 19.39
+      - MSVC 14.39
       - Xcode 15
     ftm:
       - name: __cpp_lib_mdspan
@@ -931,14 +931,14 @@ features:
       - GCC
       - Clang
       - Xcode
-      - MSVC 19.37
+      - MSVC 14.37
 
   - desc: "De-deprecating volatile compound operations."
     paper: P2327
     lib: true
     support:
       - Xcode 15
-      - MSVC 19.34
+      - MSVC 14.34
 
   - desc: "`std::flat_map` (`<flat_map>`)"
     paper: P0429
@@ -967,7 +967,7 @@ features:
     support:
       - GCC 13
       - Clang 19
-      - MSVC 19.36
+      - MSVC 14.36
       - Xcode 16.3
     ftm:
       - name: __cpp_lib_ranges_find_last
@@ -978,14 +978,14 @@ features:
     lib: true
     support:
       - GCC 13
-      - MSVC 19.38
+      - MSVC 14.38
 
   - desc: "`ranges::stride_view` and `views::stride()`"
     paper: P1899
     lib: true
     support:
       - GCC 13
-      - MSVC 19.34
+      - MSVC 14.34
     ftm:
       - name: __cpp_lib_ranges_stride
         value: 202207L
@@ -997,15 +997,15 @@ features:
       - GCC 14 (partial)
       - GCC 16
       - Clang 2.9 (partial)
-      - MSVC 19.36 (partial)
-      - MSVC 19.37
+      - MSVC 14.36 (partial)
+      - MSVC 14.37
       - Xcode (partial)
     hints:
       - target: GCC 14
         msg: "Some views incorrectly still return `std::pair` instead of `std::tuple`"
       - target: Clang 2.9
         msg: "Changes of `tuple`, `adjacent_view`, and `cartesian_product_view` are not yet implemented."
-      - target: MSVC 19.36
+      - target: MSVC 14.36
         msg: "Implemented for `std::pair`."
       - target: Xcode
         msg: "Only the part for `zip_view` is implemented."
@@ -1018,10 +1018,10 @@ features:
     lib: true
     support:
       - GCC 13
-      - MSVC 19.35 (partial)
-      - MSVC 19.36
+      - MSVC 14.35 (partial)
+      - MSVC 14.36
     hints:
-      - target: MSVC 19.35
+      - target: MSVC 14.35
         msg: "The \\\"Iterators\\\" section, including `basic_const_iterator`, `make_const_iterator()`, and `make_const_sentinel()`."
     ftm:
       - name: __cpp_lib_ranges_as_const
@@ -1034,19 +1034,19 @@ features:
       - GCC 15 (partial)
       - GCC 15.2
       - Clang 16
-      - MSVC 19.37 (partial)
-      - MSVC 19.39 (partial)
-      - MSVC 19.41 (partial)
-      - MSVC 19.42
+      - MSVC 14.37 (partial)
+      - MSVC 14.39 (partial)
+      - MSVC 14.41 (partial)
+      - MSVC 14.42
       - Xcode 15
     hints:
       - target: GCC 15
         msg: "Missing formatter specializations for `queue`, `stack`, and `priority_queue`."
-      - target: MSVC 19.37
+      - target: MSVC 14.37
         msg: "2022.7: Implemented the `?` format specifier for strings and characters."
-      - target: MSVC 19.39
+      - target: MSVC 14.39
         msg: "2022.9: Implemented `formatter::set_debug_format()`, `formattable`, `range_format`, and `format_kind`."
-      - target: MSVC 19.41
+      - target: MSVC 14.41
         msg: "2022.11: Implemented formatter for `std::pair` and `std::tuple`. Also `range_formatter`."
     ftm:
       - name: __cpp_lib_format_ranges
@@ -1060,7 +1060,7 @@ features:
       - Clang 16 (partial)
       - Clang 17
       - Xcode 15
-      - MSVC 19.42
+      - MSVC 14.42
     hints:
       - target: Clang 16
         msg: "Specializations for string and debug_string are not done."
@@ -1077,7 +1077,7 @@ features:
       - GCC 14
       - Clang 17 (partial)
       - Clang 18
-      - MSVC 19.37
+      - MSVC 14.37
       - Xcode 15 (partial)
       - Xcode 16
     hints:
@@ -1095,7 +1095,7 @@ features:
     support:
       - GCC 14
       - Clang 17 (partial)
-      - MSVC 19.38
+      - MSVC 14.38
       - Xcode 15
     hints:
       - target: Clang 17
@@ -1110,7 +1110,7 @@ features:
     support:
       - GCC 13
       - Clang 16
-      - MSVC 19.34
+      - MSVC 14.34
       - Xcode 15
     ftm:
       - name: __cpp_lib_constexpr_charconv
@@ -1123,7 +1123,7 @@ features:
       - GCC 13
       - Clang 18 (partial)
       - Clang 19
-      - MSVC 19.34
+      - MSVC 14.34
       - Xcode 16 (partial)
       - Xcode 16.3
     hints:
@@ -1140,7 +1140,7 @@ features:
     lib: true
     support:
       - GCC 13
-      - MSVC 19.35
+      - MSVC 14.35
     ftm:
       - name: __cpp_lib_ranges_fold
         value: 202207L
@@ -1152,7 +1152,7 @@ features:
     lib: true
     support:
       - GCC 13
-      - MSVC 19.37
+      - MSVC 14.37
     ftm:
       - name: __cpp_lib_ranges_cartesian_product
         value: 202207L
@@ -1163,7 +1163,7 @@ features:
     support:
       - GCC 16
       - Clang 22 (hint)
-      - MSVC 19.36
+      - MSVC 14.36
     hints:
       - target: Clang 22
         msg: "Implemented as a defect report (DR) for C++20."
@@ -1176,7 +1176,7 @@ features:
     lib: true
     support:
       - GCC 16
-      - MSVC 19.34
+      - MSVC 14.34
     ftm:
       - name: __cpp_lib_algorithm_iterator_requirements
         value: 202207L
@@ -1187,7 +1187,7 @@ features:
     support:
       - GCC 13
       - Clang 16
-      - MSVC 19.34
+      - MSVC 14.34
       - Xcode 15
     ftm:
       - name: __cpp_lib_constexpr_bitset
@@ -1198,7 +1198,7 @@ features:
     lib: true
     support:
       - Clang 16
-      - MSVC 19.34
+      - MSVC 14.34
       - Xcode 15
 
   - desc: "`views::as_rvalue()`"
@@ -1207,7 +1207,7 @@ features:
     support:
       - GCC 13
       - Clang 16
-      - MSVC 19.34
+      - MSVC 14.34
       - Xcode 15
     ftm:
       - name: __cpp_lib_ranges_as_rvalue
@@ -1220,14 +1220,14 @@ features:
       - GCC 15 (hint)
       - Clang 17 (partial)
       - Clang 19
-      - MSVC 19.35 (partial)
-      - MSVC 19.36
+      - MSVC 14.35 (partial)
+      - MSVC 14.36
     hints:
       - target: GCC 15
         msg: "Requires enabling compiler flag `-fmodules` to enable experimental modules support."
       - target: Clang 17
         msg: "Experimental support only."
-      - target: MSVC 19.35
+      - target: MSVC 14.35
         msg: "Modules work, but you have to manually add them to your Visual Studio project."
     ftm:
       - name: __cpp_lib_modules
@@ -1239,7 +1239,7 @@ features:
     support:
       - GCC 14
       - Clang 16
-      - MSVC 19.34
+      - MSVC 14.34
       - Xcode 15
     ftm:
       - name: __cpp_lib_forward_like
@@ -1251,7 +1251,7 @@ features:
     support:
       - GCC 12
       - Clang 18
-      - MSVC 19.36
+      - MSVC 14.36
       - Xcode 16
     ftm:
       - name: __cpp_lib_ios_noreplace
@@ -1263,7 +1263,7 @@ features:
     support:
       - GCC 13
       - Clang 17
-      - MSVC 19.36
+      - MSVC 14.36
       - Xcode 15
     ftm:
       - name: __cpp_lib_ranges_repeat
@@ -1275,7 +1275,7 @@ features:
     support:
       - GCC 14
       - Clang 17
-      - MSVC 19.34
+      - MSVC 14.34
       - Xcode 15
     ftm:
       - name: __cpp_lib_ranges
@@ -1287,7 +1287,7 @@ features:
     support:
       - GCC 12.2
       - Clang 16
-      - MSVC 19.34
+      - MSVC 14.34
       - Xcode 15
 
   - desc: "`std::generator`: synchronous coroutine generator for ranges"
@@ -1297,7 +1297,7 @@ features:
     lib: true
     support:
       - GCC 14
-      - MSVC 19.43
+      - MSVC 14.43
     ftm:
       - name: __cpp_lib_generator
         value: 202207L
@@ -1308,7 +1308,7 @@ features:
     support:
       - GCC 10
       - Clang 18
-      - MSVC 19.34
+      - MSVC 14.34
       - Xcode 16
 
   - desc: "Explicit lifetime management (`std::start_lifetime_as()`)"
@@ -1327,7 +1327,7 @@ features:
     lib: true
     support:
       - GCC 15
-      - MSVC 19.34
+      - MSVC 14.34
     ftm:
       - name: __cpp_lib_format
         value: 202207L
@@ -1338,7 +1338,7 @@ features:
     support:
       - GCC 12.3
       - Clang 17
-      - MSVC 19.34
+      - MSVC 14.34
       - Xcode 15
     ftm:
       - name: __cpp_lib_move_iterator_concept
@@ -1350,7 +1350,7 @@ features:
     support:
       - GCC 13
       - Clang 16
-      - MSVC 19.39
+      - MSVC 14.39
       - Xcode 15
 
   - desc: "Standard names and library support for extended floating-point types"
@@ -1358,7 +1358,7 @@ features:
     lib: true
     support:
       - GCC 13
-      - MSVC 19.37
+      - MSVC 14.37
 
   - desc: "Monadic operations for `std::expected` (`and_then()`, `or_else()`, `transform()`)"
     paper: P2505
@@ -1366,7 +1366,7 @@ features:
     support:
       - GCC 13
       - Clang 17
-      - MSVC 19.36
+      - MSVC 14.36
       - Xcode 15
     ftm:
       - name: __cpp_lib_expected
@@ -1377,7 +1377,7 @@ features:
     lib: true
     support:
       - GCC 13
-      - MSVC 19.37
+      - MSVC 14.37
     ftm:
       - name: __cpp_lib_ranges_enumerate
         value: 202302L
@@ -1388,10 +1388,10 @@ features:
     support:
       - GCC 16
       - Clang 20
-      - MSVC 19.51 (partial)
+      - MSVC 14.51 (partial)
       - Xcode 26
     hints:
-      - target: MSVC 19.50
+      - target: MSVC 14.50
         msg: "Currently only supported by the STL in conjunction with Clang."
     ftm:
       - name: __cpp_lib_is_implicit_lifetime
@@ -1403,7 +1403,7 @@ features:
     support:
       - GCC 16
       - Clang 21 (hint)
-      - MSVC 19.37
+      - MSVC 14.37
     hints:
       - target: Clang 21
         msg: "The feature is implemented as a defect report to C++20."
@@ -1418,14 +1418,14 @@ features:
     lib: true
     support:
       - Clang 19
-      - MSVC 19.37
+      - MSVC 14.37
 
   - desc: "Deprecating `std::numeric_limits::has_denorm`"
     paper: P2614
     lib: true
     support:
       - Clang 18
-      - MSVC 19.37
+      - MSVC 14.37
       - Xcode 16
 
   - desc: "Making multi-param constructors of views explicit"
@@ -1435,12 +1435,12 @@ features:
       - GCC 16
       - Clang 17 (partial)
       - Clang 21
-      - MSVC 19.36 (hint)
+      - MSVC 14.36 (hint)
       - Xcode 15
     hints:
       - target: Clang 17
         msg: "`join_with_view` has not been done yet since this type is not implemented yet."
-      - target: MSVC 19.36
+      - target: MSVC 14.36
         msg: "Treated as a defect report against C++20."
 
   - desc: "Relaxing Ranges Just A Smidge"
@@ -1449,7 +1449,7 @@ features:
     support:
       - GCC 15
       - Clang 20
-      - MSVC 19.37
+      - MSVC 14.37
       - Xcode 26
     ftm:
       - name: __cpp_lib_ranges
@@ -1461,7 +1461,7 @@ features:
     support:
       - GCC 14
       - Clang 21
-      - MSVC 19.37
+      - MSVC 14.37
 
   - desc: "`std::visit()` for classes derived from `std::variant`"
     paper: P2162
@@ -1469,8 +1469,8 @@ features:
     support:
       - GCC 11.3
       - Clang 13
-      - MSVC 19.20
-      - MSVC 19.30
+      - MSVC 14.20
+      - MSVC 14.30
       - Xcode 16.1
     ftm:
       - name: __cpp_lib_variant
@@ -1482,7 +1482,7 @@ features:
     support:
       - GCC 11
       - Clang 16
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode 16.1
 
   - desc: "Repairing input range adaptors and `std::counted_iterator`"
@@ -1490,10 +1490,10 @@ features:
     lib: true
     support:
       - GCC 12
-      - MSVC 19.30 (partial)
-      - MSVC 19.31
+      - MSVC 14.30 (partial)
+      - MSVC 14.31
     hints:
-      - target: MSVC 19.30
+      - target: MSVC 14.30
         msg: "The counted_iterator part is implemented; the input range adaptors part is not implemented yet."
 
   - desc: "`views::join()` should join all views of ranges"
@@ -1502,7 +1502,7 @@ features:
     support:
       - GCC 11.2
       - Clang 15
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode 14.3
 
   - desc: "Views should not be required to be default-constructible"
@@ -1511,7 +1511,7 @@ features:
     support:
       - GCC 11.3
       - Clang 16
-      - MSVC 19.30
+      - MSVC 14.30
       - Xcode 15
     ftm:
       - name: __cpp_lib_ranges
@@ -1523,11 +1523,11 @@ features:
     support:
       - GCC 11
       - Clang 14
-      - MSVC 19.29 (partial)
-      - MSVC 19.31
+      - MSVC 14.29 (partial)
+      - MSVC 14.31
       - Xcode 14.3
     hints:
-      - target: MSVC 19.29
+      - target: MSVC 14.29
         msg: "The split_view part is missing."
 
   - desc: "`constexpr` `std::optional` and `std::variant`"
@@ -1538,7 +1538,7 @@ features:
       - GCC 12
       - Clang 13 (partial)
       - Clang 19
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode 13.4.1 (partial)
       - Xcode 16.3
     hints:
@@ -1562,7 +1562,7 @@ features:
     support:
       - GCC 12
       - Clang 16
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode 15
 
   - desc: "Fix `ranges::istream_view`"
@@ -1571,7 +1571,7 @@ features:
     support:
       - GCC 12
       - Clang 16
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode 15
 
   - desc: "What is a view?"
@@ -1580,7 +1580,7 @@ features:
     support:
       - GCC 12
       - Clang 14
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode 14.3
 
   - desc: "Fixing locale handling in chrono formatters"
@@ -1589,14 +1589,14 @@ features:
     support:
       - GCC 13
       - Clang 21
-      - MSVC 19.31
+      - MSVC 14.31
       - Xcode 16.1
 
   - desc: "Cleaning up integer-class types"
     paper: P2393
     lib: true
     support:
-      - MSVC 19.32
+      - MSVC 14.32
 
   - desc: "`std::format()` improvements"
     paper: P2216
@@ -1604,7 +1604,7 @@ features:
     support:
       - GCC 13
       - Clang 15
-      - MSVC 19.32
+      - MSVC 14.32
       - Xcode 14.3
 
   - desc: "Add support for `std::generator`-like types to `std::format()`"
@@ -1613,7 +1613,7 @@ features:
     support:
       - GCC 13
       - Clang 15
-      - MSVC 19.32
+      - MSVC 14.32
       - Xcode 14.3
 
   - desc: "`std::basic_format_string`"
@@ -1622,7 +1622,7 @@ features:
     support:
       - GCC 13
       - Clang 15
-      - MSVC 19.35
+      - MSVC 14.35
       - Xcode 14.3
 
   - desc: "Poison Pills are Too Toxic"
@@ -1631,7 +1631,7 @@ features:
     support:
       - GCC 14
       - Clang 19
-      - MSVC 19.36
+      - MSVC 14.36
       - Xcode 16.3
     ftm:
       - name: __cpp_lib_ranges
@@ -1643,7 +1643,7 @@ features:
     support:
       - GCC 14
       - Clang 17
-      - MSVC 19.37
+      - MSVC 14.37
 
   - desc: "Improving `std::format()`'s width estimation"
     paper: P2675
@@ -1651,17 +1651,17 @@ features:
     support:
       - GCC 14
       - Clang 17
-      - MSVC 19.38
+      - MSVC 14.38
       - Xcode 16.1
 
   - desc: "`std::barrier`'s phase completion guarantees"
     paper: P2588
     lib: true
     support:
-      - MSVC 19.28 (hint)
-      - MSVC 19.36
+      - MSVC 14.28 (hint)
+      - MSVC 14.36
     hints:
-      - target: MSVC 19.28
+      - target: MSVC 14.28
         msg: "Implemented, but no feature-testing macro is available."
     ftm:
       - name: __cpp_lib_barrier

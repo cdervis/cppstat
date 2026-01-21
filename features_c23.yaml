@@ -82,14 +82,14 @@ features:
       - GCC 11
       - Clang 2.9 (hint)
       - Clang 9
-      - MSVC 19.0 (hint)
+      - MSVC 14.0 (hint)
       - Xcode
     hints:
       - target: GCC 4.3
         msg: "Supported as an extension."
       - target: Clang 2.9
         msg: "Supported as an extension."
-      - target: MSVC 19.0
+      - target: MSVC 14.0
         msg: "Supported as an extension."
   - desc: "[__has_c_attribute](https://en.cppreference.com/w/c/language/attributes.html#Attribute_testing) in preprocessor conditionals"
     paper: N2553
@@ -122,17 +122,17 @@ features:
     support:
       - GCC 12
       - Clang 13
-      - MSVC 19.0 (hint)
+      - MSVC 14.0 (hint)
       - Xcode
     hints:
-      - target: MSVC 19.0
+      - target: MSVC 14.0
         msg: "Supported as an extension."
   - desc: "[`#elifdef` and `#elifndef`](https://en.cppreference.com/w/c/preprocessor/conditional.html)"
     paper: N2645
     support:
       - GCC 12
       - Clang 13
-      - MSVC 19.40
+      - MSVC 14.40
       - Xcode 13.3
   - desc: "Type change of [u8 string literals](https://en.cppreference.com/w/c/language/string_literal.html)"
     paper: N2653
@@ -176,7 +176,7 @@ features:
     support:
       - GCC 5
       - Clang
-      - MSVC 19.11
+      - MSVC 14.11
       - Xcode
   - desc: "Identifier Syntax using Unicode Standard Annex 31"
     paper: N2836
@@ -210,7 +210,7 @@ features:
     support:
       - GCC 13 (hint)
       - Clang 16 (hint)
-      - MSVC 19.39
+      - MSVC 14.39
       - Xcode (partial)
     hints:
       - target: GCC 13
@@ -283,7 +283,7 @@ features:
       - GCC 8
       - GCC 13
       - Clang 12 (partial)
-      - MSVC 19.39
+      - MSVC 14.39
       - Xcode 16.1
   - desc: "Storage-class specifiers for compound literals"
     paper: N3038

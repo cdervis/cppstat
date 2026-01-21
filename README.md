@@ -42,7 +42,7 @@ A feature has the following properties:
 - `paper`: One or multiple paper numbers that belong to the feature.
 - `lib`: If true, the feature counts as a standard library feature. The default is false.
 - `support`: A list of toolchains that support the feature.
-  - A toolchain must be in the form of `<name> <version>`, e.g. `GCC 16` and `MSVC 19.50`.
+  - A toolchain must be in the form of `<name> <version>`, e.g. `GCC 16` and `MSVC 14.50`.
     - If no version is specified, e.g. `GCC`, then that toolchain supports the feature in general.
   - Adding a `(partial)` or `(hint)` suffix declares partial support or a hint.
 - `hints`: A list of hints targeting toolchains in the `support` list, where each entry has:
@@ -64,14 +64,14 @@ As a **full** reference example, here is the definition of P2465 at the time of 
     - GCC 15 (hint)
     - Clang 17 (partial)
     - Clang 19
-    - MSVC 19.35 (partial)
-    - MSVC 19.36
+    - MSVC 14.50 (partial)
+    - MSVC 14.55
   hints:
     - target: GCC 15
       msg: 'Requires enabling compiler flag `-fmodules` to enable experimental modules support.'
     - target: Clang 17
       msg: 'Experimental support only.'
-    - target: MSVC 19.35
+    - target: MSVC 14.50
       msg: 'Modules work, but you have to manually add them to your Visual Studio project.'
   ftm:
     - name: __cpp_lib_modules

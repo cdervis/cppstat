@@ -5,7 +5,7 @@ features:
     support:
       - GCC 4.9
       - Clang 3.4
-      - MSVC 18.0
+      - MSVC 12.0
       - Xcode
 
   - desc: "[Binary literals](https://cppreference.com/w/cpp/language/integer_literal.html)"
@@ -14,7 +14,7 @@ features:
       - GCC 4.3 (partial)
       - GCC 4.9
       - Clang 2.9
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_binary_literals
@@ -27,7 +27,7 @@ features:
       - GCC 4.9
       - Clang 3.3 (partial)
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     hints:
       - target: GCC 4.8
@@ -46,7 +46,7 @@ features:
       - GCC 4.5 (partial)
       - GCC 4.9
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_init_captures
@@ -57,7 +57,7 @@ features:
     support:
       - GCC 4.9
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_generic_lambdas
@@ -68,7 +68,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_variable_templates
@@ -79,7 +79,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.10
+      - MSVC 14.10
       - Xcode
     ftm:
       - name: __cpp_constexpr
@@ -90,7 +90,7 @@ features:
     support:
       - GCC 5
       - Clang 3.3
-      - MSVC 19.10
+      - MSVC 14.10
       - Xcode
     ftm:
       - name: __cpp_aggregate_nsdmi
@@ -107,7 +107,7 @@ features:
     support:
       - GCC 4.9
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __has_cpp_attribute(deprecated)
@@ -118,7 +118,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_sized_deallocation
@@ -129,7 +129,7 @@ features:
     support:
       - GCC 4.9
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_digit_separators
@@ -141,7 +141,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "Transparent [operator function objects](https://cppreference.com/w/cpp/functional.html#Operator_function_objects)"
@@ -150,7 +150,7 @@ features:
     support:
       - GCC 4.9
       - Clang 3.4
-      - MSVC 18.0
+      - MSVC 12.0
       - Xcode
 
   - desc: "`std::result_of` and SFINAE"
@@ -159,7 +159,7 @@ features:
     support:
       - GCC 5
       - Clang
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "`constexpr` for `<chrono>`"
@@ -168,7 +168,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "`constexpr` for `<array>`"
@@ -177,7 +177,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "`constexpr` for `<initializer_list>`, `<utility>` and `<tuple>`"
@@ -186,7 +186,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "Improved `std::integral_constant`"
@@ -195,7 +195,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "[User-defined literals](https://cppreference.com/w/cpp/language/user_literal.html#Standard_library) for `<chrono>` and `<string>`"
@@ -204,7 +204,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_chrono_udls
@@ -219,7 +219,7 @@ features:
       - GCC 5
       - GCC 10
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "`std::quoted()`"
@@ -228,7 +228,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_quoted_string_io
@@ -240,7 +240,7 @@ features:
     support:
       - GCC 4.9
       - Clang 3.4
-      - MSVC 18.0
+      - MSVC 12.0
 
   - desc: "`std::make_unique()`"
     paper: N3656
@@ -248,7 +248,7 @@ features:
     support:
       - GCC 4.9
       - Clang 3.4
-      - MSVC 18.0
+      - MSVC 12.0
       - Xcode
     ftm:
       - name: __cpp_lib_make_unique
@@ -260,7 +260,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_generic_associative_lookup
@@ -272,7 +272,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_integer_sequence
@@ -284,7 +284,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_exchange_function
@@ -296,7 +296,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "Addressing tuples by type: `std::get<T>()`"
@@ -305,7 +305,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_tuples_by_type
@@ -317,7 +317,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_robust_nonmodifying_seq_ops
@@ -329,7 +329,7 @@ features:
     support:
       - GCC 4.9
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_complex_udls
@@ -341,7 +341,7 @@ features:
     support:
       - GCC 4.9
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode 15
     ftm:
       - name: __cpp_lib_is_null_pointer
@@ -353,7 +353,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode 15
     ftm:
       - name: __cpp_lib_is_final
@@ -365,7 +365,7 @@ features:
     support:
       - GCC 5
       - Clang 3.4
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode 15
     ftm:
       - name: __cpp_lib_make_reverse_iterator
@@ -379,7 +379,7 @@ features:
     support:
       - GCC 5
       - Clang 3.5
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_shared_timed_mutex
@@ -391,7 +391,7 @@ features:
     support:
       - GCC 5
       - Clang 3.5
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_lib_tuple_element_t

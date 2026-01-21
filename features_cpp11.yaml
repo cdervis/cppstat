@@ -5,11 +5,11 @@ features:
     support:
       - GCC 4.3
       - Clang
-      - MSVC 19.0 (partial)
-      - MSVC 19.26
+      - MSVC 14.0 (partial)
+      - MSVC 14.26
       - Xcode
     hints:
-      - target: MSVC 19.0
+      - target: MSVC 14.0
         msg: "Buggy variadic macros."
 
   - desc: "`static_assert`"
@@ -17,7 +17,7 @@ features:
     support:
       - GCC 4.3
       - Clang 2.9
-      - MSVC 16.0
+      - MSVC 10.0
       - Xcode
     ftm:
       - name: __cpp_static_assert
@@ -36,7 +36,7 @@ features:
     support:
       - GCC 4.7
       - Clang 2.9
-      - MSVC 16.0
+      - MSVC 10.0
       - Xcode
 
   - desc: "[`long long`](https://cppreference.com/w/cpp/language/types.html#long_long)"
@@ -52,7 +52,7 @@ features:
     support:
       - GCC 4.4
       - Clang
-      - MSVC 16.0
+      - MSVC 10.0
       - Xcode
     ftm:
       - name: __cpp_auto_type
@@ -63,7 +63,7 @@ features:
     support:
       - GCC 4.7
       - Clang 3.0
-      - MSVC 18.0
+      - MSVC 12.0
       - Xcode
     ftm:
       - name: __cpp_delegating_constructors
@@ -82,7 +82,7 @@ features:
     support:
       - GCC 4.6
       - Clang 3.1
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_constexpr
@@ -93,7 +93,7 @@ features:
     support:
       - GCC 4.4
       - Clang 2.9
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_unicode_characters
@@ -107,7 +107,7 @@ features:
       - GCC 5
       - Clang 3.0
       - MSVC 14.0 (partial)
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     hints:
       - target: GCC 4.3
@@ -120,7 +120,7 @@ features:
     support:
       - GCC 4.7
       - Clang 3.0
-      - MSVC 18.0
+      - MSVC 12.0
       - Xcode
     ftm:
       - name: __cpp_alias_templates
@@ -131,7 +131,7 @@ features:
     support:
       - GCC 4.8
       - Clang 3.0
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "`alignof`"
@@ -139,7 +139,7 @@ features:
     support:
       - GCC 4.5
       - Clang 2.9
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "Defaulted and deleted functions"
@@ -147,7 +147,7 @@ features:
     support:
       - GCC 4.4
       - Clang 3.0
-      - MSVC 18.0
+      - MSVC 12.0
       - Xcode
 
   - desc: "[Strongly-typed `enum`](https://cppreference.com/w/cpp/language/enum.html#Scoped_enumerations)"
@@ -155,7 +155,7 @@ features:
     support:
       - GCC 4.4
       - Clang 2.9
-      - MSVC 17.0
+      - MSVC 11.0
       - Xcode
 
   - desc: "[Atomic operations](https://cppreference.com/w/cpp/atomic.html#Atomic_operations)"
@@ -163,7 +163,7 @@ features:
     support:
       - GCC 4.4
       - Clang 3.1
-      - MSVC 17.0
+      - MSVC 11.0
       - Xcode
 
   - desc: "`nullptr`"
@@ -171,7 +171,7 @@ features:
     support:
       - GCC 4.6
       - Clang 2.9
-      - MSVC 16.0
+      - MSVC 10.0
       - Xcode
     ftm:
       - name: __cpp_nullptr
@@ -182,7 +182,7 @@ features:
     support:
       - GCC 4.5
       - Clang 3.0
-      - MSVC 18.0
+      - MSVC 12.0
       - Xcode
 
   - desc: "Ref-qualifiers"
@@ -190,7 +190,7 @@ features:
     support:
       - GCC 4.8.1
       - Clang 2.9
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_ref_qualifiers
@@ -201,7 +201,7 @@ features:
     support:
       - GCC 4.4
       - Clang 3.0
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_unicode_literals
@@ -212,7 +212,7 @@ features:
     support:
       - GCC 4.5
       - Clang
-      - MSVC 18.0
+      - MSVC 12.0
       - Xcode
     ftm:
       - name: __cpp_raw_strings
@@ -223,7 +223,7 @@ features:
     support:
       - GCC 4.4
       - Clang 2.9
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_inline_namespaces
@@ -234,7 +234,7 @@ features:
     support:
       - GCC 4.8
       - Clang 3.3
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_inheriting_constructors
@@ -245,7 +245,7 @@ features:
     support:
       - GCC 4.4
       - Clang 2.9
-      - MSVC 16.0
+      - MSVC 10.0
       - Xcode
     ftm:
       - name: __cpp_trailing_return
@@ -256,7 +256,7 @@ features:
     support:
       - GCC 4.6
       - Clang 3.0
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_unrestricted_unions
@@ -267,7 +267,7 @@ features:
     support:
       - GCC 4.4
       - Clang 2.9
-      - MSVC 18.0
+      - MSVC 12.0
       - Xcode
     ftm:
       - name: __cpp_variadic_templates
@@ -278,7 +278,7 @@ features:
     support:
       - GCC 4.4
       - Clang 2.9
-      - MSVC 19.14
+      - MSVC 14.14
       - Xcode
     ftm:
       - name: __cpp_expression_sfinae
@@ -289,7 +289,7 @@ features:
     support:
       - GCC 4.5
       - Clang 2.9
-      - MSVC 16.0
+      - MSVC 10.0
       - Xcode
     ftm:
       - name: __cpp_local_type_template_args
@@ -301,8 +301,8 @@ features:
       - GCC 4.4 (partial)
       - GCC 4.8
       - Clang 3.3
-      - MSVC 16.0 (partial)
-      - MSVC 19.0
+      - MSVC 10.0 (partial)
+      - MSVC 14.0
       - Xcode
     hints:
       - target: Clang 3.3
@@ -316,7 +316,7 @@ features:
     support:
       - GCC 4.3
       - Clang 2.9
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_threadsafe_static_init
@@ -327,7 +327,7 @@ features:
     support:
       - GCC 4.4
       - Clang 3.1
-      - MSVC 18.0
+      - MSVC 12.0
       - Xcode
     ftm:
       - name: __cpp_initializer_lists
@@ -338,7 +338,7 @@ features:
     support:
       - GCC 4.7
       - Clang 3.0
-      - MSVC 18.0
+      - MSVC 12.0
       - Xcode
     ftm:
       - name: __cpp_nsdmi
@@ -349,7 +349,7 @@ features:
     support:
       - GCC 4.8
       - Clang 3.3
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_attributes
@@ -371,7 +371,7 @@ features:
     support:
       - GCC 4.6
       - Clang 3.1
-      - MSVC 17.0
+      - MSVC 11.0
       - Xcode
     ftm:
       - name: __cpp_forward_enum
@@ -382,7 +382,7 @@ features:
     support:
       - GCC 4.7
       - Clang 3.1
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_user_defined_literals
@@ -394,8 +394,8 @@ features:
       - GCC 4.3 (partial)
       - GCC 4.5
       - Clang 2.9
-      - MSVC 16.0 (partial)
-      - MSVC 17.0
+      - MSVC 10.0 (partial)
+      - MSVC 11.0
       - Xcode
     ftm:
       - name: __cpp_rvalue_references
@@ -406,8 +406,8 @@ features:
     support:
       - GCC 4.5
       - Clang 3.1
-      - MSVC 16.0 (partial)
-      - MSVC 17.0
+      - MSVC 10.0 (partial)
+      - MSVC 11.0
       - Xcode
     ftm:
       - name: __cpp_lambdas
@@ -418,7 +418,7 @@ features:
     support:
       - GCC 4.6
       - Clang 3.0
-      - MSVC 17.0
+      - MSVC 11.0
       - Xcode
     ftm:
       - name: __cpp_range_based_for
@@ -429,7 +429,7 @@ features:
     support:
       - GCC 4.6
       - Clang 3.0
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_noexcept_function_type
@@ -440,7 +440,7 @@ features:
     support:
       - GCC 4.6
       - Clang 3.0
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     ftm:
       - name: __cpp_noexcept_function_type
@@ -452,7 +452,7 @@ features:
       - GCC 4.7
       - Clang 2.9
       - MSVC 14.0 (partial)
-      - MSVC 17.0
+      - MSVC 11.0
       - Xcode
 
   - desc: "`decltype`"
@@ -461,8 +461,8 @@ features:
       - GCC 4.3 (partial)
       - GCC 4.8.1
       - Clang 2.9
-      - MSVC 16.0 (partial)
-      - MSVC 17.0
+      - MSVC 10.0 (partial)
+      - MSVC 11.0
       - Xcode
     ftm:
       - name: __cpp_decltype
@@ -486,7 +486,7 @@ features:
       - GCC 5
       - Clang 3.0
       - MSVC 14.0
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
     hints:
       - target: GCC 4.3
@@ -503,7 +503,7 @@ features:
       - GCC 4.3 (partial)
       - GCC 4.5
       - Clang
-      - MSVC 16.0
+      - MSVC 10.0
       - Xcode
     hints:
       - target: GCC 4.3
@@ -515,14 +515,14 @@ features:
     support:
       - GCC 6 (hint)
       - Clang 3.4 (hint)
-      - MSVC 19.0 (hint)
+      - MSVC 14.0 (hint)
       - Xcode (hint)
     hints:
       - target: GCC 6
         msg: "No-op library API."
       - target: Clang 3.4
         msg: "No-op library API."
-      - target: MSVC 19.0
+      - target: MSVC 14.0
         msg: "No-op library API."
       - target: Xcode
         msg: "No-op library API."
@@ -533,7 +533,7 @@ features:
     support:
       - GCC 5
       - Clang 3.8
-      - MSVC 19.0
+      - MSVC 14.0
       - Xcode
 
   - desc: "Disallowing [COW (copy-on-write)](https://cppreference.com/w/cpp/language/acronyms.html) `std::basic_string`"
