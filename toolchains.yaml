@@ -1313,7 +1313,7 @@ infos:
 
   - name: MSVC 14.44
     released: May 13, 2025
-    mscver: 1943
+    mscver: 1944
     toolset: v143
     part_of: "Visual Studio 2022 version 17.14"
     refs:
