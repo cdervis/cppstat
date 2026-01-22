@@ -513,6 +513,7 @@ features:
       - GCC 16 (hint)
       - Clang 17 (partial)
       - Clang 21 (partial)
+      - Clang 23 (partial)
       - MSVC 14.0 (partial)
       - MSVC 14.28
       - Xcode 26 (hint)
@@ -527,6 +528,8 @@ features:
         msg: "Supports the majority of modules features, except for P1857, and P1815 is supported on all targets except Windows."
       - target: Clang 21
         msg: "In addition to Clang 17, partially supports P1857, with the following note: _The restriction that '[a] module directive may only appear as the first preprocessing tokens in a file' is enforced starting in Clang 21._"
+      - target: Clang 23
+        msg: "In addition to Clang 23, supports P1857."
       - target: Xcode 26
         msg: >
           Apple Clang requires the `-fcxx-modules` flag **in addition to** `-fmodules`.<br/><br/> Xcode 26
