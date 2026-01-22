@@ -648,6 +648,7 @@ features:
     support:
       - GCC 13
       - Clang 15 (partial)
+      - Clang 22
       - MSVC 14.37
       - Xcode 14.3
     hints:
