@@ -1002,6 +1002,11 @@ infos:
     refs:
       - "https://clang.llvm.org/docs/ReleaseNotes.html"
 
+  - name: Clang 23
+    released: TBD
+    refs:
+      - "https://clang.llvm.org/docs/ReleaseNotes.html"
+
   - name: MSVC 7.0
     released: February, 2002
     mscver: 1300
