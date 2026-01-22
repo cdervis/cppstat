@@ -332,6 +332,7 @@ features:
     paper: P3034
     support:
       - GCC 15
+      - Clang 23
 
   - desc: "`constexpr` `std::shared_ptr` and friends"
     paper: P3037
