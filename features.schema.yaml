@@ -38,7 +38,7 @@ definitions:
         description: "A list of toolchains that support the feature."
         items:
           type: string
-          pattern: "^(GCC|Clang|MSVC|Xcode)( [0-9]+(\\.[0-9]+)*)?( \\((partial|hint)\\))?$"
+          pattern: "^(GCC|Clang|MSVC|Xcode|owcc|TinyCC)( [0-9]+(\\.[0-9]+)*)?( \\((partial|hint)\\))?$"
       hints:
         type: array
         description: "A list of hints targeting toolchains in the support list."
