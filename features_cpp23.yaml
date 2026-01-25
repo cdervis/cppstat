@@ -862,11 +862,14 @@ features:
       - GCC 13 (partial)
       - MSVC 14.34
       - Clang 21 (partial)
+      - Clang 22 (partial)
     hints:
       - target: GCC 13
         msg: "Only `ranges::iota()` is implemented."
       - target: Clang 21
         msg: "Only `ranges::iota()` is implemented. ([GitHub PR](https://github.com/llvm/llvm-project/pull/68494))"
+      - target: Clang 22
+        msg: "In addition to Clang 21, supports `ranges::shift_left()` and defines the `__cpp_lib_shift` FTM."
     ftm:
       - name: __cpp_lib_ranges_iota
         value: 202202L
