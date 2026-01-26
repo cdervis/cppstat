@@ -84,6 +84,8 @@ features:
       - Clang 9
       - MSVC 14.0 (hint)
       - Xcode
+      - owcc
+      - TinyCC
     hints:
       - target: GCC 4.3
         msg: "Supported as an extension."
@@ -150,6 +152,8 @@ features:
       - GCC
       - Clang
       - Xcode 16.1
+      - owcc
+      - TinyCC
   - desc: "Bit-precise integer types (`_BitInt`)"
     paper: N2763
     support:
@@ -178,6 +182,7 @@ features:
       - Clang
       - MSVC 14.11
       - Xcode
+      - TinyCC
   - desc: "Identifier Syntax using Unicode Standard Annex 31"
     paper: N2836
     support:

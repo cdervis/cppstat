@@ -12,6 +12,8 @@ features:
       - GCC
       - Clang
       - Xcode
+      - owcc
+      - TinyCC
   - desc: "`//` comments"
     paper: N644
     support:
@@ -19,6 +21,8 @@ features:
       - Clang
       - MSVC
       - Xcode
+      - owcc
+      - TinyCC
   - desc: "`restrict` pointers"
     paper: N448
     support:
@@ -26,6 +30,8 @@ features:
       - Clang
       - MSVC (partial)
       - Xcode
+      - owcc
+      - TinyCC
     hints:
       - target: MSVC
         msg: "Requires /std:c11 or later."
@@ -47,12 +53,15 @@ features:
       - GCC 3
       - Clang
       - Xcode
+      - owcc
+      - TinyCC
   - desc: "[Variable-length array](https://en.cppreference.com/w/c/language/array.html#Variable-length_arrays) (VLA) types"
     paper: N683
     support:
       - GCC
       - Clang
       - Xcode
+      - TinyCC
   - desc: "Variably-modified (VM) types"
     paper: N2778
     support:
@@ -80,6 +89,8 @@ features:
       - Clang
       - MSVC
       - Xcode
+      - owcc
+      - TinyCC
   - desc: "Hexadecimal [floating constants](https://en.cppreference.com/w/c/language/floating_constant.html)"
     paper: N308
     support:
@@ -87,6 +98,8 @@ features:
       - Clang
       - MSVC
       - Xcode
+      - owcc
+      - TinyCC
   - desc: "[Compound literals](https://en.cppreference.com/w/c/language/compound_literal.html)"
     paper: N716
     support:
@@ -111,6 +124,8 @@ features:
       - Clang
       - MSVC
       - Xcode
+      - owcc
+      - TinyCC
   - desc: "Declarations and statements in mixed order"
     paper: N740
     support:
@@ -118,12 +133,16 @@ features:
       - Clang
       - MSVC
       - Xcode
+      - owcc
+      - TinyCC
   - desc: "_init-statement_ in `for` loops"
     support:
       - GCC
       - Clang
       - MSVC
       - Xcode
+      - owcc
+      - TinyCC
   - desc: "`inline` functions"
     paper: N741
     support:
@@ -131,6 +150,8 @@ features:
       - Clang
       - MSVC
       - Xcode
+      - owcc
+      - TinyCC
   - desc: "Predefined variable `__func__`"
     paper: N611
     support:
@@ -138,6 +159,8 @@ features:
       - Clang
       - MSVC
       - Xcode
+      - owcc
+      - TinyCC
   - desc: "Cvr-qualifiers and `static` in `[]` within function declarations"
     support:
       - GCC 3.1
@@ -150,6 +173,8 @@ features:
       - Clang
       - MSVC
       - Xcode
+      - owcc
+      - TinyCC
   - desc: "`_Pragma` preprocessor operator"
     paper: N634
     support:
@@ -157,6 +182,7 @@ features:
       - Clang
       - MSVC (partial)
       - Xcode
+      - owcc
     hints:
       - target: MSVC
         msg: "Requires /std:c11 or later."
