@@ -532,7 +532,7 @@ features:
     lib: true
     support:
       - GCC 5
-      - Clang 3.8
+      - Clang 3.7
       - MSVC 14.0
       - Xcode
 
