@@ -32,6 +32,7 @@ features:
       - Xcode 16.1
   - desc: "Atomic operations (`_Atomic`, `<stdatomic.h>`)"
     paper: N1485
+    lib: true
     support:
       - GCC 4.9
       - Clang 3.6
@@ -49,6 +50,7 @@ features:
       - Xcode 16.1
   - desc: "Multi-threading support (`<threads.h>`)"
     paper: N1437
+    lib: true
     support:
       - GCC 4.7.1
       - MSVC 14.39
@@ -64,12 +66,14 @@ features:
       - TinyCC
   - desc: "Unicode support (`<uchar.h>`, `u/U` prefixes)"
     paper: N1487
+    lib: true
     support:
       - GCC 4.7.1
       - MSVC 14.20
       - Clang 3.3
   - desc: 'Exclusive create-and-open mode for `fopen()` ("x")'
     paper: N1339
+    lib: true
     support:
       - GCC 4.7.1
       - Clang 3.1
@@ -77,6 +81,7 @@ features:
       - Xcode 16.1
   - desc: "Quick exit (`quick_exit()`, `at_quick_exit()`)"
     paper: N1327
+    lib: true
     support:
       - GCC 4.7.1
       - Clang 3.3
@@ -84,6 +89,7 @@ features:
       - Xcode 16.1
   - desc: "`timespec_get()` function"
     paper: N1499
+    lib: true
     support:
       - GCC 4.7.1
       - Clang 3.3
@@ -91,6 +97,7 @@ features:
       - Xcode 16.1
   - desc: "Macros for complex number types (`CMPLX`)"
     paper: N1464
+    lib: true
     support:
       - GCC 4.7.1
       - Clang 3.3
