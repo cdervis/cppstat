@@ -529,7 +529,7 @@ features:
       - target: Clang 21
         msg: "In addition to Clang 17, partially supports P1857, with the following note: _The restriction that '[a] module directive may only appear as the first preprocessing tokens in a file' is enforced starting in Clang 21._"
       - target: Clang 23
-        msg: "In addition to Clang 23, supports P1857."
+        msg: "In addition to Clang 21, supports P1857."
       - target: Xcode 26
         msg: >
           Apple Clang requires the `-fcxx-modules` flag **in addition to** `-fmodules`.<br/><br/> Xcode 26
