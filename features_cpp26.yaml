@@ -1572,10 +1572,6 @@ features:
     lib: true
     support: [Clang 22]
 
-  - desc: "Proposed Resolution for NB Comment GB13-309 `std::atomic_ref<T>` is not convertible to `std::atomic_ref<const T>`"
-    paper: P3860
-    lib: true
-
   - desc: "When Do You Know `execution::connect()` Doesn’t Throw?"
     paper: P3388
     lib: true
