@@ -1,73 +1,1118 @@
 ---
 features:
-  - desc: "Reflection for C++26 (`<meta>`)"
-    paper: P2996
-    summary: "Reflection allows programs to inspect and manipulate their own structure at compile time. This is one of the most significant additions to C++26."
+  - desc: "UB? In My Lexer? (Remove undefined behavior from lexing)"
+    paper: P2621
+    support:
+      - GCC
+      - Clang 3.3
+      - Xcode 16
+
+  - desc: "Making non-encodable string literals ill-formed"
+    paper: P1854
+    support:
+      - GCC 14
+      - Clang 14
+      - Xcode 16
+
+  - desc: "[Unevaluated strings](https://en.cppreference.com/w/cpp/language/string_literal.html#Unevaluated_strings)"
+    paper: P2361
+    support:
+      - GCC 14
+      - Clang 17 (partial)
+      - Clang 18
+      - Xcode 16
+    hints:
+      - target: Clang 17
+        msg: "Attributes arguments don't yet parse as unevaluated string literals."
+
+  - desc: "Add @, $, and ` to the [basic character set](https://en.cppreference.com/w/cpp/language/charset.html#Basic_character_set)"
+    paper: P2558
+    support:
+      - GCC 15
+      - Clang
+      - Xcode 15
+
+  - desc: "`constexpr` cast from `void*`: towards `constexpr` type-erasure"
+    paper: P2738
+    support:
+      - GCC 14
+      - Clang 17
+      - Xcode 16.3
+    ftm:
+      - name: __cpp_constexpr
+        value: 202306L
+
+  - desc: "On the ignorability of standard attributes"
+    paper: P2552
+    support:
+      - GCC 15
+      - Clang
+      - Xcode 16.3
+
+  - desc: "Static storage for braced initializers"
+    paper: P2752
+    support:
+      - GCC 14
+
+  - desc: "User-generated `static_assert` messages"
+    paper: P2741
+    summary: "`static_assert` can now use user-generated strings, not just string literals."
+    support:
+      - GCC 14
+      - Clang 17
+      - Xcode 16.3
+    ftm:
+      - name: __cpp_static_assert
+        value: 202306L
+
+  - desc: "A nice placeholder with no name (using `_` as a variable name)"
+    paper: P2169
+    summary: "The underscore `_` can now be used as a placeholder variable name that doesn't actually bind a name."
+    support:
+      - GCC 14
+      - Clang 18
+      - Xcode 16.3
+    ftm:
+      - name: __cpp_placeholder_variables
+        value: 202306L
+    content: placeholder-variable.md
+
+  - desc: "Testing for success or failure of `<charconv>` functions"
+    lib: true
+    paper: P2497
+    support:
+      - GCC 14
+      - Clang 18
+    ftm:
+      - name: __cpp_lib_to_chars
+        value: 202306L
+
+  - desc: "Hashing support for `chrono` value classes"
+    paper: P2592
+    lib: true
+    support:
+      - GCC 16
+      - Clang 22
+    ftm:
+      - name: __cpp_lib_chrono
+        value: 202306L
+
+  - desc: "Arithmetic overloads of `std::to_string()` and `std::to_wstring()` use `std::format()`"
+    paper: P2587
+    lib: true
+    support:
+      - GCC 14
+    ftm:
+      - name: __cpp_lib_to_string
+        value: 202306L
+
+  - desc: "`constexpr` stable sorting"
+    paper: P2562
+    lib: true
+    support:
+      - GCC 15
+      - Clang 21
+    ftm:
+      - name: __cpp_lib_constexpr_algorithms
+        value: 202306L
+
+  - desc: "Read-copy update (RCU) (`<rcu>`)"
+    paper: P2545
+    summary: "RCU provides efficient concurrent reads with minimal synchronization."
+    lib: true
+    ftm:
+      - name: __cpp_lib_rcu
+        value: 202306L
+
+  - desc: "Hazard pointers (`<hazard_pointer>`)"
+    paper: P2530
+    summary: "Hazard pointers enable safe memory reclamation in lock-free data structures."
+    lib: true
+    ftm:
+      - name: __cpp_lib_hazard_pointer
+        value: 202306L
+
+  - desc: "ADL-proof `std::projected`"
+    paper: P2538
+    lib: true
+    support:
+      - GCC 14
+      - Clang 18
+      - MSVC 14.38
+      - Xcode 16
+
+  - desc: "Interfacing `std::stringstream` with `std::string_view`"
+    paper: P2495
+    lib: true
+    support:
+      - GCC 16
+      - Clang 19
+      - Xcode 16.3
+    ftm:
+      - name: __cpp_lib_sstream_from_string_view
+        value: 202306L
+
+  - desc: "Formatting pointers"
+    paper: P2510
+    lib: true
+    support:
+      - GCC 14
+      - Clang 17
+      - MSVC 14.40
+    ftm:
+      - name: __cpp_lib_format
+        value: 202304L
+
+  - desc: "Freestanding Feature-Test Macros and Implementation-Defined Extensions"
+    paper: P2198
+    lib: true
+    support:
+      - MSVC 14.38
+    ftm:
+      - name: __cpp_lib_freestanding_feature_test_macros
+        value: 202306L
+      - name: __cpp_lib_freestanding_functional
+        value: 202306L
+      - name: __cpp_lib_freestanding_iterator
+        value: 202306L
+      - name: __cpp_lib_freestanding_memory
+        value: 202306L
+      - name: __cpp_lib_freestanding_operator_new
+        value: 202306L
+      - name: __cpp_lib_freestanding_ranges
+        value: 202306L
+      - name: __cpp_lib_freestanding_ratio
+        value: 202306L
+      - name: __cpp_lib_freestanding_tuple
+        value: 202306L
+      - name: __cpp_lib_freestanding_utility
+        value: 202306L
+
+  - desc: "Freestanding `std::char_traits`, `std::errc` and facilities in: `<charconv>`, `<cstdlib>`, `<cstring>`, `<cwchar>`"
+    paper: P2338
+    lib: true
+    support:
+      - MSVC 14.38
+    ftm:
+      - name: __cpp_lib_freestanding_char_traits
+        value: 202306L
+      - name: __cpp_lib_freestanding_charconv
+        value: 202306L
+      - name: __cpp_lib_freestanding_cstdlib
+        value: 202306L
+      - name: __cpp_lib_freestanding_cstring
+        value: 202306L
+      - name: __cpp_lib_freestanding_cwchar
+        value: 202306L
+      - name: __cpp_lib_freestanding_errc
+        value: 202306L
+
+  - desc: "Freestanding language: Optional `::operator new`"
+    paper: P2013
+    lib: true
+    support:
+      - MSVC 14.38
+
+  - desc: "Atomic minimum/maximum"
+    paper: P0493
+    lib: true
+    ftm:
+      - name: __cpp_lib_atomic_min_max
+        value: 202403L
+
+  - desc: "Extending associative containers with the remaining heterogeneous overloads"
+    paper: P2363
+    lib: true
+    ftm:
+      - name: __cpp_lib_associative_heterogeneous_insertion
+        value: 202306L
+    keywords:
+      [
+        "insert",
+        "insert_or_assign",
+        "bucket",
+        "map",
+        "set",
+        "unordered",
+        "emplace",
+        "multiset",
+        "multimap",
+      ]
+
+  - desc: "Enabling the use of `std::weak_ptr` as keys in unordered associative containers"
+    paper: P1901
+    lib: true
+    support:
+      - GCC 16
+    ftm:
+      - name: __cpp_lib_smart_ptr_owner_equality
+        value: 202306L
+
+  - desc: "`std::text_encoding`: text encodings identification"
+    paper:
+      - P1885
+      - P2862
+    lib: true
+    support:
+      - GCC 14
+    ftm:
+      - name: _cpp_lib_text_encoding
+        value: 202306L
+
+  - desc: "`std::function_ref`: type-erased callable reference"
+    paper: P0792
+    summary: "A lightweight, non-owning reference to a callable."
+    lib: true
+    support:
+      - GCC 16
+    ftm:
+      - name: __cpp_lib_function_ref
+        value: 202306L
+
+  - desc: "Type-checking format args"
+    paper: P2757
+    lib: true
+    support:
+      - GCC 15
+    ftm:
+      - name: __cpp_lib_format
+        value: 202305L
+
+  - desc: "Member `visit` (`std::variant::visit()`)"
+    paper: P2637
+    summary: "`std::variant` now has a member `.visit()` function."
+    lib: true
+    support:
+      - GCC 15
+      - Clang 19
+      - Xcode 16.3
+    ftm:
+      - name: __cpp_lib_variant
+        value: 202306L
+      - name: __cpp_lib_format
+        value: 202306L
+
+  - desc: "Checking if a union alternative is active (`std::is_within_lifetime()`)"
+    paper: P2641
+    lib: true
+    ftm:
+      - name: __cpp_lib_is_within_lifetime
+        value: 202306L
+    support:
+      - Clang 22
+
+  - desc: "Native handles and file streams"
+    paper: P1759
+    lib: true
+    support:
+      - GCC 14
+      - Clang 18
+      - Xcode 16
+    ftm:
+      - name: __cpp_lib_fstream_native_handle
+        value: 202306L
+
+  - desc: "Interfacing `std::bitset` with `std::string_view`"
+    paper: P2697
+    lib: true
+    support:
+      - Clang 18
+      - Xcode 16
+      - GCC 16
+    ftm:
+      - name: __cpp_lib_bitset
+        value: 202306L
+
+  - desc: "More constexpr for `<cmath>` and `<complex>`"
+    paper: P1383
+    lib: true
+    support:
+      - GCC 4.6
+    ftm:
+      - name: __cpp_lib_constexpr_cmath
+        value: 202306L
+      - name: __cpp_lib_constexpr_complex
+        value: 202306L
+
+  - desc: "Adding the new 2022 SI prefixes (`std::quecto`, `std::ronto`, `std::ronna`, `std::quetta`)"
+    paper: P2734
+    lib: true
+    support:
+      - GCC 14
+      - Clang 17 (partial)
+    ftm:
+      - name: __cpp_lib_ratio
+        value: 202306L
+    hints:
+      - target: Clang 17
+        msg: "Only the feature-testing macro has been added (`__cpp_lib_ratio`)."
+
+  - desc: "`std::copyable_function`"
+    paper: P2548
+    summary: "A `std::function` variant that guarantees copyability and const-correctness."
+    lib: true
+    ftm:
+      - name: __cpp_lib_copyable_function
+        value: 202306L
+    support:
+      - GCC 16
+
+  - desc: "Bind front and back to NTTP callables (`std::bind_front()`, `std::bind_back()`, `std::not_fn`)"
+    paper: P2714
+    lib: true
+    support:
+      - GCC 16
+      - Clang 20 (partial)
+    ftm:
+      - name: __cpp_lib_bind_front
+        value: 202306L
+        desc: "`std::bind_front()` is available"
+      - name: __cpp_lib_bind_back
+        value: 202306L
+        desc: "`std::bind_back()` is available"
+      - name: __cpp_lib_not_fn
+        value: 202306L
+        desc: "`std::not_fn` is available"
+
+  - desc: "`std::submdspan()`"
+    paper:
+      - P2630
+      - P3355
+    summary: "Extract sub-views from multidimensional spans."
+    lib: true
+    support:
+      - GCC 16
+    ftm:
+      - name: __cpp_lib_submdspan
+        value: 202306L
+
+  - desc: "Template parameter initialization"
+    paper: P2308
+    support:
+      - GCC 9
+      - Clang 18
+      - Xcode 16.3
+
+  - desc: "[Pack indexing](https://en.cppreference.com/w/cpp/language/pack_indexing.html)"
+    paper: P2662
+    summary: "Pack indexing provides direct access to elements in a parameter pack using `...[N]` syntax."
+    content: pack-indexing.md
+    support:
+      - GCC 15
+      - Clang 19
+      - Xcode 16.3
+    ftm:
+      - name: __cpp_pack_indexing
+        value: 202311L
+
+  - desc: "Remove deprecated arithmetic conversion on enumerations"
+    paper: P2864
+    support:
+      - GCC 14
+      - Clang 18
+      - Xcode 16.3
+
+  - desc: "Saturation arithmetic"
+    paper: P0543
+    summary: "Arithmetic operations that clamp to min/max instead of overflowing."
+    lib: true
+    support:
+      - GCC 14
+      - Clang 18
+      - Xcode 16
+    ftm:
+      - name: __cpp_lib_saturation_arithmetic
+        value: 202311L
+    keywords: ["math"]
+
+  - desc: "Freestanding library: Partial Classes"
+    paper: P2407
+    lib: true
+    support:
+      - GCC 14
+      - MSVC 14.42
+    ftm:
+      - name: __cpp_lib_freestanding_algorithm
+        value: 202311L
+      - name: __cpp_lib_freestanding_array
+        value: 202311L
+      - name: __cpp_lib_freestanding_optional
+        value: 202311L
+      - name: __cpp_lib_freestanding_string_view
+        value: 202311L
+      - name: __cpp_lib_freestanding_variant
+        value: 202311L
+
+  - desc: "Debugging support (`<debugging>`)"
+    paper:
+      - P2546
+      - P2810
+    summary: "The `<debugging>` header provides portable debugging utilities."
     lib: true
     support:
       - GCC 16 (hint)
     hints:
       - target: GCC 16
-        msg: "Requires `-freflection`"
+        msg: "Requires linking with `-lstdc++exp`."
     ftm:
-      - name: __cpp_impl_reflection
-        value: 202506L
-    content: reflection.md
+      - name: __cpp_lib_debugging
+        value: 202311L
+    keywords: ["debugger", "breakpoint"]
+    content: debugging.md
 
-  - desc: "Annotations for Reflection"
-    paper: P3394
+  - desc: "Runtime format strings (`std::format()`)"
+    paper: P2905
+    lib: true
+    support:
+      - GCC 14
+      - Clang 18
+      - MSVC 14.40
+      - Xcode 16
+    ftm:
+      - name: __cpp_lib_format
+        value: 202311L
+
+  - desc: "Runtime format strings II (`std::format()`)"
+    paper: P2918
+    lib: true
+    support:
+      - GCC 14
+      - Clang 18
+      - Xcode 16
+    ftm:
+      - name: __cpp_lib_format
+        value: 202311L
+
+  - desc: "Fix formatting of code units as integers (_Dude, where's my char?_)"
+    paper: P2909
+    lib: true
+    support:
+      - GCC 13.3
+      - Clang 18
+      - MSVC 14.40
+      - Xcode 16
+    ftm:
+      - name: __cpp_lib_format_uchar
+        value: 202311L
+
+  - desc: "A new specification for `std::generate_canonical()`"
+    paper: P0952
+    lib: true
     support:
       - GCC 16
+      - MSVC 14.42
 
-  - desc: "Splicing a base class subobject"
-    paper: P3293
+  - desc: "`std::span` over an initializer list"
+    paper: P2447
+    lib: true
+    support:
+      - GCC 15
+      - Clang 18
+      - Xcode 16
+    ftm:
+      - name: __cpp_lib_span_initializer_list
+        value: 202311L
+
+  - desc: "`std::span::at()`"
+    paper: P2821
+    lib: true
+    support:
+      - GCC 14
+      - Clang 18
+      - Xcode 16
+    ftm:
+      - name: __cpp_lib_span
+        value: 202311L
+
+  - desc: "Remove deprecated `std::allocator` typedef from C++26 (`std::allocator::is_always_equal()`)"
+    paper: P2868
+    lib: true
+    support:
+      - GCC 15
+      - Clang 18
+      - Xcode 16
+
+  - desc: "Remove `std::basic_string::reserve()` from C++26"
+    paper: P2870
+    lib: true
+    support:
+      - Clang 18
+      - Xcode 16
+
+  - desc: "Remove deprecated Unicode conversion facets from C++26 (`<codecvt>`)"
+    paper: P2871
+    lib: true
+    support:
+      - Clang 18
+      - Xcode 16
+
+  - desc: "Add tuple protocol to complex"
+    paper: P2819
+    lib: true
+    support:
+      - GCC 15
+      - Clang 19
+      - Xcode 16.3
+    ftm:
+      - name: __cpp_lib_tuple_like
+        value: 202311L
+
+  - desc: "Freestanding: Remove `strtok()`"
+    paper: P2937
+    lib: true
+    support:
+      - GCC 14
+      - MSVC 14.40
+    ftm:
+      - name: __cpp_lib_freestanding_cstring
+        value: 202311L
+
+  - desc: "Freestanding library: `std::inout`, `std::expected`, `std::span`"
+    paper: P2833
+    lib: true
+    support:
+      - GCC 14
+      - MSVC 14.42
+    ftm:
+      - name: __cpp_lib_freestanding_expected
+        value: 202311L
+      - name: __cpp_lib_freestanding_mdspan
+        value: 202311L
+      - name: __cpp_lib_out_ptr
+        value: 202311L
+      - name: __cpp_lib_span
+        value: 202311L
+        desc: 'Related: <a href="https://wg21.link/P2821">P2821</a>'
+
+  - desc: "`std::basic_const_iterator` should follow its underlying type's convertibility"
+    paper:
+      - P2836
+      - P2950
+    lib: true
+    support:
+      - GCC 14
+      - MSVC 14.40
+    ftm:
+      - name: __cpp_lib_ranges_as_const
+        value: 202311L
+
+  - desc: "Make `assert()` macro user friendly for C and C++"
+    paper: P2264
+    lib: true
+
+  - desc: "A free function linear algebra interface based on the BLAS (`<linalg>`)"
+    paper:
+      - P1673
+      - P3050
+      - P3222
+    lib: true
+    ftm:
+      - name: __cpp_lib_linalg
+        value: 202311L
+    keywords: ["math"]
+
+  - desc: "Disallow binding a returned [glvalue](https://en.cppreference.com/w/cpp/language/value_category.html#glvalue) to a temporary"
+    paper: P2748
+    support:
+      - GCC 14
+      - Clang 19
+      - Xcode 16.3
+
+  - desc: "Clarifying rules for brace elision in [aggregate initialization](https://en.cppreference.com/w/cpp/language/aggregate_initialization.html)"
+    paper: P3106
+    support:
+      - GCC
+      - Clang 17
+      - Xcode 16.3
+
+  - desc: "Attributes for [structured bindings](https://en.cppreference.com/w/cpp/language/structured_binding.html)"
+    paper: P0609
+    support:
+      - GCC 15
+      - Clang 19
+      - Xcode 16.3
+    ftm:
+      - name: __cpp_structured_bindings
+        value: 202403L
+
+  - desc: "Module declarations shouldn't be macros"
+    paper: P3034
+    support:
+      - GCC 15
+      - Clang 23
+
+  - desc: "Trivial infinite loops are not undefined behavior"
+    paper: P2809
+    support:
+      - GCC 14
+      - Clang 19
+      - Xcode 16.3
+    content: trivial-infinite-loops.md
+    keywords: ["safety"]
+
+  - desc: "Erroneous behavior for uninitialized reads (and `[[indeterminate]]` attribute)"
+    paper: P2795
     support:
       - GCC 16
-    keywords: ["reflection"]
+    keywords: ["safety"]
 
-  - desc: "`define_static_{string,object,array}`"
-    paper: P3491
+  - desc: '= delete("should have a reason");'
+    paper: P2573
+    summary: "Deleted functions can now include a message explaining why they're deleted."
+    content: delete-reason.md
+    support:
+      - GCC 15
+      - Clang 19
+      - Xcode 16.3
+    ftm:
+      - name: __cpp_deleted_function
+        value: 202403L
+
+  - desc: "Variadic friends"
+    paper: P2893
+    summary: "Class templates can now declare all types in a parameter pack as friends."
+    support:
+      - GCC 15
+      - Clang 20
+    ftm:
+      - name: __cpp_variadic_friend
+        value: 202403L
+
+  - desc: "Undeprecate `std::polymorphic_allocator::destroy()` for C++26"
+    paper: P2875
+    lib: true
+    support:
+      - Clang 15
+      - MSVC 14.41
+
+  - desc: "Remove deprecated strstreams from C++26"
+    paper: P2867
+    lib: true
+    support:
+      - Clang 19
+    keywords: ["safety"]
+
+  - desc: "Remove deprecated `std::shared_ptr` atomic access APIs from C++26"
+    paper: P2869
+    lib: true
+
+  - desc: "Remove `std::wstring_convert` from C++26"
+    paper: P2872
+    lib: true
+    support:
+      - Clang 19
+
+  - desc: "Permit an efficient implementation of `std::print()`"
+    paper:
+      - P3107
+      - P3235
+    lib: true
+    support:
+      - GCC 16
+      - MSVC 14.43
+    ftm:
+      - name: __cpp_lib_print
+        value: 202403L
+    keywords: ["format"]
+
+  - desc: "Printing blank lines with `std::println()`"
+    paper: P3142
+    lib: true
+    content: println-blank-lines.md
+    support:
+      - GCC 14
+      - Clang 19
+      - MSVC 14.41
+      - Xcode 16.3
+    ftm:
+      - name: __cpp_lib_print
+        value: 202403L
+    keywords: ["format"]
+
+  - desc: "Formatting of `filesystem::path` (`std::formatter<filesystem::path>`)"
+    paper: P2845
+    lib: true
+    ftm:
+      - name: __cpp_lib_format_path
+        value: 202403L
+
+  - desc: "`views::concat()`"
+    paper: P2542
+    lib: true
+    support:
+      - GCC 15
+    ftm:
+      - name: __cpp_lib_ranges_concat
+        value: 202403L
+
+  - desc: "Concatenation of `std::string` and `std::string_view`"
+    paper: P2591
+    lib: true
+    support:
+      - GCC 15
+      - Clang 19
+      - Xcode 16.3
+    ftm:
+      - name: __cpp_lib_string_view
+        value: 202403L
+
+  - desc: "Enabling list-initialization for algorithms"
+    paper:
+      - P2248
+      - P3217
+    lib: true
+    support:
+      - GCC 15
+    ftm:
+      - name: __cpp_lib_algorithm_default_value_type
+        value: 202403L
+
+  - desc: "Vector API for random number generation (`ranges::generate_random()`)"
+    paper: P1068
+    lib: true
+    ftm:
+      - name: __cpp_lib_ranges_generate_random
+        value: 202403L
+
+  - desc: "Comparisons for `std::reference_wrapper` (and constraints for comparisons of `std::pair`, `std::tuple`, `std::optional`, and `std::variant`)"
+    paper: P2944
+    lib: true
+    support:
+      - GCC 14
+      - Clang 19 (partial)
+      - Clang 22 (hint)
+    hints:
+      - target: Clang 19
+        msg: "Constrained equality is not implemented."
+      - target: Clang 22
+        msg: "The changes to `tuple`'s equality overload from P2165 are not yet implemented."
+    ftm:
+      - name: __cpp_lib_constrained_equality
+        value: 202403L
+        desc: "Constrained relational operators for `std::pair`, `std::tuple`, `std::optional` and `std::variant`"
+      - name: __cpp_lib_reference_wrapper
+        value: 202403L
+        desc: "Comparisons for `std::reference_wrapper`"
+
+  - desc: "Padded `std::mdspan` layouts"
+    paper: P2642
     lib: true
     support:
       - GCC 16
     ftm:
-      - name: __cpp_lib_define_static
-        value: 202506L
-    keywords: ["reflection"]
+      - name: __cpp_lib_submdspan
+        value: 202403L
 
-  - desc: "Function Parameter Reflection in Reflection for C++26"
-    paper: P3096
+  - desc: "Better `std::mdspan`'s [CTAD](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction.html)"
+    paper: P3029
     lib: true
     support:
       - GCC 16
+      - Clang 19
 
-  - desc: "Expansion Statements (`template for`)"
-    paper: P1306
-    summary: "`template for` iterates over compile-time ranges like tuples and reflection results."
+  - desc: "`constexpr` placement `new`"
+    paper: P2747
+    summary: "Placement `new` can now be used in constant expressions."
+    support:
+      - GCC 15
+      - Clang 20
+      - Xcode 26
+    ftm:
+      - name: __cpp_constexpr
+        value: 202406L
+      - name: __cpp_lib_constexpr_new
+        value: 202406L
+
+  - desc: "Deleting a pointer to an incomplete type should be ill-formed"
+    paper: P3144
+    support:
+      - GCC 15
+      - Clang 19
+      - Xcode 16.3
+
+  - desc: "Ordering of constraints involving fold expressions"
+    paper: P2963
+    support:
+      - Clang 19
+      - Xcode 16.3
+    ftm:
+      - name: __cpp_fold_expressions
+        value: 202406L
+
+  - desc: "Structured binding declaration as a condition"
+    paper: P0963
+    summary: "Structured bindings can now be used directly in `if` and `while` conditions."
+    support:
+      - GCC 15
+      - Clang 6 (partial)
+      - Clang 21
+    hints:
+      - target: Clang 6
+        msg: "Supported as an extension, not fully conforming to standardized version."
+    ftm:
+      - name: __cpp_structured_bindings
+        value: 202406L
+    keywords: ["decompose"]
+
+  - desc: "Removing the common reference requirement from the indirectly invocable concepts"
+    paper: P2997
+    lib: true
+    support:
+      - GCC 15
+      - Clang 19
+      - MSVC 14.42
+
+  - desc: "dextents index type parameter (`std::dims`)"
+    paper: P2389
+    lib: true
     support:
       - GCC 16
+      - Clang 19
     ftm:
-      - name: __cpp_expansion_statements
-        value: 202506L
-    keywords: ["reflection"]
+      - name: __cpp_lib_mdspan
+        value: 202406L
 
-  - desc: "Error Handling in Reflection"
-    paper: P3560
+  - desc: "Give `std::optional` range support"
+    paper: P3168
+    summary: "`std::optional` is now a range containing zero or one elements."
+    lib: true
+    support:
+      - GCC 16
+      - Clang 22
+    ftm:
+      - name: __cpp_lib_optional_range_support
+        value: 202406L
+
+  - desc: "A type trait for detecting virtual base classes (`std::is_virtual_base_of`)"
+    paper: P2985
+    lib: true
+    support:
+      - GCC 15
+      - Clang 20
+      - Xcode 26
+    ftm:
+      - name: __cpp_lib_is_virtual_base_of
+        value: 202406L
+
+  - desc: "`std::inplace_vector`: dynamically-resizable vector with fixed capacity (`<inplace_vector>`)"
+    paper: P0843
+    summary: "A fixed-capacity vector that stores elements inline without heap allocation."
+    content: inplace-vector.md
     lib: true
     support:
       - GCC 16
     ftm:
-      - name: __cpp_lib_reflection
-        value: 202506L
+      - name: __cpp_lib_inplace_vector
+        value: 202406L
 
-  - desc: "`constexpr` virtual inheritance"
-    paper: P3533
-    content: constexpr-virtual-inheritance.md
+  - desc: "Make `std::ignore` a first-class object"
+    paper: P2968
+    lib: true
+    support:
+      - GCC 15
+      - Clang 19
+      - MSVC 14.42
+
+  - desc: "Philox as an extension of the C++ RNG engines (`std::philox_engine`)"
+    paper: P2075
+    lib: true
+    ftm:
+      - name: __cpp_lib_philox_engine
+        value: 202406L
+    support:
+      - GCC 16
+    keywords: ["random"]
+
+  - desc: "Remove `[[nodiscard]]` annotations from the standard library specification"
+    paper: P2422
+    lib: true
+    support:
+      - Clang 19 (hint)
+    hints:
+      - target: Clang 19
+        msg: "`nodiscard` attributes were kept as a conforming extension."
+
+  - desc: "`std::execution` (`<execution>`)"
+    paper:
+      - P2300
+      - P3396
+    summary: "A framework for asynchronous and parallel programming based on senders and receivers."
+    lib: true
+    ftm:
+      - name: __cpp_lib_senders
+        value: 202406L
+    content: execution.md
+
+  - desc: "`constexpr` structured bindings and references to `constexpr` variables"
+    paper: P2686
+    support:
+      - GCC 16 (partial)
+      - Clang 22 (partial)
+    hints:
+      - target: GCC 16
+        msg: "No [references to constexpr variables](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=117784)."
+      - target: Clang 22
+        msg: "References to `constexpr` and decomposition of tuple-like types are not supported (only arrays and aggregates are)."
+
+  - desc: "Allowing exception throwing in constant-evaluation (`constexpr` exceptions)"
+    paper: P3068
+    summary: "Exceptions can now be thrown and caught during constant evaluation."
+    content: constexpr-exceptions.md
     support:
       - GCC 16
     ftm:
-      - name: __cpp_constexpr_virtual_inheritance
-        value: 202506L
+      - name: __cpp_constexpr_exceptions
+        value: 202411L
+
+  - desc: "Deprecate the notion of trivial types (`std::is_trivial` and `std::is_trivial_v`)"
+    paper: P3247
+    lib: true
+    support:
+      - GCC 15
+      - Clang 21
+
+  - desc: "Remove deprecated array comparisons from C++26"
+    paper: P2865
+    support:
+      - GCC 15
+      - Clang 20
+      - Xcode 16
+    keywords: ["safety"]
+
+  - desc: "[Structured bindings](https://en.cppreference.com/w/cpp/language/structured_binding.html) can introduce a pack"
+    paper: P1061
+    summary: "Structured bindings can now capture remaining elements into a parameter pack."
+    support:
+      - GCC 16
+      - Clang 21
+    ftm:
+      - name: __cpp_structured_bindings
+        value: 202411L
+
+  - desc: "The Oxford variadic comma"
+    paper: P3176
+    support:
+      - GCC 15
+      - Clang 20
+
+  - desc: "Retiring niebloids"
+    paper: P3136
+    lib: true
+    support:
+      - GCC
+      - Clang 14
+      - MSVC 14.39
+      - Xcode 14.3
+
+  - desc: "`views::cache_latest()` (`views::cache_latest_view`)"
+    paper: P3138
+    summary: "Cache the most recent element for repeated access."
+    lib: true
+    support:
+      - GCC 15
+    ftm:
+      - name: __cpp_lib_ranges_cache_latest
+        value: 202411L
+
+  - desc: "Constrain `std::expected` equality operators"
+    paper: P3379
+    lib: true
+    support:
+      - GCC 15
+      - Clang 21
+    ftm:
+      - name: __cpp_lib_constrained_equality
+        value: 202411L
+
+  - desc: "`std::aligned_accessor`: An `std::mdspan` accessor expressing pointer over-alignment (and `std::is_sufficiently_aligned()`)"
+    paper: P2897
+    lib: true
+    support:
+      - GCC 16
+      - Clang 21
+    ftm:
+      - name: __cpp_lib_aligned_accessor
+        value: 202411L
+
+  - desc: "Expose `std::atomic_ref`'s object address (`std::atomic_ref::address()`)"
+    paper: P2835
+    lib: true
+    support:
+      - Clang 22
+    ftm:
+      - name: __cpp_lib_atomic_ref
+        value: 202411L
+
+  - desc: "cv-qualified types in `std::atomic` and `std::atomic_ref`"
+    paper: P3323
+    lib: true
+    support:
+      - GCC 16
+      - MSVC 14.44
+
+  - desc: 'Wording for "`constexpr` for specialized memory algorithms"'
+    paper: P3508
+    lib: true
+    support:
+      - GCC 15
+    ftm:
+      - name: __cpp_lib_raw_memory_algorithms
+        value: 202411L
+
+  - desc: "`constexpr` for `std::uninitialized_default_construct()`"
+    paper: P3369
+    lib: true
+    ftm:
+      - name: __cpp_lib_raw_memory_algorithms
+        value: 202411L
+
+  - desc: "Add new library headers from C23 (`<stdbit.h>` and `<stdckdint.h>`)"
+    paper: P3370
+    lib: true
+    support:
+      - GCC 15
+
+  - desc: "`constexpr` `std::atomic` and `std::atomic_ref`"
+    paper: P3309
+    lib: true
+    ftm:
+      - name: __cpp_lib_constexpr_atomic
+        value: 202411L
+
+  - desc: "`std::simd` (`<simd>`)"
+    paper: P1928
+    summary: "Portable SIMD (Single Instruction, Multiple Data) vector types."
+    content: simd.md
+    lib: true
+    ftm:
+      - name: __cpp_lib_simd
+        value: 202411L
+      - name: __cpp_lib_simd_complex
+        value: 202502L
+        desc: "Support for interleaved complex values in std::datapar::simd"
+
+  - desc: "Utility for creating execution environments"
+    paper: P3325
+    lib: true
+
+  - desc: "Trivial unions (was `std::uninitialized<T>`)"
+    paper: P3074
+    ftm:
+      - name: __cpp_trivial_union
+        value: 202502L
+
+  - desc: "`constexpr` `std::inplace_vector` for non-trivial types"
+    paper: P3074
+    lib: true
+    ftm:
+      - name: __cpp_lib_constexpr_inplace_vector
+        value: 202502L
+
+  - desc: "Partial program correctness (`std::observable()`)"
+    paper: P1494
+    support:
+      - GCC 16
+    keywords: ["safety"]
 
   - desc: "Contracts for C++ (`<contracts>`)"
     paper: P2900
@@ -81,6 +1126,160 @@ features:
         desc: "Library API is available. This is a separate macro to allow for mixing language (compiler) support with different standard library implementations, where this macro specifies the level of support for contracts by that standard library implementation."
     keywords: ["safety"]
     content: contracts.md
+
+  - desc: "Defang and deprecate `std::memory_order::consume`"
+    paper: P3475
+    lib: true
+
+  - desc: "Concept and variable-template template-parameters"
+    paper: P2841
+    ftm:
+      - name: __cpp_template_parameters
+        value: 202502L
+
+  - desc: "`#embed` - a scannable, tooling-friendly binary resource inclusion mechanism"
+    paper: P1967
+    summary: "`#embed` allows you to include binary files directly into your source code at compile time."
+    support:
+      - GCC 15 (hint)
+      - Clang 19 (hint)
+      - Xcode 16.3 (hint)
+    hints:
+      - target: GCC 15
+        msg: >
+          Although this is a C++26 feature, this is available in GCC starting with C++20 (`-std=c++20`).
+
+      - target: Clang 19
+        msg: >
+          Supported as an extension.<br>
+          Use the flag `-Wno-c23-extensions` to suppress warnings related to `#embed`.<br>
+          Although this is a C++26 feature, this is available in Clang starting with C++20 (`-std=c++20`).<br>
+          Clang does not define the `__cpp_pp_embed` feature-testing macro yet.
+
+      - target: Xcode 16.3
+        msg: >
+          Supported as an extension.<br>
+          Use the flag `-Wno-c23-extensions` to suppress warnings related to `#embed`.<br>
+          Although this is a C++26 feature, this is available in Apple Clang starting with C++20 (`-std=c++20`).<br>
+          Apple Clang does not define the `__cpp_pp_embed` feature-testing macro yet.
+    ftm:
+      - name: __cpp_pp_embed
+        value: 202502L
+    content: embed.md
+
+  - desc: "`views::to_input()` (`ranges::to_input_view`)"
+    paper: P3137
+    summary: "Convert any range to an input range."
+    lib: true
+    support:
+      - GCC 15
+    ftm:
+      - name: __cpp_lib_ranges_to_input
+        value: 202502L
+
+  - desc: "Put `std::monostate` in `<utility>`"
+    paper: P0472
+    lib: true
+    support:
+      - GCC 15
+      - Clang 21
+      - MSVC 14.50
+
+  - desc: "Converting contiguous iterators to pointers"
+    paper: P3349
+    lib: true
+    support:
+      - GCC 15
+      - MSVC 14.51
+
+  - desc: "`constexpr` containers and adaptors"
+    paper: P3372
+    summary: "More standard containers work at compile time."
+    lib: true
+    ftm:
+      - name: __cpp_lib_constexpr_deque
+        value: 202502L
+        desc: "`constexpr` `std::deque`"
+      - name: __cpp_lib_constexpr_flat_map
+        value: 202502L
+        desc: "`constexpr` `std::flat_map`"
+      - name: __cpp_lib_constexpr_flat_set
+        value: 202502L
+        desc: "`constexpr` `std::flat_set`"
+      - name: __cpp_lib_constexpr_forward_list
+        value: 202502L
+        desc: "`constexpr` `std::forward_list`"
+      - name: __cpp_lib_constexpr_list
+        value: 202502L
+        desc: "`constexpr` `std::list`"
+      - name: __cpp_lib_constexpr_map
+        value: 202502L
+        desc: "`constexpr` `std::map`"
+      - name: __cpp_lib_constexpr_queue
+        value: 202502L
+        desc: "`constexpr` `std::queue`"
+      - name: __cpp_lib_constexpr_set
+        value: 202502L
+        desc: "`constexpr` `std::set`"
+      - name: __cpp_lib_constexpr_stack
+        value: 202502L
+        desc: "`constexpr` `std::stack`"
+      - name: __cpp_lib_constexpr_unordered_map
+        value: 202502L
+        desc: "`constexpr` `std::unordered_map`"
+      - name: __cpp_lib_constexpr_unordered_set
+        value: 202502L
+        desc: "`constexpr` `std::unordered_set`"
+
+  - desc: "`constexpr` exception types"
+    paper: P3378
+    lib: true
+    ftm:
+      - name: __cpp_lib_constexpr_exceptions
+        value: 202411L
+    support:
+      - GCC 16
+
+  - desc: "Rename `simd_split()` to `simd_chunk()`"
+    paper: P3441
+    lib: true
+
+  - desc: "Freestanding library: `<algorithm>`, `<numeric>`, and `<random>`"
+    paper: P2976
+    lib: true
+    ftm:
+      - name: __cpp_lib_freestanding_algorithm
+        value: 202502L
+      - name: __cpp_lib_freestanding_execution
+        value: 202502L
+      - name: __cpp_lib_freestanding_memory
+        value: 202502L
+      - name: __cpp_lib_freestanding_numeric
+        value: 202502L
+      - name: __cpp_lib_freestanding_random
+        value: 202502L
+
+  - desc: "Interleaved complex values support in `std::simd`"
+    paper: P2663
+    lib: true
+    ftm:
+      - name: __cpp_lib_simd_complex
+        value: 202502L
+
+  - desc: "Extend `<bit>` header function with overloads for `std::simd`"
+    paper: P2933
+    lib: true
+    ftm:
+      - name: __cpp_lib_simd
+        value: 202506L
+
+  - desc: "`ranges::approximately_sized_range` and `ranges::reserve_hint()`"
+    paper: P2846
+    summary: "Ranges can provide size hints for better allocation."
+    lib: true
+    ftm:
+      - name: __cpp_lib_ranges_reserve_hint
+        value: 202502L
 
   - desc: "Standard library hardening"
     paper: P3471
@@ -145,240 +1344,100 @@ features:
     keywords: ["safety"]
     content: hardening.md
 
-  - desc: "Minor additions to C++26 standard library hardening"
-    paper: P3697
+  - desc: "`std::hive` (`<hive>`)"
+    paper: P0447
+    summary: "A container optimized for frequent insert/erase with stable iterators."
+    content: hive.md
     lib: true
-    support:
-      - MSVC 14.50 (partial)
-    hints:
-      - target: MSVC 14.50
-        msg: Partial support only due to the lack of Contracts. Support starting with Visual Studio 2026 18.0 Preview 2. ([GitHub Issue](https://github.com/microsoft/STL/pull/5650))
-    keywords: ["safety"]
-
-  - desc: "[Pack indexing](https://en.cppreference.com/w/cpp/language/pack_indexing.html)"
-    paper: P2662
-    summary: "Pack indexing provides direct access to elements in a parameter pack using `...[N]` syntax."
-    content: pack-indexing.md
-    support:
-      - GCC 15
-      - Clang 19
-      - Xcode 16.3
     ftm:
-      - name: __cpp_pack_indexing
-        value: 202311L
-
-  - desc: "`constexpr` cast from `void*`: towards `constexpr` type-erasure"
-    paper: P2738
-    support:
-      - GCC 14
-      - Clang 17
-      - Xcode 16.3
-    ftm:
-      - name: __cpp_constexpr
-        value: 202306L
-
-  - desc: "Static storage for braced initializers"
-    paper: P2752
-    support:
-      - GCC 14
-
-  - desc: "User-generated `static_assert` messages"
-    paper: P2741
-    summary: "`static_assert` can now use user-generated strings, not just string literals."
-    support:
-      - GCC 14
-      - Clang 17
-      - Xcode 16.3
-    ftm:
-      - name: __cpp_static_assert
-        value: 202306L
-
-  - desc: "A nice placeholder with no name (using `_` as a variable name)"
-    paper: P2169
-    summary: "The underscore `_` can now be used as a placeholder variable name that doesn't actually bind a name."
-    support:
-      - GCC 14
-      - Clang 18
-      - Xcode 16.3
-    ftm:
-      - name: __cpp_placeholder_variables
-        value: 202306L
-    content: placeholder-variable.md
-
-  - desc: "`#embed` - a scannable, tooling-friendly binary resource inclusion mechanism"
-    paper: P1967
-    summary: "`#embed` allows you to include binary files directly into your source code at compile time."
-    support:
-      - GCC 15 (hint)
-      - Clang 19 (hint)
-      - Xcode 16.3 (hint)
-    hints:
-      - target: GCC 15
-        msg: >
-          Although this is a C++26 feature, this is available in GCC starting with C++20 (`-std=c++20`).
-
-      - target: Clang 19
-        msg: >
-          Supported as an extension.<br>
-          Use the flag `-Wno-c23-extensions` to suppress warnings related to `#embed`.<br>
-          Although this is a C++26 feature, this is available in Clang starting with C++20 (`-std=c++20`).<br>
-          Clang does not define the `__cpp_pp_embed` feature-testing macro yet.
-
-      - target: Xcode 16.3
-        msg: >
-          Supported as an extension.<br>
-          Use the flag `-Wno-c23-extensions` to suppress warnings related to `#embed`.<br>
-          Although this is a C++26 feature, this is available in Apple Clang starting with C++20 (`-std=c++20`).<br>
-          Apple Clang does not define the `__cpp_pp_embed` feature-testing macro yet.
-    ftm:
-      - name: __cpp_pp_embed
+      - name: __cpp_lib_hive
         value: 202502L
-    content: embed.md
+    keywords: ["container"]
 
-  - desc: "On the ignorability of standard attributes"
-    paper: P2552
-    support:
-      - GCC 15
-      - Clang
-      - Xcode 16.3
-
-  - desc: "Remove deprecated arithmetic conversion on enumerations"
-    paper: P2864
-    support:
-      - GCC 14
-      - Clang 18
-      - Xcode 16.3
-
-  - desc: "UB? In My Lexer? (Remove undefined behavior from lexing)"
-    paper: P2621
-    support:
-      - GCC
-      - Clang 3.3
-      - Xcode 16
-
-  - desc: "Template parameter initialization"
-    paper: P2308
-    support:
-      - GCC 9
-      - Clang 18
-      - Xcode 16.3
-
-  - desc: "Disallow binding a returned [glvalue](https://en.cppreference.com/w/cpp/language/value_category.html#glvalue) to a temporary"
-    paper: P2748
-    support:
-      - GCC 14
-      - Clang 19
-      - Xcode 16.3
-
-  - desc: "Attributes for [structured bindings](https://en.cppreference.com/w/cpp/language/structured_binding.html)"
-    paper: P0609
-    support:
-      - GCC 15
-      - Clang 19
-      - Xcode 16.3
-    ftm:
-      - name: __cpp_structured_bindings
-        value: 202403L
-
-  - desc: "Making non-encodable string literals ill-formed"
-    paper: P1854
-    support:
-      - GCC 14
-      - Clang 14
-      - Xcode 16
-
-  - desc: "[Unevaluated strings](https://en.cppreference.com/w/cpp/language/string_literal.html#Unevaluated_strings)"
-    paper: P2361
-    support:
-      - GCC 14
-      - Clang 17 (partial)
-      - Clang 18
-      - Xcode 16
-    hints:
-      - target: Clang 17
-        msg: "Attributes arguments don't yet parse as unevaluated string literals."
-
-  - desc: "Add @, $, and ` to the [basic character set](https://en.cppreference.com/w/cpp/language/charset.html#Basic_character_set)"
-    paper: P2558
-    support:
-      - GCC 15
-      - Clang
-      - Xcode 15
-
-  - desc: "Erroneous behavior for uninitialized reads (and `[[indeterminate]]` attribute)"
-    paper: P2795
+  - desc: "`std::indirect` and `std::polymorphic`: Vocabulary Types for Composite Class Design"
+    paper: P3019
+    summary: "Value-semantic wrappers for indirect and polymorphic ownership."
+    lib: true
     support:
       - GCC 16
-    keywords: ["safety"]
-
-  - desc: '= delete("should have a reason");'
-    paper: P2573
-    summary: "Deleted functions can now include a message explaining why they're deleted."
-    content: delete-reason.md
-    support:
-      - GCC 15
-      - Clang 19
-      - Xcode 16.3
     ftm:
-      - name: __cpp_deleted_function
-        value: 202403L
+      - name: __cpp_lib_indirect
+        value: 202502L
+        desc: "`std::indirect` is available"
+      - name: __cpp_lib_polymorphic
+        value: 202502L
+        desc: "`std::polymorphic` is available"
 
-  - desc: "Clarifying rules for brace elision in [aggregate initialization](https://en.cppreference.com/w/cpp/language/aggregate_initialization.html)"
-    paper: P3106
+  - desc: "Allow attaching `main()` to the global module"
+    paper: P3618
     support:
-      - GCC
-      - Clang 17
-      - Xcode 16.3
+      - GCC 16
+      - Clang 21
 
-  - desc: "Module declarations shouldn't be macros"
-    paper: P3034
-    support:
-      - GCC 15
-      - Clang 23
-
-  - desc: "`constexpr` `std::shared_ptr` and friends"
-    paper: P3037
+  - desc: "Reflection for C++26 (`<meta>`)"
+    paper: P2996
+    summary: "Reflection allows programs to inspect and manipulate their own structure at compile time. This is one of the most significant additions to C++26."
     lib: true
+    support:
+      - GCC 16 (hint)
+    hints:
+      - target: GCC 16
+        msg: "Requires `-freflection`"
     ftm:
-      - name: __cpp_lib_constexpr_memory
+      - name: __cpp_impl_reflection
+        value: 202506L
+    content: reflection.md
+
+  - desc: "Annotations for Reflection"
+    paper: P3394
+    support:
+      - GCC 16
+
+  - desc: "Splicing a base class subobject"
+    paper: P3293
+    support:
+      - GCC 16
+    keywords: ["reflection"]
+
+  - desc: "`define_static_{string,object,array}`"
+    paper: P3491
+    lib: true
+    support:
+      - GCC 16
+    ftm:
+      - name: __cpp_lib_define_static
+        value: 202506L
+    keywords: ["reflection"]
+
+  - desc: "Expansion Statements (`template for`)"
+    paper: P1306
+    summary: "`template for` iterates over compile-time ranges like tuples and reflection results."
+    support:
+      - GCC 16
+    ftm:
+      - name: __cpp_expansion_statements
+        value: 202506L
+    keywords: ["reflection"]
+
+  - desc: "Function Parameter Reflection in Reflection for C++26"
+    paper: P3096
+    lib: true
+    support:
+      - GCC 16
+
+  - desc: "`constexpr` virtual inheritance"
+    paper: P3533
+    content: constexpr-virtual-inheritance.md
+    support:
+      - GCC 16
+    ftm:
+      - name: __cpp_constexpr_virtual_inheritance
         value: 202506L
 
-  - desc: "Trivial infinite loops are not undefined behavior"
-    paper: P2809
+  - desc: "Preprocessing is never undefined"
+    paper: P2843
     support:
-      - GCC 14
-      - Clang 19
-      - Xcode 16.3
-    content: trivial-infinite-loops.md
-    keywords: ["safety"]
-
-  - desc: "`constexpr` placement `new`"
-    paper: P2747
-    summary: "Placement `new` can now be used in constant expressions."
-    support:
-      - GCC 15
-      - Clang 20
-      - Xcode 26
-    ftm:
-      - name: __cpp_constexpr
-        value: 202406L
-      - name: __cpp_lib_constexpr_new
-        value: 202406L
-
-  - desc: "Structured binding declaration as a condition"
-    paper: P0963
-    summary: "Structured bindings can now be used directly in `if` and `while` conditions."
-    support:
-      - GCC 15
-      - Clang 6 (partial)
-      - Clang 21
-    hints:
-      - target: Clang 6
-        msg: "Supported as an extension, not fully conforming to standardized version."
-    ftm:
-      - name: __cpp_structured_bindings
-        value: 202406L
-    keywords: ["decompose"]
+      - GCC 16
 
   - desc: "`std::optional<T&>`"
     paper: P2988
@@ -394,88 +1453,16 @@ features:
         value: 202506L
     content: optional-ref.md
 
-  - desc: "Debugging support (`<debugging>`)"
-    paper:
-      - P2546
-      - P2810
-    summary: "The `<debugging>` header provides portable debugging utilities."
-    lib: true
-    support:
-      - GCC 16 (hint)
-    hints:
-      - target: GCC 16
-        msg: "Requires linking with `-lstdc++exp`."
-    ftm:
-      - name: __cpp_lib_debugging
-        value: 202311L
-    keywords: ["debugger", "breakpoint"]
-    content: debugging.md
-
-  - desc: "Variadic friends"
-    paper: P2893
-    summary: "Class templates can now declare all types in a parameter pack as friends."
-    support:
-      - GCC 15
-      - Clang 20
-    ftm:
-      - name: __cpp_variadic_friend
-        value: 202403L
-
-  - desc: "`std::mdspan::at()`"
-    paper: P3383
+  - desc: "C++26 should refer to C23 not C17"
+    paper: P3348
     lib: true
 
-  - desc: "dextents index type parameter (`std::dims`)"
-    paper: P2389
-    lib: true
-    support:
-      - GCC 16
-      - Clang 19
-    ftm:
-      - name: __cpp_lib_mdspan
-        value: 202406L
-
-  - desc: "Padded `std::mdspan` layouts"
-    paper: P2642
-    lib: true
-    support:
-      - GCC 16
-    ftm:
-      - name: __cpp_lib_submdspan
-        value: 202403L
-
-  - desc: "Better `std::mdspan`'s [CTAD](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction.html)"
-    paper: P3029
-    lib: true
-    support:
-      - GCC 16
-      - Clang 19
-
-  - desc: "Inspecting `std::exception_ptr`"
-    paper: P2927
-    summary: "Query exception information without rethrowing."
-    lib: true
-    support:
-      - GCC 16
-
-  - desc: "Inspecting `std::exception_ptr` should be `constexpr`"
-    paper: P3748
+  - desc: "`constexpr` `std::shared_ptr` and friends"
+    paper: P3037
     lib: true
     ftm:
-      - name: __cpp_lib_exception_ptr_cast
+      - name: __cpp_lib_constexpr_memory
         value: 202506L
-    support:
-      - GCC 16
-
-  - desc: "Standardized `constexpr` type ordering"
-    paper: P2830
-    summary: "A standard way to order types at compile time."
-    lib: true
-    ftm:
-      - name: __cpp_lib_type_order
-        value: 202506L
-    support:
-      - GCC 16
 
   - desc: "`execution::write_env` and unstoppable sender adaptors"
     paper: P3284
@@ -507,20 +1494,6 @@ features:
       - GCC 16
       - Clang 22
 
-  - desc: "Interleaved complex values support in `std::simd`"
-    paper: P2663
-    lib: true
-    ftm:
-      - name: __cpp_lib_simd_complex
-        value: 202502L
-
-  - desc: "Extend `<bit>` header function with overloads for `std::simd`"
-    paper: P2933
-    lib: true
-    ftm:
-      - name: __cpp_lib_simd
-        value: 202506L
-
   - desc: "Proposal to extend `std::simd` with more constructors and accessors"
     paper: P2876
     lib: true
@@ -542,6 +1515,36 @@ features:
   - desc: "Reconsider naming of the namespace for `std::simd`"
     paper: P3691
     lib: true
+
+  - desc: "`std::mdspan::at()`"
+    paper: P3383
+    lib: true
+
+  - desc: "Inspecting `std::exception_ptr`"
+    paper: P2927
+    summary: "Query exception information without rethrowing."
+    lib: true
+    support:
+      - GCC 16
+
+  - desc: "Inspecting `std::exception_ptr` should be `constexpr`"
+    paper: P3748
+    lib: true
+    ftm:
+      - name: __cpp_lib_exception_ptr_cast
+        value: 202506L
+    support:
+      - GCC 16
+
+  - desc: "Standardized `constexpr` type ordering"
+    paper: P2830
+    summary: "A standard way to order types at compile time."
+    lib: true
+    ftm:
+      - name: __cpp_lib_type_order
+        value: 202506L
+    support:
+      - GCC 16
 
   - desc: "`std::optional` variants in sender/receiver"
     paper: P3570
@@ -574,6 +1577,19 @@ features:
     lib: true
     ftm:
       - name: __cpp_lib_parallel_scheduler
+        value: 202506L
+
+  - desc: "High-quality sender diagnostics with `constexpr` exceptions"
+    paper: P3557
+    lib: true
+
+  - desc: "Error Handling in Reflection"
+    paper: P3560
+    lib: true
+    support:
+      - GCC 16
+    ftm:
+      - name: __cpp_lib_reflection
         value: 202506L
 
   - desc: "Make type-erased allocator use in `std::promise` and `std::packaged_task` consistent"
@@ -632,14 +1648,15 @@ features:
       - name: __cpp_lib_constant_wrapper
         value: 202506L
 
-  - desc: "High-quality sender diagnostics with `constexpr` exceptions"
-    paper: P3557
+  - desc: "Minor additions to C++26 standard library hardening"
+    paper: P3697
     lib: true
-
-  - desc: "Preprocessing is never undefined"
-    paper: P2843
     support:
-      - GCC 16
+      - MSVC 14.50 (partial)
+    hints:
+      - target: MSVC 14.50
+        msg: Partial support only due to the lack of Contracts. Support starting with Visual Studio 2026 18.0 Preview 2. ([GitHub Issue](https://github.com/microsoft/STL/pull/5650))
+    keywords: ["safety"]
 
   - desc: "Add a coroutine task type"
     paper: P3552
@@ -656,1023 +1673,6 @@ features:
       - name: __cpp_lib_apply
         value: 202506L
 
-  - desc: "Ordering of constraints involving fold expressions"
-    paper: P2963
-    support:
-      - Clang 19
-      - Xcode 16.3
-    ftm:
-      - name: __cpp_fold_expressions
-        value: 202406L
-
-  - desc: "Deleting a pointer to an incomplete type should be ill-formed"
-    paper: P3144
-    support:
-      - GCC 15
-      - Clang 19
-      - Xcode 16.3
-
-  - desc: "[Structured bindings](https://en.cppreference.com/w/cpp/language/structured_binding.html) can introduce a pack"
-    paper: P1061
-    summary: "Structured bindings can now capture remaining elements into a parameter pack."
-    support:
-      - GCC 16
-      - Clang 21
-    ftm:
-      - name: __cpp_structured_bindings
-        value: 202411L
-
-  - desc: "`constexpr` structured bindings and references to `constexpr` variables"
-    paper: P2686
-    support:
-      - GCC 16 (partial)
-      - Clang 22 (partial)
-    hints:
-      - target: GCC 16
-        msg: "No [references to constexpr variables](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=117784)."
-      - target: Clang 22
-        msg: "References to `constexpr` and decomposition of tuple-like types are not supported (only arrays and aggregates are)."
-
-  - desc: "Allowing exception throwing in constant-evaluation (`constexpr` exceptions)"
-    paper: P3068
-    summary: "Exceptions can now be thrown and caught during constant evaluation."
-    content: constexpr-exceptions.md
-    support:
-      - GCC 16
-    ftm:
-      - name: __cpp_constexpr_exceptions
-        value: 202411L
-
-  - desc: "The Oxford variadic comma"
-    paper: P3176
-    support:
-      - GCC 15
-      - Clang 20
-
-  - desc: "Remove deprecated array comparisons from C++26"
-    paper: P2865
-    support:
-      - GCC 15
-      - Clang 20
-      - Xcode 16
-    keywords: ["safety"]
-
-  - desc: "C++26 should refer to C23 not C17"
-    paper: P3348
-    lib: true
-
-  - desc: "Concept and variable-template template-parameters"
-    paper: P2841
-    ftm:
-      - name: __cpp_template_parameters
-        value: 202502L
-
-  - desc: "Trivial unions (was `std::uninitialized<T>`)"
-    paper: P3074
-    ftm:
-      - name: __cpp_trivial_union
-        value: 202502L
-
-  - desc: "Partial program correctness (`std::observable()`)"
-    paper: P1494
-    support:
-      - GCC 16
-    keywords: ["safety"]
-
-  - desc: "Testing for success or failure of `<charconv>` functions"
-    lib: true
-    paper: P2497
-    support:
-      - GCC 14
-      - Clang 18
-    ftm:
-      - name: __cpp_lib_to_chars
-        value: 202306L
-
-  - desc: "`std::text_encoding`: text encodings identification"
-    paper:
-      - P1885
-      - P2862
-    lib: true
-    support:
-      - GCC 14
-    ftm:
-      - name: _cpp_lib_text_encoding
-        value: 202306L
-
-  - desc: "Arithmetic overloads of `std::to_string()` and `std::to_wstring()` use `std::format()`"
-    paper: P2587
-    lib: true
-    support:
-      - GCC 14
-    ftm:
-      - name: __cpp_lib_to_string
-        value: 202306L
-
-  - desc: "Type-checking format args"
-    paper: P2757
-    lib: true
-    support:
-      - GCC 15
-    ftm:
-      - name: __cpp_lib_format
-        value: 202305L
-
-  - desc: "Formatting pointers"
-    paper: P2510
-    lib: true
-    support:
-      - GCC 14
-      - Clang 17
-      - MSVC 14.40
-    ftm:
-      - name: __cpp_lib_format
-        value: 202304L
-
-  - desc: "Hashing support for `chrono` value classes"
-    paper: P2592
-    lib: true
-    support:
-      - GCC 16
-      - Clang 22
-    ftm:
-      - name: __cpp_lib_chrono
-        value: 202306L
-
-  - desc: "Read-copy update (RCU) (`<rcu>`)"
-    paper: P2545
-    summary: "RCU provides efficient concurrent reads with minimal synchronization."
-    lib: true
-    ftm:
-      - name: __cpp_lib_rcu
-        value: 202306L
-
-  - desc: "Hazard pointers (`<hazard_pointer>`)"
-    paper: P2530
-    summary: "Hazard pointers enable safe memory reclamation in lock-free data structures."
-    lib: true
-    ftm:
-      - name: __cpp_lib_hazard_pointer
-        value: 202306L
-
-  - desc: "ADL-proof `std::projected`"
-    paper: P2538
-    lib: true
-    support:
-      - GCC 14
-      - Clang 18
-      - MSVC 14.38
-      - Xcode 16
-
-  - desc: "`constexpr` stable sorting"
-    paper: P2562
-    lib: true
-    support:
-      - GCC 15
-      - Clang 21
-    ftm:
-      - name: __cpp_lib_constexpr_algorithms
-        value: 202306L
-
-  - desc: "Member `visit` (`std::variant::visit()`)"
-    paper: P2637
-    summary: "`std::variant` now has a member `.visit()` function."
-    lib: true
-    support:
-      - GCC 15
-      - Clang 19
-      - Xcode 16.3
-    ftm:
-      - name: __cpp_lib_variant
-        value: 202306L
-      - name: __cpp_lib_format
-        value: 202306L
-
-  - desc: "Checking if a union alternative is active (`std::is_within_lifetime()`)"
-    paper: P2641
-    lib: true
-    ftm:
-      - name: __cpp_lib_is_within_lifetime
-        value: 202306L
-    support:
-      - Clang 22
-
-  - desc: "Extending associative containers with the remaining heterogeneous overloads"
-    paper: P2363
-    lib: true
-    ftm:
-      - name: __cpp_lib_associative_heterogeneous_insertion
-        value: 202306L
-    keywords:
-      [
-        "insert",
-        "insert_or_assign",
-        "bucket",
-        "map",
-        "set",
-        "unordered",
-        "emplace",
-        "multiset",
-        "multimap",
-      ]
-
-  - desc: "Enabling the use of `std::weak_ptr` as keys in unordered associative containers"
-    paper: P1901
-    lib: true
-    support:
-      - GCC 16
-    ftm:
-      - name: __cpp_lib_smart_ptr_owner_equality
-        value: 202306L
-
-  - desc: "Native handles and file streams"
-    paper: P1759
-    lib: true
-    support:
-      - GCC 14
-      - Clang 18
-      - Xcode 16
-    ftm:
-      - name: __cpp_lib_fstream_native_handle
-        value: 202306L
-
-  - desc: "Interfacing `std::stringstream` with `std::string_view`"
-    paper: P2495
-    lib: true
-    support:
-      - GCC 16
-      - Clang 19
-      - Xcode 16.3
-    ftm:
-      - name: __cpp_lib_sstream_from_string_view
-        value: 202306L
-
-  - desc: "Interfacing `std::bitset` with `std::string_view`"
-    paper: P2697
-    lib: true
-    support:
-      - Clang 18
-      - Xcode 16
-      - GCC 16
-    ftm:
-      - name: __cpp_lib_bitset
-        value: 202306L
-
-  - desc: "More constexpr for `<cmath>` and `<complex>`"
-    paper: P1383
-    lib: true
-    support:
-      - GCC 4.6
-    ftm:
-      - name: __cpp_lib_constexpr_cmath
-        value: 202306L
-      - name: __cpp_lib_constexpr_complex
-        value: 202306L
-
-  - desc: "Adding the new 2022 SI prefixes (`std::quecto`, `std::ronto`, `std::ronna`, `std::quetta`)"
-    paper: P2734
-    lib: true
-    support:
-      - GCC 14
-      - Clang 17 (partial)
-    ftm:
-      - name: __cpp_lib_ratio
-        value: 202306L
-    hints:
-      - target: Clang 17
-        msg: "Only the feature-testing macro has been added (`__cpp_lib_ratio`)."
-
-  - desc: "`std::function_ref`: type-erased callable reference"
-    paper: P0792
-    summary: "A lightweight, non-owning reference to a callable."
-    lib: true
-    support:
-      - GCC 16
-    ftm:
-      - name: __cpp_lib_function_ref
-        value: 202306L
-
-  - desc: "`std::copyable_function`"
-    paper: P2548
-    summary: "A `std::function` variant that guarantees copyability and const-correctness."
-    lib: true
-    ftm:
-      - name: __cpp_lib_copyable_function
-        value: 202306L
-    support:
-      - GCC 16
-
-  - desc: "Bind front and back to NTTP callables (`std::bind_front()`, `std::bind_back()`, `std::not_fn`)"
-    paper: P2714
-    lib: true
-    support:
-      - GCC 16
-      - Clang 20 (partial)
-    ftm:
-      - name: __cpp_lib_bind_front
-        value: 202306L
-        desc: "`std::bind_front()` is available"
-      - name: __cpp_lib_bind_back
-        value: 202306L
-        desc: "`std::bind_back()` is available"
-      - name: __cpp_lib_not_fn
-        value: 202306L
-        desc: "`std::not_fn` is available"
-
-  - desc: "`std::submdspan()`"
-    paper:
-      - P2630
-      - P3355
-    summary: "Extract sub-views from multidimensional spans."
-    lib: true
-    support:
-      - GCC 16
-    ftm:
-      - name: __cpp_lib_submdspan
-        value: 202306L
-
-  - desc: "Freestanding language: Optional `::operator new`"
-    paper: P2013
-    lib: true
-    support:
-      - MSVC 14.38
-
-  - desc: "Freestanding `std::char_traits`, `std::errc` and facilities in: `<charconv>`, `<cstdlib>`, `<cstring>`, `<cwchar>`"
-    paper: P2338
-    lib: true
-    support:
-      - MSVC 14.38
-    ftm:
-      - name: __cpp_lib_freestanding_char_traits
-        value: 202306L
-      - name: __cpp_lib_freestanding_charconv
-        value: 202306L
-      - name: __cpp_lib_freestanding_cstdlib
-        value: 202306L
-      - name: __cpp_lib_freestanding_cstring
-        value: 202306L
-      - name: __cpp_lib_freestanding_cwchar
-        value: 202306L
-      - name: __cpp_lib_freestanding_errc
-        value: 202306L
-
-  - desc: "Freestanding Feature-Test Macros and Implementation-Defined Extensions"
-    paper: P2198
-    lib: true
-    support:
-      - MSVC 14.38
-    ftm:
-      - name: __cpp_lib_freestanding_feature_test_macros
-        value: 202306L
-      - name: __cpp_lib_freestanding_functional
-        value: 202306L
-      - name: __cpp_lib_freestanding_iterator
-        value: 202306L
-      - name: __cpp_lib_freestanding_memory
-        value: 202306L
-      - name: __cpp_lib_freestanding_operator_new
-        value: 202306L
-      - name: __cpp_lib_freestanding_ranges
-        value: 202306L
-      - name: __cpp_lib_freestanding_ratio
-        value: 202306L
-      - name: __cpp_lib_freestanding_tuple
-        value: 202306L
-      - name: __cpp_lib_freestanding_utility
-        value: 202306L
-
-  - desc: "Saturation arithmetic"
-    paper: P0543
-    summary: "Arithmetic operations that clamp to min/max instead of overflowing."
-    lib: true
-    support:
-      - GCC 14
-      - Clang 18
-      - Xcode 16
-    ftm:
-      - name: __cpp_lib_saturation_arithmetic
-        value: 202311L
-    keywords: ["math"]
-
-  - desc: "A free function linear algebra interface based on the BLAS (`<linalg>`)"
-    paper:
-      - P1673
-      - P3050
-      - P3222
-    lib: true
-    ftm:
-      - name: __cpp_lib_linalg
-        value: 202311L
-    keywords: ["math"]
-
-  - desc: "Make `assert()` macro user friendly for C and C++"
-    paper: P2264
-    lib: true
-
-  - desc: "Runtime format strings (`std::format()`)"
-    paper: P2905
-    lib: true
-    support:
-      - GCC 14
-      - Clang 18
-      - MSVC 14.40
-      - Xcode 16
-    ftm:
-      - name: __cpp_lib_format
-        value: 202311L
-
-  - desc: "Runtime format strings II (`std::format()`)"
-    paper: P2918
-    lib: true
-    support:
-      - GCC 14
-      - Clang 18
-      - Xcode 16
-    ftm:
-      - name: __cpp_lib_format
-        value: 202311L
-
-  - desc: "`std::span` over an initializer list"
-    paper: P2447
-    lib: true
-    support:
-      - GCC 15
-      - Clang 18
-      - Xcode 16
-    ftm:
-      - name: __cpp_lib_span_initializer_list
-        value: 202311L
-
-  - desc: "`std::span::at()`"
-    paper: P2821
-    lib: true
-    support:
-      - GCC 14
-      - Clang 18
-      - Xcode 16
-    ftm:
-      - name: __cpp_lib_span
-        value: 202311L
-
-  - desc: "Add tuple protocol to complex"
-    paper: P2819
-    lib: true
-    support:
-      - GCC 15
-      - Clang 19
-      - Xcode 16.3
-    ftm:
-      - name: __cpp_lib_tuple_like
-        value: 202311L
-
-  - desc: "A new specification for `std::generate_canonical()`"
-    paper: P0952
-    lib: true
-    support:
-      - GCC 16
-      - MSVC 14.42
-
-  - desc: "Remove deprecated `std::allocator` typedef from C++26 (`std::allocator::is_always_equal()`)"
-    paper: P2868
-    lib: true
-    support:
-      - GCC 15
-      - Clang 18
-      - Xcode 16
-
-  - desc: "Remove `std::basic_string::reserve()` from C++26"
-    paper: P2870
-    lib: true
-    support:
-      - Clang 18
-      - Xcode 16
-
-  - desc: "Remove deprecated Unicode conversion facets from C++26 (`<codecvt>`)"
-    paper: P2871
-    lib: true
-    support:
-      - Clang 18
-      - Xcode 16
-
-  - desc: "Freestanding: Remove `strtok()`"
-    paper: P2937
-    lib: true
-    support:
-      - GCC 14
-      - MSVC 14.40
-    ftm:
-      - name: __cpp_lib_freestanding_cstring
-        value: 202311L
-
-  - desc: "Freestanding library: Partial Classes"
-    paper: P2407
-    lib: true
-    support:
-      - GCC 14
-      - MSVC 14.42
-    ftm:
-      - name: __cpp_lib_freestanding_algorithm
-        value: 202311L
-      - name: __cpp_lib_freestanding_array
-        value: 202311L
-      - name: __cpp_lib_freestanding_optional
-        value: 202311L
-      - name: __cpp_lib_freestanding_string_view
-        value: 202311L
-      - name: __cpp_lib_freestanding_variant
-        value: 202311L
-
-  - desc: "Freestanding library: `std::inout`, `std::expected`, `std::span`"
-    paper: P2833
-    lib: true
-    support:
-      - GCC 14
-      - MSVC 14.42
-    ftm:
-      - name: __cpp_lib_freestanding_expected
-        value: 202311L
-      - name: __cpp_lib_freestanding_mdspan
-        value: 202311L
-      - name: __cpp_lib_out_ptr
-        value: 202311L
-      - name: __cpp_lib_span
-        value: 202311L
-        desc: 'Related: <a href="https://wg21.link/P2821">P2821</a>'
-
-  - desc: "`std::basic_const_iterator` should follow its underlying type's convertibility"
-    paper:
-      - P2836
-      - P2950
-    lib: true
-    support:
-      - GCC 14
-      - MSVC 14.40
-    ftm:
-      - name: __cpp_lib_ranges_as_const
-        value: 202311L
-
-  - desc: "Fix formatting of code units as integers (_Dude, where's my char?_)"
-    paper: P2909
-    lib: true
-    support:
-      - GCC 13.3
-      - Clang 18
-      - MSVC 14.40
-      - Xcode 16
-    ftm:
-      - name: __cpp_lib_format_uchar
-        value: 202311L
-
-  - desc: "`views::concat()`"
-    paper: P2542
-    lib: true
-    support:
-      - GCC 15
-    ftm:
-      - name: __cpp_lib_ranges_concat
-        value: 202403L
-
-  - desc: "Concatenation of `std::string` and `std::string_view`"
-    paper: P2591
-    lib: true
-    support:
-      - GCC 15
-      - Clang 19
-      - Xcode 16.3
-    ftm:
-      - name: __cpp_lib_string_view
-        value: 202403L
-
-  - desc: "Enabling list-initialization for algorithms"
-    paper:
-      - P2248
-      - P3217
-    lib: true
-    support:
-      - GCC 15
-    ftm:
-      - name: __cpp_lib_algorithm_default_value_type
-        value: 202403L
-
-  - desc: "Vector API for random number generation (`ranges::generate_random()`)"
-    paper: P1068
-    lib: true
-    ftm:
-      - name: __cpp_lib_ranges_generate_random
-        value: 202403L
-
-  - desc: "Comparisons for `std::reference_wrapper` (and constraints for comparisons of `std::pair`, `std::tuple`, `std::optional`, and `std::variant`)"
-    paper: P2944
-    lib: true
-    support:
-      - GCC 14
-      - Clang 19 (partial)
-      - Clang 22 (hint)
-    hints:
-      - target: Clang 19
-        msg: "Constrained equality is not implemented."
-      - target: Clang 22
-        msg: "The changes to `tuple`'s equality overload from P2165 are not yet implemented."
-    ftm:
-      - name: __cpp_lib_constrained_equality
-        value: 202403L
-        desc: "Constrained relational operators for `std::pair`, `std::tuple`, `std::optional` and `std::variant`"
-      - name: __cpp_lib_reference_wrapper
-        value: 202403L
-        desc: "Comparisons for `std::reference_wrapper`"
-
-  - desc: "Atomic minimum/maximum"
-    paper: P0493
-    lib: true
-    ftm:
-      - name: __cpp_lib_atomic_min_max
-        value: 202403L
-
-  - desc: "Formatting of `filesystem::path` (`std::formatter<filesystem::path>`)"
-    paper: P2845
-    lib: true
-    ftm:
-      - name: __cpp_lib_format_path
-        value: 202403L
-
-  - desc: "Printing blank lines with `std::println()`"
-    paper: P3142
-    lib: true
-    content: println-blank-lines.md
-    support:
-      - GCC 14
-      - Clang 19
-      - MSVC 14.41
-      - Xcode 16.3
-    ftm:
-      - name: __cpp_lib_print
-        value: 202403L
-    keywords: ["format"]
-
-  - desc: "Undeprecate `std::polymorphic_allocator::destroy()` for C++26"
-    paper: P2875
-    lib: true
-    support:
-      - Clang 15
-      - MSVC 14.41
-
-  - desc: "Remove deprecated strstreams from C++26"
-    paper: P2867
-    lib: true
-    support:
-      - Clang 19
-    keywords: ["safety"]
-
-  - desc: "Remove deprecated `std::shared_ptr` atomic access APIs from C++26"
-    paper: P2869
-    lib: true
-
-  - desc: "Remove `std::wstring_convert` from C++26"
-    paper: P2872
-    lib: true
-    support:
-      - Clang 19
-
-  - desc: "Permit an efficient implementation of `std::print()`"
-    paper:
-      - P3107
-      - P3235
-    lib: true
-    support:
-      - GCC 16
-      - MSVC 14.43
-    ftm:
-      - name: __cpp_lib_print
-        value: 202403L
-    keywords: ["format"]
-
-  - desc: "Remove `[[nodiscard]]` annotations from the standard library specification"
-    paper: P2422
-    lib: true
-    support:
-      - Clang 19 (hint)
-    hints:
-      - target: Clang 19
-        msg: "`nodiscard` attributes were kept as a conforming extension."
-
-  - desc: "`std::execution` (`<execution>`)"
-    paper:
-      - P2300
-      - P3396
-    summary: "A framework for asynchronous and parallel programming based on senders and receivers."
-    lib: true
-    ftm:
-      - name: __cpp_lib_senders
-        value: 202406L
-    content: execution.md
-
-  - desc: "`std::inplace_vector`: dynamically-resizable vector with fixed capacity (`<inplace_vector>`)"
-    paper: P0843
-    summary: "A fixed-capacity vector that stores elements inline without heap allocation."
-    content: inplace-vector.md
-    lib: true
-    support:
-      - GCC 16
-    ftm:
-      - name: __cpp_lib_inplace_vector
-        value: 202406L
-
-  - desc: "Philox as an extension of the C++ RNG engines (`std::philox_engine`)"
-    paper: P2075
-    lib: true
-    ftm:
-      - name: __cpp_lib_philox_engine
-        value: 202406L
-    support:
-      - GCC 16
-    keywords: ["random"]
-
-  - desc: "Give `std::optional` range support"
-    paper: P3168
-    summary: "`std::optional` is now a range containing zero or one elements."
-    lib: true
-    support:
-      - GCC 16
-      - Clang 22
-    ftm:
-      - name: __cpp_lib_optional_range_support
-        value: 202406L
-
-  - desc: "A type trait for detecting virtual base classes (`std::is_virtual_base_of`)"
-    paper: P2985
-    lib: true
-    support:
-      - GCC 15
-      - Clang 20
-      - Xcode 26
-    ftm:
-      - name: __cpp_lib_is_virtual_base_of
-        value: 202406L
-
-  - desc: "Make `std::ignore` a first-class object"
-    paper: P2968
-    lib: true
-    support:
-      - GCC 15
-      - Clang 19
-      - MSVC 14.42
-
-  - desc: "Removing the common reference requirement from the indirectly invocable concepts"
-    paper: P2997
-    lib: true
-    support:
-      - GCC 15
-      - Clang 19
-      - MSVC 14.42
-
-  - desc: "Deprecate the notion of trivial types (`std::is_trivial` and `std::is_trivial_v`)"
-    paper: P3247
-    lib: true
-    support:
-      - GCC 15
-      - Clang 21
-
-  - desc: "Retiring niebloids"
-    paper: P3136
-    lib: true
-    support:
-      - GCC
-      - Clang 14
-      - MSVC 14.39
-      - Xcode 14.3
-
-  - desc: "`views::cache_latest()` (`views::cache_latest_view`)"
-    paper: P3138
-    summary: "Cache the most recent element for repeated access."
-    lib: true
-    support:
-      - GCC 15
-    ftm:
-      - name: __cpp_lib_ranges_cache_latest
-        value: 202411L
-
-  - desc: "Constrain `std::expected` equality operators"
-    paper: P3379
-    lib: true
-    support:
-      - GCC 15
-      - Clang 21
-    ftm:
-      - name: __cpp_lib_constrained_equality
-        value: 202411L
-
-  - desc: "`std::aligned_accessor`: An `std::mdspan` accessor expressing pointer over-alignment (and `std::is_sufficiently_aligned()`)"
-    paper: P2897
-    lib: true
-    support:
-      - GCC 16
-      - Clang 21
-    ftm:
-      - name: __cpp_lib_aligned_accessor
-        value: 202411L
-
-  - desc: "Expose `std::atomic_ref`'s object address (`std::atomic_ref::address()`)"
-    paper: P2835
-    lib: true
-    support:
-      - Clang 22
-    ftm:
-      - name: __cpp_lib_atomic_ref
-        value: 202411L
-
-  - desc: "cv-qualified types in `std::atomic` and `std::atomic_ref`"
-    paper: P3323
-    lib: true
-    support:
-      - GCC 16
-      - MSVC 14.44
-
-  - desc: "`constexpr` `std::atomic` and `std::atomic_ref`"
-    paper: P3309
-    lib: true
-    ftm:
-      - name: __cpp_lib_constexpr_atomic
-        value: 202411L
-
-  - desc: 'Wording for "`constexpr` for specialized memory algorithms"'
-    paper: P3508
-    lib: true
-    support:
-      - GCC 15
-    ftm:
-      - name: __cpp_lib_raw_memory_algorithms
-        value: 202411L
-
-  - desc: "`constexpr` for `std::uninitialized_default_construct()`"
-    paper: P3369
-    lib: true
-    ftm:
-      - name: __cpp_lib_raw_memory_algorithms
-        value: 202411L
-
-  - desc: "Add new library headers from C23 (`<stdbit.h>` and `<stdckdint.h>`)"
-    paper: P3370
-    lib: true
-    support:
-      - GCC 15
-
-  - desc: "`std::simd` (`<simd>`)"
-    paper: P1928
-    summary: "Portable SIMD (Single Instruction, Multiple Data) vector types."
-    content: simd.md
-    lib: true
-    ftm:
-      - name: __cpp_lib_simd
-        value: 202411L
-      - name: __cpp_lib_simd_complex
-        value: 202502L
-        desc: "Support for interleaved complex values in std::datapar::simd"
-
-  - desc: "Rename `simd_split()` to `simd_chunk()`"
-    paper: P3441
-    lib: true
-
-  - desc: "Utility for creating execution environments"
-    paper: P3325
-    lib: true
-
-  - desc: "`constexpr` exception types"
-    paper: P3378
-    lib: true
-    ftm:
-      - name: __cpp_lib_constexpr_exceptions
-        value: 202411L
-    support:
-      - GCC 16
-
-  - desc: "Defang and deprecate `std::memory_order::consume`"
-    paper: P3475
-    lib: true
-
-  - desc: "Put `std::monostate` in `<utility>`"
-    paper: P0472
-    lib: true
-    support:
-      - GCC 15
-      - Clang 21
-      - MSVC 14.50
-
-  - desc: "`std::indirect` and `std::polymorphic`: Vocabulary Types for Composite Class Design"
-    paper: P3019
-    summary: "Value-semantic wrappers for indirect and polymorphic ownership."
-    lib: true
-    support:
-      - GCC 16
-    ftm:
-      - name: __cpp_lib_indirect
-        value: 202502L
-        desc: "`std::indirect` is available"
-      - name: __cpp_lib_polymorphic
-        value: 202502L
-        desc: "`std::polymorphic` is available"
-
-  - desc: "`constexpr` containers and adaptors"
-    paper: P3372
-    summary: "More standard containers work at compile time."
-    lib: true
-    ftm:
-      - name: __cpp_lib_constexpr_deque
-        value: 202502L
-        desc: "`constexpr` `std::deque`"
-      - name: __cpp_lib_constexpr_flat_map
-        value: 202502L
-        desc: "`constexpr` `std::flat_map`"
-      - name: __cpp_lib_constexpr_flat_set
-        value: 202502L
-        desc: "`constexpr` `std::flat_set`"
-      - name: __cpp_lib_constexpr_forward_list
-        value: 202502L
-        desc: "`constexpr` `std::forward_list`"
-      - name: __cpp_lib_constexpr_list
-        value: 202502L
-        desc: "`constexpr` `std::list`"
-      - name: __cpp_lib_constexpr_map
-        value: 202502L
-        desc: "`constexpr` `std::map`"
-      - name: __cpp_lib_constexpr_queue
-        value: 202502L
-        desc: "`constexpr` `std::queue`"
-      - name: __cpp_lib_constexpr_set
-        value: 202502L
-        desc: "`constexpr` `std::set`"
-      - name: __cpp_lib_constexpr_stack
-        value: 202502L
-        desc: "`constexpr` `std::stack`"
-      - name: __cpp_lib_constexpr_unordered_map
-        value: 202502L
-        desc: "`constexpr` `std::unordered_map`"
-      - name: __cpp_lib_constexpr_unordered_set
-        value: 202502L
-        desc: "`constexpr` `std::unordered_set`"
-
-  - desc: "`constexpr` `std::inplace_vector` for non-trivial types"
-    paper: P3074
-    lib: true
-    ftm:
-      - name: __cpp_lib_constexpr_inplace_vector
-        value: 202502L
-
-  - desc: "`views::to_input()` (`ranges::to_input_view`)"
-    paper: P3137
-    summary: "Convert any range to an input range."
-    lib: true
-    support:
-      - GCC 15
-    ftm:
-      - name: __cpp_lib_ranges_to_input
-        value: 202502L
-
-  - desc: "`ranges::approximately_sized_range` and `ranges::reserve_hint()`"
-    paper: P2846
-    summary: "Ranges can provide size hints for better allocation."
-    lib: true
-    ftm:
-      - name: __cpp_lib_ranges_reserve_hint
-        value: 202502L
-
-  - desc: "`std::hive` (`<hive>`)"
-    paper: P0447
-    summary: "A container optimized for frequent insert/erase with stable iterators."
-    content: hive.md
-    lib: true
-    ftm:
-      - name: __cpp_lib_hive
-        value: 202502L
-    keywords: ["container"]
-
-  - desc: "Freestanding library: `<algorithm>`, `<numeric>`, and `<random>`"
-    paper: P2976
-    lib: true
-    ftm:
-      - name: __cpp_lib_freestanding_algorithm
-        value: 202502L
-      - name: __cpp_lib_freestanding_execution
-        value: 202502L
-      - name: __cpp_lib_freestanding_memory
-        value: 202502L
-      - name: __cpp_lib_freestanding_numeric
-        value: 202502L
-      - name: __cpp_lib_freestanding_random
-        value: 202502L
-
-  - desc: "Converting contiguous iterators to pointers"
-    paper: P3349
-    lib: true
-    support:
-      - GCC 15
-      - MSVC 14.51
-
-  - desc: "Allow attaching `main()` to the global module"
-    paper: P3618
-    support:
-      - GCC 16
-      - Clang 21
-
   - desc: "Wording for NB comment resolution on trivial relocation"
     paper: P3920
     support:
@@ -1681,6 +1681,10 @@ features:
       - MSVC
       - Xcode
     lib: true
+
+  - desc: "Fix erroneous behaviour termination semantics for C++26"
+    paper: P3684
+    keywords: ["safety"]
 
   - desc: "Resolve inconsistencies in begin/end for `std::valarray` and braced initializer lists"
     paper: P3016
@@ -1788,7 +1792,3 @@ features:
   - desc: "Optimize for `std::optional` in range adaptors"
     paper: P3913
     lib: true
-
-  - desc: "Fix erroneous behaviour termination semantics for C++26"
-    paper: P3684
-    keywords: ["safety"]
