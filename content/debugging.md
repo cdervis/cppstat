@@ -1,5 +1,6 @@
 ---
 executable: false
+flags: "-lstdc++exp"
 ---
 
 ## What It Does
