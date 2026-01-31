@@ -1,0 +1,509 @@
+---
+infos:
+  - name: GCC
+    desc: This applies to GCC in general, not any specific version.
+    released: May, 2002
+    refs:
+      - "https://gcc.gnu.org/"
+
+  - name: GCC 3.1
+    released: May, 2002
+    refs:
+      - "https://gcc.gnu.org/gcc-3.1/"
+  - name: GCC 3.2
+    released: May, 2003
+    refs:
+      - "https://gcc.gnu.org/gcc-3.2/"
+  - name: GCC 3.3.1
+    released: July, 2002
+    refs:
+      - "https://gcc.gnu.org/gcc-3.1/"
+  - name: GCC 3.2.1
+    released: August, 2002
+    refs:
+      - "https://gcc.gnu.org/gcc-3.2/"
+  - name: GCC 3.2.2
+    released: February, 2003
+    refs:
+      - "https://gcc.gnu.org/gcc-3.2/"
+  - name: GCC 3.2.3
+    released: April, 2003
+    refs:
+      - "https://gcc.gnu.org/gcc-3.2/"
+  - name: GCC 3.3
+    released: May, 2003
+    refs:
+      - "https://gcc.gnu.org/gcc-3.3/"
+  - name: GCC 3.3.1
+    released: August, 2003
+    refs:
+      - "https://gcc.gnu.org/gcc-3.3/"
+  - name: GCC 3.3.2
+    released: October, 2003
+    refs:
+      - "https://gcc.gnu.org/gcc-3.3/"
+  - name: GCC 3.3.3
+    released: February, 2004
+    refs:
+      - "https://gcc.gnu.org/gcc-3.3/"
+  - name: GCC 3.4.0
+    released: April, 2004
+    refs:
+      - "https://gcc.gnu.org/gcc-3.4/"
+  - name: GCC 3.3.4
+    released: May, 2004
+    refs:
+      - "https://gcc.gnu.org/gcc-3.3/"
+  - name: GCC 3.4.1
+    released: July, 2004
+    refs:
+      - "https://gcc.gnu.org/gcc-3.4/"
+  - name: GCC 3.4.2
+    released: September, 2004
+    refs:
+      - "https://gcc.gnu.org/gcc-3.4/"
+  - name: GCC 3.3.5
+    released: September, 2004
+    refs:
+      - "https://gcc.gnu.org/gcc-3.3/"
+  - name: GCC 3.4.3
+    released: November, 2004
+    refs:
+      - "https://gcc.gnu.org/gcc-3.4/"
+  - name: GCC 4
+    released: April, 2005
+    refs:
+      - "https://gcc.gnu.org/gcc-4.0/"
+  - name: GCC 3.3.6
+    released: May, 2005
+    refs:
+      - "https://gcc.gnu.org/gcc-3.3/"
+  - name: GCC 3.4.4
+    released: May, 2005
+    refs:
+      - "https://gcc.gnu.org/gcc-3.4/"
+  - name: GCC 4.0.1
+    released: July, 2005
+    refs:
+      - "https://gcc.gnu.org/gcc-4.0/"
+  - name: GCC 4.0.2
+    released: September, 2005
+    refs:
+      - "https://gcc.gnu.org/gcc-4.0/"
+  - name: GCC 3.4.5
+    released: November, 2005
+    refs:
+      - "https://gcc.gnu.org/gcc-3.4/"
+  - name: GCC 4.1
+    released: February 28, 2006
+    refs:
+      - https://gcc.gnu.org/gcc-4.1/
+  - name: GCC 3.4.6
+    released: March 6, 2006
+    refs:
+      - https://gcc.gnu.org/gcc-3.4/
+  - name: GCC 4.0.3
+    released: March 10, 2006
+    refs:
+      - https://gcc.gnu.org/gcc-4.0/
+  - name: GCC 4.1.1
+    released: May 24, 2006
+    refs:
+      - https://gcc.gnu.org/gcc-4.1/
+  - name: GCC 4.0.4
+    released: January 31, 2007
+    refs:
+      - https://gcc.gnu.org/gcc-4.0/
+  - name: GCC 4.1.2
+    released: February 13, 2007
+    refs:
+      - https://gcc.gnu.org/gcc-4.1/
+  - name: GCC 4.2
+    released: May 13, 2007
+    refs:
+      - https://gcc.gnu.org/gcc-4.2/
+  - name: GCC 4.2.1
+    released: July 18, 2007
+    refs:
+      - https://gcc.gnu.org/gcc-4.2/
+  - name: GCC 4.2.2
+    released: October 7, 2007
+    refs:
+      - https://gcc.gnu.org/gcc-4.2/
+  - name: GCC 4.2.3
+    released: February 1, 2008
+    refs:
+      - https://gcc.gnu.org/gcc-4.2/
+  - name: GCC 4.3
+    released: March 5, 2008
+    refs:
+      - https://gcc.gnu.org/gcc-4.3/
+  - name: GCC 4.2.4
+    released: May 19, 2008
+    refs:
+      - https://gcc.gnu.org/gcc-4.2/
+  - name: GCC 4.3.1
+    released: June 6, 2008
+    refs:
+      - https://gcc.gnu.org/gcc-4.3/
+  - name: GCC 4.3.2
+    released: August 27, 2008
+    refs:
+      - https://gcc.gnu.org/gcc-4.3/
+  - name: GCC 4.3.3
+    released: January 24, 2009
+    refs:
+      - https://gcc.gnu.org/gcc-4.3/
+  - name: GCC 4.4
+    released: April 21, 2009
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.4.1
+    released: July 22, 2009
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.3.4
+    released: August 4, 2009
+    refs:
+      - https://gcc.gnu.org/gcc-4.3/
+  - name: GCC 4.4.2
+    released: October 15, 2009
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.4.3
+    released: January 21, 2010
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.5
+    released: April 14, 2010
+    refs:
+      - https://gcc.gnu.org/gcc-4.5/
+  - name: GCC 4.4.4
+    released: April 29, 2010
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.3.5
+    released: May 22, 2010
+    refs:
+      - https://gcc.gnu.org/gcc-4.3/
+  - name: GCC 4.5.1
+    released: July 31, 2010
+    refs:
+      - https://gcc.gnu.org/gcc-4.5/
+  - name: GCC 4.4.5
+    released: October 1, 2010
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.5.2
+    released: December 16, 2010
+    refs:
+      - https://gcc.gnu.org/gcc-4.5/
+  - name: GCC 4.6
+    released: March 25, 2011
+    refs:
+      - https://gcc.gnu.org/gcc-4.6/
+  - name: GCC 4.4.6
+    released: April 16, 2011
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.5.3
+    released: April 28, 2011
+    refs:
+      - https://gcc.gnu.org/gcc-4.5/
+  - name: GCC 4.3.6
+    released: June 27, 2011
+    refs:
+      - https://gcc.gnu.org/gcc-4.3/
+  - name: GCC 4.6.1
+    released: June 27, 2011
+    refs:
+      - https://gcc.gnu.org/gcc-4.6/
+  - name: GCC 4.6.2
+    released: October 26, 2011
+    refs:
+      - https://gcc.gnu.org/gcc-4.6/
+  - name: GCC 4.6.3
+    released: March 1, 2012
+    refs:
+      - https://gcc.gnu.org/gcc-4.6/
+  - name: GCC 4.4.7
+    released: March 13, 2012
+    refs:
+      - https://gcc.gnu.org/gcc-4.4/
+  - name: GCC 4.7
+    released: March 22, 2012
+    refs:
+      - https://gcc.gnu.org/gcc-4.7/
+  - name: GCC 4.7.1
+    released: June 14, 2012
+    refs:
+      - https://gcc.gnu.org/gcc-4.7/
+  - name: GCC 4.5.4
+    released: July 2, 2012
+    refs:
+      - https://gcc.gnu.org/gcc-4.5/
+  - name: GCC 4.7.2
+    released: September 20, 2012
+    refs:
+      - https://gcc.gnu.org/gcc-4.7/
+  - name: GCC 4.8
+    released: March 22, 2013
+    refs:
+      - https://gcc.gnu.org/gcc-4.8/
+  - name: GCC 4.7.3
+    released: April 11, 2013
+    refs:
+      - https://gcc.gnu.org/gcc-4.7/
+  - name: GCC 4.6.4
+    released: April 12, 2013
+    refs:
+      - https://gcc.gnu.org/gcc-4.6/
+  - name: GCC 4.8.1
+    released: May 31, 2013
+    refs:
+      - https://gcc.gnu.org/gcc-4.8/
+  - name: GCC 4.8.2
+    released: October 16, 2013
+    refs:
+      - https://gcc.gnu.org/gcc-4.8/
+  - name: GCC 4.9
+    released: April 22, 2014
+    refs:
+      - https://gcc.gnu.org/gcc-4.9/
+  - name: GCC 4.8.3
+    released: May 22, 2014
+    refs:
+      - https://gcc.gnu.org/gcc-4.8/
+  - name: GCC 4.7.4
+    released: June 12, 2014
+    refs:
+      - https://gcc.gnu.org/gcc-4.7/
+  - name: GCC 4.9.1
+    released: July 16, 2014
+    refs:
+      - https://gcc.gnu.org/gcc-4.9/
+  - name: GCC 4.9.2
+    released: October 30, 2014
+    refs:
+      - https://gcc.gnu.org/gcc-4.9/
+  - name: GCC 4.8.4
+    released: December 19, 2014
+    refs:
+      - https://gcc.gnu.org/gcc-4.8/
+  - name: GCC 5.1
+    released: April 22, 2015
+    refs:
+      - https://gcc.gnu.org/gcc-5/
+  - name: GCC 4.8.5
+    released: June 23, 2015
+    refs:
+      - https://gcc.gnu.org/gcc-4.8/
+  - name: GCC 4.9.3
+    released: June 26, 2015
+    refs:
+      - https://gcc.gnu.org/gcc-4.9/
+  - name: GCC 5.2
+    released: July 16, 2015
+    refs:
+      - https://gcc.gnu.org/gcc-5/
+  - name: GCC 5.3
+    released: December 4, 2015
+    refs:
+      - https://gcc.gnu.org/gcc-5/
+  - name: GCC 6.1
+    released: April 27, 2016
+    refs:
+      - https://gcc.gnu.org/gcc-6/
+  - name: GCC 5.4
+    released: June 3, 2016
+    refs:
+      - https://gcc.gnu.org/gcc-5/
+  - name: GCC 4.9.4
+    released: August 3, 2016
+    refs:
+      - https://gcc.gnu.org/gcc-4.9/
+  - name: GCC 6.2
+    released: August 22, 2016
+    refs:
+      - https://gcc.gnu.org/gcc-6/
+  - name: GCC 6.3
+    released: December 21, 2016
+    refs:
+      - https://gcc.gnu.org/gcc-6/
+  - name: GCC 7.1
+    released: May 2, 2017
+    refs:
+      - https://gcc.gnu.org/gcc-7/
+  - name: GCC 6.4
+    released: July 4, 2017
+    refs:
+      - https://gcc.gnu.org/gcc-6/
+  - name: GCC 7.2
+    released: August 14, 2017
+    refs:
+      - https://gcc.gnu.org/gcc-7/
+  - name: GCC 5.5
+    released: October 10, 2017
+    refs:
+      - https://gcc.gnu.org/gcc-5/
+  - name: GCC 7.3
+    released: January 25, 2018
+    refs:
+      - https://gcc.gnu.org/gcc-7/
+  - name: GCC 8.1
+    released: May 2, 2018
+    refs:
+      - https://gcc.gnu.org/gcc-8/
+  - name: GCC 8.2
+    released: December 6, 2018
+    refs:
+      - https://gcc.gnu.org/gcc-8/
+  - name: GCC 6.5
+    released: October, 2018
+    refs:
+      - "https://gcc.gnu.org/gcc-6/"
+  - name: GCC 7.4
+    released: December, 2018
+    refs:
+      - "https://gcc.gnu.org/gcc-7/"
+  - name: GCC 8.3
+    released: February, 2019
+    refs:
+      - "https://gcc.gnu.org/gcc-8/"
+  - name: GCC 9.1
+    released: May, 2019
+    refs:
+      - "https://gcc.gnu.org/gcc-9/"
+  - name: GCC 9.2
+    released: August, 2019
+    refs:
+      - "https://gcc.gnu.org/gcc-9/"
+  - name: GCC 7.5
+    released: November, 2019
+    refs:
+      - "https://gcc.gnu.org/gcc-7/"
+  - name: GCC 8.4
+    released: March, 2020
+    refs:
+      - "https://gcc.gnu.org/gcc-8/"
+  - name: GCC 9.3
+    released: March, 2020
+    refs:
+      - "https://gcc.gnu.org/gcc-9/"
+  - name: GCC 10.1
+    released: May, 2020
+    refs:
+      - "https://gcc.gnu.org/gcc-10/"
+  - name: GCC 10.2
+    released: July, 2020
+    refs:
+      - "https://gcc.gnu.org/gcc-10/"
+  - name: GCC 10.3
+    released: April, 2021
+    refs:
+      - "https://gcc.gnu.org/gcc-10/"
+  - name: GCC 11.1
+    released: April, 2021
+    refs:
+      - "https://gcc.gnu.org/gcc-11/"
+  - name: GCC 8.5
+    released: May, 2021
+    refs:
+      - "https://gcc.gnu.org/gcc-8/"
+  - name: GCC 9.4
+    released: June, 2021
+    refs:
+      - "https://gcc.gnu.org/gcc-9/"
+  - name: GCC 11.2
+    released: July, 2021
+    refs:
+      - "https://gcc.gnu.org/gcc-11/"
+  - name: GCC 11.3
+    released: April, 2022
+    refs:
+      - "https://gcc.gnu.org/gcc-11/"
+  - name: GCC 12.1
+    released: May, 2022
+    refs:
+      - "https://gcc.gnu.org/gcc-12/"
+  - name: GCC 9.5
+    released: May, 2022
+    refs:
+      - "https://gcc.gnu.org/gcc-9/"
+  - name: GCC 10.4
+    released: June, 2022
+    refs:
+      - "https://gcc.gnu.org/gcc-10/"
+  - name: GCC 12.2
+    released: August, 2022
+    refs:
+      - "https://gcc.gnu.org/gcc-12/"
+  - name: GCC 13.1
+    released: April, 2023
+    refs:
+      - "https://gcc.gnu.org/gcc-13/"
+  - name: GCC 12.3
+    released: May, 2023
+    refs:
+      - "https://gcc.gnu.org/gcc-12/"
+  - name: GCC 11.4
+    released: May, 2023
+    refs:
+      - "https://gcc.gnu.org/gcc-11/"
+  - name: GCC 10.5
+    released: July, 2023
+    refs:
+      - "https://gcc.gnu.org/gcc-10/"
+  - name: GCC 13.2
+    released: July, 2023
+    refs:
+      - "https://gcc.gnu.org/gcc-13/"
+  - name: GCC 14.1
+    released: May 7, 2024
+    refs:
+      - "https://gcc.gnu.org/gcc-14/"
+  - name: GCC 13.3
+    released: May 21, 2024
+    refs:
+      - "https://gcc.gnu.org/gcc-13/"
+  - name: GCC 12.4
+    released: June 20, 2024
+    refs:
+      - "https://gcc.gnu.org/gcc-12/"
+  - name: GCC 11.5
+    released: July 19, 2024
+    refs:
+      - "https://gcc.gnu.org/gcc-11/"
+  - name: GCC 14.2
+    released: August 1, 2024
+    refs:
+      - "https://gcc.gnu.org/gcc-14/"
+  - name: GCC 15.1
+    released: April 25, 2025
+    refs:
+      - "https://gcc.gnu.org/gcc-15/"
+
+  - name: GCC 14.3
+    released: May 23, 2025
+    refs:
+      - "https://gcc.gnu.org/gcc-14/"
+
+  - name: GCC 13.4
+    released: June 5, 2025
+    refs:
+      - "https://gcc.gnu.org/gcc-13/"
+
+  - name: GCC 12.5
+    released: July 11, 2025
+    refs:
+      - "https://gcc.gnu.org/gcc-12/"
+
+  - name: GCC 15.2
+    released: August 8, 2025
+    refs:
+      - "https://gcc.gnu.org/gcc-15/"
+
+  - name: GCC 16
+    released: TBD
+    refs:
+      - https://gcc.gnu.org/gcc-16/changes.html

@@ -1,0 +1,48 @@
+---
+infos:
+  - name: owcc
+    desc: This applies to Watcom / OpenWatcom in general, not any specific version.
+    released: 1984
+    refs:
+      - "https://github.com/open-watcom/open-watcom-v2/releases"
+
+  - name: owcc 1.0
+    released: January 28, 2003
+
+  - name: owcc 1.1
+    released: August 12, 2003
+
+  - name: owcc 1.2
+    released: January 7, 2004
+
+  - name: owcc 1.3
+    released: August 3, 2004
+
+  - name: owcc 1.4
+    released: December 14, 2005
+
+  - name: owcc 1.5
+    released: April 26, 2006
+
+  - name: owcc 1.6
+    released: December 15, 2006
+
+  - name: owcc 1.7
+    released: August 18, 2007
+
+  - name: owcc 1.7a
+    released: October 23, 2007
+
+  - name: owcc 1.8
+    released: February 21, 2009
+
+  - name: owcc 1.9
+    desc: The latest Open Watcom 1.x release by openwatcom.org
+    released: June 2, 2010
+
+  - name: owcc 2.0
+    desc: Rolling release of the Open Watcom v2 fork
+    released: January 23, 2026
+    refs:
+      - "https://github.com/open-watcom/open-watcom-v2/releases"
+      - "https://github.com/open-watcom/open-watcom-v2.git"
