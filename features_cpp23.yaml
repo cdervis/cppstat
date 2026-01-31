@@ -11,7 +11,7 @@ features:
     ftm:
       - name: __cpp_size_t_suffix
         value: 202011L
-    content: p0330_literal_suffix_size_t.md
+    content: literal-suffix-size-t.md
 
   - desc: "_Down with ()!_ (relax `()` rules for lambdas)"
     paper: P1102
@@ -25,6 +25,7 @@ features:
   - desc: "`if consteval`"
     paper: P1938
     summary: "Detect at compile time whether code is being constant-evaluated."
+    content: if-consteval.md
     support:
       - GCC 12
       - Clang 14
@@ -89,6 +90,7 @@ features:
   - desc: "Explicit object member functions (deducing `this`)"
     paper: P0847
     summary: 'Member functions can now have an explicit "self" parameter, enabling perfect forwarding and CRTP simplification.'
+    content: deducing-this.md
     support:
       - GCC 14
       - Clang 18
@@ -171,6 +173,7 @@ features:
   - desc: "Multidimensional subscript operator (`operator[x, y]`)"
     paper: P2128
     summary: "`operator[]` can now take multiple arguments."
+    content: multidim-subscript.md
     support:
       - GCC 12
       - Clang 15
@@ -259,6 +262,7 @@ features:
   - desc: "`static operator()` (static call operator)"
     paper: P1169
     summary: "Call operators can now be static."
+    content: static-call-operator.md
     support:
       - GCC 13
       - Clang 16
@@ -301,6 +305,7 @@ features:
 
   - desc: "`static operator[]`"
     paper: P2589
+    content: static-subscript-operator.md
     support:
       - GCC 13
       - Clang 16
@@ -309,7 +314,6 @@ features:
     ftm:
       - name: __cpp_multidimensional_subscript
         value: 202211L
-    content: p2589_static_subscript_operator.md
 
   - desc: "Permitting static `constexpr` variables in `constexpr` functions"
     paper: P2647
@@ -417,6 +421,7 @@ features:
 
   - desc: "`char8_t` compatibility and portability fix"
     paper: P2513
+    content: char8-t-compatibility.md
     support:
       - GCC 13
       - Clang 16
@@ -428,6 +433,7 @@ features:
 
   - desc: "`<stacktrace>`"
     paper: P0881
+    content: stacktrace.md
     lib: true
     support:
       - GCC 12 (partial)
@@ -755,6 +761,7 @@ features:
     paper:
       - P0323
       - P2549
+    content: expected.md
     lib: true
     support:
       - GCC 12
@@ -827,6 +834,7 @@ features:
 
   - desc: "Conversions from ranges to containers (`ranges::to()`)"
     paper: P1206
+    content: ranges-to.md
     lib: true
     support:
       - GCC 14 (partial)
@@ -918,6 +926,7 @@ features:
       - P2604
       - P2613
       - P2763
+    content: mdspan.md
     lib: true
     support:
       - GCC 16
@@ -946,6 +955,7 @@ features:
 
   - desc: "`std::flat_map` (`<flat_map>`)"
     paper: P0429
+    content: flat-map.md
     lib: true
     support:
       - GCC 15
@@ -1076,6 +1086,7 @@ features:
     paper:
       - P2093
       - P2539
+    content: print.md
     lib: true
     support:
       - GCC 14
@@ -1298,6 +1309,7 @@ features:
     paper:
       - P2502
       - P2787
+    content: generator.md
     lib: true
     support:
       - GCC 14
@@ -1378,6 +1390,7 @@ features:
 
   - desc: "`views::enumerate()`"
     paper: P2164
+    content: enumerate.md
     lib: true
     support:
       - GCC 13

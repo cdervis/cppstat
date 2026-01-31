@@ -9,7 +9,7 @@ features:
     ftm:
       - name: __cpp_impl_reflection
         value: 202506L
-    content: p2996_reflection.md
+    content: reflection.md
 
   - desc: "Annotations for Reflection"
     paper: P3394
@@ -59,12 +59,12 @@ features:
 
   - desc: "`constexpr` virtual inheritance"
     paper: P3533
+    content: constexpr-virtual-inheritance.md
     support:
       - GCC 16
     ftm:
       - name: __cpp_constexpr_virtual_inheritance
         value: 202506L
-    content: p3533.md
 
   - desc: "Contracts for C++ (`<contracts>`)"
     paper: P2900
@@ -77,7 +77,7 @@ features:
         value: 202502L
         desc: "Library API is available. This is a separate macro to allow for mixing language (compiler) support with different standard library implementations, where this macro specifies the level of support for contracts by that standard library implementation."
     keywords: ["safety"]
-    content: p2900.md
+    content: contracts.md
 
   - desc: "Standard library hardening"
     paper: P3471
@@ -140,7 +140,7 @@ features:
         desc: "Hardened `std::vector`"
         value: 202502L
     keywords: ["safety"]
-    content: "p3471_hardening.md"
+    content: hardening.md
 
   - desc: "Minor additions to C++26 standard library hardening"
     paper: P3697
@@ -156,6 +156,7 @@ features:
   - desc: "[Pack indexing](https://en.cppreference.com/w/cpp/language/pack_indexing.html)"
     paper: P2662
     summary: "Pack indexing provides direct access to elements in a parameter pack using `...[N]` syntax."
+    content: pack-indexing.md
     support:
       - GCC 15
       - Clang 19
@@ -201,7 +202,7 @@ features:
     ftm:
       - name: __cpp_placeholder_variables
         value: 202306L
-    content: p2169_placeholder_with_no_name.md
+    content: placeholder-variable.md
 
   - desc: "`#embed` - a scannable, tooling-friendly binary resource inclusion mechanism"
     paper: P1967
@@ -231,7 +232,7 @@ features:
     ftm:
       - name: __cpp_pp_embed
         value: 202502L
-    content: p1967_embed.md
+    content: embed.md
 
   - desc: "On the ignorability of standard attributes"
     paper: P2552
@@ -312,6 +313,7 @@ features:
   - desc: '= delete("should have a reason");'
     paper: P2573
     summary: "Deleted functions can now include a message explaining why they're deleted."
+    content: delete-reason.md
     support:
       - GCC 15
       - Clang 19
@@ -319,7 +321,6 @@ features:
     ftm:
       - name: __cpp_deleted_function
         value: 202403L
-    content: p2573.md
 
   - desc: "Clarifying rules for brace elision in [aggregate initialization](https://en.cppreference.com/w/cpp/language/aggregate_initialization.html)"
     paper: P3106
@@ -347,7 +348,7 @@ features:
       - GCC 14
       - Clang 19
       - Xcode 16.3
-    content: p2809_trivial_infinite_loops_ub.md
+    content: trivial-infinite-loops.md
     keywords: ["safety"]
 
   - desc: "`constexpr` placement `new`"
@@ -390,7 +391,7 @@ features:
         value: 202506L
       - name: __cpp_lib_optional
         value: 202506L
-    content: p2988_optional_ref.md
+    content: optional-ref.md
 
   - desc: "Debugging support (`<debugging>`)"
     paper:
@@ -407,7 +408,7 @@ features:
       - name: __cpp_lib_debugging
         value: 202311L
     keywords: ["debugger", "breakpoint"]
-    content: p2546_debugging.md
+    content: debugging.md
 
   - desc: "Variadic friends"
     paper: P2893
@@ -694,6 +695,7 @@ features:
   - desc: "Allowing exception throwing in constant-evaluation (`constexpr` exceptions)"
     paper: P3068
     summary: "Exceptions can now be thrown and caught during constant evaluation."
+    content: constexpr-exceptions.md
     support:
       - GCC 16
     ftm:
@@ -1295,6 +1297,7 @@ features:
   - desc: "Printing blank lines with `std::println()`"
     paper: P3142
     lib: true
+    content: println-blank-lines.md
     support:
       - GCC 14
       - Clang 19
@@ -1360,11 +1363,12 @@ features:
     ftm:
       - name: __cpp_lib_senders
         value: 202406L
-    content: p2300_execution.md
+    content: execution.md
 
   - desc: "`std::inplace_vector`: dynamically-resizable vector with fixed capacity (`<inplace_vector>`)"
     paper: P0843
     summary: "A fixed-capacity vector that stores elements inline without heap allocation."
+    content: inplace-vector.md
     lib: true
     support:
       - GCC 16
@@ -1514,6 +1518,7 @@ features:
   - desc: "`std::simd` (`<simd>`)"
     paper: P1928
     summary: "Portable SIMD (Single Instruction, Multiple Data) vector types."
+    content: simd.md
     lib: true
     ftm:
       - name: __cpp_lib_simd
@@ -1632,6 +1637,7 @@ features:
   - desc: "`std::hive` (`<hive>`)"
     paper: P0447
     summary: "A container optimized for frequent insert/erase with stable iterators."
+    content: hive.md
     lib: true
     ftm:
       - name: __cpp_lib_hive
