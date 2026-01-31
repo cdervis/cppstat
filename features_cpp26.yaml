@@ -1588,10 +1588,6 @@ features:
     paper: P3819
     lib: true
 
-  - desc: "Fix for `std::type_order` template definition"
-    paper: P3778
-    lib: true
-
   - desc: "Library Support for Expansion Statements"
     paper: P1789
     lib: true
