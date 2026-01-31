@@ -1544,6 +1544,12 @@ features:
       - name: __cpp_lib_ranges
         value: 202302L
 
+  - desc: "Escaping improvements in `std::format()`"
+    paper: P2713
+    lib: true
+    support:
+      - Clang 19
+
   - desc: "Improving `std::format()`'s width estimation"
     paper: P2675
     lib: true
