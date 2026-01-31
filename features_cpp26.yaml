@@ -1588,10 +1588,6 @@ features:
     paper: P3819
     lib: true
 
-  - desc: "Harmonize proxy-reference operations (LWG3638 and LWG4187)"
-    paper: P3612
-    lib: true
-
   - desc: "Fix for `std::type_order` template definition"
     paper: P3778
     lib: true
