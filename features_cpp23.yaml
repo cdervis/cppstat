@@ -492,6 +492,13 @@ features:
       - name: __cpp_multidimensional_subscript
         value: 202110L
 
+  - desc: "Character encoding of diagnostic text"
+    paper: P2246
+    support:
+    support:
+      - GCC 16
+      - Clang
+
   - desc: "Character sets and encodings"
     paper: P2314
     support:
