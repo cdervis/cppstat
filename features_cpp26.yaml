@@ -1576,10 +1576,6 @@ features:
     paper: P3663
     lib: true
 
-  - desc: "Assorted NB comment resolutions for Kona 2025"
-    paper: P3914
-    lib: true
-
   - desc: "Make `std::optional<T&>` trivially copyable"
     paper: P3836
     lib: true
