@@ -1,0 +1,483 @@
+---
+infos:
+  - name: Clang
+    desc: This applies to Clang in general, not any specific version.
+    released: October 24, 2003
+    refs:
+      - "https://clang.llvm.org/"
+
+  - name: Clang 1
+    released: October 24, 2003
+
+  - name: Clang 1.1
+    released: December 17, 2003
+
+  - name: Clang 1.2
+    released: March 19, 2004
+
+  - name: Clang 1.3
+    released: August 13, 2004
+
+  - name: Clang 1.4
+    released: December 9, 2004
+
+  - name: Clang 1.5
+    released: May 18, 2005
+
+  - name: Clang 1.6
+    released: November 8, 2005
+
+  - name: Clang 1.7
+    released: April 20, 2006
+
+  - name: Clang 1.8
+    released: August 9, 2006
+
+  - name: Clang 1.9
+    released: November 19, 2006
+
+  - name: Clang 2
+    released: May 23, 2007
+
+  - name: Clang 2.1
+    released: September 26, 2007
+
+  - name: Clang 2.2
+    released: February 11, 2008
+
+  - name: Clang 2.3
+    released: June 9, 2008
+
+  - name: Clang 2.4
+    released: November 9, 2008
+
+  - name: Clang 2.5
+    released: March 2, 2009
+
+  - name: Clang 2.6
+    released: October 23, 2009
+
+  - name: Clang 2.7
+    released: April 27, 2010
+
+  - name: Clang 2.8
+    released: October 5, 2010
+
+  - name: Clang 2.9
+    released: April 6, 2011
+
+  - name: Clang 3
+    released: December 1, 2011
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.1
+    released: May 22, 2012
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.2
+    released: December 20, 2012
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.3
+    released: June 17, 2013
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.4
+    released: January 2, 2014
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.4.1
+    released: May 7, 2014
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.4.2
+    released: June 19, 2024
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.5
+    released: September 3, 2014
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.5.1
+    released: January 20, 2015
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.5.2
+    released: April 2, 2015
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.6
+    released: February 27, 2015
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.6.1
+    released: May 26, 2015
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.6.2
+    released: July 16, 2015
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.7
+    released: September 1, 2015
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.7.1
+    released: January 5, 2016
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.8
+    released: March 8, 2016
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.8.1
+    released: July 11, 2016
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.9
+    released: September 2, 2016
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 3.9.1
+    released: December 23, 2016
+    refs:
+      - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
+
+  - name: Clang 4
+    released: March 13, 2017
+    refs:
+      - "https://releases.llvm.org/4.0.0/docs/ReleaseNotes.html"
+
+  - name: Clang 4.0.1
+    released: July 4, 2017
+    refs:
+      - "https://releases.llvm.org/4.0.0/docs/ReleaseNotes.html"
+
+  - name: Clang 5
+    released: September 7, 2017
+    refs:
+      - "https://releases.llvm.org/5.0.0/docs/ReleaseNotes.html"
+
+  - name: Clang 5.0.1
+    released: December 21, 2017
+    refs:
+      - "https://releases.llvm.org/5.0.0/docs/ReleaseNotes.html"
+
+  - name: Clang 6
+    released: March 8, 2018
+    refs:
+      - "https://releases.llvm.org/6.0.0/docs/ReleaseNotes.html"
+
+  - name: Clang 5.0.2
+    released: May 16, 2018
+    refs:
+      - "https://releases.llvm.org/5.0.0/docs/ReleaseNotes.html"
+
+  - name: Clang 6.0.1
+    released: July 5, 2018
+    refs:
+      - "https://releases.llvm.org/6.0.1/docs/ReleaseNotes.html"
+
+  - name: Clang 7
+    released: September 19, 2018
+    refs:
+      - "https://releases.llvm.org/7.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 7.0.1
+    released: December, 2018
+    refs:
+      - "https://releases.llvm.org/7.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 8
+    released: March 20, 2019
+    refs:
+      - "https://releases.llvm.org/8.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 7.1.0
+    released: May 10, 2019
+    refs:
+      - "https://releases.llvm.org/7.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 8.0.1
+    released: July 19, 2019
+    refs:
+      - "https://releases.llvm.org/8.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 9
+    released: September 19, 2019
+    refs:
+      - "https://releases.llvm.org/9.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 9.0.1
+    released: December 20, 2019
+    refs:
+      - "https://releases.llvm.org/9.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 10
+    released: March 24, 2020
+    refs:
+      - "https://releases.llvm.org/10.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 10.0.1
+    released: August 6, 2020
+    refs:
+      - "https://releases.llvm.org/10.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 11
+    released: October 12, 2020
+    refs:
+      - "https://releases.llvm.org/11.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 11.0.1
+    released: January 14, 2021
+    refs:
+      - "https://releases.llvm.org/11.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 11.1.0
+    released: February 25, 2021
+    refs:
+      - "https://releases.llvm.org/11.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 12
+    released: April 14, 2021
+    refs:
+      - "https://releases.llvm.org/12.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 12.0.1
+    released: July 8, 2021
+    refs:
+      - "https://releases.llvm.org/12.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 13
+    released: October 4, 2021
+    refs:
+      - "https://releases.llvm.org/13.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 13.0.1
+    released: February 7, 2022
+    refs:
+      - "https://releases.llvm.org/13.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 14
+    released: March 25, 2022
+    refs:
+      - "https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 14.0.1
+    released: April 12, 2022
+    refs:
+      - "https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 14.0.2
+    released: April 26, 2022
+    refs:
+      - "https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 14.0.3
+    released: April 29, 2022
+    refs:
+      - "https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 14.0.4
+    released: May 24, 2022
+    refs:
+      - "https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 14.0.5
+    released: June 10, 2022
+    refs:
+      - "https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 14.0.6
+    released: June 24, 2022
+    refs:
+      - "https://releases.llvm.org/14.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 15
+    released: September 6, 2022
+    refs:
+      - "https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 15.0.1
+    released: September 20, 2022
+    refs:
+      - "https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 15.0.2
+    released: October 4, 2022
+    refs:
+      - "https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 15.0.3
+    released: October 18, 2022
+    refs:
+      - "https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 15.0.4
+    released: November 2, 2022
+    refs:
+      - "https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 15.0.5
+    released: November 16, 2022
+    refs:
+      - "https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 15.0.6
+    released: November 29, 2022
+    refs:
+      - "https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 15.0.7
+    released: January 12, 2023
+    refs:
+      - "https://releases.llvm.org/15.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 16
+    released: March 17, 2023
+    refs:
+      - "https://releases.llvm.org/16.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 16.0.1
+    released: April 5, 2023
+    refs:
+      - "https://releases.llvm.org/16.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 16.0.2
+    released: April 19, 2023
+    refs:
+      - "https://releases.llvm.org/16.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 16.0.3
+    released: May 3, 2023
+    refs:
+      - "https://releases.llvm.org/16.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 16.0.4
+    released: May 16, 2023
+    refs:
+      - "https://releases.llvm.org/16.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 16.0.5
+    released: June 2, 2023
+    refs:
+      - "https://releases.llvm.org/16.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 16.0.6
+    released: June 13, 2023
+    refs:
+      - "https://releases.llvm.org/16.0.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 17.0.1
+    released: September 9, 2023
+    refs:
+      - "https://releases.llvm.org/17.0.1/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 17.0.2
+    released: October 3, 2023
+    refs:
+      - "https://releases.llvm.org/17.0.1/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 17.0.3
+    released: October 17, 2023
+    refs:
+      - "https://releases.llvm.org/17.0.1/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 17.0.4
+    released: October 31, 2023
+    refs:
+      - "https://releases.llvm.org/17.0.1/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 17.0.5
+    released: November 14, 2023
+    refs:
+      - "https://releases.llvm.org/17.0.1/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 17.0.6
+    released: November 28, 2023
+    refs:
+      - "https://releases.llvm.org/17.0.1/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 18.1
+    released: March 5, 2024
+    refs:
+      - "https://releases.llvm.org/18.1.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 18.1.1
+    released: March 8, 2024
+    refs:
+      - "https://releases.llvm.org/18.1.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 18.1.2
+    released: March 19, 2024
+    refs:
+      - "https://releases.llvm.org/18.1.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 18.1.3
+    released: April 4, 2024
+    refs:
+      - "https://releases.llvm.org/18.1.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 18.1.4
+    released: April 17, 2024
+    refs:
+      - "https://releases.llvm.org/18.1.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 18.1.5
+    released: May 2, 2024
+    refs:
+      - "https://releases.llvm.org/18.1.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 18.1.6
+    released: May 18, 2024
+    refs:
+      - "https://releases.llvm.org/18.1.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 19.1.0
+    released: September 17, 2024
+    refs:
+      - "https://releases.llvm.org/19.1.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 19.1.1
+    released: October 1, 2024
+    refs:
+      - "https://releases.llvm.org/19.1.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 20.1.0
+    released: March 4, 2025
+    refs:
+      - "https://releases.llvm.org/20.1.0/tools/clang/docs/ReleaseNotes.html"
+
+  - name: Clang 21.1.0
+    released: August 26, 2025
+    refs:
+      - https://releases.llvm.org/21.1.0/tools/clang/docs/ReleaseNotes.html
+      - https://github.com/llvm/llvm-project/releases/tag/llvmorg-21.1.0
+
+  - name: Clang 22
+    released: TBD
+    refs:
+      - "https://clang.llvm.org/docs/ReleaseNotes.html"
+
+  - name: Clang 23
+    released: TBD
+    refs:
+      - "https://clang.llvm.org/docs/ReleaseNotes.html"
