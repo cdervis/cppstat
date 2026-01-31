@@ -1336,10 +1336,6 @@ features:
         value: 202506L
     content: optional-ref.md
 
-  - desc: "C++26 should refer to C23 not C17"
-    paper: P3348
-    lib: true
-
   - desc: "`constexpr` `std::shared_ptr` and friends"
     paper: P3037
     lib: true
