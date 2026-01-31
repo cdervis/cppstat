@@ -1541,15 +1541,6 @@ features:
       - name: __cpp_lib_apply
         value: 202506L
 
-  - desc: "Wording for NB comment resolution on trivial relocation"
-    paper: P3920
-    support:
-      - GCC
-      - Clang
-      - MSVC
-      - Xcode
-    lib: true
-
   - desc: "Fix erroneous behaviour termination semantics for C++26"
     paper: P3684
     keywords: ["safety"]
