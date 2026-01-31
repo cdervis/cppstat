@@ -5,7 +5,10 @@ features:
     summary: "Reflection allows programs to inspect and manipulate their own structure at compile time. This is one of the most significant additions to C++26."
     lib: true
     support:
-      - GCC 16
+      - GCC 16 (hint)
+    hints:
+      - target: GCC 16
+        msg: "Requires `-freflection`"
     ftm:
       - name: __cpp_impl_reflection
         value: 202506L
