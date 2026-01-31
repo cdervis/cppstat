@@ -657,15 +657,6 @@ features:
       - name: __cpp_lib_ranges_zip
         value: 202110L
 
-  - desc: 'Clarifying the status of the "C headers"'
-    paper: P2340
-    lib: true
-    support:
-      - GCC
-      - Clang
-      - MSVC
-      - Xcode
-
   - desc: "Cleaning up integer-class types"
     paper: P2393
     lib: true
