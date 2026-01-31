@@ -495,7 +495,6 @@ features:
   - desc: "Character encoding of diagnostic text"
     paper: P2246
     support:
-    support:
       - GCC 16
       - Clang
 
