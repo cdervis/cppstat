@@ -577,9 +577,7 @@ features:
         value: 201510L
 
   - desc: "`std::not_fn`"
-    paper:
-      - P0005
-      - P0358
+    paper: [P0005, P0358]
     lib: true
     support:
       - GCC 7
@@ -661,9 +659,7 @@ features:
   - desc: "[Mathematical special functions](https://en.cppreference.com/w/cpp/numeric/special_math.html)"
     paper: P0226
     lib: true
-    support:
-      - GCC 7
-      - MSVC 14.14
+    support: [GCC 7, MSVC 14.14]
     ftm:
       - name: __cpp_lib_math_special_functions
         value: 201603L
@@ -745,11 +741,7 @@ features:
         value: 201603L
 
   - desc: "`std::string_view`"
-    paper:
-      - N3921
-      - P0220
-      - P0254
-      - P0403
+    paper: [N3921, P0220, P0254, P0403]
     summary: "Non-owning reference to a character sequence."
     lib: true
     support:
@@ -762,9 +754,7 @@ features:
         value: 201606L
 
   - desc: "`std::any`"
-    paper:
-      - P0220
-      - P0032
+    paper: [P0220, P0032]
     lib: true
     support:
       - GCC 7
@@ -996,9 +986,7 @@ features:
         value: 201611L
 
   - desc: "File system library (`std::filesystem` and `<filesystem>`)"
-    paper:
-      - P0218
-      - P0219
+    paper: [P0218, P0219]
     summary: "Standard library for file and directory operations."
     lib: true
     support:

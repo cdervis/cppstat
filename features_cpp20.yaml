@@ -25,9 +25,7 @@ features:
       - Xcode 10
 
   - desc: "`__VA_OPT__`"
-    paper:
-      - P0306
-      - P1042
+    paper: [P0306, P1042]
     support:
       - GCC 8 (partial)
       - GCC 10 (partial)
@@ -133,9 +131,7 @@ features:
 
   - desc: "Simplifying implicit lambda capture"
     paper: P0588
-    support:
-      - GCC 8
-      - MSVC 14.24
+    support: [GCC 8, MSVC 14.24]
 
   - desc: "ADL and function templates that are not visible"
     paper: P0846
@@ -324,9 +320,7 @@ features:
   - desc: "Atomic `std::shared_ptr` and `std::weak_ptr`"
     paper: P0718
     lib: true
-    support:
-      - GCC 12
-      - MSVC 14.27
+    support: [GCC 12, MSVC 14.27]
     ftm:
       - name: __cpp_lib_atomic_shared_ptr
         value: 201711L
@@ -526,9 +520,7 @@ features:
   - desc: "Atomic compare-and-exchange with padding bits"
     paper: P0528
     lib: true
-    support:
-      - GCC 13
-      - MSVC 14.28
+    support: [GCC 13, MSVC 14.28]
 
   - desc: "Destroying operator delete"
     paper: P0722
@@ -691,9 +683,7 @@ features:
         value: 201806L
 
   - desc: "Integral power-of-2 operations: `std::bit_ceil()`, `std::bit_floor()`, `std::bit_width()`, `std::has_single_bit()`"
-    paper:
-      - P0556
-      - P1956
+    paper: [P0556, P1956]
     lib: true
     support:
       - GCC 9
@@ -987,9 +977,7 @@ features:
         value: 201811L
 
   - desc: "Smart pointer creation with default initialization (e.g. `std::make_unique_for_overwrite()`)"
-    paper:
-      - P1020
-      - P1973
+    paper: [P1020, P1973]
     lib: true
     support:
       - GCC 11
@@ -1054,9 +1042,7 @@ features:
         value: 201907L
 
   - desc: "Heterogeneous lookup for unordered associative containers"
-    paper:
-      - P0919
-      - P1690
+    paper: [P0919, P1690]
     lib: true
     support:
       - GCC 11
@@ -1069,9 +1055,7 @@ features:
         value: 201811L
 
   - desc: "Consistent container erasure (`std::erase()` and `std::erase_if()`)"
-    paper:
-      - P1209
-      - P1115
+    paper: [P1209, P1115]
     lib: true
     support:
       - GCC 9
@@ -1095,9 +1079,7 @@ features:
       - Xcode 11.4
 
   - desc: "Structured binding extensions"
-    paper:
-      - P1091
-      - P1381
+    paper: [P1091, P1381]
     support:
       - GCC 10
       - Clang 8 (partial)
@@ -1107,9 +1089,7 @@ features:
       - Xcode 16
 
   - desc: "Stronger Unicode requirements"
-    paper:
-      - P1041
-      - P1139
+    paper: [P1041, P1139]
     support:
       - GCC 10
       - Clang
@@ -1117,9 +1097,7 @@ features:
       - Xcode
 
   - desc: "Parenthesized initialization of aggregates"
-    paper:
-      - P0960
-      - P1975
+    paper: [P0960, P1975]
     support:
       - GCC 10
       - Clang 16
@@ -1138,19 +1116,7 @@ features:
       - Xcode 11.4
 
   - desc: "Modules"
-    paper:
-      - P1103
-      - P1703
-      - P1766
-      - P1779
-      - P1811
-      - P1815
-      - P1857
-      - P1874
-      - P1979
-      - P2115
-      - P2615
-      - P2788
+    paper: [P1103, P1703, P1766, P1779, P1811, P1815, P1857, P1874, P1979, P2115, P2615, P2788]
     summary: "Modern alternative to header files with better encapsulation and faster builds."
     support:
       - GCC 11 (partial)
@@ -1194,9 +1160,7 @@ features:
       - Xcode 12
 
   - desc: "Coroutines"
-    paper:
-      - P0912
-      - LWG3393
+    paper: [P0912, LWG3393]
     summary: "Suspendable functions for async programming and generators."
     support:
       - GCC 10 (hint)
@@ -1356,9 +1320,7 @@ features:
         value: 201907L
 
   - desc: "Class template argument deduction for aggregates"
-    paper:
-      - P1816
-      - P2082
+    paper: [P1816, P2082]
     support:
       - GCC 10
       - GCC 11
@@ -1583,9 +1545,7 @@ features:
   - desc: "Standard library header units"
     paper: P1502
     lib: true
-    support:
-      - GCC 11
-      - MSVC 14.29
+    support: [GCC 11, MSVC 14.29]
 
   - desc: "Output `chrono::day`s with 'd' suffix"
     paper: P1650
@@ -1660,9 +1620,7 @@ features:
   - desc: "Layout-compatibility and pointer-interconvertibility traits"
     paper: P0466
     lib: true
-    support:
-      - GCC 12
-      - MSVC 14.29
+    support: [GCC 12, MSVC 14.29]
     ftm:
       - name: __cpp_lib_is_layout_compatible
         value: 201907L
@@ -1805,10 +1763,7 @@ features:
         value: 202002L
 
   - desc: "`constexpr` `std::string`"
-    paper:
-      - P0426
-      - P1032
-      - P0980
+    paper: [P0426, P1032, P0980]
     lib: true
     support:
       - GCC 12

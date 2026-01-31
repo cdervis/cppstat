@@ -98,9 +98,7 @@ features:
 
   - desc: "Omitting/extending [memory allocations](https://cppreference.com/w/cpp/language/new.html#Allocation)"
     paper: N3664
-    support:
-      - Clang 3.4
-      - Xcode
+    support: [Clang 3.4, Xcode]
 
   - desc: "`[[deprecated]]` attribute"
     paper: N3760
@@ -372,9 +370,7 @@ features:
         value: 201402L
 
   - desc: "`std::shared_timed_mutex`"
-    paper:
-      - N3659
-      - N3891
+    paper: [N3659, N3891]
     lib: true
     support:
       - GCC 5

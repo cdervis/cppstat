@@ -245,9 +245,7 @@ features:
   - desc: "`<spanstream>`: stringstream with `std::span`-based buffer"
     paper: P0448
     lib: true
-    support:
-      - GCC 12
-      - MSVC 14.31
+    support: [GCC 12, MSVC 14.31]
     ftm:
       - name: __cpp_lib_spanstream
         value: 202106L
@@ -474,9 +472,7 @@ features:
         msg: "Compiles, but no IntelliSense support yet."
 
   - desc: "Change scope of lambda trailing-return-type"
-    paper:
-      - P2036
-      - P2579
+    paper: [P2036, P2579]
     support:
       - GCC 16
       - Clang 17
@@ -610,8 +606,7 @@ features:
   - desc: "Heterogeneous erasure overloads for associative containers"
     paper: P2077
     lib: true
-    support:
-      - MSVC 14.32
+    support: [MSVC 14.32]
     ftm:
       - name: __cpp_lib_associative_heterogeneous_erasure
         value: 202110L
@@ -668,8 +663,7 @@ features:
   - desc: "Cleaning up integer-class types"
     paper: P2393
     lib: true
-    support:
-      - MSVC 14.32
+    support: [MSVC 14.32]
 
   - desc: "Add a conditional `noexcept` specification to `std::exchange()`"
     paper: P2401
@@ -690,9 +684,7 @@ features:
       - Xcode 13.4.1
 
   - desc: "`std::expected` (`<expected>`)"
-    paper:
-      - P0323
-      - P2549
+    paper: [P0323, P2549]
     content: expected.md
     lib: true
     support:
@@ -830,9 +822,7 @@ features:
   - desc: "`views::chunk()` and `views::slide()`"
     paper: P2442
     lib: true
-    support:
-      - GCC 13
-      - MSVC 14.33
+    support: [GCC 13, MSVC 14.33]
     ftm:
       - name: __cpp_lib_ranges_chunk
         value: 202202L
@@ -862,9 +852,7 @@ features:
   - desc: "De-deprecating volatile compound operations."
     paper: P2327
     lib: true
-    support:
-      - Xcode 15
-      - MSVC 14.34
+    support: [Xcode 15, MSVC 14.34]
 
   - desc: "`#warning`"
     paper: P2437
@@ -965,9 +953,7 @@ features:
 
   - desc: "Requirements for optional extended floating-point types"
     paper: P1467
-    support:
-      - GCC 13
-      - MSVC (hint)
+    support: [GCC 13, MSVC (hint)]
     hints:
       - target: MSVC
         msg: "Not applicable to MSVC."
@@ -975,9 +961,7 @@ features:
   - desc: "Standard names and library support for extended floating-point types"
     paper: P1467
     lib: true
-    support:
-      - GCC 13
-      - MSVC 14.37
+    support: [GCC 13, MSVC 14.37]
 
   - desc: "Adjusting the value of feature-test macro `__cpp_concepts`"
     paper: P2493
@@ -990,8 +974,7 @@ features:
   - desc: "Class template argument deduction from inherited constructors"
     paper: P2582
     summary: "Class template argument deduction works with inherited constructors."
-    support:
-      - GCC 14
+    support: [GCC 14]
 
   - desc: "Attribute `[[assume]]`"
     paper: P1774
@@ -1030,12 +1013,7 @@ features:
       - Xcode 15
 
   - desc: "`std::mdspan`: a non-owning multidimensional array reference (`<mdspan>`)"
-    paper:
-      - P0009
-      - P2599
-      - P2604
-      - P2613
-      - P2763
+    paper: [P0009, P2599, P2604, P2613, P2763]
     content: mdspan.md
     lib: true
     support:
@@ -1062,9 +1040,7 @@ features:
   - desc: "`std::flat_set` (`<flat_set>`)"
     paper: P1222
     lib: true
-    support:
-      - GCC 15
-      - Clang 21
+    support: [GCC 15, Clang 21]
     ftm:
       - name: __cpp_lib_flat_set
         value: 202207L
@@ -1084,24 +1060,18 @@ features:
   - desc: "Freestanding library: Easy `<utility>`, `<ranges>` and `<iterator>`"
     paper: P1642
     lib: true
-    support:
-      - GCC 13
-      - MSVC 14.38
+    support: [GCC 13, MSVC 14.38]
 
   - desc: "`ranges::stride_view` and `views::stride()`"
     paper: P1899
     lib: true
-    support:
-      - GCC 13
-      - MSVC 14.34
+    support: [GCC 13, MSVC 14.34]
     ftm:
       - name: __cpp_lib_ranges_stride
         value: 202207L
 
   - desc: "Formatted output library (`<print>`)"
-    paper:
-      - P2093
-      - P2539
+    paper: [P2093, P2539]
     content: print.md
     lib: true
     support:
@@ -1216,21 +1186,15 @@ features:
   - desc: "Ranges fold algorithms (`ranges::fold()`)"
     paper: P2322
     lib: true
-    support:
-      - GCC 13
-      - MSVC 14.35
+    support: [GCC 13, MSVC 14.35]
     ftm:
       - name: __cpp_lib_ranges_fold
         value: 202207L
 
   - desc: "`views::cartesian_product()`"
-    paper:
-      - P2374
-      - P2540
+    paper: [P2374, P2540]
     lib: true
-    support:
-      - GCC 13
-      - MSVC 14.37
+    support: [GCC 13, MSVC 14.37]
     ftm:
       - name: __cpp_lib_ranges_cartesian_product
         value: 202207L
@@ -1252,9 +1216,7 @@ features:
   - desc: "Ranges iterators as inputs to non-ranges algorithms"
     paper: P2408
     lib: true
-    support:
-      - GCC 16
-      - MSVC 14.34
+    support: [GCC 16, MSVC 14.34]
     ftm:
       - name: __cpp_lib_algorithm_iterator_requirements
         value: 202207L
@@ -1274,9 +1236,7 @@ features:
   - desc: "Clarify handling of encodings in localized formatting of chrono types"
     paper: P2419
     lib: true
-    support:
-      - GCC 15
-      - MSVC 14.34
+    support: [GCC 15, MSVC 14.34]
     ftm:
       - name: __cpp_lib_format
         value: 202207L
@@ -1379,14 +1339,10 @@ features:
       - Xcode 15
 
   - desc: "`std::generator`: synchronous coroutine generator for ranges"
-    paper:
-      - P2502
-      - P2787
+    paper: [P2502, P2787]
     content: generator.md
     lib: true
-    support:
-      - GCC 14
-      - MSVC 14.43
+    support: [GCC 14, MSVC 14.43]
     ftm:
       - name: __cpp_lib_generator
         value: 202207L
@@ -1438,12 +1394,9 @@ features:
         value: 202207L
 
   - desc: "Explicit lifetime management (`std::start_lifetime_as()`)"
-    paper:
-      - P2590
-      - P2679
+    paper: [P2590, P2679]
     lib: true
-    support:
-      - GCC 16
+    support: [GCC 16]
     ftm:
       - name: __cpp_lib_start_lifetime_as
         value: 202207L
@@ -1489,9 +1442,7 @@ features:
       - MSVC 14.28
 
   - desc: "Extending the lifetime of temporaries in range-based `for` loop initializer"
-    paper:
-      - P2644
-      - P2718
+    paper: [P2644, P2718]
     support:
       - GCC 15
       - Clang 19
@@ -1554,9 +1505,7 @@ features:
     paper: P2164
     content: enumerate.md
     lib: true
-    support:
-      - GCC 13
-      - MSVC 14.37
+    support: [GCC 13, MSVC 14.37]
     ftm:
       - name: __cpp_lib_ranges_enumerate
         value: 202302L
@@ -1654,9 +1603,7 @@ features:
   - desc: "Disallowing user specialization of `std::allocator_traits`"
     paper: P2652
     lib: true
-    support:
-      - Clang 19
-      - MSVC 14.37
+    support: [Clang 19, MSVC 14.37]
 
   - desc: "Deprecating `std::numeric_limits::has_denorm`"
     paper: P2614
@@ -1669,9 +1616,7 @@ features:
   - desc: "`std::barrier`'s phase completion guarantees"
     paper: P2588
     lib: true
-    support:
-      - MSVC 14.28 (hint)
-      - MSVC 14.36
+    support: [MSVC 14.28 (hint), MSVC 14.36]
     hints:
       - target: MSVC 14.28
         msg: "Implemented, but no feature-testing macro is available."
@@ -1681,5 +1626,4 @@ features:
 
   - desc: "Declarations and where to find them"
     paper: P1787
-    support:
-      - MSVC
+    support: [MSVC]

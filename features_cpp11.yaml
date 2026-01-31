@@ -359,9 +359,7 @@ features:
 
   - desc: "`[[carries_dependency]]`"
     paper: [N2556, N2643]
-    support:
-      - Clang 3.3
-      - Xcode
+    support: [Clang 3.3, Xcode]
     ftm:
       - name: __has_cpp_attribute(carries_dependency)
         value: 200809L
