@@ -1630,10 +1630,6 @@ features:
     paper: P3887
     lib: true
 
-  - desc: "Additional NB comment resolutions for Kona 2025"
-    paper: P3923
-    lib: true
-
   - desc: "Fix C++26 by making the rank-1, rank-2, rank-k, and rank-2k updates consistent with the BLAS"
     paper: P3371
     lib: true
