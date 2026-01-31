@@ -145,7 +145,6 @@ features:
   - desc: "Minor additions to C++26 standard library hardening"
     paper: P3697
     lib: true
-    content: p3697_minor_additions_to_hardening.md
     support:
       - MSVC 14.50 (partial)
     hints:
@@ -190,7 +189,6 @@ features:
     ftm:
       - name: __cpp_static_assert
         value: 202306L
-    content: p2741_static_assert_msgs.md
 
   - desc: "A nice placeholder with no name (using `_` as a variable name)"
     paper: P2169
