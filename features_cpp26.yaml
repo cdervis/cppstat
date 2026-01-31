@@ -981,7 +981,7 @@ features:
         value: 202411L
 
   - desc: "`std::simd` (`<simd>`)"
-    paper: P1928
+    paper: [P1928, P3430, P3287]
     summary: "Portable SIMD (Single Instruction, Multiple Data) vector types."
     content: simd.md
     lib: true
