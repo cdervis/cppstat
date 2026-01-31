@@ -305,6 +305,7 @@ features:
   - desc: "Proposed wording for structured bindings"
     paper: P0217
     summary: "Decompose objects into named variables."
+    content: structured-bindings.md
     support:
       - GCC 7
       - Clang 4

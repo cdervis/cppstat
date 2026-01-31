@@ -118,6 +118,7 @@ features:
   - desc: "Three-way comparison operator (`operator<=>`)"
     paper: P0515
     summary: 'The "spaceship operator" for simplified comparisons.'
+    content: three-way-comparison.md
     support:
       - GCC 10
       - Clang 8 (partial)
