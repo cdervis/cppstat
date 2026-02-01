@@ -38,21 +38,21 @@ Each standard version of C and C++ has its own file; for example, `features_cpp2
 
 A feature has the following properties:
 
-- `desc`: The title and / or description of the feature. Supports Markdown.
-- `paper`: One or multiple paper numbers that belong to the feature.
-- `lib`: If true, the feature counts as a standard library feature. (default: `false`)
-- `support`: A list of toolchains that support the feature.
+- **`desc`**: The title and / or description of the feature. Supports Markdown.
+- **`paper`**: One or multiple paper numbers that belong to the feature.
+- **`lib`**: If true, the feature counts as a standard library feature. (default: `false`)
+- **`support`**: A list of toolchains that support the feature.
   - A toolchain must be in the form of `<name> <version>`, e.g. `GCC 16` and `MSVC 14.50`.
     - If no version is specified, e.g. `GCC`, then that toolchain supports the feature in general.
   - Adding a `(partial)` or `(hint)` suffix declares partial support or a hint.
-- `hints`: A list of hints targeting toolchains in the `support` list, where each entry has:
-  - `target`: The toolchain that this hint targets
-  - `msg`: The reason for partial support, or the hint. Supports Markdown.
-- `ftm`: A list of feature-testing macros (FTM) for the feature, where each entry has:
-  - `name`: The name of the FTM, e.g. `__cpp_lib_not_fn`
-  - `value`: The value of the FTM, e.g. `201603L`
-- `content`: Information about the feature (see below)
-- `keywords`: A list of keywords to categorize the feature. The feature will be included in search results when searching for these keywords.
+- **`hints`**: A list of hints targeting toolchains in the `support` list, where each entry has:
+  - **`target`**: The toolchain that this hint targets
+  - **`msg`**: The reason for partial support, or the hint. Supports Markdown.
+- **`ftm`**: A list of feature-testing macros (FTM) for the feature, where each entry has:
+  - **`name`**: The name of the FTM, e.g. `__cpp_lib_not_fn`
+  - **`value`**: The value of the FTM, e.g. `201603L`
+- **`content`**: Information about the feature (see below)
+- **`keywords`**: A list of keywords to categorize the feature. The feature will be included in search results when searching for these keywords.
 
 As a **full** reference example, here is the definition of P2465 at the time of writing:
 
@@ -88,7 +88,7 @@ Which will look like the following on cppstat:
 
 Every feature can have an in-depth explanation hidden behind its info button.
 
-The `content` property of a feature specifies the **Markdown file** that describes the feature.
+The **`content`** property of a feature specifies the **Markdown file** that describes the feature.
 This file is expected to be in the `content` folder.
 
 For example, the feature P2589 (`static operator[]`) is defined as follows:
@@ -112,7 +112,7 @@ Each feature should include a sample snippet that shows how it can be used in co
 The snippet helps the reader to better understand the feature and to try it out directly in the browser.
 
 Markdown multiline code blocks are expected (triple backticks).
-For C++ feature's, a `cpp` block is expected; for C it's `c`.
+For C++ feature's, a **`cpp`** block is expected; for C it's **`c`**.
 
 Example of how it looks on cppstat:
 
