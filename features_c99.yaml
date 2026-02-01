@@ -16,6 +16,7 @@ features:
       - TinyCC
   - desc: "`//` comments"
     paper: N644
+    content: c-line-comments.md
     support:
       - GCC
       - Clang
@@ -25,6 +26,7 @@ features:
       - TinyCC
   - desc: "`restrict` pointers"
     paper: N448
+    content: c-restrict.md
     support:
       - GCC
       - Clang
@@ -49,6 +51,7 @@ features:
       - Clang (partial)
       - Xcode (partial)
   - desc: "Flexible array members"
+    content: c-flexible-array.md
     support:
       - GCC 3
       - Clang
@@ -57,6 +60,7 @@ features:
       - TinyCC
   - desc: "[Variable-length array](https://en.cppreference.com/w/c/language/array.html#Variable-length_arrays) (VLA) types"
     paper: N683
+    content: c-vla.md
     support:
       - GCC
       - Clang
@@ -69,6 +73,7 @@ features:
       - Xcode
   - desc: "Designated initializers"
     paper: N494
+    content: c-designated-init.md
     support:
       - GCC 3
       - Clang
@@ -93,6 +98,7 @@ features:
       - TinyCC
   - desc: "Hexadecimal [floating constants](https://en.cppreference.com/w/c/language/floating_constant.html)"
     paper: N308
+    content: c-hex-float.md
     support:
       - GCC 2.8
       - Clang
@@ -102,6 +108,7 @@ features:
       - TinyCC
   - desc: "[Compound literals](https://en.cppreference.com/w/c/language/compound_literal.html)"
     paper: N716
+    content: c-compound-literals.md
     support:
       - GCC 3.1
       - Clang
@@ -145,6 +152,7 @@ features:
       - TinyCC
   - desc: "`inline` functions"
     paper: N741
+    content: c-inline.md
     support:
       - GCC 4.3
       - Clang
@@ -154,6 +162,7 @@ features:
       - TinyCC
   - desc: "Predefined variable `__func__`"
     paper: N611
+    content: c-func.md
     support:
       - GCC 3
       - Clang
@@ -168,6 +177,7 @@ features:
       - Xcode
   - desc: "[Variadic macros](https://en.cppreference.com/w/c/preprocessor/replace.html)"
     paper: N707
+    content: c-variadic-macros.md
     support:
       - GCC 3
       - Clang
