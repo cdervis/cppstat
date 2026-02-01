@@ -27,7 +27,7 @@ You can edit these files directly via GitHub's web interface and commit your cha
 
 Alternatively, you can [submit a ticket](https://github.com/cdervis/cppstat/issues) for any incorrect or missing information, or feature ideas.
 
-If you are a toolchain or compiler vendor, feel free to request full editorial access.
+If you are a toolchain developer, feel free to request full editorial access.
 
 ---
 
@@ -40,7 +40,7 @@ A feature has the following properties:
 
 - `desc`: The title and / or description of the feature. Supports Markdown.
 - `paper`: One or multiple paper numbers that belong to the feature.
-- `lib`: If true, the feature counts as a standard library feature. The default is false.
+- `lib`: If true, the feature counts as a standard library feature. (default: `false`)
 - `support`: A list of toolchains that support the feature.
   - A toolchain must be in the form of `<name> <version>`, e.g. `GCC 16` and `MSVC 14.50`.
     - If no version is specified, e.g. `GCC`, then that toolchain supports the feature in general.
@@ -96,13 +96,37 @@ For example, the feature P2589 (`static operator[]`) is defined as follows:
 ```yaml
 - desc: '`static operator[]`'
   ...
-  content: p2589_static_subscript_operator.md
+  content: static-subscript-operator.md
 ```
 
-This feature's explanation is therefore expected to be in `content/p2589_static_subscript_operator.md`.
+This feature's explanation is therefore expected to be in `content/static-subscript-operator.md`.
 
-> [!NOTE]  
-> Although the name of the file **does not matter**, it should at least include the paper's name.
+The structure of a content file should be:
+  1. **What It Does**: Explains to the reader briefly and in easy-to-understand terms what the function does.
+  2. **Why It Matters**: Explains the background to why the function was originally standardized, e.g. what historical problems it solves.
+  3. **Example**: A short, interactive example how the feature can be used in code.
+
+#### Code Editors
+
+Each feature should include a sample snippet that shows how it can be used in code.
+The snippet helps the reader to better understand the feature and to try it out directly in the browser.
+
+Markdown multiline code blocks are expected (triple backticks).
+For C++ feature's, a `cpp` block is expected; for C it's `c`.
+
+Example of how it looks on cppstat:
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/feature_example_editor_dark.webp">
+  <source media="(prefers-color-scheme: light)" srcset="assets/feature_example_editor_light.webp">
+  <img alt="Logo" src="assets/feature_example_editor_light.webp" width="600">
+</picture>
+
+The frontmatter of a content file can specify the following properties:
+
+- **execute**: If `true`, allows execution of the program. (default: `false`)
+- **flags**: Extra flags to pass to the compiler. (default: latest standard of the feature's language + `-O2`)
+- **show_assembly**: If `true`, adds an assembly output tab to the compilation result. (default: `false`)
 
 ---
 
