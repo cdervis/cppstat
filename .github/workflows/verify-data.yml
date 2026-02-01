@@ -21,18 +21,31 @@ jobs:
           yamllint_strict: false
           yamllint_comment: false
 
-      - name: "Set up Python"
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.x"
-
       - name: "Install dependencies"
-        run: |
-          python3 -m pip install --upgrade pip
-          python3 -m pip install PyYAML jsonschema
+        run: sudo apt-get update && sudo apt-get install -y g++-14 libyaml-cpp-dev nlohmann-json3-dev
 
-      - name: "Verify features"
+      - name: "Fetch json-schema-validator"
+        run: |
+          rm -rf json-schema-validator
+          git clone --depth 1 https://github.com/pboettch/json-schema-validator.git json-schema-validator
+
+      - name: "Build YAML validator"
+        run: |
+          g++-14 -std=c++23 -Wall -Wextra \
+            $(pkg-config --cflags yaml-cpp) \
+            $(pkg-config --cflags nlohmann_json) \
+            -Ijson-schema-validator/src \
+            -o validate_yaml_file \
+            validate_yaml_file.cpp \
+            json-schema-validator/src/json-uri.cpp \
+            json-schema-validator/src/json-validator.cpp \
+            json-schema-validator/src/json-schema-draft7.json.cpp \
+            json-schema-validator/src/json-patch.cpp \
+            $(pkg-config --libs yaml-cpp)
+
+      - name: "Validate feature files"
         run: |
           for file in features_c*.yaml; do
-            python3 verify_features.py "$file"
+            echo "Verifying: $file"
+            ./validate_yaml_file "$file"
           done
