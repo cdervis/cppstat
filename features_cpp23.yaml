@@ -497,6 +497,8 @@ features:
     support:
       - GCC 16
       - Clang
+      - MSVC ?
+      - Xcode ?
 
   - desc: "Character sets and encodings"
     paper: P2314
@@ -1025,16 +1027,29 @@ features:
   - desc: "Asymmetric Fences"
     paper: P1202
     lib: true
+    support:
+      - GCC ?
+      - Clang ?
+      - MSVC ?
+      - Xcode ?
 
   - desc: "Revising the wording of stream input operations"
     paper: P1264
     lib: true
     support:
+      - GCC ?
       - Clang 9
+      - MSVC ?
+      - Xcode ?
 
   - desc: "Byte-wise atomic `std::memcpy()`"
     paper: P1478
     lib: true
+    support:
+      - GCC ?
+      - Clang ?
+      - MSVC ?
+      - Xcode ?
 
   - desc: "`std::flat_map` (`<flat_map>`)"
     paper: P0429
@@ -1552,7 +1567,10 @@ features:
     paper: P2713
     lib: true
     support:
+      - GCC ?
       - Clang 19
+      - MSVC ?
+      - Xcode ?
 
   - desc: "Improving `std::format()`'s width estimation"
     paper: P2675
