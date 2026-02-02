@@ -6,25 +6,25 @@ features:
       - GCC 9
       - Clang 9
       - MSVC
-      - Xcode
+      - Xcode ?
   - desc: "`[[nodiscard]]`"
     paper: N2267
     support:
       - GCC 10
       - Clang 9
-      - Xcode
+      - Xcode ?
   - desc: "`[[maybe_unused]]`"
     paper: N2270
     support:
       - GCC 10
       - Clang 9
-      - Xcode
+      - Xcode ?
   - desc: "`[[deprecated]]`"
     paper: N2334
     support:
       - GCC 10
       - Clang 9
-      - Xcode
+      - Xcode ?
   - desc: "[Attributes](https://en.cppreference.com/w/c/language/attributes.html)"
     paper:
       - N2335
@@ -33,7 +33,7 @@ features:
     support:
       - GCC 10
       - Clang 9
-      - Xcode
+      - Xcode ?
   - desc: "IEEE 754 decimal floating-point types"
     paper: N2341
     support:
@@ -44,13 +44,13 @@ features:
     support:
       - GCC 10
       - Clang 9
-      - Xcode
+      - Xcode ?
   - desc: "[u8 character constants](https://en.cppreference.com/w/c/language/character_constant.html)"
     paper: N2418
     support:
       - GCC 10
       - Clang 15
-      - Xcode 16.1
+      - Xcode 15
   - desc: "Removal of [function definitions](https://en.cppreference.com/w/c/language/function_definition.html) without prototype"
     paper: N2432
     support:
@@ -62,20 +62,20 @@ features:
     support:
       - GCC 11
       - Clang 10
-      - Xcode 16.1
+      - Xcode 14
   - desc: "Unnamed parameters in function definitions"
     paper: N2480
     support:
       - GCC 11
       - Clang 11
-      - Xcode 16.1
+      - Xcode 13
   - desc: "[Labels](https://en.cppreference.com/w/c/language/statements.html#Labels) before declarations and end of blocks"
     paper: N2508
     support:
       - GCC 11
       - Clang 16
       - MSVC (partial)
-      - Xcode 16.1
+      - Xcode 15
   - desc: "[Binary integer constants](https://en.cppreference.com/w/c/language/integer_constant.html)"
     paper: N2549
     content: c-binary-literals.md
@@ -85,7 +85,7 @@ features:
       - Clang 2.9 (hint)
       - Clang 9
       - MSVC 14.0 (hint)
-      - Xcode
+      - Xcode ?
       - owcc
       - TinyCC
     hints:
@@ -100,13 +100,13 @@ features:
     support:
       - GCC 11
       - Clang 9
-      - Xcode
+      - Xcode ?
   - desc: "Allow duplicate attributes"
     paper: N2557
     support:
       - GCC 11
       - Clang 13
-      - Xcode
+      - Xcode ?
   - desc: "IEEE 754 interchange and extended types"
     paper: N2601
     support:
@@ -128,7 +128,7 @@ features:
       - GCC 12
       - Clang 13
       - MSVC 14.0 (hint)
-      - Xcode
+      - Xcode ?
     hints:
       - target: MSVC 14.0
         msg: "Supported as an extension."
@@ -164,7 +164,7 @@ features:
     support:
       - GCC 14 (partial)
       - Clang 15
-      - Xcode 16.1
+      - Xcode 15
     hints:
       - target: GCC 14
         msg: "Only supported on IA-32, x86-64 and AArch64 LE."
@@ -173,7 +173,7 @@ features:
     support:
       - GCC 13
       - Clang 15
-      - Xcode 16.1
+      - Xcode 15
   - desc: "Suffixes for bit-precise integer constants"
     paper: N2775
     support:
@@ -186,7 +186,7 @@ features:
       - GCC 5
       - Clang
       - MSVC 14.11
-      - Xcode
+      - Xcode ?
       - TinyCC
   - desc: "Identifier Syntax using Unicode Standard Annex 31"
     paper: N2836
@@ -303,7 +303,7 @@ features:
       - GCC 13
       - Clang 12 (partial)
       - MSVC 14.39
-      - Xcode 16.1
+      - Xcode 14
   - desc: "Storage-class specifiers for compound literals"
     paper: N3038
     support:
