@@ -1,0 +1,332 @@
+---
+features:
+  - desc: "Round-trip rounding"
+    paper: N3232
+    lib: true
+    support:
+      - GCC ?
+      - Clang
+      - Xcode ?
+
+  - desc: "Slay Some Earthly Demons I"
+    paper: N3244
+    support:
+      - GCC ?
+      - Clang (partial)
+      - Xcode ?
+    hints:
+      - target: Clang
+        msg: "Clang does not document the implementation-defined behavior for decay of an array with the register storage class specifier. Clang does not diagnose an extern inline function with no definition in the TU. Clang accepts and rejects redeclarations with/without an alignment specifier, depending on the order of the declarations."
+
+  - desc: "Accessing byte arrays"
+    paper: N3254
+    support:
+      - GCC 15
+      - Clang 18
+      - Xcode 16.4
+
+  - desc: "Support `++` and `--` on complex values"
+    paper: N3259
+    content: c-complex-inc-dec.md
+    support:
+      - GCC 3
+      - Clang 18
+      - Xcode 16.4
+
+  - desc: "Generic selection expression with a type operand"
+    paper: N3260
+    content: c-generic-type-operand.md
+    support:
+      - GCC 15
+      - Clang 17
+      - Xcode 16.4
+
+  - desc: "`alignof` of an incomplete array type"
+    paper: N3273
+    content: c-alignof-incomplete.md
+    support:
+      - GCC 15
+      - Clang 3.5
+
+  - desc: "Remove imaginary types"
+    paper: N3274
+    support:
+      - Clang
+      - Xcode ?
+
+  - desc: "Floating-point exceptions for macro replacements"
+    paper: N3286
+    lib: true
+    support:
+      - Clang
+      - Xcode 16.4
+
+  - desc: "Introduce complex literals"
+    paper: N3298
+    content: c-complex-literals.md
+    support:
+      - GCC 2.5
+      - Clang
+      - Xcode 16.4
+
+  - desc: "Allowing stricter alignment for atomic types"
+    paper: N3312
+    support:
+      - Clang
+      - Xcode 16.4
+
+  - desc: "Allow zero length operations on null pointers"
+    paper: N3322
+    support:
+      - GCC 15
+      - Clang
+      - Xcode 16.4
+
+  - desc: "How do you add one to something?"
+    paper: N3323
+    support:
+      - Clang
+      - Xcode 16.4
+
+  - desc: "Slay Some Earthly Demons III"
+    paper: N3341
+    support:
+      - Clang
+      - Xcode 16.4
+
+  - desc: "Slay Some Earthly Demons IV"
+    paper: N3342
+    support:
+      - Clang
+      - Xcode 16.4
+
+  - desc: "Slay Some Earthly Demons VI"
+    paper: N3344
+    support:
+      - Clang 20
+      - Xcode 16.4
+
+  - desc: "Slay Some Earthly Demons VII"
+    paper: N3345
+    support:
+      - Clang
+      - Xcode 16.4
+
+  - desc: "Slay Some Earthly Demons VIII"
+    paper: N3346
+    support:
+      - Clang
+      - Xcode ?
+
+  - desc: "Slay Some Earthly Demons IX"
+    paper: N3347
+    support:
+      - Clang
+      - Xcode 16.4
+
+  - desc: "Obsolete implicitly octal literals and delimited escape sequences"
+    paper: N3353
+    content: c-octal-literals.md
+    support:
+      - GCC 15
+      - Clang 21
+      - Xcode ?
+
+  - desc: "Named loops"
+    paper: N3355
+    content: c-named-loops.md
+    support:
+      - GCC 15
+      - Clang 22
+      - Xcode ?
+
+  - desc: "`if` declarations"
+    paper: N3356
+    content: c-if-declarations.md
+    support:
+      - GCC 15
+
+  - desc: "Consistent wording for SNAN initialization"
+    paper: N3364
+    support:
+      - Clang
+      - Xcode 16.4
+
+  - desc: "Case range expressions (`case x ... y`)"
+    paper: N3370
+    content: c-case-range.md
+    support:
+      - GCC 2
+      - Clang
+      - Xcode 16.4
+
+  - desc: "`stdarg.h` wording improvements"
+    paper: N3363
+    support:
+      - Clang 5
+      - Xcode 16.4
+
+  - desc: "`_Countof` operator"
+    paper:
+      - N3369
+      - N3469
+    content: c-countof.md
+    support:
+      - GCC 16
+      - Clang 21
+
+  - desc: "Restartable Functions for Efficient Character Conversions"
+    paper: N3366
+    support:
+      - Clang ?
+      - MSVC ?
+      - Xcode ?
+
+  - desc: "Abs Without Undefined Behavior"
+    paper: N3349
+    support:
+      - Clang ?
+      - MSVC ?
+      - Xcode ?
+
+  - desc: "More Modern Bit Utilities"
+    paper: N3367
+    support:
+      - Clang ?
+      - MSVC ?
+      - Xcode ?
+
+  - desc: "Error conditions in `<math.h>`"
+    paper: N3405
+    lib: true
+
+  - desc: "Slay Some Earthly Demons X"
+    paper: N3409
+    support:
+      - Clang 21
+
+  - desc: "Slay Some Earthly Demons XI"
+    paper: N3410
+    support:
+      - Xcode 16.4
+
+  - desc: "Slay Some Earthly Demons XII"
+    paper: N3411
+    support:
+      - Clang 21
+      - Xcode 16.4
+
+  - desc: "Slay Some Earthly Demons XIV"
+    paper: N3418
+
+  - desc: "Const integer declarations as implicit `constexpr`"
+    paper: N3443
+    content: c-const-constexpr.md
+
+  - desc: "Anonymous structure/union initialization"
+    paper: N3451
+    support:
+      - Clang
+
+  - desc: "The `__COUNTER__` predefined macro"
+    paper: N3457
+    content: c-counter-macro.md
+    support:
+      - Clang 22
+
+  - desc: "Complex operators"
+    paper: N3460
+    support:
+      - Clang 12
+      - Xcode 16.4
+
+  - desc: "Range error definition followup"
+    paper: N3461
+    lib: true
+
+  - desc: "Preprocessor integer expressions"
+    paper:
+      - N3465
+      - N3505
+    support:
+      - Clang
+
+  - desc: "Null pointer clarifications in library"
+    paper: N3466
+    lib: true
+    support:
+      - GCC 16
+      - Xcode 16.4
+
+  - desc: "`auto` as placeholder type for parameters"
+    paper: N3472
+
+  - desc: "Slay Some Earthly Demons XIII"
+    paper: N3478
+    support:
+      - Clang
+
+  - desc: "Slay Some Earthly Demons XVI"
+    paper: N3481
+    support:
+      - Clang
+      - Xcode 16.4
+
+  - desc: "Slay Some Earthly Demons XVII"
+    paper: N3482
+    support:
+      - Clang
+      - Xcode 16.4
+
+  - desc: "Slay Some Earthly Demons V"
+    paper: N3484
+    support:
+      - Xcode 16.4
+
+  - desc: "Error conditions for narrow type rounding"
+    paper: N3492
+    lib: true
+
+  - desc: "Clarify width macros specification"
+    paper: N3496
+    support:
+      - Clang 20
+      - Xcode 16.4
+
+  - desc: "`static_assert` without UB"
+    paper: N3525
+    support:
+      - Clang
+      - Xcode ?
+
+  - desc: "Member access of an incomplete object"
+    paper: N3532
+    support:
+      - Clang
+      - Xcode 16.4
+
+  - desc: "Chasing Ghosts I: constant expressions"
+    paper: N3558
+    support:
+      - GCC ?
+      - MSVC ?
+      - Clang ?
+      - Xcode ?
+
+  - desc: "Generic replacement (quasi-literals)"
+    paper: N3605
+    support:
+      - Clang
+      - Xcode ?
+
+  - desc: "Allow calling `static inline` within `extern inline`"
+    paper: N3622
+    support:
+      - Clang 22
+      - Xcode ?
+
+  - desc: "Earthly Demon XV: Definition of Main"
+    paper: N3623
+    support:
+      - Clang
+      - Xcode ?
