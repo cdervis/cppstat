@@ -4,8 +4,6 @@
 
 [cppstat.dev]: https://cppstat.dev
 
----
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cover_dark.webp">
   <source media="(prefers-color-scheme: light)" srcset="assets/cover_light.webp">
@@ -112,7 +110,7 @@ Each feature should include a sample snippet that shows how it can be used in co
 The snippet helps the reader to better understand the feature and to try it out directly in the browser.
 
 Markdown multiline code blocks are expected (triple backticks).
-For C++ feature's, a **`cpp`** block is expected; for C it's **`c`**.
+For C++ features, a **`cpp`** block is expected; for C it's **`c`**.
 
 Example of how it looks on cppstat:
 
