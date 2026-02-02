@@ -31,7 +31,7 @@ features:
       - GCC
       - Clang
       - MSVC (partial)
-      - Xcode
+      - Xcode 13
       - owcc
       - TinyCC
     hints:
@@ -64,7 +64,7 @@ features:
     support:
       - GCC
       - Clang
-      - Xcode
+      - Xcode 14
       - TinyCC
   - desc: "Variably-modified (VM) types"
     paper: N2778
@@ -78,7 +78,7 @@ features:
       - GCC 3
       - Clang
       - MSVC
-      - Xcode
+      - Xcode 14
   - desc: "Non-constant initializers"
     support:
       - GCC
@@ -113,12 +113,12 @@ features:
       - GCC 3.1
       - Clang
       - MSVC
-      - Xcode
+      - Xcode 14
   - desc: "Floating-point environment"
     support:
       - GCC (partial)
       - Clang (partial)
-      - Xcode (partial)
+      - Xcode 14 (partial)
   - desc: "Requiring truncation for divisions of signed integer types"
     paper: N617
     support:
@@ -139,7 +139,7 @@ features:
       - GCC 3
       - Clang
       - MSVC
-      - Xcode
+      - Xcode 14
       - owcc
       - TinyCC
   - desc: "_init-statement_ in `for` loops"
@@ -157,7 +157,7 @@ features:
       - GCC 4.3
       - Clang
       - MSVC
-      - Xcode
+      - Xcode 14
       - owcc
       - TinyCC
   - desc: "Predefined variable `__func__`"
@@ -167,7 +167,7 @@ features:
       - GCC 3
       - Clang
       - MSVC
-      - Xcode
+      - Xcode 14
       - owcc
       - TinyCC
   - desc: "Cvr-qualifiers and `static` in `[]` within function declarations"
@@ -182,7 +182,7 @@ features:
       - GCC 3
       - Clang
       - MSVC
-      - Xcode
+      - Xcode 14
       - owcc
       - TinyCC
   - desc: "`_Pragma` preprocessor operator"
@@ -191,7 +191,7 @@ features:
       - GCC 3
       - Clang
       - MSVC (partial)
-      - Xcode
+      - Xcode 14
       - owcc
     hints:
       - target: MSVC
