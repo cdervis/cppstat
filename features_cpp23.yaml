@@ -497,7 +497,7 @@ features:
     support:
       - GCC 16
       - Clang
-      - MSVC ?
+      - MSVC 14.30
       - Xcode ?
 
   - desc: "Character sets and encodings"
@@ -1030,7 +1030,6 @@ features:
     support:
       - GCC ?
       - Clang ?
-      - MSVC ?
       - Xcode ?
 
   - desc: "Revising the wording of stream input operations"
@@ -1039,7 +1038,7 @@ features:
     support:
       - GCC ?
       - Clang 9
-      - MSVC ?
+      - MSVC
       - Xcode ?
 
   - desc: "Byte-wise atomic `std::memcpy()`"
@@ -1048,7 +1047,6 @@ features:
     support:
       - GCC ?
       - Clang ?
-      - MSVC ?
       - Xcode ?
 
   - desc: "`std::flat_map` (`<flat_map>`)"
@@ -1569,7 +1567,7 @@ features:
     support:
       - GCC ?
       - Clang 19
-      - MSVC ?
+      - MSVC 14.37
       - Xcode ?
 
   - desc: "Improving `std::format()`'s width estimation"
