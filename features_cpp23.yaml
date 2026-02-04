@@ -1042,8 +1042,6 @@ features:
     lib: true
     support:
       - GCC ?
-      - Clang ?
-      - Xcode ?
 
   - desc: "`std::flat_map` (`<flat_map>`)"
     paper: P0429
