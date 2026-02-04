@@ -1565,10 +1565,10 @@ features:
     paper: P2713
     lib: true
     support:
-      - GCC ?
+      - GCC 15
       - Clang 19
       - MSVC 14.37
-      - Xcode ?
+      - Xcode 16.4
 
   - desc: "Improving `std::format()`'s width estimation"
     paper: P2675
