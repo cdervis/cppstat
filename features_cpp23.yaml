@@ -1035,7 +1035,7 @@ features:
       - GCC ?
       - Clang 9
       - MSVC
-      - Xcode ?
+      - Xcode 12
 
   - desc: "Byte-wise atomic `std::memcpy()`"
     paper: P1478
