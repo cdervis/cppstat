@@ -1027,10 +1027,6 @@ features:
   - desc: "Asymmetric Fences"
     paper: P1202
     lib: true
-    support:
-      - GCC ?
-      - Clang ?
-      - Xcode ?
 
   - desc: "Revising the wording of stream input operations"
     paper: P1264
