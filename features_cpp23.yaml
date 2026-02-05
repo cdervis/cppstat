@@ -476,7 +476,7 @@ features:
       - GCC 16
       - Clang
       - MSVC 14.30
-      - Xcode ?
+      - Xcode
 
   - desc: "Character sets and encodings"
     paper: P2314
