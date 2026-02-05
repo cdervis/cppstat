@@ -140,28 +140,6 @@ features:
       - name: __cpp_if_consteval
         value: 202106L
 
-  - desc: "Removing garbage collection support"
-    paper: P2186
-    support:
-      - GCC 12
-      - Clang (hint)
-      - MSVC 14.30
-      - Xcode (hint)
-    hints:
-      - target: Clang
-        msg: "Clang did not have garbage collection support, therefore it was not necessary to remove it."
-      - target: Xcode
-        msg: "Not applicable to Xcode / Apple Clang."
-
-  - desc: "Remove garbage collection and reachability-based leak detection (library support)"
-    paper: P2186
-    lib: true
-    support:
-      - GCC 12
-      - Clang 14
-      - MSVC 14.30
-      - Xcode 14.3
-
   - desc: "C++ identifier syntax using Unicode Standard Annex 31"
     paper: P1949
     support:
