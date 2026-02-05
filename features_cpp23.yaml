@@ -1024,10 +1024,6 @@ features:
       - name: __cpp_lib_mdspan
         value: 202207L
 
-  - desc: "Asymmetric Fences"
-    paper: P1202
-    lib: true
-
   - desc: "Revising the wording of stream input operations"
     paper: P1264
     lib: true
@@ -1036,12 +1032,6 @@ features:
       - Clang 9
       - MSVC
       - Xcode 12
-
-  - desc: "Byte-wise atomic `std::memcpy()`"
-    paper: P1478
-    lib: true
-    support:
-      - GCC ?
 
   - desc: "`std::flat_map` (`<flat_map>`)"
     paper: P0429
