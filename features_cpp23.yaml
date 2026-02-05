@@ -1056,7 +1056,7 @@ features:
       - name: __cpp_lib_ranges_stride
         value: 202207L
 
-  - desc: "Formatted output library (`<print>`, `std::println()`)"
+  - desc: "Formatted output library (`<print>`, `std::print()`, `std::println()`)"
     paper: [P2093, P2539]
     content: print.md
     lib: true
