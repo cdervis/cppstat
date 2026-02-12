@@ -1018,6 +1018,7 @@ features:
     support:
       - GCC 15
       - Clang 20
+      - MSVC 14.51
       - Xcode 26
     ftm:
       - name: __cpp_lib_flat_map
@@ -1026,7 +1027,10 @@ features:
   - desc: "`std::flat_set` (`<flat_set>`)"
     paper: P1222
     lib: true
-    support: [GCC 15, Clang 21]
+    support:
+      - GCC 15
+      - Clang 21
+      - MSVC 14.51
     ftm:
       - name: __cpp_lib_flat_set
         value: 202207L
