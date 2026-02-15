@@ -39,7 +39,7 @@ int main() {
     std::println("numbers: {}", nums);
     std::println("numbers without brackets: {:n}", nums);
 
-    auto ages = std::map{
+    auto ages = std::map<std::string, int>{
         {"Alice"s, 30},
         {"Bob"s, 25},
     };
