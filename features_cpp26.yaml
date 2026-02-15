@@ -55,6 +55,7 @@ features:
 
   - desc: "User-generated `static_assert` messages"
     paper: P2741
+    content: static-assert-message.md
     summary: "`static_assert` can now use user-generated strings, not just string literals."
     support:
       - GCC 14
@@ -146,6 +147,7 @@ features:
 
   - desc: "Formatting pointers"
     paper: P2510
+    content: formatting-pointers.md
     lib: true
     support:
       - GCC 14
@@ -329,6 +331,7 @@ features:
   - desc: "`std::copyable_function`"
     paper: P2548
     summary: "A `std::function` variant that guarantees copyability and const-correctness."
+    content: copyable-function.md
     lib: true
     ftm:
       - name: __cpp_lib_copyable_function
@@ -353,6 +356,7 @@ features:
   - desc: "`std::submdspan()`"
     paper: [P2630, P3355]
     summary: "Extract sub-views from multidimensional spans."
+    content: submdspan.md
     lib: true
     support: [GCC 16]
     ftm:
@@ -361,6 +365,7 @@ features:
 
   - desc: "Template parameter initialization"
     paper: P2308
+    content: template-parameter-init.md
     support:
       - GCC 9
       - Clang 18
@@ -388,6 +393,7 @@ features:
   - desc: "Saturation arithmetic"
     paper: P0543
     summary: "Arithmetic operations that clamp to min/max instead of overflowing."
+    content: saturation-arithmetic.md
     lib: true
     support:
       - GCC 14
@@ -430,6 +436,7 @@ features:
 
   - desc: "Runtime format strings (`std::format()`)"
     paper: P2905
+    content: make-format-args-lvalue.md
     lib: true
     support:
       - GCC 14
@@ -442,6 +449,7 @@ features:
 
   - desc: "Runtime format strings II (`std::format()`)"
     paper: P2918
+    content: runtime-format.md
     lib: true
     support:
       - GCC 14
@@ -470,6 +478,7 @@ features:
 
   - desc: "`std::span` over an initializer list"
     paper: P2447
+    content: span-initializer-list.md
     lib: true
     support:
       - GCC 15
@@ -481,6 +490,7 @@ features:
 
   - desc: "`std::span::at()`"
     paper: P2821
+    content: span-at.md
     lib: true
     support:
       - GCC 14
@@ -510,6 +520,7 @@ features:
 
   - desc: "Add tuple protocol to complex"
     paper: P2819
+    content: complex-tuple-protocol.md
     lib: true
     support:
       - GCC 15
@@ -552,6 +563,7 @@ features:
 
   - desc: "Make `assert()` macro user friendly for C and C++"
     paper: P2264
+    content: assert-variadic.md
     lib: true
 
   - desc: "A free function linear algebra interface based on the BLAS (`<linalg>`)"
@@ -990,6 +1002,7 @@ features:
 
   - desc: "Trivial unions (was `std::uninitialized<T>`)"
     paper: P3074
+    content: trivial-unions.md
     ftm:
       - name: __cpp_trivial_union
         value: 202502L
@@ -1084,6 +1097,7 @@ features:
   - desc: "`constexpr` containers and adaptors"
     paper: P3372
     summary: "More standard containers work at compile time."
+    content: constexpr-containers.md
     lib: true
     ftm:
       - name: __cpp_lib_constexpr_deque
@@ -1122,6 +1136,7 @@ features:
 
   - desc: "`constexpr` exception types"
     paper: P3378
+    content: constexpr-exception-types.md
     lib: true
     ftm:
       - name: __cpp_lib_constexpr_exceptions
@@ -1293,6 +1308,7 @@ features:
   - desc: "Expansion Statements (`template for`)"
     paper: P1306
     summary: "`template for` iterates over compile-time ranges like tuples and reflection results."
+    content: expansion-statements.md
     support: [GCC 16]
     ftm:
       - name: __cpp_expansion_statements
@@ -1511,6 +1527,7 @@ features:
 
   - desc: "Minor additions to C++26 standard library hardening"
     paper: P3697
+    content: hardening-additions.md
     lib: true
     support: [MSVC 14.50 (partial)]
     hints:
