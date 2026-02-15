@@ -28,7 +28,7 @@ features:
     support:
       - GCC 4.3
       - Clang
-      - MSVC 14.0
+      - MSVC 8.0
       - Xcode
 
   - desc: "Extended `friend` declarations"
@@ -44,7 +44,7 @@ features:
     support:
       - GCC
       - Clang
-      - MSVC 14.0
+      - MSVC 8.0
       - Xcode
 
   - desc: "[`auto`](https://cppreference.com/w/cpp/language/auto.html)"
@@ -74,7 +74,7 @@ features:
     support:
       - GCC 3.3
       - Clang
-      - MSVC 12.0
+      - MSVC 6.0
       - Xcode
 
   - desc: "`constexpr`"

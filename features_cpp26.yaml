@@ -846,14 +846,6 @@ features:
     support: [GCC 16]
     keywords: ["random"]
 
-  - desc: "Remove `[[nodiscard]]` annotations from the standard library specification"
-    paper: P2422
-    lib: true
-    support: [Clang 19 (hint)]
-    hints:
-      - target: Clang 19
-        msg: "`nodiscard` attributes were kept as a conforming extension."
-
   - desc: "`std::execution` (`<execution>`)"
     paper: [P2300, P3396]
     summary: "A framework for asynchronous and parallel programming based on senders and receivers."
@@ -1553,7 +1545,7 @@ features:
   - desc: "`flat_meow` fixes"
     paper: P3567
     lib: true
-    support: [Clang 22]
+    support: [Clang 22, MSVC 14.51]
     ftm:
       - name: __cpp_lib_flat_map
         value: 202511L

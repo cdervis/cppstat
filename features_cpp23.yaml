@@ -140,28 +140,6 @@ features:
       - name: __cpp_if_consteval
         value: 202106L
 
-  - desc: "Removing garbage collection support"
-    paper: P2186
-    support:
-      - GCC 12
-      - Clang (hint)
-      - MSVC 14.30
-      - Xcode (hint)
-    hints:
-      - target: Clang
-        msg: "Clang did not have garbage collection support, therefore it was not necessary to remove it."
-      - target: Xcode
-        msg: "Not applicable to Xcode / Apple Clang."
-
-  - desc: "Remove garbage collection and reachability-based leak detection (library support)"
-    paper: P2186
-    lib: true
-    support:
-      - GCC 12
-      - Clang 14
-      - MSVC 14.30
-      - Xcode 14.3
-
   - desc: "C++ identifier syntax using Unicode Standard Annex 31"
     paper: P1949
     support:
@@ -497,8 +475,8 @@ features:
     support:
       - GCC 16
       - Clang
-      - MSVC ?
-      - Xcode ?
+      - MSVC 14.30
+      - Xcode
 
   - desc: "Character sets and encodings"
     paper: P2314
@@ -1024,32 +1002,14 @@ features:
       - name: __cpp_lib_mdspan
         value: 202207L
 
-  - desc: "Asymmetric Fences"
-    paper: P1202
-    lib: true
-    support:
-      - GCC ?
-      - Clang ?
-      - MSVC ?
-      - Xcode ?
-
   - desc: "Revising the wording of stream input operations"
     paper: P1264
     lib: true
     support:
       - GCC ?
       - Clang 9
-      - MSVC ?
-      - Xcode ?
-
-  - desc: "Byte-wise atomic `std::memcpy()`"
-    paper: P1478
-    lib: true
-    support:
-      - GCC ?
-      - Clang ?
-      - MSVC ?
-      - Xcode ?
+      - MSVC
+      - Xcode 12
 
   - desc: "`std::flat_map` (`<flat_map>`)"
     paper: P0429
@@ -1058,6 +1018,7 @@ features:
     support:
       - GCC 15
       - Clang 20
+      - MSVC 14.51
       - Xcode 26
     ftm:
       - name: __cpp_lib_flat_map
@@ -1066,7 +1027,10 @@ features:
   - desc: "`std::flat_set` (`<flat_set>`)"
     paper: P1222
     lib: true
-    support: [GCC 15, Clang 21]
+    support:
+      - GCC 15
+      - Clang 21
+      - MSVC 14.51
     ftm:
       - name: __cpp_lib_flat_set
         value: 202207L
@@ -1096,7 +1060,7 @@ features:
       - name: __cpp_lib_ranges_stride
         value: 202207L
 
-  - desc: "Formatted output library (`<print>`)"
+  - desc: "Formatted output library (`<print>`, `std::print()`, `std::println()`)"
     paper: [P2093, P2539]
     content: print.md
     lib: true
@@ -1567,10 +1531,10 @@ features:
     paper: P2713
     lib: true
     support:
-      - GCC ?
+      - GCC 15
       - Clang 19
-      - MSVC ?
-      - Xcode ?
+      - MSVC 14.37
+      - Xcode 16.4
 
   - desc: "Improving `std::format()`'s width estimation"
     paper: P2675
