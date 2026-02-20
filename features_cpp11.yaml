@@ -493,6 +493,25 @@ features:
         msg: "Lack of `__is_trivial(ly)*`."
       - target: MSVC 14.0
         msg: "The first version that contains incomplete and obsolete `type_traits` as defined in N2518."
+    keywords:
+      [
+        "sfinae",
+        "std::enable_if",
+        "std::conditional",
+        "std::make_pair",
+        "std::make_tuple",
+        "std::add_reference",
+        "std::is_reference",
+        "std::is_pointer",
+        "std::is_member_object",
+        "std::is_member_function_pointer",
+        "std::is_member_pointer",
+        "std::is_convertible",
+        "std::is_base_of",
+        "std::is_signed",
+        "std::has_trivial_construct",
+        "std::has_nothrow_construct",
+      ]
 
   - desc: "Member functions: `cbegin`, `cend`, `crbegin`, `crend`"
     paper: [N1913, LWG1192]
