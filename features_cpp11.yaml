@@ -62,7 +62,7 @@ features:
     paper: N1986
     support:
       - GCC 4.7
-      - Clang 3.0
+      - Clang 3
       - MSVC 12.0
       - Xcode
     ftm:
@@ -105,7 +105,7 @@ features:
       - GCC 4.3 (partial)
       - GCC 4.8 (partial)
       - GCC 5
-      - Clang 3.0
+      - Clang 3
       - MSVC 14.0 (partial)
       - MSVC 14.0
       - Xcode
@@ -119,7 +119,7 @@ features:
     paper: N2258
     support:
       - GCC 4.7
-      - Clang 3.0
+      - Clang 3
       - MSVC 12.0
       - Xcode
     ftm:
@@ -130,7 +130,7 @@ features:
     paper: N2341
     support:
       - GCC 4.8
-      - Clang 3.0
+      - Clang 3
       - MSVC 14.0
       - Xcode
 
@@ -146,7 +146,7 @@ features:
     paper: N2346
     support:
       - GCC 4.4
-      - Clang 3.0
+      - Clang 3
       - MSVC 12.0
       - Xcode
 
@@ -181,7 +181,7 @@ features:
     paper: N2437
     support:
       - GCC 4.5
-      - Clang 3.0
+      - Clang 3
       - MSVC 12.0
       - Xcode
 
@@ -200,7 +200,7 @@ features:
     paper: N2442
     support:
       - GCC 4.4
-      - Clang 3.0
+      - Clang 3
       - MSVC 14.0
       - Xcode
     ftm:
@@ -255,7 +255,7 @@ features:
     paper: N2544
     support:
       - GCC 4.6
-      - Clang 3.0
+      - Clang 3
       - MSVC 14.0
       - Xcode
     ftm:
@@ -337,7 +337,7 @@ features:
     paper: N2756
     support:
       - GCC 4.7
-      - Clang 3.0
+      - Clang 3
       - MSVC 12.0
       - Xcode
     ftm:
@@ -415,7 +415,7 @@ features:
     paper: [N2930, N3271]
     support:
       - GCC 4.6
-      - Clang 3.0
+      - Clang 3
       - MSVC 11.0
       - Xcode
     ftm:
@@ -426,7 +426,7 @@ features:
     paper: N3050
     support:
       - GCC 4.6
-      - Clang 3.0
+      - Clang 3
       - MSVC 14.0
       - Xcode
     ftm:
@@ -437,7 +437,7 @@ features:
     paper: N3053
     support:
       - GCC 4.6
-      - Clang 3.0
+      - Clang 3
       - MSVC 14.0
       - Xcode
     ftm:
@@ -482,7 +482,7 @@ features:
       - GCC 4.3 (partial)
       - GCC 4.8 (partial)
       - GCC 5
-      - Clang 3.0
+      - Clang 3
       - MSVC 14.0
       - MSVC 14.0
       - Xcode
