@@ -526,7 +526,6 @@ features:
     lib: true
     support:
       - GCC 12
-      - Clang 17
       - MSVC 14.32
     ftm:
       - name: __cpp_lib_move_only_function
