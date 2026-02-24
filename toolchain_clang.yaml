@@ -473,9 +473,10 @@ infos:
       - https://github.com/llvm/llvm-project/releases/tag/llvmorg-21.1.0
 
   - name: Clang 22
-    released: TBD
+    released: February 24, 2026
     refs:
-      - "https://clang.llvm.org/docs/ReleaseNotes.html"
+      - "https://releases.llvm.org/22.1.0/tools/clang/docs/ReleaseNotes.html"
+      - "https://github.com/llvm/llvm-project/releases/tag/llvmorg-22.1.0"
 
   - name: Clang 23
     released: TBD
