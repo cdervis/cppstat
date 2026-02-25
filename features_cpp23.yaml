@@ -769,6 +769,7 @@ features:
       - MSVC 14.34
       - Clang 21 (partial)
       - Clang 22 (partial)
+      - Clang 23
     hints:
       - target: GCC 13
         msg: "Only `ranges::iota()` is implemented."
