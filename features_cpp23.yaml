@@ -411,11 +411,17 @@ features:
     content: deducing-this.md
     support:
       - GCC 14
-      - Clang 18
-      - Clang 19
+      - Clang 18 (partial)
+      - Clang 19 (partial)
+      - Clang 20
       - MSVC 14.32
       - MSVC 14.43
       - Xcode 16.3
+    hints:
+      - target: Clang 18
+        msg: "Experimental support. Lacks P2797 and the FTM `__cpp_explicit_this_parameter`. Its support can be tested with `__has_extension(cxx_explicit_this_parameter)`."
+      - target: Clang 19
+        msg: "Completes core language support (P2797), but still lacks the FTM `__cpp_explicit_this_parameter`."
     ftm:
       - name: __cpp_explicit_this_parameter
         value: 202110L
@@ -1433,8 +1439,12 @@ features:
     paper: [P2644, P2718]
     support:
       - GCC 15
-      - Clang 19
+      - Clang 19 (partial)
+      - Clang 20
       - Xcode 16.3
+    hints:
+      - target: Clang 19
+        msg: "Misses lifetime extension of temporaries in `mem-default-init` cases."
     ftm:
       - name: __cpp_range_based_for
         value: 202211L
