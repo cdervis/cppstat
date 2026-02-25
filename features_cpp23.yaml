@@ -723,15 +723,13 @@ features:
       - GCC 13 (partial)
       - GCC 14
       - Clang 21 (partial)
-      - MSVC 14.51 (partial)
+      - MSVC 14.51
       - Xcode 16.3
     hints:
       - target: GCC 13
         msg: "Missing changes to `std::tuple`."
       - target: Clang 21
         msg: "Only type traits are implemented."
-      - target: MSVC 14.50
-        msg: "Currently only supported by the STL in conjunction with Clang."
     ftm:
       - name: __cpp_lib_reference_from_temporary
         value: 202202L
@@ -1573,11 +1571,8 @@ features:
     support:
       - GCC 16
       - Clang 20
-      - MSVC 14.51 (partial)
+      - MSVC 14.51
       - Xcode 26
-    hints:
-      - target: MSVC 14.50
-        msg: "Currently only supported by the STL in conjunction with Clang."
     ftm:
       - name: __cpp_lib_is_implicit_lifetime
         value: 202302L
