@@ -492,3 +492,10 @@ infos:
     apple_clang: 17.0.0 (clang-1700.6.3.2)
     refs:
       - https://developer.apple.com/documentation/xcode-release-notes/xcode-26_2-release-notes
+
+  - name: Xcode 26.3
+    released: February 26, 2026
+    requires: macOS 15.6 (Sequoia)
+    apple_clang: 17.0.0 (clang-1700.6.4.2)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-26_3-release-notes
