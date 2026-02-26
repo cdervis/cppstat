@@ -32,11 +32,13 @@ features:
       - Clang
       - MSVC (partial)
       - Xcode 13
-      - owcc
+      - owcc (partial)
       - TinyCC
     hints:
       - target: MSVC
         msg: "Requires /std:c11 or later."
+      - target: owcc
+        msg: "`parsed with -zastd=c99 (for wcc*), but does not change the code."
   - desc: "Enhanced [arithmetic types](https://en.cppreference.com/w/c/language/arithmetic_types.html)"
     paper:
       - N815
@@ -79,9 +81,14 @@ features:
       - Clang
       - MSVC
       - Xcode 14
+      - owcc 1.4
   - desc: "Non-constant initializers"
     support:
       - GCC
+      - owcc (partial)
+    hints:
+      - target: owcc
+        msg: "Requires -aa for wcc*."
   - desc: "Idempotent cvr-qualifiers"
     paper: N505
     support:
@@ -131,7 +138,7 @@ features:
       - Clang
       - MSVC
       - Xcode
-      - owcc
+      - owcc 1.5
       - TinyCC
   - desc: "Declarations and statements in mixed order"
     paper: N740
@@ -158,7 +165,7 @@ features:
       - Clang
       - MSVC
       - Xcode 14
-      - owcc
+      - owcc 1.3
       - TinyCC
   - desc: "Predefined variable `__func__`"
     paper: N611
@@ -168,7 +175,7 @@ features:
       - Clang
       - MSVC
       - Xcode 14
-      - owcc
+      - owcc 1.2
       - TinyCC
   - desc: "Cvr-qualifiers and `static` in `[]` within function declarations"
     support:
@@ -203,8 +210,11 @@ features:
     support:
       - Clang (partial)
       - Xcode (partial)
+      - owcc (partial)
     hints:
       - target: Clang
         msg: "`STDC FENV_ACCESS ON` is not supported."
       - target: Xcode
         msg: "`STDC FENV_ACCESS ON` is not supported."
+      - target: owcc
+        msg: "`parsed, but does not change the code."
