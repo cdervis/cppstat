@@ -140,10 +140,11 @@ features:
       - Clang 13
       - MSVC 14.40
       - Xcode 13.3
-  - desc: "Type change of [u8 string literals](https://en.cppreference.com/w/c/language/string_literal.html)"
+  - desc: "Type change of [u8 string literals](https://en.cppreference.com/w/c/language/string_literal.html) to `char8_t[]`"
     paper: N2653
     support:
       - GCC 13
+      - Clang 19
   - desc: "`[[maybe_unused]]` for labels"
     paper: N2662
     support:
