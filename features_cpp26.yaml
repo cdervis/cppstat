@@ -1615,10 +1615,13 @@ features:
     summary: "Specializes `std::tuple_size`, `std::tuple_element`, and `std::get` for `std::integer_sequence` to make it usable in expansion statements and structured bindings."
     content: expansion-statements-library-support.md
     lib: true
-    support: [Clang 22]
+    support: [Clang 22 (hint)]
     ftm:
       - name: __cpp_lib_integer_sequence
         value: 202511L
+    hints:
+      - target: Clang 22
+        msg: "Currently not usable due to pending core language changes. See [CWG3135](https://cplusplus.github.io/CWG/issues/3135.html) for details."
     keywords: ["reflection"]
 
   - desc: "Missing deduction guide from `simd::mask` to `simd::vec`"
