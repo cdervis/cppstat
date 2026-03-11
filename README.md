@@ -18,14 +18,19 @@ cppstat is a site that lists C and C++ features and their respective support by 
 
 ## Contributing
 
-cppstat is generated from YAML data files in the root directory.
+cppstat fetches data from YAML files in the root directory.
 The files are maintained as a best-effort and contributions are always welcome.
 
-You can edit these files directly via GitHub's web interface and commit your changes for approval.
+You can contribute in multiple ways.
 
-Alternatively, you can [submit a ticket](https://github.com/cdervis/cppstat/issues) for any incorrect or missing information, or feature ideas.
+**The recommended approach is cppstat's [UI-based editor](https://cppstat.dev/editor/).**
 
-If you are a toolchain developer, feel free to request full editorial access.
+The editor provides search and a clear view of the data, and will create a patch, commit, and PR automatically for you.
+
+Alternatively, you can use GitHub's web interface and commit your changes for approval.
+Another approachc is to [submit a ticket](https://github.com/cdervis/cppstat/issues) for any incorrect or missing information, or feature ideas.
+
+**If you are a toolchain developer, feel free to request full editorial access.**
 
 ---
 
