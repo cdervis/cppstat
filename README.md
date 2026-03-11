@@ -23,7 +23,7 @@ The files are maintained as a best-effort and contributions are always welcome. 
 
 **The recommended approach is cppstat's [UI-based editor](https://cppstat.dev/editor/).**
 
-The editor provides search and a clear view of the data, and will create a patch, commit, and PR automatically for you.
+The editor provides search and a clear view of the data, Markdown preview and input validation. It can create a patch, commit, and PR automatically for you with a single click.
 
 Alternatively, you can use GitHub's web interface and commit your changes for approval.
 Another approach is to [submit a ticket](https://github.com/cdervis/cppstat/issues) for any incorrect or missing information, or feature ideas.
