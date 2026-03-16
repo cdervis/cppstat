@@ -902,33 +902,22 @@ features:
   - desc: "Elementary string conversions (`std::to_chars()` and `std::from_chars()`)"
     paper: P0067
     lib: true
-    support:
-      - GCC 8 (partial)
-      - GCC 11
-      - Clang 7 (partial)
-      - Clang 14 (partial)
-      - Clang 20 (partial)
-      - MSVC 14.14 (partial)
-      - MSVC 14.15 (partial)
-      - MSVC 14.16 (partial)
-      - MSVC 14.24
-      - Xcode 10 (partial)
-      - Xcode 14.3 (partial)
+    support: [GCC 8 (partial), GCC 11, Clang 7 (partial), Clang 14 (partial), Clang 20 (partial), MSVC 14.14 (partial), MSVC 14.15 (partial), MSVC 14.16 (partial), MSVC 14.24, Xcode 10 (partial), Xcode 14.3 (partial)]
     hints:
       - target: GCC 8
         msg: "No support for floating-point types, only integer types."
       - target: Clang 7
-        msg: "Adds `std::to_chars()` support for `float` and `double`."
+        msg: "Adds `std::to_chars()` and `std::from_chars()` support for integer types."
       - target: Clang 14
-        msg: "Adds `std::from_chars()` support for `float` and `double`."
+        msg: "Adds only `std::to_chars()` support for `float` and `double`."
       - target: Clang 20
-        msg: "Support is complete except for `long double`."
+        msg: "Adds `std::from_chars()` support for `float` and `double`. Support is complete except for `long double`.\n\nIn total, the current status is:\n\n| Type             | `to_chars` | `from_chars` |\n|------------------|------------|--------------|\n| integers         | libc++ 7   | libc++ 7     |\n| `float`/`double` | libc++ 14  | libc++ 20    |\n| `long double`    | -          | -            |\n\n---\n\n**Note**: Calling both functions with `long double` falls back to the `double` overload."
       - target: MSVC 14.14
         msg: "No support for floating-point types, only integer types."
       - target: MSVC 14.15
         msg: "Adds `std::from_chars()` support for `float` and `double`."
       - target: MSVC 14.16
-        msg: 'Adds shortest round-trip decimal overloads of floating-point `std::to_chars()`, e.g. `"%.8e"` and `"%.16e"`.'
+        msg: "Adds shortest round-trip decimal overloads of floating-point `std::to_chars()`, e.g. `\"%.8e\"` and `\"%.16e\"`."
       - target: Xcode 10
         msg: "No support for floating-point types, only integer types."
       - target: Xcode 14.3
