@@ -1391,7 +1391,7 @@ features:
   - desc: "Explicit lifetime management (`std::start_lifetime_as()`)"
     paper: [P2590, P2679]
     lib: true
-    support: [GCC 16]
+    support: [GCC 16, MSVC 14.51]
     ftm:
       - name: __cpp_lib_start_lifetime_as
         value: 202207L
