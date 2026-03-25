@@ -156,6 +156,7 @@ features:
   - desc: "Folding expressions"
     paper: N4295
     summary: "Reduce parameter packs with operators."
+    content: fold-expressions.md
     support:
       - GCC 6
       - Clang 3.6
@@ -277,6 +278,7 @@ features:
   - desc: "Guaranteed copy elision"
     paper: P0135
     summary: "Certain copies must be elided, not just allowed."
+    content: guaranteed-copy-elision.md
     support:
       - GCC 7
       - Clang 4
@@ -326,6 +328,7 @@ features:
   - desc: "`constexpr if` statements"
     paper: P0292
     summary: "Compile-time conditional compilation within functions."
+    content: if-constexpr.md
     support:
       - GCC 7
       - Clang 3.9
@@ -347,6 +350,7 @@ features:
   - desc: "`inline` variables"
     paper: P0386
     summary: "Variables can be `inline`, allowing definition in headers."
+    content: inline-variables.md
     support:
       - GCC 7
       - Clang 3.9
@@ -389,6 +393,7 @@ features:
   - desc: "Template argument deduction for class templates ([CTAD](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction.html))"
     paper: P0091
     summary: "Deduce template arguments from constructor arguments."
+    content: ctad.md
     support:
       - GCC 7
       - Clang 5
@@ -590,6 +595,7 @@ features:
 
   - desc: "The parallelism TS should be standardized (parallel algorithms)"
     paper: P0024
+    content: parallel-algorithms.md
     lib: true
     support:
       - GCC 9
@@ -743,6 +749,7 @@ features:
   - desc: "`std::string_view`"
     paper: [N3921, P0220, P0254, P0403]
     summary: "Non-owning reference to a character sequence."
+    content: string-view.md
     lib: true
     support:
       - GCC 7
@@ -755,6 +762,7 @@ features:
 
   - desc: "`std::any`"
     paper: [P0220, P0032]
+    content: any.md
     lib: true
     support:
       - GCC 7
@@ -768,6 +776,7 @@ features:
   - desc: "`std::optional`"
     paper: P0220
     summary: "A wrapper that may or may not hold a value."
+    content: optional.md
     lib: true
     support:
       - GCC 7
@@ -812,6 +821,7 @@ features:
   - desc: "`std::variant`"
     paper: P0088
     summary: "Type-safe discriminated union."
+    content: variant.md
     lib: true
     support:
       - GCC 7
@@ -901,6 +911,7 @@ features:
 
   - desc: "Elementary string conversions (`std::to_chars()` and `std::from_chars()`)"
     paper: P0067
+    content: to-chars.md
     lib: true
     support: [GCC 8 (partial), GCC 11, Clang 7 (partial), Clang 14 (partial), Clang 20 (partial), MSVC 14.14 (partial), MSVC 14.15 (partial), MSVC 14.16 (partial), MSVC 14.24, Xcode 10 (partial), Xcode 14.3 (partial)]
     hints:
@@ -977,6 +988,7 @@ features:
   - desc: "File system library (`std::filesystem` and `<filesystem>`)"
     paper: [P0218, P0219]
     summary: "Standard library for file and directory operations."
+    content: filesystem.md
     lib: true
     support:
       - GCC 8

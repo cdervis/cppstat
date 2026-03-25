@@ -54,6 +54,7 @@ features:
 
   - desc: "[Generic lambda expressions](https://cppreference.com/w/cpp/language/lambda.html#Explanation)"
     paper: N3649
+    content: generic-lambdas.md
     support:
       - GCC 4.9
       - Clang 3.4
@@ -242,6 +243,7 @@ features:
 
   - desc: "`std::make_unique()`"
     paper: N3656
+    content: make-unique.md
     lib: true
     support:
       - GCC 4.9

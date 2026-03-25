@@ -5,13 +5,17 @@ execute: true
 ## What It Does
 
 Designated initializers initialize aggregate members by name using `.member = value` syntax.
-Members may be omitted from the initializer list and are default-initialized; the syntax explicitly associates each initializer with its corresponding member.
+Members may be omitted from the initializer list and are default-initialized; the syntax explicitly
+associates each initializer with its corresponding member.
 
 ## Why It Matters
 
-Positional initialization is sensitive to member order; adding or reordering members changes the mapping of initializers without diagnostic.
-Designated initializers are insensitive to member reordering and document the mapping between initializers and members explicitly.
-The syntax is compatible with C99 designated initializers, with the additional constraint that designators must appear in declaration order in C++.
+Positional initialization is sensitive to member order; adding or reordering members changes the mapping
+of initializers without diagnostic.
+Designated initializers are insensitive to member reordering and document the mapping between initializers
+and members explicitly.
+The syntax is compatible with C99 designated initializers, with the additional constraint that designators
+must appear in declaration order in C++.
 
 ## Example
 

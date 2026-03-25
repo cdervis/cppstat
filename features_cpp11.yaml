@@ -49,6 +49,7 @@ features:
 
   - desc: "[`auto`](https://cppreference.com/w/cpp/language/auto.html)"
     paper: N1984
+    content: auto.md
     support:
       - GCC 4.4
       - Clang
@@ -79,6 +80,7 @@ features:
 
   - desc: "`constexpr`"
     paper: N2235
+    content: constexpr.md
     support:
       - GCC 4.6
       - Clang 3.1
@@ -117,6 +119,7 @@ features:
 
   - desc: "[Template aliases](https://cppreference.com/w/cpp/language/type_alias.html)"
     paper: N2258
+    content: template-aliases.md
     support:
       - GCC 4.7
       - Clang 3
@@ -152,6 +155,7 @@ features:
 
   - desc: "[Strongly-typed `enum`](https://cppreference.com/w/cpp/language/enum.html#Scoped_enumerations)"
     paper: N2347
+    content: scoped-enums.md
     support:
       - GCC 4.4
       - Clang 2.9
@@ -168,6 +172,7 @@ features:
 
   - desc: "`nullptr`"
     paper: N2431
+    content: nullptr.md
     support:
       - GCC 4.6
       - Clang 2.9
@@ -264,6 +269,7 @@ features:
 
   - desc: "[Variadic templates](https://cppreference.com/w/cpp/language/parameter_pack.html)"
     paper: [N2242, N2555]
+    content: variadic-templates.md
     support:
       - GCC 4.4
       - Clang 2.9
@@ -324,6 +330,7 @@ features:
 
   - desc: "[Initializer lists](https://cppreference.com/w/cpp/language/list_initialization.html)"
     paper: N2672
+    content: initializer-lists.md
     support:
       - GCC 4.4
       - Clang 3.1
@@ -388,6 +395,7 @@ features:
 
   - desc: "[Rvalue references](https://cppreference.com/w/cpp/language/reference.html#Rvalue_references)"
     paper: [N2118, N2844, CWG1138]
+    content: rvalue-references.md
     support:
       - GCC 4.3 (partial)
       - GCC 4.5
@@ -401,6 +409,7 @@ features:
 
   - desc: "[Lambda expressions](https://cppreference.com/w/cpp/language/lambda.html)"
     paper: [N2550, N2658, N2927]
+    content: lambdas.md
     support:
       - GCC 4.5
       - Clang 3.1
@@ -413,6 +422,7 @@ features:
 
   - desc: "[Range-for loop](https://cppreference.com/w/cpp/language/range-for.html)"
     paper: [N2930, N3271]
+    content: range-for.md
     support:
       - GCC 4.6
       - Clang 3
@@ -424,6 +434,7 @@ features:
 
   - desc: "`noexcept`"
     paper: N3050
+    content: noexcept.md
     support:
       - GCC 4.6
       - Clang 3
@@ -435,6 +446,7 @@ features:
 
   - desc: "Defaulted move [special member functions](https://cppreference.com/w/cpp/language/member_functions.html#Special_member_functions)"
     paper: N3053
+    content: defaulted-special-members.md
     support:
       - GCC 4.6
       - Clang 3
@@ -446,6 +458,7 @@ features:
 
   - desc: "`override` and `final`"
     paper: [N2928, N3206, N3272]
+    content: override-final.md
     support:
       - GCC 4.7
       - Clang 2.9
@@ -455,6 +468,7 @@ features:
 
   - desc: "`decltype`"
     paper: [N2343, N3276]
+    content: decltype.md
     support:
       - GCC 4.3 (partial)
       - GCC 4.8.1
