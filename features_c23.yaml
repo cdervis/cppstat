@@ -210,12 +210,12 @@ features:
     paper: N2900
     content: c-empty-init.md
     support:
-      - GCC 13 (partial)
+      - GCC 13
       - Clang (partial)
       - Xcode (partial)
     hints:
       - target: GCC 13
-        msg: "Supported as an extension. Missing support for scalars and variable-length arrays (VLAs)."
+        msg: "Partially supported as an extension before."
       - target: Clang
         msg: "Supported as an extension. Missing support for scalars and variable-length arrays (VLAs)."
       - target: Xcode
