@@ -269,9 +269,6 @@ features:
       - GCC 16
       - Xcode 16.4
 
-  - desc: "`auto` as placeholder type for parameters"
-    paper: N3472
-
   - desc: "Slay Some Earthly Demons XIII"
     paper: N3478
     support:
