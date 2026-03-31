@@ -186,6 +186,13 @@ features:
       - GCC 14
       - Clang 15
       - Xcode 16.1
+  - desc: "Require support for variably modified types"
+    paper: N2778
+    support:
+      - GCC
+      - Clang
+      - Xcode
+      - TinyCC 0.9.28
   - desc: "`__has_include` in preprocessor conditionals"
     paper: N2799
     support:

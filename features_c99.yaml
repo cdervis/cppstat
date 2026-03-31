@@ -68,12 +68,13 @@ features:
       - Clang
       - Xcode 14
       - TinyCC
-  - desc: "Variably-modified (VM) types"
-    paper: N2778
+  - desc: "[Variably-modified](https://en.cppreference.com/w/c/language/array.html#Variable-length_arrays) (VM) types"
+    paper: N683
     support:
       - GCC
       - Clang
       - Xcode
+      - TinyCC 0.9.28
   - desc: "Designated initializers"
     paper: N494
     content: c-designated-init.md
