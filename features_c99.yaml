@@ -71,6 +71,7 @@ features:
   - desc: "Variably-modified (VM) types"
     paper: N2778
     support:
+      - GCC
       - Clang
       - Xcode
   - desc: "Designated initializers"
