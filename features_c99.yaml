@@ -70,6 +70,7 @@ features:
       - TinyCC
   - desc: "[Variably-modified](https://en.cppreference.com/w/c/language/array.html#Variable-length_arrays) (VM) types"
     paper: N683
+    content: c-vm-types.md
     support:
       - GCC
       - Clang

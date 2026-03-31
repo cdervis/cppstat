@@ -21,15 +21,6 @@ only at runtime, useful for algorithms where the size depends on function parame
 ```c
 #include <stdio.h>
 
-void print_matrix(int rows, int cols, int matrix[rows][cols]) {
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < cols; j++) {
-            printf("%3d ", matrix[i][j]);
-        }
-        printf("\n");
-    }
-}
-
 int main(void) {
     int n = 3;
     int arr[n];  // VLA with runtime size
@@ -41,8 +32,5 @@ int main(void) {
     for (int i = 0; i < n; i++)
         printf("%d ", arr[i]);
     printf("\n");
-
-    int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};
-    print_matrix(2, 3, matrix);
 }
 ```
