@@ -310,8 +310,10 @@ features:
   - desc: "Member access of an incomplete object"
     paper: N3532
     support:
+      - GCC
+      - MSVC
       - Clang
-      - Xcode 16.4
+      - Xcode
 
   - desc: "Chasing Ghosts I: constant expressions"
     paper: N3558
