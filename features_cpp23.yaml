@@ -1632,3 +1632,11 @@ features:
   - desc: "Declarations and where to find them"
     paper: P1787
     support: [MSVC]
+
+  - desc: "Test 2"
+    paper: P1234
+    related_to:
+      - id: P1234
+        reason: "Test reason"
+        example: |
+            Test example
