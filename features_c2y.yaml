@@ -336,6 +336,7 @@ features:
   - desc: "Earthly Demon XV: Definition of Main"
     paper: N3623
     support:
+      - GCC
       - Clang
       - Xcode ?
 
