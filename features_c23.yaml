@@ -337,3 +337,10 @@ features:
       - GCC 13
       - Clang 16 (partial)
       - Xcode 16.1
+  - desc: "Partial program correctness"
+    paper: N3128
+    support:
+      - GCC (partial)
+    hints:
+      - target: GCC
+        msg: "Not guaranteed for volatile accesses"
