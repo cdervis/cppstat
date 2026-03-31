@@ -73,9 +73,13 @@ features:
     paper: N2508
     support:
       - GCC 11
-      - Clang 16
+      - Clang 16 (partial)
+      - Clang 18
       - MSVC (partial)
       - Xcode 15
+    hints:
+      - target: Clang 16
+        msg: "Only labels at the end of a block are supported"
   - desc: "[Binary integer constants](https://en.cppreference.com/w/c/language/integer_constant.html)"
     paper: N2549
     content: c-binary-literals.md
