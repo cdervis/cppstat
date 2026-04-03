@@ -272,23 +272,28 @@ features:
   - desc: "Slay Some Earthly Demons XIII"
     paper: N3478
     support:
+      - GCC
       - Clang
 
   - desc: "Slay Some Earthly Demons XVI"
     paper: N3481
     support:
+      - GCC
       - Clang
       - Xcode 16.4
 
   - desc: "Slay Some Earthly Demons XVII"
     paper: N3482
     support:
+      - GCC
       - Clang
       - Xcode 16.4
 
   - desc: "Slay Some Earthly Demons V"
     paper: N3484
     support:
+      - GCC
+      - Clang
       - Xcode 16.4
 
   - desc: "Error conditions for narrow type rounding"
