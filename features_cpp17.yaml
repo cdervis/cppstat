@@ -446,7 +446,7 @@ features:
       - GCC 6
       - Clang 3.7
       - MSVC 14.0
-      - Xcode 15
+      - Xcode 26.4
     ftm:
       - name: __cpp_lib_allocator_traits_is_always_equal
         value: 201411L

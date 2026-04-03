@@ -1466,7 +1466,7 @@ features:
       - GCC 13
       - Clang 21
       - MSVC 14.29
-      - Xcode 26
+      - Xcode 26.4
 
   - desc: "Mathematical constants"
     paper: P0631
