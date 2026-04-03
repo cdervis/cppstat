@@ -110,24 +110,28 @@ features:
     paper: N3344
     support:
       - Clang 20
+      - GCC
       - Xcode 16.4
 
   - desc: "Slay Some Earthly Demons VII"
     paper: N3345
     support:
       - Clang
+      - GCC
       - Xcode 16.4
 
   - desc: "Slay Some Earthly Demons VIII"
     paper: N3346
     support:
       - Clang
+      - GCC
       - Xcode ?
 
   - desc: "Slay Some Earthly Demons IX"
     paper: N3347
     support:
       - Clang
+      - GCC
       - Xcode 16.4
 
   - desc: "Matching of Multi-Dimensional Arrays in Generic Selection Expressions"
