@@ -1149,8 +1149,6 @@ features:
     support:
       - Xcode 26.4 (partial)
     hints:
-      - target: Xcode
-        msg: "`std::forward_list`, `std::list`, `std::priority_queue`, `std::flat_map`, and `std::flat_set` are implemented."
       - target: Xcode 26.4
         msg: "`std::forward_list`, `std::list`, `std::priority_queue`, `std::flat_map`, and `std::flat_set` are implemented."
 
