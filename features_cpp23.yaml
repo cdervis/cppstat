@@ -498,7 +498,7 @@ features:
       - GCC 13
       - Clang 21
       - MSVC 14.31
-      - Xcode 16.1
+      - Xcode 26.4
 
   - desc: "What is a view?"
     paper: P2415
@@ -726,15 +726,17 @@ features:
     paper: P2255
     lib: true
     support:
-      - GCC 13 (partial)
       - GCC 14
+      - GCC 13 (partial)
       - Clang 21 (partial)
       - MSVC 14.51
-      - Xcode 16.3
+      - Xcode 26.4 (partial)
     hints:
       - target: GCC 13
         msg: "Missing changes to `std::tuple`."
       - target: Clang 21
+        msg: "Only type traits are implemented."
+      - target: Xcode 16.3
         msg: "Only type traits are implemented."
     ftm:
       - name: __cpp_lib_reference_from_temporary
@@ -796,6 +798,7 @@ features:
       - GCC 13
       - Clang 21
       - MSVC 14.34
+      - Xcode 26.4
     ftm:
       - name: __cpp_lib_ranges_join_with
         value: 202202L
@@ -1035,6 +1038,7 @@ features:
       - GCC 15
       - Clang 21
       - MSVC 14.51
+      - Xcode 26.4
     ftm:
       - name: __cpp_lib_flat_set
         value: 202207L
@@ -1499,6 +1503,7 @@ features:
       - GCC 14
       - Clang 21
       - MSVC 14.37
+      - Xcode 26.4
 
   - desc: "`views::enumerate()`"
     paper: P2164
@@ -1596,6 +1601,7 @@ features:
       - GCC 16
       - Clang 21 (hint)
       - MSVC 14.37
+      - Xcode 26.4
     hints:
       - target: Clang 21
         msg: "The feature is implemented as a defect report to C++20."
