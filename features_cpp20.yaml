@@ -1181,6 +1181,7 @@ features:
       - MSVC 14.10
       - MSVC 14.28
       - Xcode 10.2 (partial)
+      - Xcode 16.3
     hints:
       - target: GCC 10
         msg: "Requires `-fcoroutines`. Starting with GCC 11, this is implicitly enabled by `-std=c++20`."

@@ -240,6 +240,7 @@ features:
       - GCC 4.9
       - Clang 3.4
       - MSVC 12.0
+      - Xcode
 
   - desc: "`std::make_unique()`"
     paper: N3656

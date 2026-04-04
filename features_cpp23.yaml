@@ -634,10 +634,12 @@ features:
       - Clang 15 (partial)
       - Clang 22
       - MSVC 14.37
-      - Xcode 14.3
+      - Xcode 14.3 (partial)
     hints:
       - target: Clang 15
         msg: "Only implements tuple specializations and `views::zip()`."
+      - target: Xcode 14.3
+        msg: "Only implements `views::zip()`."
     ftm:
       - name: __cpp_lib_ranges_zip
         value: 202110L
@@ -736,7 +738,7 @@ features:
         msg: "Missing changes to `std::tuple`."
       - target: Clang 21
         msg: "Only type traits are implemented."
-      - target: Xcode 16.3
+      - target: Xcode 26.4
         msg: "Only type traits are implemented."
     ftm:
       - name: __cpp_lib_reference_from_temporary
