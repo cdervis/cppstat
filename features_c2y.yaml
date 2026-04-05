@@ -362,14 +362,14 @@ features:
   - desc: "Earthly Demon: Accessing a Member of an Atomic Structure or Union"
     paper: N3653
     support:
-        - GCC
-        - Clang
+      - GCC
+      - Clang
 
   - desc: "Implicit Integer Constant Expressions"
     paper: N3833
     support:
-        - GCC (partial)
-        - Clang (partial)
+      - GCC (partial)
+      - Clang (partial)
 
   - desc: "Enumerations with Bit-Precise Integer as Underlying Type"
     paper: N3705
@@ -377,5 +377,5 @@ features:
   - desc: "The Elvis operator ?:"
     paper: N3804
     support:
-        - GCC
-        - Clang
+      - GCC
+      - Clang
