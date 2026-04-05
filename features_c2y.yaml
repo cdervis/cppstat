@@ -355,3 +355,27 @@ features:
     paper: N3652
     support:
       - GCC 16 (partial)
+
+  - desc: "static_assert expressions"
+    paper: N3715
+
+  - desc: "Earthly Demon: Accessing a Member of an Atomic Structure or Union"
+    paper: N3653
+    support:
+        - GCC
+        - Clang
+
+  - desc: "Implicit Integer Constant Expressions"
+    paper: N3833
+    support:
+        - GCC (partial)
+        - Clang (partial)
+
+  - desc: "Enumerations with Bit-Precise Integer as Underlying Type"
+    paper: N3705
+
+  - desc: "The Elvis operator ?:"
+    paper: N3804
+    support:
+        - GCC
+        - Clang
