@@ -89,8 +89,8 @@ features:
       - Clang 2.9 (hint)
       - Clang 9
       - MSVC 14.0 (hint)
-      - Xcode (hint)
-      - Xcode 11.4
+      - Xcode 7 (hint)
+      - Xcode 16.3
       - owcc
       - TinyCC
     hints:
@@ -100,7 +100,7 @@ features:
         msg: "Supported as an extension."
       - target: MSVC 14.0
         msg: "Supported as an extension."
-      - target: Xcode
+      - target: Xcode 7
         msg: "Supported as an extension."
   - desc: "[__has_c_attribute](https://en.cppreference.com/w/c/language/attributes.html#Attribute_testing) in preprocessor conditionals"
     paper: N2553
