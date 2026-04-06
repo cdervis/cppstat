@@ -6,7 +6,6 @@ features:
     support:
       - GCC ?
       - Clang
-      - Xcode ?
 
   - desc: "Slay Some Earthly Demons I"
     paper: N3244
@@ -157,7 +156,6 @@ features:
     support:
       - GCC 15
       - Clang 22
-      - Xcode ?
 
   - desc: "`if` declarations"
     paper: N3356
@@ -200,21 +198,18 @@ features:
     support:
       - Clang ?
       - MSVC ?
-      - Xcode ?
 
   - desc: "Abs Without Undefined Behavior"
     paper: N3349
     support:
       - Clang ?
       - MSVC ?
-      - Xcode ?
 
   - desc: "More Modern Bit Utilities"
     paper: N3367
     support:
       - Clang ?
       - MSVC ?
-      - Xcode ?
 
   - desc: "Error conditions in `<math.h>`"
     paper: N3405
