@@ -13,10 +13,12 @@ features:
     support:
       - GCC ?
       - Clang (partial)
-      - Xcode ?
+      - Xcode 16.3 (partial)
     hints:
       - target: Clang
         msg: "Clang does not document the implementation-defined behavior for decay of an array with the register storage class specifier. Clang does not diagnose an extern inline function with no definition in the TU. Clang accepts and rejects redeclarations with/without an alignment specifier, depending on the order of the declarations."
+      - target: Xcode 16.3
+        msg: "See hint for Clang."
 
   - desc: "Accessing byte arrays"
     paper: N3254
@@ -53,12 +55,14 @@ features:
     support:
       - GCC
       - Clang
-      - Xcode ?
+      - Xcode
     hints:
       - target: GCC
         msg: "GCC has never supported imaginary types."
       - target: Clang
         msg: "Clang has never supported imaginary types."
+      - target: Xcode
+        msg: "Apple Clang has never supported imaginary types."
 
   - desc: "Floating-point exceptions for macro replacements"
     paper: N3286
@@ -125,7 +129,7 @@ features:
     support:
       - Clang
       - GCC
-      - Xcode ?
+      - Xcode 16.3
 
   - desc: "Slay Some Earthly Demons IX"
     paper: N3347
@@ -145,7 +149,7 @@ features:
     support:
       - GCC 15
       - Clang 21
-      - Xcode ?
+      - Xcode 26.4
 
   - desc: "Named loops"
     paper: N3355
@@ -189,6 +193,7 @@ features:
     support:
       - GCC 16
       - Clang 21
+      - Xcode 26.4
 
   - desc: "Restartable Functions for Efficient Character Conversions"
     paper: N3366
@@ -219,6 +224,7 @@ features:
     paper: N3409
     support:
       - Clang 21
+      - Xcode 26.4
 
   - desc: "Slay Some Earthly Demons XI"
     paper: N3410
@@ -237,6 +243,11 @@ features:
   - desc: "Const integer declarations as implicit `constexpr`"
     paper: N3443
     content: c-const-constexpr.md
+    support:
+      - Xcode 16.3 (partial)
+    hints:
+      - target: Xcode 16.3
+        msg: "Constant folding of const integers works via a GNU extension, not native C2y constexpr semantics. Issues a `-Wgnu-folding-constant` warning under `-pedantic`."
 
   - desc: "Anonymous structure/union initialization"
     paper: N3451
@@ -248,6 +259,10 @@ features:
     content: c-counter-macro.md
     support:
       - Clang 22
+      - Xcode 16.3 (hint)
+    hints:
+      - target: Xcode 16.3
+        msg: "Supported as a pre-existing GNU extension prior to C2y standardization."
 
   - desc: "Complex operators"
     paper: N3460
@@ -314,7 +329,7 @@ features:
     paper: N3525
     support:
       - Clang
-      - Xcode ?
+      - Xcode 16.3
 
   - desc: "Member access of an incomplete object"
     paper: N3532
@@ -336,20 +351,23 @@ features:
     paper: N3605
     support:
       - Clang
-      - Xcode ?
+      - Xcode 26.4
 
   - desc: "Allow calling `static inline` within `extern inline`"
     paper: N3622
     support:
       - Clang 22
-      - Xcode ?
+      - Xcode 16.3 (partial)
+    hints:
+      - target: Xcode 16.3
+        msg: "Code compiles but emits `-Wstatic-in-inline` warning. Full C2y semantics (warning suppression in `c2y` mode) require Clang 22."
 
   - desc: "Earthly Demon XV: Definition of Main"
     paper: N3623
     support:
       - GCC
       - Clang
-      - Xcode ?
+      - Xcode 16.3
 
   - desc: "Composite types"
     paper: N3652
