@@ -235,15 +235,6 @@ features:
   - desc: "Slay Some Earthly Demons XIV"
     paper: N3418
 
-  - desc: "Const integer declarations as implicit `constexpr`"
-    paper: N3443
-    content: c-const-constexpr.md
-    support:
-      - Xcode 16.3 (partial)
-    hints:
-      - target: Xcode 16.3
-        msg: "Constant folding of const integers works via a GNU extension, not native C2y constexpr semantics. Issues a `-Wgnu-folding-constant` warning under `-pedantic`."
-
   - desc: "Anonymous structure/union initialization"
     paper: N3451
     support:
@@ -378,11 +369,16 @@ features:
       - GCC
       - Clang
 
-  - desc: "Implicit Integer Constant Expressions"
+  - desc: "Const integer declarations as implicit named constants"
     paper: N3833
+    content: c-const-constexpr.md
     support:
       - GCC (partial)
       - Clang (partial)
+      - Xcode 16.3 (partial)
+    hints:
+      - target: Xcode 16.3
+        msg: "Constant folding of const integers works via a GNU extension, not native C2y constexpr semantics. Issues a `-Wgnu-folding-constant` warning under `-pedantic`."
 
   - desc: "Enumerations with Bit-Precise Integer as Underlying Type"
     paper: N3705
