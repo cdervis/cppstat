@@ -225,7 +225,7 @@ features:
     content: c-empty-init.md
     support:
       - GCC 13
-      - Clang 17
+      - Clang 17 (hint)
       - Xcode (partial)
     hints:
       - target: GCC 13
