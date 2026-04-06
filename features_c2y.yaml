@@ -342,11 +342,14 @@ features:
   - desc: "Allow calling `static inline` within `extern inline`"
     paper: N3622
     support:
+      - GCC (partial)
       - Clang 22
       - Xcode 16.3 (partial)
     hints:
       - target: Xcode 16.3
         msg: "Code compiles but emits `-Wstatic-in-inline` warning. Full C2y semantics (warning suppression in `c2y` mode) require Clang 22."
+      - target: GCC
+        msg: "Code compiles but emits a warning."
 
   - desc: "Earthly Demon XV: Definition of Main"
     paper: N3623
