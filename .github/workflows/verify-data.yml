@@ -21,15 +21,29 @@ jobs:
           yamllint_strict: false
           yamllint_comment: false
 
-      - name: "Install dependencies"
-        run: sudo apt-get update && sudo apt-get install -y g++-14 libyaml-cpp-dev nlohmann-json3-dev
+      - name: "Cache apt packages"
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: g++-14 libyaml-cpp-dev nlohmann-json3-dev
+          version: 1.0
+
+      - name: "Cache validator binary and dependencies"
+        id: cache-validator
+        uses: actions/cache@v4
+        with:
+          path: |
+            validate_yaml_file
+            json-schema-validator
+          key: validator-${{ hashFiles('validate_yaml_file.cpp') }}-v1
 
       - name: "Fetch json-schema-validator"
+        if: steps.cache-validator.outputs.cache-hit != 'true'
         run: |
           rm -rf json-schema-validator
           git clone --depth 1 https://github.com/pboettch/json-schema-validator.git json-schema-validator
 
       - name: "Build YAML validator"
+        if: steps.cache-validator.outputs.cache-hit != 'true'
         run: |
           g++-14 -std=c++23 -Wall -Wextra \
             $(pkg-config --cflags yaml-cpp) \
