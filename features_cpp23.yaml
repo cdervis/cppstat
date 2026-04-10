@@ -490,6 +490,7 @@ features:
       - GCC 10
       - Clang
       - Xcode
+      - MSVC 14.51
 
   - desc: "Fixing locale handling in chrono formatters"
     paper: P2372
@@ -683,6 +684,7 @@ features:
   - desc: "`constexpr` for `<cmath>` and `<cstdlib>`"
     paper: P0533
     lib: true
+    support: [MSVC 14.52]
     ftm:
       - name: __cpp_lib_constexpr_cmath
         value: 202202L
@@ -855,6 +857,7 @@ features:
       - GCC 13
       - Clang 14
       - Xcode 15
+      - MSVC 14.51
 
   - desc: "Labels at the end of compound statements"
     paper: P2324
@@ -863,6 +866,7 @@ features:
       - GCC 13
       - Clang 16
       - Xcode 16
+      - MSVC 14.51
 
   - desc: "Delimited escape sequences"
     paper: P2290
@@ -881,6 +885,7 @@ features:
       - Clang 19
       - MSVC 14.51
       - Xcode 16.3
+      - MSVC 14.51
     ftm:
       - name: __cpp_constexpr
         value: 202207L
@@ -904,6 +909,7 @@ features:
       - GCC 13
       - Clang 15
       - Xcode 15
+      - MSVC 14.51
     ftm:
       - name: __cpp_named_character_escapes
         value: 202207L
@@ -961,7 +967,7 @@ features:
   - desc: "Class template argument deduction from inherited constructors"
     paper: P2582
     summary: "Class template argument deduction works with inherited constructors."
-    support: [GCC 14]
+    support: [GCC 14, MSVC 14.51]
 
   - desc: "Attribute `[[assume]]`"
     paper: P1774
@@ -970,6 +976,7 @@ features:
       - GCC 13
       - Clang 19
       - Xcode 16.3
+      - MSVC 14.51
 
   - desc: "Support for UTF-8 as a portable source file encoding"
     paper: P2295
@@ -1422,6 +1429,7 @@ features:
       - Clang 16
       - MSVC 14.51
       - Xcode 16
+      - MSVC 14.51
     ftm:
       - name: __cpp_constexpr
         value: 202211L
@@ -1433,6 +1441,7 @@ features:
       - GCC 14
       - Clang 17
       - Xcode 16
+      - MSVC 14.52
     ftm:
       - name: __cpp_consteval
         value: 202211L
@@ -1451,6 +1460,7 @@ features:
       - Clang 19 (partial)
       - Clang 20
       - Xcode 16.3
+      - MSVC 14.51
     hints:
       - target: Clang 19
         msg: "Misses lifetime extension of temporaries in `mem-default-init` cases."
