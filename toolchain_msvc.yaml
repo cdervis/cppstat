@@ -335,3 +335,9 @@ infos:
     part_of: "Visual Studio 2026 TBD"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes
+
+  - name: MSVC 14.52
+    released: TBD
+    part_of: "Visual Studio 2026 TBD"
+    refs:
+      - https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes
