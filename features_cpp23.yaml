@@ -1419,6 +1419,7 @@ features:
     support:
       - GCC 13
       - Clang 16
+      - MSVC 14.51
       - Xcode 16
     ftm:
       - name: __cpp_constexpr
