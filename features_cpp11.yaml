@@ -108,7 +108,7 @@ features:
       - GCC 4.8 (partial)
       - GCC 5
       - Clang 3
-      - MSVC 14.0 (partial)
+      - MSVC 8.0 (partial)
       - MSVC 14.0
       - Xcode
     hints:
@@ -462,7 +462,7 @@ features:
     support:
       - GCC 4.7
       - Clang 2.9
-      - MSVC 14.0 (partial)
+      - MSVC 8.0 (partial)
       - MSVC 11.0
       - Xcode
 
