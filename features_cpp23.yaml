@@ -778,6 +778,7 @@ features:
     lib: true
     support:
       - GCC 13 (partial)
+      - GCC 16
       - MSVC 14.34
       - Clang 21 (partial)
       - Clang 22 (partial)
