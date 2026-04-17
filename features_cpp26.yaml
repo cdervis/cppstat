@@ -955,12 +955,17 @@ features:
         value: 202411L
 
   - desc: "Expose `std::atomic_ref`'s object address (`std::atomic_ref::address()`)"
-    paper: P2835
+    paper: [P2835, P3936]
     lib: true
-    support: [Clang 22]
+    support: [Clang 22 (partial), GCC]
     ftm:
       - name: __cpp_lib_atomic_ref
         value: 202411L
+      - name: __cpp_lib_atomic_ref
+        value: 202603L
+    hints:
+      - target: Clang 22
+        msg: Supports an older proposal, with a different return type.
 
   - desc: "cv-qualified types in `std::atomic` and `std::atomic_ref`"
     paper: P3323
