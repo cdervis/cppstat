@@ -1011,6 +1011,11 @@ features:
       - name: __cpp_lib_simd_complex
         value: 202502L
         desc: "Support for interleaved complex values in std::datapar::simd"
+    support:
+      - GCC 16 (partial)
+    hints:
+      - target: GCC 16
+        msg: Missing support for std::complex
 
   - desc: "Utility for creating execution environments"
     paper: P3325
