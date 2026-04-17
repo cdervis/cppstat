@@ -256,9 +256,13 @@ features:
       - Clang 15
       - MSVC 14.30
       - Xcode 14.3
+      - GCC 16 (partial)
     ftm:
       - name: __cpp_lib_allocate_at_least
         value: 202302L
+    hints:
+      - target: GCC 16
+        msg: "Not used by `std::vector` and `std::string` yet."
 
   - desc: "`ranges::starts_with()` and `ranges::ends_with()`"
     paper: P1659
