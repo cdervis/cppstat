@@ -648,9 +648,14 @@ features:
     lib: true
     support:
       - GCC 10
-      - Clang 12
+      - Clang 12 (partial)
       - MSVC 14.21
-      - Xcode 13
+      - Xcode 13 (partial)
+    hints:
+      - target: Clang 12
+        msg: "The parallel versions (`std::execution::par`) are not implemented yet. ([Issue](https://github.com/llvm/llvm-project/issues/104095))"
+      - target: Xcode 13
+        msg: "The parallel versions (`std::execution::par`) are not implemented yet. ([Issue](https://github.com/llvm/llvm-project/issues/104095))"
     ftm:
       - name: __cpp_lib_shift
         value: 201806L
