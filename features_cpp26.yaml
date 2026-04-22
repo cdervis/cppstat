@@ -909,7 +909,7 @@ features:
   - desc: "[Structured bindings](https://en.cppreference.com/w/cpp/language/structured_binding.html) can introduce a pack"
     paper: P1061
     summary: "Structured bindings can now capture remaining elements into a parameter pack."
-    support: [GCC 16, Clang 21, Xcode 16.4]
+    support: [GCC 16, Clang 21, Xcode 26.4]
     ftm:
       - name: __cpp_structured_bindings
         value: 202411L
