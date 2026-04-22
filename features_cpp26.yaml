@@ -1555,7 +1555,7 @@ features:
     paper: P2781
     summary: "Wrap compile-time constants as types for template metaprogramming."
     lib: true
-    support: [GCC 16]
+    support: [GCC 16, Clang 23]
     ftm:
       - name: __cpp_lib_constant_wrapper
         value: 202506L
