@@ -1526,7 +1526,7 @@ features:
     paper: P2164
     content: enumerate.md
     lib: true
-    support: [GCC 13, MSVC 14.37]
+    support: [GCC 13, Clang 23, MSVC 14.37]
     ftm:
       - name: __cpp_lib_ranges_enumerate
         value: 202302L
