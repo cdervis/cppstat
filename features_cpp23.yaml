@@ -1077,7 +1077,7 @@ features:
   - desc: "`ranges::stride_view` and `views::stride()`"
     paper: P1899
     lib: true
-    support: [GCC 13, MSVC 14.34]
+    support: [GCC 13, Clang 23, MSVC 14.34]
     ftm:
       - name: __cpp_lib_ranges_stride
         value: 202207L
