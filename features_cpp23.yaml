@@ -1198,10 +1198,13 @@ features:
   - desc: "Ranges fold algorithms (`ranges::fold()`)"
     paper: P2322
     lib: true
-    support: [GCC 13, MSVC 14.35]
+    support: [GCC 13, Clang 18 (partial), MSVC 14.35]
     ftm:
       - name: __cpp_lib_ranges_fold
         value: 202207L
+    hints:
+      - target: Clang 18
+        msg: "Only `ranges::fold_left_with_iter()`, `ranges::fold_left()`, `ranges::fold_left_first_with_iter()`, and `ranges::fold_left_first()` are implemented."
 
   - desc: "`views::cartesian_product()`"
     paper: [P2374, P2540]
