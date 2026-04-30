@@ -504,6 +504,6 @@ infos:
       - "https://gcc.gnu.org/gcc-15/"
 
   - name: GCC 16
-    released: TBD
+    released: April 30, 2026
     refs:
       - https://gcc.gnu.org/gcc-16/changes.html
