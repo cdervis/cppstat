@@ -1156,9 +1156,10 @@ features:
       - name: __cpp_lib_constexpr_unordered_set
         value: 202502L
         desc: "`constexpr` `std::unordered_set`"
-    support:
-      - Xcode 26.4 (partial)
+    support: [Clang 20 (partial), Xcode 26.4 (partial)]
     hints:
+      - target: Clang 20
+        msg: "`std::forward_list`, `std::list`, `std::priority_queue`, `std::flat_map`, and `std::flat_set` are implemented."
       - target: Xcode 26.4
         msg: "`std::forward_list`, `std::list`, `std::priority_queue`, `std::flat_map`, and `std::flat_set` are implemented."
 
