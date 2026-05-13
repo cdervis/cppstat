@@ -331,10 +331,11 @@ infos:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes
 
   - name: MSVC 14.51
-    released: TBD
-    part_of: "Visual Studio 2026 TBD"
+    released: May 12, 2026
+    part_of: "Visual Studio 2026 version 18.6"
     refs:
       - https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes
+      - https://devblogs.microsoft.com/cppblog/msvc-version-1451-available/
 
   - name: MSVC 14.52
     released: TBD
