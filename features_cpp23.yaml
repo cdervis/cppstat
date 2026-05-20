@@ -1448,6 +1448,7 @@ features:
       - GCC 14
       - Clang 17
       - Xcode 16
+      - MSVC 14.52
     ftm:
       - name: __cpp_consteval
         value: 202211L
