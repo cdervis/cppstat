@@ -1510,7 +1510,7 @@ features:
   - desc: "Make type-erased allocator use in `std::promise` and `std::packaged_task` consistent"
     paper: P3503
     lib: true
-    support: [MSVC 14.51]
+    support: [MSVC 14.51, GCC 17]
 
   - desc: "Atomic floating-point min/max"
     paper: P3008
