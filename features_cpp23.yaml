@@ -1644,6 +1644,7 @@ features:
       - Clang 18
       - MSVC 14.37
       - Xcode 16
+      - GCC 17
 
   - desc: "`std::barrier`'s phase completion guarantees"
     paper: P2588
