@@ -1676,3 +1676,9 @@ features:
     paper: P3913
     lib: true
     support: [GCC 16]
+
+  - desc: "Miscellaneous Reflection Cleanup"
+    paper: P3795
+    summary: "adding missing predicates `current_class` `current_function` `current_namespace` ..."
+    lib: true
+    content: miscellaneous-ceflection-cleanup.md
