@@ -1,3 +1,9 @@
 ---
 features:
-  - desc: "Placeholder"
+  - desc: "More named universal character escapes"
+    paper: P3733
+    support:
+      - Clang 23
+    ftm:
+      - name: __cpp_named_character_escapes
+        value: 202606L
