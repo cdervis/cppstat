@@ -1,9 +1,88 @@
 ---
 features:
+  - desc: "Designated-initializers for Base Classes"
+    paper: P2287
+    ftm:
+      - name: __cpp_designated_initializers
+        value: 202606L
+
+  - desc: "Clarify the behavior of floating-point overflow"
+    paper: P3899
+    support:
+      - GCC 12
+
+  - desc: "Defaulting Postfix Increment and Decrement Operations"
+    paper: P3899
+
+  - desc: "Adding restrictions to defaulted assignment operator functions"
+    paper: P2953
+    support:
+      - GCC 17
+
+  - desc: "Nondeterministic pointer provenance"
+    paper: P2434
+
+  - desc: "Invalid Pointer Operations"
+    paper: P3347
+
+  - desc: "Adjust identifier following new Unicode recommendations"
+    paper: P3658
+
+  - desc: "return_value & return_void Are Not Mutually Exclusive"
+    paper: P3950
+
   - desc: "More named universal character escapes"
     paper: P3733
     support:
       - Clang 23
     ftm:
       - name: __cpp_named_character_escapes
+        value: 202606L
+
+  - desc: "Lexical order for lambdas"
+    paper: P3847
+    support:
+      - GCC
+
+  - desc: "Language linkage for templates"
+    paper: P2243
+
+  - desc: "Deallocation Functions with Throwing Exception Specification Are Ill-formed"
+    paper: P3424
+    support:
+      - GCC 17
+
+  - desc: "Conditional noexcept specifiers in compound requirements"
+    paper: P3822
+    ftm:
+      - name: __cpp_concepts
+        value: 202606L
+
+  - desc: "Contracts for C++: Virtual functions"
+    paper: P3097
+    ftm:
+      - name: __cpp_contracts
+        value: 202606L
+
+  - desc: "Consteval-only Values for C++26"
+    paper: P4101
+    ftm:
+      - name: __cpp_consteval
+        value: 202606L
+
+  - desc: "Pointer lifetime-end zap proposed solutions"
+    paper: P2414
+
+  - desc: "Pack Indexing for Template Names"
+    paper: P3670
+    ftm:
+      - name: __cpp_pack_indexing
+        value: 202606L
+
+  - desc: "#embed offset parameter"
+    paper: P3540
+    support:
+      - GCC 17
+    ftm:
+      - name: __cpp_pp_embed
         value: 202606L
