@@ -1,6 +1,6 @@
 ## What It Does
 
-`std::span` now has an [`at()`](https://en.cppreference.com/w/cpp/container/span/at.html) member function that performs bounds checking.
+`std::span` now has an [`at()`](https://cppreference.com/w/cpp/container/span/at.html) member function that performs bounds checking.
 It returns a reference to the element at the given index, or throws `std::out_of_range`
 if the index is out of bounds. The function is `constexpr` and has constant time complexity.
 

@@ -399,7 +399,7 @@ features:
 
   - desc: "Non-literal variables (and labels and gotos) in `constexpr` functions"
     paper: P2242
-    summary: "constexpr functions can contain non-literal variables on non-evaluated paths."
+    summary: "`constexpr` functions can contain non-literal variables on non-evaluated paths."
     support:
       - GCC 12
       - Clang 15
@@ -608,7 +608,7 @@ features:
         value: 202110L
     keywords: ["erase"]
 
-  - desc: "Require `std::span` and `std::basic_string_view` to be [TriviallyCopyable](https://en.cppreference.com/w/cpp/named_req/TriviallyCopyable)"
+  - desc: "Require `std::span` and `std::basic_string_view` to be [TriviallyCopyable](https://cppreference.com/w/cpp/named_req/TriviallyCopyable)"
     paper: P2251
     lib: true
     support:
@@ -1441,7 +1441,7 @@ features:
 
   - desc: "`consteval` needs to propagate up"
     paper: P2564
-    summary: "consteval calls in default arguments work correctly."
+    summary: "`consteval` calls in default arguments work correctly."
     support:
       - GCC 14
       - Clang 17

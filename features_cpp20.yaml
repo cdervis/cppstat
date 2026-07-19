@@ -487,7 +487,7 @@ features:
       - name: __cpp_lib_span
         value: 202002L
 
-  - desc: "[ConstexprIterator](https://en.cppreference.com/w/cpp/named_req/ConstexprIterator) requirements"
+  - desc: "[ConstexprIterator](https://cppreference.com/w/cpp/named_req/ConstexprIterator) requirements"
     paper: P0858
     lib: true
     support:

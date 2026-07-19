@@ -7,7 +7,7 @@ execute: true
 `for (auto& x : container)` iterates over all elements of a range.
 The compiler expands it to a begin/end iterator loop.
 It works with arrays, standard containers, and any type that provides `begin()` and `end()`
-member functions or free functions found via [ADL](https://en.cppreference.com/w/cpp/language/adl.html).
+member functions or free functions found via [ADL](https://cppreference.com/w/cpp/language/adl.html).
 
 ## Why It Matters
 

@@ -557,7 +557,7 @@ features:
       - target: Xcode
         msg: "No-op library API."
 
-  - desc: "[Money, Time, and hexfloat I/O manipulators](https://en.cppreference.com/w/cpp/io/manip)"
+  - desc: "[Money, Time, and hexfloat I/O manipulators](https://cppreference.com/w/cpp/io/manip)"
     paper: [N2071, N2072]
     lib: true
     support:

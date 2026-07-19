@@ -390,7 +390,7 @@ features:
       - name: __cpp_template_template_args
         value: 201611L
 
-  - desc: "Template argument deduction for class templates ([CTAD](https://en.cppreference.com/w/cpp/language/class_template_argument_deduction.html))"
+  - desc: "Template argument deduction for class templates ([CTAD](https://cppreference.com/w/cpp/language/class_template_argument_deduction.html))"
     paper: P0091
     summary: "Deduce template arguments from constructor arguments."
     content: ctad.md
@@ -643,7 +643,7 @@ features:
       - name: __cpp_lib_memory_resource
         value: 201603L
 
-  - desc: "[Searchers](https://en.cppreference.com/w/cpp/functional.html#Searchers), `std::apply()` and `std::sample()`"
+  - desc: "[Searchers](https://cppreference.com/w/cpp/functional.html#Searchers), `std::apply()` and `std::sample()`"
     paper: P0220
     lib: true
     support:
@@ -662,7 +662,7 @@ features:
         value: 201603L
         desc: "std::sample()"
 
-  - desc: "[Mathematical special functions](https://en.cppreference.com/w/cpp/numeric/special_math.html)"
+  - desc: "[Mathematical special functions](https://cppreference.com/w/cpp/numeric/special_math.html)"
     paper: P0226
     lib: true
     support: [GCC 7, MSVC 14.14]
@@ -880,7 +880,7 @@ features:
       - name: __cpp_lib_launder
         value: 201606L
 
-  - desc: "[Extending memory management tools](https://en.cppreference.com/w/cpp/memory.html#Uninitialized_storage)"
+  - desc: "[Extending memory management tools](https://cppreference.com/w/cpp/memory.html#Uninitialized_storage)"
     paper: P0040
     lib: true
     support:
@@ -999,7 +999,7 @@ features:
       - name: __cpp_lib_filesystem
         value: 201703L
 
-  - desc: "[Hardware interference size](https://en.cppreference.com/w/cpp/thread/hardware_destructive_interference_size.html) (reading cache line size)"
+  - desc: "[Hardware interference size](https://cppreference.com/w/cpp/thread/hardware_destructive_interference_size.html) (reading cache line size)"
     paper: P0154
     lib: true
     support:

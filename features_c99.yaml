@@ -1,12 +1,12 @@
 ---
 features:
-  - desc: "Universal-character-names in [identifiers](https://en.cppreference.com/w/c/language/identifiers.html)"
+  - desc: "Universal-character-names in [identifiers](https://cppreference.com/w/c/language/identifiers.html)"
     support:
       - GCC 3.1
       - Clang
       - MSVC
       - Xcode
-  - desc: "Increased [translation limits](https://en.cppreference.com/w/c/language/identifiers.html#Translation_limits)"
+  - desc: "Increased [translation limits](https://cppreference.com/w/c/language/identifiers.html#Translation_limits)"
     paper: N590
     support:
       - GCC
@@ -39,7 +39,7 @@ features:
         msg: "Requires /std:c11 or later."
       - target: owcc
         msg: "`parsed with -zastd=c99 (for wcc*), but does not change the code."
-  - desc: "Enhanced [arithmetic types](https://en.cppreference.com/w/c/language/arithmetic_types.html)"
+  - desc: "Enhanced [arithmetic types](https://cppreference.com/w/c/language/arithmetic_types.html)"
     paper:
       - N815
       - N601
@@ -60,7 +60,7 @@ features:
       - Xcode
       - owcc
       - TinyCC
-  - desc: "[Variable-length array](https://en.cppreference.com/w/c/language/array.html#Variable-length_arrays) (VLA) types"
+  - desc: "[Variable-length array](https://cppreference.com/w/c/language/array.html#Variable-length_arrays) (VLA) types"
     paper: N683
     content: c-vla.md
     support:
@@ -68,7 +68,7 @@ features:
       - Clang
       - Xcode 14
       - TinyCC
-  - desc: "[Variably-modified](https://en.cppreference.com/w/c/language/array.html#Variable-length_arrays) (VM) types"
+  - desc: "[Variably-modified](https://cppreference.com/w/c/language/array.html#Variable-length_arrays) (VM) types"
     paper: N683
     content: c-vm-types.md
     support:
@@ -106,7 +106,7 @@ features:
       - Xcode
       - owcc
       - TinyCC
-  - desc: "Hexadecimal [floating constants](https://en.cppreference.com/w/c/language/floating_constant.html)"
+  - desc: "Hexadecimal [floating constants](https://cppreference.com/w/c/language/floating_constant.html)"
     paper: N308
     content: c-hex-float.md
     support:
@@ -116,7 +116,7 @@ features:
       - Xcode
       - owcc
       - TinyCC
-  - desc: "[Compound literals](https://en.cppreference.com/w/c/language/compound_literal.html)"
+  - desc: "[Compound literals](https://cppreference.com/w/c/language/compound_literal.html)"
     paper: N716
     content: c-compound-literals.md
     support:
@@ -135,7 +135,7 @@ features:
       - GCC
       - Clang
       - Xcode
-  - desc: "Implicit `return 0;` in the [`main()` function](https://en.cppreference.com/w/c/language/main_function.html)"
+  - desc: "Implicit `return 0;` in the [`main()` function](https://cppreference.com/w/c/language/main_function.html)"
     support:
       - GCC
       - Clang
@@ -185,7 +185,7 @@ features:
       - GCC 3.1
       - Clang
       - Xcode
-  - desc: "[Variadic macros](https://en.cppreference.com/w/c/preprocessor/replace.html)"
+  - desc: "[Variadic macros](https://cppreference.com/w/c/preprocessor/replace.html)"
     paper: N707
     content: c-variadic-macros.md
     support:
