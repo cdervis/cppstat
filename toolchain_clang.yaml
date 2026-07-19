@@ -97,7 +97,7 @@ infos:
       - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
 
   - name: Clang 3.4.2
-    released: June 19, 2024
+    released: June 19, 2014
     refs:
       - "https://releases.llvm.org/3.0/docs/ClangReleaseNotes.html"
 
