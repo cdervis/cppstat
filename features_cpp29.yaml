@@ -43,6 +43,7 @@ features:
     paper: P3847
     support:
       - GCC
+      - Clang 3.1
 
   - desc: "Language linkage for templates"
     paper: P2243
