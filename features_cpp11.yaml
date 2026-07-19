@@ -474,8 +474,6 @@ features:
         msg: "The first version that contains incomplete and obsolete `type_traits` as defined in N2518."
       - target: GCC 4.8
         msg: "Lack of `__is_trivial(ly)*`."
-      - target: MSVC 14.0
-        msg: "The first version that contains incomplete and obsolete `type_traits` as defined in N2518."
     keywords:
       [
         "sfinae",
