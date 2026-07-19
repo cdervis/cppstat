@@ -355,7 +355,7 @@ infos:
     refs:
       - https://gcc.gnu.org/gcc-8/
   - name: GCC 8.2
-    released: December 6, 2018
+    released: July 26, 2018
     refs:
       - https://gcc.gnu.org/gcc-8/
   - name: GCC 6.5
