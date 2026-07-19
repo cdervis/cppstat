@@ -39,11 +39,11 @@ infos:
   - name: Xcode 2.4
     released: August 17, 2006
 
-  - name: Xcode 2.5
-    released: October 29, 2007
-
   - name: Xcode 3
     released: October 25, 2007
+
+  - name: Xcode 2.5
+    released: October 29, 2007
 
   - name: Xcode 3.1
     released: July 10, 2008
