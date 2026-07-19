@@ -1679,6 +1679,7 @@ features:
 
   - desc: "Miscellaneous Reflection Cleanup"
     paper: P3795
-    summary: "adding missing predicates `current_class` `current_function` `current_namespace` ..."
+    summary: "Fills gaps in the reflection API, adding `current_function()`, `current_class()` and `current_namespace()`, among others."
     lib: true
-    content: miscellaneous-ceflection-cleanup.md
+    content: miscellaneous-reflection-cleanup.md
+    keywords: ["reflection"]
