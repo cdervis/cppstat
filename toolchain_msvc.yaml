@@ -5,6 +5,11 @@ infos:
     refs:
       - "https://visualstudio.com/"
 
+  - name: MSVC 6.0
+    released: September, 1998
+    mscver: 1200
+    part_of: "Visual Studio 6.0"
+
   - name: MSVC 7.0
     released: February, 2002
     mscver: 1300

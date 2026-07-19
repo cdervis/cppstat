@@ -6,6 +6,18 @@ infos:
     refs:
       - "https://gcc.gnu.org/"
 
+  - name: GCC 2
+    released: February 22, 1992
+    refs:
+      - "https://gcc.gnu.org/releases.html"
+  - name: GCC 2.5
+    released: October 22, 1993
+    refs:
+      - "https://gcc.gnu.org/releases.html"
+  - name: GCC 2.8
+    released: January 7, 1998
+    refs:
+      - "https://gcc.gnu.org/releases.html"
   - name: GCC 3.1
     released: May, 2002
     refs:
