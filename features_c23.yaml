@@ -324,7 +324,7 @@ features:
       - Clang 12 (partial)
       - MSVC 14.39
       - Xcode 14
-  - desc: "Improved tag compatiblity"
+  - desc: "Improved tag compatibility"
     paper: N3037
     support:
       - GCC 14
