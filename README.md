@@ -21,7 +21,7 @@ cppstat is a site that lists C and C++ features and their respective support by 
 cppstat fetches data from YAML files in the root directory.
 The files are maintained as a best-effort and contributions are always welcome.
 
-Please use GitHub's web interface and commit your changes for approval.
+Simply use GitHub's web interface or fork the repo to commit your changes for approval.
 Another approach is to [submit a ticket](https://github.com/cdervis/cppstat/issues) for any incorrect or missing information, or feature ideas.
 
 **If you are a toolchain developer, feel free to request full editorial access.**
