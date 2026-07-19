@@ -737,8 +737,8 @@ features:
     paper: P2255
     lib: true
     support:
-      - GCC 14
       - GCC 13 (partial)
+      - GCC 14
       - Clang 21 (partial)
       - MSVC 14.51
       - Xcode 26.4 (partial)
