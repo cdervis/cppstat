@@ -103,30 +103,6 @@ The structure of a content file should be:
   2. **Why It Matters**: Explains the background to why the function was originally standardized, e.g. what historical problems it solves.
   3. **Example**: A short, interactive example how the feature can be used in code.
 
-#### Code Editors
-
-Each feature should include a sample snippet that shows how it can be used in code.
-The snippet helps the reader to better understand the feature and to try it out directly in the browser.
-
-Markdown multiline code blocks are expected (triple backticks).
-For C++ features, a **`cpp`** block is expected; for C it's **`c`**.
-
-Example of how it looks on cppstat:
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/feature_example_editor_dark.webp">
-  <source media="(prefers-color-scheme: light)" srcset="assets/feature_example_editor_light.webp">
-  <img alt="Logo" src="assets/feature_example_editor_light.webp" width="600">
-</picture>
-
-The frontmatter of a content file can specify the following properties:
-
-- **execute**: If `true`, allows execution of the program. (default: `false`)
-- **flags**: Extra flags to pass to the compiler. (default: latest standard of the feature's language + `-O2`)
-- **show_assembly**: If `true`, adds an assembly output tab to the compilation result. (default: `false`)
-
----
-
 ### Toolchains
 
 Toolchains are declared in the `toolchains.yaml` file.
