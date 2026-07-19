@@ -55,9 +55,6 @@ features:
       - Clang
       - MSVC 10.0
       - Xcode
-    ftm:
-      - name: __cpp_auto_type
-        value: 200704L
 
   - desc: "[Delegating constructors](https://cppreference.com/cpp/language/initializer_list#Delegating_constructor)"
     paper: N1986
@@ -178,9 +175,6 @@ features:
       - Clang 2.9
       - MSVC 10.0
       - Xcode
-    ftm:
-      - name: __cpp_nullptr
-        value: 200704L
 
   - desc: "Explicit [conversion operators](https://cppreference.com/cpp/language/cast_operator)"
     paper: N2437
@@ -230,9 +224,6 @@ features:
       - Clang 2.9
       - MSVC 14.0
       - Xcode
-    ftm:
-      - name: __cpp_inline_namespaces
-        value: 200809L
 
   - desc: "[Inheriting constructors](https://cppreference.com/cpp/language/using_declaration#Inheriting_constructors)"
     paper: N2540
@@ -252,9 +243,6 @@ features:
       - Clang 2.9
       - MSVC 10.0
       - Xcode
-    ftm:
-      - name: __cpp_trailing_return
-        value: 200710L
 
   - desc: "Unrestricted [unions](https://cppreference.com/cpp/language/union)"
     paper: N2544
@@ -263,9 +251,6 @@ features:
       - Clang 3
       - MSVC 14.0
       - Xcode
-    ftm:
-      - name: __cpp_unrestricted_unions
-        value: 200811L
 
   - desc: "[Variadic templates](https://cppreference.com/cpp/language/parameter_pack)"
     paper: [N2242, N2555]
@@ -286,9 +271,6 @@ features:
       - Clang 2.9
       - MSVC 14.14
       - Xcode
-    ftm:
-      - name: __cpp_expression_sfinae
-        value: 200704L
 
   - desc: "Local and unnamed types as template parameters"
     paper: N2657
@@ -297,9 +279,6 @@ features:
       - Clang 2.9
       - MSVC 10.0
       - Xcode
-    ftm:
-      - name: __cpp_local_type_template_args
-        value: 200704L
 
   - desc: "[Thread-local storage](https://cppreference.com/cpp/language/storage_duration)"
     paper: N2659
@@ -378,9 +357,6 @@ features:
       - Clang 3.1
       - MSVC 11.0
       - Xcode
-    ftm:
-      - name: __cpp_forward_enum
-        value: 200809L
 
   - desc: "[User-defined literals](https://cppreference.com/cpp/language/user_literal)"
     paper: N2765
