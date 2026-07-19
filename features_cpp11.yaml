@@ -498,7 +498,6 @@ features:
       - GCC 5
       - Clang 3
       - MSVC 14.0
-      - MSVC 14.0
       - Xcode
     hints:
       - target: GCC 4.3
