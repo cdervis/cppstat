@@ -416,9 +416,6 @@ features:
       - Clang 3
       - MSVC 14.0
       - Xcode
-    ftm:
-      - name: __cpp_noexcept_function_type
-        value: 201510L
 
   - desc: "Defaulted move [special member functions](https://cppreference.com/cpp/language/member_functions#Special_member_functions)"
     paper: N3053
@@ -428,9 +425,6 @@ features:
       - Clang 3
       - MSVC 14.0
       - Xcode
-    ftm:
-      - name: __cpp_noexcept_function_type
-        value: 201510L
 
   - desc: "`override` and `final`"
     paper: [N2928, N3206, N3272]
