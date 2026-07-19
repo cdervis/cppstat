@@ -504,4 +504,5 @@ infos:
     released: March 24, 2026
     requires: macOS 26.2 (Tahoe)
     apple_clang: 21.0.0 (clang-2100.0.123.102)
-    refs: [https://developer.apple.com/documentation/xcode-release-notes/xcode-26_4-release-notes]
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-26_4-release-notes
