@@ -285,7 +285,7 @@ features:
     support:
       - GCC 4.4 (partial)
       - GCC 4.8
-      - Clang 3.3
+      - Clang 3.3 (hint)
       - MSVC 10.0 (partial)
       - MSVC 14.0
       - Xcode
