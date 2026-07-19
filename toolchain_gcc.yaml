@@ -2,7 +2,7 @@
 infos:
   - name: GCC
     desc: This applies to GCC in general, not any specific version.
-    released: May, 2002
+    released: May 23, 1987
     refs:
       - "https://gcc.gnu.org/"
 
