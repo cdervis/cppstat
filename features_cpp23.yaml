@@ -31,11 +31,13 @@ features:
     lib: true
     support:
       - GCC 12 (partial)
-      - GCC 14
+      - GCC 14 (hint)
       - MSVC 14.34
     hints:
       - target: GCC 12
         msg: "Enabled by building GCC with `--enable-libstdcxx-backtrace=yes`, requires linking against `-lstdc++_libbacktrace`"
+      - target: GCC 14
+        msg: "Requires linking against `-lstdc++exp`. GCC 13 accepts either `-lstdc++_libbacktrace` or `-lstdc++exp`; `-lstdc++_libbacktrace` was removed in GCC 14."
     ftm:
       - name: __cpp_lib_stacktrace
         value: 202011L
@@ -622,11 +624,13 @@ features:
     lib: true
     support:
       - GCC 12 (partial)
-      - GCC 14
+      - GCC 14 (hint)
       - MSVC 14.34
     hints:
       - target: GCC 12
         msg: "Enabled by building GCC with `--enable-libstdcxx-backtrace=yes`, requires linking against `-lstdc++_libbacktrace`"
+      - target: GCC 14
+        msg: "Requires linking against `-lstdc++exp`. GCC 13 accepts either `-lstdc++_libbacktrace` or `-lstdc++exp`; `-lstdc++_libbacktrace` was removed in GCC 14."
     ftm:
       - name: __cpp_lib_stacktrace
         value: 202011L
