@@ -4,7 +4,7 @@ execute: true
 
 ## What It Does
 
-In C++17 and newer, returning a [prvalue](https://cppreference.com/w/cpp/language/value_category.html) of the same type as the function return type,
+In C++17 and newer, returning a [prvalue](https://cppreference.com/cpp/language/value_category) of the same type as the function return type,
 or initializing an object from a prvalue, is guaranteed to construct the object directly in its destination.
 No copy or move constructor is called or required to exist.
 

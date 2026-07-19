@@ -14,7 +14,7 @@ features:
       - Clang 14
       - Xcode 16
 
-  - desc: "[Unevaluated strings](https://cppreference.com/w/cpp/language/string_literal.html#Unevaluated_strings)"
+  - desc: "[Unevaluated strings](https://cppreference.com/cpp/language/string_literal#Unevaluated_strings)"
     paper: P2361
     support:
       - GCC 14
@@ -25,7 +25,7 @@ features:
       - target: Clang 17
         msg: "Attributes arguments don't yet parse as unevaluated string literals."
 
-  - desc: "Add @, $, and ` to the [basic character set](https://cppreference.com/w/cpp/language/charset.html#Basic_character_set)"
+  - desc: "Add @, $, and ` to the [basic character set](https://cppreference.com/cpp/language/charset#Basic_character_set)"
     paper: P2558
     support:
       - GCC 15
@@ -375,7 +375,7 @@ features:
       - Clang 18
       - Xcode 16.3
 
-  - desc: "[Pack indexing](https://cppreference.com/w/cpp/language/pack_indexing.html)"
+  - desc: "[Pack indexing](https://cppreference.com/cpp/language/pack_indexing)"
     paper: P2662
     summary: "Pack indexing provides direct access to elements in a parameter pack using `...[N]` syntax."
     content: pack-indexing.md
@@ -579,7 +579,7 @@ features:
         value: 202311L
     keywords: ["math"]
 
-  - desc: "Disallow binding a returned [glvalue](https://cppreference.com/w/cpp/language/value_category.html#glvalue) to a temporary"
+  - desc: "Disallow binding a returned [glvalue](https://cppreference.com/cpp/language/value_category#glvalue) to a temporary"
     paper: P2748
     content: disallow-return-temporary-glvalue.md
     support:
@@ -587,14 +587,14 @@ features:
       - Clang 19
       - Xcode 16.3
 
-  - desc: "Clarifying rules for brace elision in [aggregate initialization](https://cppreference.com/w/cpp/language/aggregate_initialization.html)"
+  - desc: "Clarifying rules for brace elision in [aggregate initialization](https://cppreference.com/cpp/language/aggregate_initialization)"
     paper: P3106
     support:
       - GCC
       - Clang 17
       - Xcode 16.3
 
-  - desc: "Attributes for [structured bindings](https://cppreference.com/w/cpp/language/structured_binding.html)"
+  - desc: "Attributes for [structured bindings](https://cppreference.com/cpp/language/structured_binding)"
     paper: P0609
     support:
       - GCC 15
@@ -755,7 +755,7 @@ features:
       - name: __cpp_lib_submdspan
         value: 202403L
 
-  - desc: "Better `std::mdspan`'s [CTAD](https://cppreference.com/w/cpp/language/class_template_argument_deduction.html)"
+  - desc: "Better `std::mdspan`'s [CTAD](https://cppreference.com/cpp/language/class_template_argument_deduction)"
     paper: P3029
     lib: true
     support: [GCC 16, Clang 19]
@@ -906,7 +906,7 @@ features:
       - Xcode 16
     keywords: ["safety"]
 
-  - desc: "[Structured bindings](https://cppreference.com/w/cpp/language/structured_binding.html) can introduce a pack"
+  - desc: "[Structured bindings](https://cppreference.com/cpp/language/structured_binding) can introduce a pack"
     paper: P1061
     summary: "Structured bindings can now capture remaining elements into a parameter pack."
     support: [GCC 16, Clang 21, Xcode 26.4]

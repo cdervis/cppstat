@@ -608,7 +608,7 @@ features:
         value: 202110L
     keywords: ["erase"]
 
-  - desc: "Require `std::span` and `std::basic_string_view` to be [TriviallyCopyable](https://cppreference.com/w/cpp/named_req/TriviallyCopyable)"
+  - desc: "Require `std::span` and `std::basic_string_view` to be [TriviallyCopyable](https://cppreference.com/cpp/named_req/TriviallyCopyable)"
     paper: P2251
     lib: true
     support:

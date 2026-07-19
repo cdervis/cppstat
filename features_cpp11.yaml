@@ -1,6 +1,6 @@
 ---
 features:
-  - desc: "C99 [preprocessor](https://cppreference.com/w/cpp/preprocessor.html)"
+  - desc: "C99 [preprocessor](https://cppreference.com/cpp/preprocessor)"
     paper: N1653
     support:
       - GCC 4.3
@@ -39,7 +39,7 @@ features:
       - MSVC 10.0
       - Xcode
 
-  - desc: "[`long long`](https://cppreference.com/w/cpp/language/types.html#long_long)"
+  - desc: "[`long long`](https://cppreference.com/cpp/language/types#long_long)"
     paper: N1811
     support:
       - GCC
@@ -47,7 +47,7 @@ features:
       - MSVC 8.0
       - Xcode
 
-  - desc: "[`auto`](https://cppreference.com/w/cpp/language/auto.html)"
+  - desc: "[`auto`](https://cppreference.com/cpp/language/auto)"
     paper: N1984
     content: auto.md
     support:
@@ -59,7 +59,7 @@ features:
       - name: __cpp_auto_type
         value: 200704L
 
-  - desc: "[Delegating constructors](https://cppreference.com/w/cpp/language/initializer_list.html#Delegating_constructor)"
+  - desc: "[Delegating constructors](https://cppreference.com/cpp/language/initializer_list#Delegating_constructor)"
     paper: N1986
     support:
       - GCC 4.7
@@ -90,7 +90,7 @@ features:
       - name: __cpp_constexpr
         value: 200704L
 
-  - desc: "[`char16_t`](https://cppreference.com/w/cpp/language/types.html#char16_t) and [`char32_t`](https://cppreference.com/w/cpp/language/types.html#char32_t)"
+  - desc: "[`char16_t`](https://cppreference.com/cpp/language/types#char16_t) and [`char32_t`](https://cppreference.com/cpp/language/types#char32_t)"
     paper: N2249
     support:
       - GCC 4.4
@@ -101,7 +101,7 @@ features:
       - name: __cpp_unicode_characters
         value: 200704L
 
-  - desc: "[Type traits](https://cppreference.com/w/cpp/meta.html#Type_traits) (compiler support)"
+  - desc: "[Type traits](https://cppreference.com/cpp/meta#Type_traits) (compiler support)"
     paper: [N2255, N2984, N3142]
     support:
       - GCC 4.3 (partial)
@@ -117,7 +117,7 @@ features:
       - target: GCC 4.8
         msg: "Lack of `__is_trivial(ly)*`."
 
-  - desc: "[Template aliases](https://cppreference.com/w/cpp/language/type_alias.html)"
+  - desc: "[Template aliases](https://cppreference.com/cpp/language/type_alias)"
     paper: N2258
     content: template-aliases.md
     support:
@@ -153,7 +153,7 @@ features:
       - MSVC 12.0
       - Xcode
 
-  - desc: "[Strongly-typed `enum`](https://cppreference.com/w/cpp/language/enum.html#Scoped_enumerations)"
+  - desc: "[Strongly-typed `enum`](https://cppreference.com/cpp/language/enum#Scoped_enumerations)"
     paper: N2347
     content: scoped-enums.md
     support:
@@ -162,7 +162,7 @@ features:
       - MSVC 11.0
       - Xcode
 
-  - desc: "[Atomic operations](https://cppreference.com/w/cpp/atomic.html#Atomic_operations)"
+  - desc: "[Atomic operations](https://cppreference.com/cpp/atomic#Atomic_operations)"
     paper: N2427
     support:
       - GCC 4.4
@@ -182,7 +182,7 @@ features:
       - name: __cpp_nullptr
         value: 200704L
 
-  - desc: "Explicit [conversion operators](https://cppreference.com/w/cpp/language/cast_operator.html)"
+  - desc: "Explicit [conversion operators](https://cppreference.com/cpp/language/cast_operator)"
     paper: N2437
     support:
       - GCC 4.5
@@ -201,7 +201,7 @@ features:
       - name: __cpp_ref_qualifiers
         value: 200710L
 
-  - desc: "Unicode [string literals](https://cppreference.com/w/cpp/language/string_literal.html)"
+  - desc: "Unicode [string literals](https://cppreference.com/cpp/language/string_literal)"
     paper: N2442
     support:
       - GCC 4.4
@@ -223,7 +223,7 @@ features:
       - name: __cpp_raw_strings
         value: 200710L
 
-  - desc: "[Inline namespaces](https://cppreference.com/w/cpp/language/namespace.html#Inline_namespaces)"
+  - desc: "[Inline namespaces](https://cppreference.com/cpp/language/namespace#Inline_namespaces)"
     paper: N2535
     support:
       - GCC 4.4
@@ -234,7 +234,7 @@ features:
       - name: __cpp_inline_namespaces
         value: 200809L
 
-  - desc: "[Inheriting constructors](https://cppreference.com/w/cpp/language/using_declaration.html#Inheriting_constructors)"
+  - desc: "[Inheriting constructors](https://cppreference.com/cpp/language/using_declaration#Inheriting_constructors)"
     paper: N2540
     support:
       - GCC 4.8
@@ -245,7 +245,7 @@ features:
       - name: __cpp_inheriting_constructors
         value: 200802L
 
-  - desc: "[Trailing function return types](https://cppreference.com/w/cpp/language/function.html#Function_declaration)"
+  - desc: "[Trailing function return types](https://cppreference.com/cpp/language/function#Function_declaration)"
     paper: N2541
     support:
       - GCC 4.4
@@ -256,7 +256,7 @@ features:
       - name: __cpp_trailing_return
         value: 200710L
 
-  - desc: "Unrestricted [unions](https://cppreference.com/w/cpp/language/union.html)"
+  - desc: "Unrestricted [unions](https://cppreference.com/cpp/language/union)"
     paper: N2544
     support:
       - GCC 4.6
@@ -267,7 +267,7 @@ features:
       - name: __cpp_unrestricted_unions
         value: 200811L
 
-  - desc: "[Variadic templates](https://cppreference.com/w/cpp/language/parameter_pack.html)"
+  - desc: "[Variadic templates](https://cppreference.com/cpp/language/parameter_pack)"
     paper: [N2242, N2555]
     content: variadic-templates.md
     support:
@@ -279,7 +279,7 @@ features:
       - name: __cpp_variadic_templates
         value: 200704L
 
-  - desc: "[Expression SFINAE](https://cppreference.com/w/cpp/language/sfinae.html#Expression_SFINAE)"
+  - desc: "[Expression SFINAE](https://cppreference.com/cpp/language/sfinae#Expression_SFINAE)"
     paper: N2634
     support:
       - GCC 4.4
@@ -301,7 +301,7 @@ features:
       - name: __cpp_local_type_template_args
         value: 200704L
 
-  - desc: "[Thread-local storage](https://cppreference.com/w/cpp/language/storage_duration.html)"
+  - desc: "[Thread-local storage](https://cppreference.com/cpp/language/storage_duration)"
     paper: N2659
     support:
       - GCC 4.4 (partial)
@@ -317,7 +317,7 @@ features:
       - name: __cpp_threadsafe_static_init
         value: 200806L
 
-  - desc: "Dynamic initialization and destruction with concurrency ([magic statics](https://cppreference.com/w/cpp/language/storage_duration.html#Static_local_variables))"
+  - desc: "Dynamic initialization and destruction with concurrency ([magic statics](https://cppreference.com/cpp/language/storage_duration#Static_local_variables))"
     paper: N2660
     support:
       - GCC 4.3
@@ -328,7 +328,7 @@ features:
       - name: __cpp_threadsafe_static_init
         value: 200806L
 
-  - desc: "[Initializer lists](https://cppreference.com/w/cpp/language/list_initialization.html)"
+  - desc: "[Initializer lists](https://cppreference.com/cpp/language/list_initialization)"
     paper: N2672
     content: initializer-lists.md
     support:
@@ -340,7 +340,7 @@ features:
       - name: __cpp_initializer_lists
         value: 200806L
 
-  - desc: "[Non-static data member initializers](https://cppreference.com/w/cpp/language/data_members.html#Member_initialization)"
+  - desc: "[Non-static data member initializers](https://cppreference.com/cpp/language/data_members#Member_initialization)"
     paper: N2756
     support:
       - GCC 4.7
@@ -351,7 +351,7 @@ features:
       - name: __cpp_nsdmi
         value: 200809L
 
-  - desc: "[Attributes](https://cppreference.com/w/cpp/language/attributes.html), (`[[noreturn]]`)"
+  - desc: "[Attributes](https://cppreference.com/cpp/language/attributes), (`[[noreturn]]`)"
     paper: N2761
     support:
       - GCC 4.8
@@ -371,7 +371,7 @@ features:
       - name: __has_cpp_attribute(carries_dependency)
         value: 200809L
 
-  - desc: "[Forward (opaque) `enum` declarations](https://cppreference.com/w/cpp/language/enum.html)"
+  - desc: "[Forward (opaque) `enum` declarations](https://cppreference.com/cpp/language/enum)"
     paper: N2764
     support:
       - GCC 4.6
@@ -382,7 +382,7 @@ features:
       - name: __cpp_forward_enum
         value: 200809L
 
-  - desc: "[User-defined literals](https://cppreference.com/w/cpp/language/user_literal.html)"
+  - desc: "[User-defined literals](https://cppreference.com/cpp/language/user_literal)"
     paper: N2765
     support:
       - GCC 4.7
@@ -393,7 +393,7 @@ features:
       - name: __cpp_user_defined_literals
         value: 200809L
 
-  - desc: "[Rvalue references](https://cppreference.com/w/cpp/language/reference.html#Rvalue_references)"
+  - desc: "[Rvalue references](https://cppreference.com/cpp/language/reference#Rvalue_references)"
     paper: [N2118, N2844, CWG1138]
     content: rvalue-references.md
     support:
@@ -407,7 +407,7 @@ features:
       - name: __cpp_rvalue_references
         value: 200610L
 
-  - desc: "[Lambda expressions](https://cppreference.com/w/cpp/language/lambda.html)"
+  - desc: "[Lambda expressions](https://cppreference.com/cpp/language/lambda)"
     paper: [N2550, N2658, N2927]
     content: lambdas.md
     support:
@@ -420,7 +420,7 @@ features:
       - name: __cpp_lambdas
         value: 200907L
 
-  - desc: "[Range-for loop](https://cppreference.com/w/cpp/language/range-for.html)"
+  - desc: "[Range-for loop](https://cppreference.com/cpp/language/range-for)"
     paper: [N2930, N3271]
     content: range-for.md
     support:
@@ -444,7 +444,7 @@ features:
       - name: __cpp_noexcept_function_type
         value: 201510L
 
-  - desc: "Defaulted move [special member functions](https://cppreference.com/w/cpp/language/member_functions.html#Special_member_functions)"
+  - desc: "Defaulted move [special member functions](https://cppreference.com/cpp/language/member_functions#Special_member_functions)"
     paper: N3053
     content: defaulted-special-members.md
     support:
@@ -489,7 +489,7 @@ features:
       - MSVC
       - Xcode
 
-  - desc: "[Type traits](https://cppreference.com/w/cpp/meta.html#Type_traits)"
+  - desc: "[Type traits](https://cppreference.com/cpp/meta#Type_traits)"
     paper: [N1836, N2240, N2244, N2255, N2342, N2984, N3142]
     lib: true
     support:
@@ -539,7 +539,7 @@ features:
       - target: GCC 4.3
         msg: "Only supports N1913."
 
-  - desc: "[Garbage Collection](https://cppreference.com/w/cpp/header/memory.html#Functions) ([library support](https://cppreference.com/w/cpp/memory.html#Garbage_collector_support))"
+  - desc: "[Garbage Collection](https://cppreference.com/cpp/header/memory#Functions) ([library support](https://cppreference.com/cpp/memory#Garbage_collector_support))"
     paper: N2670
     lib: true
     support:
@@ -557,7 +557,7 @@ features:
       - target: Xcode
         msg: "No-op library API."
 
-  - desc: "[Money, Time, and hexfloat I/O manipulators](https://cppreference.com/w/cpp/io/manip)"
+  - desc: "[Money, Time, and hexfloat I/O manipulators](https://cppreference.com/cpp/io/manip)"
     paper: [N2071, N2072]
     lib: true
     support:
@@ -566,7 +566,7 @@ features:
       - MSVC 14.0
       - Xcode
 
-  - desc: "Disallowing [COW (copy-on-write)](https://cppreference.com/w/cpp/language/acronyms.html) `std::basic_string`"
+  - desc: "Disallowing [COW (copy-on-write)](https://cppreference.com/cpp/language/acronyms) `std::basic_string`"
     paper: N2668
     lib: true
     support:

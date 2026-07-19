@@ -6,7 +6,7 @@ execute: true
 
 `decltype(expr)` yields the type of its operand expression **without evaluating it**.
 For an identifier or class member access, it gives the declared type.
-For other expressions, it produces the type including [value category](https://cppreference.com/w/cpp/language/value_category.html): lvalue expressions
+For other expressions, it produces the type including [value category](https://cppreference.com/cpp/language/value_category): lvalue expressions
 yield a reference type, xvalues yield an rvalue reference, and prvalues yield the non-reference type.
 
 ## Why It Matters

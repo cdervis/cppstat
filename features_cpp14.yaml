@@ -1,6 +1,6 @@
 ---
 features:
-  - desc: "Tweaked wording for [contextual conversions](https://cppreference.com/w/cpp/language/implicit_cast.html#Contextual_conversions)"
+  - desc: "Tweaked wording for [contextual conversions](https://cppreference.com/cpp/language/implicit_cast#Contextual_conversions)"
     paper: N3323
     support:
       - GCC 4.9
@@ -8,7 +8,7 @@ features:
       - MSVC 12.0
       - Xcode
 
-  - desc: "[Binary literals](https://cppreference.com/w/cpp/language/integer_literal.html)"
+  - desc: "[Binary literals](https://cppreference.com/cpp/language/integer_literal)"
     paper: N3472
     support:
       - GCC 4.3 (partial)
@@ -52,7 +52,7 @@ features:
       - name: __cpp_init_captures
         value: 201304L
 
-  - desc: "[Generic lambda expressions](https://cppreference.com/w/cpp/language/lambda.html#Explanation)"
+  - desc: "[Generic lambda expressions](https://cppreference.com/cpp/language/lambda#Explanation)"
     paper: N3649
     content: generic-lambdas.md
     support:
@@ -64,7 +64,7 @@ features:
       - name: __cpp_generic_lambdas
         value: 201304L
 
-  - desc: "[Variable templates](https://cppreference.com/w/cpp/language/variable_template.html)"
+  - desc: "[Variable templates](https://cppreference.com/cpp/language/variable_template)"
     paper: N3651
     support:
       - GCC 5
@@ -86,7 +86,7 @@ features:
       - name: __cpp_constexpr
         value: 201304L
 
-  - desc: "Aggregates with [default member initializers](https://cppreference.com/w/cpp/language/data_members.html#Member_initialization)"
+  - desc: "Aggregates with [default member initializers](https://cppreference.com/cpp/language/data_members#Member_initialization)"
     paper: N3653
     support:
       - GCC 5
@@ -97,7 +97,7 @@ features:
       - name: __cpp_aggregate_nsdmi
         value: 201304L
 
-  - desc: "Omitting/extending [memory allocations](https://cppreference.com/w/cpp/language/new.html#Allocation)"
+  - desc: "Omitting/extending [memory allocations](https://cppreference.com/cpp/language/new#Allocation)"
     paper: N3664
     support: [Clang 3.4, Xcode]
 
@@ -112,7 +112,7 @@ features:
       - name: __has_cpp_attribute(deprecated)
         value: 201309L
 
-  - desc: "[Sized deallocation](https://cppreference.com/w/cpp/language/delete.html)"
+  - desc: "[Sized deallocation](https://cppreference.com/cpp/language/delete)"
     paper: N3778
     support:
       - GCC 5
@@ -123,7 +123,7 @@ features:
       - name: __cpp_sized_deallocation
         value: 201309L
 
-  - desc: "[Single quote](https://cppreference.com/w/cpp/language/integer_literal.html#Single_quote) as digit separator"
+  - desc: "[Single quote](https://cppreference.com/cpp/language/integer_literal#Single_quote) as digit separator"
     paper: N3781
     support:
       - GCC 4.9
@@ -143,7 +143,7 @@ features:
       - MSVC 14.0
       - Xcode
 
-  - desc: "Transparent [operator function objects](https://cppreference.com/w/cpp/functional.html#Operator_function_objects)"
+  - desc: "Transparent [operator function objects](https://cppreference.com/cpp/functional#Operator_function_objects)"
     paper: N3421
     lib: true
     support:
@@ -197,7 +197,7 @@ features:
       - MSVC 14.0
       - Xcode
 
-  - desc: "[User-defined literals](https://cppreference.com/w/cpp/language/user_literal.html#Standard_library) for `<chrono>` and `<string>`"
+  - desc: "[User-defined literals](https://cppreference.com/cpp/language/user_literal#Standard_library) for `<chrono>` and `<string>`"
     paper: N3642
     lib: true
     support:
@@ -211,7 +211,7 @@ features:
       - name: __cpp_lib_string_udls
         value: 201304L
 
-  - desc: "[Null forward iterators](https://cppreference.com/w/cpp/named_req/ForwardIterator.html#Singular_iterators)"
+  - desc: "[Null forward iterators](https://cppreference.com/cpp/named_req/ForwardIterator#Singular_iterators)"
     paper: N3644
     lib: true
     support:
@@ -233,7 +233,7 @@ features:
       - name: __cpp_lib_quoted_string_io
         value: 201304L
 
-  - desc: "Alias templates for [transformation traits](https://cppreference.com/w/cpp/meta.html#Type_transformations)"
+  - desc: "Alias templates for [transformation traits](https://cppreference.com/cpp/meta#Type_transformations)"
     paper: N3655
     lib: true
     support:
@@ -324,7 +324,7 @@ features:
       - name: __cpp_lib_robust_nonmodifying_seq_ops
         value: 201304L
 
-  - desc: "[User-defined literals for `std::complex`](https://cppreference.com/w/cpp/numeric/complex/operator%2522%2522i.html)"
+  - desc: "[User-defined literals for `std::complex`](https://cppreference.com/cpp/numeric/complex/operator%22%22i)"
     paper: N3779
     lib: true
     support:

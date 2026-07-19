@@ -25,7 +25,7 @@ features:
       - GCC 10
       - Clang 9
       - Xcode 11.4
-  - desc: "[Attributes](https://cppreference.com/w/c/language/attributes.html)"
+  - desc: "[Attributes](https://cppreference.com/c/language/attributes)"
     paper:
       - N2335
       - N2554
@@ -45,13 +45,13 @@ features:
       - GCC 10
       - Clang 9
       - Xcode 11.4
-  - desc: "[u8 character constants](https://cppreference.com/w/c/language/character_constant.html)"
+  - desc: "[u8 character constants](https://cppreference.com/c/language/character_constant)"
     paper: N2418
     support:
       - GCC 10
       - Clang 15
       - Xcode 15
-  - desc: "Removal of [function definitions](https://cppreference.com/w/c/language/function_definition.html) without prototype"
+  - desc: "Removal of [function definitions](https://cppreference.com/c/language/function_definition) without prototype"
     paper: N2432
     support:
       - GCC 10
@@ -69,7 +69,7 @@ features:
       - GCC 11
       - Clang 11
       - Xcode 13
-  - desc: "[Labels](https://cppreference.com/w/c/language/statements.html#Labels) before declarations and end of blocks"
+  - desc: "[Labels](https://cppreference.com/c/language/statements#Labels) before declarations and end of blocks"
     paper: N2508
     support:
       - GCC 11
@@ -80,7 +80,7 @@ features:
     hints:
       - target: Clang 16
         msg: "Only labels at the end of a block are supported"
-  - desc: "[Binary integer constants](https://cppreference.com/w/c/language/integer_constant.html)"
+  - desc: "[Binary integer constants](https://cppreference.com/c/language/integer_constant)"
     paper: N2549
     content: c-binary-literals.md
     support:
@@ -102,7 +102,7 @@ features:
         msg: "Supported as an extension."
       - target: Xcode 7
         msg: "Supported as an extension."
-  - desc: "[__has_c_attribute](https://cppreference.com/w/c/language/attributes.html#Attribute_testing) in preprocessor conditionals"
+  - desc: "[__has_c_attribute](https://cppreference.com/c/language/attributes#Attribute_testing) in preprocessor conditionals"
     paper: N2553
     support:
       - GCC 11
@@ -144,7 +144,7 @@ features:
     hints:
       - target: MSVC 14.0
         msg: "Supported as an extension."
-  - desc: "[`#elifdef` and `#elifndef`](https://cppreference.com/w/c/preprocessor/conditional.html)"
+  - desc: "[`#elifdef` and `#elifndef`](https://cppreference.com/c/preprocessor/conditional)"
     paper: N2645
     content: c-elifdef.md
     support:
@@ -152,7 +152,7 @@ features:
       - Clang 13
       - MSVC 14.40
       - Xcode 13.3
-  - desc: "Type change of [u8 string literals](https://cppreference.com/w/c/language/string_literal.html) to `char8_t[]`"
+  - desc: "Type change of [u8 string literals](https://cppreference.com/c/language/string_literal) to `char8_t[]`"
     paper: N2653
     support:
       - GCC 13
@@ -214,13 +214,13 @@ features:
       - GCC 13
       - Clang 15
       - Xcode 16.1
-  - desc: "Removal of [function declarations](https://cppreference.com/w/c/language/function_declaration.html) without prototype"
+  - desc: "Removal of [function declarations](https://cppreference.com/c/language/function_declaration) without prototype"
     paper: N2841
     support:
       - GCC 13
       - Clang 15
       - Xcode 16.1
-  - desc: "[Empty initializers](https://cppreference.com/w/c/language/initialization.html#Empty_initialization)"
+  - desc: "[Empty initializers](https://cppreference.com/c/language/initialization#Empty_initialization)"
     paper: N2900
     content: c-empty-init.md
     support:
@@ -269,7 +269,7 @@ features:
     content: c-unreachable.md
     support:
       - GCC 15
-  - desc: "Relax requirements for [variadic parameter list](https://cppreference.com/w/c/language/variadic.html)"
+  - desc: "Relax requirements for [variadic parameter list](https://cppreference.com/c/language/variadic)"
     paper: N2975
     support:
       - GCC 13
