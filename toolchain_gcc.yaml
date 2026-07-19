@@ -11,7 +11,7 @@ infos:
     refs:
       - "https://gcc.gnu.org/gcc-3.1/"
   - name: GCC 3.2
-    released: May, 2003
+    released: August, 2002
     refs:
       - "https://gcc.gnu.org/gcc-3.2/"
   - name: GCC 3.1.1
@@ -19,7 +19,7 @@ infos:
     refs:
       - "https://gcc.gnu.org/gcc-3.1/"
   - name: GCC 3.2.1
-    released: August, 2002
+    released: November, 2002
     refs:
       - "https://gcc.gnu.org/gcc-3.2/"
   - name: GCC 3.2.2
