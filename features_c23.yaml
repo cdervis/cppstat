@@ -224,7 +224,7 @@ features:
     paper: N2900
     content: c-empty-init.md
     support:
-      - GCC 13
+      - GCC 13 (hint)
       - Clang 17 (hint)
       - Xcode (partial)
     hints:

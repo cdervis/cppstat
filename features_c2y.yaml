@@ -52,9 +52,9 @@ features:
   - desc: "Remove imaginary types"
     paper: N3274
     support:
-      - GCC
-      - Clang
-      - Xcode
+      - GCC (hint)
+      - Clang (hint)
+      - Xcode (hint)
     hints:
       - target: GCC
         msg: "GCC has never supported imaginary types."
