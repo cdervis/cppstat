@@ -1667,6 +1667,10 @@ features:
     ftm:
       - name: __cpp_lib_constexpr_format
         value: 202511L
+        desc: "`std::format` is `constexpr`"
+      - name: __cpp_lib_constexpr_string
+        value: 202511L
+        desc: "`std::to_string` and `std::to_wstring` are `constexpr`"
 
   - desc: "Optimize for `std::optional` in range adaptors"
     paper: P3913
