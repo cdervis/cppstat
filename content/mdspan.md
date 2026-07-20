@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::mdspan` is a non-owning view over contiguous data providing multidimensional array access semantics. It encapsulates a pointer to data with layout mapping that translates multidimensional indices to memory offsets. The layout policy determines the memory access pattern (row-major or column-major).

@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 `static_assert` can now accept a user-generated message instead of requiring a string literal.

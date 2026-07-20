@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c11"
----
-
 ## What It Does
 
 `_Noreturn` specifies that a function does not return to its caller. In C23, the `[[noreturn]]`

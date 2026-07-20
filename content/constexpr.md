@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `constexpr` declares that a function or variable can be evaluated at compile time.

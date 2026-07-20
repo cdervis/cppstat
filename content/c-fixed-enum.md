@@ -1,8 +1,3 @@
----
-execute: true
-show_assembly: true
----
-
 ## What It Does
 
 Enumerations can specify a fixed underlying type using the syntax `enum Name : Type { ... }`.

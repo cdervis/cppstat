@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 In C++17 and newer, returning a [prvalue](https://cppreference.com/cpp/language/value_category) of the same type as the function return type,

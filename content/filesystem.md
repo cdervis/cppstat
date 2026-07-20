@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 `std::filesystem` provides facilities for path manipulation, file status queries, directory iteration, and file system modification operations.

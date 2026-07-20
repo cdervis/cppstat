@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::jthread` is a thread wrapper that automatically joins upon destruction.

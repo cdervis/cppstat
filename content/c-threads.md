@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c11"
----
-
 ## What It Does
 
 `<threads.h>` provides thread management (`thrd_create()`, `thrd_join()`), mutexes (`mtx_init()`,

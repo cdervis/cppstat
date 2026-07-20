@@ -1,7 +1,3 @@
----
-execute: true
-show_assembly: true
----
 ## What It Does
 
 `[[unsequenced]]` indicates that a function has no side effects and its return value depends

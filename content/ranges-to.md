@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `ranges::to()` materializes a range into a concrete container of the specified type.

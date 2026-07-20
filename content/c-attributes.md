@@ -1,8 +1,3 @@
----
-execute: true
-show_assembly: true
----
-
 ## What It Does
 
 C23 introduces standard attributes using the `[[attribute]]` syntax. Standard attributes

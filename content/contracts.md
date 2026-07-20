@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 Contracts specify function preconditions (requirements on input), postconditions

@@ -1,8 +1,3 @@
----
-execute: true
-show_assembly: true
----
-
 ## What It Does
 
 Empty initializers `{}` zero-initialize an object. For structures and arrays, all members

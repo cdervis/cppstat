@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 The subscript operator `operator[]` accepts multiple arguments. The syntax `m[i, j]` performs direct multidimensional indexing without chained bracket operations or function call syntax. Within brackets, the comma functions as a parameter separator rather than the comma operator.

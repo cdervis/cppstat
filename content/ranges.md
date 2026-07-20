@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 Ranges encapsulate sequences of elements as single objects with `begin()` and `end()` accessors.

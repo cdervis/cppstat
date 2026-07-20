@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::source_location` encapsulates source code metadata

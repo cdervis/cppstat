@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 Most functions in the `<cmath>` and `<complex>` headers are made `constexpr`.

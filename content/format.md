@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::format()` performs type-safe string formatting using replacement fields with format specifications.

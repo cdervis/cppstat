@@ -1,8 +1,3 @@
----
-execute: false
-show_assembly: true
----
-
 ## What It Does
 
 Trivial infinite loops (iteration statements with empty or side-effect-free bodies) are no

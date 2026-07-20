@@ -1,7 +1,3 @@
----
-show_only: true
----
-
 ## What It Does
 
 `#embed` is a preprocessor directive that includes the contents of a binary file as a

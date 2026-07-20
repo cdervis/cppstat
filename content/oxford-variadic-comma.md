@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 This proposal makes use of a variadic ellipsis (`...`) deprecated,

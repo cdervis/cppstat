@@ -1,8 +1,3 @@
----
-execute: true
-flags: "-freflection"
----
-
 ## What It Does
 
 Reflection provides compile-time introspection and manipulation of program structure.

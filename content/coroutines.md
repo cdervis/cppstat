@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 Coroutines are functions that can suspend execution and resume at a later point.

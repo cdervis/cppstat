@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 Class template argument deduction (CTAD) allows the compiler to deduce template arguments for

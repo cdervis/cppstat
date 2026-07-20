@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `decltype(expr)` yields the type of its operand expression **without evaluating it**.

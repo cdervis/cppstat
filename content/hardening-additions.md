@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 Additional standard library functions now have hardened preconditions that perform runtime

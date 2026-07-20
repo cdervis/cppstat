@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::optional<T&>` is a specialization of `std::optional` containing either a reference to an object

@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 Rvalue references (`T&&`) distinguish temporary objects from lvalues.

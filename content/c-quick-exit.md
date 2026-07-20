@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c11"
----
-
 ## What It Does
 
 `quick_exit()` terminates the program, calling functions registered with `at_quick_exit()`

@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c11"
----
-
 ## What It Does
 
 `_Alignas(N)` specifies the alignment requirement for a variable or type. `_Alignof(type)`

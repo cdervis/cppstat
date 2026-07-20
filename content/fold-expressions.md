@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 Fold expressions apply a binary operator to all elements of a parameter pack in a single expression.

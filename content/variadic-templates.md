@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 Variadic templates accept an arbitrary number of template parameters using `...` pack syntax.

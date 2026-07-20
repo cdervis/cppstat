@@ -1,8 +1,3 @@
----
-execute: true
-show_assembly: true
----
-
 ## What It Does
 
 `constexpr` specifies that an object's value is a constant expression and must be computable

@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::flat_map` and `std::flat_set` are associative containers that store elements in contiguous storage (typically `std::vector`) rather than tree nodes.

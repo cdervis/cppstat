@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 Designated initializers initialize aggregate members by name using `.member = value` syntax.

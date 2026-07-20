@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 `&&` and `const&` references can bind to temporary objects.

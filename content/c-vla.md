@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c99"
----
-
 ## What It Does
 
 Variable-length arrays (VLAs) have a size determined at runtime rather than compile time.

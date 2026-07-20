@@ -1,7 +1,3 @@
----
-show_only: true
----
-
 ## What It Does
 
 `#embed` is a preprocessor directive that embeds the contents of a binary file as a comma-separated list of integer literals.

@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `enum class` (scoped enumeration) defines enumerators that are scoped to the enum type and do not

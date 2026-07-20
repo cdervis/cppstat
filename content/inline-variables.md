@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 The `inline` specifier can be applied to variables, giving them the same linkage semantics as inline functions.

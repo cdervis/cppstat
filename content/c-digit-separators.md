@@ -1,8 +1,3 @@
----
-execute: true
-show_assembly: true
----
-
 ## What It Does
 
 Single quote characters (`'`) can appear within integer and floating-point constants to

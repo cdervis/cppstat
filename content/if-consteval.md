@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `if consteval` detects whether the current execution context is compile-time evaluation.

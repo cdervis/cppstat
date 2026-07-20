@@ -1,8 +1,3 @@
----
-execute: true
-show_assembly: true
----
-
 ## What It Does
 
 `typeof` and `typeof_unqual` are operators that yield the type of an expression or type name.

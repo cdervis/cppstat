@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::inplace_vector<T, N>` is a dynamically-resizable sequence container with a fixed maximum capacity `N`.

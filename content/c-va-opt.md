@@ -1,8 +1,3 @@
----
-execute: true
-show_assembly: true
----
-
 ## What It Does
 
 `__VA_OPT__(content)` is a function-like macro that expands to its argument if `__VA_ARGS__`

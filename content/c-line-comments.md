@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c99"
----
-
 ## What It Does
 
 Single-line comments beginning with `//` extend to the end of the line. Everything from `//`

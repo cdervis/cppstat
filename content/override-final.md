@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `override` explicitly marks a member function as overriding a virtual function in a base class;

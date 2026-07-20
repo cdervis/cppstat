@@ -1,8 +1,3 @@
----
-execute: true
-flags: "-lstdc++exp"
----
-
 ## What It Does
 
 `std::stacktrace` captures the current call stack at runtime.

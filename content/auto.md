@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 The `auto` keyword specifies that a variable's type is deduced from its initializer.

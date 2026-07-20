@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 Structured bindings decompose tuples, pairs, arrays, and structs into named identifiers

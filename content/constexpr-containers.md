@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 Most standard library containers and container adaptors are now usable in `constexpr` contexts.

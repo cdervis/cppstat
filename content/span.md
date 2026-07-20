@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::span` is a non-owning view over a contiguous sequence of elements.

@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 The compiler can implicitly generate move constructors and move assignment operators that perform

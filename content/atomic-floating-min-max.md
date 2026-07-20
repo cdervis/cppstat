@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 The `fetch_max`, `fetch_min`, `fetch_fmaximum`, `fetch_fminimum`, `fetch_fmaximum_num`, and `fetch_fminimum_num`

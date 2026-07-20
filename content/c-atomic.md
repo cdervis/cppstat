@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c11"
----
-
 ## What It Does
 
 `_Atomic` qualifies a type to enable atomic operations without data races. The `<stdatomic.h>`

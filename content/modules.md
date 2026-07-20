@@ -1,7 +1,3 @@
----
-show_only: true
----
-
 ## What It Does
 
 Modules provide an encapsulation mechanism that replaces textual inclusion of header files with explicit interface declarations. An `export` declaration specifies the module's public interface; `import` declarations make these declarations available to consuming translation units. Modules are compiled once, cached as binary metadata, and provide namespace isolation that prevents macro leakage and implementation detail exposure.

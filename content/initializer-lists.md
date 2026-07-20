@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::initializer_list<T>` allows functions and constructors to accept brace-enclosed lists of values.

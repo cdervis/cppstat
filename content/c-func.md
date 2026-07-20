@@ -1,7 +1,3 @@
----
-execute: true
-show_assembly: true
----
 ## What It Does
 
 `__func__` is a predefined identifier that expands to a string literal containing the name

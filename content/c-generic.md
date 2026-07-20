@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c11"
----
-
 ## What It Does
 
 `_Generic(expression, type1: result1, type2: result2, ..., default: resultN)` selects one

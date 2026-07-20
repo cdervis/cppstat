@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `if constexpr` evaluates a boolean condition at compile time and discards the non-selected branch.

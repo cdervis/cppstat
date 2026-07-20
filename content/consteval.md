@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `consteval` declares an immediate function that must produce a compile-time constant.

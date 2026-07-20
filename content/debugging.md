@@ -1,8 +1,3 @@
----
-executable: false
-flags: "-lstdc++exp"
----
-
 ## What It Does
 
 The `<debugging>` header provides portable utilities for debugger interaction.

@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::execution` defines a framework for asynchronous and parallel computation based on three core abstractions: senders (represent deferred work), receivers (consume results), and schedulers (control execution context).

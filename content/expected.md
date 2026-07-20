@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::expected<T, E>` is a class template that stores either a value of type `T` or an error of type `E`.

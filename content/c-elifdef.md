@@ -1,8 +1,3 @@
----
-execute: true
-show_assembly: true
----
-
 ## What It Does
 
 `#elifdef` and `#elifndef` are preprocessor directives that combine `#elif` with `#ifdef`

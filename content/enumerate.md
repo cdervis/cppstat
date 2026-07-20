@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `views::enumerate()` produces a range of tuples where each tuple contains an index and the corresponding element from the source range.
