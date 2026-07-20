@@ -1,8 +1,3 @@
----
-execute: false
-show_assembly: true
----
-
 ## What It Does
 
 The `[[likely]]` and `[[unlikely]]` attributes indicate to the compiler the relative probability

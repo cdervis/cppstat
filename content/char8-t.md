@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `char8_t` is a distinct fundamental type representing UTF-8 encoded character data.

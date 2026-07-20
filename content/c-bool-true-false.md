@@ -1,8 +1,3 @@
----
-execute: true
-show_assembly: true
----
-
 ## What It Does
 
 `true`, `false`, and `bool` are predefined keywords in C23. `bool` is a standard type,

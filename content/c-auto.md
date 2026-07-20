@@ -1,8 +1,3 @@
----
-execute: true
-show_assembly: true
----
-
 ## What It Does
 
 `auto` in C23 enables type inference for object definitions with initializers. The compiler

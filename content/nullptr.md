@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `nullptr` is a keyword of type `std::nullptr_t` that represents a null pointer.

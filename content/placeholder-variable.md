@@ -1,7 +1,3 @@
----
-show_only: true
----
-
 ## What It Does
 
 The identifier `_` serves as a placeholder variable name indicating intentional value discard.

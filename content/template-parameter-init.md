@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 This change clarifies how class-type non-type template parameters are initialized. A temporary of

@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c99"
----
-
 ## What It Does
 
 Compound literals create unnamed objects of a specified type using the syntax

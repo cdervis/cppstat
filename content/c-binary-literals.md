@@ -1,8 +1,3 @@
----
-execute: true
-show_assembly: true
----
-
 ## What It Does
 
 Integer constants can be written in binary using the `0b` or `0B` prefix followed by binary

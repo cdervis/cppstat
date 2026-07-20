@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `for (auto& x : container)` iterates over all elements of a range.

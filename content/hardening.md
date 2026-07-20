@@ -1,8 +1,3 @@
----
-execute: true
-flags: "-D_FORTIFY_SOURCE=3 -D_GLIBCXX_ASSERTIONS"
----
-
 ## What It Does
 
 Standard library hardening introduces runtime validation for operations with invalid preconditions. This includes bounds checking for container element access (`std::vector`, `std::span`, `std::string_view`) and state validation for types with invalid access conditions (`std::optional`, `std::expected`). When a contract violation is detected, the program terminates deterministically instead of invoking undefined behavior.

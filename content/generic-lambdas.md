@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 Generic lambdas declare parameters with `auto`, producing a function call operator template. The compiler instantiates the appropriate specialization based on the argument types at each call site, so you don't need explicit template syntax in the lambda definition.

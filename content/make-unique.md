@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::make_unique()` constructs a `std::unique_ptr` by allocating storage, constructing the object

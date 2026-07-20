@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 `std::simd` provides portable SIMD (Single Instruction, Multiple Data) vector types.

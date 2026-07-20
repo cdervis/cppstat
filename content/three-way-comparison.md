@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 The three-way comparison operator `<=>` computes the ordering relationship between two operands in

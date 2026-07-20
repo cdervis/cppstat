@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::integer_sequence` can now be used in `template for` to conveniently write a loop 

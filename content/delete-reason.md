@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 Deleted functions may specify a message string as an argument to the `delete` specifier.

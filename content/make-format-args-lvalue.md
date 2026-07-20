@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 `std::make_format_args()` now accepts only lvalue references instead of forwarding references.

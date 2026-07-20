@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `constinit` specifies that a variable with static or thread-local storage duration

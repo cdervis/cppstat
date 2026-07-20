@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c99"
----
-
 ## What It Does
 
 Variadic macros accept a variable number of arguments using `...` in the parameter list.

@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::bit_cast()` reinterprets the object representation of one type as another type.

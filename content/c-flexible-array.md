@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c99"
----
-
 ## What It Does
 
 A flexible array member is an array declared with no size as the last member of a structure.

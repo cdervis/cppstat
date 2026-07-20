@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 With this, virtual function calls are permitted within constant expressions.

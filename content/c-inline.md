@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c99"
----
-
 ## What It Does
 
 `inline` serves two purposes: it suggests that the compiler substitute the function body at

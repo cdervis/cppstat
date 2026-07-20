@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 Lambda expressions define anonymous function objects inline. They capture variables from the enclosing scope for use within the function body, and are employed in callbacks, algorithms, and contexts requiring locally-scoped function objects.

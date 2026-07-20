@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 Standard library exception types are now `constexpr`-compatible.

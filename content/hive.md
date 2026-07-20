@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::hive` is a container designed for high-frequency insertion and erasure operations.

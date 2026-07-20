@@ -1,7 +1,3 @@
----
-execute: true
-show_assembly: true
----
 ## What It Does
 
 `nullptr` is a null pointer constant with type `nullptr_t`. It implicitly converts to any

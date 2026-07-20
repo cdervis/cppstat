@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 The literal suffixes `uz` (or `UZ`) and `z` (or `Z`) produce values of type `size_t` and the corresponding

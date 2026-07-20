@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 With this, exceptions may be thrown and caught during constant expression evaluation.

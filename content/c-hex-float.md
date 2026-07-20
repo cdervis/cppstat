@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c99"
----
-
 ## What It Does
 
 Hexadecimal floating-point constants use the format `0xH.HHHpE` where `H` represents hexadecimal

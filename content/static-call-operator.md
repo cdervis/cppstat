@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 The function call operator `operator()` may be declared `static`. Stateless function

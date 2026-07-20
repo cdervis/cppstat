@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::vector` can be used in `constexpr` context: vectors can be created, modified, and destroyed during

@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c11"
----
-
 ## What It Does
 
 Anonymous structures and unions are members without a declared name. Their members are accessed

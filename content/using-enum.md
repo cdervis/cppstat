@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `using enum EnumType;` introduces all enumerators of a scoped enumeration into the current scope,

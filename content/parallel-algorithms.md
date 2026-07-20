@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 Standard algorithms in `<algorithm>`, `<numeric>`, and `<memory>` accept an execution policy as their first argument.

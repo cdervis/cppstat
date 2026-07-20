@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 Concepts are named predicates that constrain template parameters.

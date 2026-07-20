@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `static operator[]` allows the subscript operator to be declared as a static member function.

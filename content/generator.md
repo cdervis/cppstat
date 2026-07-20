@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::generator<T>` is a coroutine type for lazy sequence generation.

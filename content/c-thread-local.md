@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c11"
----
-
 ## What It Does
 
 `_Thread_local` specifies that a variable has thread storage duration. Each thread has its

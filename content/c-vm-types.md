@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c99"
----
-
 ## What It Does
 
 Variably-modified types are types of variable-length arrays or types derived from VLAs,

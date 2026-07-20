@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::optional` is a class template containing either a value of type `T` or no value.

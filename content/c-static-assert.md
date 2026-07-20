@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c11"
----
-
 ## What It Does
 
 `_Static_assert(expression, message)` verifies a condition at compile time. If the expression

@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::variant` is a type-safe [tagged union](https://en.wikipedia.org/wiki/Tagged_union) that holds a

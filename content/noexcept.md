@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 The `noexcept` specifier declares that a function does not throw exceptions.

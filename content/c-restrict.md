@@ -1,9 +1,3 @@
----
-execute: true
-show_assembly: true
-flags: "-std=c99"
----
-
 ## What It Does
 
 `restrict` is a type qualifier for pointers that asserts the pointed-to object is accessed

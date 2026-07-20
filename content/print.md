@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::print()` and `std::println()` perform type-safe formatted output using the same format

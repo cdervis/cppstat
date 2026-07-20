@@ -1,8 +1,3 @@
----
-execute: true
-flags: "-freflection"
----
-
 ## What It Does
 
 `template for` is a new statement that iterates over compile-time ranges, expanding the loop

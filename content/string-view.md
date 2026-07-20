@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `std::string_view` is a non-owning reference to a contiguous character sequence.

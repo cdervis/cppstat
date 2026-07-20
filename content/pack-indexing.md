@@ -1,7 +1,3 @@
----
-execute: false
----
-
 ## What It Does
 
 Pack indexing provides direct access to individual elements of a parameter pack via the `...[N]` syntax. The index is a compile-time constant expression. This eliminates the need for recursive template instantiation or `std::tuple`-based indirection to extract specific pack elements.

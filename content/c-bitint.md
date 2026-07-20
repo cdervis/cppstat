@@ -1,8 +1,3 @@
----
-execute: true
-show_assembly: true
----
-
 ## What It Does
 
 `_BitInt(N)` defines an integer type with exactly N bits of precision. Both signed and

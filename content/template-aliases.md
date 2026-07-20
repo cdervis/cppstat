@@ -1,7 +1,3 @@
----
-execute: true
----
-
 ## What It Does
 
 `template <typename T> using Name = ...;` creates a template alias, a new name for an existing template or
