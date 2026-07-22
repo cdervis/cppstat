@@ -73,13 +73,16 @@ features:
       - owcc
       - TinyCC
   - desc: "Unicode support (`<uchar.h>`, `u/U` prefixes)"
+    summary: "Unicode character types, literals, and conversion functions."
     paper: N1487
     lib: true
     support:
       - GCC 4.7.1
       - MSVC 14.20
       - Clang 3.3
+    content: c-uchar.md
   - desc: 'Exclusive create-and-open mode for `fopen()` ("x")'
+    summary: "Exclusive create-and-open mode for `fopen`."
     paper: N1339
     lib: true
     support:
@@ -99,12 +102,14 @@ features:
       - Xcode 16.1
   - desc: "`timespec_get()` function"
     paper: N1499
+    summary: "Calendar time with a nanoseconds field, in a chosen time base."
     lib: true
     support:
       - GCC 4.7.1
       - Clang 3.3
       - MSVC 14.20
       - Xcode 16.1
+    content: c-timespec-get.md
   - desc: "Macros for complex number types (`CMPLX`)"
     summary: "Build complex values componentwise without NaN contamination."
     paper: N1464
