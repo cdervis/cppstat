@@ -26,6 +26,7 @@ features:
 
   - desc: "`__VA_OPT__`"
     paper: [P0306, P1042]
+    summary: "Emit a comma in a variadic macro only when arguments follow."
     support:
       - GCC 8 (partial)
       - GCC 10 (partial)
@@ -38,6 +39,7 @@ features:
         msg: "Designated initializers are supported, except <code>#__VA_OPT__</code> support. <code>__VA_OPT__</code> is supported though."
       - target: GCC 10
         msg: "No placemarker token handling changes"
+    content: va-opt.md
 
   - desc: "Designated initializers"
     paper: P0329
