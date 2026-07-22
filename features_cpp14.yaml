@@ -66,6 +66,7 @@ features:
 
   - desc: "[Variable templates](https://cppreference.com/cpp/language/variable_template)"
     paper: N3651
+    summary: "Variables parameterized by type, without a wrapping class or function."
     support:
       - GCC 5
       - Clang 3.4
@@ -74,6 +75,7 @@ features:
     ftm:
       - name: __cpp_variable_templates
         value: 201304L
+    content: variable-templates.md
 
   - desc: "Relaxed `constexpr` restrictions"
     paper: N3652

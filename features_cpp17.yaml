@@ -32,6 +32,7 @@ features:
       - Clang 3.6
       - MSVC 14.0
       - Xcode
+    content: nested-namespaces.md
 
   - desc: "Extending `static_assert`, v2"
     paper: N3928

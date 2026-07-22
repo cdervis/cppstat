@@ -15,6 +15,7 @@ features:
 
   - desc: "`std::basic_string::contains()` and `std::basic_string_view::contains()`"
     paper: P1679
+    summary: "Test for a substring directly instead of comparing find() against npos."
     lib: true
     support:
       - GCC 11
@@ -24,6 +25,7 @@ features:
     ftm:
       - name: __cpp_lib_string_contains
         value: 202011L
+    content: string-contains.md
 
   - desc: "`<stacktrace>`"
     paper: P0881
@@ -74,6 +76,7 @@ features:
       - Clang 13
       - MSVC 14.44
       - Xcode 13.4.1
+    content: lambda-omit-parens.md
 
   - desc: "Repairing input range adaptors and `std::counted_iterator`"
     paper: P2259

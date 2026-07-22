@@ -34,6 +34,7 @@ features:
 
   - desc: "`constexpr` cast from `void*`: towards `constexpr` type-erasure"
     paper: P2738
+    summary: "Recover a typed pointer from `void*` during constant evaluation."
     support:
       - GCC 14
       - Clang 17
@@ -41,6 +42,7 @@ features:
     ftm:
       - name: __cpp_constexpr
         value: 202306L
+    content: constexpr-void-cast.md
 
   - desc: "On the ignorability of standard attributes"
     paper: P2552
@@ -1318,7 +1320,9 @@ features:
 
   - desc: "Annotations for Reflection"
     paper: P3394
+    summary: "Attach compile-time values to declarations for reflection to read back."
     support: [GCC 16]
+    content: reflection-annotations.md
 
   - desc: "Splicing a base class subobject"
     paper: P3293
