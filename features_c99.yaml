@@ -1,12 +1,15 @@
 ---
 features:
   - desc: "Universal-character-names in [identifiers](https://cppreference.com/c/language/identifiers)"
+    summary: "Non-basic characters in identifiers via universal-character-names."
     support:
       - GCC 3.1
       - Clang
       - MSVC
       - Xcode
+    content: c-universal-character-names.md
   - desc: "Increased [translation limits](https://cppreference.com/c/language/identifiers#Translation_limits)"
+    summary: "Raised minimum translation limits for portable programs."
     paper: N590
     support:
       - GCC
@@ -14,6 +17,7 @@ features:
       - Xcode
       - owcc
       - TinyCC
+    content: c-translation-limits.md
   - desc: "`//` comments"
     paper: N644
     content: c-line-comments.md
@@ -86,19 +90,24 @@ features:
       - Xcode 14
       - owcc 1.4
   - desc: "Non-constant initializers"
+    summary: "Non-constant initializers for block-scope aggregates."
     support:
       - GCC
       - owcc (partial)
     hints:
       - target: owcc
         msg: "Requires -aa for wcc*."
+    content: c-non-constant-initializers.md
   - desc: "Idempotent cvr-qualifiers"
+    summary: "Repeated cvr-qualifiers on a type are idempotent."
     paper: N505
     support:
       - GCC 3
       - Clang
       - Xcode
+    content: c-idempotent-qualifiers.md
   - desc: "Trailing comma in _enumerator-list_"
+    summary: "A comma is allowed after the last enumerator."
     support:
       - GCC
       - Clang
@@ -106,6 +115,7 @@ features:
       - Xcode
       - owcc
       - TinyCC
+    content: c-enum-trailing-comma.md
   - desc: "Hexadecimal [floating constants](https://cppreference.com/c/language/floating_constant)"
     paper: N308
     content: c-hex-float.md
@@ -125,10 +135,12 @@ features:
       - MSVC
       - Xcode 14
   - desc: "Floating-point environment"
+    summary: "Runtime access to the floating-point environment."
     support:
       - GCC (partial)
       - Clang (partial)
       - Xcode 14 (partial)
+    content: c-fenv.md
   - desc: "Requiring truncation for divisions of signed integer types"
     paper: N617
     support:
@@ -136,6 +148,7 @@ features:
       - Clang
       - Xcode
   - desc: "Implicit `return 0;` in the [`main()` function](https://cppreference.com/c/language/main_function)"
+    summary: "Reaching the end of `main` returns zero implicitly."
     support:
       - GCC
       - Clang
@@ -143,7 +156,9 @@ features:
       - Xcode
       - owcc 1.5
       - TinyCC
+    content: c-implicit-return-main.md
   - desc: "Declarations and statements in mixed order"
+    summary: "Declarations and statements may interleave within a block."
     paper: N740
     support:
       - GCC 3
@@ -152,7 +167,9 @@ features:
       - Xcode 14
       - owcc
       - TinyCC
+    content: c-mixed-declarations.md
   - desc: "_init-statement_ in `for` loops"
+    summary: "Declaring loop counters in a `for` statement's init clause."
     support:
       - GCC
       - Clang
@@ -160,6 +177,7 @@ features:
       - Xcode
       - owcc
       - TinyCC
+    content: c-for-loop-declarations.md
   - desc: "`inline` functions"
     paper: N741
     content: c-inline.md

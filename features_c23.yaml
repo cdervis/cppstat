@@ -9,10 +9,12 @@ features:
       - Xcode 11.4
   - desc: "`[[nodiscard]]`"
     paper: N2267
+    summary: "Marks a return value that should not be ignored."
     support:
       - GCC 10
       - Clang 9
       - Xcode 11.4
+    content: c-nodiscard.md
   - desc: "`[[maybe_unused]]`"
     paper: N2270
     support:
