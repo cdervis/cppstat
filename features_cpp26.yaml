@@ -1356,7 +1356,7 @@ features:
   - desc: "`constexpr` virtual inheritance"
     paper: P3533
     content: constexpr-virtual-inheritance.md
-    support: [GCC 16]
+    support: [GCC 16, Clang 24]
     ftm:
       - name: __cpp_constexpr_virtual_inheritance
         value: 202506L
