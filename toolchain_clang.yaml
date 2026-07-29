@@ -482,3 +482,8 @@ infos:
     released: TBD
     refs:
       - "https://clang.llvm.org/docs/ReleaseNotes.html"
+
+  - name: Clang 24
+    released: TBD
+    refs:
+      - "https://clang.llvm.org/docs/ReleaseNotes.html"
