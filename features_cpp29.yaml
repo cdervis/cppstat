@@ -27,6 +27,7 @@ features:
 
   - desc: "Adjust identifier following new Unicode recommendations"
     paper: P3658
+    support: [Clang 24]
 
   - desc: "return_value & return_void Are Not Mutually Exclusive"
     paper: P3950
