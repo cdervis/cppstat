@@ -2,22 +2,21 @@
 features:
   - desc: "Designated-initializers for Base Classes"
     paper: P2287
+    support: [GCC 17]
     ftm:
       - name: __cpp_designated_initializers
         value: 202606L
 
   - desc: "Clarify the behavior of floating-point overflow"
     paper: P3899
-    support:
-      - GCC 12
+    support: [GCC 12]
 
   - desc: "Defaulting Postfix Increment and Decrement Operations"
     paper: P3899
 
   - desc: "Adding restrictions to defaulted assignment operator functions"
     paper: P2953
-    support:
-      - GCC 17
+    support: [GCC 17]
 
   - desc: "Nondeterministic pointer provenance"
     paper: P2434
@@ -27,32 +26,28 @@ features:
 
   - desc: "Adjust identifier following new Unicode recommendations"
     paper: P3658
-    support: [Clang 24]
+    support: [GCC 17, Clang 24]
 
   - desc: "return_value & return_void Are Not Mutually Exclusive"
     paper: P3950
 
   - desc: "More named universal character escapes"
     paper: P3733
-    support:
-      - Clang 23
+    support: [GCC 17, Clang 23]
     ftm:
       - name: __cpp_named_character_escapes
         value: 202606L
 
   - desc: "Lexical order for lambdas"
     paper: P3847
-    support:
-      - GCC
-      - Clang 3.1
+    support: [GCC, Clang 3.1]
 
   - desc: "Language linkage for templates"
     paper: P2243
 
   - desc: "Deallocation Functions with Throwing Exception Specification Are Ill-formed"
     paper: P3424
-    support:
-      - GCC 17
+    support: [GCC 17]
 
   - desc: "Conditional noexcept specifiers in compound requirements"
     paper: P3822
@@ -83,8 +78,7 @@ features:
 
   - desc: "#embed offset parameter"
     paper: P3540
-    support:
-      - GCC 17
+    support: [GCC 17]
     ftm:
       - name: __cpp_pp_embed
         value: 202606L
