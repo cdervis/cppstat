@@ -12,7 +12,7 @@ features:
     support: [GCC 12]
 
   - desc: "Defaulting Postfix Increment and Decrement Operations"
-    paper: P3899
+    paper: P3668
 
   - desc: "Adding restrictions to defaulted assignment operator functions"
     paper: P2953
