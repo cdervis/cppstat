@@ -107,6 +107,7 @@ features:
   - desc: "Revert string support in `std::constant_wrapper`"
     paper: P4206
     lib: true
+    support: [GCC 17, Clang 23]
     ftm:
       - name: __cpp_lib_constant_wrapper
         value: 202606L
