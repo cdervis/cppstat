@@ -82,3 +82,114 @@ features:
     ftm:
       - name: __cpp_pp_embed
         value: 202606L
+
+  - desc: "Add an `iota` object for `simd` (and more)"
+    paper: P3319
+    lib: true
+    ftm:
+      - name: __cpp_lib_simd
+        value: 202606L
+
+  - desc: "The unexpected in `std::expected`"
+    paper: P3798
+    lib: true
+    ftm:
+      - name: __cpp_lib_expected
+        value: 202606L
+
+  - desc: "`view_interface::at()`"
+    paper: P3052
+    lib: true
+    ftm:
+      - name: __cpp_lib_view_interface
+        value: 202606L
+
+  - desc: "Revert string support in `std::constant_wrapper`"
+    paper: P4206
+    lib: true
+    ftm:
+      - name: __cpp_lib_constant_wrapper
+        value: 202606L
+
+  - desc: "Fix encoding issues and add a formatter for `std::error_code`"
+    paper: P3395
+    lib: true
+
+  - desc: "Fix the default floating-point representation in `std::format()`"
+    paper: P3505
+    lib: true
+    ftm:
+      - name: __cpp_lib_to_chars
+        value: 202606L
+
+  - desc: "Deprecating signed character types in iostreams"
+    paper: P3154
+    lib: true
+
+  - desc: "Hazard Pointer Batches"
+    paper: P3428
+    lib: true
+    ftm:
+      - name: __cpp_lib_hazard_pointer
+        value: 202606L
+
+  - desc: "Require `[u]intptr_t`"
+    paper: P3248
+    lib: true
+
+  - desc: "Better shifting"
+    paper: P3793
+    lib: true
+    ftm:
+      - name: __cpp_lib_bitops
+        value: 202606L
+        desc: "`std::shl` and `std::shr`"
+      - name: __cpp_lib_simd_bitops
+        value: 202606L
+        desc: "`std::simd::shl` and `std::simd::shr`"
+
+  - desc: "Copy and fill for `mdspan`"
+    paper: P3242
+    lib: true
+    ftm:
+      - name: __cpp_lib_mdspan_copy
+        value: 202606L
+
+  - desc: "Bit permutations"
+    paper: P3104
+    lib: true
+    ftm:
+      - name: __cpp_lib_bitops
+        value: 202607L
+
+  - desc: "`std::simd` overloads for bit permutations"
+    paper: P3772
+    lib: true
+    ftm:
+      - name: __cpp_lib_simd_bitops
+        value: 202607L
+
+  - desc: "Better Lookups for `std::map` , `std::unordered_map` , and `std::flat_map`"
+    paper: P3091
+    lib: true
+    ftm:
+      - name: __cpp_lib_map_lookup
+        value: 202606L
+
+  - desc: "`constexpr` pointer tagging"
+    paper: P3125
+    lib: true
+    ftm:
+      - name: __cpp_lib_pointer_tag_pair
+        value: 202606L
+
+  - desc: "Thread attributes"
+    paper: P2019
+    lib: true
+    ftm:
+      - name: __cpp_lib_thread_attributes
+        value: 202606L
+
+  - desc: "Library Wording Changes for Defaulted Postfix Increment and Decrement Operations"
+    paper: P3785
+    lib: true
