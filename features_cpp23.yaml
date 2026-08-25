@@ -698,6 +698,7 @@ features:
     ftm:
       - name: __cpp_lib_constexpr_cmath
         value: 202202L
+    support: [MSVC 14.52]
 
   - desc: "`std::unreachable()`"
     paper: P0627
