@@ -51,6 +51,7 @@ features:
 
   - desc: "Conditional noexcept specifiers in compound requirements"
     paper: P3822
+    support: [GCC 17]
     ftm:
       - name: __cpp_concepts
         value: 202606L
