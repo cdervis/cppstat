@@ -94,6 +94,7 @@ features:
   - desc: "The unexpected in `std::expected`"
     paper: P3798
     lib: true
+    support: [Clang 24]
     ftm:
       - name: __cpp_lib_expected
         value: 202606L
