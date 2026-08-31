@@ -237,7 +237,7 @@ features:
   - desc: "Enabling the use of `std::weak_ptr` as keys in unordered associative containers"
     paper: P1901
     lib: true
-    support: [GCC 16]
+    support: [GCC 16, Clang 24]
     ftm:
       - name: __cpp_lib_smart_ptr_owner_equality
         value: 202306L
@@ -245,7 +245,7 @@ features:
   - desc: "`std::text_encoding`: text encodings identification"
     paper: [P1885, P2862]
     lib: true
-    support: [GCC 14]
+    support: [GCC 14, Clang 23]
     ftm:
       - name: __cpp_lib_text_encoding
         value: 202306L
@@ -254,7 +254,7 @@ features:
     paper: P0792
     summary: "A lightweight, non-owning reference to a callable."
     lib: true
-    support: [GCC 16]
+    support: [GCC 16, Clang 24]
     ftm:
       - name: __cpp_lib_function_ref
         value: 202306L
@@ -698,7 +698,7 @@ features:
   - desc: "`views::concat()`"
     paper: P2542
     lib: true
-    support: [GCC 15]
+    support: [GCC 15, Clang 23]
     ftm:
       - name: __cpp_lib_ranges_concat
         value: 202403L
@@ -977,7 +977,7 @@ features:
   - desc: 'Wording for "`constexpr` for specialized memory algorithms"'
     paper: P3508
     lib: true
-    support: [GCC 15]
+    support: [GCC 15, Clang 23]
     ftm:
       - name: __cpp_lib_raw_memory_algorithms
         value: 202411L
@@ -985,7 +985,7 @@ features:
   - desc: "`constexpr` for `std::uninitialized_default_construct()`"
     paper: P3369
     lib: true
-    support: [GCC 15]
+    support: [GCC 15, Clang 23]
     ftm:
       - name: __cpp_lib_raw_memory_algorithms
         value: 202411L
@@ -1441,7 +1441,7 @@ features:
   - desc: "`std::mdspan::at()`"
     paper: P3383
     lib: true
-    support: [GCC 16]
+    support: [GCC 16, Clang 23]
 
   - desc: "Inspecting `std::exception_ptr`"
     paper: P2927
@@ -1597,7 +1597,7 @@ features:
   - desc: "Resolve inconsistencies in begin/end for `std::valarray` and braced initializer lists"
     paper: P3016
     lib: true
-    support: [MSVC 14.51]
+    support: [Clang 24, MSVC 14.51]
 
   - desc: "`flat_meow` fixes"
     paper: P3567
