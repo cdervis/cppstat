@@ -397,7 +397,7 @@ features:
       - Xcode 16.3
 
   - desc: "Saturation arithmetic"
-    paper: P0543
+    paper: [P0543, P4052]
     summary: "Arithmetic operations that clamp to min/max instead of overflowing."
     content: saturation-arithmetic.md
     lib: true
@@ -408,6 +408,10 @@ features:
     ftm:
       - name: __cpp_lib_saturation_arithmetic
         value: 202311L
+        desc: "`std::add_sat()`, ..., `std::saturate_cast()`"
+      - name: __cpp_lib_saturation_arithmetic
+        value: 202603L
+        desc: "Rename to `std::saturating_add()`, ..., `std::saturating_cast()`"
     keywords: ["math"]
 
   - desc: "Freestanding library: Partial Classes"
