@@ -482,18 +482,6 @@ features:
     lib: true
     support: [GCC 16, MSVC 14.42]
 
-  - desc: "`std::span` over an initializer list"
-    paper: P2447
-    content: span-initializer-list.md
-    lib: true
-    support:
-      - GCC 15
-      - Clang 18
-      - Xcode 16
-    ftm:
-      - name: __cpp_lib_span_initializer_list
-        value: 202311L
-
   - desc: "`std::span::at()`"
     paper: P2821
     content: span-at.md
