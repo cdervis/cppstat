@@ -1,0 +1,6 @@
+---
+features:
+  - desc: Modifier validation
+    support:
+      - GCC 15 (hint)
+

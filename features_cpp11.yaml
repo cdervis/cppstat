@@ -5,12 +5,11 @@ features:
     support:
       - GCC 4.3
       - Clang
-      - MSVC 14.0 (partial)
+      - tool: MSVC 14.0
+        status: partial
+        note: "Buggy variadic macros."
       - MSVC 14.26
       - Xcode
-    hints:
-      - target: MSVC 14.0
-        msg: "Buggy variadic macros."
 
   - desc: "`static_assert`"
     paper: N1720
@@ -101,18 +100,17 @@ features:
   - desc: "[Type traits](https://cppreference.com/cpp/meta#Type_traits) (compiler support)"
     paper: [N2255, N2984, N3142]
     support:
-      - GCC 4.3 (partial)
-      - GCC 4.8 (partial)
+      - tool: GCC 4.3
+        status: partial
+        note: "The first version that contains incomplete and obsolete `type_traits` as defined in N2518."
+      - tool: GCC 4.8
+        status: partial
+        note: "Lack of `__is_trivial(ly)*`."
       - GCC 5
       - Clang 3
       - MSVC 8.0 (partial)
       - MSVC 14.0
       - Xcode
-    hints:
-      - target: GCC 4.3
-        msg: "The first version that contains incomplete and obsolete `type_traits` as defined in N2518."
-      - target: GCC 4.8
-        msg: "Lack of `__is_trivial(ly)*`."
 
   - desc: "[Template aliases](https://cppreference.com/cpp/language/type_alias)"
     paper: N2258
@@ -285,13 +283,11 @@ features:
     support:
       - GCC 4.4 (partial)
       - GCC 4.8
-      - Clang 3.3 (hint)
+      - tool: Clang 3.3
+        note: "Requires libc++abi 3.6 or later, or libsupc++ 4.8 or later."
       - MSVC 10.0 (partial)
       - MSVC 14.0
       - Xcode
-    hints:
-      - target: Clang 3.3
-        msg: "Requires libc++abi 3.6 or later, or libsupc++ 4.8 or later."
     ftm:
       - name: __cpp_threadsafe_static_init
         value: 200806L
@@ -463,17 +459,16 @@ features:
     paper: [N1836, N2240, N2244, N2255, N2342, N2984, N3142]
     lib: true
     support:
-      - GCC 4.3 (partial)
-      - GCC 4.8 (partial)
+      - tool: GCC 4.3
+        status: partial
+        note: "The first version that contains incomplete and obsolete `type_traits` as defined in N2518."
+      - tool: GCC 4.8
+        status: partial
+        note: "Lack of `__is_trivial(ly)*`."
       - GCC 5
       - Clang 3
       - MSVC 14.0
       - Xcode
-    hints:
-      - target: GCC 4.3
-        msg: "The first version that contains incomplete and obsolete `type_traits` as defined in N2518."
-      - target: GCC 4.8
-        msg: "Lack of `__is_trivial(ly)*`."
     keywords:
       [
         "sfinae",
@@ -498,32 +493,26 @@ features:
     paper: [N1913, LWG1192]
     lib: true
     support:
-      - GCC 4.3 (partial)
+      - tool: GCC 4.3
+        status: partial
+        note: "Only supports N1913."
       - GCC 4.5
       - Clang
       - MSVC 10.0
       - Xcode
-    hints:
-      - target: GCC 4.3
-        msg: "Only supports N1913."
 
   - desc: "[Garbage Collection](https://cppreference.com/cpp/header/memory#Functions) ([library support](https://cppreference.com/cpp/memory#Garbage_collector_support))"
     paper: N2670
     lib: true
     support:
-      - GCC 6 (hint)
-      - Clang 3.4 (hint)
-      - MSVC 14.0 (hint)
-      - Xcode (hint)
-    hints:
-      - target: GCC 6
-        msg: "No-op library API."
-      - target: Clang 3.4
-        msg: "No-op library API."
-      - target: MSVC 14.0
-        msg: "No-op library API."
-      - target: Xcode
-        msg: "No-op library API."
+      - tool: GCC 6
+        note: "No-op library API."
+      - tool: Clang 3.4
+        note: "No-op library API."
+      - tool: MSVC 14.0
+        note: "No-op library API."
+      - tool: Xcode
+        note: "No-op library API."
 
   - desc: "[Money, Time, and hexfloat I/O manipulators](https://cppreference.com/cpp/io/manip)"
     paper: [N2071, N2072]

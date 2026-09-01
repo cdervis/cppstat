@@ -1,0 +1,5 @@
+---
+infos:
+  - name: R
+    desc: A shorter registered name used to exercise longest-boundary matching.
+

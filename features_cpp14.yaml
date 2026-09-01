@@ -23,17 +23,16 @@ features:
   - desc: "`decltype(auto)`, Return type deduction for normal functions"
     paper: N3638
     support:
-      - GCC 4.8 (partial)
+      - tool: GCC 4.8
+        status: partial
+        note: "N3386 version"
       - GCC 4.9
-      - Clang 3.3 (partial)
+      - tool: Clang 3.3
+        status: partial
+        note: "Only `decltype(auto)` is supported."
       - Clang 3.4
       - MSVC 14.0
       - Xcode
-    hints:
-      - target: GCC 4.8
-        msg: "N3386 version"
-      - target: Clang 3.3
-        msg: "Only `decltype(auto)` is supported."
     ftm:
       - name: __cpp_decltype_auto
         value: 201304L

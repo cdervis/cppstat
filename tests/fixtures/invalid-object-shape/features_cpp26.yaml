@@ -1,0 +1,7 @@
+---
+features:
+  - desc: Structured support has no separate version field
+    support:
+      - tool: GCC
+        version: "15"
+

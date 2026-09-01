@@ -41,11 +41,9 @@ features:
     support:
       - GCC 4.9
       - Clang 3.6
-      - MSVC 14.35 (hint)
+      - tool: MSVC 14.35
+        note: "Requires enabling the `/experimental:c11atomics` compiler flag."
       - Xcode 16.1
-    hints:
-      - target: MSVC 14.35
-        msg: "Requires enabling the `/experimental:c11atomics` compiler flag."
   - desc: "Thread-local storage (`_Thread_local`)"
     paper: N1287
     content: c-thread-local.md

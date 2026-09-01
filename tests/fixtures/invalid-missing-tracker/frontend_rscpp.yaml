@@ -1,0 +1,15 @@
+---
+frontend:
+  id: rscpp
+  name: R++
+  full_name: ReSharper C++
+  vendor: JetBrains
+  kind: frontend
+  language: C++
+  standard_library: false
+  products: [CLion]
+  refs: []
+releases:
+  - version: "2026.2"
+    refs: []
+

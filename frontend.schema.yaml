@@ -1,0 +1,78 @@
+---
+$schema: "http://json-schema.org/draft-07/schema#"
+title: Frontend Metadata Schema
+type: object
+required: [frontend, releases]
+additionalProperties: false
+properties:
+  frontend:
+    type: object
+    required:
+      - id
+      - name
+      - full_name
+      - vendor
+      - kind
+      - language
+      - standard_library
+      - products
+      - refs
+    additionalProperties: false
+    properties:
+      id:
+        type: string
+        minLength: 1
+      name:
+        type: string
+        minLength: 1
+      full_name:
+        type: string
+        minLength: 1
+      vendor:
+        type: string
+        minLength: 1
+      kind:
+        const: frontend
+      language:
+        type: string
+        minLength: 1
+      standard_library:
+        type: boolean
+      products:
+        type: array
+        items:
+          type: string
+          minLength: 1
+      refs:
+        type: array
+        items:
+          type: string
+          minLength: 1
+  issue_tracker:
+    type: object
+    required: [name, url_template]
+    additionalProperties: false
+    properties:
+      name:
+        type: string
+        minLength: 1
+      url_template:
+        type: string
+        pattern: ".*\\{id\\}.*"
+  releases:
+    type: array
+    items:
+      type: object
+      required: [version, refs]
+      additionalProperties: false
+      properties:
+        version:
+          type: string
+          minLength: 1
+        released:
+          type: string
+        refs:
+          type: array
+          items:
+            type: string
+            minLength: 1

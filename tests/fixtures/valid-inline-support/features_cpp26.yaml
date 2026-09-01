@@ -1,0 +1,13 @@
+---
+features:
+  - desc: Longest registered-name boundary
+    support:
+      - R++ 2026.2
+      - GCC 15 (partial)
+      - tool: R++ 2026.1
+        status: partial
+        issue: RSCPP-38421
+        note: Earlier releases supported only part of the feature.
+      - tool: GCC 15
+        note: Compiler note without an issue identifier.
+

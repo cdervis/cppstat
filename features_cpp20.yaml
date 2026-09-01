@@ -28,17 +28,16 @@ features:
     paper: [P0306, P1042]
     summary: "Emit a comma in a variadic macro only when arguments follow."
     support:
-      - GCC 8 (partial)
-      - GCC 10 (partial)
+      - tool: GCC 8
+        status: partial
+        note: "Designated initializers are supported, except <code>#__VA_OPT__</code> support. <code>__VA_OPT__</code> is supported though."
+      - tool: GCC 10
+        status: partial
+        note: "No placemarker token handling changes"
       - GCC 12
       - Clang 9
       - MSVC 14.25
       - Xcode 12
-    hints:
-      - target: GCC 8
-        msg: "Designated initializers are supported, except <code>#__VA_OPT__</code> support. <code>__VA_OPT__</code> is supported though."
-      - target: GCC 10
-        msg: "No placemarker token handling changes"
     content: va-opt.md
 
   - desc: "Designated initializers"
@@ -46,17 +45,16 @@ features:
     summary: "Initialize aggregate members by name."
     content: designated-initializers.md
     support:
-      - GCC 4.7 (partial)
+      - tool: GCC 4.7
+        status: partial
+        note: "As non-standard extension that formed the basis for P0329, missing brace initializers."
       - GCC 8
-      - Clang 3 (partial)
+      - tool: Clang 3
+        status: partial
+        note: "Full C99-compatible superset of P0329, missing brace initializers."
       - Clang 10
       - MSVC 14.21
       - Xcode 12
-    hints:
-      - target: GCC 4.7
-        msg: "As non-standard extension that formed the basis for P0329, missing brace initializers."
-      - target: Clang 3
-        msg: "Full C99-compatible superset of P0329, missing brace initializers."
     ftm:
       - name: __cpp_designated_initializers
         value: 201707L
@@ -86,16 +84,15 @@ features:
     summary: "Concepts are predicates that constrain template arguments. They provide clear error messages and enable function overloading based on type properties."
     content: concepts.md
     support:
-      - GCC 5 (partial)
+      - tool: GCC 5
+        status: partial
+        note: "TS-only"
       - GCC 10
       - Clang 10
       - MSVC 14.23
-      - Xcode 12 (partial)
-    hints:
-      - target: GCC 5
-        msg: "TS-only"
-      - target: Xcode 12
-        msg: "The following papers are not implemented: [P2103](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2103r0.html), DR1496, DR1734 and [P0848](https://wg21.link/P0848)."
+      - tool: Xcode 12
+        status: partial
+        note: "The following papers are not implemented: [P2103](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2103r0.html), DR1496, DR1734 and [P0848](https://wg21.link/P0848)."
     ftm:
       - name: __cpp_concepts
         value: 201907L
@@ -224,18 +221,17 @@ features:
     paper: P0315
     support:
       - GCC 9
-      - Clang 13 (partial)
-      - Clang 14 (partial)
+      - tool: Clang 13
+        status: partial
+        note: "Not supported: [temp.deduct/9]"
+      - tool: Clang 14
+        status: partial
+        note: "temp.over.link changes"
       - Clang 17
       - MSVC 14.28
-      - Xcode 13.4.1 (partial)
-    hints:
-      - target: Clang 13
-        msg: "Not supported: [temp.deduct/9]"
-      - target: Clang 14
-        msg: "temp.over.link changes"
-      - target: Xcode 13.4.1
-        msg: "Not supported: [temp.deduct/9]"
+      - tool: Xcode 13.4.1
+        status: partial
+        note: "Not supported: [temp.deduct/9]"
 
   - desc: "Transformation trait `std::remove_cvref`"
     paper: P0550
@@ -650,14 +646,13 @@ features:
     lib: true
     support:
       - GCC 10
-      - Clang 12 (partial)
+      - tool: Clang 12
+        status: partial
+        note: "The parallel versions (`std::execution::par`) are not implemented yet. ([Issue](https://github.com/llvm/llvm-project/issues/104095))"
       - MSVC 14.21
-      - Xcode 13 (partial)
-    hints:
-      - target: Clang 12
-        msg: "The parallel versions (`std::execution::par`) are not implemented yet. ([Issue](https://github.com/llvm/llvm-project/issues/104095))"
-      - target: Xcode 13
-        msg: "The parallel versions (`std::execution::par`) are not implemented yet. ([Issue](https://github.com/llvm/llvm-project/issues/104095))"
+      - tool: Xcode 13
+        status: partial
+        note: "The parallel versions (`std::execution::par`) are not implemented yet. ([Issue](https://github.com/llvm/llvm-project/issues/104095))"
     ftm:
       - name: __cpp_lib_shift
         value: 201806L
@@ -740,11 +735,9 @@ features:
     support:
       - GCC 12
       - MSVC 14.26
-      - Clang 20 (hint)
+      - tool: Clang 20
+        note: "Removed headers are still provided as an extension, but with deprecation warnings."
       - Xcode 26
-    hints:
-      - target: Clang 20
-        msg: "Removed headers are still provided as an extension, but with deprecation warnings."
 
   - desc: "Concepts library"
     paper: P0898
@@ -1136,34 +1129,28 @@ features:
     summary: "Modern alternative to header files with better encapsulation and faster builds."
     content: modules.md
     support:
-      - GCC 11 (partial)
-      - GCC 15 (partial)
-      - GCC 16 (partial)
-      - Clang 17 (partial)
-      - Clang 21 (partial)
-      - Clang 23 (partial)
+      - tool: GCC 11
+        status: partial
+        note: "Supports the majority of modules features, except for P1815, private module fragments, parser-level global module entity merging and global module implications of <code>extern \\\"C/C++\\\"</code> (P1103)."
+      - tool: GCC 15
+        status: partial
+        note: "In addition to GCC 11, supports P2615. Private module fragments, partition definition visibility rules and textual merging of reachable global module entities remain unimplemented."
+      - tool: GCC 16
+        status: partial
+        note: "In addition to GCC 15, supports P1766 and P1815. Private module fragments, partition definition visibility rules and textual merging of reachable global module entities remain unimplemented."
+      - tool: Clang 17
+        status: partial
+        note: "Supports the majority of modules features, except for P1857, and P1815 is supported on all targets except Windows."
+      - tool: Clang 21
+        status: partial
+        note: "In addition to Clang 17, partially supports P1857, with the following note: _The restriction that '[a] module directive may only appear as the first preprocessing tokens in a file' is enforced starting in Clang 21._"
+      - tool: Clang 23
+        status: partial
+        note: "In addition to Clang 21, supports P1857."
       - MSVC 14.0 (partial)
       - MSVC 14.28
-      - Xcode 26 (hint)
-    hints:
-      - target: GCC 11
-        msg: "Supports the majority of modules features, except for P1815, private module fragments, parser-level global module entity merging and global module implications of <code>extern \\\"C/C++\\\"</code> (P1103)."
-      - target: GCC 15
-        msg: "In addition to GCC 11, supports P2615. Private module fragments, partition definition visibility rules and textual merging of reachable global module entities remain unimplemented."
-      - target: GCC 16
-        msg: "In addition to GCC 15, supports P1766 and P1815. Private module fragments, partition definition visibility rules and textual merging of reachable global module entities remain unimplemented."
-      - target: Clang 17
-        msg: "Supports the majority of modules features, except for P1857, and P1815 is supported on all targets except Windows."
-      - target: Clang 21
-        msg: "In addition to Clang 17, partially supports P1857, with the following note: _The restriction that '[a] module directive may only appear as the first preprocessing tokens in a file' is enforced starting in Clang 21._"
-      - target: Clang 23
-        msg: "In addition to Clang 21, supports P1857."
-      - target: Xcode 26
-        msg: >
-          Apple Clang requires the `-fcxx-modules` flag **in addition to** `-fmodules`.<br/><br/> Xcode 26
-          does not ship the `clang-scan-deps` utility that is required by certain build system generators like
-          CMake, in order to scan module dependencies.<br/> This means that C++ modules cannot be used in
-          conjunction with CMake's Xcode generator (`-G Xcode`).
+      - tool: Xcode 26
+        note: "Apple Clang requires the `-fcxx-modules` flag **in addition to** `-fmodules`.<br/><br/> Xcode 26 does not ship the `clang-scan-deps` utility that is required by certain build system generators like CMake, in order to scan module dependencies.<br/> This means that C++ modules cannot be used in conjunction with CMake's Xcode generator (`-G Xcode`).\n"
     ftm:
       - name: __cpp_modules
         value: 201907L
@@ -1181,19 +1168,17 @@ features:
     summary: "Suspendable functions for async programming and generators."
     content: coroutines.md
     support:
-      - GCC 10 (hint)
+      - tool: GCC 10
+        note: "Requires `-fcoroutines`. Starting with GCC 11, this is implicitly enabled by `-std=c++20`."
       - Clang 8 (partial)
-      - Clang 17 (partial)
+      - tool: Clang 17
+        status: partial
+        note: "Fully supported on all targets except Windows, which still has some stability and ABI issues."
       - MSVC 14.0 (partial)
       - MSVC 14.10
       - MSVC 14.28
       - Xcode 10.2 (partial)
       - Xcode 16.3
-    hints:
-      - target: GCC 10
-        msg: "Requires `-fcoroutines`. Starting with GCC 11, this is implicitly enabled by `-std=c++20`."
-      - target: Clang 17
-        msg: "Fully supported on all targets except Windows, which still has some stability and ABI issues."
     ftm:
       - name: __cpp_impl_coroutine
         value: 201902L
@@ -1239,11 +1224,9 @@ features:
     lib: true
     support:
       - GCC 9
-      - Clang 17 (hint)
+      - tool: Clang 17
+        note: "Not supported by Clang on macOS."
       - MSVC 14.28
-    hints:
-      - target: Clang 17
-        msg: "Not supported by Clang on macOS."
     ftm:
       - name: __cpp_lib_execution
         value: 201902L
@@ -1400,11 +1383,10 @@ features:
     paper: P1814
     support:
       - GCC 10
-      - Clang 19 (partial)
+      - tool: Clang 19
+        status: partial
+        note: "This feature has been initially completed, but the feature macro `__cpp_deduction_guides` has not been updated."
       - MSVC 14.27
-    hints:
-      - target: Clang 19
-        msg: "This feature has been initially completed, but the feature macro `__cpp_deduction_guides` has not been updated."
     ftm:
       - name: __cpp_deduction_guides
         value: 201907L
@@ -1495,10 +1477,8 @@ features:
       - GCC 11
       - Clang 11
       - MSVC 14.28
-      - Xcode 13.4.1 (hint)
-    hints:
-      - target: Xcode 13.4.1
-        msg: "Minimum deployment target: macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0"
+      - tool: Xcode 13.4.1
+        note: "Minimum deployment target: macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0"
     ftm:
       - name: __cpp_lib_atomic_flag_test
         value: 201907L
@@ -1625,18 +1605,16 @@ features:
     lib: true
     support:
       - GCC 10
-      - Clang 17 (partial)
+      - tool: Clang 17
+        status: partial
+        note: "Guarded behind compiler flag <code>-fexperimental-library</code>."
       - Clang 20
-      - MSVC 14.28 (hint)
-      - Xcode 16.4 (partial)
+      - tool: MSVC 14.28
+        note: "MSVC 14.28 is available with VS 16.8 and VS 16.9. This feature is supported starting with VS 16.9, which is identifiable by checking <code>_MSC_FULL_VER == 192829910</code>."
+      - tool: Xcode 16.4
+        status: partial
+        note: "Guarded behind compiler flag <code>-fexperimental-library</code>."
       - Xcode 26
-    hints:
-      - target: Clang 17
-        msg: "Guarded behind compiler flag <code>-fexperimental-library</code>."
-      - target: MSVC 14.28
-        msg: "MSVC 14.28 is available with VS 16.8 and VS 16.9. This feature is supported starting with VS 16.9, which is identifiable by checking <code>_MSC_FULL_VER == 192829910</code>."
-      - target: Xcode 16.4
-        msg: "Guarded behind compiler flag <code>-fexperimental-library</code>."
     ftm:
       - name: __cpp_lib_jthread
         value: 201911L
@@ -1709,10 +1687,8 @@ features:
       - GCC 11
       - Clang 11
       - MSVC 14.28
-      - Xcode (hint)
-    hints:
-      - target: Xcode
-        msg: "Minimum deployment target: macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0"
+      - tool: Xcode
+        note: "Minimum deployment target: macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0"
 
   - desc: "`constexpr` default constructor of `std::atomic` and `std::atomic_flag`"
     paper: P0883
@@ -1757,14 +1733,12 @@ features:
   - desc: "Converting from `T*` to `bool` should be considered narrowing"
     paper: P1957
     support:
-      - GCC 10 (hint)
+      - tool: GCC 10
+        note: "In C++20 mode only. (`-std=c++20`)"
       - GCC 11
       - Clang 18
       - MSVC 14.27
       - Xcode 13
-    hints:
-      - target: GCC 10
-        msg: "In C++20 mode only. (`-std=c++20`)"
 
   - desc: "`ranges::elements_view` needs its own sentinel"
     paper: P1994

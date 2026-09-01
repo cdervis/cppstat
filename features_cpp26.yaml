@@ -18,12 +18,11 @@ features:
     paper: P2361
     support:
       - GCC 14
-      - Clang 17 (partial)
+      - tool: Clang 17
+        status: partial
+        note: "Attributes arguments don't yet parse as unevaluated string literals."
       - Clang 18
       - Xcode 16
-    hints:
-      - target: Clang 17
-        msg: "Attributes arguments don't yet parse as unevaluated string literals."
 
   - desc: "Add @, $, and ` to the [basic character set](https://cppreference.com/cpp/language/charset#Basic_character_set)"
     paper: P2558
@@ -326,13 +325,14 @@ features:
   - desc: "Adding the new 2022 SI prefixes (`std::quecto`, `std::ronto`, `std::ronna`, `std::quetta`)"
     paper: P2734
     lib: true
-    support: [GCC 14, Clang 17 (partial)]
+    support:
+      - GCC 14
+      - tool: Clang 17
+        status: partial
+        note: "Only the feature-testing macro has been added (`__cpp_lib_ratio`)."
     ftm:
       - name: __cpp_lib_ratio
         value: 202306L
-    hints:
-      - target: Clang 17
-        msg: "Only the feature-testing macro has been added (`__cpp_lib_ratio`)."
 
   - desc: "`std::copyable_function`"
     paper: P2548
@@ -434,10 +434,9 @@ features:
     paper: [P2546, P2810]
     summary: "The `<debugging>` header provides portable debugging utilities."
     lib: true
-    support: [GCC 16 (hint)]
-    hints:
-      - target: GCC 16
-        msg: "Requires linking with `-lstdc++exp`."
+    support:
+      - tool: GCC 16
+        note: "Requires linking with `-lstdc++exp`."
     ftm:
       - name: __cpp_lib_debugging
         value: 202311L
@@ -726,13 +725,11 @@ features:
     lib: true
     support:
       - GCC 14
-      - Clang 19 (partial)
-      - Clang 22 (hint)
-    hints:
-      - target: Clang 19
-        msg: "Constrained equality is not implemented."
-      - target: Clang 22
-        msg: "The changes to `tuple`'s equality overload from P2165 are not yet implemented."
+      - tool: Clang 19
+        status: partial
+        note: "Constrained equality is not implemented."
+      - tool: Clang 22
+        note: "The changes to `tuple`'s equality overload from P2165 are not yet implemented."
     ftm:
       - name: __cpp_lib_constrained_equality
         value: 202403L
@@ -786,12 +783,11 @@ features:
     summary: "Structured bindings can now be used directly in `if` and `while` conditions."
     support:
       - GCC 15
-      - Clang 6 (partial)
+      - tool: Clang 6
+        status: partial
+        note: "Supported as an extension, not fully conforming to standardized version."
       - Clang 21
       - Xcode 26.4
-    hints:
-      - target: Clang 6
-        msg: "Supported as an extension, not fully conforming to standardized version."
     ftm:
       - name: __cpp_structured_bindings
         value: 202406L
@@ -871,12 +867,13 @@ features:
 
   - desc: "`constexpr` structured bindings and references to `constexpr` variables"
     paper: P2686
-    support: [GCC 16 (partial), Clang 22 (partial)]
-    hints:
-      - target: GCC 16
-        msg: "No [references to constexpr variables](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=117784)."
-      - target: Clang 22
-        msg: "References to `constexpr` and decomposition of tuple-like types are not supported (only arrays and aggregates are)."
+    support:
+      - tool: GCC 16
+        status: partial
+        note: "No [references to constexpr variables](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=117784)."
+      - tool: Clang 22
+        status: partial
+        note: "References to `constexpr` and decomposition of tuple-like types are not supported (only arrays and aggregates are)."
 
   - desc: "Allowing exception throwing in constant-evaluation (`constexpr` exceptions)"
     paper: P3068
@@ -951,15 +948,17 @@ features:
   - desc: "Expose `std::atomic_ref`'s object address (`std::atomic_ref::address()`)"
     paper: [P2835, P3936]
     lib: true
-    support: [Clang 22 (partial), Clang 23, GCC 16]
+    support:
+      - tool: Clang 22
+        status: partial
+        note: "Supports the older proposal, with a different return type."
+      - Clang 23
+      - GCC 16
     ftm:
       - name: __cpp_lib_atomic_ref
         value: 202411L
       - name: __cpp_lib_atomic_ref
         value: 202603L
-    hints:
-      - target: Clang 22
-        msg: "Supports the older proposal, with a different return type."
 
   - desc: "cv-qualified types in `std::atomic` and `std::atomic_ref`"
     paper: P3323
@@ -1006,10 +1005,9 @@ features:
         value: 202502L
         desc: "Support for interleaved complex values in std::datapar::simd"
     support:
-      - GCC 16 (partial)
-    hints:
-      - target: GCC 16
-        msg: Missing support for std::complex
+      - tool: GCC 16
+        status: partial
+        note: "Missing support for std::complex"
 
   - desc: "Utility for creating execution environments"
     paper: P3325
@@ -1062,27 +1060,12 @@ features:
     paper: P1967
     summary: "`#embed` allows you to include binary files directly into your source code at compile time."
     support:
-      - GCC 15 (hint)
-      - Clang 19 (hint)
-      - Xcode 16.3 (hint)
-    hints:
-      - target: GCC 15
-        msg: >
-          Although this is a C++26 feature, this is available in GCC starting with C++20 (`-std=c++20`).
-
-      - target: Clang 19
-        msg: >
-          Supported as an extension.<br>
-          Use the flag `-Wno-c23-extensions` to suppress warnings related to `#embed`.<br>
-          Although this is a C++26 feature, this is available in Clang starting with C++20 (`-std=c++20`).<br>
-          Clang does not define the `__cpp_pp_embed` feature-testing macro yet.
-
-      - target: Xcode 16.3
-        msg: >
-          Supported as an extension.<br>
-          Use the flag `-Wno-c23-extensions` to suppress warnings related to `#embed`.<br>
-          Although this is a C++26 feature, this is available in Apple Clang starting with C++20 (`-std=c++20`).<br>
-          Apple Clang does not define the `__cpp_pp_embed` feature-testing macro yet.
+      - tool: GCC 15
+        note: "Although this is a C++26 feature, this is available in GCC starting with C++20 (`-std=c++20`).\n"
+      - tool: Clang 19
+        note: "Supported as an extension.<br> Use the flag `-Wno-c23-extensions` to suppress warnings related to `#embed`.<br> Although this is a C++26 feature, this is available in Clang starting with C++20 (`-std=c++20`).<br> Clang does not define the `__cpp_pp_embed` feature-testing macro yet.\n"
+      - tool: Xcode 16.3
+        note: "Supported as an extension.<br> Use the flag `-Wno-c23-extensions` to suppress warnings related to `#embed`.<br> Although this is a C++26 feature, this is available in Apple Clang starting with C++20 (`-std=c++20`).<br> Apple Clang does not define the `__cpp_pp_embed` feature-testing macro yet.\n"
     ftm:
       - name: __cpp_pp_embed
         value: 202502L
@@ -1150,12 +1133,13 @@ features:
       - name: __cpp_lib_constexpr_unordered_set
         value: 202502L
         desc: "`constexpr` `std::unordered_set`"
-    support: [Clang 20 (partial), Xcode 26.4 (partial)]
-    hints:
-      - target: Clang 20
-        msg: "`std::forward_list`, `std::list`, `std::priority_queue`, `std::flat_map`, and `std::flat_set` are implemented."
-      - target: Xcode 26.4
-        msg: "`std::forward_list`, `std::list`, `std::priority_queue`, `std::flat_map`, and `std::flat_set` are implemented."
+    support:
+      - tool: Clang 20
+        status: partial
+        note: "`std::forward_list`, `std::list`, `std::priority_queue`, `std::flat_map`, and `std::flat_set` are implemented."
+      - tool: Xcode 26.4
+        status: partial
+        note: "`std::forward_list`, `std::list`, `std::priority_queue`, `std::flat_map`, and `std::flat_set` are implemented."
 
   - desc: "`constexpr` exception types"
     paper: P3378
@@ -1211,19 +1195,18 @@ features:
     paper: P3471
     lib: true
     support:
-      - GCC 15 (partial)
-      - Clang 18 (partial)
-      - MSVC 14.44 (partial)
-      - Xcode 16 (partial)
-    hints:
-      - target: GCC 15
-        msg: "Calls `abort()` instead of using C++26 contracts when a hardened precondition is violated."
-      - target: Clang 18
-        msg: "Calls `__builtin_expect(false, ...)` instead of using C++26 contracts when a hardened precondition is violated."
-      - target: MSVC 14.44
-        msg: "Calls `__fastfail()` instead of using C++26 contracts when a hardened precondition is violated."
-      - target: Xcode 16
-        msg: "Calls `__builtin_expect(false, ...)` instead of using C++26 contracts when a hardened precondition is violated."
+      - tool: GCC 15
+        status: partial
+        note: "Calls `abort()` instead of using C++26 contracts when a hardened precondition is violated."
+      - tool: Clang 18
+        status: partial
+        note: "Calls `__builtin_expect(false, ...)` instead of using C++26 contracts when a hardened precondition is violated."
+      - tool: MSVC 14.44
+        status: partial
+        note: "Calls `__fastfail()` instead of using C++26 contracts when a hardened precondition is violated."
+      - tool: Xcode 16
+        status: partial
+        note: "Calls `__builtin_expect(false, ...)` instead of using C++26 contracts when a hardened precondition is violated."
     ftm:
       - name: __cpp_lib_hardened_array
         desc: "Hardened `std::array`"
@@ -1301,10 +1284,9 @@ features:
     paper: P2996
     summary: "Reflection allows programs to inspect and manipulate their own structure at compile time. This is one of the most significant additions to C++26."
     lib: true
-    support: [GCC 16 (hint)]
-    hints:
-      - target: GCC 16
-        msg: "Requires `-freflection`"
+    support:
+      - tool: GCC 16
+        note: "Requires `-freflection`"
     ftm:
       - name: __cpp_impl_reflection
         value: 202506L
@@ -1561,10 +1543,10 @@ features:
     paper: P3697
     content: hardening-additions.md
     lib: true
-    support: [MSVC 14.50 (partial)]
-    hints:
-      - target: MSVC 14.50
-        msg: Partial support only due to the lack of Contracts. Support starting with Visual Studio 2026 18.0 Preview 2. ([GitHub Issue](https://github.com/microsoft/STL/pull/5650))
+    support:
+      - tool: MSVC 14.50
+        status: partial
+        note: "Partial support only due to the lack of Contracts. Support starting with Visual Studio 2026 18.0 Preview 2. ([GitHub Issue](https://github.com/microsoft/STL/pull/5650))"
     keywords: ["safety"]
 
   - desc: "Add a coroutine task type"

@@ -32,14 +32,12 @@ features:
     content: stacktrace.md
     lib: true
     support:
-      - GCC 12 (partial)
-      - GCC 14 (hint)
+      - tool: GCC 12
+        status: partial
+        note: "Enabled by building GCC with `--enable-libstdcxx-backtrace=yes`, requires linking against `-lstdc++_libbacktrace`"
+      - tool: GCC 14
+        note: "Requires linking against `-lstdc++exp`. GCC 13 accepts either `-lstdc++_libbacktrace` or `-lstdc++exp`; `-lstdc++_libbacktrace` was removed in GCC 14."
       - MSVC 14.34
-    hints:
-      - target: GCC 12
-        msg: "Enabled by building GCC with `--enable-libstdcxx-backtrace=yes`, requires linking against `-lstdc++_libbacktrace`"
-      - target: GCC 14
-        msg: "Requires linking against `-lstdc++exp`. GCC 13 accepts either `-lstdc++_libbacktrace` or `-lstdc++exp`; `-lstdc++_libbacktrace` was removed in GCC 14."
     ftm:
       - name: __cpp_lib_stacktrace
         value: 202011L
@@ -83,11 +81,10 @@ features:
     lib: true
     support:
       - GCC 12
-      - MSVC 14.30 (partial)
+      - tool: MSVC 14.30
+        status: partial
+        note: "The counted_iterator part is implemented; the input range adaptors part is not implemented yet."
       - MSVC 14.31
-    hints:
-      - target: MSVC 14.30
-        msg: "The counted_iterator part is implemented; the input range adaptors part is not implemented yet."
 
   - desc: "Relaxing requirements for `chrono::time_point::clock`"
     paper: P2212
@@ -165,16 +162,14 @@ features:
     paper: P1401
     support:
       - GCC 9
-      - Clang 13 (partial)
+      - tool: Clang 13
+        status: partial
+        note: "noexcept specifiers changes missing"
       - Clang 14
-      - MSVC 14.21 (hint)
+      - tool: MSVC 14.21
+        note: "Compiles, but emits a warning: warning C4305: 'if': truncation from 'int' to 'bool'"
       - MSVC 14.44
       - Xcode 14
-    hints:
-      - target: Clang 13
-        msg: "noexcept specifiers changes missing"
-      - target: MSVC 14.21
-        msg: "Compiles, but emits a warning: warning C4305: 'if': truncation from 'int' to 'bool'"
 
   - desc: "Trimming whitespaces before line splicing"
     paper: P2223
@@ -261,26 +256,24 @@ features:
       - Clang 15
       - MSVC 14.30
       - Xcode 14.3
-      - GCC 16 (partial)
+      - tool: GCC 16
+        status: partial
+        note: "Not used by `std::vector` and `std::string` yet."
     ftm:
       - name: __cpp_lib_allocate_at_least
         value: 202302L
-    hints:
-      - target: GCC 16
-        msg: "Not used by `std::vector` and `std::string` yet."
 
   - desc: "`ranges::starts_with()` and `ranges::ends_with()`"
     paper: P1659
     lib: true
     support:
       - GCC 16
-      - Clang 17 (partial)
+      - tool: Clang 17
+        status: partial
+        note: "Implements `std::ranges::starts_with()` only."
       - Clang 19
       - MSVC 14.31
       - Xcode 16
-    hints:
-      - target: Clang 17
-        msg: "Implements `std::ranges::starts_with()` only."
     ftm:
       - name: __cpp_lib_ranges_starts_ends_with
         value: 202106L
@@ -328,20 +321,19 @@ features:
     paper: P2231
     lib: true
     support:
-      - GCC 11.3 (partial)
+      - tool: GCC 11.3
+        status: partial
+        note: "Only the `std::optional` part is implemented."
       - GCC 12
-      - Clang 13 (partial)
+      - tool: Clang 13
+        status: partial
+        note: "Only the `std::optional` part is implemented."
       - Clang 19
       - MSVC 14.31
-      - Xcode 13.4.1 (partial)
+      - tool: Xcode 13.4.1
+        status: partial
+        note: "Only the `std::optional` part is implemented."
       - Xcode 16.3
-    hints:
-      - target: GCC 11.3
-        msg: "Only the `std::optional` part is implemented."
-      - target: Clang 13
-        msg: "Only the `std::optional` part is implemented."
-      - target: Xcode 13.4.1
-        msg: "Only the `std::optional` part is implemented."
     ftm:
       - name: __cpp_lib_optional
         value: 202106L
@@ -365,12 +357,11 @@ features:
     support:
       - GCC 11
       - Clang 14
-      - MSVC 14.29 (partial)
+      - tool: MSVC 14.29
+        status: partial
+        note: "The split_view part is missing."
       - MSVC 14.31
       - Xcode 14.3
-    hints:
-      - target: MSVC 14.29
-        msg: "The split_view part is missing."
 
   - desc: "`views::join()` should join all views of ranges"
     paper: P2328
@@ -420,17 +411,16 @@ features:
     content: deducing-this.md
     support:
       - GCC 14
-      - Clang 18 (partial)
-      - Clang 19 (partial)
+      - tool: Clang 18
+        status: partial
+        note: "Experimental support. Lacks P2797 and the FTM `__cpp_explicit_this_parameter`. Its support can be tested with `__has_extension(cxx_explicit_this_parameter)`."
+      - tool: Clang 19
+        status: partial
+        note: "Completes core language support (P2797), but still lacks the FTM `__cpp_explicit_this_parameter`."
       - Clang 20
       - MSVC 14.32
       - MSVC 14.43
       - Xcode 16.3
-    hints:
-      - target: Clang 18
-        msg: "Experimental support. Lacks P2797 and the FTM `__cpp_explicit_this_parameter`. Its support can be tested with `__has_extension(cxx_explicit_this_parameter)`."
-      - target: Clang 19
-        msg: "Completes core language support (P2797), but still lacks the FTM `__cpp_explicit_this_parameter`."
     ftm:
       - name: __cpp_explicit_this_parameter
         value: 202110L
@@ -458,11 +448,9 @@ features:
     support:
       - GCC 12
       - Clang 14
-      - MSVC 14.50 (hint)
+      - tool: MSVC 14.50
+        note: "Compiles, but no IntelliSense support yet."
       - Xcode 14
-    hints:
-      - target: MSVC 14.50
-        msg: "Compiles, but no IntelliSense support yet."
 
   - desc: "Change scope of lambda trailing-return-type"
     paper: [P2036, P2579]
@@ -626,14 +614,12 @@ features:
     paper: P2301
     lib: true
     support:
-      - GCC 12 (partial)
-      - GCC 14 (hint)
+      - tool: GCC 12
+        status: partial
+        note: "Enabled by building GCC with `--enable-libstdcxx-backtrace=yes`, requires linking against `-lstdc++_libbacktrace`"
+      - tool: GCC 14
+        note: "Requires linking against `-lstdc++exp`. GCC 13 accepts either `-lstdc++_libbacktrace` or `-lstdc++exp`; `-lstdc++_libbacktrace` was removed in GCC 14."
       - MSVC 14.34
-    hints:
-      - target: GCC 12
-        msg: "Enabled by building GCC with `--enable-libstdcxx-backtrace=yes`, requires linking against `-lstdc++_libbacktrace`"
-      - target: GCC 14
-        msg: "Requires linking against `-lstdc++exp`. GCC 13 accepts either `-lstdc++_libbacktrace` or `-lstdc++exp`; `-lstdc++_libbacktrace` was removed in GCC 14."
     ftm:
       - name: __cpp_lib_stacktrace
         value: 202011L
@@ -643,15 +629,14 @@ features:
     lib: true
     support:
       - GCC 13
-      - Clang 15 (partial)
+      - tool: Clang 15
+        status: partial
+        note: "Only implements tuple specializations and `views::zip()`."
       - Clang 22
       - MSVC 14.37
-      - Xcode 14.3 (partial)
-    hints:
-      - target: Clang 15
-        msg: "Only implements tuple specializations and `views::zip()`."
-      - target: Xcode 14.3
-        msg: "Only implements `views::zip()`."
+      - tool: Xcode 14.3
+        status: partial
+        note: "Only implements `views::zip()`."
     ftm:
       - name: __cpp_lib_ranges_zip
         value: 202110L
@@ -741,18 +726,17 @@ features:
     paper: P2255
     lib: true
     support:
-      - GCC 13 (partial)
+      - tool: GCC 13
+        status: partial
+        note: "Missing changes to `std::tuple`."
       - GCC 14
-      - Clang 21 (partial)
+      - tool: Clang 21
+        status: partial
+        note: "Only type traits are implemented."
       - MSVC 14.51
-      - Xcode 26.4 (partial)
-    hints:
-      - target: GCC 13
-        msg: "Missing changes to `std::tuple`."
-      - target: Clang 21
-        msg: "Only type traits are implemented."
-      - target: Xcode 26.4
-        msg: "Only type traits are implemented."
+      - tool: Xcode 26.4
+        status: partial
+        note: "Only type traits are implemented."
     ftm:
       - name: __cpp_lib_reference_from_temporary
         value: 202202L
@@ -788,19 +772,18 @@ features:
     paper: P2440
     lib: true
     support:
-      - GCC 13 (partial)
+      - tool: GCC 13
+        status: partial
+        note: "Only `ranges::iota()` is implemented."
       - GCC 16
       - MSVC 14.34
-      - Clang 21 (partial)
-      - Clang 22 (partial)
+      - tool: Clang 21
+        status: partial
+        note: "Only `ranges::iota()` is implemented. ([GitHub PR](https://github.com/llvm/llvm-project/pull/68494))"
+      - tool: Clang 22
+        status: partial
+        note: "In addition to Clang 21, supports `ranges::shift_left()` and defines the `__cpp_lib_shift` FTM."
       - Clang 23
-    hints:
-      - target: GCC 13
-        msg: "Only `ranges::iota()` is implemented."
-      - target: Clang 21
-        msg: "Only `ranges::iota()` is implemented. ([GitHub PR](https://github.com/llvm/llvm-project/pull/68494))"
-      - target: Clang 22
-        msg: "In addition to Clang 21, supports `ranges::shift_left()` and defines the `__cpp_lib_shift` FTM."
     ftm:
       - name: __cpp_lib_ranges_iota
         value: 202202L
@@ -957,10 +940,10 @@ features:
 
   - desc: "Requirements for optional extended floating-point types"
     paper: P1467
-    support: [GCC 13, MSVC (hint)]
-    hints:
-      - target: MSVC
-        msg: "Not applicable to MSVC."
+    support:
+      - GCC 13
+      - tool: MSVC
+        note: "Not applicable to MSVC."
 
   - desc: "Standard names and library support for extended floating-point types"
     paper: P1467
@@ -1095,16 +1078,15 @@ features:
     lib: true
     support:
       - GCC 14
-      - Clang 17 (partial)
+      - tool: Clang 17
+        status: partial
+        note: "Overloads for `std::ostream` are not implemented."
       - Clang 18
       - MSVC 14.37
-      - Xcode 15 (partial)
+      - tool: Xcode 15
+        status: partial
+        note: "Overloads for `std::ostream` are not implemented."
       - Xcode 16
-    hints:
-      - target: Clang 17
-        msg: "Overloads for `std::ostream` are not implemented."
-      - target: Xcode 15
-        msg: "Overloads for `std::ostream` are not implemented."
     ftm:
       - name: __cpp_lib_print
         value: 202207L
@@ -1113,21 +1095,20 @@ features:
     paper: P2165
     lib: true
     support:
-      - GCC 14 (partial)
+      - tool: GCC 14
+        status: partial
+        note: "Some views incorrectly still return `std::pair` instead of `std::tuple`"
       - GCC 16
-      - Clang 2.9 (partial)
-      - MSVC 14.36 (partial)
+      - tool: Clang 2.9
+        status: partial
+        note: "Changes of `tuple`, `adjacent_view`, and `cartesian_product_view` are not yet implemented."
+      - tool: MSVC 14.36
+        status: partial
+        note: "Implemented for `std::pair`."
       - MSVC 14.37
-      - Xcode (partial)
-    hints:
-      - target: GCC 14
-        msg: "Some views incorrectly still return `std::pair` instead of `std::tuple`"
-      - target: Clang 2.9
-        msg: "Changes of `tuple`, `adjacent_view`, and `cartesian_product_view` are not yet implemented."
-      - target: MSVC 14.36
-        msg: "Implemented for `std::pair`."
-      - target: Xcode
-        msg: "Only the part for `zip_view` is implemented."
+      - tool: Xcode
+        status: partial
+        note: "Only the part for `zip_view` is implemented."
     ftm:
       - name: __cpp_lib_tuple_like
         value: 202207L
@@ -1137,11 +1118,10 @@ features:
     lib: true
     support:
       - GCC 13
-      - MSVC 14.35 (partial)
+      - tool: MSVC 14.35
+        status: partial
+        note: "The \\\"Iterators\\\" section, including `basic_const_iterator`, `make_const_iterator()`, and `make_const_sentinel()`."
       - MSVC 14.36
-    hints:
-      - target: MSVC 14.35
-        msg: "The \\\"Iterators\\\" section, including `basic_const_iterator`, `make_const_iterator()`, and `make_const_sentinel()`."
     ftm:
       - name: __cpp_lib_ranges_as_const
         value: 202207L
@@ -1150,23 +1130,22 @@ features:
     paper: P2286
     lib: true
     support:
-      - GCC 15 (partial)
+      - tool: GCC 15
+        status: partial
+        note: "Missing formatter specializations for `queue`, `stack`, and `priority_queue`."
       - GCC 15.2
       - Clang 16
-      - MSVC 14.37 (partial)
-      - MSVC 14.39 (partial)
-      - MSVC 14.41 (partial)
+      - tool: MSVC 14.37
+        status: partial
+        note: "2022.7: Implemented the `?` format specifier for strings and characters."
+      - tool: MSVC 14.39
+        status: partial
+        note: "2022.9: Implemented `formatter::set_debug_format()`, `formattable`, `range_format`, and `format_kind`."
+      - tool: MSVC 14.41
+        status: partial
+        note: "2022.11: Implemented formatter for `std::pair` and `std::tuple`. Also `range_formatter`."
       - MSVC 14.42
       - Xcode 15
-    hints:
-      - target: GCC 15
-        msg: "Missing formatter specializations for `queue`, `stack`, and `priority_queue`."
-      - target: MSVC 14.37
-        msg: "2022.7: Implemented the `?` format specifier for strings and characters."
-      - target: MSVC 14.39
-        msg: "2022.9: Implemented `formatter::set_debug_format()`, `formattable`, `range_format`, and `format_kind`."
-      - target: MSVC 14.41
-        msg: "2022.11: Implemented formatter for `std::pair` and `std::tuple`. Also `range_formatter`."
     ftm:
       - name: __cpp_lib_format_ranges
         value: 202207L
@@ -1188,16 +1167,15 @@ features:
     lib: true
     support:
       - GCC 13
-      - Clang 18 (partial)
+      - tool: Clang 18
+        status: partial
+        note: "`ranges::contains_subrange()` is not implemented."
       - Clang 19
       - MSVC 14.34
-      - Xcode 16 (partial)
+      - tool: Xcode 16
+        status: partial
+        note: "`ranges::contains_subrange()` is not implemented."
       - Xcode 16.3
-    hints:
-      - target: Clang 18
-        msg: "`ranges::contains_subrange()` is not implemented."
-      - target: Xcode 16
-        msg: "`ranges::contains_subrange()` is not implemented."
     ftm:
       - name: __cpp_lib_ranges_contains
         value: 202207L
@@ -1205,13 +1183,16 @@ features:
   - desc: "Ranges fold algorithms (`ranges::fold()`)"
     paper: P2322
     lib: true
-    support: [GCC 13, Clang 18 (partial), Clang 23, MSVC 14.35]
+    support:
+      - GCC 13
+      - tool: Clang 18
+        status: partial
+        note: "Only `ranges::fold_left_with_iter()`, `ranges::fold_left()`, `ranges::fold_left_first_with_iter()`, and `ranges::fold_left_first()` are implemented."
+      - Clang 23
+      - MSVC 14.35
     ftm:
       - name: __cpp_lib_ranges_fold
         value: 202207L
-    hints:
-      - target: Clang 18
-        msg: "Only `ranges::fold_left_with_iter()`, `ranges::fold_left()`, `ranges::fold_left_first_with_iter()`, and `ranges::fold_left_first()` are implemented."
 
   - desc: "`views::cartesian_product()`"
     paper: [P2374, P2540]
@@ -1226,11 +1207,9 @@ features:
     lib: true
     support:
       - GCC 16
-      - Clang 22 (hint)
+      - tool: Clang 22
+        note: "Implemented as a defect report (DR) for C++20."
       - MSVC 14.36
-    hints:
-      - target: Clang 22
-        msg: "Implemented as a defect report (DR) for C++20."
     ftm:
       - name: __cpp_lib_concepts
         value: 202207L
@@ -1288,18 +1267,16 @@ features:
     paper: P2465
     lib: true
     support:
-      - GCC 15 (hint)
-      - Clang 17 (partial)
+      - tool: GCC 15
+        note: "Requires enabling compiler flag `-fmodules` to enable experimental modules support."
+      - tool: Clang 17
+        status: partial
+        note: "Experimental support only."
       - Clang 19
-      - MSVC 14.35 (partial)
+      - tool: MSVC 14.35
+        status: partial
+        note: "Modules work, but you have to manually add them to your Visual Studio project."
       - MSVC 14.36
-    hints:
-      - target: GCC 15
-        msg: "Requires enabling compiler flag `-fmodules` to enable experimental modules support."
-      - target: Clang 17
-        msg: "Experimental support only."
-      - target: MSVC 14.35
-        msg: "Modules work, but you have to manually add them to your Visual Studio project."
     ftm:
       - name: __cpp_lib_modules
         value: 202207L
@@ -1405,13 +1382,12 @@ features:
     lib: true
     support:
       - GCC 15
-      - Clang 16 (partial)
+      - tool: Clang 16
+        status: partial
+        note: "Specializations for string and debug_string are not done."
       - Clang 17
       - Xcode 15
       - MSVC 14.42
-    hints:
-      - target: Clang 16
-        msg: "Specializations for string and debug_string are not done."
     ftm:
       - name: __cpp_lib_format_ranges
         value: 202207L
@@ -1470,13 +1446,12 @@ features:
     paper: [P2644, P2718]
     support:
       - GCC 15
-      - Clang 19 (partial)
+      - tool: Clang 19
+        status: partial
+        note: "Misses lifetime extension of temporaries in `mem-default-init` cases."
       - Clang 20
       - Xcode 16.3
       - MSVC 14.51
-    hints:
-      - target: Clang 19
-        msg: "Misses lifetime extension of temporaries in `mem-default-init` cases."
     ftm:
       - name: __cpp_range_based_for
         value: 202211L
@@ -1546,15 +1521,13 @@ features:
     lib: true
     support:
       - GCC 16
-      - Clang 17 (partial)
+      - tool: Clang 17
+        status: partial
+        note: "`join_with_view` has not been done yet since this type is not implemented yet."
       - Clang 21
-      - MSVC 14.36 (hint)
+      - tool: MSVC 14.36
+        note: "Treated as a defect report against C++20."
       - Xcode 15
-    hints:
-      - target: Clang 17
-        msg: "`join_with_view` has not been done yet since this type is not implemented yet."
-      - target: MSVC 14.36
-        msg: "Treated as a defect report against C++20."
 
   - desc: "Relaxing Ranges Just A Smidge"
     paper: P2609
@@ -1599,12 +1572,11 @@ features:
     lib: true
     support:
       - GCC 14
-      - Clang 17 (partial)
+      - tool: Clang 17
+        status: partial
+        note: "`std::stacktrace` is not implemented yet."
       - MSVC 14.38
       - Xcode 15
-    hints:
-      - target: Clang 17
-        msg: "`std::stacktrace` is not implemented yet."
     ftm:
       - name: __cpp_lib_formatters
         value: 202302L
@@ -1626,12 +1598,10 @@ features:
     lib: true
     support:
       - GCC 16
-      - Clang 21 (hint)
+      - tool: Clang 21
+        note: "The feature is implemented as a defect report to C++20."
       - MSVC 14.37
       - Xcode 26.4
-    hints:
-      - target: Clang 21
-        msg: "The feature is implemented as a defect report to C++20."
     ftm:
       - name: __cpp_lib_common_reference
         value: 202302L
@@ -1655,10 +1625,10 @@ features:
   - desc: "`std::barrier`'s phase completion guarantees"
     paper: P2588
     lib: true
-    support: [MSVC 14.28 (hint), MSVC 14.36]
-    hints:
-      - target: MSVC 14.28
-        msg: "Implemented, but no feature-testing macro is available."
+    support:
+      - tool: MSVC 14.28
+        note: "Implemented, but no feature-testing macro is available."
+      - MSVC 14.36
     ftm:
       - name: __cpp_lib_barrier
         value: 202302L

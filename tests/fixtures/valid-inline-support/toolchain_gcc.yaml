@@ -1,0 +1,7 @@
+---
+infos:
+  - name: GCC
+    desc: General GCC support.
+  - name: GCC 15
+    released: April, 2025
+

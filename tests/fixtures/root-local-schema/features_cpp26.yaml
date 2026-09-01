@@ -1,0 +1,7 @@
+---
+features:
+  - desc: Root-local feature schema wins
+    root_only: true
+    support:
+      - GCC 15
+

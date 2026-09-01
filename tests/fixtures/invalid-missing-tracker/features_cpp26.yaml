@@ -1,0 +1,7 @@
+---
+features:
+  - desc: Tracker validation
+    support:
+      - tool: R++ 2026.2
+        issue: RSCPP-40000
+

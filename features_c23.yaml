@@ -75,35 +75,29 @@ features:
     paper: N2508
     support:
       - GCC 11
-      - Clang 16 (partial)
+      - tool: Clang 16
+        status: partial
+        note: "Only labels at the end of a block are supported"
       - Clang 18
       - MSVC (partial)
       - Xcode 15
-    hints:
-      - target: Clang 16
-        msg: "Only labels at the end of a block are supported"
   - desc: "[Binary integer constants](https://cppreference.com/c/language/integer_constant)"
     paper: N2549
     content: c-binary-literals.md
     support:
-      - GCC 4.3 (hint)
+      - tool: GCC 4.3
+        note: "Supported as an extension."
       - GCC 11
-      - Clang 2.9 (hint)
+      - tool: Clang 2.9
+        note: "Supported as an extension."
       - Clang 9
-      - MSVC 14.0 (hint)
-      - Xcode 7 (hint)
+      - tool: MSVC 14.0
+        note: "Supported as an extension."
+      - tool: Xcode 7
+        note: "Supported as an extension."
       - Xcode 16.3
       - owcc
       - TinyCC
-    hints:
-      - target: GCC 4.3
-        msg: "Supported as an extension."
-      - target: Clang 2.9
-        msg: "Supported as an extension."
-      - target: MSVC 14.0
-        msg: "Supported as an extension."
-      - target: Xcode 7
-        msg: "Supported as an extension."
   - desc: "[__has_c_attribute](https://cppreference.com/c/language/attributes#Attribute_testing) in preprocessor conditionals"
     paper: N2553
     support:
@@ -119,17 +113,16 @@ features:
   - desc: "IEEE 754 interchange and extended types"
     paper: N2601
     support:
-      - GCC 7 (partial)
+      - tool: GCC 7
+        status: partial
+        note: "Only TS 18661-3 mentioned; the status of conformance is unknown."
       - GCC 14
-      - Clang 6 (partial)
-      - Xcode (partial)
-    hints:
-      - target: GCC 7
-        msg: "Only TS 18661-3 mentioned; the status of conformance is unknown."
-      - target: Clang 6
-        msg: "Only `_Float16` is supported."
-      - target: Xcode
-        msg: "Only `_Float16` is supported."
+      - tool: Clang 6
+        status: partial
+        note: "Only `_Float16` is supported."
+      - tool: Xcode
+        status: partial
+        note: "Only `_Float16` is supported."
   - desc: "Compatibility of Pointers to Arrays with Qualifiers"
     paper: N2607
     support:
@@ -141,11 +134,9 @@ features:
     support:
       - GCC 12
       - Clang 13
-      - MSVC 14.0 (hint)
+      - tool: MSVC 14.0
+        note: "Supported as an extension."
       - Xcode 13.4
-    hints:
-      - target: MSVC 14.0
-        msg: "Supported as an extension."
   - desc: "[`#elifdef` and `#elifndef`](https://cppreference.com/c/preprocessor/conditional)"
     paper: N2645
     content: c-elifdef.md
@@ -177,12 +168,11 @@ features:
     paper: N2763
     content: c-bitint.md
     support:
-      - GCC 14 (partial)
+      - tool: GCC 14
+        status: partial
+        note: "Only supported on IA-32, x86-64 and AArch64 LE."
       - Clang 15
       - Xcode 15
-    hints:
-      - target: GCC 14
-        msg: "Only supported on IA-32, x86-64 and AArch64 LE."
   - desc: "`[[noreturn]]`"
     paper: N2764
     support:
@@ -226,33 +216,27 @@ features:
     paper: N2900
     content: c-empty-init.md
     support:
-      - GCC 13 (hint)
-      - Clang 17 (hint)
-      - Xcode (partial)
-    hints:
-      - target: GCC 13
-        msg: "Partially supported as an extension before."
-      - target: Clang 17
-        msg: "Supported as an extension before without support for scalars and variable-length arrays (VLAs)."
-      - target: Xcode
-        msg: "Supported as an extension. Missing support for scalars and variable-length arrays (VLAs)."
+      - tool: GCC 13
+        note: "Partially supported as an extension before."
+      - tool: Clang 17
+        note: "Supported as an extension before without support for scalars and variable-length arrays (VLAs)."
+      - tool: Xcode
+        status: partial
+        note: "Supported as an extension. Missing support for scalars and variable-length arrays (VLAs)."
   - desc: "`typeof` and `typeof_unqual`"
     paper:
       - N2927
       - N2930
     content: c-typeof.md
     support:
-      - GCC 13 (hint)
-      - Clang 16 (hint)
+      - tool: GCC 13
+        note: "Prior to GCC 13: Supported as an extension. Only typeof (and `__typeof__` in strict modes) supported."
+      - tool: Clang 16
+        note: "Prior to Clang 16: Supported as an extension. Only typeof (and `__typeof__` in strict modes) supported."
       - MSVC 14.39
-      - Xcode (partial)
-    hints:
-      - target: GCC 13
-        msg: "Prior to GCC 13: Supported as an extension. Only typeof (and `__typeof__` in strict modes) supported."
-      - target: Clang 16
-        msg: "Prior to Clang 16: Supported as an extension. Only typeof (and `__typeof__` in strict modes) supported."
-      - target: Xcode
-        msg: "Supported as an extension. Only typeof (and `__typeof__` in strict modes) supported."
+      - tool: Xcode
+        status: partial
+        note: "Supported as an extension. Only typeof (and `__typeof__` in strict modes) supported."
   - desc: "New spelling of keywords"
     paper: N2934
     support:
@@ -302,21 +286,17 @@ features:
     paper: N3029
     support:
       - GCC 13
-      - Clang 20 (hint)
+      - tool: Clang 20
+        note: "Supported as an extension with incomplete diagnostics in earlier versions."
       - Xcode 16.1
-    hints:
-      - target: Clang 20
-        msg: "Supported as an extension with incomplete diagnostics in earlier versions."
   - desc: "Enumerations with fixed underlying types"
     paper: N3030
     content: c-fixed-enum.md
     support:
       - GCC 13
-      - Clang 20 (hint)
+      - tool: Clang 20
+        note: "Supported as an extension with incomplete diagnostics in earlier versions."
       - Xcode 16.1
-    hints:
-      - target: Clang 20
-        msg: "Supported as an extension with incomplete diagnostics in earlier versions."
   - desc: "`__VA_OPT__`"
     paper: N3033
     content: c-va-opt.md
@@ -345,7 +325,6 @@ features:
   - desc: "Partial program correctness"
     paper: N3128
     support:
-      - GCC (partial)
-    hints:
-      - target: GCC
-        msg: "Not guaranteed for volatile accesses"
+      - tool: GCC
+        status: partial
+        note: "Not guaranteed for volatile accesses"

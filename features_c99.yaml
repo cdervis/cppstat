@@ -34,15 +34,14 @@ features:
     support:
       - GCC
       - Clang
-      - MSVC (partial)
+      - tool: MSVC
+        status: partial
+        note: "Requires /std:c11 or later."
       - Xcode 13
-      - owcc (partial)
+      - tool: owcc
+        status: partial
+        note: "`parsed with -zastd=c99 (for wcc*), but does not change the code."
       - TinyCC
-    hints:
-      - target: MSVC
-        msg: "Requires /std:c11 or later."
-      - target: owcc
-        msg: "`parsed with -zastd=c99 (for wcc*), but does not change the code."
   - desc: "Enhanced [arithmetic types](https://cppreference.com/c/language/arithmetic_types)"
     paper:
       - N815
@@ -93,10 +92,9 @@ features:
     summary: "Non-constant initializers for block-scope aggregates."
     support:
       - GCC
-      - owcc (partial)
-    hints:
-      - target: owcc
-        msg: "Requires -aa for wcc*."
+      - tool: owcc
+        status: partial
+        note: "Requires -aa for wcc*."
     content: c-non-constant-initializers.md
   - desc: "Idempotent cvr-qualifiers"
     summary: "Repeated cvr-qualifiers on a type are idempotent."
@@ -223,12 +221,11 @@ features:
     support:
       - GCC 3
       - Clang
-      - MSVC (partial)
+      - tool: MSVC
+        status: partial
+        note: "Requires /std:c11 or later."
       - Xcode 14
       - owcc
-    hints:
-      - target: MSVC
-        msg: "Requires /std:c11 or later."
     content: c-pragma-operator.md
   - desc: "Standard pragmas for floating-point evaluation"
     summary: "Standard `STDC` pragmas controlling floating-point code generation."
@@ -236,14 +233,13 @@ features:
       - N631
       - N696
     support:
-      - Clang (partial)
-      - Xcode (partial)
-      - owcc (partial)
-    hints:
-      - target: Clang
-        msg: "`STDC FENV_ACCESS ON` is not supported."
-      - target: Xcode
-        msg: "`STDC FENV_ACCESS ON` is not supported."
-      - target: owcc
-        msg: "`parsed, but does not change the code."
+      - tool: Clang
+        status: partial
+        note: "`STDC FENV_ACCESS ON` is not supported."
+      - tool: Xcode
+        status: partial
+        note: "`STDC FENV_ACCESS ON` is not supported."
+      - tool: owcc
+        status: partial
+        note: "`parsed, but does not change the code."
     content: c-fp-pragmas.md

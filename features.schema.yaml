@@ -37,24 +37,22 @@ definitions:
         type: array
         description: "A list of toolchains that support the feature."
         items:
-          type: string
-          pattern: "^(GCC|Clang|MSVC|Xcode|owcc|TinyCC)( ([0-9]+(\\.[0-9]+)*|\\?))?( \\((partial|hint)\\))?$"
-      hints:
-        type: array
-        description: "A list of hints targeting toolchains in the support list."
-        items:
-          type: object
-          required:
-            - target
-            - msg
-          additionalProperties: false
-          properties:
-            target:
-              type: string
-              description: "The toolchain that this hint targets."
-            msg:
-              type: string
-              description: "The reason for partial support, or the hint. Supports Markdown."
+          oneOf:
+            - type: string
+              minLength: 1
+            - type: object
+              required: [tool]
+              additionalProperties: false
+              properties:
+                tool:
+                  type: string
+                  minLength: 1
+                status:
+                  enum: [full, partial, unsupported]
+                note:
+                  type: string
+                issue:
+                  type: string
       ftm:
         type: array
         description: "A list of feature-testing macros (FTM) for the feature."

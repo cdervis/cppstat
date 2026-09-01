@@ -49,14 +49,13 @@ features:
   - desc: "Attributes for namespaces and enumerators"
     paper: N4266
     support:
-      - GCC 4.9 (partial)
+      - tool: GCC 4.9
+        status: partial
+        note: "Only attributes for namespaces are supported."
       - GCC 6
       - Clang 3.6
       - MSVC 14.0
       - Xcode
-    hints:
-      - target: GCC 4.9
-        msg: "Only attributes for namespaces are supported."
     ftm:
       - name: __cpp_enumerator_attributes
         value: 201411L
@@ -134,11 +133,9 @@ features:
     support:
       - GCC 7
       - Clang 3.9
-      - MSVC 14.14 (hint)
+      - tool: MSVC 14.14
+        note: "Not supported in C++14 mode."
       - Xcode
-    hints:
-      - target: MSVC 14.14
-        msg: "Not supported in C++14 mode."
     ftm:
       - name: __cpp_inheriting_constructors
         value: 201511L
@@ -678,10 +675,8 @@ features:
       - GCC 7
       - Clang
       - MSVC 14.0
-      - Xcode 15 (hint)
-    hints:
-      - target: Xcode 15
-        msg: "Supported, but the feature-testing macro (`__cpp_lib_addressof_constexpr`) is not set."
+      - tool: Xcode 15
+        note: "Supported, but the feature-testing macro (`__cpp_lib_addressof_constexpr`) is not set."
     ftm:
       - name: __cpp_lib_addressof_constexpr
         value: 201603L
@@ -886,14 +881,13 @@ features:
     lib: true
     support:
       - GCC 7
-      - Clang 4 (partial)
+      - tool: Clang 4
+        status: partial
+        note: "The parallel versions (`std::execution::par`) are not implemented yet. ([Issue](https://github.com/llvm/llvm-project/issues/103640))"
       - MSVC 14.11
-      - Xcode 15 (partial)
-    hints:
-      - target: Clang 4
-        msg: "The parallel versions (`std::execution::par`) are not implemented yet. ([Issue](https://github.com/llvm/llvm-project/issues/103640))"
-      - target: Xcode 15
-        msg: "The parallel versions (`std::execution::par`) are not implemented yet. ([Issue](https://github.com/llvm/llvm-project/issues/103640))"
+      - tool: Xcode 15
+        status: partial
+        note: "The parallel versions (`std::execution::par`) are not implemented yet. ([Issue](https://github.com/llvm/llvm-project/issues/103640))"
     ftm:
       - name: __cpp_lib_raw_memory_algorithms
         value: 201606L
@@ -914,26 +908,36 @@ features:
     paper: P0067
     content: to-chars.md
     lib: true
-    support: [GCC 8 (partial), GCC 11, Clang 7 (partial), Clang 14 (partial), Clang 20 (partial), MSVC 14.14 (partial), MSVC 14.15 (partial), MSVC 14.16 (partial), MSVC 14.24, Xcode 10 (partial), Xcode 14.3 (partial)]
-    hints:
-      - target: GCC 8
-        msg: "No support for floating-point types, only integer types."
-      - target: Clang 7
-        msg: "Adds `std::to_chars()` and `std::from_chars()` support for integer types."
-      - target: Clang 14
-        msg: "Adds only `std::to_chars()` support for `float` and `double`."
-      - target: Clang 20
-        msg: "Adds `std::from_chars()` support for `float` and `double`. Support is complete except for `long double`.\n\nIn total, the current status is:\n\n| Type             | `to_chars` | `from_chars` |\n|------------------|------------|--------------|\n| integers         | libc++ 7   | libc++ 7     |\n| `float`/`double` | libc++ 14  | libc++ 20    |\n| `long double`    | -          | -            |\n\n---\n\n**Note**: Calling both functions with `long double` falls back to the `double` overload."
-      - target: MSVC 14.14
-        msg: "No support for floating-point types, only integer types."
-      - target: MSVC 14.15
-        msg: "Adds `std::from_chars()` support for `float` and `double`."
-      - target: MSVC 14.16
-        msg: "Adds shortest round-trip decimal overloads of floating-point `std::to_chars()`, e.g. `\"%.8e\"` and `\"%.16e\"`."
-      - target: Xcode 10
-        msg: "No support for floating-point types, only integer types."
-      - target: Xcode 14.3
-        msg: "Adds support for floating-point types."
+    support:
+      - tool: GCC 8
+        status: partial
+        note: "No support for floating-point types, only integer types."
+      - GCC 11
+      - tool: Clang 7
+        status: partial
+        note: "Adds `std::to_chars()` and `std::from_chars()` support for integer types."
+      - tool: Clang 14
+        status: partial
+        note: "Adds only `std::to_chars()` support for `float` and `double`."
+      - tool: Clang 20
+        status: partial
+        note: "Adds `std::from_chars()` support for `float` and `double`. Support is complete except for `long double`.\n\nIn total, the current status is:\n\n| Type             | `to_chars` | `from_chars` |\n|------------------|------------|--------------|\n| integers         | libc++ 7   | libc++ 7     |\n| `float`/`double` | libc++ 14  | libc++ 20    |\n| `long double`    | -          | -            |\n\n---\n\n**Note**: Calling both functions with `long double` falls back to the `double` overload."
+      - tool: MSVC 14.14
+        status: partial
+        note: "No support for floating-point types, only integer types."
+      - tool: MSVC 14.15
+        status: partial
+        note: "Adds `std::from_chars()` support for `float` and `double`."
+      - tool: MSVC 14.16
+        status: partial
+        note: "Adds shortest round-trip decimal overloads of floating-point `std::to_chars()`, e.g. `\"%.8e\"` and `\"%.16e\"`."
+      - MSVC 14.24
+      - tool: Xcode 10
+        status: partial
+        note: "No support for floating-point types, only integer types."
+      - tool: Xcode 14.3
+        status: partial
+        note: "Adds support for floating-point types."
     ftm:
       - name: __cpp_lib_to_chars
         value: 201611L
@@ -966,10 +970,8 @@ features:
       - GCC 5
       - Clang 11
       - MSVC 14.12
-      - Xcode 15 (hint)
-    hints:
-      - target: Xcode 15
-        msg: "Supported, but the feature-testing macro (`__cpp_lib_shared_ptr_arrays`) is not set."
+      - tool: Xcode 15
+        note: "Supported, but the feature-testing macro (`__cpp_lib_shared_ptr_arrays`) is not set."
     ftm:
       - name: __cpp_lib_shared_ptr_arrays
         value: 201611L
@@ -1008,10 +1010,8 @@ features:
       - Clang 15 (partial)
       - Clang 19
       - MSVC 14.11
-      - Xcode 16.3 (hint)
-    hints:
-      - target: Xcode 16.3
-        msg: "Supported, but the feature-testing macro (`__cpp_lib_hardware_interference_size`) is not set."
+      - tool: Xcode 16.3
+        note: "Supported, but the feature-testing macro (`__cpp_lib_hardware_interference_size`) is not set."
     ftm:
       - name: __cpp_lib_hardware_interference_size
         value: 201703L

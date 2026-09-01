@@ -11,13 +11,12 @@ features:
     paper: N3244
     support:
       - GCC ?
-      - Clang (partial)
-      - Xcode 16.3 (partial)
-    hints:
-      - target: Clang
-        msg: "Clang does not document the implementation-defined behavior for decay of an array with the register storage class specifier. Clang does not diagnose an extern inline function with no definition in the TU. Clang accepts and rejects redeclarations with/without an alignment specifier, depending on the order of the declarations."
-      - target: Xcode 16.3
-        msg: "See hint for Clang."
+      - tool: Clang
+        status: partial
+        note: "Clang does not document the implementation-defined behavior for decay of an array with the register storage class specifier. Clang does not diagnose an extern inline function with no definition in the TU. Clang accepts and rejects redeclarations with/without an alignment specifier, depending on the order of the declarations."
+      - tool: Xcode 16.3
+        status: partial
+        note: "See hint for Clang."
 
   - desc: "Accessing byte arrays"
     paper: N3254
@@ -52,16 +51,12 @@ features:
   - desc: "Remove imaginary types"
     paper: N3274
     support:
-      - GCC (hint)
-      - Clang (hint)
-      - Xcode (hint)
-    hints:
-      - target: GCC
-        msg: "GCC has never supported imaginary types."
-      - target: Clang
-        msg: "Clang has never supported imaginary types."
-      - target: Xcode
-        msg: "Apple Clang has never supported imaginary types."
+      - tool: GCC
+        note: "GCC has never supported imaginary types."
+      - tool: Clang
+        note: "Clang has never supported imaginary types."
+      - tool: Xcode
+        note: "Apple Clang has never supported imaginary types."
 
   - desc: "Floating-point exceptions for macro replacements"
     paper: N3286
@@ -245,10 +240,8 @@ features:
     content: c-counter-macro.md
     support:
       - Clang 22
-      - Xcode 16.3 (hint)
-    hints:
-      - target: Xcode 16.3
-        msg: "Supported as a pre-existing GNU extension prior to C2y standardization."
+      - tool: Xcode 16.3
+        note: "Supported as a pre-existing GNU extension prior to C2y standardization."
 
   - desc: "Complex operators"
     paper: N3460
@@ -342,14 +335,13 @@ features:
   - desc: "Allow calling `static inline` within `extern inline`"
     paper: N3622
     support:
-      - GCC (partial)
+      - tool: GCC
+        status: partial
+        note: "Code compiles but emits a warning."
       - Clang 22
-      - Xcode 16.3 (partial)
-    hints:
-      - target: Xcode 16.3
-        msg: "Code compiles but emits `-Wstatic-in-inline` warning. Full C2y semantics (warning suppression in `c2y` mode) require Clang 22."
-      - target: GCC
-        msg: "Code compiles but emits a warning."
+      - tool: Xcode 16.3
+        status: partial
+        note: "Code compiles but emits `-Wstatic-in-inline` warning. Full C2y semantics (warning suppression in `c2y` mode) require Clang 22."
 
   - desc: "Earthly Demon XV: Definition of Main"
     paper: N3623
@@ -378,10 +370,9 @@ features:
     support:
       - GCC (partial)
       - Clang (partial)
-      - Xcode 16.3 (partial)
-    hints:
-      - target: Xcode 16.3
-        msg: "Constant folding of const integers works via a GNU extension, not native C2y constexpr semantics. Issues a `-Wgnu-folding-constant` warning under `-pedantic`."
+      - tool: Xcode 16.3
+        status: partial
+        note: "Constant folding of const integers works via a GNU extension, not native C2y constexpr semantics. Issues a `-Wgnu-folding-constant` warning under `-pedantic`."
 
   - desc: "Enumerations with Bit-Precise Integer as Underlying Type"
     paper: N3705

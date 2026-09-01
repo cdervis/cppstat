@@ -1,0 +1,21 @@
+---
+frontend:
+  id: rscpp
+  name: R++
+  full_name: ReSharper C++
+  vendor: JetBrains
+  kind: frontend
+  language: C++
+  standard_library: false
+  products: [CLion, Rider]
+  refs: [https://www.jetbrains.com/resharper-cpp/]
+issue_tracker:
+  name: JetBrains YouTrack
+  url_template: https://youtrack.jetbrains.com/issue/{id}
+releases:
+  - version: "2026.2"
+    released: July, 2026
+    refs: []
+  - version: "2026.1"
+    refs: []
+

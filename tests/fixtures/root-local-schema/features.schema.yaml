@@ -1,0 +1,21 @@
+---
+$schema: "http://json-schema.org/draft-07/schema#"
+type: object
+required: [features]
+properties:
+  features:
+    type: array
+    items:
+      type: object
+      required: [desc, root_only, support]
+      additionalProperties: false
+      properties:
+        desc:
+          type: string
+        root_only:
+          const: true
+        support:
+          type: array
+          items:
+            type: string
+

@@ -57,9 +57,8 @@ jobs:
             json-schema-validator/src/json-patch.cpp \
             $(pkg-config --libs yaml-cpp)
 
-      - name: "Validate feature files"
-        run: |
-          for file in features_c*.yaml; do
-            echo "Verifying: $file"
-            ./validate_yaml_file "$file"
-          done
+      - name: "Test repository validator"
+        run: bash tests/validate_repository.sh ./validate_yaml_file
+
+      - name: "Validate repository relationships"
+        run: ./validate_yaml_file --repository .
