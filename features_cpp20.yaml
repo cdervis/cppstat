@@ -93,6 +93,7 @@ features:
       - tool: Xcode 12
         status: partial
         note: "The following papers are not implemented: [P2103](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2103r0.html), DR1496, DR1734 and [P0848](https://wg21.link/P0848)."
+      - R++
     ftm:
       - name: __cpp_concepts
         value: 201907L
@@ -395,6 +396,7 @@ features:
       - Clang 16
       - MSVC 14.29
       - Xcode 16
+      - R++ 2025.2
 
   - desc: "Pack-expansions in lambda init-captures"
     paper: P0780
@@ -1398,6 +1400,10 @@ features:
       - Clang 13
       - MSVC 14.24
       - Xcode 13.4.1
+      - tool: R++
+        status: partial
+        issue: RSCPP-37266
+        note: "The implicit move from an rvalue reference is not implemented."
 
   - desc: "`constexpr` container operations"
     paper: P0784

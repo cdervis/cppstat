@@ -1,0 +1,91 @@
+---
+frontend:
+  id: rscpp
+  name: R++
+  full_name: ReSharper C++
+  vendor: JetBrains
+  description: >-
+    R++ is the JetBrains C and C++ language engine. It powers the code analysis and
+    the language support in CLion, Rider, and ReSharper C++ for Visual Studio.
+  kind: frontend
+  standard_library: false
+  products:
+    - CLion
+    - Rider
+    - ReSharper C++ for Visual Studio
+  refs:
+    - title: ReSharper C++
+      url: "https://www.jetbrains.com/resharper-cpp/"
+    - title: CLion
+      url: "https://www.jetbrains.com/clion/"
+issue_tracker:
+  name: JetBrains YouTrack
+  url_template: "https://youtrack.jetbrains.com/issue/{id}"
+releases:
+  - version: "2026.2"
+    released: July 22, 2026
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2026/07/22/resharper-cpp-2026-2-cpp-26-reflection-ispc-language-support-and-more/"
+  - version: "2026.1"
+    released: March 30, 2026
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2026/03/30/resharper-cpp-2026-1-released/"
+  - version: "2025.3"
+    released: November 11, 2025
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2025/11/11/resharper-cpp-2025-3/"
+  - version: "2025.2"
+    released: August 14, 2025
+    refs: []
+  - version: "2025.1"
+    released: April 16, 2025
+    refs: []
+  - version: "2024.3"
+    released: November 13, 2024
+    refs: []
+  - version: "2024.2"
+    released: August 15, 2024
+    refs: []
+  - version: "2024.1"
+    released: April 9, 2024
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2024/04/09/resharper-cpp-2024-1/"
+  - version: "2023.3"
+    released: December 6, 2023
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2023/12/07/resharper-cpp-2023-3/"
+  - version: "2023.2"
+    released: August 2, 2023
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2023/08/02/resharper-cpp-2023-2/"
+  - version: "2023.1"
+    released: April 5, 2023
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2023/04/05/resharper-cpp-2023-1/"
+  - version: "2022.3"
+    released: December 7, 2022
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2022/12/07/resharper-cpp-2022-3/"
+  - version: "2022.2"
+    released: August 2, 2022
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2022/08/02/resharper-cpp-2022-2/"
+  - version: "2022.1"
+    released: April 19, 2022
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2022/04/19/resharper-cpp-2022-1/"
+  - version: "2021.3"
+    released: December 8, 2021
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2021/12/08/resharper-cpp-2021-3/"

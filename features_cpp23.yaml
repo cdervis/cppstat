@@ -138,6 +138,7 @@ features:
       - Clang 14
       - MSVC 14.44
       - Xcode 14
+      - R++ 2023.2
     ftm:
       - name: __cpp_if_consteval
         value: 202106L
@@ -421,6 +422,7 @@ features:
       - MSVC 14.32
       - MSVC 14.43
       - Xcode 16.3
+      - R++ 2023.1
     ftm:
       - name: __cpp_explicit_this_parameter
         value: 202110L
@@ -469,6 +471,7 @@ features:
       - Clang 15
       - MSVC 14.42
       - Xcode 14.3
+      - R++ 2024.2
     ftm:
       - name: __cpp_multidimensional_subscript
         value: 202110L

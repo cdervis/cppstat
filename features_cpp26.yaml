@@ -62,6 +62,9 @@ features:
       - GCC 14
       - Clang 17
       - Xcode 16.3
+      - tool: R++
+        status: unsupported
+        issue: RSCPP-35928
     ftm:
       - name: __cpp_static_assert
         value: 202306L
@@ -385,6 +388,7 @@ features:
       - GCC 15
       - Clang 19
       - Xcode 16.3
+      - R++ 2025.3
     ftm:
       - name: __cpp_pack_indexing
         value: 202311L
@@ -1295,7 +1299,7 @@ features:
   - desc: "Annotations for Reflection"
     paper: P3394
     summary: "Attach compile-time values to declarations for reflection to read back."
-    support: [GCC 16]
+    support: [GCC 16, R++ 2026.2]
     content: reflection-annotations.md
 
   - desc: "Splicing a base class subobject"
