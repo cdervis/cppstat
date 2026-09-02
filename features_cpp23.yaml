@@ -160,6 +160,7 @@ features:
       - Clang 13
       - Xcode 13.4.1
       - MSVC 14.50
+      - R++
 
   - desc: "Narrowing contextual conversions to `bool` (in `static_assert` and `constexpr if`)"
     paper: P1401
@@ -189,6 +190,7 @@ features:
       - Clang
       - MSVC 14.30
       - Xcode
+      - R++
 
   - desc: "Remove mixed wide string literal concatenation"
     paper: P2201
@@ -197,6 +199,8 @@ features:
       - Clang
       - MSVC 14.44
       - Xcode
+      - tool: R++
+        status: unsupported
 
   - desc: "`std::out_ptr()` and `std::inout_ptr()`"
     paper: P1132
@@ -404,6 +408,7 @@ features:
       - Clang 15
       - MSVC 14.43
       - Xcode 14.3
+      - R++
     ftm:
       - name: __cpp_constexpr
         value: 202110L
@@ -436,6 +441,7 @@ features:
       - Clang
       - MSVC 14.30
       - Xcode
+      - R++
 
   - desc: "Add support for preprocessing directives `#elifdef` and `#elifndef`"
     paper: P2334
@@ -854,6 +860,7 @@ features:
       - Clang
       - MSVC 14.50
       - Xcode 15
+      - R++
 
   - desc: "Remove non-encodable wide character literals and multicharacter wide character literals"
     paper: P2362
@@ -891,6 +898,7 @@ features:
       - Clang 19
       - MSVC 14.51
       - Xcode 16.3
+      - R++
     ftm:
       - name: __cpp_constexpr
         value: 202207L
@@ -948,6 +956,7 @@ features:
       - GCC 14
       - Clang 20
       - MSVC 14.50
+      - R++
     keywords: ["constexpr"]
 
   - desc: "Requirements for optional extended floating-point types"
@@ -970,11 +979,17 @@ features:
       - Clang 19
       - MSVC 14.50
       - Xcode 16.4
+      - R++
 
   - desc: "Class template argument deduction from inherited constructors"
     paper: P2582
     summary: "Class template argument deduction works with inherited constructors."
-    support: [GCC 14, MSVC 14.51]
+    support:
+      - GCC 14
+      - MSVC 14.51
+      - tool: R++
+        status: unsupported
+        issue: RSCPP-37818
 
   - desc: "Attribute `[[assume]]`"
     paper: P1774
@@ -1014,6 +1029,7 @@ features:
       - Clang
       - MSVC 14.44
       - Xcode 15
+      - R++
 
   - desc: "`std::mdspan`: a non-owning multidimensional array reference (`<mdspan>`)"
     paper: [P0009, P2599, P2604, P2613, P2763]
@@ -1448,6 +1464,7 @@ features:
       - Clang 17
       - Xcode 16
       - MSVC 14.52
+      - R++
     ftm:
       - name: __cpp_consteval
         value: 202211L
@@ -1515,6 +1532,8 @@ features:
       - Clang 19
       - MSVC 14.50
       - Xcode 16.3
+      - tool: R++
+        status: unsupported
 
   - desc: "Stashing stashing iterators for proper flattening"
     paper: P2770
