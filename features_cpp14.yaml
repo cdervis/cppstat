@@ -7,6 +7,7 @@ features:
       - Clang 3.4
       - MSVC 12.0
       - Xcode
+      - R++
 
   - desc: "[Binary literals](https://cppreference.com/cpp/language/integer_literal)"
     paper: N3472
@@ -88,6 +89,7 @@ features:
       - Clang 3.4
       - MSVC 14.10
       - Xcode
+      - R++
     ftm:
       - name: __cpp_constexpr
         value: 201304L
@@ -99,13 +101,14 @@ features:
       - Clang 3.3
       - MSVC 14.10
       - Xcode
+      - R++
     ftm:
       - name: __cpp_aggregate_nsdmi
         value: 201304L
 
   - desc: "Omitting/extending [memory allocations](https://cppreference.com/cpp/language/new#Allocation)"
     paper: N3664
-    support: [Clang 3.4, Xcode]
+    support: [Clang 3.4, Xcode, R++]
 
   - desc: "`[[deprecated]]` attribute"
     paper: N3760
@@ -126,6 +129,7 @@ features:
       - Clang 3.4
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_sized_deallocation
         value: 201309L
