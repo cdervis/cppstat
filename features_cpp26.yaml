@@ -1291,6 +1291,8 @@ features:
     support:
       - tool: GCC 16
         note: "Requires `-freflection`"
+      - tool: R++ 2026.2
+        note: "The language part only. R++ implements no standard library."
     ftm:
       - name: __cpp_impl_reflection
         value: 202506L
