@@ -42,6 +42,7 @@ features:
         status: partial
         note: "`parsed with -zastd=c99 (for wcc*), but does not change the code."
       - TinyCC
+      - R++
   - desc: "Enhanced [arithmetic types](https://cppreference.com/c/language/arithmetic_types)"
     paper:
       - N815
@@ -55,6 +56,7 @@ features:
       - GCC
       - Clang (partial)
       - Xcode (partial)
+      - R++
   - desc: "Flexible array members"
     content: c-flexible-array.md
     support:
@@ -63,6 +65,7 @@ features:
       - Xcode
       - owcc
       - TinyCC
+      - R++
   - desc: "[Variable-length array](https://cppreference.com/c/language/array#Variable-length_arrays) (VLA) types"
     paper: N683
     content: c-vla.md
@@ -124,6 +127,7 @@ features:
       - Xcode
       - owcc
       - TinyCC
+      - R++
   - desc: "[Compound literals](https://cppreference.com/c/language/compound_literal)"
     paper: N716
     content: c-compound-literals.md
@@ -132,6 +136,7 @@ features:
       - Clang
       - MSVC
       - Xcode 14
+      - R++
   - desc: "Floating-point environment"
     summary: "Runtime access to the floating-point environment."
     support:
@@ -198,12 +203,14 @@ features:
       - Xcode 14
       - owcc 1.2
       - TinyCC
+      - R++
   - desc: "Cvr-qualifiers and `static` in `[]` within function declarations"
     summary: "Qualifiers and `static` array sizes in function parameters."
     support:
       - GCC 3.1
       - Clang
       - Xcode
+      - R++ 2024.1
     content: c-array-parameter-qualifiers.md
   - desc: "[Variadic macros](https://cppreference.com/c/preprocessor/replace)"
     paper: N707
@@ -215,6 +222,7 @@ features:
       - Xcode 14
       - owcc
       - TinyCC
+      - R++
   - desc: "`_Pragma` preprocessor operator"
     summary: "Emits a pragma from within a macro expansion."
     paper: N634
@@ -226,6 +234,7 @@ features:
         note: "Requires /std:c11 or later."
       - Xcode 14
       - owcc
+      - R++
     content: c-pragma-operator.md
   - desc: "Standard pragmas for floating-point evaluation"
     summary: "Standard `STDC` pragmas controlling floating-point code generation."

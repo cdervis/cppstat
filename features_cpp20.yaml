@@ -7,6 +7,7 @@ features:
       - Clang 6
       - MSVC 14.25
       - Xcode 10
+      - R++
 
   - desc: "`const&`-qualified pointers to members"
     paper: P0704
@@ -15,6 +16,7 @@ features:
       - Clang 6
       - MSVC 14.0
       - Xcode 10
+      - R++
 
   - desc: "Allow lambda capture `[=, this]`"
     paper: P0409
@@ -23,6 +25,7 @@ features:
       - Clang 6
       - MSVC 14.22
       - Xcode 10
+      - R++
 
   - desc: "`__VA_OPT__`"
     paper: [P0306, P1042]
@@ -38,6 +41,7 @@ features:
       - Clang 9
       - MSVC 14.25
       - Xcode 12
+      - R++ 2023.1
     content: va-opt.md
 
   - desc: "Designated initializers"
@@ -55,6 +59,7 @@ features:
       - Clang 10
       - MSVC 14.21
       - Xcode 12
+      - R++
     ftm:
       - name: __cpp_designated_initializers
         value: 201707L
@@ -67,6 +72,7 @@ features:
       - Clang 9
       - MSVC 14.22
       - Xcode 11
+      - R++
     ftm:
       - name: __cpp_generic_lambdas
         value: 201707L
@@ -78,6 +84,7 @@ features:
       - Clang 6
       - MSVC 14.14
       - Xcode
+      - R++
 
   - desc: "Concepts"
     paper: P0734
@@ -93,6 +100,7 @@ features:
       - tool: Xcode 12
         status: partial
         note: "The following papers are not implemented: [P2103](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/p2103r0.html), DR1496, DR1734 and [P0848](https://wg21.link/P0848)."
+      - R++
     ftm:
       - name: __cpp_concepts
         value: 201907L
@@ -129,10 +137,16 @@ features:
       - Clang 8
       - MSVC 14.25
       - Xcode 11
+      - R++
 
   - desc: "Simplifying implicit lambda capture"
     paper: P0588
-    support: [GCC 8, MSVC 14.24]
+    support:
+      - GCC 8
+      - MSVC 14.24
+      - tool: R++
+        status: unsupported
+        issue: RSCPP-31582
 
   - desc: "ADL and function templates that are not visible"
     paper: P0846
@@ -141,6 +155,7 @@ features:
       - Clang 9
       - MSVC 14.21
       - Xcode 11.4
+      - R++
 
   - desc: "`const` mismatch with defaulted copy constructor"
     paper: P0641
@@ -149,6 +164,7 @@ features:
       - Clang 8
       - MSVC 14.0
       - Xcode 10.2
+      - R++
 
   - desc: "Specify when `constexpr` function definitions are needed for constant evaluation"
     paper: P0859
@@ -173,6 +189,7 @@ features:
       - Clang 10
       - MSVC 14.20
       - Xcode 12
+      - R++
     ftm:
       - name: __cpp_impl_three_way_comparison
         value: 201907L
@@ -199,6 +216,7 @@ features:
       - MSVC 14.23
       - Clang 16
       - Xcode 12
+      - R++
 
   - desc: "Access checking on specializations"
     paper: P0692
@@ -208,6 +226,7 @@ features:
       - Clang 14
       - MSVC 14.26
       - Xcode 14
+      - R++
 
   - desc: "Default constructible and assignable stateless lambdas"
     paper: P0624
@@ -216,6 +235,7 @@ features:
       - Clang 8
       - MSVC 14.22
       - Xcode 10.2
+      - R++
 
   - desc: "Wording for lambdas in unevaluated contexts"
     paper: P0315
@@ -232,6 +252,7 @@ features:
       - tool: Xcode 13.4.1
         status: partial
         note: "Not supported: [temp.deduct/9]"
+      - R++
 
   - desc: "Transformation trait `std::remove_cvref`"
     paper: P0550
@@ -363,6 +384,7 @@ features:
       - Clang 9
       - MSVC 14.28
       - Xcode 11.4
+      - R++ 2023.2
 
   - desc: "Relaxing the range-`for` loop customization point finding rules"
     paper: P0962
@@ -371,6 +393,7 @@ features:
       - Clang 8
       - MSVC 14.25
       - Xcode 11
+      - R++
 
   - desc: "Allow structured bindings to accessible members"
     paper: P0969
@@ -379,6 +402,7 @@ features:
       - Clang 8
       - MSVC 14.20
       - Xcode 10.2
+      - R++
 
   - desc: "Relaxing the structured bindings customization point finding rules"
     paper: P0961
@@ -387,6 +411,7 @@ features:
       - Clang 8
       - MSVC 14.20
       - Xcode 10.2
+      - R++
 
   - desc: "Down with `typename`!"
     paper: P0634
@@ -395,6 +420,7 @@ features:
       - Clang 16
       - MSVC 14.29
       - Xcode 16
+      - R++ 2025.2
 
   - desc: "Pack-expansions in lambda init-captures"
     paper: P0780
@@ -404,6 +430,7 @@ features:
       - Clang 9
       - MSVC 14.22
       - Xcode 11.4
+      - R++
     ftm:
       - name: __cpp_init_captures
         value: 201803L
@@ -417,6 +444,7 @@ features:
       - Clang 12
       - MSVC 14.26
       - Xcode 13
+      - R++
 
   - desc: "Symmetry for spaceship"
     paper: P0905
@@ -506,6 +534,9 @@ features:
       - Clang 7
       - MSVC 14.22
       - Xcode 10.2
+      - tool: R++
+        status: unsupported
+        issue: RSCPP-31582
     keywords:
       - lambda
 
@@ -518,6 +549,7 @@ features:
       - MSVC 14.28
       - Xcode 13 (partial)
       - Xcode 16.3
+      - R++ 2021.3
 
   - desc: "Atomic compare-and-exchange with padding bits"
     paper: P0528
@@ -532,6 +564,8 @@ features:
       - Clang 6
       - MSVC 14.27
       - Xcode 10
+      - tool: R++
+        status: unsupported
     ftm:
       - name: __cpp_impl_destroying_delete
         value: 201806L
@@ -557,6 +591,7 @@ features:
       - Clang 9
       - MSVC 14.28
       - Xcode 11.4
+      - R++ 2021.3
     ftm:
       - name: __cpp_constexpr
         value: 201907L
@@ -570,6 +605,7 @@ features:
       - Clang 8
       - MSVC 14.20
       - Xcode 10.2
+      - R++
 
   - desc: "Consistency improvements for comparisons"
     paper: P1120
@@ -579,6 +615,8 @@ features:
       - Clang 10
       - MSVC 14.22
       - Xcode 12
+      - tool: R++
+        status: unsupported
 
   - desc: "Integrating feature-test macros"
     paper: P0941
@@ -588,6 +626,7 @@ features:
       - MSVC 14.15 (partial)
       - MSVC 14.20
       - Xcode
+      - R++
 
   - desc: "`explicit(bool)`"
     paper: P0892
@@ -597,6 +636,7 @@ features:
       - Clang 9
       - MSVC 14.24
       - Xcode 11.4
+      - R++
     ftm:
       - name: __cpp_conditional_explicit
         value: 201806L
@@ -758,6 +798,7 @@ features:
       - Clang 8
       - MSVC 14.25
       - Xcode 10.2
+      - R++ 2026.2
 
   - desc: "`dynamic_cast` and polymorphic `typeid` in constant expressions"
     paper: P1327
@@ -766,6 +807,8 @@ features:
       - Clang 9
       - MSVC 14.28
       - Xcode 11.4
+      - tool: R++
+        status: unsupported
 
   - desc: "Signed integers are two's complement"
     paper: P1236
@@ -775,6 +818,7 @@ features:
       - Clang 9
       - MSVC
       - Xcode 11.4
+      - R++
 
   - desc: "`char8_t`: A type for UTF-8 characters and strings"
     paper: P0482
@@ -785,6 +829,7 @@ features:
       - Clang 7
       - MSVC 14.22
       - Xcode 10
+      - R++
     ftm:
       - name: __cpp_char8_t
         value: 201811L
@@ -811,6 +856,7 @@ features:
       - Clang 9
       - MSVC 14.29
       - Xcode
+      - R++
 
   - desc: "Immediate functions (`consteval`)"
     paper: P1073
@@ -825,6 +871,7 @@ features:
       - MSVC 14.28 (partial)
       - MSVC 14.29
       - Xcode 15
+      - R++
     ftm:
       - name: __cpp_consteval
         value: 201811L
@@ -850,6 +897,7 @@ features:
       - MSVC 14.26 (partial)
       - MSVC 14.28
       - Xcode 12.5
+      - R++
 
   - desc: "Nested inline namespaces"
     paper: P1094
@@ -858,6 +906,7 @@ features:
       - Clang 8
       - MSVC 14.27
       - Xcode 10.2
+      - R++
 
   - desc: "Changing the active member of a `union` inside `constexpr`"
     paper: P1330
@@ -866,6 +915,7 @@ features:
       - Clang 9
       - MSVC 14.10
       - Xcode 10.3
+      - R++
     ftm:
       - name: __cpp_constexpr
         value: 202002L
@@ -1096,6 +1146,7 @@ features:
       - MSVC 14.11
       - MSVC 14.24
       - Xcode 16
+      - R++
 
   - desc: "Stronger Unicode requirements"
     paper: [P1041, P1139]
@@ -1112,6 +1163,7 @@ features:
       - Clang 16
       - MSVC 14.28
       - Xcode 16
+      - R++
     ftm:
       - name: __cpp_aggregate_paren_init
         value: 201902L
@@ -1123,6 +1175,7 @@ features:
       - Clang 9
       - MSVC 14.27
       - Xcode 11.4
+      - R++
 
   - desc: "Modules"
     paper: [P1103, P1703, P1766, P1779, P1811, P1815, P1857, P1874, P1979, P2115, P2615, P2788]
@@ -1151,6 +1204,7 @@ features:
       - MSVC 14.28
       - tool: Xcode 26
         note: "Apple Clang requires the `-fcxx-modules` flag **in addition to** `-fmodules`.<br/><br/> Xcode 26 does not ship the `clang-scan-deps` utility that is required by certain build system generators like CMake, in order to scan module dependencies.<br/> This means that C++ modules cannot be used in conjunction with CMake's Xcode generator (`-G Xcode`).\n"
+      - R++
     ftm:
       - name: __cpp_modules
         value: 201907L
@@ -1162,6 +1216,7 @@ features:
       - Clang 10
       - MSVC 14.22
       - Xcode 12
+      - R++
 
   - desc: "Coroutines"
     paper: [P0912, LWG3393]
@@ -1179,6 +1234,7 @@ features:
       - MSVC 14.28
       - Xcode 10.2 (partial)
       - Xcode 16.3
+      - R++
     ftm:
       - name: __cpp_impl_coroutine
         value: 201902L
@@ -1272,6 +1328,9 @@ features:
       - Clang 9
       - MSVC 14.25
       - Xcode 11.4
+      - tool: R++
+        status: unsupported
+        issue: RSCPP-31583
 
   - desc: "Permitting trivial default initialization in `constexpr` contexts"
     paper: P1331
@@ -1280,6 +1339,7 @@ features:
       - Clang 10
       - MSVC 14.27
       - Xcode 12
+      - R++ 2025.1
 
   - desc: "Conditionally trivial special member functions"
     paper: P0848
@@ -1288,6 +1348,7 @@ features:
       - Clang 16
       - MSVC 14.28
       - Xcode 16.3
+      - R++
     ftm:
       - name: __cpp_concepts
         value: 202002L
@@ -1308,6 +1369,7 @@ features:
       - Clang 9
       - MSVC 14.25
       - Xcode 11.4
+      - R++ 2022.3
 
   - desc: "`using` enum"
     paper: P1099
@@ -1318,6 +1380,7 @@ features:
       - Clang 13
       - MSVC 14.24
       - Xcode 13.4.1
+      - R++
     ftm:
       - name: __cpp_using_enum
         value: 201907L
@@ -1329,6 +1392,7 @@ features:
       - GCC 11
       - Clang 17
       - MSVC 14.27
+      - R++ 2021.3
     ftm:
       - name: __cpp_deduction_guides
         value: 201907L
@@ -1340,6 +1404,7 @@ features:
       - Clang 10
       - MSVC 14.28
       - Xcode 12
+      - R++
 
   - desc: "Permit conversions to arrays of unknown bound"
     paper: P0388
@@ -1348,6 +1413,8 @@ features:
       - Clang 14
       - MSVC 14.27
       - Xcode 14
+      - tool: R++
+        status: unsupported
 
   - desc: "`constinit`"
     paper: P1143
@@ -1358,6 +1425,7 @@ features:
       - Clang 10
       - MSVC 14.29
       - Xcode 12
+      - R++
     ftm:
       - name: __cpp_constinit
         value: 201907L
@@ -1378,6 +1446,7 @@ features:
       - Clang 9
       - MSVC 14.24
       - Xcode 11.4
+      - R++
 
   - desc: "Class template argument deduction for alias templates"
     paper: P1814
@@ -1387,6 +1456,7 @@ features:
         status: partial
         note: "This feature has been initially completed, but the feature macro `__cpp_deduction_guides` has not been updated."
       - MSVC 14.27
+      - R++
     ftm:
       - name: __cpp_deduction_guides
         value: 201907L
@@ -1398,6 +1468,10 @@ features:
       - Clang 13
       - MSVC 14.24
       - Xcode 13.4.1
+      - tool: R++
+        status: partial
+        issue: RSCPP-37266
+        note: "The implicit move from an rvalue reference is not implemented."
 
   - desc: "`constexpr` container operations"
     paper: P0784
@@ -1406,6 +1480,7 @@ features:
       - Clang 10
       - MSVC 14.28
       - Xcode 12
+      - R++
     ftm:
       - name: __cpp_constexpr_dynamic_alloc
         value: 201907L
@@ -1649,6 +1724,7 @@ features:
       - Clang 10
       - MSVC 14.25
       - Xcode 12
+      - R++
 
   - desc: "Inconsistencies with constant template parameters"
     paper: P1907
@@ -1658,6 +1734,7 @@ features:
       - Clang 18 (partial)
       - MSVC 14.26
       - Xcode 13.4.1 (partial)
+      - R++
     ftm:
       - name: __cpp_nontype_template_args
         value: 201911L
@@ -1709,6 +1786,7 @@ features:
       - Clang 10
       - MSVC 14.25
       - Xcode 12
+      - R++
 
   - desc: "`constexpr` for numeric algorithms"
     paper: P1645
@@ -1729,6 +1807,7 @@ features:
       - Clang 11
       - MSVC
       - Xcode 12.5
+      - R++
 
   - desc: "Converting from `T*` to `bool` should be considered narrowing"
     paper: P1957
@@ -1739,6 +1818,7 @@ features:
       - Clang 18
       - MSVC 14.27
       - Xcode 13
+      - R++
 
   - desc: "`ranges::elements_view` needs its own sentinel"
     paper: P1994

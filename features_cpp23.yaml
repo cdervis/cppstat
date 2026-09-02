@@ -8,6 +8,7 @@ features:
       - Clang 13
       - MSVC 14.43
       - Xcode 13.4.1
+      - R++ 2024.3
     ftm:
       - name: __cpp_size_t_suffix
         value: 202011L
@@ -74,6 +75,7 @@ features:
       - Clang 13
       - MSVC 14.44
       - Xcode 13.4.1
+      - R++ 2023.1
     content: lambda-omit-parens.md
 
   - desc: "Repairing input range adaptors and `std::counted_iterator`"
@@ -138,6 +140,7 @@ features:
       - Clang 14
       - MSVC 14.44
       - Xcode 14
+      - R++ 2023.2
     ftm:
       - name: __cpp_if_consteval
         value: 202106L
@@ -157,6 +160,7 @@ features:
       - Clang 13
       - Xcode 13.4.1
       - MSVC 14.50
+      - R++
 
   - desc: "Narrowing contextual conversions to `bool` (in `static_assert` and `constexpr if`)"
     paper: P1401
@@ -186,6 +190,7 @@ features:
       - Clang
       - MSVC 14.30
       - Xcode
+      - R++
 
   - desc: "Remove mixed wide string literal concatenation"
     paper: P2201
@@ -194,6 +199,8 @@ features:
       - Clang
       - MSVC 14.44
       - Xcode
+      - tool: R++
+        status: unsupported
 
   - desc: "`std::out_ptr()` and `std::inout_ptr()`"
     paper: P1132
@@ -401,6 +408,7 @@ features:
       - Clang 15
       - MSVC 14.43
       - Xcode 14.3
+      - R++
     ftm:
       - name: __cpp_constexpr
         value: 202110L
@@ -421,6 +429,7 @@ features:
       - MSVC 14.32
       - MSVC 14.43
       - Xcode 16.3
+      - R++ 2023.1
     ftm:
       - name: __cpp_explicit_this_parameter
         value: 202110L
@@ -432,6 +441,7 @@ features:
       - Clang
       - MSVC 14.30
       - Xcode
+      - R++
 
   - desc: "Add support for preprocessing directives `#elifdef` and `#elifndef`"
     paper: P2334
@@ -441,6 +451,7 @@ features:
       - Clang 13
       - MSVC 14.40
       - Xcode 13.4.1
+      - R++ 2024.2
 
   - desc: "Extend init-statement (of `for` loop) to allow alias-declaration"
     paper: P2360
@@ -451,6 +462,7 @@ features:
       - tool: MSVC 14.50
         note: "Compiles, but no IntelliSense support yet."
       - Xcode 14
+      - R++ 2023.1
 
   - desc: "Change scope of lambda trailing-return-type"
     paper: [P2036, P2579]
@@ -469,6 +481,7 @@ features:
       - Clang 15
       - MSVC 14.42
       - Xcode 14.3
+      - R++ 2024.2
     ftm:
       - name: __cpp_multidimensional_subscript
         value: 202110L
@@ -555,6 +568,7 @@ features:
       - Clang 15
       - MSVC 14.50
       - Xcode 14.3
+      - R++ 2023.1
     ftm:
       - name: __cpp_auto_cast
         value: 202110L
@@ -663,6 +677,7 @@ features:
       - Clang 13
       - MSVC 14.44
       - Xcode 13.4.1
+      - R++ 2024.3
 
   - desc: "`std::expected` (`<expected>`)"
     paper: [P0323, P2549]
@@ -845,6 +860,7 @@ features:
       - Clang
       - MSVC 14.50
       - Xcode 15
+      - R++
 
   - desc: "Remove non-encodable wide character literals and multicharacter wide character literals"
     paper: P2362
@@ -853,6 +869,7 @@ features:
       - Clang 14
       - Xcode 15
       - MSVC 14.51
+      - R++ 2023.3
 
   - desc: "Labels at the end of compound statements"
     paper: P2324
@@ -862,6 +879,7 @@ features:
       - Clang 16
       - Xcode 16
       - MSVC 14.51
+      - R++ 2023.1
 
   - desc: "Delimited escape sequences"
     paper: P2290
@@ -880,6 +898,7 @@ features:
       - Clang 19
       - MSVC 14.51
       - Xcode 16.3
+      - R++
     ftm:
       - name: __cpp_constexpr
         value: 202207L
@@ -917,6 +936,7 @@ features:
       - Clang 16
       - MSVC 14.44
       - Xcode 16
+      - R++ 2023.2
     ftm:
       - name: __cpp_static_call_operator
         value: 202207L
@@ -936,6 +956,7 @@ features:
       - GCC 14
       - Clang 20
       - MSVC 14.50
+      - R++
     keywords: ["constexpr"]
 
   - desc: "Requirements for optional extended floating-point types"
@@ -944,6 +965,7 @@ features:
       - GCC 13
       - tool: MSVC
         note: "Not applicable to MSVC."
+      - R++ 2026.1
 
   - desc: "Standard names and library support for extended floating-point types"
     paper: P1467
@@ -957,11 +979,17 @@ features:
       - Clang 19
       - MSVC 14.50
       - Xcode 16.4
+      - R++
 
   - desc: "Class template argument deduction from inherited constructors"
     paper: P2582
     summary: "Class template argument deduction works with inherited constructors."
-    support: [GCC 14, MSVC 14.51]
+    support:
+      - GCC 14
+      - MSVC 14.51
+      - tool: R++
+        status: unsupported
+        issue: RSCPP-37818
 
   - desc: "Attribute `[[assume]]`"
     paper: P1774
@@ -971,6 +999,7 @@ features:
       - Clang 19
       - Xcode 16.3
       - MSVC 14.51
+      - R++
 
   - desc: "Support for UTF-8 as a portable source file encoding"
     paper: P2295
@@ -988,6 +1017,7 @@ features:
       - Clang 16
       - MSVC 14.34
       - Xcode 16
+      - R++ 2023.2
     ftm:
       - name: __cpp_char8_t
         value: 202207L
@@ -999,6 +1029,7 @@ features:
       - Clang
       - MSVC 14.44
       - Xcode 15
+      - R++
 
   - desc: "`std::mdspan`: a non-owning multidimensional array reference (`<mdspan>`)"
     paper: [P0009, P2599, P2604, P2613, P2763]
@@ -1408,6 +1439,7 @@ features:
       - Clang 16
       - MSVC 14.44
       - Xcode 16
+      - R++ 2023.2
     ftm:
       - name: __cpp_multidimensional_subscript
         value: 202211L
@@ -1419,6 +1451,7 @@ features:
       - Clang 16
       - MSVC 14.51
       - Xcode 16
+      - R++ 2024.2
     ftm:
       - name: __cpp_constexpr
         value: 202211L
@@ -1431,6 +1464,7 @@ features:
       - Clang 17
       - Xcode 16
       - MSVC 14.52
+      - R++
     ftm:
       - name: __cpp_consteval
         value: 202211L
@@ -1441,6 +1475,7 @@ features:
       - GCC 15
       - Clang 17
       - MSVC 14.28
+      - R++
 
   - desc: "Extending the lifetime of temporaries in range-based `for` loop initializer"
     paper: [P2644, P2718]
@@ -1497,6 +1532,8 @@ features:
       - Clang 19
       - MSVC 14.50
       - Xcode 16.3
+      - tool: R++
+        status: unsupported
 
   - desc: "Stashing stashing iterators for proper flattening"
     paper: P2770

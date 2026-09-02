@@ -10,6 +10,7 @@ features:
         note: "Buggy variadic macros."
       - MSVC 14.26
       - Xcode
+      - R++
 
   - desc: "`static_assert`"
     paper: N1720
@@ -18,6 +19,7 @@ features:
       - Clang 2.9
       - MSVC 10.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_static_assert
         value: 200410L
@@ -29,6 +31,7 @@ features:
       - Clang
       - MSVC 8.0
       - Xcode
+      - R++
 
   - desc: "Extended `friend` declarations"
     paper: N1791
@@ -37,6 +40,7 @@ features:
       - Clang 2.9
       - MSVC 10.0
       - Xcode
+      - R++
 
   - desc: "[`long long`](https://cppreference.com/cpp/language/types#long_long)"
     paper: N1811
@@ -45,6 +49,7 @@ features:
       - Clang
       - MSVC 8.0
       - Xcode
+      - R++
 
   - desc: "[`auto`](https://cppreference.com/cpp/language/auto)"
     paper: N1984
@@ -54,6 +59,7 @@ features:
       - Clang
       - MSVC 10.0
       - Xcode
+      - R++
 
   - desc: "[Delegating constructors](https://cppreference.com/cpp/language/initializer_list#Delegating_constructor)"
     paper: N1986
@@ -62,6 +68,7 @@ features:
       - Clang 3
       - MSVC 12.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_delegating_constructors
         value: 200604L
@@ -73,6 +80,7 @@ features:
       - Clang
       - MSVC 6.0
       - Xcode
+      - R++
 
   - desc: "`constexpr`"
     paper: N2235
@@ -82,6 +90,7 @@ features:
       - Clang 3.1
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_constexpr
         value: 200704L
@@ -93,6 +102,7 @@ features:
       - Clang 2.9
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_unicode_characters
         value: 200704L
@@ -111,6 +121,7 @@ features:
       - MSVC 8.0 (partial)
       - MSVC 14.0
       - Xcode
+      - R++
 
   - desc: "[Template aliases](https://cppreference.com/cpp/language/type_alias)"
     paper: N2258
@@ -120,6 +131,7 @@ features:
       - Clang 3
       - MSVC 12.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_alias_templates
         value: 200704L
@@ -131,6 +143,7 @@ features:
       - Clang 3
       - MSVC 14.0
       - Xcode
+      - R++
 
   - desc: "`alignof`"
     paper: N2341
@@ -139,6 +152,7 @@ features:
       - Clang 2.9
       - MSVC 14.0
       - Xcode
+      - R++
 
   - desc: "Defaulted and deleted functions"
     paper: N2346
@@ -147,6 +161,7 @@ features:
       - Clang 3
       - MSVC 12.0
       - Xcode
+      - R++
 
   - desc: "[Strongly-typed `enum`](https://cppreference.com/cpp/language/enum#Scoped_enumerations)"
     paper: N2347
@@ -156,6 +171,7 @@ features:
       - Clang 2.9
       - MSVC 11.0
       - Xcode
+      - R++
 
   - desc: "[Atomic operations](https://cppreference.com/cpp/atomic#Atomic_operations)"
     paper: N2427
@@ -164,6 +180,7 @@ features:
       - Clang 3.1
       - MSVC 11.0
       - Xcode
+      - R++
 
   - desc: "`nullptr`"
     paper: N2431
@@ -173,6 +190,7 @@ features:
       - Clang 2.9
       - MSVC 10.0
       - Xcode
+      - R++
 
   - desc: "Explicit [conversion operators](https://cppreference.com/cpp/language/cast_operator)"
     paper: N2437
@@ -181,6 +199,7 @@ features:
       - Clang 3
       - MSVC 12.0
       - Xcode
+      - R++
 
   - desc: "Ref-qualifiers"
     paper: N2439
@@ -189,6 +208,7 @@ features:
       - Clang 2.9
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_ref_qualifiers
         value: 200710L
@@ -200,6 +220,7 @@ features:
       - Clang 3
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_unicode_literals
         value: 200710L
@@ -211,6 +232,7 @@ features:
       - Clang
       - MSVC 12.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_raw_strings
         value: 200710L
@@ -222,6 +244,7 @@ features:
       - Clang 2.9
       - MSVC 14.0
       - Xcode
+      - R++
 
   - desc: "[Inheriting constructors](https://cppreference.com/cpp/language/using_declaration#Inheriting_constructors)"
     paper: N2540
@@ -230,6 +253,7 @@ features:
       - Clang 3.3
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_inheriting_constructors
         value: 200802L
@@ -241,6 +265,7 @@ features:
       - Clang 2.9
       - MSVC 10.0
       - Xcode
+      - R++
 
   - desc: "Unrestricted [unions](https://cppreference.com/cpp/language/union)"
     paper: N2544
@@ -249,6 +274,7 @@ features:
       - Clang 3
       - MSVC 14.0
       - Xcode
+      - R++
 
   - desc: "[Variadic templates](https://cppreference.com/cpp/language/parameter_pack)"
     paper: [N2242, N2555]
@@ -258,6 +284,7 @@ features:
       - Clang 2.9
       - MSVC 12.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_variadic_templates
         value: 200704L
@@ -269,6 +296,7 @@ features:
       - Clang 2.9
       - MSVC 14.14
       - Xcode
+      - R++
 
   - desc: "Local and unnamed types as template parameters"
     paper: N2657
@@ -277,6 +305,7 @@ features:
       - Clang 2.9
       - MSVC 10.0
       - Xcode
+      - R++
 
   - desc: "[Thread-local storage](https://cppreference.com/cpp/language/storage_duration)"
     paper: N2659
@@ -288,6 +317,7 @@ features:
       - MSVC 10.0 (partial)
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_threadsafe_static_init
         value: 200806L
@@ -299,6 +329,7 @@ features:
       - Clang 2.9
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_threadsafe_static_init
         value: 200806L
@@ -311,6 +342,7 @@ features:
       - Clang 3.1
       - MSVC 12.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_initializer_lists
         value: 200806L
@@ -322,6 +354,7 @@ features:
       - Clang 3
       - MSVC 12.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_nsdmi
         value: 200809L
@@ -333,6 +366,7 @@ features:
       - Clang 3.3
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_attributes
         value: 200809L
@@ -341,7 +375,11 @@ features:
 
   - desc: "`[[carries_dependency]]`"
     paper: [N2556, N2643]
-    support: [Clang 3.3, Xcode]
+    support:
+      - Clang 3.3
+      - Xcode
+      - tool: R++
+        status: unsupported
     ftm:
       - name: __has_cpp_attribute(carries_dependency)
         value: 200809L
@@ -353,6 +391,7 @@ features:
       - Clang 3.1
       - MSVC 11.0
       - Xcode
+      - R++
 
   - desc: "[User-defined literals](https://cppreference.com/cpp/language/user_literal)"
     paper: N2765
@@ -361,6 +400,7 @@ features:
       - Clang 3.1
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_user_defined_literals
         value: 200809L
@@ -375,6 +415,7 @@ features:
       - MSVC 10.0 (partial)
       - MSVC 11.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_rvalue_references
         value: 200610L
@@ -388,6 +429,7 @@ features:
       - MSVC 10.0 (partial)
       - MSVC 11.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_lambdas
         value: 200907L
@@ -400,6 +442,7 @@ features:
       - Clang 3
       - MSVC 11.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_range_based_for
         value: 200907L
@@ -412,6 +455,7 @@ features:
       - Clang 3
       - MSVC 14.0
       - Xcode
+      - R++
 
   - desc: "Defaulted move [special member functions](https://cppreference.com/cpp/language/member_functions#Special_member_functions)"
     paper: N3053
@@ -421,6 +465,7 @@ features:
       - Clang 3
       - MSVC 14.0
       - Xcode
+      - R++
 
   - desc: "`override` and `final`"
     paper: [N2928, N3206, N3272]
@@ -431,6 +476,7 @@ features:
       - MSVC 8.0 (partial)
       - MSVC 11.0
       - Xcode
+      - R++
 
   - desc: "`decltype`"
     paper: [N2343, N3276]
@@ -442,6 +488,7 @@ features:
       - MSVC 10.0 (partial)
       - MSVC 11.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_decltype
         value: 200707L

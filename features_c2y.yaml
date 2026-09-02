@@ -187,6 +187,7 @@ features:
       - GCC 16
       - Clang 21
       - Xcode 26.4
+      - R++ 2026.1
 
   - desc: "Restartable Functions for Efficient Character Conversions"
     paper: N3366
@@ -242,6 +243,7 @@ features:
       - Clang 22
       - tool: Xcode 16.3
         note: "Supported as a pre-existing GNU extension prior to C2y standardization."
+      - R++
 
   - desc: "Complex operators"
     paper: N3460
