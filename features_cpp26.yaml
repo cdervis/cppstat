@@ -76,6 +76,7 @@ features:
       - GCC 14
       - Clang 18
       - Xcode 16.3
+      - R++ 2025.2
     ftm:
       - name: __cpp_placeholder_variables
         value: 202306L
@@ -597,6 +598,7 @@ features:
       - GCC 15
       - Clang 19
       - Xcode 16.3
+      - R++ 2025.2
     ftm:
       - name: __cpp_structured_bindings
         value: 202403L
@@ -627,6 +629,7 @@ features:
       - GCC 15
       - Clang 19
       - Xcode 16.3
+      - R++ 2025.2
     ftm:
       - name: __cpp_deleted_function
         value: 202403L
@@ -634,7 +637,7 @@ features:
   - desc: "Variadic friends"
     paper: P2893
     summary: "Class templates can now declare all types in a parameter pack as friends."
-    support: [GCC 15, Clang 20, Xcode 26.4]
+    support: [GCC 15, Clang 20, Xcode 26.4, R++ 2025.2]
     ftm:
       - name: __cpp_variadic_friend
         value: 202403L
@@ -792,6 +795,7 @@ features:
         note: "Supported as an extension, not fully conforming to standardized version."
       - Clang 21
       - Xcode 26.4
+      - R++
     ftm:
       - name: __cpp_structured_bindings
         value: 202406L
@@ -883,7 +887,7 @@ features:
     paper: P3068
     summary: "Exceptions can now be thrown and caught during constant evaluation."
     content: constexpr-exceptions.md
-    support: [GCC 16]
+    support: [GCC 16, R++ 2026.2]
     ftm:
       - name: __cpp_constexpr_exceptions
         value: 202411L
@@ -904,7 +908,7 @@ features:
   - desc: "[Structured bindings](https://cppreference.com/cpp/language/structured_binding) can introduce a pack"
     paper: P1061
     summary: "Structured bindings can now capture remaining elements into a parameter pack."
-    support: [GCC 16, Clang 21, Xcode 26.4]
+    support: [GCC 16, Clang 21, Xcode 26.4, R++ 2025.3]
     ftm:
       - name: __cpp_structured_bindings
         value: 202411L
@@ -1039,7 +1043,7 @@ features:
   - desc: "Contracts for C++ (`<contracts>`)"
     paper: P2900
     summary: "Contracts let you specify preconditions, postconditions, and assertions that document and enforce function requirements."
-    support: [GCC 16]
+    support: [GCC 16, R++ 2025.3]
     ftm:
       - name: __cpp_contracts
         value: 202502L
@@ -1056,6 +1060,8 @@ features:
 
   - desc: "Concept and variable-template template-parameters"
     paper: P2841
+    support:
+      - R++ 2025.3
     ftm:
       - name: __cpp_template_parameters
         value: 202502L
@@ -1070,6 +1076,7 @@ features:
         note: "Supported as an extension.<br> Use the flag `-Wno-c23-extensions` to suppress warnings related to `#embed`.<br> Although this is a C++26 feature, this is available in Clang starting with C++20 (`-std=c++20`).<br> Clang does not define the `__cpp_pp_embed` feature-testing macro yet.\n"
       - tool: Xcode 16.3
         note: "Supported as an extension.<br> Use the flag `-Wno-c23-extensions` to suppress warnings related to `#embed`.<br> Although this is a C++26 feature, this is available in Apple Clang starting with C++20 (`-std=c++20`).<br> Apple Clang does not define the `__cpp_pp_embed` feature-testing macro yet.\n"
+      - R++ 2026.1
     ftm:
       - name: __cpp_pp_embed
         value: 202502L
@@ -1306,7 +1313,7 @@ features:
 
   - desc: "Splicing a base class subobject"
     paper: P3293
-    support: [GCC 16]
+    support: [GCC 16, R++ 2026.2]
     keywords: ["reflection"]
 
   - desc: "`define_static_{string,object,array}`"
@@ -1322,7 +1329,7 @@ features:
     paper: P1306
     summary: "`template for` iterates over compile-time ranges like tuples and reflection results."
     content: expansion-statements.md
-    support: [GCC 16]
+    support: [GCC 16, R++ 2025.3]
     ftm:
       - name: __cpp_expansion_statements
         value: 202506L

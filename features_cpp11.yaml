@@ -37,6 +37,7 @@ features:
       - Clang 2.9
       - MSVC 10.0
       - Xcode
+      - R++
 
   - desc: "[`long long`](https://cppreference.com/cpp/language/types#long_long)"
     paper: N1811
@@ -62,6 +63,7 @@ features:
       - Clang 3
       - MSVC 12.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_delegating_constructors
         value: 200604L
@@ -73,6 +75,7 @@ features:
       - Clang
       - MSVC 6.0
       - Xcode
+      - R++
 
   - desc: "`constexpr`"
     paper: N2235
@@ -93,6 +96,7 @@ features:
       - Clang 2.9
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_unicode_characters
         value: 200704L
@@ -111,6 +115,7 @@ features:
       - MSVC 8.0 (partial)
       - MSVC 14.0
       - Xcode
+      - R++
 
   - desc: "[Template aliases](https://cppreference.com/cpp/language/type_alias)"
     paper: N2258
@@ -131,6 +136,7 @@ features:
       - Clang 3
       - MSVC 14.0
       - Xcode
+      - R++
 
   - desc: "`alignof`"
     paper: N2341
@@ -147,6 +153,7 @@ features:
       - Clang 3
       - MSVC 12.0
       - Xcode
+      - R++
 
   - desc: "[Strongly-typed `enum`](https://cppreference.com/cpp/language/enum#Scoped_enumerations)"
     paper: N2347
@@ -164,6 +171,7 @@ features:
       - Clang 3.1
       - MSVC 11.0
       - Xcode
+      - R++
 
   - desc: "`nullptr`"
     paper: N2431
@@ -181,6 +189,7 @@ features:
       - Clang 3
       - MSVC 12.0
       - Xcode
+      - R++
 
   - desc: "Ref-qualifiers"
     paper: N2439
@@ -189,6 +198,7 @@ features:
       - Clang 2.9
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_ref_qualifiers
         value: 200710L
@@ -200,6 +210,7 @@ features:
       - Clang 3
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_unicode_literals
         value: 200710L
@@ -211,6 +222,7 @@ features:
       - Clang
       - MSVC 12.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_raw_strings
         value: 200710L
@@ -222,6 +234,7 @@ features:
       - Clang 2.9
       - MSVC 14.0
       - Xcode
+      - R++
 
   - desc: "[Inheriting constructors](https://cppreference.com/cpp/language/using_declaration#Inheriting_constructors)"
     paper: N2540
@@ -230,6 +243,7 @@ features:
       - Clang 3.3
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_inheriting_constructors
         value: 200802L
@@ -241,6 +255,7 @@ features:
       - Clang 2.9
       - MSVC 10.0
       - Xcode
+      - R++
 
   - desc: "Unrestricted [unions](https://cppreference.com/cpp/language/union)"
     paper: N2544
@@ -258,6 +273,7 @@ features:
       - Clang 2.9
       - MSVC 12.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_variadic_templates
         value: 200704L
@@ -269,6 +285,7 @@ features:
       - Clang 2.9
       - MSVC 14.14
       - Xcode
+      - R++
 
   - desc: "Local and unnamed types as template parameters"
     paper: N2657
@@ -311,6 +328,7 @@ features:
       - Clang 3.1
       - MSVC 12.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_initializer_lists
         value: 200806L
@@ -333,6 +351,7 @@ features:
       - Clang 3.3
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_attributes
         value: 200809L
@@ -353,6 +372,7 @@ features:
       - Clang 3.1
       - MSVC 11.0
       - Xcode
+      - R++
 
   - desc: "[User-defined literals](https://cppreference.com/cpp/language/user_literal)"
     paper: N2765
@@ -361,6 +381,7 @@ features:
       - Clang 3.1
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_user_defined_literals
         value: 200809L
@@ -388,6 +409,7 @@ features:
       - MSVC 10.0 (partial)
       - MSVC 11.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_lambdas
         value: 200907L
@@ -431,6 +453,7 @@ features:
       - MSVC 8.0 (partial)
       - MSVC 11.0
       - Xcode
+      - R++
 
   - desc: "`decltype`"
     paper: [N2343, N3276]
@@ -442,6 +465,7 @@ features:
       - MSVC 10.0 (partial)
       - MSVC 11.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_decltype
         value: 200707L

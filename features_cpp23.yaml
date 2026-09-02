@@ -8,6 +8,7 @@ features:
       - Clang 13
       - MSVC 14.43
       - Xcode 13.4.1
+      - R++ 2024.3
     ftm:
       - name: __cpp_size_t_suffix
         value: 202011L
@@ -74,6 +75,7 @@ features:
       - Clang 13
       - MSVC 14.44
       - Xcode 13.4.1
+      - R++ 2023.1
     content: lambda-omit-parens.md
 
   - desc: "Repairing input range adaptors and `std::counted_iterator`"
@@ -443,6 +445,7 @@ features:
       - Clang 13
       - MSVC 14.40
       - Xcode 13.4.1
+      - R++ 2024.2
 
   - desc: "Extend init-statement (of `for` loop) to allow alias-declaration"
     paper: P2360
@@ -453,6 +456,7 @@ features:
       - tool: MSVC 14.50
         note: "Compiles, but no IntelliSense support yet."
       - Xcode 14
+      - R++ 2023.1
 
   - desc: "Change scope of lambda trailing-return-type"
     paper: [P2036, P2579]
@@ -558,6 +562,7 @@ features:
       - Clang 15
       - MSVC 14.50
       - Xcode 14.3
+      - R++ 2023.1
     ftm:
       - name: __cpp_auto_cast
         value: 202110L
@@ -666,6 +671,7 @@ features:
       - Clang 13
       - MSVC 14.44
       - Xcode 13.4.1
+      - R++ 2024.3
 
   - desc: "`std::expected` (`<expected>`)"
     paper: [P0323, P2549]
@@ -856,6 +862,7 @@ features:
       - Clang 14
       - Xcode 15
       - MSVC 14.51
+      - R++ 2023.3
 
   - desc: "Labels at the end of compound statements"
     paper: P2324
@@ -865,6 +872,7 @@ features:
       - Clang 16
       - Xcode 16
       - MSVC 14.51
+      - R++ 2023.1
 
   - desc: "Delimited escape sequences"
     paper: P2290
@@ -920,6 +928,7 @@ features:
       - Clang 16
       - MSVC 14.44
       - Xcode 16
+      - R++ 2023.2
     ftm:
       - name: __cpp_static_call_operator
         value: 202207L
@@ -947,6 +956,7 @@ features:
       - GCC 13
       - tool: MSVC
         note: "Not applicable to MSVC."
+      - R++ 2026.1
 
   - desc: "Standard names and library support for extended floating-point types"
     paper: P1467
@@ -974,6 +984,7 @@ features:
       - Clang 19
       - Xcode 16.3
       - MSVC 14.51
+      - R++
 
   - desc: "Support for UTF-8 as a portable source file encoding"
     paper: P2295
@@ -991,6 +1002,7 @@ features:
       - Clang 16
       - MSVC 14.34
       - Xcode 16
+      - R++ 2023.2
     ftm:
       - name: __cpp_char8_t
         value: 202207L
@@ -1411,6 +1423,7 @@ features:
       - Clang 16
       - MSVC 14.44
       - Xcode 16
+      - R++ 2023.2
     ftm:
       - name: __cpp_multidimensional_subscript
         value: 202211L
@@ -1422,6 +1435,7 @@ features:
       - Clang 16
       - MSVC 14.51
       - Xcode 16
+      - R++ 2024.2
     ftm:
       - name: __cpp_constexpr
         value: 202211L
@@ -1444,6 +1458,7 @@ features:
       - GCC 15
       - Clang 17
       - MSVC 14.28
+      - R++
 
   - desc: "Extending the lifetime of temporaries in range-based `for` loop initializer"
     paper: [P2644, P2718]

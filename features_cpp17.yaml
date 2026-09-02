@@ -32,6 +32,7 @@ features:
       - Clang 3.6
       - MSVC 14.0
       - Xcode
+      - R++
     content: nested-namespaces.md
 
   - desc: "Extending `static_assert`, v2"
@@ -56,6 +57,7 @@ features:
       - Clang 3.6
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_enumerator_attributes
         value: 201411L
@@ -115,6 +117,7 @@ features:
       - Clang 4
       - MSVC 14.12
       - Xcode
+      - R++
     ftm:
       - name: __cpp_noexcept_function_type
         value: 201510L
@@ -127,6 +130,7 @@ features:
       - Clang
       - MSVC 14.11
       - Xcode
+      - R++
 
   - desc: "Rewording inheriting constructors"
     paper: P0136
@@ -147,6 +151,7 @@ features:
       - Clang 3.9
       - MSVC 14.14
       - Xcode
+      - R++
     ftm:
       - name: __cpp_aggregate_bases
         value: 201603L
@@ -160,6 +165,7 @@ features:
       - Clang 3.6
       - MSVC 14.12
       - Xcode
+      - R++
     ftm:
       - name: __cpp_fold_expressions
         value: 201603L
@@ -172,6 +178,7 @@ features:
       - Clang 3.9
       - MSVC 14.11
       - Xcode
+      - R++
 
   - desc: "Construction rules for `enum class` values"
     paper: P0138
@@ -189,6 +196,7 @@ features:
       - Clang 5
       - MSVC 14.11
       - Xcode
+      - R++
     ftm:
       - name: __cpp_constexpr
         value: 201603L
@@ -221,6 +229,7 @@ features:
       - Clang 3.9
       - MSVC 14.11
       - Xcode
+      - R++
 
   - desc: "Attribute `[[maybe_unused]]`"
     paper: P0212
@@ -230,6 +239,7 @@ features:
       - Clang 3.9
       - MSVC 14.11
       - Xcode
+      - R++
 
   - desc: "Hexadecimal floating literals"
     paper: P0245
@@ -238,6 +248,7 @@ features:
       - Clang
       - MSVC 14.11
       - Xcode
+      - R++
     ftm:
       - name: __cpp_hex_float
         value: 201603L
@@ -249,6 +260,7 @@ features:
       - Clang 3.9
       - MSVC 14.11
       - Xcode
+      - R++
 
   - desc: "Dynamic memory allocation for over-aligned data"
     paper: P0035
@@ -257,6 +269,7 @@ features:
       - Clang 4
       - MSVC 14.12
       - Xcode 10
+      - R++
     ftm:
       - name: __cpp_aligned_new
         value: 201606L
@@ -269,6 +282,7 @@ features:
       - Clang 4
       - MSVC 14.14
       - Xcode
+      - R++
     ftm:
       - name: __cpp_nontype_template_parameter_auto
         value: 201606L
@@ -282,6 +296,7 @@ features:
       - Clang 4
       - MSVC 14.13
       - Xcode
+      - R++
     ftm:
       - name: __cpp_guaranteed_copy_elision
         value: 201606L
@@ -311,6 +326,7 @@ features:
       - Clang 4
       - MSVC 14.11
       - Xcode
+      - R++
     ftm:
       - name: __cpp_structured_bindings
         value: 201606L
@@ -332,6 +348,7 @@ features:
       - Clang 3.9
       - MSVC 14.11
       - Xcode
+      - R++
     ftm:
       - name: __cpp_if_constexpr
         value: 201606L
@@ -344,6 +361,7 @@ features:
       - Clang 3.9
       - MSVC 14.11
       - Xcode
+      - R++
 
   - desc: "`inline` variables"
     paper: P0386
@@ -354,6 +372,7 @@ features:
       - Clang 3.9
       - MSVC 14.12
       - Xcode
+      - R++
     ftm:
       - name: __cpp_inline_variables
         value: 201606L
@@ -373,6 +392,7 @@ features:
       - Clang 4
       - MSVC 14.14
       - Xcode
+      - R++
     ftm:
       - name: __cpp_variadic_using
         value: 201611L
@@ -384,6 +404,9 @@ features:
       - Clang 4
       - MSVC 14.12
       - Xcode
+      - tool: R++
+        status: unsupported
+        issue: RSCPP-25151
     ftm:
       - name: __cpp_template_template_args
         value: 201611L
@@ -397,6 +420,7 @@ features:
       - Clang 5
       - MSVC 14.14
       - Xcode
+      - R++
     ftm:
       - name: __cpp_deduction_guides
         value: 201703L

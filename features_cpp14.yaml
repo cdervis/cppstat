@@ -16,6 +16,7 @@ features:
       - Clang 2.9
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_binary_literals
         value: 201304L
@@ -33,6 +34,7 @@ features:
       - Clang 3.4
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_decltype_auto
         value: 201304L
@@ -47,6 +49,7 @@ features:
       - Clang 3.4
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_init_captures
         value: 201304L
@@ -59,6 +62,7 @@ features:
       - Clang 3.4
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_generic_lambdas
         value: 201304L
@@ -71,6 +75,7 @@ features:
       - Clang 3.4
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_variable_templates
         value: 201304L
@@ -109,6 +114,7 @@ features:
       - Clang 3.4
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __has_cpp_attribute(deprecated)
         value: 201309L
@@ -131,6 +137,7 @@ features:
       - Clang 3.4
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_digit_separators
         value: 201309L
