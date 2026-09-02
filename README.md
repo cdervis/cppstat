@@ -155,15 +155,42 @@ The `frontend` object has the following properties:
 - **`name`**: The short name used in feature support entries, e.g. `R++`
 - **`full_name`**: The frontend's full product name
 - **`vendor`**: The vendor or maintainer
+- **`description`**: An optional explanation shown when hovering the frontend's table column
 - **`kind`**: Always `frontend`
-- **`language`**: The language the frontend supports
 - **`standard_library`**: Whether the frontend also provides a standard library implementation
 - **`products`**: Products that include the frontend
-- **`refs`**: Related project or product links
+- **`refs`**: Related project or product links, each with a `title` and `url`
 
 A file may also define an `issue_tracker` with a display `name` and a `url_template` containing `{id}`.
 This allows structured support entries to refer to issues by identifier.
 
 The `releases` list declares valid frontend versions. Each release has a `version`, an optional `released` date,
-and a list of `refs`, such as release notes.
+and a list of titled `refs`, such as release notes.
 Feature support entries that name a frontend version must reference one of these declared releases.
+
+```yaml
+---
+frontend:
+  id: rscpp
+  name: R++
+  full_name: ReSharper C++
+  vendor: JetBrains
+  description: >-
+    R++ is the C and C++ language engine powering code analysis and language
+    support in CLion, Rider, and ReSharper C++ for Visual Studio.
+  kind: frontend
+  standard_library: false
+  products: [CLion, Rider, ReSharper C++ for Visual Studio]
+  refs:
+    - title: Product page
+      url: https://www.jetbrains.com/resharper-cpp/
+issue_tracker:
+  name: JetBrains YouTrack
+  url_template: https://youtrack.jetbrains.com/issue/{id}
+releases:
+  - version: "2026.2"
+    released: July 22, 2026
+    refs:
+      - title: Release notes
+        url: https://www.jetbrains.com/resharper-cpp/whatsnew/
+```

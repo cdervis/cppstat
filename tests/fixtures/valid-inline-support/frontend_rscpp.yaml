@@ -5,17 +5,20 @@ frontend:
   full_name: ReSharper C++
   vendor: JetBrains
   kind: frontend
-  language: C++
+  description: R++ powers C and C++ language support in JetBrains IDEs.
   standard_library: false
   products: [CLion, Rider]
-  refs: [https://www.jetbrains.com/resharper-cpp/]
+  refs:
+    - title: Product page
+      url: https://www.jetbrains.com/resharper-cpp/
 issue_tracker:
   name: JetBrains YouTrack
   url_template: https://youtrack.jetbrains.com/issue/{id}
 releases:
   - version: "2026.2"
     released: July, 2026
-    refs: []
+    refs:
+      - title: Release notes
+        url: https://www.jetbrains.com/resharper-cpp/whatsnew/
   - version: "2026.1"
     refs: []
-

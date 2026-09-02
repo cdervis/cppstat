@@ -13,7 +13,6 @@ properties:
       - full_name
       - vendor
       - kind
-      - language
       - standard_library
       - products
       - refs
@@ -31,11 +30,11 @@ properties:
       vendor:
         type: string
         minLength: 1
-      kind:
-        const: frontend
-      language:
+      description:
         type: string
         minLength: 1
+      kind:
+        const: frontend
       standard_library:
         type: boolean
       products:
@@ -46,8 +45,7 @@ properties:
       refs:
         type: array
         items:
-          type: string
-          minLength: 1
+          $ref: "#/definitions/reference"
   issue_tracker:
     type: object
     required: [name, url_template]
@@ -74,5 +72,16 @@ properties:
         refs:
           type: array
           items:
-            type: string
-            minLength: 1
+            $ref: "#/definitions/reference"
+definitions:
+  reference:
+    type: object
+    required: [title, url]
+    additionalProperties: false
+    properties:
+      title:
+        type: string
+        minLength: 1
+      url:
+        type: string
+        minLength: 1
