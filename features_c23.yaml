@@ -7,6 +7,7 @@ features:
       - Clang 9
       - MSVC
       - Xcode 11.4
+      - R++
   - desc: "`[[nodiscard]]`"
     paper: N2267
     summary: "Marks a return value that should not be ignored."
@@ -14,6 +15,7 @@ features:
       - GCC 10
       - Clang 9
       - Xcode 11.4
+      - R++
     content: c-nodiscard.md
   - desc: "`[[maybe_unused]]`"
     paper: N2270
@@ -21,12 +23,14 @@ features:
       - GCC 10
       - Clang 9
       - Xcode 11.4
+      - R++
   - desc: "`[[deprecated]]`"
     paper: N2334
     support:
       - GCC 10
       - Clang 9
       - Xcode 11.4
+      - R++
   - desc: "[Attributes](https://cppreference.com/c/language/attributes)"
     paper:
       - N2335
@@ -36,6 +40,7 @@ features:
       - GCC 10
       - Clang 9
       - Xcode 11.4
+      - R++
   - desc: "IEEE 754 decimal floating-point types"
     paper: N2341
     support:
@@ -68,12 +73,14 @@ features:
       - GCC 11
       - Clang 10
       - Xcode 14
+      - R++
   - desc: "Unnamed parameters in function definitions"
     paper: N2480
     support:
       - GCC 11
       - Clang 11
       - Xcode 13
+      - R++
   - desc: "[Labels](https://cppreference.com/c/language/statements#Labels) before declarations and end of blocks"
     paper: N2508
     support:
@@ -119,6 +126,7 @@ features:
       - GCC 11
       - Clang 13
       - Xcode 11.4
+      - R++
   - desc: "IEEE 754 interchange and extended types"
     paper: N2601
     support:
