@@ -38,6 +38,7 @@ features:
       - GCC 14
       - Clang 17
       - Xcode 16.3
+      - R++
     ftm:
       - name: __cpp_constexpr
         value: 202306L
@@ -52,7 +53,7 @@ features:
 
   - desc: "Static storage for braced initializers"
     paper: P2752
-    support: [GCC 14]
+    support: [GCC 14, R++]
 
   - desc: "User-generated `static_assert` messages"
     paper: P2741
@@ -380,6 +381,7 @@ features:
       - GCC 9
       - Clang 18
       - Xcode 16.3
+      - R++
 
   - desc: "[Pack indexing](https://cppreference.com/cpp/language/pack_indexing)"
     paper: P2662
@@ -400,6 +402,8 @@ features:
       - GCC 14
       - Clang 18
       - Xcode 16.3
+      - tool: R++
+        status: unsupported
 
   - desc: "Saturation arithmetic"
     paper: [P0543, P4052]
@@ -584,6 +588,8 @@ features:
       - GCC 14
       - Clang 19
       - Xcode 16.3
+      - tool: R++
+        status: unsupported
 
   - desc: "Clarifying rules for brace elision in [aggregate initialization](https://cppreference.com/cpp/language/aggregate_initialization)"
     paper: P3106
@@ -591,6 +597,7 @@ features:
       - GCC
       - Clang 17
       - Xcode 16.3
+      - R++
 
   - desc: "Attributes for [structured bindings](https://cppreference.com/cpp/language/structured_binding)"
     paper: P0609
@@ -613,6 +620,7 @@ features:
       - GCC 14
       - Clang 19
       - Xcode 16.3
+      - R++
     content: trivial-infinite-loops.md
     keywords: ["safety"]
 
@@ -777,10 +785,15 @@ features:
       - GCC 15
       - Clang 19
       - Xcode 16.3
+      - R++
 
   - desc: "Ordering of constraints involving fold expressions"
     paper: P2963
-    support: [Clang 19, Xcode 16.3]
+    support:
+      - Clang 19
+      - Xcode 16.3
+      - tool: R++
+        status: unsupported
     ftm:
       - name: __cpp_fold_expressions
         value: 202406L
@@ -882,6 +895,7 @@ features:
       - tool: Clang 22
         status: partial
         note: "References to `constexpr` and decomposition of tuple-like types are not supported (only arrays and aggregates are)."
+      - R++
 
   - desc: "Allowing exception throwing in constant-evaluation (`constexpr` exceptions)"
     paper: P3068
@@ -903,6 +917,8 @@ features:
       - GCC 15
       - Clang 20
       - Xcode 16
+      - tool: R++
+        status: unsupported
     keywords: ["safety"]
 
   - desc: "[Structured bindings](https://cppreference.com/cpp/language/structured_binding) can introduce a pack"
@@ -915,7 +931,12 @@ features:
 
   - desc: "The Oxford variadic comma"
     paper: P3176
-    support: [GCC 15, Clang 20, Xcode 26.4]
+    support:
+      - GCC 15
+      - Clang 20
+      - Xcode 26.4
+      - tool: R++
+        status: unsupported
     summary: "Variadic ellipsis parameters (`...`) without a separating comma are deprecated, such as `int...`."
     content: oxford-variadic-comma.md
 
@@ -1023,6 +1044,8 @@ features:
 
   - desc: "Trivial unions (was `std::uninitialized<T>`)"
     paper: P3074
+    support:
+      - R++
     content: trivial-unions.md
     ftm:
       - name: __cpp_trivial_union
@@ -1037,7 +1060,7 @@ features:
 
   - desc: "Partial program correctness (`std::observable()`)"
     paper: P1494
-    support: [GCC 16]
+    support: [GCC 16, R++]
     keywords: ["safety"]
 
   - desc: "Contracts for C++ (`<contracts>`)"
@@ -1343,7 +1366,11 @@ features:
   - desc: "`constexpr` virtual inheritance"
     paper: P3533
     content: constexpr-virtual-inheritance.md
-    support: [GCC 16, Clang 24]
+    support:
+      - GCC 16
+      - Clang 24
+      - tool: R++
+        status: unsupported
     ftm:
       - name: __cpp_constexpr_virtual_inheritance
         value: 202506L

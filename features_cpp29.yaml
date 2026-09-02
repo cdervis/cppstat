@@ -2,7 +2,10 @@
 features:
   - desc: "Designated-initializers for Base Classes"
     paper: P2287
-    support: [GCC 17]
+    support:
+      - GCC 17
+      - tool: R++
+        status: unsupported
     ftm:
       - name: __cpp_designated_initializers
         value: 202606L
@@ -13,10 +16,16 @@ features:
 
   - desc: "Defaulting Postfix Increment and Decrement Operations"
     paper: P3668
+    support:
+      - tool: R++
+        status: unsupported
 
   - desc: "Adding restrictions to defaulted assignment operator functions"
     paper: P2953
-    support: [GCC 17]
+    support:
+      - GCC 17
+      - tool: R++
+        status: unsupported
 
   - desc: "Nondeterministic pointer provenance"
     paper: P2434
@@ -26,7 +35,7 @@ features:
 
   - desc: "Adjust identifier following new Unicode recommendations"
     paper: P3658
-    support: [GCC 17, Clang 24]
+    support: [GCC 17, Clang 24, R++]
 
   - desc: "return_value & return_void Are Not Mutually Exclusive"
     paper: P3950
@@ -51,7 +60,10 @@ features:
 
   - desc: "Conditional noexcept specifiers in compound requirements"
     paper: P3822
-    support: [GCC 17]
+    support:
+      - GCC 17
+      - tool: R++
+        status: unsupported
     ftm:
       - name: __cpp_concepts
         value: 202606L
