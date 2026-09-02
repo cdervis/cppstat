@@ -10,6 +10,7 @@ features:
         note: "Buggy variadic macros."
       - MSVC 14.26
       - Xcode
+      - R++
 
   - desc: "`static_assert`"
     paper: N1720
@@ -18,6 +19,7 @@ features:
       - Clang 2.9
       - MSVC 10.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_static_assert
         value: 200410L
@@ -29,6 +31,7 @@ features:
       - Clang
       - MSVC 8.0
       - Xcode
+      - R++
 
   - desc: "Extended `friend` declarations"
     paper: N1791
@@ -46,6 +49,7 @@ features:
       - Clang
       - MSVC 8.0
       - Xcode
+      - R++
 
   - desc: "[`auto`](https://cppreference.com/cpp/language/auto)"
     paper: N1984
@@ -55,6 +59,7 @@ features:
       - Clang
       - MSVC 10.0
       - Xcode
+      - R++
 
   - desc: "[Delegating constructors](https://cppreference.com/cpp/language/initializer_list#Delegating_constructor)"
     paper: N1986
@@ -85,6 +90,7 @@ features:
       - Clang 3.1
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_constexpr
         value: 200704L
@@ -125,6 +131,7 @@ features:
       - Clang 3
       - MSVC 12.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_alias_templates
         value: 200704L
@@ -145,6 +152,7 @@ features:
       - Clang 2.9
       - MSVC 14.0
       - Xcode
+      - R++
 
   - desc: "Defaulted and deleted functions"
     paper: N2346
@@ -163,6 +171,7 @@ features:
       - Clang 2.9
       - MSVC 11.0
       - Xcode
+      - R++
 
   - desc: "[Atomic operations](https://cppreference.com/cpp/atomic#Atomic_operations)"
     paper: N2427
@@ -181,6 +190,7 @@ features:
       - Clang 2.9
       - MSVC 10.0
       - Xcode
+      - R++
 
   - desc: "Explicit [conversion operators](https://cppreference.com/cpp/language/cast_operator)"
     paper: N2437
@@ -264,6 +274,7 @@ features:
       - Clang 3
       - MSVC 14.0
       - Xcode
+      - R++
 
   - desc: "[Variadic templates](https://cppreference.com/cpp/language/parameter_pack)"
     paper: [N2242, N2555]
@@ -294,6 +305,7 @@ features:
       - Clang 2.9
       - MSVC 10.0
       - Xcode
+      - R++
 
   - desc: "[Thread-local storage](https://cppreference.com/cpp/language/storage_duration)"
     paper: N2659
@@ -305,6 +317,7 @@ features:
       - MSVC 10.0 (partial)
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_threadsafe_static_init
         value: 200806L
@@ -316,6 +329,7 @@ features:
       - Clang 2.9
       - MSVC 14.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_threadsafe_static_init
         value: 200806L
@@ -340,6 +354,7 @@ features:
       - Clang 3
       - MSVC 12.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_nsdmi
         value: 200809L
@@ -360,7 +375,11 @@ features:
 
   - desc: "`[[carries_dependency]]`"
     paper: [N2556, N2643]
-    support: [Clang 3.3, Xcode]
+    support:
+      - Clang 3.3
+      - Xcode
+      - tool: R++
+        status: unsupported
     ftm:
       - name: __has_cpp_attribute(carries_dependency)
         value: 200809L
@@ -396,6 +415,7 @@ features:
       - MSVC 10.0 (partial)
       - MSVC 11.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_rvalue_references
         value: 200610L
@@ -422,6 +442,7 @@ features:
       - Clang 3
       - MSVC 11.0
       - Xcode
+      - R++
     ftm:
       - name: __cpp_range_based_for
         value: 200907L
@@ -434,6 +455,7 @@ features:
       - Clang 3
       - MSVC 14.0
       - Xcode
+      - R++
 
   - desc: "Defaulted move [special member functions](https://cppreference.com/cpp/language/member_functions#Special_member_functions)"
     paper: N3053
@@ -443,6 +465,7 @@ features:
       - Clang 3
       - MSVC 14.0
       - Xcode
+      - R++
 
   - desc: "`override` and `final`"
     paper: [N2928, N3206, N3272]
