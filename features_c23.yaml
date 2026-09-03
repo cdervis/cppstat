@@ -176,6 +176,7 @@ features:
       - GCC 11
       - Clang 16
       - Xcode 16.1
+      - R++
   - desc: "`#warning`"
     paper: N2686
     support:
@@ -247,6 +248,7 @@ features:
       - tool: Xcode
         status: partial
         note: "Supported as an extension. Missing support for scalars and variable-length arrays (VLAs)."
+      - R++
   - desc: "`typeof` and `typeof_unqual`"
     paper:
       - N2927
@@ -268,6 +270,7 @@ features:
       - GCC 13
       - Clang 16 (partial)
       - Xcode 16.1
+      - R++
   - desc: "Predefined `true` and `false`"
     paper: N2935
     content: c-bool-true-false.md
@@ -275,11 +278,14 @@ features:
       - GCC 13
       - Clang 15
       - Xcode 16.1
+      - R++
   - desc: "`[[unsequenced]]` and `[[reproducible]]`"
     paper: N2956
     content: c-unreachable.md
     support:
       - GCC 15
+      - tool: R++
+        status: unsupported
   - desc: "Relax requirements for [variadic parameter list](https://cppreference.com/c/language/variadic)"
     paper: N2975
     support:
@@ -293,6 +299,7 @@ features:
       - GCC 13
       - Clang 18
       - Xcode 16.4
+      - R++ 2023.3
   - desc: "`#embed`"
     paper: N3017
     content: c-embed.md
@@ -308,6 +315,7 @@ features:
       - GCC 13
       - Clang 19
       - Xcode 16.4
+      - R++ 2024.2
   - desc: "Improved Normal Enumerations"
     paper: N3029
     support:
@@ -349,9 +357,11 @@ features:
       - GCC 13
       - Clang 16 (partial)
       - Xcode 16.1
+      - R++
   - desc: "Partial program correctness"
     paper: N3128
     support:
       - tool: GCC
         status: partial
         note: "Not guaranteed for volatile accesses"
+      - R++
