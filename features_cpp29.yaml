@@ -88,6 +88,10 @@ features:
     ftm:
       - name: __cpp_pack_indexing
         value: 202606L
+    support:
+      - tool: Clang 24
+        status: partial
+        note: "The mangling of a pack-index-template-name is not implemented."
 
   - desc: "#embed offset parameter"
     paper: P3540
