@@ -1080,6 +1080,7 @@ features:
   - desc: "Defang and deprecate `std::memory_order::consume`"
     paper: P3475
     lib: true
+    support: [Clang 24 (partial)]
 
   - desc: "Concept and variable-template template-parameters"
     paper: P2841
