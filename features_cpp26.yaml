@@ -404,6 +404,7 @@ features:
       - Xcode 16.3
       - tool: R++
         status: unsupported
+        issue: RSCPP-37865
 
   - desc: "Saturation arithmetic"
     paper: [P0543, P4052]
@@ -773,6 +774,7 @@ features:
       - GCC 15
       - Clang 20
       - Xcode 26.4
+      - R++ 2025.3
     ftm:
       - name: __cpp_constexpr
         value: 202406L
@@ -1372,6 +1374,7 @@ features:
       - Clang 24
       - tool: R++
         status: unsupported
+        issue: RSCPP-37871
     ftm:
       - name: __cpp_constexpr_virtual_inheritance
         value: 202506L
