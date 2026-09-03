@@ -9,6 +9,7 @@ features:
       - MSVC 14.28
       - Xcode 16.1
       - TinyCC
+      - R++
   - desc: "Generic selection (`_Generic`)"
     paper: N1441
     content: c-generic.md
@@ -27,6 +28,7 @@ features:
       - Clang 3.1
       - MSVC 14.27
       - Xcode 16.1
+      - R++
   - desc: "Alignment support (`_Alignas`, `_Alignof`, `<stdalign.h>`)"
     paper: N1353
     content: c-alignas-alignof.md
@@ -54,6 +56,7 @@ features:
       - Clang 3.3
       - MSVC 14.37
       - Xcode 16.1
+      - R++
   - desc: "Multi-threading support (`<threads.h>`)"
     paper: N1437
     content: c-threads.md
@@ -72,6 +75,7 @@ features:
       - Xcode 16.1
       - owcc
       - TinyCC
+      - R++
   - desc: "Unicode support (`<uchar.h>`, `u/U` prefixes)"
     summary: "Unicode character types, literals, and conversion functions."
     paper: N1487
