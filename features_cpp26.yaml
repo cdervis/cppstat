@@ -1345,7 +1345,7 @@ features:
   - desc: "`define_static_{string,object,array}`"
     paper: P3491
     lib: true
-    support: [GCC 16]
+    support: [GCC 16, R++ 2026.2]
     ftm:
       - name: __cpp_lib_define_static
         value: 202506L
@@ -1364,7 +1364,8 @@ features:
   - desc: "Function Parameter Reflection in Reflection for C++26"
     paper: P3096
     lib: true
-    support: [GCC 16]
+    support: [GCC 16, R++ 2026.2]
+    keywords: ["reflection"]
 
   - desc: "`constexpr` virtual inheritance"
     paper: P3533
