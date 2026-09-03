@@ -479,7 +479,7 @@ infos:
       - "https://github.com/llvm/llvm-project/releases/tag/llvmorg-22.1.0"
 
   - name: Clang 23
-    released: TBD
+    released: August 25, 2026
     refs:
       - "https://clang.llvm.org/docs/ReleaseNotes.html"
 
