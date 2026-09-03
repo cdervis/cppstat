@@ -6,6 +6,7 @@ features:
       - GCC 17
       - tool: R++
         status: unsupported
+        issue: RSCPP-37866
     ftm:
       - name: __cpp_designated_initializers
         value: 202606L
@@ -19,6 +20,7 @@ features:
     support:
       - tool: R++
         status: unsupported
+        issue: RSCPP-37867
 
   - desc: "Adding restrictions to defaulted assignment operator functions"
     paper: P2953
@@ -26,6 +28,7 @@ features:
       - GCC 17
       - tool: R++
         status: unsupported
+        issue: RSCPP-37868
 
   - desc: "Nondeterministic pointer provenance"
     paper: P2434
@@ -64,6 +67,7 @@ features:
       - GCC 17
       - tool: R++
         status: unsupported
+        issue: RSCPP-37869
     ftm:
       - name: __cpp_concepts
         value: 202606L
@@ -95,7 +99,12 @@ features:
 
   - desc: "#embed offset parameter"
     paper: P3540
-    support: [GCC 17]
+    support:
+      - GCC 17
+      - tool: R++
+        status: partial
+        issue: RSCPP-37875
+        note: "The gnu::offset and clang::offset spellings work. The standard offset does not."
     ftm:
       - name: __cpp_pp_embed
         value: 202606L

@@ -566,6 +566,7 @@ features:
       - Xcode 10
       - tool: R++
         status: unsupported
+        issue: RSCPP-37872
     ftm:
       - name: __cpp_impl_destroying_delete
         value: 201806L
@@ -809,6 +810,7 @@ features:
       - Xcode 11.4
       - tool: R++
         status: unsupported
+        issue: RSCPP-37873
 
   - desc: "Signed integers are two's complement"
     paper: P1236
@@ -1415,6 +1417,7 @@ features:
       - Xcode 14
       - tool: R++
         status: unsupported
+        issue: RSCPP-37874
 
   - desc: "`constinit`"
     paper: P1143

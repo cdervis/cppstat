@@ -1008,6 +1008,7 @@ features:
       - Clang 15
       - MSVC 14.0
       - Xcode 15
+      - R++
 
   - desc: "`char8_t` compatibility and portability fix"
     paper: P2513
