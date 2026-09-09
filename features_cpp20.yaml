@@ -554,7 +554,7 @@ features:
   - desc: "Atomic compare-and-exchange with padding bits"
     paper: P0528
     lib: true
-    support: [GCC 13, MSVC 14.28]
+    support: [GCC 13, Clang 24, MSVC 14.28]
 
   - desc: "Destroying operator delete"
     paper: P0722
