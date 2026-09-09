@@ -1483,7 +1483,7 @@ features:
     ftm:
       - name: __cpp_lib_type_order
         value: 202506L
-    support: [GCC 16]
+    support: [GCC 16, Clang 24]
 
   - desc: "`std::optional` variants in sender/receiver"
     paper: P3570
