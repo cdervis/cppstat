@@ -127,6 +127,7 @@ features:
   - desc: "`view_interface::at()`"
     paper: P3052
     lib: true
+    support: [Clang 24]
     ftm:
       - name: __cpp_lib_view_interface
         value: 202606L
