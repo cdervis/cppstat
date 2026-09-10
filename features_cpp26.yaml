@@ -1046,8 +1046,7 @@ features:
 
   - desc: "Trivial unions (was `std::uninitialized<T>`)"
     paper: P3074
-    support:
-      - R++
+    support: [GCC 17, R++]
     content: trivial-unions.md
     ftm:
       - name: __cpp_trivial_union
