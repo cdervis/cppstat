@@ -42,16 +42,24 @@ releases:
         url: "https://blog.jetbrains.com/rscpp/2025/11/11/resharper-cpp-2025-3/"
   - version: "2025.2"
     released: August 14, 2025
-    refs: []
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/dotnet/2025/08/14/resharper-and-the-net-tools-2025-2-are-out/#c-support-1"
   - version: "2025.1"
     released: April 16, 2025
-    refs: []
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/dotnet/2025/04/16/resharper-2025-1-release/#c-support"
   - version: "2024.3"
     released: November 13, 2024
-    refs: []
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/dotnet/2024/11/13/resharper-2024-3-release/#c-support-enhancements"
   - version: "2024.2"
     released: August 15, 2024
-    refs: []
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/dotnet/2024/08/15/resharper-2024-2/#c-support-1"
   - version: "2024.1"
     released: April 9, 2024
     refs:
@@ -186,4 +194,4 @@ releases:
     released: August 19, 2015
     refs:
       - title: Release notes
-        url: "https://blog.jetbrains.com/dotnet/2015/08/19/welcome-resharper-9-2-resharper-c-1-1-and-more-ultimate-updates/"
+        url: "https://blog.jetbrains.com/dotnet/2015/08/19/welcome-resharper-9-2-resharper-c-1-1-and-more-ultimate-updates/#resharper-c-11"
