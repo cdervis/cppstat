@@ -92,3 +92,98 @@ releases:
     refs:
       - title: Release notes
         url: "https://blog.jetbrains.com/rscpp/2021/12/08/resharper-cpp-2021-3/"
+  - version: "2021.2"
+    released: August 3, 2021
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2021/08/03/resharper-cpp-2021-2/"
+  - version: "2021.1"
+    released: April 8, 2021
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2021/04/08/resharper-cpp-2021-1/"
+  - version: "2020.3"
+    released: December 14, 2020
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2020/12/14/resharper-cpp-2020-3/"
+  - version: "2020.2"
+    released: August 13, 2020
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2020/08/13/resharper-cpp-2020-2/"
+  - version: "2020.1"
+    released: April 16, 2020
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2020/04/16/resharper-cpp-2020-1/"
+  - version: "2019.3"
+    released: December 10, 2019
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2019/12/10/resharper-cpp-2019-3/"
+  - version: "2019.2"
+    released: August 8, 2019
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2019/08/08/resharper-cpp-2019-2/"
+  - version: "2019.1"
+    released: April 30, 2019
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2019/04/30/resharper-cpp-2019-1-responsive-better-unreal-engine-new-language-features/"
+  - version: "2018.3"
+    released: December 26, 2018
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2018/12/26/resharper-cpp-2018-3-every-bit-better/"
+  - version: "2018.2"
+    released: September 12, 2018
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2018/09/12/whats-new-in-resharper-cpp-2018-2/"
+  - version: "2018.1"
+    released: May 31, 2018
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2018/05/31/whats-new-resharper-c-2018-1/"
+  - version: "2017.3"
+    released: February 21, 2018
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2018/02/21/whats-new-resharper-c-2017-3/"
+  - version: "2017.2"
+    released: September 20, 2017
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2017/09/20/whats-new-resharper-c-2017-2/"
+  - version: "2017.1"
+    released: April 24, 2017
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2017/04/24/whats-new-in-resharper-c-2017-1/"
+  - version: "2016.3"
+    released: December 15, 2016
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/dotnet/2016/12/15/resharper-ultimate-2016-3-is-released/#resharper-c"
+  - version: "2016.2"
+    released: September 14, 2016
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2016/09/14/whats-new-in-resharper-c-2016-2/"
+  - version: "2016.1"
+    released: May 17, 2016
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/rscpp/2016/05/17/whats-new-in-resharper-c-2016-1/"
+  - version: "10.0"
+    released: November 2, 2015
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/dotnet/2015/11/02/welcome-resharper-ultimate-10-rtm/#resharper-c-10"
+  - version: "1.1"
+    released: August 19, 2015
+    refs:
+      - title: Release notes
+        url: "https://blog.jetbrains.com/dotnet/2015/08/19/welcome-resharper-9-2-resharper-c-1-1-and-more-ultimate-updates/"
