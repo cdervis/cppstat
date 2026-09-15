@@ -168,6 +168,10 @@ features:
   - desc: "Better shifting"
     paper: P3793
     lib: true
+    support:
+      - tool: Clang 24
+        status: partial
+        note: "No `std::simd` overloads provided."
     ftm:
       - name: __cpp_lib_bitops
         value: 202606L
