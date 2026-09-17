@@ -1686,6 +1686,7 @@ features:
     paper: P3391
     summary: "`std::format()` can now be used at compile time."
     lib: true
+    support: [GCC 17]
     ftm:
       - name: __cpp_lib_constexpr_format
         value: 202511L
