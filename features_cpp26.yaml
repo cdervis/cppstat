@@ -1039,13 +1039,10 @@ features:
     ftm:
       - name: __cpp_lib_simd
         value: 202411L
-      - name: __cpp_lib_simd_complex
-        value: 202502L
-        desc: "Support for interleaved complex values in `std::datapar::simd`"
     support:
       - tool: GCC 16
         status: partial
-        note: "Missing `std::complex` support and the feature-test macro. The implementation currently requires an x86 target with SSE2."
+        note: "Mathematical functions and `__cpp_lib_simd` are missing. The implementation currently requires an x86 target with SSE2."
 
   - desc: "Utility for creating execution environments"
     paper: P3325
@@ -1233,13 +1230,21 @@ features:
   - desc: "Interleaved complex values support in `std::simd`"
     paper: P2663
     lib: true
+    support:
+      - tool: GCC 17
+        status: partial
+        note: "Complex SIMD construction, multiplication, and real/imaginary accessors are implemented. Division and several mathematical functions remain unavailable, and `__cpp_lib_simd_complex` is not defined."
     ftm:
       - name: __cpp_lib_simd_complex
         value: 202502L
 
   - desc: "Extend `<bit>` header function with overloads for `std::simd`"
-    paper: P2933
+    paper: [P2933, LWG4375]
     lib: true
+    support:
+      - tool: GCC 17
+        status: partial
+        note: "The bit manipulation overloads are implemented, but `__cpp_lib_simd` is not defined."
     ftm:
       - name: __cpp_lib_simd
         value: 202506L
@@ -1470,6 +1475,10 @@ features:
   - desc: "Proposal to extend `std::simd` with more constructors and accessors"
     paper: P2876
     lib: true
+    support:
+      - tool: GCC 16
+        status: partial
+        note: "Mask constructors from `std::bitset` and integers, `to_bitset()`, and `to_ullong()` are implemented. `__cpp_lib_simd` is not defined."
 
   - desc: "`std::simd` is a range"
     paper: P3480
@@ -1484,6 +1493,10 @@ features:
   - desc: "Extend `std::simd` with permutation API"
     paper: P2664
     lib: true
+    support:
+      - tool: GCC 16
+        status: partial
+        note: "Static-index `std::simd::permute()` is implemented. `std::simd::compress()` and the complete permutation API remain unavailable, and `__cpp_lib_simd_permutations` is not defined."
     ftm:
       - name: __cpp_lib_simd_permutations
         value: 202506L
@@ -1491,6 +1504,9 @@ features:
   - desc: "Reconsider naming of the namespace for `std::simd`"
     paper: P3691
     lib: true
+    support:
+      - tool: GCC 16
+        note: "The C++26 `<simd>` implementation currently requires an x86 target with SSE2."
 
   - desc: "`std::mdspan::at()`"
     paper: P3383
@@ -1710,6 +1726,10 @@ features:
   - desc: "Missing deduction guide from `simd::mask` to `simd::vec`"
     paper: P3922
     lib: true
+    support:
+      - tool: GCC 16
+        status: partial
+        note: "Deduction from `std::simd::basic_mask` to `std::simd::basic_vec` is implemented; `__cpp_lib_simd` is not defined."
     ftm:
       - name: __cpp_lib_simd
         value: 202511L
@@ -1866,13 +1886,21 @@ features:
     paper: P3844
     lib: true
 
-  - desc: "Fix LWG4470: Fix integer-from in `[simd]`"
-    paper: P3932
+  - desc: "Fix `std::simd` mask sizing and ABI handling"
+    paper: [P3932, LWG4470, LWG4414, LWG4518]
     lib: true
+    support:
+      - tool: GCC 16
+        status: partial
+        note: "ABI-preserving `std::simd::cat()`, `rebind_t`, and `resize_t` fixes are implemented. Some mask specializations with 16-byte elements still fail to instantiate."
 
-  - desc: "Value-preserving consteval broadcast to `simd::vec`"
+  - desc: "Remove explicit scalar broadcast conversions to `std::simd::vec`"
     paper: P4012
     lib: true
+    support:
+      - tool: GCC 16
+        status: partial
+        note: "The adopted removal of explicit broadcast conversions is implemented. `__cpp_lib_simd` is not defined."
 
   - desc: "Allow incomplete types in `std::type_order`"
     paper: P4140
