@@ -357,6 +357,9 @@ features:
       - Clang 15
       - MSVC 14.32
       - Xcode 14.3
+    ftm:
+      - name: __cpp_lib_format
+        value: 202106L
 
   - desc: "Range adaptor objects bind arguments by value"
     paper: P2281
@@ -510,6 +513,9 @@ features:
       - Clang 21
       - MSVC 14.31
       - Xcode 26.4
+    ftm:
+      - name: __cpp_lib_format
+        value: 202110L
 
   - desc: "What is a view?"
     paper: P2415

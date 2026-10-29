@@ -1973,6 +1973,11 @@ features:
     paper: P4156
     lib: true
 
+  - desc: "Rename `std::runtime_format()` to `std::dynamic_format()`"
+    paper: P3953
+    lib: true
+    support: [Clang 23]
+
   - desc: "Scheduler Affinity"
     paper: P3941
     lib: true

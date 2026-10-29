@@ -148,7 +148,7 @@ features:
     paper: P3395
     lib: true
 
-  - desc: "Fix the default floating-point representation in `std::format()`"
+  - desc: "Fix the default floating-point representation in `std::to_chars()`"
     paper: P3505
     lib: true
     ftm:
