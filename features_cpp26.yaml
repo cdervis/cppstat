@@ -1091,6 +1091,9 @@ features:
     paper: P2841
     support:
       - R++ 2025.3
+      - tool: Clang 22
+        status: partial
+        note: "Concept template parameters are accepted, but subsumption and mangling are unsupported and satisfaction checking is incomplete."
     ftm:
       - name: __cpp_template_parameters
         value: 202502L
@@ -1710,3 +1713,22 @@ features:
     lib: true
     content: miscellaneous-reflection-cleanup.md
     keywords: ["reflection"]
+
+  - desc: "Allow `#line` before module declarations"
+    paper: P3868
+    support: [Clang 21]
+
+  - desc: "Class template argument deduction for type template template parameters"
+    paper: P3865
+
+  - desc: "Conditionally support `#line` numbers outside [1, 2147483647]"
+    paper: P4136
+    support: [GCC, Clang]
+
+  - desc: "Reconsider partial ordering of variadic templates"
+    paper: P4004
+    support: [Clang 2.9]
+
+  - desc: "Define immediate context"
+    paper: P4149
+    summary: "Excludes lambda bodies and separately instantiated default arguments, noexcept-specifiers and contracts from the immediate substitution context."

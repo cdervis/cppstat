@@ -42,6 +42,11 @@ features:
 
   - desc: "return_value & return_void Are Not Mutually Exclusive"
     paper: P3950
+    support:
+      - GCC 17
+    ftm:
+      - name: __cpp_impl_coroutine
+        value: 202606L
 
   - desc: "More named universal character escapes"
     paper: P3733
