@@ -1174,6 +1174,15 @@ features:
     lib: true
     support: [Clang 15, MSVC 14.12]
 
+  - desc: "Class template argument deduction: explicit guides and forwarding-reference rules"
+    paper: P0512
+    support: [GCC 8, Clang 5, MSVC 14.14]
+
+  - desc: "Class template argument deduction: copy candidates and initialization contexts"
+    paper: P0620
+    summary: "Refines deduction-guide ordering, default initialization, access and redeclaration rules, and deduction in new-expressions."
+    support: [Clang 7]
+
   - desc: "Remove `auto_ptr`, `random_shuffle` and old function adaptors"
     paper: N4190
     summary: "Removes unary_function, binary_function, ptr_fun, mem_fun, mem_fun_ref, bind1st and bind2nd, including auto_ptr interoperability overloads."
