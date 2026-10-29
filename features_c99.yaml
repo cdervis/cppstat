@@ -8,7 +8,6 @@ features:
       - MSVC
       - Xcode
       - R++
-    content: c-universal-character-names.md
   - desc: "Increased [translation limits](https://cppreference.com/c/language/identifiers#Translation_limits)"
     summary: "Raised minimum translation limits for portable programs."
     paper: N590
@@ -19,10 +18,8 @@ features:
       - owcc
       - TinyCC
       - R++
-    content: c-translation-limits.md
   - desc: "`//` comments"
     paper: N644
-    content: c-line-comments.md
     support:
       - GCC
       - Clang
@@ -33,7 +30,6 @@ features:
       - R++
   - desc: "`restrict` pointers"
     paper: N448
-    content: c-restrict.md
     support:
       - GCC
       - Clang
@@ -61,7 +57,6 @@ features:
       - Xcode (partial)
       - R++
   - desc: "Flexible array members"
-    content: c-flexible-array.md
     support:
       - GCC 3
       - Clang
@@ -71,7 +66,6 @@ features:
       - R++
   - desc: "[Variable-length array](https://cppreference.com/c/language/array#Variable-length_arrays) (VLA) types"
     paper: N683
-    content: c-vla.md
     support:
       - GCC
       - Clang
@@ -80,7 +74,6 @@ features:
       - R++
   - desc: "[Variably-modified](https://cppreference.com/c/language/array#Variable-length_arrays) (VM) types"
     paper: N683
-    content: c-vm-types.md
     support:
       - GCC
       - Clang
@@ -89,7 +82,6 @@ features:
       - R++
   - desc: "Designated initializers"
     paper: N494
-    content: c-designated-init.md
     support:
       - GCC 3
       - Clang
@@ -105,7 +97,6 @@ features:
         status: partial
         note: "Requires -aa for wcc*."
       - R++
-    content: c-non-constant-initializers.md
   - desc: "Idempotent cvr-qualifiers"
     summary: "Repeated cvr-qualifiers on a type are idempotent."
     paper: N505
@@ -115,7 +106,6 @@ features:
       - Xcode
       - tool: R++
         status: unsupported
-    content: c-idempotent-qualifiers.md
   - desc: "Trailing comma in _enumerator-list_"
     summary: "A comma is allowed after the last enumerator."
     support:
@@ -126,10 +116,8 @@ features:
       - owcc
       - TinyCC
       - R++
-    content: c-enum-trailing-comma.md
   - desc: "Hexadecimal [floating constants](https://cppreference.com/c/language/floating_constant)"
     paper: N308
-    content: c-hex-float.md
     support:
       - GCC 2.8
       - Clang
@@ -140,7 +128,6 @@ features:
       - R++
   - desc: "[Compound literals](https://cppreference.com/c/language/compound_literal)"
     paper: N716
-    content: c-compound-literals.md
     support:
       - GCC 3.1
       - Clang
@@ -153,7 +140,6 @@ features:
       - GCC (partial)
       - Clang (partial)
       - Xcode 14 (partial)
-    content: c-fenv.md
   - desc: "Requiring truncation for divisions of signed integer types"
     summary: "Signed integer division must truncate toward zero."
     paper: N617
@@ -162,7 +148,6 @@ features:
       - Clang
       - Xcode
       - R++
-    content: c-integer-division-truncation.md
   - desc: "Implicit `return 0;` in the [`main()` function](https://cppreference.com/c/language/main_function)"
     summary: "Reaching the end of `main` returns zero implicitly."
     support:
@@ -173,7 +158,6 @@ features:
       - owcc 1.5
       - TinyCC
       - R++
-    content: c-implicit-return-main.md
   - desc: "Declarations and statements in mixed order"
     summary: "Declarations and statements may interleave within a block."
     paper: N740
@@ -185,7 +169,6 @@ features:
       - owcc
       - TinyCC
       - R++
-    content: c-mixed-declarations.md
   - desc: "_init-statement_ in `for` loops"
     summary: "Declaring loop counters in a `for` statement's init clause."
     support:
@@ -196,10 +179,8 @@ features:
       - owcc
       - TinyCC
       - R++
-    content: c-for-loop-declarations.md
   - desc: "`inline` functions"
     paper: N741
-    content: c-inline.md
     support:
       - GCC 4.3
       - Clang
@@ -210,7 +191,6 @@ features:
       - R++
   - desc: "Predefined variable `__func__`"
     paper: N611
-    content: c-func.md
     support:
       - GCC 3
       - Clang
@@ -226,10 +206,8 @@ features:
       - Clang
       - Xcode
       - R++ 2024.1
-    content: c-array-parameter-qualifiers.md
   - desc: "[Variadic macros](https://cppreference.com/c/preprocessor/replace)"
     paper: N707
-    content: c-variadic-macros.md
     support:
       - GCC 3
       - Clang
@@ -250,7 +228,6 @@ features:
       - Xcode 14
       - owcc
       - R++
-    content: c-pragma-operator.md
   - desc: "Standard pragmas for floating-point evaluation"
     summary: "Standard `STDC` pragmas controlling floating-point code generation."
     paper:
@@ -266,4 +243,3 @@ features:
       - tool: owcc
         status: partial
         note: "`parsed, but does not change the code."
-    content: c-fp-pragmas.md

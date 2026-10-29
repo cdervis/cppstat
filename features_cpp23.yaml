@@ -12,7 +12,6 @@ features:
     ftm:
       - name: __cpp_size_t_suffix
         value: 202011L
-    content: literal-suffix-size-t.md
 
   - desc: "`std::basic_string::contains()` and `std::basic_string_view::contains()`"
     paper: P1679
@@ -26,11 +25,9 @@ features:
     ftm:
       - name: __cpp_lib_string_contains
         value: 202011L
-    content: string-contains.md
 
   - desc: "`<stacktrace>`"
     paper: P0881
-    content: stacktrace.md
     lib: true
     support:
       - tool: GCC 12
@@ -76,7 +73,6 @@ features:
       - MSVC 14.44
       - Xcode 13.4.1
       - R++ 2023.1
-    content: lambda-omit-parens.md
 
   - desc: "Repairing input range adaptors and `std::counted_iterator`"
     paper: P2259
@@ -134,7 +130,6 @@ features:
   - desc: "`if consteval`"
     paper: P1938
     summary: "Detect at compile time whether code is being constant-evaluated."
-    content: if-consteval.md
     support:
       - GCC 12
       - Clang 14
@@ -419,7 +414,6 @@ features:
   - desc: "Explicit object member functions (deducing `this`)"
     paper: P0847
     summary: 'Member functions can now have an explicit "self" parameter, enabling perfect forwarding and CRTP simplification.'
-    content: deducing-this.md
     support:
       - GCC 14
       - tool: Clang 18
@@ -478,7 +472,6 @@ features:
   - desc: "Multidimensional subscript operator (`operator[x, y]`)"
     paper: P2128
     summary: "`operator[]` can now take multiple arguments."
-    content: multidim-subscript.md
     support:
       - GCC 12
       - Clang 15
@@ -690,7 +683,6 @@ features:
 
   - desc: "`std::expected` (`<expected>`)"
     paper: [P0323, P2549]
-    content: expected.md
     lib: true
     support:
       - GCC 12
@@ -727,7 +719,6 @@ features:
 
   - desc: "Conversions from ranges to containers (`ranges::to()`)"
     paper: P1206
-    content: ranges-to.md
     lib: true
     support:
       - GCC 14 (partial)
@@ -943,7 +934,6 @@ features:
   - desc: "`static operator()` (static call operator)"
     paper: P1169
     summary: "Call operators can now be static."
-    content: static-call-operator.md
     support:
       - GCC 13
       - Clang 16
@@ -1025,7 +1015,6 @@ features:
 
   - desc: "`char8_t` compatibility and portability fix"
     paper: P2513
-    content: char8-t-compatibility.md
     support:
       - GCC 13
       - Clang 16
@@ -1047,7 +1036,6 @@ features:
 
   - desc: "`std::mdspan`: a non-owning multidimensional array reference (`<mdspan>`)"
     paper: [P0009, P2599, P2604, P2613, P2763]
-    content: mdspan.md
     lib: true
     support:
       - GCC 16
@@ -1069,7 +1057,6 @@ features:
 
   - desc: "`std::flat_map` (`<flat_map>`)"
     paper: P0429
-    content: flat-map.md
     lib: true
     support:
       - GCC 15
@@ -1119,7 +1106,6 @@ features:
 
   - desc: "Formatted output library (`<print>`, `std::print()`, `std::println()`)"
     paper: [P2093, P2539]
-    content: print.md
     lib: true
     support:
       - GCC 14
@@ -1385,7 +1371,6 @@ features:
 
   - desc: "`std::generator`: synchronous coroutine generator for ranges"
     paper: [P2502, P2787]
-    content: generator.md
     lib: true
     support: [GCC 14, MSVC 14.43]
     ftm:
@@ -1447,7 +1432,6 @@ features:
 
   - desc: "`static operator[]`"
     paper: P2589
-    content: static-subscript-operator.md
     support:
       - GCC 13
       - Clang 16
@@ -1560,7 +1544,6 @@ features:
 
   - desc: "`views::enumerate()`"
     paper: P2164
-    content: enumerate.md
     lib: true
     support: [GCC 13, Clang 23, MSVC 14.37]
     ftm:

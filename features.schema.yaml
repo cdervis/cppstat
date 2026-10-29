@@ -74,9 +74,6 @@ definitions:
             desc:
               type: string
               description: "Optional description of what this FTM specifically refers to."
-      content:
-        type: string
-        description: "Information about the feature (e.g. a filename)."
       keywords:
         type: array
         description: "A list of keywords to categorize the feature."

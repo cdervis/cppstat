@@ -2,7 +2,6 @@
 features:
   - desc: "Static assertions (`_Static_assert`)"
     paper: N1330
-    content: c-static-assert.md
     support:
       - GCC 4.7.1
       - Clang 3.1
@@ -12,7 +11,6 @@ features:
       - R++
   - desc: "Generic selection (`_Generic`)"
     paper: N1441
-    content: c-generic.md
     support:
       - GCC 4.9
       - Clang 3.1
@@ -22,7 +20,6 @@ features:
       - R++ 2021.3
   - desc: "Anonymous structures and unions"
     paper: N1444
-    content: c-anonymous-struct-union.md
     support:
       - GCC 4.7.1
       - Clang 3.1
@@ -31,7 +28,6 @@ features:
       - R++
   - desc: "Alignment support (`_Alignas`, `_Alignof`, `<stdalign.h>`)"
     paper: N1353
-    content: c-alignas-alignof.md
     support:
       - GCC 4.7.1
       - Clang 3.3
@@ -40,7 +36,6 @@ features:
       - R++
   - desc: "Atomic operations (`_Atomic`, `<stdatomic.h>`)"
     paper: N1485
-    content: c-atomic.md
     lib: true
     support:
       - GCC 4.9
@@ -50,7 +45,6 @@ features:
       - Xcode 16.1
   - desc: "Thread-local storage (`_Thread_local`)"
     paper: N1287
-    content: c-thread-local.md
     support:
       - GCC 4.9
       - Clang 3.3
@@ -59,7 +53,6 @@ features:
       - R++
   - desc: "Multi-threading support (`<threads.h>`)"
     paper: N1437
-    content: c-threads.md
     lib: true
     support:
       - GCC 4.7.1
@@ -67,7 +60,6 @@ features:
       - Clang 3.3
   - desc: "Noreturn function specifier (`_Noreturn`, `<stdnoreturn.h>`)"
     paper: N1478
-    content: c-noreturn.md
     support:
       - GCC 4.7.1
       - Clang 3.3
@@ -84,7 +76,6 @@ features:
       - GCC 4.7.1
       - MSVC 14.20
       - Clang 3.3
-    content: c-uchar.md
   - desc: 'Exclusive create-and-open mode for `fopen()` ("x")'
     summary: "Exclusive create-and-open mode for `fopen`."
     paper: N1339
@@ -94,10 +85,8 @@ features:
       - Clang 3.1
       - MSVC 14.20
       - Xcode 16.1
-    content: c-fopen-exclusive.md
   - desc: "Quick exit (`quick_exit()`, `at_quick_exit()`)"
     paper: N1327
-    content: c-quick-exit.md
     lib: true
     support:
       - GCC 4.7.1
@@ -113,7 +102,6 @@ features:
       - Clang 3.3
       - MSVC 14.20
       - Xcode 16.1
-    content: c-timespec-get.md
   - desc: "Macros for complex number types (`CMPLX`)"
     summary: "Build complex values componentwise without NaN contamination."
     paper: N1464
@@ -122,4 +110,3 @@ features:
       - GCC 4.7.1
       - Clang 3.3
       - Xcode 16.1
-    content: c-cmplx.md

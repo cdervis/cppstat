@@ -57,7 +57,6 @@ features:
 
   - desc: "[Generic lambda expressions](https://cppreference.com/cpp/language/lambda#Explanation)"
     paper: N3649
-    content: generic-lambdas.md
     support:
       - GCC 4.9
       - Clang 3.4
@@ -80,7 +79,6 @@ features:
     ftm:
       - name: __cpp_variable_templates
         value: 201304L
-    content: variable-templates.md
 
   - desc: "Relaxed `constexpr` restrictions"
     paper: N3652
@@ -271,7 +269,6 @@ features:
 
   - desc: "`std::make_unique()`"
     paper: N3656
-    content: make-unique.md
     lib: true
     support:
       - GCC 4.9

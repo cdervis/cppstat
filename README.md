@@ -52,7 +52,6 @@ A feature has the following properties:
 - **`ftm`**: A list of feature-testing macros (FTM) for the feature, where each entry has:
   - **`name`**: The name of the FTM, e.g. `__cpp_lib_not_fn`
   - **`value`**: The value of the FTM, e.g. `201603L`
-- **`content`**: Information about the feature (see below)
 - **`keywords`**: A list of keywords to categorize the feature. The feature will be included in search results when searching for these keywords.
 
 Compact and structured entries can be mixed in the same feature-owned list:
@@ -99,28 +98,6 @@ Which will look like the following on cppstat:
 ![Feature Example](assets/feature_example.webp)
 
 ---
-
-### Feature Content
-
-Every feature can have an in-depth explanation hidden behind its info button.
-
-The **`content`** property of a feature specifies the **Markdown file** that describes the feature.
-This file is expected to be in the `content` folder.
-
-For example, the feature P2589 (`static operator[]`) is defined as follows:
-
-```yaml
-- desc: '`static operator[]`'
-  ...
-  content: static-subscript-operator.md
-```
-
-This feature's explanation is therefore expected to be in `content/static-subscript-operator.md`.
-
-The structure of a content file should be:
-  1. **What It Does**: Explains to the reader briefly and in easy-to-understand terms what the function does.
-  2. **Why It Matters**: Explains the background to why the function was originally standardized, e.g. what historical problems it solves.
-  3. **Example**: A short, interactive example how the feature can be used in code.
 
 ### Tools
 

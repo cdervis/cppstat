@@ -16,7 +16,6 @@ features:
       - Clang 9
       - Xcode 11.4
       - R++
-    content: c-nodiscard.md
   - desc: "`[[maybe_unused]]`"
     paper: N2270
     support:
@@ -35,7 +34,6 @@ features:
     paper:
       - N2335
       - N2554
-    content: c-attributes.md
     support:
       - GCC 10
       - Clang 9
@@ -97,7 +95,6 @@ features:
         note: "Only a label at the end of a block is confirmed."
   - desc: "[Binary integer constants](https://cppreference.com/c/language/integer_constant)"
     paper: N2549
-    content: c-binary-literals.md
     support:
       - tool: GCC 4.3
         note: "Supported as an extension."
@@ -147,7 +144,6 @@ features:
       - Clang 3
   - desc: "Digit separators"
     paper: N2626
-    content: c-digit-separators.md
     support:
       - GCC 12
       - Clang 13
@@ -157,7 +153,6 @@ features:
       - R++
   - desc: "[`#elifdef` and `#elifndef`](https://cppreference.com/c/preprocessor/conditional)"
     paper: N2645
-    content: c-elifdef.md
     support:
       - GCC 12
       - Clang 13
@@ -188,7 +183,6 @@ features:
       - R++ 2023.2
   - desc: "Bit-precise integer types (`_BitInt`)"
     paper: N2763
-    content: c-bitint.md
     support:
       - tool: GCC 14
         status: partial
@@ -239,7 +233,6 @@ features:
       - Xcode 16.1
   - desc: "[Empty initializers](https://cppreference.com/c/language/initialization#Empty_initialization)"
     paper: N2900
-    content: c-empty-init.md
     support:
       - tool: GCC 13
         note: "Partially supported as an extension before."
@@ -253,7 +246,6 @@ features:
     paper:
       - N2927
       - N2930
-    content: c-typeof.md
     support:
       - tool: GCC 13
         note: "Prior to GCC 13: Supported as an extension. Only typeof (and `__typeof__` in strict modes) supported."
@@ -273,7 +265,6 @@ features:
       - R++
   - desc: "Predefined `true` and `false`"
     paper: N2935
-    content: c-bool-true-false.md
     support:
       - GCC 13
       - Clang 15
@@ -281,7 +272,6 @@ features:
       - R++
   - desc: "`[[unsequenced]]` and `[[reproducible]]`"
     paper: N2956
-    content: c-unreachable.md
     support:
       - GCC 15
       - tool: R++
@@ -294,7 +284,6 @@ features:
       - Xcode 16.1
   - desc: "Type inference in object definitions (`auto`)"
     paper: N3007
-    content: c-auto.md
     support:
       - GCC 13
       - Clang 18
@@ -302,7 +291,6 @@ features:
       - R++ 2023.3
   - desc: "`#embed`"
     paper: N3017
-    content: c-embed.md
     support:
       - GCC 15
       - Clang 19
@@ -310,7 +298,6 @@ features:
       - R++ 2026.1
   - desc: "`constexpr` objects"
     paper: N3018
-    content: c-constexpr.md
     support:
       - GCC 13
       - Clang 19
@@ -325,7 +312,6 @@ features:
       - Xcode 16.1
   - desc: "Enumerations with fixed underlying types"
     paper: N3030
-    content: c-fixed-enum.md
     support:
       - GCC 13
       - tool: Clang 20
@@ -333,7 +319,6 @@ features:
       - Xcode 16.1
   - desc: "`__VA_OPT__`"
     paper: N3033
-    content: c-va-opt.md
     support:
       - GCC 8
       - GCC 13
@@ -352,7 +337,6 @@ features:
       - GCC 13
   - desc: "`nullptr`"
     paper: N3042
-    content: c-nullptr.md
     support:
       - GCC 13
       - Clang 16 (partial)

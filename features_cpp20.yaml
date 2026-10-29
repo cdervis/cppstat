@@ -42,12 +42,10 @@ features:
       - MSVC 14.25
       - Xcode 12
       - R++ 2023.1
-    content: va-opt.md
 
   - desc: "Designated initializers"
     paper: P0329
     summary: "Initialize aggregate members by name."
-    content: designated-initializers.md
     support:
       - tool: GCC 4.7
         status: partial
@@ -89,7 +87,6 @@ features:
   - desc: "Concepts"
     paper: P0734
     summary: "Concepts are predicates that constrain template arguments. They provide clear error messages and enable function overloading based on type properties."
-    content: concepts.md
     support:
       - tool: GCC 5
         status: partial
@@ -179,7 +176,6 @@ features:
   - desc: "Three-way comparison operator (`operator<=>`)"
     paper: P0515
     summary: 'The "spaceship operator" for simplified comparisons.'
-    content: three-way-comparison.md
     support:
       - GCC 10
       - Clang 8 (partial)
@@ -438,7 +434,6 @@ features:
   - desc: "Attributes `[[likely]]` and `[[unlikely]]`"
     paper: P0479
     summary: "Hint to the compiler about branch probability."
-    content: likely-unlikely.md
     support:
       - GCC 9
       - Clang 12
@@ -502,7 +497,6 @@ features:
 
   - desc: "`std::span`"
     paper: P0122
-    content: span.md
     lib: true
     support:
       - GCC 10
@@ -586,7 +580,6 @@ features:
 
   - desc: "Allowing virtual function calls in constant expressions"
     paper: P1064
-    content: constexpr-virtual.md
     support:
       - GCC 9
       - Clang 9
@@ -653,7 +646,6 @@ features:
 
   - desc: "`std::bit_cast()`"
     paper: P0476
-    content: bit-cast.md
     lib: true
     support:
       - GCC 11
@@ -825,7 +817,6 @@ features:
   - desc: "`char8_t`: A type for UTF-8 characters and strings"
     paper: P0482
     summary: "A distinct type for UTF-8 encoded characters and strings."
-    content: char8-t.md
     support:
       - GCC 9
       - Clang 7
@@ -863,7 +854,6 @@ features:
   - desc: "Immediate functions (`consteval`)"
     paper: P1073
     summary: "Functions that must be evaluated at compile time."
-    content: consteval.md
     support:
       - GCC 10 (partial)
       - GCC 11
@@ -1078,7 +1068,6 @@ features:
 
   - desc: "The One Ranges Proposal"
     paper: P0896
-    content: ranges.md
     lib: true
     support:
       - GCC 10
@@ -1182,7 +1171,6 @@ features:
   - desc: "Modules"
     paper: [P1103, P1703, P1766, P1779, P1811, P1815, P1857, P1874, P1979, P2115, P2615, P2788]
     summary: "Modern alternative to header files with better encapsulation and faster builds."
-    content: modules.md
     support:
       - tool: GCC 11
         status: partial
@@ -1223,7 +1211,6 @@ features:
   - desc: "Coroutines"
     paper: [P0912, LWG3393]
     summary: "Suspendable functions for async programming and generators."
-    content: coroutines.md
     support:
       - tool: GCC 10
         note: "Requires `-fcoroutines`. Starting with GCC 11, this is implicitly enabled by `-std=c++20`."
@@ -1376,7 +1363,6 @@ features:
   - desc: "`using` enum"
     paper: P1099
     summary: "Import enum members into the current scope."
-    content: using-enum.md
     support:
       - GCC 11
       - Clang 13
@@ -1422,7 +1408,6 @@ features:
   - desc: "`constinit`"
     paper: P1143
     summary: "Ensure static/thread-local variables are constant-initialized."
-    content: constinit.md
     support:
       - GCC 10
       - Clang 10
@@ -1515,7 +1500,6 @@ features:
 
   - desc: "`std::format()`"
     paper: P0645
-    content: format.md
     lib: true
     support:
       - GCC 13
@@ -1665,7 +1649,6 @@ features:
 
   - desc: "`constexpr` `std::vector`"
     paper: P1004
-    content: constexpr-vector.md
     lib: true
     support:
       - GCC 12
@@ -1679,7 +1662,6 @@ features:
 
   - desc: "`std::stop_token` and `std::jthread`"
     paper: P0660
-    content: jthread.md
     lib: true
     support:
       - GCC 10
@@ -1709,7 +1691,6 @@ features:
 
   - desc: "`std::source_location`"
     paper: P1208
-    content: source-location.md
     lib: true
     support:
       - GCC 11

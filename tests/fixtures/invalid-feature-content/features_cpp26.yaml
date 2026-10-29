@@ -1,0 +1,4 @@
+---
+features:
+  - desc: "Removed article field"
+    content: example.md

@@ -27,7 +27,6 @@ features:
 
   - desc: "Support `++` and `--` on complex values"
     paper: N3259
-    content: c-complex-inc-dec.md
     support:
       - GCC 3
       - Clang 18
@@ -35,7 +34,6 @@ features:
 
   - desc: "Generic selection expression with a type operand"
     paper: N3260
-    content: c-generic-type-operand.md
     support:
       - GCC 15
       - Clang 17
@@ -43,7 +41,6 @@ features:
 
   - desc: "`alignof` of an incomplete array type"
     paper: N3273
-    content: c-alignof-incomplete.md
     support:
       - GCC 15
       - Clang 3.5
@@ -67,7 +64,6 @@ features:
 
   - desc: "Introduce complex literals"
     paper: N3298
-    content: c-complex-literals.md
     support:
       - GCC 2.5
       - Clang
@@ -139,7 +135,6 @@ features:
 
   - desc: "Obsolete implicitly octal literals and delimited escape sequences"
     paper: N3353
-    content: c-octal-literals.md
     support:
       - GCC 15
       - Clang 21
@@ -147,14 +142,12 @@ features:
 
   - desc: "Named loops"
     paper: N3355
-    content: c-named-loops.md
     support:
       - GCC 15
       - Clang 22
 
   - desc: "`if` declarations"
     paper: N3356
-    content: c-if-declarations.md
     support:
       - GCC 15
 
@@ -166,7 +159,6 @@ features:
 
   - desc: "Case range expressions (`case x ... y`)"
     paper: N3370
-    content: c-case-range.md
     support:
       - GCC 2
       - Clang
@@ -182,7 +174,6 @@ features:
     paper:
       - N3369
       - N3469
-    content: c-countof.md
     support:
       - GCC 16
       - Clang 21
@@ -238,7 +229,6 @@ features:
 
   - desc: "The `__COUNTER__` predefined macro"
     paper: N3457
-    content: c-counter-macro.md
     support:
       - Clang 22
       - tool: Xcode 16.3
@@ -368,7 +358,6 @@ features:
 
   - desc: "Const integer declarations as implicit named constants"
     paper: N3833
-    content: c-const-constexpr.md
     support:
       - GCC (partial)
       - Clang (partial)

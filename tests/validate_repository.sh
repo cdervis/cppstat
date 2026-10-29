@@ -48,6 +48,10 @@ expect_failure invalid-compact-modifier \
   "Modifier validation" \
   "GCC 15 (hint)"
 
+expect_failure invalid-feature-content \
+  features_cpp26.yaml \
+  "additional property 'content'"
+
 expect_failure invalid-object-shape \
   features_cpp26.yaml \
   "Structured support has no separate version field" \
