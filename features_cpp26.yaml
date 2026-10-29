@@ -987,6 +987,8 @@ features:
     ftm:
       - name: __cpp_lib_aligned_accessor
         value: 202411L
+      - name: __cpp_lib_is_sufficiently_aligned
+        value: 202411L
 
   - desc: "Expose `std::atomic_ref`'s object address (`std::atomic_ref::address()`)"
     paper: [P2835, P3936]
@@ -1196,9 +1198,15 @@ features:
         value: 202502L
         desc: "`constexpr` `std::unordered_set`"
     support:
-      - tool: Clang 20
+      - tool: GCC 16
         status: partial
-        note: "`std::forward_list`, `std::list`, `std::priority_queue`, `std::flat_map`, and `std::flat_set` are implemented."
+        note: "Only the flat associative containers are constexpr."
+      - tool: Clang 21
+        status: partial
+        note: "Only `std::priority_queue` is constexpr."
+      - tool: Clang 22
+        status: partial
+        note: "Adds constexpr `std::flat_map`, `std::flat_multimap`, `std::flat_set`, and `std::flat_multiset`."
       - tool: Xcode 26.4
         status: partial
         note: "`std::forward_list`, `std::list`, `std::priority_queue`, `std::flat_map`, and `std::flat_set` are implemented."
@@ -1658,6 +1666,11 @@ features:
     paper: P3016
     lib: true
     support: [Clang 24, MSVC 14.51]
+    ftm:
+      - name: __cpp_lib_initializer_list
+        value: 202511L
+      - name: __cpp_lib_valarray
+        value: 202511L
 
   - desc: "`flat_meow` fixes"
     paper: P3567
@@ -1837,6 +1850,10 @@ features:
     paper: P3986
     lib: true
 
+  - desc: "Remove `try_append_range()` from `std::inplace_vector` for now"
+    paper: P4022
+    lib: true
+
   - desc: "Extend `std::is_within_lifetime()`"
     paper: P3450
     lib: true
@@ -1844,6 +1861,18 @@ features:
     ftm:
       - name: __cpp_lib_is_within_lifetime
         value: 202603L
+
+  - desc: "Replace `strided_slice` with `extent_slice` and `range_slice`"
+    paper: P3982
+    summary: "extent_slice specifies an output element count; range_slice specifies a half-open input interval and stride."
+    lib: true
+
+  - desc: "Remove the `std::span` initializer-list constructor for C++26"
+    paper: P4144
+    lib: true
+    summary: "Removes the initializer-list constructor introduced by P2447. P2447 is not part of the final C++26 interface."
+    keywords: ["P2447", "initializer_list", "span"]
+    support: [Clang 23]
 
   - desc: "Iterating on `parallel_scheduler`"
     paper: P3804
