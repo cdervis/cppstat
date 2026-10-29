@@ -1750,6 +1750,10 @@ features:
     support:
       - GCC 17
 
+  - desc: "Operation states and their lifetimes: execution control library fixes"
+    paper: P3373
+    lib: true
+
   - desc: "`std::start_lifetime()` and adjustments to union lifetime rules"
     paper: P3726
     lib: true
@@ -1794,6 +1798,10 @@ features:
     lib: true
     support: [Clang 24]
 
+  - desc: "A Wording Strategy for Inlinable Receivers"
+    paper: P3986
+    lib: true
+
   - desc: "Extend `std::is_within_lifetime()`"
     paper: P3450
     lib: true
@@ -1802,8 +1810,41 @@ features:
       - name: __cpp_lib_is_within_lifetime
         value: 202603L
 
+  - desc: "Iterating on `parallel_scheduler`"
+    paper: P3804
+    lib: true
+
+  - desc: "Fix Sender Algorithm Customization"
+    paper: P3826
+    lib: true
+
+  - desc: "Allocator use in `std::execution::task`"
+    paper: P3980
+    lib: true
+
   - desc: "Rename `std::meta::has_ellipsis_parameter` to `std::meta::is_vararg_function`"
     paper: P4156
+    lib: true
+
+  - desc: "Scheduler Affinity"
+    paper: P3941
+    lib: true
+
+  - desc: "`task_scheduler` support for parallel bulk execution"
+    paper: P3927
+    lib: true
+
+  - desc: "Rename `std::execution::affine_on` to `std::execution::affine`"
+    paper: P4151
+    lib: true
+
+  - desc: "Make `std::execution::sender_to` and `receiver_of` exposition-only"
+    paper: P4159
+    lib: true
+
+  - desc: "Rename execution concept tags and the parallel scheduler replacement namespace"
+    paper: [P4154, P3940, P4031]
+    summary: "Renames sender_t, receiver_t, scheduler_t and operation_state_t to *_tag, and system_context_replaceability to parallel_scheduler_replacement."
     lib: true
 
   - desc: "Conditionally support `#line` numbers outside [1, 2147483647]"
