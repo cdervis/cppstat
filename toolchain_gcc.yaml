@@ -520,6 +520,26 @@ infos:
     refs:
       - "https://gcc.gnu.org/gcc-16/"
 
+  - name: GCC 15.3
+    released: June 12, 2026
+    refs:
+      - "https://gcc.gnu.org/gcc-15/"
+
+  - name: GCC 14.4
+    released: June 26, 2026
+    refs:
+      - "https://gcc.gnu.org/gcc-14/"
+
+  - name: GCC 16.2
+    released: August 7, 2026
+    refs:
+      - "https://gcc.gnu.org/gcc-16/"
+
+  - name: GCC 13.5
+    released: September 11, 2026
+    refs:
+      - "https://gcc.gnu.org/gcc-13/"
+
   - name: GCC 17
     released: TBD
     refs:
