@@ -79,6 +79,7 @@ features:
     lib: true
     support:
       - GCC 12
+      - Clang 18
       - tool: MSVC 14.30
         status: partial
         note: "The counted_iterator part is implemented; the input range adaptors part is not implemented yet."
@@ -259,8 +260,7 @@ features:
       - MSVC 14.30
       - Xcode 14.3
       - tool: GCC 16
-        status: partial
-        note: "Not used by `std::vector` and `std::string` yet."
+        note: "Not used by `std::vector` and `std::string` yet; container adoption is an optional optimization."
     ftm:
       - name: __cpp_lib_allocate_at_least
         value: 202302L
@@ -704,6 +704,9 @@ features:
       - tool: GCC 4.6
         status: partial
         note: "Some `<cmath>` functions (such as `std::floor` and `std::ceil`) work in constant expressions as GCC extensions. Other functions, including `std::abs` in GCC 4.6, are not constexpr; the feature-test macro is not provided."
+      - tool: Clang 16
+        status: partial
+        note: "`std::isfinite()`, `std::isinf()`, `std::isnan()`, and `std::isnormal()` are `constexpr`. Other functions, including `std::ceil()` and `std::frexp()`, are not `constexpr`; the feature-test macro is not provided."
 
   - desc: "`std::unreachable()`"
     paper: P0627
@@ -751,7 +754,7 @@ features:
       - GCC 14
       - tool: Clang 21
         status: partial
-        note: "Only type traits are implemented."
+        note: "Only type traits are implemented. `std::tuple` and `std::pair` constructors still accept conversions that create dangling references."
       - MSVC 14.51
       - tool: Xcode 26.4
         status: partial
@@ -853,8 +856,7 @@ features:
 
   - desc: "De-deprecating volatile compound operations."
     paper: P2327
-    lib: true
-    support: [Xcode 15, MSVC 14.34]
+    support: [GCC 13, Clang 15, Xcode 15, MSVC 14.34]
 
   - desc: "`#warning`"
     paper: P2437
@@ -1132,7 +1134,10 @@ features:
       - GCC 16
       - tool: Clang 2.9
         status: partial
-        note: "Changes of `tuple`, `adjacent_view`, and `cartesian_product_view` are not yet implemented."
+        note: "Tuple-like construction of `std::pair` is supported. Changes to `std::tuple`, `adjacent_view`, and `cartesian_product_view` are not yet implemented."
+      - tool: Clang 20
+        status: partial
+        note: "In addition to tuple-like construction of `std::pair`, `zip_view` uses `std::tuple` for two ranges. Changes to `std::tuple`, `adjacent_view`, and `cartesian_product_view` are not yet implemented."
       - tool: MSVC 14.36
         status: partial
         note: "Implemented for `std::pair`."
@@ -1645,7 +1650,7 @@ features:
   - desc: "Disallowing user specialization of `std::allocator_traits`"
     paper: P2652
     lib: true
-    support: [Clang 19, MSVC 14.37]
+    support: [GCC 16, Clang 19, MSVC 14.37]
 
   - desc: "Deprecating `std::numeric_limits::has_denorm`"
     paper: P2614
