@@ -90,6 +90,9 @@ features:
       - Clang 3.6
       - MSVC 14.12
       - Xcode
+    ftm:
+      - name: __cpp_nontype_template_args
+        value: 201411L
 
   - desc: "Unary folds and empty parameter packs"
     paper: P0036
@@ -188,6 +191,9 @@ features:
       - MSVC 14.11
       - Xcode
       - R++
+    ftm:
+      - name: __cpp_capture_star_this
+        value: 201603L
 
   - desc: "Construction rules for `enum class` values"
     paper: P0138
@@ -594,6 +600,9 @@ features:
       - Clang 3.8
       - MSVC 14.0
       - Xcode
+    ftm:
+      - name: __cpp_lib_as_const
+        value: 201510L
 
   - desc: "Rounding functions for `chrono::duration` and `chrono::time_point`"
     paper: P0092

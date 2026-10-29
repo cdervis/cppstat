@@ -163,6 +163,9 @@ features:
       - Clang 3.4
       - MSVC 12.0
       - Xcode
+    ftm:
+      - name: __cpp_lib_transparent_operators
+        value: 201210L
 
   - desc: "`std::result_of` and SFINAE"
     paper: N3462
@@ -172,6 +175,9 @@ features:
       - Clang
       - MSVC 14.0
       - Xcode
+    ftm:
+      - name: __cpp_lib_result_of_sfinae
+        value: 201210L
 
   - desc: "`constexpr` for `<chrono>`"
     paper: N3469
@@ -208,6 +214,9 @@ features:
       - Clang 3.4
       - MSVC 14.0
       - Xcode
+    ftm:
+      - name: __cpp_lib_integral_constant_callable
+        value: 201304L
 
   - desc: "[User-defined literals](https://cppreference.com/cpp/language/user_literal#Standard_library) for `<chrono>` and `<string>`"
     paper: N3642
@@ -232,6 +241,9 @@ features:
       - Clang 3.4
       - MSVC 14.0
       - Xcode
+    ftm:
+      - name: __cpp_lib_null_iterators
+        value: 201304L
 
   - desc: "`std::quoted()`"
     paper: N3654
@@ -253,6 +265,9 @@ features:
       - Clang 3.4
       - MSVC 12.0
       - Xcode
+    ftm:
+      - name: __cpp_lib_transformation_trait_aliases
+        value: 201304L
 
   - desc: "`std::make_unique()`"
     paper: N3656
