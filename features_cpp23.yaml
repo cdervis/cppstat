@@ -1674,3 +1674,11 @@ features:
   - desc: "Declarations and where to find them"
     paper: P1787
     support: [MSVC]
+
+  - desc: "Remove garbage collection and reachability-based leak detection"
+    paper: P2186
+    lib: true
+    support:
+      - GCC 12
+      - Clang 14
+      - MSVC 14.30

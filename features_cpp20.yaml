@@ -1872,6 +1872,18 @@ features:
     lib: true
     support: [GCC 9, Clang 12, MSVC 14.25]
 
+  - desc: "Deprecate POD terminology and `std::is_pod`"
+    paper: P0767
+    summary: "Use trivial and standard-layout properties separately; is_pod and is_pod_v remain available but deprecated."
+    lib: true
+    support: [GCC 10, Clang 21, MSVC 14.25, Xcode 26.4]
+
+  - desc: "Remove the tuple-like interface of fixed-extent `std::span`"
+    paper: P2116
+    summary: "Removes span specializations of tuple_size and tuple_element, and the get overload."
+    lib: true
+    support: [GCC 10, Clang 11, MSVC 14.27]
+
   - desc: "Clarify `std::istream_iterator` initialization and input operations"
     paper: P0738
     summary: "Requires the first read during construction, value-initializes the stored value, and refines constexpr construction and trivial copy/destruction requirements."

@@ -1120,6 +1120,22 @@ features:
       - tool: MSVC 14.0
         note: "Requires Visual Studio 2015 Update 3."
 
+  - desc: "Remove allocator support from `std::function`"
+    paper: P0302
+    summary: "Removes allocator-taking constructors and the uses_allocator specialization."
+    lib: true
+    support:
+      - tool: GCC
+        note: "libstdc++ never provided the allocator-taking constructors."
+      - Clang 4
+      - MSVC 14.12
+
+  - desc: "Deprecate `std::shared_ptr::unique()`"
+    paper: P0521
+    summary: "Also clarifies that use_count provides no synchronization and can be approximate in concurrent code."
+    lib: true
+    support: [Clang 18, MSVC 14.12]
+
   - desc: "Struct-based in-place construction tags"
     paper: P0504
     summary: "Defines in_place_t, in_place_type_t and in_place_index_t as struct tags, and excludes those tags from converting any/variant constructors."
@@ -1135,6 +1151,14 @@ features:
         note: "The <regex> constants are not inline."
       - MSVC 14.12
 
+  - desc: "Remove deprecated iostream aliases and forwarding members"
+    paper: P0004
+    lib: true
+    support:
+      - Clang 3.8
+      - tool: MSVC 14.0
+        note: "Requires Visual Studio 2015 Update 2 with _HAS_OLD_IOSTREAMS_MEMBERS=0."
+
   - desc: "Construct `std::future_error` from `std::future_errc`"
     paper: P0517
     lib: true
@@ -1143,3 +1167,21 @@ features:
       - tool: Clang 18
         note: "Earlier libc++ versions list this as implemented, but a misspelled preprocessor guard disables the future_errc constructor."
       - MSVC 14.11
+
+  - desc: "Deprecate `<codecvt>` and the wide-string conversion wrappers"
+    paper: P0618
+    summary: "Deprecates codecvt_utf8, codecvt_utf16, codecvt_utf8_utf16, wstring_convert and wbuffer_convert."
+    lib: true
+    support: [Clang 15, MSVC 14.12]
+
+  - desc: "Remove `auto_ptr`, `random_shuffle` and old function adaptors"
+    paper: N4190
+    summary: "Removes unary_function, binary_function, ptr_fun, mem_fun, mem_fun_ref, bind1st and bind2nd, including auto_ptr interoperability overloads."
+    lib: true
+    support:
+      - tool: GCC
+        status: unsupported
+        note: "Retained for backward compatibility in libstdc++."
+      - Clang 15
+      - tool: MSVC 14.0
+        note: "Removal is controlled by _HAS_AUTO_PTR_ETC=0; later C++17 modes disable these facilities by default."
