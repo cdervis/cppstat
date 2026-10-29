@@ -638,7 +638,9 @@ features:
     lib: true
     support:
       - GCC 9
-      - Clang 17 (partial)
+      - tool: Clang 17
+        status: partial
+        note: "Requires `-fexperimental-library`. Some policy overloads, including `std::copy_if()` and `std::inclusive_scan()`, are missing."
       - MSVC 14.14
     ftm:
       - name: __cpp_lib_execution
@@ -704,7 +706,12 @@ features:
   - desc: "[Mathematical special functions](https://cppreference.com/cpp/numeric/special_math)"
     paper: P0226
     lib: true
-    support: [GCC 7, MSVC 14.14]
+    support:
+      - GCC 7
+      - tool: Clang 19
+        status: partial
+        note: "Implements `std::hermite()`, but the other mathematical special function families are missing. ([Issue](https://github.com/llvm/llvm-project/issues/99939))"
+      - MSVC 14.14
     ftm:
       - name: __cpp_lib_math_special_functions
         value: 201603L
@@ -920,7 +927,9 @@ features:
       - GCC 7
       - tool: Clang 4
         status: partial
-        note: "The parallel versions (`std::execution::par`) are not implemented yet. ([Issue](https://github.com/llvm/llvm-project/issues/103640))"
+        note: "The parallel versions (`std::execution::par`) are not implemented. ([Issue](https://github.com/llvm/llvm-project/issues/103640))"
+      - tool: Clang 24
+        note: "The parallel overloads require libc++ experimental features (`-fexperimental-library`)."
       - MSVC 14.11
       - tool: Xcode 15
         status: partial
@@ -957,7 +966,7 @@ features:
         note: "Adds only `std::to_chars()` support for `float` and `double`."
       - tool: Clang 20
         status: partial
-        note: "Adds `std::from_chars()` support for `float` and `double`. Support is complete except for `long double`.\n\nIn total, the current status is:\n\n| Type             | `to_chars` | `from_chars` |\n|------------------|------------|--------------|\n| integers         | libc++ 7   | libc++ 7     |\n| `float`/`double` | libc++ 14  | libc++ 20    |\n| `long double`    | -          | -            |\n\n---\n\n**Note**: Calling both functions with `long double` falls back to the `double` overload."
+        note: "Adds `std::from_chars()` support for `float` and `double`. Support is complete except for `long double`.\n\nIn total, the current status is:\n\n| Type             | `to_chars` | `from_chars` |\n|------------------|------------|--------------|\n| integers         | libc++ 7   | libc++ 7     |\n| `float`/`double` | libc++ 14  | libc++ 20    |\n| `long double`    | narrows to `double` | unavailable |\n\n---\n\n**Note**: `std::to_chars()` has `long double` overloads but converts the value to `double`; `std::from_chars()` has no `long double&` overload."
       - tool: MSVC 14.14
         status: partial
         note: "No support for floating-point types, only integer types."
@@ -1120,27 +1129,48 @@ features:
     paper: P0521
     summary: "Also clarifies that `use_count()` provides no synchronization and can be approximate in concurrent code."
     lib: true
-    support: [Clang 18, MSVC 14.12]
+    support:
+      - tool: GCC 7.1
+        note: "`std::shared_ptr::unique()` does not emit a deprecation warning."
+      - Clang 18
+      - MSVC 14.12
 
   - desc: "Struct-based in-place construction tags"
     paper: P0504
-    summary: "Defines `std::in_place_t`, `std::in_place_type_t` and `std::in_place_index_t` as struct tags, and excludes those tags from converting `std::any` and `std::variant` constructors."
+    summary: "Defines `std::in_place_t`, `std::in_place_type_t` and `std::in_place_index_t` as struct tags. Excludes type tags from the converting `std::any` constructor, and type and index tags from the converting `std::variant` constructor."
     lib: true
-    support: [Clang 4, MSVC 14.10]
+    support:
+      - tool: GCC 7.1
+        status: partial
+        note: "The converting `std::variant` constructor accepts in-place tags that should be excluded."
+      - GCC 8.4
+      - Clang 4
+      - MSVC 14.10
 
   - desc: "Inline variables for standard library constants"
     paper: P0607
     lib: true
     support:
+      - tool: GCC 7.1
+        status: partial
+        note: "Some constants, including the `<regex>` error constants and, where provided, execution policies, are not inline."
+      - GCC 12.3
       - tool: Clang 6
         status: partial
-        note: "The `<regex>` constants are not inline."
+        note: "Some tag objects, including `std::piecewise_construct` and `std::defer_lock`, have internal linkage. Some `<regex>` constants are enumerators, so their addresses cannot be taken."
+      - tool: Clang 17
+        status: partial
+        note: "Makes tag objects such as `std::piecewise_construct` and `std::defer_lock` inline. Some `<regex>` constants are enumerators, so their addresses cannot be taken."
       - MSVC 14.12
 
   - desc: "Remove deprecated iostream aliases and forwarding members"
     paper: P0004
     lib: true
     support:
+      - tool: GCC 7.1
+        status: partial
+        note: "Retains the old `std::ios_base` aliases and `std::streambuf::stossc()` in C++17 mode."
+      - GCC 8.1
       - Clang 3.8
       - tool: MSVC 14.0
         note: "Requires Visual Studio 2015 Update 2 with _HAS_OLD_IOSTREAMS_MEMBERS=0."
@@ -1158,7 +1188,11 @@ features:
     paper: P0618
     summary: "Deprecates `std::codecvt_utf8`, `std::codecvt_utf16`, `std::codecvt_utf8_utf16`, `std::wstring_convert` and `std::wbuffer_convert`."
     lib: true
-    support: [Clang 15, MSVC 14.12]
+    support:
+      - tool: GCC 7.1
+        note: "GCC 15 emits deprecation warnings for `std::wstring_convert` and `std::wbuffer_convert`, but not the `<codecvt>` facets; tested earlier versions emit no warnings for these facilities."
+      - Clang 15
+      - MSVC 14.12
 
   - desc: "Class template argument deduction: explicit guides and forwarding-reference rules"
     paper: P0512
@@ -1167,7 +1201,12 @@ features:
   - desc: "Class template argument deduction: copy candidates and initialization contexts"
     paper: P0620
     summary: "Refines deduction-guide ordering, default initialization, access and redeclaration rules, and deduction in new-expressions."
-    support: [Clang 7]
+    support:
+      - tool: GCC 7.1
+        status: partial
+        note: "Deduction-guide redeclarations are not diagnosed before GCC 11; class-scope deduction guides are supported starting with GCC 12."
+      - GCC 12.1
+      - Clang 7
 
   - desc: "Remove `std::auto_ptr`, `std::random_shuffle()` and old function adaptors"
     paper: N4190
