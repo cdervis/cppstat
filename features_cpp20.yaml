@@ -478,8 +478,18 @@ features:
       - GCC 11 (partial)
       - GCC 13 (partial)
       - GCC 14
-      - Clang 7 (partial)
-      - Clang 19 (partial)
+      - tool: Clang 8
+        status: partial
+        note: "Supports calendar types and the `sys_time`/`local_time` aliases; parsing and time-zone support are not implemented."
+      - tool: Clang 19
+        status: partial
+        note: "Adds the time-zone database and `std::chrono::zoned_time`, requiring `-fexperimental-library`. Parsing remains unimplemented."
+      - tool: Clang 20
+        status: partial
+        note: "In addition to Clang 19, supports `std::chrono::utc_clock`. Parsing remains unimplemented."
+      - tool: Clang 21
+        status: partial
+        note: "In addition to Clang 20, supports `std::chrono::tai_clock` and `std::chrono::gps_clock`. Parsing remains unimplemented."
       - MSVC 14.29
       - Xcode 10 (partial)
     ftm:
@@ -1609,7 +1619,12 @@ features:
   - desc: "Standard library header units"
     paper: P1502
     lib: true
-    support: [GCC 11, MSVC 14.29]
+    support:
+      - GCC 11
+      - tool: Clang 15
+        status: partial
+        note: "Experimental support requires manually precompiling headers and passing each BMI with `-fmodule-file`. Some combinations of header units fail to merge declarations in Clang 15, including `<vector>` with `<iostream>`."
+      - MSVC 14.29
 
   - desc: "Output `chrono::day`s with 'd' suffix"
     paper: P1650
@@ -1715,7 +1730,9 @@ features:
     support:
       - GCC 10 (partial)
       - GCC 11
-      - Clang 18 (partial)
+      - tool: Clang 18
+        status: partial
+        note: "Reference template arguments referring to instantiation-dependent objects and subobjects are not fully supported."
       - MSVC 14.26
       - Xcode 13.4.1 (partial)
       - R++
@@ -1895,4 +1912,9 @@ features:
     paper: P0738
     summary: "Requires the first read during construction, value-initializes the stored value, and refines constexpr construction and trivial copy/destruction requirements."
     lib: true
-    support: [GCC 10, MSVC 14.25]
+    support:
+      - GCC 10
+      - tool: Clang 15
+        status: partial
+        note: "Supports construction from `std::default_sentinel`, but the stream constructor does not value-initialize the stored value before the first extraction."
+      - MSVC 14.25
