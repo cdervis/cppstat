@@ -293,7 +293,9 @@ features:
         value: 202306L
     support:
       - Clang 22
-      - GCC 17
+      - tool: GCC 17
+        status: partial
+        note: "The function is implemented, but the standard `__cpp_lib_is_within_lifetime` macro is not defined."
 
   - desc: "Native handles and file streams"
     paper: P1759
@@ -981,9 +983,7 @@ features:
         status: partial
         note: "Supports the older proposal, with a different return type."
       - Clang 23
-      - tool: GCC 16
-        status: partial
-        note: "Implements the original proposal; P3936 changes to the return type are not implemented."
+      - GCC 16
     ftm:
       - name: __cpp_lib_atomic_ref
         value: 202411L
@@ -1089,7 +1089,7 @@ features:
   - desc: "Defang and deprecate `std::memory_order::consume`"
     paper: P3475
     lib: true
-    support: [Clang 24 (partial)]
+    support: [Clang 24]
 
   - desc: "Concept and variable-template template-parameters"
     paper: P2841
@@ -1579,6 +1579,10 @@ features:
     paper: P3008
     summary: "Adds atomic minimum/maximum operations between floating-point types, as well as non-atomic `<cmath>` functions."
     lib: true
+    support:
+      - tool: GCC 16
+        status: partial
+        note: "Floating-point `fetch_min()` and `fetch_max()` are implemented. The four fixed-semantics variants and the updated feature-test macro are missing."
     ftm:
       - name: __cpp_lib_atomic_min_max
         value: 202506L
@@ -1843,6 +1847,7 @@ features:
   - desc: "Proposed Resolution for NB Comment GB13-309 `std::atomic_ref<T>` is not convertible to `std::atomic_ref<const T>`"
     paper: P3860
     lib: true
+    support: [GCC 16]
 
   - desc: "Harmonize proxy-reference operations (LWG 3638 and 4187)"
     paper: P3612
@@ -1905,7 +1910,11 @@ features:
   - desc: "Extend `std::is_within_lifetime()`"
     paper: P3450
     lib: true
-    support: [Clang 24]
+    support:
+      - tool: GCC 17
+        status: partial
+        note: "The extended overload is implemented, but the standard `__cpp_lib_is_within_lifetime` macro is not defined."
+      - Clang 24
     ftm:
       - name: __cpp_lib_is_within_lifetime
         value: 202603L
