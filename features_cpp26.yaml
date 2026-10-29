@@ -333,11 +333,7 @@ features:
   - desc: "Adding the new 2022 SI prefixes (`std::quecto`, `std::ronto`, `std::ronna`, `std::quetta`)"
     paper: P2734
     lib: true
-    support:
-      - GCC 14
-      - tool: Clang 17
-        status: partial
-        note: "Only the feature-testing macro has been added (`__cpp_lib_ratio`)."
+    support: [GCC 14, Clang 17]
     ftm:
       - name: __cpp_lib_ratio
         value: 202306L
@@ -351,10 +347,17 @@ features:
         value: 202306L
     support: [GCC 16]
 
-  - desc: "Bind front and back to NTTP callables (`std::bind_front()`, `std::bind_back()`, `std::not_fn`)"
+  - desc: "Bind front and back to NTTP callables (`std::bind_front()`, `std::bind_back()`, `std::not_fn()`)"
     paper: P2714
     lib: true
-    support: [GCC 16, Clang 20 (partial)]
+    support:
+      - GCC 16
+      - tool: Clang 20
+        status: partial
+        note: "Only the NTTP overload of `std::not_fn()` is implemented."
+      - tool: Clang 23
+        status: partial
+        note: "The NTTP overloads of `std::not_fn()` and `std::bind_front()` are implemented; `std::bind_back()` remains unavailable."
     ftm:
       - name: __cpp_lib_bind_front
         value: 202306L
@@ -364,7 +367,7 @@ features:
         desc: "`std::bind_back()` is available"
       - name: __cpp_lib_not_fn
         value: 202306L
-        desc: "`std::not_fn` is available"
+        desc: "`std::not_fn()` is available"
 
   - desc: "`std::submdspan()`"
     paper: [P2630, P3355]
@@ -673,7 +676,12 @@ features:
   - desc: "Permit an efficient implementation of `std::print()`"
     paper: [P3107, P3235]
     lib: true
-    support: [GCC 16, MSVC 14.43]
+    support:
+      - GCC 16
+      - tool: Clang 20
+        status: partial
+        note: "Provides `std::enable_nonlocking_formatter_optimization` and fundamental/string opt-ins. Buffered printing functions, the additional P3235 formatter opt-ins, and the updated feature-test macro are missing."
+      - MSVC 14.43
     ftm:
       - name: __cpp_lib_print
         value: 202403L
@@ -1058,6 +1066,7 @@ features:
   - desc: "`constexpr` `std::inplace_vector` for non-trivial types"
     paper: P3074
     lib: true
+    support: [GCC 17]
     ftm:
       - name: __cpp_lib_constexpr_inplace_vector
         value: 202502L
@@ -1185,12 +1194,18 @@ features:
       - tool: GCC 16
         status: partial
         note: "Only the flat associative containers are constexpr."
+      - tool: GCC 17
+        status: partial
+        note: "Adds `constexpr` `std::deque`, `std::queue`, `std::priority_queue`, and `std::stack`."
       - tool: Clang 21
         status: partial
-        note: "Only `std::priority_queue` is constexpr."
+        note: "`std::forward_list`, `std::list`, and `std::priority_queue` are `constexpr`."
       - tool: Clang 22
         status: partial
         note: "Adds constexpr `std::flat_map`, `std::flat_multimap`, `std::flat_set`, and `std::flat_multiset`."
+      - tool: Clang 23
+        status: partial
+        note: "Adds `constexpr` `std::map`, `std::multimap`, `std::set`, and `std::multiset`. The map node handle's `mapped()` member is not `constexpr`."
       - tool: Xcode 26.4
         status: partial
         note: "`std::forward_list`, `std::list`, `std::priority_queue`, `std::flat_map`, and `std::flat_set` are implemented."
@@ -1264,9 +1279,12 @@ features:
       - tool: GCC 15
         status: partial
         note: "Calls `abort()` instead of using C++26 contracts when a hardened precondition is violated."
+      - tool: GCC 17
+        status: partial
+        note: "Adds the standard hardening feature-test macros; failed preconditions still bypass C++26 contract violation handling."
       - tool: Clang 18
         status: partial
-        note: "Calls `__builtin_expect(false, ...)` instead of using C++26 contracts when a hardened precondition is violated."
+        note: "Uses the library assertion handler instead of C++26 contract violation handling."
       - tool: MSVC 14.44
         status: partial
         note: "Calls `__fastfail()` instead of using C++26 contracts when a hardened precondition is violated."
@@ -1619,9 +1637,10 @@ features:
       - name: __cpp_lib_ranges_indices
         value: 202506L
 
-  - desc: "Prevent path presentation problems"
-    paper: P2319
+  - desc: "Prevent path presentation problems (`std::filesystem::path::display_string()` and `native_encoded_string()`)"
+    paper: [P2319, LWG4512]
     lib: true
+    support: [GCC 17]
     ftm:
       - name: __cpp_lib_format_path
         value: 202506L
@@ -1675,7 +1694,7 @@ features:
   - desc: "Resolve inconsistencies in begin/end for `std::valarray` and braced initializer lists"
     paper: P3016
     lib: true
-    support: [Clang 24, MSVC 14.51]
+    support: [GCC 17, Clang 24, MSVC 14.51]
     ftm:
       - name: __cpp_lib_initializer_list
         value: 202511L
@@ -1685,7 +1704,7 @@ features:
   - desc: "`flat_meow` fixes"
     paper: P3567
     lib: true
-    support: [Clang 22, MSVC 14.51]
+    support: [GCC 16.2, Clang 22, MSVC 14.51]
     ftm:
       - name: __cpp_lib_flat_map
         value: 202511L
@@ -1712,6 +1731,9 @@ features:
   - desc: "Remove `evaluation_exception()` from contract-violation handling for C++26"
     paper: P3819
     lib: true
+    support:
+      - tool: GCC 16
+        note: "Requires `-fcontracts` to enable the contracts library interface."
 
   - desc: "Library Support for Expansion Statements"
     paper: P1789
@@ -1797,6 +1819,7 @@ features:
   - desc: "`std::start_lifetime()` and adjustments to union lifetime rules"
     paper: P3726
     lib: true
+    support: [GCC 17]
     ftm:
       - name: __cpp_lib_start_lifetime
         value: 202603L
@@ -1872,11 +1895,12 @@ features:
   - desc: "Harmonize proxy-reference operations (LWG 3638 and 4187)"
     paper: P3612
     lib: true
+    support: [GCC 17, Clang 16]
 
   - desc: "Define `std::type_order` without a non-structural template argument"
     paper: P3778
     lib: true
-    support: [Clang 24]
+    support: [GCC 16, Clang 24]
 
   - desc: "Consistency fix: Make simd reductions SIMD-generic"
     paper: P3690
@@ -1905,7 +1929,12 @@ features:
   - desc: "Allow incomplete types in `std::type_order`"
     paper: P4140
     lib: true
-    support: [Clang 24]
+    support:
+      - tool: GCC 16
+        status: partial
+        note: "Incomplete types are supported, but forbidden user specializations are not diagnosed."
+      - GCC 17
+      - Clang 24
 
   - desc: "A Wording Strategy for Inlinable Receivers"
     paper: P3986
@@ -1915,16 +1944,24 @@ features:
     paper: P3978
     summary: "Adds runtime-argument call and subscript support, preserves wrapped constant results where possible, and moves the facility to `<utility>`."
     lib: true
-    support: [Clang 23]
+    support: [GCC 16, Clang 23]
+    ftm:
+      - name: __cpp_lib_constant_wrapper
+        value: 202603L
 
   - desc: "Avoid double indirection when converting `std::function_ref` qualifiers"
     paper: P3961
     lib: true
-    support: [Clang 24]
+    support: [GCC 17, Clang 24]
 
   - desc: "Better return types in `std::inplace_vector` and `std::exception_ptr_cast()`"
     paper: P3981
     lib: true
+    support:
+      - tool: GCC 16
+        status: partial
+        note: "The `std::inplace_vector` return types are updated, but `std::exception_ptr_cast()` still returns a pointer."
+      - GCC 17
     ftm:
       - name: __cpp_lib_exception_ptr_cast
         value: 202603L
@@ -1934,6 +1971,7 @@ features:
   - desc: "Remove `try_append_range()` from `std::inplace_vector` for now"
     paper: P4022
     lib: true
+    support: [GCC 16]
 
   - desc: "Extend `std::is_within_lifetime()`"
     paper: P3450
@@ -1951,13 +1989,17 @@ features:
     paper: P3982
     summary: "`extent_slice` specifies an output element count; `range_slice` specifies a half-open input interval and stride."
     lib: true
+    support: [GCC 16]
+    ftm:
+      - name: __cpp_lib_submdspan
+        value: 202603L
 
   - desc: "Remove the `std::span` initializer-list constructor for C++26"
     paper: P4144
     lib: true
     summary: "Removes the initializer-list constructor introduced by P2447. P2447 is not part of the final C++26 interface."
     keywords: ["P2447", "initializer_list", "span"]
-    support: [Clang 23]
+    support: [GCC 16, Clang 23]
 
   - desc: "Iterating on `parallel_scheduler`"
     paper: P3804
@@ -1966,6 +2008,13 @@ features:
   - desc: "Extend algorithm list-initialization support to `std::uninitialized_fill()`"
     paper: P3787
     lib: true
+    support:
+      - tool: GCC 16
+        status: partial
+        note: "Serial and non-ranges execution-policy overloads support braced values; parallel ranges overloads remain unavailable."
+    ftm:
+      - name: __cpp_lib_algorithm_default_value_type
+        value: 202603L
 
   - desc: "A conservative fix for `constexpr` `std::uncaught_exceptions()` and `std::current_exception()`"
     paper: P3842
@@ -1989,7 +2038,10 @@ features:
   - desc: "Rename `std::runtime_format()` to `std::dynamic_format()`"
     paper: P3953
     lib: true
-    support: [Clang 23]
+    support: [GCC 16, Clang 23]
+    ftm:
+      - name: __cpp_lib_format
+        value: 202603L
 
   - desc: "Scheduler Affinity"
     paper: P3941
