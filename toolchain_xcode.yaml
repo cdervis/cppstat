@@ -479,12 +479,31 @@ infos:
     refs:
       - https://developer.apple.com/documentation/xcode-release-notes/xcode-26-release-notes
 
+  - name: Xcode 26.0.1
+    released: September 22, 2025
+    requires: macOS 15.6 (Sequoia)
+    apple_clang: 17.0.0 (clang-1700.3.19.1)
+    refs:
+      - https://developer.apple.com/news/?id=4uj8znqq
+      - https://developer.apple.com/xcode/system-requirements
+      - https://apps.apple.com/us/app/xcode/id497799835
+      - https://developer.apple.com/download/all/?q=Xcode%2026.0.1
+
   - name: Xcode 26.1
     released: November 3, 2025
     requires: macOS 15.6 (Sequoia)
     apple_clang: 17.0.0 (clang-1700.4.4.1)
     refs:
       - https://developer.apple.com/documentation/xcode-release-notes/xcode-26_1-release-notes
+
+  - name: Xcode 26.1.1
+    released: November 11, 2025
+    requires: macOS 15.6 (Sequoia)
+    apple_clang: 17.0.0 (clang-1700.4.4.1)
+    refs:
+      - https://developer.apple.com/xcode/system-requirements
+      - https://apps.apple.com/us/app/xcode/id497799835
+      - https://developer.apple.com/download/all/?q=Xcode%2026.1.1
 
   - name: Xcode 26.2
     released: December 12, 2025
@@ -506,3 +525,52 @@ infos:
     apple_clang: 21.0.0 (clang-2100.0.123.102)
     refs:
       - https://developer.apple.com/documentation/xcode-release-notes/xcode-26_4-release-notes
+
+  - name: Xcode 26.4.1
+    released: April 16, 2026
+    requires: macOS 26.2 (Tahoe)
+    apple_clang: 21.0.0 (clang-2100.0.123.102)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-26_4_1-release-notes
+      - https://developer.apple.com/xcode/system-requirements
+      - https://apps.apple.com/us/app/xcode/id497799835
+      - https://developer.apple.com/download/all/?q=Xcode%2026.4.1
+
+  - name: Xcode 26.5
+    released: May 11, 2026
+    requires: macOS 26.2 (Tahoe)
+    apple_clang: 21.0.0 (clang-2100.1.1.101)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-26_5-release-notes
+      - https://developer.apple.com/xcode/system-requirements
+      - https://apps.apple.com/us/app/xcode/id497799835
+      - https://developer.apple.com/download/all/?q=Xcode%2026.5
+
+  - name: Xcode 26.6
+    released: June 25, 2026
+    requires: macOS 26.2 (Tahoe)
+    apple_clang: 21.0.0 (clang-2100.1.1.101)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-26_6-release-notes
+      - https://developer.apple.com/xcode/system-requirements
+      - https://apps.apple.com/us/app/xcode/id497799835
+      - https://developer.apple.com/download/all/?q=Xcode%2026.6
+
+  - name: Xcode 27
+    released: September 14, 2026
+    requires: macOS 26.6 (Tahoe)
+    apple_clang: 21.0.0 (clang-2100.3.34.2)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-27-release-notes
+      - https://developer.apple.com/xcode/system-requirements
+      - https://apps.apple.com/us/app/xcode/id497799835
+      - https://developer.apple.com/download/all/?q=Xcode%2027
+
+  - name: Xcode 27.1
+    released: October 15, 2026
+    requires: macOS 26.6 (Tahoe)
+    apple_clang: 21.0.0 (clang-2100.3.34.2)
+    refs:
+      - https://developer.apple.com/documentation/xcode-release-notes/xcode-27_1-release-notes
+      - https://developer.apple.com/xcode/system-requirements
+      - https://apps.apple.com/us/app/xcode/id497799835
