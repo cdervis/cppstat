@@ -1695,3 +1695,11 @@ features:
       - GCC 12
       - Clang 14
       - MSVC 14.30
+
+  - desc: "Clarify the status of the C compatibility headers"
+    paper: P2340
+    lib: true
+    support:
+      - GCC
+      - Clang
+      - MSVC

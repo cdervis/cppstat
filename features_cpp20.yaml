@@ -113,9 +113,6 @@ features:
       - Clang 7
       - MSVC 14.22
       - Xcode 10
-    ftm:
-      - name: __cpp_lib_endian
-        value: 201907L
 
   - desc: "Extending `std::make_shared()` to support arrays"
     paper: P0674
@@ -1877,6 +1874,23 @@ features:
     summary: "Use trivial and standard-layout properties separately; is_pod and is_pod_v remain available but deprecated."
     lib: true
     support: [GCC 10, Clang 21, MSVC 14.25, Xcode 26.4]
+
+  - desc: "Move `std::endian` to `<bit>` and add its feature-test macro"
+    paper: P1612
+    lib: true
+    support:
+      - tool: GCC 9
+        status: partial
+        note: "Available through `<bit>`, but `__cpp_lib_endian` is missing."
+      - GCC 10
+      - tool: Clang 9
+        status: partial
+        note: "Available through `<bit>`, but `__cpp_lib_endian` is missing."
+      - Clang 10
+      - MSVC 14.25
+    ftm:
+      - name: __cpp_lib_endian
+        value: 201907L
 
   - desc: "Remove the tuple-like interface of fixed-extent `std::span`"
     paper: P2116

@@ -586,6 +586,9 @@ features:
     paper: P2264
     content: assert-variadic.md
     lib: true
+    support:
+      - tool: GCC
+        note: "Requires a C library with a variadic `assert` macro, such as glibc 2.44; this is not provided by GCC itself."
 
   - desc: "A free function linear algebra interface based on the BLAS (`<linalg>`)"
     paper: [P1673, P3050, P3222]
@@ -1035,7 +1038,16 @@ features:
   - desc: "Add new library headers from C23 (`<stdbit.h>` and `<stdckdint.h>`)"
     paper: P3370
     lib: true
-    support: [GCC 15]
+    support:
+      - tool: GCC 15
+        status: partial
+        note: "The headers are implemented, but their feature-test macros are missing."
+      - GCC 16
+    ftm:
+      - name: __cpp_lib_stdbit_h
+        value: 202603L
+      - name: __cpp_lib_stdckdint_h
+        value: 202603L
 
   - desc: "`constexpr` `std::atomic` and `std::atomic_ref`"
     paper: P3309
@@ -1858,6 +1870,10 @@ features:
     ftm:
       - name: __cpp_trivial_union
         value: 202603L
+
+  - desc: "C++26 should refer to C23 not C17"
+    paper: P3348
+    lib: true
 
   - desc: "Proposed Resolution for NB Comment GB13-309 `std::atomic_ref<T>` is not convertible to `std::atomic_ref<const T>`"
     paper: P3860
