@@ -519,6 +519,9 @@ features:
       - Clang 14
       - MSVC 14.31
       - Xcode 14.3
+    ftm:
+      - name: __cpp_lib_ranges
+        value: 202110L
 
   - desc: "Add support for `std::generator`-like types to `std::format()`"
     paper: P2418

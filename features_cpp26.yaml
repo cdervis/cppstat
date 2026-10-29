@@ -832,6 +832,9 @@ features:
       - GCC 15
       - Clang 19
       - MSVC 14.42
+    ftm:
+      - name: __cpp_lib_ranges
+        value: 202406L
 
   - desc: "dextents index type parameter (`std::dims`)"
     paper: P2389
@@ -1124,13 +1127,19 @@ features:
         value: 202502L
     content: embed.md
 
-  - desc: "`views::to_input()` (`ranges::to_input_view`)"
-    paper: P3137
+  - desc: "`views::as_input()` (`ranges::as_input_view`)"
+    paper: [P3137, P3828]
     summary: "Convert any range to an input range."
     lib: true
-    support: [GCC 15]
+    support:
+      - tool: GCC 15
+        status: partial
+        note: "Implements the original `views::to_input` name; P3828 renames it to `views::as_input`."
+      - GCC 16
     ftm:
       - name: __cpp_lib_ranges_to_input
+        value: 202502L
+      - name: __cpp_lib_ranges_as_input
         value: 202502L
 
   - desc: "Put `std::monostate` in `<utility>`"
@@ -1783,6 +1792,22 @@ features:
       - name: __cpp_lib_replaceable_contract_violation_handler
         value: 202603L
 
+  - desc: "Make user-defined constructors of view iterators and sentinels private"
+    paper: P3059
+    lib: true
+    support:
+      - GCC
+      - Clang 24
+
+  - desc: "Filter view extensions for safer use"
+    paper: P3725
+    lib: true
+    support:
+      - GCC 16
+    ftm:
+      - name: __cpp_lib_ranges_filter
+        value: 202603L
+
   - desc: "Adjustments to union lifetime rules"
     paper: P3726
     support: [GCC 17]
@@ -1792,6 +1817,10 @@ features:
 
   - desc: "Proposed Resolution for NB Comment GB13-309 `std::atomic_ref<T>` is not convertible to `std::atomic_ref<const T>`"
     paper: P3860
+    lib: true
+
+  - desc: "Harmonize proxy-reference operations (LWG 3638 and 4187)"
+    paper: P3612
     lib: true
 
   - desc: "Define `std::type_order` without a non-structural template argument"
@@ -1818,6 +1847,10 @@ features:
 
   - desc: "Iterating on `parallel_scheduler`"
     paper: P3804
+    lib: true
+
+  - desc: "Extend algorithm list-initialization support to `std::uninitialized_fill()`"
+    paper: P3787
     lib: true
 
   - desc: "Fix Sender Algorithm Customization"

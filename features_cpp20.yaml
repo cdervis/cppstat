@@ -1884,6 +1884,12 @@ features:
     lib: true
     support: [GCC 10, Clang 11, MSVC 14.27]
 
+  - desc: "`std::ranges::ssize()`"
+    paper: P1970
+    summary: "Signed size for sized ranges, including ranges sized by subtracting their iterator and sentinel."
+    lib: true
+    support: [GCC 10, Clang 13]
+
   - desc: "Revise interruptible `std::condition_variable_any` wait signatures"
     paper: P1869
     summary: "Places stop_token after the lock argument and renames the untimed wait_until overload to wait."
