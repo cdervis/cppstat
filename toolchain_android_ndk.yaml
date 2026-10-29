@@ -6,23 +6,37 @@ infos:
     refs:
       - "https://developer.android.com/ndk"
 
+  - name: Android NDK r30
+    released: September 8, 2026
+    clang_version: LLVM 21 (clang-r574158c)
+    refs:
+      - https://github.com/android/ndk/releases/tag/r30
+      - https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/refs/tags/ndk-r30/clang-r574158c/AndroidVersion.txt
+
+  - name: Android NDK r29
+    released: October 6, 2025
+    clang_version: LLVM 21 (clang-r563880c)
+    refs:
+      - https://github.com/android/ndk/releases/tag/r29
+      - https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+/refs/tags/ndk-r29/clang-r563880c/AndroidVersion.txt
+
   - name: Android NDK r28c
-    released: February 2025
+    released: July 8, 2025
     clang_version: LLVM 19 (clang-r530567e)
     refs:
-      - https://github.com/android/ndk/wiki/Changelog-r28
+      - https://github.com/android/ndk/releases/tag/r28c
 
   - name: Android NDK r27d
-    released: November 2024
-    clang_version: LLVM 18 (clang-r522817)
+    released: July 15, 2025
+    clang_version: LLVM 18 (clang-r522817d)
     refs:
-      - https://github.com/android/ndk/wiki/Changelog-r27
+      - https://github.com/android/ndk/releases/tag/r27d
 
   - name: Android NDK r26d
-    released: December 2023
+    released: April 10, 2024
     clang_version: LLVM 17 (clang-r487747e)
     refs:
-      - https://github.com/android/ndk/wiki/Changelog-r26
+      - https://github.com/android/ndk/releases/tag/r26d
 
   - name: Android NDK r25c
     released: January 2023
@@ -37,9 +51,10 @@ infos:
       - https://github.com/android/ndk/wiki/Changelog-r24
 
   - name: Android NDK r23c
-    released: June 2022
+    released: May 26, 2022
     clang_version: LLVM 12 (clang-r416183c2)
     refs:
+      - https://groups.google.com/g/android-ndk-announce/c/Yrkq_c4g3mU
       - https://github.com/android/ndk/wiki/Changelog-r23
 
   - name: Android NDK r22b
@@ -55,28 +70,32 @@ infos:
       - https://github.com/android/ndk/wiki/Changelog-r21
 
   - name: Android NDK r20b
-    released: October 2019
+    released: November 6, 2019
     clang_version: LLVM 8 (clang-r346389c)
     refs:
       - https://github.com/android/ndk/wiki/Changelog-r20
+      - https://github.com/android/ndk/wiki/Home/c96d22fbacea36730aa7efbc79f4e0c553d9e648
 
   - name: Android NDK r19c
-    released: February 2019
+    released: March 14, 2019
     clang_version: LLVM 8 (clang-r339409b)
     refs:
       - https://github.com/android/ndk/wiki/Changelog-r19
+      - https://github.com/android/ndk/wiki/Home/ff1946c0fc962ea9c6f3edc4cb38023513e58a49
 
   - name: Android NDK r18b
-    released: September 2018
+    released: October 12, 2018
     clang_version: LLVM 7 (clang-4751641)
     refs:
       - https://github.com/android/ndk/wiki/Changelog-r18
+      - https://github.com/android/ndk/wiki/Home/a3928dc074d80e7511090712bc90426db8251ab0
 
   - name: Android NDK r17c
-    released: June 2018
+    released: September 4, 2018
     clang_version: LLVM 6 (clang-4691093)
     refs:
       - https://github.com/android/ndk/wiki/Changelog-r17
+      - https://github.com/android/ndk/wiki/Home/a79c1e8bed556f318b4999ac5546a7b87b4968fd
 
   - name: Android NDK r16b
     released: December 2017
