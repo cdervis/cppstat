@@ -1324,17 +1324,25 @@ features:
     support: [GCC 16, Clang 21]
 
   - desc: "Reflection for C++26 (`<meta>`)"
-    paper: P2996
+    paper: [P2996, P3289]
+    keywords: ["reflection", "consteval blocks"]
     summary: "Reflection allows programs to inspect and manipulate their own structure at compile time. This is one of the most significant additions to C++26."
     lib: true
     support:
       - tool: GCC 16
-        note: "Requires `-freflection`"
+        status: partial
+        note: "Requires `-freflection`. The language support is implemented, but library metafunctions `apply_result`, `is_applicable_type`, and `is_nothrow_applicable_type` are missing."
       - tool: R++ 2026.2
         note: "The language part only. R++ implements no standard library."
     ftm:
       - name: __cpp_impl_reflection
         value: 202506L
+      - name: __cpp_lib_reflection
+        value: 202506L
+      - name: __cpp_impl_reflection
+        value: 202603L
+      - name: __cpp_lib_reflection
+        value: 202603L
     content: reflection.md
 
   - desc: "Annotations for Reflection"
@@ -1361,7 +1369,12 @@ features:
     paper: P1306
     summary: "`template for` iterates over compile-time ranges like tuples and reflection results."
     content: expansion-statements.md
-    support: [GCC 16, R++ 2025.3]
+    support:
+      - GCC 16
+      - R++ 2025.3
+      - tool: Clang 23
+        status: partial
+        note: "Iterating expansion statements are not supported; other forms of expansion statements are implemented."
     ftm:
       - name: __cpp_expansion_statements
         value: 202506L
@@ -1721,6 +1734,30 @@ features:
   - desc: "Class template argument deduction for type template template parameters"
     paper: P3865
 
+  - desc: "`std::is_structural`: detect structural types"
+    paper: P3856
+    lib: true
+    support:
+      - tool: GCC 16
+        note: "Requires `-freflection`."
+    ftm:
+      - name: __cpp_lib_is_structural
+        value: 202603L
+
+  - desc: "Define `std::type_order` without a non-structural template argument"
+    paper: P3778
+    lib: true
+    support: [Clang 24]
+
+  - desc: "Allow incomplete types in `std::type_order`"
+    paper: P4140
+    lib: true
+    support: [Clang 24]
+
+  - desc: "Rename `std::meta::has_ellipsis_parameter` to `std::meta::is_vararg_function`"
+    paper: P4156
+    lib: true
+
   - desc: "Conditionally support `#line` numbers outside [1, 2147483647]"
     paper: P4136
     support: [GCC, Clang]
@@ -1728,6 +1765,10 @@ features:
   - desc: "Reconsider partial ordering of variadic templates"
     paper: P4004
     support: [Clang 2.9]
+
+  - desc: "Constant evaluation fixes"
+    paper: P4143
+    summary: "Clarifies manifest constant evaluation, notional initialization checks, and completion of consteval-block side effects."
 
   - desc: "Define immediate context"
     paper: P4149
