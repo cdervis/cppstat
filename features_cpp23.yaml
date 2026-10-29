@@ -701,7 +701,11 @@ features:
     ftm:
       - name: __cpp_lib_constexpr_cmath
         value: 202202L
-    support: [MSVC 14.52]
+    support:
+      - MSVC 14.52
+      - tool: GCC 4.6
+        status: partial
+        note: "Some `<cmath>` functions (such as `std::floor` and `std::ceil`) work in constant expressions as GCC extensions. Other functions, including `std::abs` in GCC 4.6, are not constexpr; the feature-test macro is not provided."
 
   - desc: "`std::unreachable()`"
     paper: P0627

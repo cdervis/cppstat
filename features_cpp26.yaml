@@ -421,6 +421,10 @@ features:
       - GCC 14
       - Clang 18
       - Xcode 16
+      - tool: GCC 16
+        note: "Implements the P4052 names (`std::saturating_add`, etc.)."
+      - tool: Clang 23
+        note: "Implements the P4052 names (`std::saturating_add`, etc.)."
     ftm:
       - name: __cpp_lib_saturation_arithmetic
         value: 202311L
@@ -1054,7 +1058,7 @@ features:
     support:
       - tool: GCC 16
         status: partial
-        note: "Missing support for std::complex"
+        note: "Missing `std::complex` support and the feature-test macro. The implementation currently requires an x86 target with SSE2."
 
   - desc: "Utility for creating execution environments"
     paper: P3325
@@ -1225,6 +1229,9 @@ features:
   - desc: "Rename `simd_split()` to `simd_chunk()`"
     paper: P3441
     lib: true
+    support:
+      - tool: GCC 16
+        note: "The C++26 `<simd>` implementation currently requires an x86 target with SSE2."
 
   - desc: "Freestanding library: `<algorithm>`, `<numeric>`, and `<random>`"
     paper: P2976
@@ -1496,6 +1503,9 @@ features:
     ftm:
       - name: __cpp_lib_simd
         value: 202506L
+    support:
+      - tool: GCC 16
+        note: "The C++26 `<simd>` implementation currently requires an x86 target with SSE2."
 
   - desc: "Extend `std::simd` with permutation API"
     paper: P2664
@@ -1812,6 +1822,10 @@ features:
       - name: __cpp_lib_function_ref
         value: 202603L
 
+  - desc: "Signed and unsigned character types in random number generation"
+    paper: P4037
+    lib: true
+
   - desc: "Detect replaceability of the contract-violation handler"
     paper: P3886
     lib: true
@@ -1865,6 +1879,22 @@ features:
     paper: P3778
     lib: true
     support: [Clang 24]
+
+  - desc: "Consistency fix: Make simd reductions SIMD-generic"
+    paper: P3690
+    lib: true
+
+  - desc: "Reword `[simd.math]` for consteval conversions"
+    paper: P3844
+    lib: true
+
+  - desc: "Fix LWG4470: Fix integer-from in `[simd]`"
+    paper: P3932
+    lib: true
+
+  - desc: "Value-preserving consteval broadcast to `simd::vec`"
+    paper: P4012
+    lib: true
 
   - desc: "Allow incomplete types in `std::type_order`"
     paper: P4140
