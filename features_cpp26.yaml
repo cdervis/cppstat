@@ -295,7 +295,9 @@ features:
     ftm:
       - name: __cpp_lib_is_within_lifetime
         value: 202306L
-    support: [Clang 22]
+    support:
+      - Clang 22
+      - GCC 17
 
   - desc: "Native handles and file streams"
     paper: P1759
@@ -1734,6 +1736,13 @@ features:
   - desc: "Class template argument deduction for type template template parameters"
     paper: P3865
 
+  - desc: "`std::start_lifetime()` and adjustments to union lifetime rules"
+    paper: P3726
+    lib: true
+    ftm:
+      - name: __cpp_lib_start_lifetime
+        value: 202603L
+
   - desc: "`std::is_structural`: detect structural types"
     paper: P3856
     lib: true
@@ -1742,6 +1751,13 @@ features:
         note: "Requires `-freflection`."
     ftm:
       - name: __cpp_lib_is_structural
+        value: 202603L
+
+  - desc: "Adjustments to union lifetime rules"
+    paper: P3726
+    support: [GCC 17]
+    ftm:
+      - name: __cpp_trivial_union
         value: 202603L
 
   - desc: "Define `std::type_order` without a non-structural template argument"
@@ -1753,6 +1769,14 @@ features:
     paper: P4140
     lib: true
     support: [Clang 24]
+
+  - desc: "Extend `std::is_within_lifetime()`"
+    paper: P3450
+    lib: true
+    support: [Clang 24]
+    ftm:
+      - name: __cpp_lib_is_within_lifetime
+        value: 202603L
 
   - desc: "Rename `std::meta::has_ellipsis_parameter` to `std::meta::is_vararg_function`"
     paper: P4156
@@ -1773,3 +1797,8 @@ features:
   - desc: "Define immediate context"
     paper: P4149
     summary: "Excludes lambda bodies and separately instantiated default arguments, noexcept-specifiers and contracts from the immediate substitution context."
+
+  - desc: "Clarify placement new deallocation"
+    paper: P3769
+    summary: "Deduces placement-delete templates, filters constraints, and requires exactly one matching accessible, non-deleted deallocation function."
+    support: [GCC 17]
