@@ -277,8 +277,12 @@ features:
     lib: true
     support:
       - GCC 15
-      - Clang 19
+      - tool: Clang 18
+        status: partial
+        note: "`std::variant::visit` is implemented, but `__cpp_lib_variant` is not updated until libc++ 20."
       - Xcode 16.3
+      - tool: Clang 20
+        note: "The variant feature-test macro is updated; the `__cpp_lib_format` bump still depends on P2419."
     ftm:
       - name: __cpp_lib_variant
         value: 202306L

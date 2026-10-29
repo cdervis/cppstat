@@ -1859,3 +1859,21 @@ features:
     ftm:
       - name: __cpp_lib_constexpr_string
         value: 201907L
+
+  - desc: "SFINAE-friendly `std::underlying_type`"
+    paper: P0340
+    summary: "Non-enumeration types have no nested `type`, allowing substitution failure instead of a hard error. Incomplete enumeration types remain ill-formed."
+    lib: true
+    support: [GCC 9, Clang 9, MSVC 14.25]
+
+  - desc: "Explicit return type for `std::visit<R>()`"
+    paper: P0655
+    summary: "Convert each visitor result to R, or discard results for void, instead of requiring identical result types."
+    lib: true
+    support: [GCC 9, Clang 12, MSVC 14.25]
+
+  - desc: "Clarify `std::istream_iterator` initialization and input operations"
+    paper: P0738
+    summary: "Requires the first read during construction, value-initializes the stored value, and refines constexpr construction and trivial copy/destruction requirements."
+    lib: true
+    support: [GCC 10, MSVC 14.25]

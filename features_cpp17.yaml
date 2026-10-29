@@ -679,7 +679,7 @@ features:
         value: 201603L
 
   - desc: "Polymorphic memory resources"
-    paper: P0220
+    paper: [P0220, P0337]
     lib: true
     support:
       - GCC 9
@@ -1109,3 +1109,37 @@ features:
       - Clang 17
       - MSVC 14.32
       - Xcode 15
+
+  - desc: "Mutable `std::basic_string::data()`"
+    paper: P0272
+    summary: "Obtain a writable pointer to a string's existing characters, including safe access for empty strings."
+    lib: true
+    support:
+      - GCC 7
+      - Clang 3.9
+      - tool: MSVC 14.0
+        note: "Requires Visual Studio 2015 Update 3."
+
+  - desc: "Struct-based in-place construction tags"
+    paper: P0504
+    summary: "Defines in_place_t, in_place_type_t and in_place_index_t as struct tags, and excludes those tags from converting any/variant constructors."
+    lib: true
+    support: [Clang 4, MSVC 14.10]
+
+  - desc: "Inline variables for standard library constants"
+    paper: P0607
+    lib: true
+    support:
+      - tool: Clang 6
+        status: partial
+        note: "The <regex> constants are not inline."
+      - MSVC 14.12
+
+  - desc: "Construct `std::future_error` from `std::future_errc`"
+    paper: P0517
+    lib: true
+    support:
+      - GCC 7
+      - tool: Clang 18
+        note: "Earlier libc++ versions list this as implemented, but a misspelled preprocessor guard disables the future_errc constructor."
+      - MSVC 14.11
