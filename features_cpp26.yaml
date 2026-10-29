@@ -1097,7 +1097,7 @@ features:
       - R++ 2025.3
       - tool: Clang 22
         status: partial
-        note: "Concept template parameters are accepted, but subsumption and mangling are unsupported and satisfaction checking is incomplete."
+        note: "Basic concept and variable template parameters are accepted, but concept-pack subsumption is not implemented."
     ftm:
       - name: __cpp_template_parameters
         value: 202502L
@@ -1349,8 +1349,7 @@ features:
     lib: true
     support:
       - tool: GCC 16
-        status: partial
-        note: "Requires `-freflection`. The language support is implemented, but library metafunctions `apply_result`, `is_applicable_type`, and `is_nothrow_applicable_type` are missing."
+        note: "Requires `-freflection`."
       - tool: R++ 2026.2
         note: "The language part only. R++ implements no standard library."
     ftm:
@@ -1650,6 +1649,7 @@ features:
 
   - desc: "Fix erroneous behaviour termination semantics for C++26"
     paper: P3684
+    support: [GCC 16]
     keywords: ["safety"]
 
   - desc: "Resolve inconsistencies in begin/end for `std::valarray` and braced initializer lists"
@@ -1748,6 +1748,10 @@ features:
     paper: P3795
     summary: "Fills gaps in the reflection API, adding `current_function()`, `current_class()` and `current_namespace()`, among others."
     lib: true
+    support:
+      - tool: GCC 16
+        status: partial
+        note: "Requires `-freflection`. Scope queries, annotation changes, and exception-origin queries are implemented; `apply_result()`, `is_applicable_type()`, and `is_nothrow_applicable_type()` are missing."
     keywords: ["reflection"]
 
   - desc: "Allow `#line` before module declarations"
@@ -1773,7 +1777,7 @@ features:
       - name: __cpp_lib_start_lifetime
         value: 202603L
 
-  - desc: "`std::is_structural`: detect structural types"
+  - desc: "`std::is_structural` and `std::meta::is_structural_type()`: detect structural types"
     paper: P3856
     lib: true
     support:
@@ -1784,7 +1788,9 @@ features:
         value: 202603L
 
   - desc: "`std::constant_wrapper` as a `std::function_ref` constructor argument"
-    paper: P3948
+    paper: [P3948, P3774]
+    summary: "Uses `std::constant_wrapper` for constant callable arguments, replacing the intermediate `std::constant_arg` interface from P3774."
+    keywords: ["nontype", "nontype_t", "constant_arg", "constant_arg_t"]
     lib: true
     support:
       - GCC 16
@@ -1837,14 +1843,6 @@ features:
   - desc: "Proposed Resolution for NB Comment GB13-309 `std::atomic_ref<T>` is not convertible to `std::atomic_ref<const T>`"
     paper: P3860
     lib: true
-
-  - desc: "Rename `std::nontype` to `std::constant_arg`"
-    paper: P3774
-    summary: "Renames the argument tag and its type; the broader callable-wrapper design in earlier revisions was not adopted."
-    lib: true
-    ftm:
-      - name: __cpp_lib_function_ref
-        value: 202511L
 
   - desc: "Harmonize proxy-reference operations (LWG 3638 and 4187)"
     paper: P3612
@@ -1947,6 +1945,9 @@ features:
   - desc: "Rename `std::meta::has_ellipsis_parameter()` to `std::meta::is_vararg_function()`"
     paper: P4156
     lib: true
+    support:
+      - tool: GCC 16
+        note: "Requires `-freflection`."
 
   - desc: "Rename `std::runtime_format()` to `std::dynamic_format()`"
     paper: P3953
@@ -1993,4 +1994,4 @@ features:
   - desc: "Clarify placement new deallocation"
     paper: P3769
     summary: "Deduces placement-delete templates, filters constraints, and requires exactly one matching accessible, non-deleted deallocation function."
-    support: [GCC 17]
+    support: [GCC 17, Clang 10]
