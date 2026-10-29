@@ -1218,6 +1218,8 @@ features:
     ftm:
       - name: __cpp_lib_constexpr_exceptions
         value: 202411L
+      - name: __cpp_lib_constexpr_exceptions
+        value: 202502L
     support: [GCC 16]
 
   - desc: "Rename `simd_split()` to `simd_chunk()`"
@@ -1515,7 +1517,12 @@ features:
     paper: P2927
     summary: "Query exception information without rethrowing."
     lib: true
-    support: [GCC 16]
+    support:
+      - tool: GCC 16
+        note: "Implements P2927; the later return-type changes are tracked separately under P3981."
+    ftm:
+      - name: __cpp_lib_exception_ptr_cast
+        value: 202506L
 
   - desc: "Inspecting `std::exception_ptr` should be `constexpr`"
     paper: P3748
@@ -1850,6 +1857,15 @@ features:
     paper: P3986
     lib: true
 
+  - desc: "Better return types in `std::inplace_vector` and `std::exception_ptr_cast()`"
+    paper: P3981
+    lib: true
+    ftm:
+      - name: __cpp_lib_exception_ptr_cast
+        value: 202603L
+      - name: __cpp_lib_inplace_vector
+        value: 202603L
+
   - desc: "Remove `try_append_range()` from `std::inplace_vector` for now"
     paper: P4022
     lib: true
@@ -1880,6 +1896,10 @@ features:
 
   - desc: "Extend algorithm list-initialization support to `std::uninitialized_fill()`"
     paper: P3787
+    lib: true
+
+  - desc: "A conservative fix for `constexpr` `std::uncaught_exceptions()` and `std::current_exception()`"
+    paper: P3842
     lib: true
 
   - desc: "Fix Sender Algorithm Customization"
