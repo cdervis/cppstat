@@ -451,11 +451,14 @@ features:
     summary: "The `<debugging>` header provides portable debugging utilities."
     lib: true
     support:
+      - Clang 24
       - tool: GCC 16
         note: "Requires linking with `-lstdc++exp`."
     ftm:
       - name: __cpp_lib_debugging
         value: 202311L
+      - name: __cpp_lib_debugging
+        value: 202403L
     keywords: ["debugger", "breakpoint"]
     content: debugging.md
 
@@ -1069,6 +1072,9 @@ features:
     paper: P1494
     support: [GCC 16, R++]
     keywords: ["safety"]
+    ftm:
+      - name: __cpp_lib_observable_checkpoint
+        value: 202506L
 
   - desc: "Contracts for C++ (`<contracts>`)"
     paper: P2900
@@ -1252,6 +1258,9 @@ features:
       - tool: Xcode 16
         status: partial
         note: "Calls `__builtin_expect(false, ...)` instead of using C++26 contracts when a hardened precondition is violated."
+      - tool: MSVC 14.50
+        status: partial
+        note: "Hardened preconditions are implemented without C++26 contracts."
     ftm:
       - name: __cpp_lib_hardened_array
         desc: "Hardened `std::array`"
@@ -1736,6 +1745,11 @@ features:
   - desc: "Class template argument deduction for type template template parameters"
     paper: P3865
 
+  - desc: "Const-ification of splice expressions in contract assertions"
+    paper: P3598
+    support:
+      - GCC 17
+
   - desc: "`std::start_lifetime()` and adjustments to union lifetime rules"
     paper: P3726
     lib: true
@@ -1751,6 +1765,16 @@ features:
         note: "Requires `-freflection`."
     ftm:
       - name: __cpp_lib_is_structural
+        value: 202603L
+
+  - desc: "Detect replaceability of the contract-violation handler"
+    paper: P3886
+    lib: true
+    support:
+      - tool: GCC 16
+        note: "Requires `-fcontracts`. The macro is `202603L` on ELF targets and `0L` on targets where the handler cannot be replaced (including macOS)."
+    ftm:
+      - name: __cpp_lib_replaceable_contract_violation_handler
         value: 202603L
 
   - desc: "Adjustments to union lifetime rules"
