@@ -230,3 +230,6 @@ features:
   - desc: "Library Wording Changes for Defaulted Postfix Increment and Decrement Operations"
     paper: P3785
     lib: true
+
+  - desc: "Prevent out-of-thin-air values in the memory model"
+    paper: P3692

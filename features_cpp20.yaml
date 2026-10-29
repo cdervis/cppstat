@@ -1884,6 +1884,12 @@ features:
     lib: true
     support: [GCC 10, Clang 11, MSVC 14.27]
 
+  - desc: "Revise interruptible `std::condition_variable_any` wait signatures"
+    paper: P1869
+    summary: "Places stop_token after the lock argument and renames the untimed wait_until overload to wait."
+    lib: true
+    support: [GCC 10, Clang 18]
+
   - desc: "Clarify `std::istream_iterator` initialization and input operations"
     paper: P0738
     summary: "Requires the first read during construction, value-initializes the stored value, and refines constexpr construction and trivial copy/destruction requirements."

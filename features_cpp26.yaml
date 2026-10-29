@@ -993,7 +993,9 @@ features:
         status: partial
         note: "Supports the older proposal, with a different return type."
       - Clang 23
-      - GCC 16
+      - tool: GCC 16
+        status: partial
+        note: "Implements the original proposal; P3936 changes to the return type are not implemented."
     ftm:
       - name: __cpp_lib_atomic_ref
         value: 202411L
@@ -1787,6 +1789,10 @@ features:
     ftm:
       - name: __cpp_trivial_union
         value: 202603L
+
+  - desc: "Proposed Resolution for NB Comment GB13-309 `std::atomic_ref<T>` is not convertible to `std::atomic_ref<const T>`"
+    paper: P3860
+    lib: true
 
   - desc: "Define `std::type_order` without a non-structural template argument"
     paper: P3778
