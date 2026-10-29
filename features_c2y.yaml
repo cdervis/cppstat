@@ -347,7 +347,7 @@ features:
     support:
       - GCC 16 (partial)
 
-  - desc: "static_assert expressions"
+  - desc: "`static_assert` expressions"
     paper: N3715
 
   - desc: "Earthly Demon: Accessing a Member of an Atomic Structure or Union"
@@ -368,7 +368,7 @@ features:
   - desc: "Enumerations with Bit-Precise Integer as Underlying Type"
     paper: N3705
 
-  - desc: "The Elvis operator ?:"
+  - desc: "The Elvis operator `?:`"
     paper: N3804
     support:
       - GCC

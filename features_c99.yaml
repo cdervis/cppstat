@@ -39,7 +39,7 @@ features:
       - Xcode 13
       - tool: owcc
         status: partial
-        note: "`parsed with -zastd=c99 (for wcc*), but does not change the code."
+        note: "Parsed with -zastd=c99 (for wcc*), but does not change the code."
       - TinyCC
       - R++
   - desc: "Enhanced [arithmetic types](https://cppreference.com/c/language/arithmetic_types)"
@@ -242,4 +242,4 @@ features:
         note: "`STDC FENV_ACCESS ON` is not supported."
       - tool: owcc
         status: partial
-        note: "`parsed, but does not change the code."
+        note: "Parsed, but does not change the code."

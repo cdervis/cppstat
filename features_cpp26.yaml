@@ -24,7 +24,7 @@ features:
       - Clang 18
       - Xcode 16
 
-  - desc: "Add @, $, and ` to the [basic character set](https://cppreference.com/cpp/language/charset#Basic_character_set)"
+  - desc: "Add `@`, `$`, and `` ` `` to the [basic character set](https://cppreference.com/cpp/language/charset#Basic_character_set)"
     paper: P2558
     support:
       - GCC 15
@@ -506,7 +506,7 @@ features:
       - name: __cpp_lib_span
         value: 202311L
 
-  - desc: "Remove deprecated `std::allocator` typedef from C++26 (`std::allocator::is_always_equal()`)"
+  - desc: "Remove deprecated `std::allocator` typedef from C++26 (`std::allocator::is_always_equal`)"
     paper: P2868
     lib: true
     support:
@@ -557,7 +557,7 @@ features:
         value: 202311L
       - name: __cpp_lib_span
         value: 202311L
-        desc: 'Related: <a href="https://wg21.link/P2821">P2821</a>'
+        desc: 'Related: [P2821](https://wg21.link/P2821)'
 
   - desc: "`std::basic_const_iterator` should follow its underlying type's convertibility"
     paper: [P2836, P2950]
@@ -1041,7 +1041,7 @@ features:
         value: 202411L
       - name: __cpp_lib_simd_complex
         value: 202502L
-        desc: "Support for interleaved complex values in std::datapar::simd"
+        desc: "Support for interleaved complex values in `std::datapar::simd`"
     support:
       - tool: GCC 16
         status: partial
@@ -1607,7 +1607,7 @@ features:
       - name: __cpp_lib_format_path
         value: 202506L
 
-  - desc: "Making `std::istream::ignore` less surprising"
+  - desc: "Making `std::istream::ignore()` less surprising"
     paper: P3223
     lib: true
     support:
@@ -1734,10 +1734,10 @@ features:
     ftm:
       - name: __cpp_lib_constexpr_format
         value: 202511L
-        desc: "`std::format` is `constexpr`"
+        desc: "`std::format()` is `constexpr`"
       - name: __cpp_lib_constexpr_string
         value: 202511L
-        desc: "`std::to_string` and `std::to_wstring` are `constexpr`"
+        desc: "`std::to_string()` and `std::to_wstring()` are `constexpr`"
 
   - desc: "Optimize for `std::optional` in range adaptors"
     paper: P3913

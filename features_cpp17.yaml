@@ -621,7 +621,7 @@ features:
       - name: __cpp_lib_transparent_operators
         value: 201510L
 
-  - desc: "`std::not_fn`"
+  - desc: "`std::not_fn()`"
     paper: [P0005, P0358]
     lib: true
     support:
@@ -693,13 +693,13 @@ features:
     ftm:
       - name: __cpp_lib_apply
         value: 201603L
-        desc: "std::apply()"
+        desc: "`std::apply()`"
       - name: __cpp_lib_boyer_moore_searcher
         value: 201603L
         desc: "Searchers"
       - name: __cpp_lib_sample
         value: 201603L
-        desc: "std::sample()"
+        desc: "`std::sample()`"
 
   - desc: "[Mathematical special functions](https://cppreference.com/cpp/numeric/special_math)"
     paper: P0226
@@ -734,7 +734,7 @@ features:
       - name: __cpp_lib_array_constexpr
         value: 201603L
 
-  - desc: "`constexpr` `std::atomic::is_always_lock_free()`"
+  - desc: "`constexpr` `std::atomic::is_always_lock_free`"
     paper: P0152
     lib: true
     support:

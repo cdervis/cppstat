@@ -40,7 +40,7 @@ features:
     paper: P3658
     support: [GCC 17, Clang 24, R++]
 
-  - desc: "return_value & return_void Are Not Mutually Exclusive"
+  - desc: "`return_value()` and `return_void()` are not mutually exclusive"
     paper: P3950
     support:
       - GCC 17
@@ -66,7 +66,7 @@ features:
     paper: P3424
     support: [GCC 17]
 
-  - desc: "Conditional noexcept specifiers in compound requirements"
+  - desc: "Conditional `noexcept` specifiers in compound requirements"
     paper: P3822
     support:
       - GCC 17
@@ -102,7 +102,7 @@ features:
         status: partial
         note: "The mangling of a pack-index-template-name is not implemented."
 
-  - desc: "#embed offset parameter"
+  - desc: "`#embed` offset parameter"
     paper: P3540
     support:
       - GCC 17
@@ -176,17 +176,17 @@ features:
     support:
       - tool: GCC 17
         status: partial
-        note: "The scalar `std::shl` and `std::shr` functions are implemented; SIMD overloads are missing."
+        note: "The scalar `std::shl()` and `std::shr()` functions are implemented; SIMD overloads are missing."
       - tool: Clang 24
         status: partial
         note: "No `std::simd` overloads provided."
     ftm:
       - name: __cpp_lib_bitops
         value: 202606L
-        desc: "`std::shl` and `std::shr`"
+        desc: "`std::shl()` and `std::shr()`"
       - name: __cpp_lib_simd_bitops
         value: 202606L
-        desc: "`std::simd::shl` and `std::simd::shr`"
+        desc: "`std::simd::shl()` and `std::simd::shr()`"
 
   - desc: "Copy and fill for `mdspan`"
     paper: P3242
@@ -209,7 +209,7 @@ features:
       - name: __cpp_lib_simd_bitops
         value: 202607L
 
-  - desc: "Better Lookups for `std::map` , `std::unordered_map` , and `std::flat_map`"
+  - desc: "Better Lookups for `std::map`, `std::unordered_map`, and `std::flat_map`"
     paper: P3091
     lib: true
     ftm:

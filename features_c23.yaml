@@ -110,7 +110,7 @@ features:
       - owcc
       - TinyCC
       - R++
-  - desc: "[__has_c_attribute](https://cppreference.com/c/language/attributes#Attribute_testing) in preprocessor conditionals"
+  - desc: "[`__has_c_attribute`](https://cppreference.com/c/language/attributes#Attribute_testing) in preprocessor conditionals"
     paper: N2553
     support:
       - GCC 11

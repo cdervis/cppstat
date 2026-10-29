@@ -522,7 +522,7 @@ features:
         "std::has_nothrow_construct",
       ]
 
-  - desc: "Member functions: `cbegin`, `cend`, `crbegin`, `crend`"
+  - desc: "Member functions: `cbegin()`, `cend()`, `crbegin()`, `crend()`"
     paper: [N1913, LWG1192]
     lib: true
     support:

@@ -33,7 +33,7 @@ features:
     support:
       - tool: GCC 8
         status: partial
-        note: "Designated initializers are supported, except <code>#__VA_OPT__</code> support. <code>__VA_OPT__</code> is supported though."
+        note: "Designated initializers are supported, except `#__VA_OPT__` support. `__VA_OPT__` is supported though."
       - tool: GCC 10
         status: partial
         note: "No placemarker token handling changes"
@@ -1174,7 +1174,7 @@ features:
     support:
       - tool: GCC 11
         status: partial
-        note: "Supports the majority of modules features, except for P1815, private module fragments, parser-level global module entity merging and global module implications of <code>extern \\\"C/C++\\\"</code> (P1103)."
+        note: "Supports the majority of modules features, except for P1815, private module fragments, parser-level global module entity merging and global module implications of `extern \\\"C/C++\\\"` (P1103)."
       - tool: GCC 15
         status: partial
         note: "In addition to GCC 11, supports P2615. Private module fragments, partition definition visibility rules and textual merging of reachable global module entities remain unimplemented."
@@ -1667,13 +1667,13 @@ features:
       - GCC 10
       - tool: Clang 17
         status: partial
-        note: "Guarded behind compiler flag <code>-fexperimental-library</code>."
+        note: "Guarded behind compiler flag `-fexperimental-library`."
       - Clang 20
       - tool: MSVC 14.28
-        note: "MSVC 14.28 is available with VS 16.8 and VS 16.9. This feature is supported starting with VS 16.9, which is identifiable by checking <code>_MSC_FULL_VER == 192829910</code>."
+        note: "MSVC 14.28 is available with VS 16.8 and VS 16.9. This feature is supported starting with VS 16.9, which is identifiable by checking `_MSC_FULL_VER == 192829910`."
       - tool: Xcode 16.4
         status: partial
-        note: "Guarded behind compiler flag <code>-fexperimental-library</code>."
+        note: "Guarded behind compiler flag `-fexperimental-library`."
       - Xcode 26
     ftm:
       - name: __cpp_lib_jthread
