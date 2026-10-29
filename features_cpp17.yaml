@@ -1122,7 +1122,7 @@ features:
 
   - desc: "Remove allocator support from `std::function`"
     paper: P0302
-    summary: "Removes allocator-taking constructors and the uses_allocator specialization."
+    summary: "Removes allocator-taking constructors and the `std::uses_allocator` specialization."
     lib: true
     support:
       - tool: GCC
@@ -1132,13 +1132,13 @@ features:
 
   - desc: "Deprecate `std::shared_ptr::unique()`"
     paper: P0521
-    summary: "Also clarifies that use_count provides no synchronization and can be approximate in concurrent code."
+    summary: "Also clarifies that `use_count()` provides no synchronization and can be approximate in concurrent code."
     lib: true
     support: [Clang 18, MSVC 14.12]
 
   - desc: "Struct-based in-place construction tags"
     paper: P0504
-    summary: "Defines in_place_t, in_place_type_t and in_place_index_t as struct tags, and excludes those tags from converting any/variant constructors."
+    summary: "Defines `std::in_place_t`, `std::in_place_type_t` and `std::in_place_index_t` as struct tags, and excludes those tags from converting `std::any` and `std::variant` constructors."
     lib: true
     support: [Clang 4, MSVC 14.10]
 
@@ -1148,7 +1148,7 @@ features:
     support:
       - tool: Clang 6
         status: partial
-        note: "The <regex> constants are not inline."
+        note: "The `<regex>` constants are not inline."
       - MSVC 14.12
 
   - desc: "Remove deprecated iostream aliases and forwarding members"
@@ -1165,12 +1165,12 @@ features:
     support:
       - GCC 7
       - tool: Clang 18
-        note: "Earlier libc++ versions list this as implemented, but a misspelled preprocessor guard disables the future_errc constructor."
+        note: "Earlier libc++ versions list this as implemented, but a misspelled preprocessor guard disables the `future_errc` constructor."
       - MSVC 14.11
 
   - desc: "Deprecate `<codecvt>` and the wide-string conversion wrappers"
     paper: P0618
-    summary: "Deprecates codecvt_utf8, codecvt_utf16, codecvt_utf8_utf16, wstring_convert and wbuffer_convert."
+    summary: "Deprecates `std::codecvt_utf8`, `std::codecvt_utf16`, `std::codecvt_utf8_utf16`, `std::wstring_convert` and `std::wbuffer_convert`."
     lib: true
     support: [Clang 15, MSVC 14.12]
 
@@ -1183,9 +1183,9 @@ features:
     summary: "Refines deduction-guide ordering, default initialization, access and redeclaration rules, and deduction in new-expressions."
     support: [Clang 7]
 
-  - desc: "Remove `auto_ptr`, `random_shuffle` and old function adaptors"
+  - desc: "Remove `std::auto_ptr`, `std::random_shuffle()` and old function adaptors"
     paper: N4190
-    summary: "Removes unary_function, binary_function, ptr_fun, mem_fun, mem_fun_ref, bind1st and bind2nd, including auto_ptr interoperability overloads."
+    summary: "Removes `std::unary_function`, `std::binary_function`, `std::ptr_fun()`, `std::mem_fun()`, `std::mem_fun_ref()`, `std::bind1st()` and `std::bind2nd()`, including `std::auto_ptr` interoperability overloads."
     lib: true
     support:
       - tool: GCC

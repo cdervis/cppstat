@@ -1871,7 +1871,7 @@ features:
 
   - desc: "Deprecate POD terminology and `std::is_pod`"
     paper: P0767
-    summary: "Use trivial and standard-layout properties separately; is_pod and is_pod_v remain available but deprecated."
+    summary: "Use trivial and standard-layout properties separately; `std::is_pod` and `std::is_pod_v` remain available but deprecated."
     lib: true
     support: [GCC 10, Clang 21, MSVC 14.25, Xcode 26.4]
 
@@ -1894,7 +1894,7 @@ features:
 
   - desc: "Remove the tuple-like interface of fixed-extent `std::span`"
     paper: P2116
-    summary: "Removes span specializations of tuple_size and tuple_element, and the get overload."
+    summary: "Removes span specializations of `std::tuple_size` and `std::tuple_element`, and the `std::get()` overload."
     lib: true
     support: [GCC 10, Clang 11, MSVC 14.27]
 
@@ -1906,7 +1906,7 @@ features:
 
   - desc: "Revise interruptible `std::condition_variable_any` wait signatures"
     paper: P1869
-    summary: "Places stop_token after the lock argument and renames the untimed wait_until overload to wait."
+    summary: "Places `std::stop_token` after the lock argument and renames the untimed `wait_until()` overload to `wait()`."
     lib: true
     support: [GCC 10, Clang 18]
 

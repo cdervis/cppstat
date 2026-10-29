@@ -1923,7 +1923,7 @@ features:
 
   - desc: "Unwrap `std::constant_wrapper` on call and subscript"
     paper: P3978
-    summary: "Adds runtime-argument call and subscript support, preserves wrapped constant results where possible, and moves the facility to <utility>."
+    summary: "Adds runtime-argument call and subscript support, preserves wrapped constant results where possible, and moves the facility to `<utility>`."
     lib: true
     support: [Clang 23]
 
@@ -1955,7 +1955,7 @@ features:
 
   - desc: "Replace `strided_slice` with `extent_slice` and `range_slice`"
     paper: P3982
-    summary: "extent_slice specifies an output element count; range_slice specifies a half-open input interval and stride."
+    summary: "`extent_slice` specifies an output element count; `range_slice` specifies a half-open input interval and stride."
     lib: true
 
   - desc: "Remove the `std::span` initializer-list constructor for C++26"
@@ -1985,7 +1985,7 @@ features:
     paper: P3980
     lib: true
 
-  - desc: "Rename `std::meta::has_ellipsis_parameter` to `std::meta::is_vararg_function`"
+  - desc: "Rename `std::meta::has_ellipsis_parameter()` to `std::meta::is_vararg_function()`"
     paper: P4156
     lib: true
 
@@ -2002,7 +2002,7 @@ features:
     paper: P3927
     lib: true
 
-  - desc: "Rename `std::execution::affine_on` to `std::execution::affine`"
+  - desc: "Rename `std::execution::affine_on()` to `std::execution::affine()`"
     paper: P4151
     lib: true
 
@@ -2012,10 +2012,10 @@ features:
 
   - desc: "Rename execution concept tags and the parallel scheduler replacement namespace"
     paper: [P4154, P3940, P4031]
-    summary: "Renames sender_t, receiver_t, scheduler_t and operation_state_t to *_tag, and system_context_replaceability to parallel_scheduler_replacement."
+    summary: "Renames `sender_t`, `receiver_t`, `scheduler_t` and `operation_state_t` to `*_tag`, and `system_context_replaceability` to `parallel_scheduler_replacement`."
     lib: true
 
-  - desc: "Conditionally support `#line` numbers outside [1, 2147483647]"
+  - desc: "Conditionally support `#line` numbers outside `[1, 2147483647]`"
     paper: P4136
     support: [GCC, Clang]
 
