@@ -312,9 +312,6 @@ features:
       - MSVC 14.0
       - Xcode
       - R++
-    ftm:
-      - name: __cpp_threadsafe_static_init
-        value: 200806L
 
   - desc: "Dynamic initialization and destruction with concurrency ([magic statics](https://cppreference.com/cpp/language/storage_duration#Static_local_variables))"
     paper: N2660
