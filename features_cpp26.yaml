@@ -549,7 +549,7 @@ features:
       - name: __cpp_lib_freestanding_cstring
         value: 202311L
 
-  - desc: "Freestanding library: `std::inout`, `std::expected`, `std::span`"
+  - desc: "Freestanding library: `std::inout_ptr`, `std::expected`, `std::span`"
     paper: P2833
     lib: true
     support: [GCC 14, MSVC 14.42]
@@ -684,7 +684,7 @@ features:
       - MSVC 14.43
     ftm:
       - name: __cpp_lib_print
-        value: 202403L
+        value: 202406L
     keywords: ["format"]
 
   - desc: "Printing blank lines with `std::println()`"
@@ -1668,7 +1668,7 @@ features:
     support:
       - tool: MSVC 14.50
         status: partial
-        note: "Partial support only due to the lack of Contracts. Support starting with Visual Studio 2026 18.0 Preview 2. ([GitHub Issue](https://github.com/microsoft/STL/pull/5650))"
+        note: "Partial support only due to the lack of Contracts. Support starting with Visual Studio 2026 18.0 Preview 2. ([GitHub Pull Request](https://github.com/microsoft/STL/pull/5650))"
     keywords: ["safety"]
 
   - desc: "Add a coroutine task type"
@@ -1953,6 +1953,9 @@ features:
     paper: P3961
     lib: true
     support: [GCC 17, Clang 24]
+    ftm:
+      - name: __cpp_lib_function_ref
+        value: 202604L
 
   - desc: "Better return types in `std::inplace_vector` and `std::exception_ptr_cast()`"
     paper: P3981
