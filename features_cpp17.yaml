@@ -77,10 +77,6 @@ features:
       - MSVC 14.0
       - Xcode
       - R++
-    ftm:
-      - name: __cpp_nontype_template_args
-        value: 201411L
-        desc: Allow constant evaluation for all constant template arguments
 
   - desc: "Allow constant evaluation for all non-type template arguments"
     paper: N4268
