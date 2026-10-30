@@ -1461,7 +1461,7 @@ features:
 
   - desc: "`consteval` needs to propagate up"
     paper: P2564
-    summary: "`consteval` calls in default arguments work correctly."
+    summary: "`constexpr` functions that call `consteval` functions implicitly become `consteval` instead of being ill-formed."
     support:
       - GCC 14
       - Clang 17
