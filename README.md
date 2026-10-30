@@ -16,13 +16,26 @@
 
 cppstat is a site that lists C and C++ features and their respective support by compilers and standard libraries, designed as a simple, quickly searchable table.
 
+## How the data is maintained
+
+Support data primarily comes from two sources.
+
+1. Contributors submit manual changes, which are reviewed (see [Contributing](#contributing)).
+2. AI-assisted conformance test suites are run regularly against all observed toolchains and versions.
+
+Support entries are meant to match observed behavior.
+Paper numbers, descriptions, and feature-testing macros follow the standard and the WG21 papers.
+
+Frontend support, such as R++, is maintained by the vendor (JetBrains in the case of R++).
+
 ## Contributing
 
 cppstat fetches data from YAML files in the root directory.
-The files are maintained as a best-effort and contributions are always welcome.
+Contributions are always welcome.
 
 Simply use GitHub's web interface or fork the repo to commit your changes for approval.
 Another approach is to [submit a ticket](https://github.com/cdervis/cppstat/issues) for any incorrect or missing information, or feature ideas.
+When reporting incorrect support information, a minimal reproducer (for example, a Compiler Explorer link) helps to confirm it.
 
 You can preview the data on a fork's `main` branch at `https://cppstat.dev/?repo=<owner>/<repository>`.
 
