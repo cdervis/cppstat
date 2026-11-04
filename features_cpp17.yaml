@@ -657,7 +657,8 @@ features:
     paper: P0024
     lib: true
     support:
-      - GCC 9
+      - tool: GCC 9
+        note: "`<execution>` includes Intel TBB headers, so they must be installed to compile. From GCC 10, `<execution>` compiles without TBB."
       - tool: Clang 17
         status: partial
         note: "Requires `-fexperimental-library`. Some policy overloads, including `std::copy_if()` and `std::inclusive_scan()`, are missing."
@@ -699,13 +700,14 @@ features:
       - GCC 9
       - Clang 16
       - MSVC 14.13
-      - Xcode 15
+      - tool: Xcode 15
+        note: "Requires macOS 14, iOS 17, tvOS 17 or watchOS 10 or later."
     ftm:
       - name: __cpp_lib_memory_resource
         value: 201603L
 
   - desc: "[Searchers](https://cppreference.com/cpp/functional#Searchers), `std::apply()` and `std::sample()`"
-    paper: P0220
+    paper: [P0220, P0253]
     lib: true
     support:
       - GCC 7
@@ -827,23 +829,27 @@ features:
     paper: [P0220, P0032]
     lib: true
     support:
-      - GCC 7
+      - tool: GCC 7
+        note: "The feature-test macro is absent in GCC 7.1–7.2, reports `201603` in GCC 7.3–7.4 and 8.1–8.3, and reports `201606L` from GCC 7.5, 8.4 and 9.1."
       - Clang 4
       - MSVC 14.10
-      - Xcode 10
+      - tool: Xcode 10
+        note: "`bad_any_cast` and throwing `any_cast` overloads require macOS 10.13, iOS 12, tvOS 12 or watchOS 5 or later; back-deployment with `-fno-exceptions` aborts on failure."
     ftm:
       - name: __cpp_lib_any
         value: 201606L
 
   - desc: "`std::optional`"
-    paper: P0220
+    paper: [P0220, P0307]
     summary: "A wrapper that may or may not hold a value."
     lib: true
     support:
-      - GCC 7
+      - tool: GCC 7
+        note: "The feature-test macro is absent in GCC 7.1–7.2, reports `201603` in GCC 7.3–7.4 and 8.1–8.3, and reports `201606L` from GCC 7.5, 8.4 and 9.1."
       - Clang 4
       - MSVC 14.10
-      - Xcode 10
+      - tool: Xcode 10
+        note: "`bad_optional_access` and `optional::value()` require macOS 10.13, iOS 12, tvOS 12 or watchOS 5 or later; back-deployment with `-fno-exceptions` aborts on failure."
     ftm:
       - name: __cpp_lib_optional
         value: 201606L
@@ -880,14 +886,16 @@ features:
       - Xcode
 
   - desc: "`std::variant`"
-    paper: P0088
+    paper: [P0088, P0393]
     summary: "Type-safe discriminated union."
     lib: true
     support:
-      - GCC 7
+      - tool: GCC 7
+        note: "The feature-test macro is absent in GCC 7.1–7.2, reports `201603` in GCC 7.3–7.4 and 8.1–8.3, and reports `201606L` from GCC 7.5, 8.4 and 9.1."
       - Clang 4
       - MSVC 14.10
-      - Xcode 10
+      - tool: Xcode 10
+        note: "`bad_variant_access` and throwing `get` and `visit` calls require macOS 10.13, iOS 11, tvOS 11 or watchOS 4 or later; back-deployment with `-fno-exceptions` aborts on failure."
     ftm:
       - name: __cpp_lib_variant
         value: 201606L
@@ -999,10 +1007,10 @@ features:
       - MSVC 14.24
       - tool: Xcode 10
         status: partial
-        note: "No support for floating-point types, only integer types."
+        note: "No support for floating-point types, only integer types. Integer conversions require macOS 10.15, iOS 13, tvOS 13 or watchOS 6 or later."
       - tool: Xcode 14.3
         status: partial
-        note: "Adds support for floating-point types."
+        note: "Adds support for floating-point types, which require macOS 13.3, iOS 16.3, tvOS 16.3 or watchOS 9.3 or later."
     ftm:
       - name: __cpp_lib_to_chars
         value: 201611L
@@ -1054,14 +1062,16 @@ features:
         value: 201611L
 
   - desc: "File system library (`std::filesystem` and `<filesystem>`)"
-    paper: [P0218, P0219]
+    paper: [P0218, P0219, P0392]
     summary: "Standard library for file and directory operations."
     lib: true
     support:
-      - GCC 8
+      - tool: GCC 8
+        note: "GCC 8.x requires linking with `-lstdc++fs`."
       - Clang 7
       - MSVC 14.14
-      - Xcode 11
+      - tool: Xcode 11
+        note: "Requires macOS 10.15, iOS 13, tvOS 13 or watchOS 6 or later."
     ftm:
       - name: __cpp_lib_filesystem
         value: 201703L
