@@ -7,7 +7,6 @@ features:
       - Clang 3.1
       - MSVC 14.28
       - Xcode 16.1
-      - TinyCC
       - R++
   - desc: "Generic selection (`_Generic`)"
     paper: N1441
@@ -16,7 +15,6 @@ features:
       - Clang 3.1
       - MSVC 14.27
       - Xcode 16.1
-      - TinyCC
       - R++ 2021.3
   - desc: "Anonymous structures and unions"
     paper: N1444
@@ -65,8 +63,6 @@ features:
       - Clang 3.3
       - MSVC 14.28
       - Xcode 16.1
-      - owcc
-      - TinyCC
       - R++
   - desc: "Unicode support (`<uchar.h>`, `u/U` prefixes)"
     summary: "Unicode character types, literals, and conversion functions."

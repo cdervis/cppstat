@@ -15,8 +15,6 @@ features:
       - GCC
       - Clang
       - Xcode
-      - owcc
-      - TinyCC
       - R++
   - desc: "`//` comments"
     paper: N644
@@ -25,8 +23,6 @@ features:
       - Clang
       - MSVC
       - Xcode
-      - owcc
-      - TinyCC
       - R++
   - desc: "`restrict` pointers"
     paper: N448
@@ -37,10 +33,6 @@ features:
         status: partial
         note: "Requires /std:c11 or later."
       - Xcode 13
-      - tool: owcc
-        status: partial
-        note: "Parsed with -zastd=c99 (for wcc*), but does not change the code."
-      - TinyCC
       - R++
   - desc: "Enhanced [arithmetic types](https://cppreference.com/c/language/arithmetic_types)"
     paper:
@@ -61,8 +53,6 @@ features:
       - GCC 3
       - Clang
       - Xcode
-      - owcc
-      - TinyCC
       - R++
   - desc: "[Variable-length array](https://cppreference.com/c/language/array#Variable-length_arrays) (VLA) types"
     paper: N683
@@ -70,7 +60,6 @@ features:
       - GCC
       - Clang
       - Xcode 14
-      - TinyCC
       - R++
   - desc: "[Variably-modified](https://cppreference.com/c/language/array#Variable-length_arrays) (VM) types"
     paper: N683
@@ -78,7 +67,6 @@ features:
       - GCC
       - Clang
       - Xcode
-      - TinyCC 0.9.28
       - R++
   - desc: "Designated initializers"
     paper: N494
@@ -87,15 +75,11 @@ features:
       - Clang
       - MSVC
       - Xcode 14
-      - owcc 1.4
       - R++
   - desc: "Non-constant initializers"
     summary: "Non-constant initializers for block-scope aggregates."
     support:
       - GCC
-      - tool: owcc
-        status: partial
-        note: "Requires -aa for wcc*."
       - R++
   - desc: "Idempotent cvr-qualifiers"
     summary: "Repeated cvr-qualifiers on a type are idempotent."
@@ -113,8 +97,6 @@ features:
       - Clang
       - MSVC
       - Xcode
-      - owcc
-      - TinyCC
       - R++
   - desc: "Hexadecimal [floating constants](https://cppreference.com/c/language/floating_constant)"
     paper: N308
@@ -123,8 +105,6 @@ features:
       - Clang
       - MSVC
       - Xcode
-      - owcc
-      - TinyCC
       - R++
   - desc: "[Compound literals](https://cppreference.com/c/language/compound_literal)"
     paper: N716
@@ -155,8 +135,6 @@ features:
       - Clang
       - MSVC
       - Xcode
-      - owcc 1.5
-      - TinyCC
       - R++
   - desc: "Declarations and statements in mixed order"
     summary: "Declarations and statements may interleave within a block."
@@ -166,8 +144,6 @@ features:
       - Clang
       - MSVC
       - Xcode 14
-      - owcc
-      - TinyCC
       - R++
   - desc: "_init-statement_ in `for` loops"
     summary: "Declaring loop counters in a `for` statement's init clause."
@@ -176,8 +152,6 @@ features:
       - Clang
       - MSVC
       - Xcode
-      - owcc
-      - TinyCC
       - R++
   - desc: "`inline` functions"
     paper: N741
@@ -186,8 +160,6 @@ features:
       - Clang
       - MSVC
       - Xcode 14
-      - owcc 1.3
-      - TinyCC
       - R++
   - desc: "Predefined variable `__func__`"
     paper: N611
@@ -196,8 +168,6 @@ features:
       - Clang
       - MSVC
       - Xcode 14
-      - owcc 1.2
-      - TinyCC
       - R++
   - desc: "Cvr-qualifiers and `static` in `[]` within function declarations"
     summary: "Qualifiers and `static` array sizes in function parameters."
@@ -213,8 +183,6 @@ features:
       - Clang
       - MSVC
       - Xcode 14
-      - owcc
-      - TinyCC
       - R++
   - desc: "`_Pragma` preprocessor operator"
     summary: "Emits a pragma from within a macro expansion."
@@ -226,7 +194,6 @@ features:
         status: partial
         note: "Requires /std:c11 or later."
       - Xcode 14
-      - owcc
       - R++
   - desc: "Standard pragmas for floating-point evaluation"
     summary: "Standard `STDC` pragmas controlling floating-point code generation."
@@ -240,6 +207,3 @@ features:
       - tool: Xcode
         status: partial
         note: "`STDC FENV_ACCESS ON` is not supported."
-      - tool: owcc
-        status: partial
-        note: "Parsed, but does not change the code."
