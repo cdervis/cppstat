@@ -436,6 +436,30 @@ features:
       - name: __cpp_deduction_guides
         value: 201703L
 
+  - desc: "Deduction guides for the standard library"
+    paper: [P0433, P0739]
+    summary: "Class template argument deduction works for the standard library's class templates, such as `std::vector v{1, 2, 3}`."
+    lib: true
+    support:
+      - tool: GCC 7
+        status: partial
+        note: "Only the utility types (`pair`, `tuple`, `array`, `optional`, `function`, `lock_guard`, `weak_ptr`) have deduction guides."
+      - tool: GCC 8
+        status: partial
+        note: "Adds the sequence containers, associative containers and strings. The `priority_queue` guide is missing."
+      - GCC 9
+      - tool: Clang 7
+        status: partial
+        note: "Only the sequence containers, container adaptors and strings have deduction guides."
+      - tool: Clang 9
+        status: partial
+        note: "Adds the associative containers."
+      - Clang 11
+      - tool: MSVC 14.14
+        status: partial
+        note: "The `std::map` and `std::unordered_map` guides from a list of pairs are missing."
+      - MSVC 14.25
+
   - desc: "`std::void_t`"
     paper: N3911
     lib: true
