@@ -1697,7 +1697,11 @@ features:
     paper: P1787
     support: [MSVC]
 
-  - desc: "Remove garbage collection and reachability-based leak detection"
+  - desc: "Remove strict pointer-safety language rules"
+    paper: P2186
+    summary: "Removes the strict pointer-safety and safely-derived pointer rules and their predefined macro."
+
+  - desc: "Remove garbage collection and reachability-based leak detection library API"
     paper: P2186
     lib: true
     support:
