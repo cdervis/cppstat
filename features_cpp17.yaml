@@ -477,7 +477,7 @@ features:
     lib: true
     support:
       - GCC 6
-      - Clang 3.6
+      - Clang 3.7
       - MSVC 14.0
       - Xcode
     ftm:
@@ -550,7 +550,7 @@ features:
     lib: true
     support:
       - GCC 6
-      - Clang 4
+      - Clang 3.7
       - MSVC 14.0
       - Xcode
     ftm:
@@ -897,7 +897,7 @@ features:
     lib: true
     support:
       - GCC 7
-      - Clang 4
+      - Clang 3.9
       - MSVC 14.10
       - Xcode
     ftm:
