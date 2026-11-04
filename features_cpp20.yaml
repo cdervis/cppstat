@@ -155,6 +155,29 @@ features:
         status: partial
         note: "Redeclarations whose requires-clauses differ only by an equivalent non-dependent expression, such as `C<42>` and `C<40 + 2>`, are not diagnosed."
 
+  - desc: "Comparison rewrite fixes (\"spaceship tune-up\")"
+    paper: P1630
+    summary: "Rewritten relational candidates are chosen without checking the result of `<=>`, a selected rewritten `==` must return `bool`, and defaulted comparisons are deleted for reference and variant members."
+    support:
+      - tool: GCC 10
+        note: "A SFINAE check for `!=` on a type whose `operator==` returns a class template specialization instantiates that class and can fail with a hard error."
+      - Clang 10
+
+  - desc: "Defaulted comparison specification fixes"
+    paper: P2002
+    summary: "Clarifies which declarations can be defaulted as comparison operators and the properties of defaulted comparisons, including the implicitly declared `operator==`."
+    support:
+      - GCC 10.2
+      - Clang 17
+
+  - desc: "Consistent defaulted comparisons"
+    paper: P2085
+    summary: "A defaulted comparison operator declared in a class can be defined outside the class."
+    support:
+      - GCC 10.2
+      - Clang 14
+      - MSVC 14.27
+
   - desc: "`std::endian`"
     paper: P0463
     lib: true
@@ -227,7 +250,7 @@ features:
         value: 201711L
 
   - desc: "Three-way comparison operator (`operator<=>`)"
-    paper: P0515
+    paper: [P0515, P0905]
     summary: 'The "spaceship operator" for simplified comparisons.'
     support:
       - GCC 10
@@ -502,9 +525,6 @@ features:
       - Clang 7
       - Xcode 16.3
       - MSVC
-    ftm:
-      - name: __cpp_impl_three_way_comparison
-        value: 201711L
 
   - desc: "`<version>`"
     paper: P0754
@@ -908,8 +928,14 @@ features:
   - desc: "Missing feature test macros"
     paper: P1353
     support:
-      - GCC 9
-      - Clang 9
+      - tool: GCC 9
+        status: partial
+        note: "Defines the destroying delete and conditional explicit macros. The three-way comparison macros are defined from GCC 10."
+      - GCC 10
+      - tool: Clang 9
+        status: partial
+        note: "Defines the destroying delete and conditional explicit macros. `__cpp_impl_three_way_comparison` is defined from Clang 10 and libc++ defines `__cpp_lib_three_way_comparison` from Clang 19."
+      - Clang 19
       - MSVC 14.29
       - Xcode
       - R++
