@@ -304,21 +304,30 @@ features:
   - desc: "[Thread-local storage](https://cppreference.com/cpp/language/storage_duration)"
     paper: N2659
     support:
-      - GCC 4.4 (partial)
-      - GCC 4.8
+      - tool: GCC 4.4
+        status: partial
+        note: "The GNU `__thread` extension lacks the standard `thread_local` keyword and does not support dynamic initialization or non-trivial destructors."
+      - tool: GCC 4.8
+        note: "Requires thread-local storage support in the platform and runtime."
       - tool: Clang 3.3
         note: "Requires libc++abi 3.6 or later, or libsupc++ 4.8 or later."
-      - MSVC 10.0 (partial)
+      - tool: MSVC 10.0
+        status: partial
+        note: "The `__declspec(thread)` extension predates `thread_local`; older versions do not support dynamic initialization or non-trivial destructors."
       - MSVC 14.0
       - Xcode
       - R++
 
   - desc: "Dynamic initialization and destruction with concurrency ([magic statics](https://cppreference.com/cpp/language/storage_duration#Static_local_variables))"
     paper: N2660
+    summary: "Specifies synchronized local static initialization and ordering rules for initialization and destruction of static objects."
     support:
-      - GCC 4.3
+      - tool: GCC 4.3
+        status: partial
+        note: "Some platforms retain a global-lock fallback that can deadlock during local static initialization. `-fno-threadsafe-statics` disables synchronization; static destruction also depends on the runtime and platform."
       - Clang 2.9
-      - MSVC 14.0
+      - tool: MSVC 14.0
+        note: "Thread-safe local static initialization is enabled by default; `/Zc:threadSafeInit-` disables it. It depends on the Universal C Runtime."
       - Xcode
       - R++
     ftm:
@@ -533,6 +542,7 @@ features:
 
   - desc: "[Garbage Collection](https://cppreference.com/cpp/header/memory#Functions) ([library support](https://cppreference.com/cpp/memory#Garbage_collector_support))"
     paper: N2670
+    summary: "The pointer-safety library API was removed in C++23 by P2186."
     lib: true
     support:
       - tool: GCC 6
@@ -557,7 +567,8 @@ features:
     paper: N2668
     lib: true
     support:
-      - GCC 5
+      - tool: GCC 5
+        note: "Requires the C++11 libstdc++ ABI (`_GLIBCXX_USE_CXX11_ABI=1`); the old ABI retains copy-on-write strings. Some distributions default to the old ABI."
       - Clang
       - MSVC
       - Xcode
