@@ -22,7 +22,7 @@ features:
         status: partial
         note: "Attributes arguments don't yet parse as unevaluated string literals."
       - Clang 18
-      - Xcode 16
+      - Xcode 16.3
 
   - desc: "Add `@`, `$`, and `` ` `` to the [basic character set](https://cppreference.com/cpp/language/charset#Basic_character_set)"
     paper: P2558
@@ -83,7 +83,7 @@ features:
   - desc: "Testing for success or failure of `<charconv>` functions"
     lib: true
     paper: P2497
-    support: [GCC 14, Clang 18]
+    support: [GCC 14, Clang 18, Xcode 16]
     ftm:
       - name: __cpp_lib_to_chars
         value: 202306L
@@ -1372,7 +1372,7 @@ features:
     lib: true
     support:
       - tool: GCC 16
-        note: "Requires `-freflection`."
+        note: "Requires `-freflection`; libstdc++ reflection also requires the C++11 ABI (`_GLIBCXX_USE_CXX11_ABI=1`)."
       - tool: R++ 2026.2
         note: "The language part only. R++ implements no standard library."
     ftm:
@@ -1380,10 +1380,6 @@ features:
         value: 202506L
       - name: __cpp_lib_reflection
         value: 202506L
-      - name: __cpp_impl_reflection
-        value: 202603L
-      - name: __cpp_lib_reflection
-        value: 202603L
 
   - desc: "Annotations for Reflection"
     paper: P3394
@@ -1396,13 +1392,16 @@ features:
     keywords: ["reflection"]
 
   - desc: "`define_static_{string,object,array}`"
-    paper: P3491
+    paper: [P3491, P3617]
     lib: true
-    support: [GCC 16, R++ 2026.2]
+    support:
+      - tool: GCC 16
+        note: "Requires `-freflection` and the C++11 libstdc++ ABI (`_GLIBCXX_USE_CXX11_ABI=1`)."
+      - R++ 2026.2
     ftm:
       - name: __cpp_lib_define_static
         value: 202506L
-    keywords: ["reflection"]
+    keywords: ["reflection", "is_string_literal", "reflect_constant_string", "reflect_constant_array"]
 
   - desc: "Expansion Statements (`template for`)"
     paper: P1306
@@ -1797,7 +1796,14 @@ features:
     support:
       - tool: GCC 16
         status: partial
-        note: "Requires `-freflection`. Scope queries, annotation changes, and exception-origin queries are implemented; `apply_result()`, `is_applicable_type()`, and `is_nothrow_applicable_type()` are missing."
+        note: "Requires `-freflection` and the C++11 libstdc++ ABI. Scope queries, annotation changes, and exception-origin queries are implemented; `apply_result()`, `is_applicable_type()`, and `is_nothrow_applicable_type()` are missing."
+    ftm:
+      - name: __cpp_impl_reflection
+        value: 202603L
+      - name: __cpp_lib_reflection
+        value: 202603L
+      - name: __cpp_lib_apply
+        value: 202603L
     keywords: ["reflection"]
 
   - desc: "Allow `#line` before module declarations"
