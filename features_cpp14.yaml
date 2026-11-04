@@ -234,8 +234,14 @@ features:
     paper: N3644
     lib: true
     support:
-      - GCC 5
-      - GCC 10
+      - tool: GCC 5
+        status: partial
+        note: "In libstdc++ debug mode, comparing value-initialized iterators can abort."
+      - tool: GCC 11
+        status: partial
+        note: "Comparing value-initialized vector iterators works in debug mode, but empty ranges of value-initialized iterators can still fail in algorithms."
+      - tool: GCC 13.3
+        note: "The debug-mode fixes were backported to GCC 13.3; GCC 12.5 still has the empty-range limitation."
       - Clang 3.4
       - MSVC 14.0
       - Xcode
