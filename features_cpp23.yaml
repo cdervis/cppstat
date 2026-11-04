@@ -114,7 +114,7 @@ features:
       - GCC 11
       - Clang 16
       - MSVC 14.30
-      - Xcode 16.1
+      - Xcode 15
 
   - desc: "`std::to_underlying()`"
     paper: P1682
@@ -205,7 +205,7 @@ features:
       - GCC 14
       - Clang 19
       - MSVC 14.30
-      - Xcode 16.4
+      - Xcode 16.3
     ftm:
       - name: __cpp_lib_out_ptr
         value: 202106L
@@ -218,7 +218,7 @@ features:
       - Clang 17
       - MSVC 14.33
       - MSVC 14.34
-      - Xcode 15
+      - Xcode 15.3
     ftm:
       - name: __cpp_lib_constexpr_typeinfo
         value: 202106L
@@ -305,7 +305,7 @@ features:
       - GCC 12
       - Clang 17
       - MSVC 14.31
-      - Xcode 15
+      - Xcode 15.3
     ftm:
       - name: __cpp_lib_invoke_r
         value: 202106L
@@ -728,7 +728,7 @@ features:
       - GCC 15
       - Clang 17
       - MSVC 14.34
-      - Xcode 15
+      - Xcode 15.3
     ftm:
       - name: __cpp_lib_containers_ranges
         value: 202202L
@@ -1043,7 +1043,7 @@ features:
       - GCC 16
       - Clang 18
       - MSVC 14.39
-      - Xcode 15
+      - Xcode 15.3
     ftm:
       - name: __cpp_lib_mdspan
         value: 202207L
@@ -1116,7 +1116,7 @@ features:
         note: "Overloads for `std::ostream` are not implemented."
       - Clang 18
       - MSVC 14.37
-      - tool: Xcode 15
+      - tool: Xcode 15.3
         status: partial
         note: "Overloads for `std::ostream` are not implemented."
       - Xcode 16
@@ -1181,7 +1181,7 @@ features:
         status: partial
         note: "2022.11: Implemented formatter for `std::pair` and `std::tuple`. Also `range_formatter`."
       - MSVC 14.42
-      - Xcode 15
+      - Xcode 15.3
     ftm:
       - name: __cpp_lib_format_ranges
         value: 202207L
@@ -1348,7 +1348,7 @@ features:
       - GCC 13
       - Clang 17
       - MSVC 14.36
-      - Xcode 15
+      - Xcode 15.3
     ftm:
       - name: __cpp_lib_ranges_repeat
         value: 202207L
@@ -1360,7 +1360,7 @@ features:
       - GCC 14
       - Clang 17
       - MSVC 14.34
-      - Xcode 15
+      - Xcode 15.3
     ftm:
       - name: __cpp_lib_ranges
         value: 202207L
@@ -1407,7 +1407,7 @@ features:
       - GCC 12.3
       - Clang 17
       - MSVC 14.34
-      - Xcode 15
+      - Xcode 15.3
     ftm:
       - name: __cpp_lib_move_iterator_concept
         value: 202207L
@@ -1421,7 +1421,7 @@ features:
         status: partial
         note: "Specializations for string and debug_string are not done."
       - Clang 17
-      - Xcode 15
+      - Xcode 15.3
       - MSVC 14.42
     ftm:
       - name: __cpp_lib_format_ranges
@@ -1514,7 +1514,7 @@ features:
       - GCC 13
       - Clang 17
       - MSVC 14.36
-      - Xcode 15
+      - Xcode 15.3
     ftm:
       - name: __cpp_lib_expected
         value: 202211L
@@ -1566,7 +1566,9 @@ features:
       - Clang 21
       - tool: MSVC 14.36
         note: "Treated as a defect report against C++20."
-      - Xcode 15
+      - tool: Xcode 15.3
+        status: partial
+        note: "`join_with_view` has not been done yet since this type is not implemented yet."
 
   - desc: "Relaxing Ranges Just A Smidge"
     paper: P2609
@@ -1615,7 +1617,9 @@ features:
         status: partial
         note: "`std::stacktrace` is not implemented yet."
       - MSVC 14.38
-      - Xcode 15
+      - tool: Xcode 15.3
+        status: partial
+        note: "`std::stacktrace` is not implemented yet."
     ftm:
       - name: __cpp_lib_formatters
         value: 202302L
