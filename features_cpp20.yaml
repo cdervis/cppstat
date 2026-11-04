@@ -490,15 +490,16 @@ features:
     support:
       - GCC 9
       - Clang 16
-      - MSVC 14.29
+      - MSVC 14.28
       - Xcode 16
       - R++ 2025.2
 
   - desc: "Pack-expansions in lambda init-captures"
-    paper: P0780
+    paper: [P0780, P2095]
     summary: "Capture parameter packs in lambda expressions."
     support:
-      - GCC 9
+      - tool: GCC 9
+        note: "Reference pack init-captures are spelled `...&name = init`. The corrected `&...name = init` (P2095) is accepted from GCC 10, which rejects the old spelling."
       - Clang 9
       - MSVC 14.22
       - Xcode 11.4
@@ -574,9 +575,9 @@ features:
     lib: true
     support:
       - GCC 11
-      - Clang 8
+      - Clang 12
       - MSVC 14.25
-      - Xcode 10.2
+      - Xcode
 
   - desc: "`std::span`"
     paper: P0122
@@ -664,7 +665,8 @@ features:
   - desc: "Allowing virtual function calls in constant expressions"
     paper: P1064
     support:
-      - GCC 9
+      - tool: GCC 9
+        note: "GCC 9.1 and 9.2 do not evaluate virtual function calls in constant expressions. This is fixed in GCC 9.3."
       - Clang 9
       - MSVC 14.28
       - Xcode 11.4
@@ -744,7 +746,7 @@ features:
     lib: true
     support:
       - GCC 9
-      - Clang 13
+      - Clang 9
       - MSVC 14.21
       - Xcode 13.4.1
 
@@ -941,17 +943,24 @@ features:
       - R++
 
   - desc: "Immediate functions (`consteval`)"
-    paper: P1073
+    paper: [P1073, P1937]
     summary: "Functions that must be evaluated at compile time."
     support:
-      - GCC 10 (partial)
+      - tool: GCC 10
+        status: partial
+        note: "`consteval` virtual functions are not supported."
       - GCC 11
       - Clang 11 (partial)
-      - Clang 14 (partial)
+      - tool: Clang 14
+        status: partial
+        note: "P1937 is implemented, but other immediate-function support and the feature-test macro are incomplete."
       - Clang 17
       - MSVC 14.28 (partial)
       - MSVC 14.29
-      - Xcode 15
+      - tool: Xcode 15
+        status: partial
+        note: "Apple lists the complete feature for Xcode 16.3. Xcode 15 predates the complete upstream Clang implementation (Clang 17)."
+      - Xcode 16.3
       - R++
     ftm:
       - name: __cpp_consteval
@@ -1161,24 +1170,40 @@ features:
     support:
       - GCC 10
       - Clang 13 (partial)
-      - Clang 15
+      - tool: Clang 15
+        status: partial
+        note: "`views::elements`, `views::keys`, `views::values`, `views::split` and `views::lazy_split` are missing."
+      - Clang 16
       - MSVC 14.29
-      - Xcode 14.3
+      - tool: Xcode 14.3
+        status: partial
+        note: "`views::elements`, `views::keys`, `views::values`, `views::split` and `views::lazy_split` are missing."
+      - Xcode 15
     ftm:
       - name: __cpp_lib_ranges
         value: 201911L
 
   - desc: "`std::bind_front()`"
-    paper: P0356
+    paper: [P0356, P1651]
     lib: true
     support:
-      - GCC 9
+      - tool: GCC 9
+        note: "GCC 9.1 and 9.2 unwrap `std::reference_wrapper` arguments instead of passing them as is (P1651). This is fixed in GCC 9.3."
       - Clang 13
       - MSVC 14.25
       - Xcode 13.4.1
     ftm:
       - name: __cpp_lib_bind_front
         value: 201907L
+
+  - desc: "Remove unnecessarily explicit default constructors"
+    paper: P0935
+    summary: "Random number engines, distributions and `random_device`, and string streams and `std::stringbuf` can be initialized from `{}`."
+    lib: true
+    support:
+      - GCC 9
+      - Clang 12
+      - MSVC 14.26
 
   - desc: "Heterogeneous lookup for unordered associative containers"
     paper: [P0919, P1690]
@@ -1357,7 +1382,8 @@ features:
     paper: P1001
     lib: true
     support:
-      - GCC 9
+      - tool: GCC 9
+        note: "`<execution>` includes Intel TBB headers, so they must be installed to compile. From GCC 10, `<execution>` compiles without TBB."
       - tool: Clang 17
         note: "Not supported by Clang on macOS."
       - MSVC 14.28
@@ -1457,8 +1483,10 @@ features:
   - desc: "Conditionally trivial special member functions"
     paper: P0848
     support:
-      - GCC 10
-      - Clang 16
+      - tool: GCC 10
+        note: "`__cpp_concepts` reports 202002L from GCC 12."
+      - tool: Clang 16
+        note: "Handling of deleted special member functions does not follow DR1496 and DR1734. `__cpp_concepts` reports 202002L from Clang 19."
       - MSVC 14.28
       - Xcode 16.3
       - R++
@@ -1603,6 +1631,9 @@ features:
     support:
       - GCC 10
       - Clang 12
+      - tool: MSVC 14.28
+        status: partial
+        note: "`std::allocator` and `std::construct_at()` work in constant expressions, but the feature-test macro is defined from MSVC 14.29."
       - MSVC 14.29
       - Xcode 13
     ftm:
@@ -1613,7 +1644,8 @@ features:
     paper: P0553
     lib: true
     support:
-      - GCC 9
+      - tool: GCC 9
+        note: "GCC 9.1 lacks the functions, which are available from GCC 9.2. `__cpp_lib_bitops` is defined from GCC 9.4."
       - Clang 9
       - MSVC 14.25
       - MSVC 14.28
@@ -1627,7 +1659,12 @@ features:
     lib: true
     support:
       - GCC 13
-      - Clang 14
+      - tool: Clang 14
+        status: partial
+        note: "Incomplete. Available only when libc++ is built with `LIBCXX_ENABLE_INCOMPLETE_FEATURES`."
+      - tool: Clang 15
+        status: partial
+        note: "Incomplete. Requires `-fexperimental-library`."
       - Clang 17
       - MSVC 14.29
       - Xcode 15.3
@@ -1705,9 +1742,9 @@ features:
     lib: true
     support:
       - GCC 10
-      - Clang 10
+      - Clang 11
       - MSVC 14.25
-      - Xcode 12
+      - Xcode
     ftm:
       - name: __cpp_lib_to_array
         value: 201907L
@@ -1930,6 +1967,15 @@ features:
       - MSVC
       - Xcode 12.5
       - R++
+
+  - desc: "Checking for abstract class types"
+    paper: P0929
+    summary: "Abstract parameter and return types are diagnosed at function definitions and calls instead of at declarations."
+    support:
+      - GCC 11
+      - tool: Clang 17
+        status: partial
+        note: "Calls to functions returning an abstract class type are not diagnosed."
 
   - desc: "Converting from `T*` to `bool` should be considered narrowing"
     paper: P1957
