@@ -85,7 +85,7 @@ features:
       - R++
 
   - desc: "Concepts"
-    paper: P0734
+    paper: [P0734, P1616]
     summary: "Concepts are predicates that constrain template arguments. They provide clear error messages and enable function overloading based on type properties."
     support:
       - tool: GCC 5
@@ -101,6 +101,59 @@ features:
     ftm:
       - name: __cpp_concepts
         value: 201907L
+
+  - desc: "Partial ordering of constrained function templates"
+    paper: P2113
+    support:
+      - tool: GCC 10.2
+        status: partial
+        note: "Partial ordering of reversed comparison candidates is not implemented."
+      - tool: Clang 16
+        status: partial
+        note: "Partial ordering of reversed comparison candidates is not implemented."
+
+  - desc: "Return-type-requirements check the expression type against the concept"
+    paper: P1084
+    summary: "`{ E } -> C<Args...>;` in a requires-expression requires `C<decltype((E)), Args...>` to be satisfied instead of using template argument deduction."
+    support:
+      - GCC 10
+      - tool: Clang 13
+        note: "Clang 10 to 12 still use deduction semantics, so `{ t } -> Same<T&>;` is not satisfied for an lvalue `t` of type `T`."
+      - MSVC 14.23
+
+  - desc: "Remove the trailing-return-type form of return-type-requirements"
+    paper: P1452
+    summary: "`{ E } -> Type;` in a requires-expression is ill-formed. Use `{ E } -> std::convertible_to<Type>;` instead."
+    support:
+      - GCC 10
+      - Clang 10
+      - MSVC 14.27
+
+  - desc: "Disambiguating nested requirements"
+    paper: P2092
+    summary: "A requirement that starts with `requires` is always a nested-requirement, and `typename` is optional in requires-expression parameters."
+    support:
+      - GCC 10
+      - Clang 16
+      - MSVC 14.27
+
+  - desc: "Check constraint satisfaction when forming a pointer to a function"
+    paper: P1972
+    summary: "Naming a function with unsatisfied constraints is ill-formed, including its address and `decltype` of its name."
+    support:
+      - GCC 10
+      - Clang 10
+      - MSVC 14.27
+
+  - desc: "Declaration matching for non-dependent requires-clauses"
+    paper: P1980
+    summary: "Trailing requires-clauses without template parameters match by expression equivalence, and concept definitions are treated as opaque."
+    support:
+      - GCC 10
+      - Clang 10
+      - tool: MSVC 14.23
+        status: partial
+        note: "Redeclarations whose requires-clauses differ only by an equivalent non-dependent expression, such as `C<42>` and `C<40 + 2>`, are not diagnosed."
 
   - desc: "`std::endian`"
     paper: P0463
