@@ -126,6 +126,7 @@ features:
     ftm:
       - name: __cpp_noexcept_function_type
         value: 201510L
+    keywords: ["noexcept"]
 
   - desc: "`__has_include`"
     paper: P0061
@@ -285,6 +286,7 @@ features:
     ftm:
       - name: __cpp_aligned_new
         value: 201606L
+    keywords: ["std::align_val_t", "aligned new"]
 
   - desc: "Declaring non-type template parameters with `auto`"
     paper: P0127
@@ -298,6 +300,7 @@ features:
     ftm:
       - name: __cpp_nontype_template_parameter_auto
         value: 201606L
+    keywords: ["NTTP", "template <auto>"]
 
   - desc: "Guaranteed copy elision"
     paper: P0135
@@ -311,6 +314,7 @@ features:
     ftm:
       - name: __cpp_guaranteed_copy_elision
         value: 201606L
+    keywords: ["RVO"]
 
   - desc: "Replacement of class objects containing reference members"
     paper: P0137
@@ -396,6 +400,7 @@ features:
       - MSVC 14.12
       - Xcode
       - R++
+    keywords: ["throw()"]
 
   - desc: "Pack expansions in `using`-declarations"
     paper: P0195
@@ -459,6 +464,7 @@ features:
         status: partial
         note: "The `std::map` and `std::unordered_map` guides from a list of pairs are missing."
       - MSVC 14.25
+    keywords: ["CTAD"]
 
   - desc: "`std::void_t`"
     paper: N3911
@@ -592,6 +598,7 @@ features:
     ftm:
       - name: __cpp_lib_type_trait_variable_templates
         value: 201510L
+    keywords: ["std::is_same_v"]
 
   - desc: "Logical operator type traits"
     paper: P0013
@@ -604,6 +611,7 @@ features:
     ftm:
       - name: __cpp_lib_logical_traits
         value: 201510L
+    keywords: ["std::conjunction", "std::disjunction", "std::negation"]
 
   - desc: "Constant View: A proposal for a `std::as_const()` helper function template"
     paper: P0007
@@ -668,6 +676,7 @@ features:
         value: 201603L
       - name: __cpp_lib_parallel_algorithm
         value: 201603L
+    keywords: ["std::reduce", "std::transform_reduce", "std::execution::par"]
 
   - desc: "`std::clamp()`"
     paper: P0025
@@ -692,6 +701,7 @@ features:
     ftm:
       - name: __cpp_lib_is_swappable
         value: 201603L
+    keywords: ["std::is_swappable", "std::is_nothrow_swappable"]
 
   - desc: "Polymorphic memory resources"
     paper: [P0220, P0337]
@@ -705,6 +715,7 @@ features:
     ftm:
       - name: __cpp_lib_memory_resource
         value: 201603L
+    keywords: ["std::pmr", "<memory_resource>", "std::polymorphic_allocator"]
 
   - desc: "[Searchers](https://cppreference.com/cpp/functional#Searchers), `std::apply()` and `std::sample()`"
     paper: [P0220, P0253]
@@ -724,6 +735,7 @@ features:
       - name: __cpp_lib_sample
         value: 201603L
         desc: "`std::sample()`"
+    keywords: ["std::boyer_moore_searcher", "std::default_searcher"]
 
   - desc: "[Mathematical special functions](https://cppreference.com/cpp/numeric/special_math)"
     paper: P0226
@@ -737,6 +749,7 @@ features:
     ftm:
       - name: __cpp_lib_math_special_functions
         value: 201603L
+    keywords: ["std::riemann_zeta", "std::legendre", "std::cyl_bessel_j"]
 
   - desc: "`constexpr` `std::addressof()`"
     paper: LWG2296
@@ -965,6 +978,12 @@ features:
     ftm:
       - name: __cpp_lib_raw_memory_algorithms
         value: 201606L
+    keywords:
+      [
+        "std::destroy",
+        "std::uninitialized_move",
+        "std::uninitialized_default_construct",
+      ]
 
   - desc: "`std::shared_ptr::weak_type`"
     paper: P0163
@@ -1014,6 +1033,7 @@ features:
     ftm:
       - name: __cpp_lib_to_chars
         value: 201611L
+    keywords: ["<charconv>"]
 
   - desc: "`std::shared_ptr` and `std::weak_ptr` with array support"
     paper: P0414
@@ -1089,6 +1109,7 @@ features:
     ftm:
       - name: __cpp_lib_hardware_interference_size
         value: 201703L
+    keywords: ["false sharing", "hardware_constructive_interference_size"]
 
   - desc: "`std::scoped_lock`"
     paper: P0156
@@ -1227,6 +1248,7 @@ features:
   - desc: "Class template argument deduction: explicit guides and forwarding-reference rules"
     paper: P0512
     support: [GCC 8, Clang 5, MSVC 14.14]
+    keywords: ["CTAD"]
 
   - desc: "Class template argument deduction: copy candidates and initialization contexts"
     paper: P0620
@@ -1237,6 +1259,7 @@ features:
         note: "Deduction-guide redeclarations are not diagnosed before GCC 11; class-scope deduction guides are supported starting with GCC 12."
       - GCC 12.1
       - Clang 7
+    keywords: ["CTAD"]
 
   - desc: "Remove `std::auto_ptr`, `std::random_shuffle()` and old function adaptors"
     paper: N4190

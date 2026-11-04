@@ -139,12 +139,14 @@ features:
       - GCC 15
       - Clang 21
       - Xcode 26.4
+    keywords: ["0o"]
 
   - desc: "Named loops"
     paper: N3355
     support:
       - GCC 15
       - Clang 22
+    keywords: ["labeled break", "labeled continue"]
 
   - desc: "`if` declarations"
     paper: N3356
@@ -179,6 +181,7 @@ features:
       - Clang 21
       - Xcode 26.4
       - R++ 2026.1
+    keywords: ["<stdcountof.h>"]
 
   - desc: "Restartable Functions for Efficient Character Conversions"
     paper: N3366

@@ -184,6 +184,7 @@ features:
       - MSVC
       - Xcode 14
       - R++
+    keywords: ["__VA_ARGS__"]
   - desc: "`_Pragma` preprocessor operator"
     summary: "Emits a pragma from within a macro expansion."
     paper: N634

@@ -187,6 +187,7 @@ features:
       - name: __cpp_lib_simd_bitops
         value: 202606L
         desc: "`std::simd::shl()` and `std::simd::shr()`"
+    keywords: ["std::shl", "std::shr"]
 
   - desc: "Copy and fill for `mdspan`"
     paper: P3242
@@ -201,6 +202,13 @@ features:
     ftm:
       - name: __cpp_lib_bitops
         value: 202607L
+    keywords:
+      [
+        "std::bit_compress",
+        "std::bit_expand",
+        "std::bit_repeat",
+        "std::bit_reverse",
+      ]
 
   - desc: "`std::simd` overloads for bit permutations"
     paper: P3772
@@ -222,6 +230,7 @@ features:
     ftm:
       - name: __cpp_lib_pointer_tag_pair
         value: 202606L
+    keywords: ["std::pointer_tag_pair"]
 
   - desc: "Thread attributes"
     paper: P2019
@@ -229,6 +238,7 @@ features:
     ftm:
       - name: __cpp_lib_thread_attributes
         value: 202606L
+    keywords: ["std::thread::name_hint", "stack_size_hint"]
 
   - desc: "Library Wording Changes for Defaulted Postfix Increment and Decrement Operations"
     paper: P3785

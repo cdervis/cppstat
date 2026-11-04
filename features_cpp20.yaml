@@ -83,6 +83,7 @@ features:
       - MSVC 14.14
       - Xcode
       - R++
+    keywords: ["CTAD"]
 
   - desc: "Concepts"
     paper: [P0734, P1616]
@@ -101,6 +102,7 @@ features:
     ftm:
       - name: __cpp_concepts
         value: 201907L
+    keywords: ["requires"]
 
   - desc: "Partial ordering of constrained function templates"
     paper: P2113
@@ -569,6 +571,7 @@ features:
     ftm:
       - name: __cpp_lib_chrono
         value: 201907L
+    keywords: ["std::chrono::year_month_day", "std::chrono::zoned_time", "tzdb"]
 
   - desc: "`std::basic_string::reserve()` should not shrink"
     paper: P0966
@@ -628,6 +631,7 @@ features:
       - Xcode 13 (partial)
       - Xcode 16.3
       - R++ 2021.3
+    keywords: ["NTTP"]
 
   - desc: "Atomic compare-and-exchange with padding bits"
     paper: P0528
@@ -740,6 +744,7 @@ features:
     ftm:
       - name: __cpp_lib_bit_cast
         value: 201806L
+    keywords: ["<bit>"]
 
   - desc: "`contains()` member function of associative containers, e.g. `std::map::contains()`"
     paper: P0458
@@ -822,6 +827,7 @@ features:
     ftm:
       - name: __cpp_lib_int_pow2
         value: 202002L
+    keywords: ["<bit>"]
 
   - desc: "`std::atomic_ref`"
     paper: P0019
@@ -868,6 +874,7 @@ features:
     ftm:
       - name: __cpp_lib_concepts
         value: 202002L
+    keywords: ["<concepts>", "std::same_as", "std::convertible_to"]
 
   - desc: "`constexpr` try-catch blocks"
     paper: P1002
@@ -1145,6 +1152,11 @@ features:
       - Clang 16
       - MSVC 14.29
       - Xcode 15
+    keywords:
+      [
+        "std::make_obj_using_allocator",
+        "std::uses_allocator_construction_args",
+      ]
 
   - desc: "Remove comparison operators of `std::span`"
     paper: P1085
@@ -1182,6 +1194,16 @@ features:
     ftm:
       - name: __cpp_lib_ranges
         value: 201911L
+    keywords:
+      [
+        "<ranges>",
+        "std::views",
+        "views::filter",
+        "views::transform",
+        "views::take",
+        "views::drop",
+        "views::reverse",
+      ]
 
   - desc: "`std::bind_front()`"
     paper: [P0356, P1651]
@@ -1217,6 +1239,7 @@ features:
     ftm:
       - name: __cpp_lib_generic_unordered_lookup
         value: 201811L
+    keywords: ["is_transparent"]
 
   - desc: "Consistent container erasure (`std::erase()` and `std::erase_if()`)"
     paper: [P1209, P1115]
@@ -1312,6 +1335,7 @@ features:
     ftm:
       - name: __cpp_modules
         value: 201907L
+    keywords: ["import", "export"]
 
   - desc: "`<=>` `!=` `==`"
     paper: P1185
@@ -1343,6 +1367,7 @@ features:
         value: 201902L
       - name: __cpp_lib_coroutine
         value: 201902L
+    keywords: ["co_await", "co_yield", "co_return", "<coroutine>"]
 
   - desc: "`pmr::polymorphic_allocator<>` as a vocabulary type"
     paper: P0339
@@ -1459,6 +1484,7 @@ features:
     ftm:
       - name: __cpp_lib_bounded_array_traits
         value: 201902L
+    keywords: ["std::is_bounded_array", "std::is_unbounded_array"]
 
   - desc: "Deprecate comma operator in subscripts"
     paper: P1161
@@ -1536,6 +1562,7 @@ features:
     ftm:
       - name: __cpp_deduction_guides
         value: 201907L
+    keywords: ["CTAD"]
 
   - desc: "Unevaluated `asm`-declaration in `constexpr` functions"
     paper: P1668
@@ -1600,6 +1627,7 @@ features:
     ftm:
       - name: __cpp_deduction_guides
         value: 201907L
+    keywords: ["CTAD"]
 
   - desc: "Implicit move for more local objects and rvalue references"
     paper: [P1825, P0527, P1155]
@@ -1624,6 +1652,7 @@ features:
     ftm:
       - name: __cpp_constexpr_dynamic_alloc
         value: 201907L
+    keywords: ["constexpr new"]
 
   - desc: "`constexpr` `std::allocator` and related utilities"
     paper: P0784
@@ -1639,6 +1668,7 @@ features:
     ftm:
       - name: __cpp_lib_constexpr_dynamic_alloc
         value: 201907L
+    keywords: ["std::construct_at", "std::destroy_at"]
 
   - desc: "Bit operations: `std::rotl()`, `rotr()`, `countl_zero()`, `countl_one()`, `countr_zero()`, `countr_one()`, `popcount()`"
     paper: P0553
@@ -1653,6 +1683,7 @@ features:
     ftm:
       - name: __cpp_lib_bitops
         value: 201907L
+    keywords: ["<bit>"]
 
   - desc: "`std::format()`"
     paper: P0645
@@ -1671,6 +1702,7 @@ features:
     ftm:
       - name: __cpp_lib_format
         value: 201907L
+    keywords: ["<format>", "std::formatter", "std::format_to", "std::vformat"]
 
   - desc: "Integration of chrono with text formatting"
     paper: P1361
@@ -1692,6 +1724,7 @@ features:
     ftm:
       - name: __cpp_lib_math_constants
         value: 201907L
+    keywords: ["std::numbers", "std::numbers::pi", "<numbers>"]
 
   - desc: "Atomic waiting and notifying, `std::counting_semaphore`, `std::latch` and `std::barrier`"
     paper: P1135
@@ -1809,6 +1842,15 @@ features:
       - Clang 16
       - MSVC 14.29
       - Xcode 15
+    keywords:
+      [
+        "views::take_while",
+        "views::drop_while",
+        "views::elements",
+        "views::keys",
+        "views::values",
+        "views::istream",
+      ]
 
   - desc: "`ranges::basic_istream_view::iterator` should not be copyable"
     paper: P1638
@@ -1860,6 +1902,12 @@ features:
         value: 201907L
       - name: __cpp_lib_is_pointer_interconvertible
         value: 201907L
+    keywords:
+      [
+        "std::is_layout_compatible",
+        "std::is_pointer_interconvertible_base_of",
+        "std::is_corresponding_member",
+      ]
 
   - desc: "`std::source_location`"
     paper: P1208
@@ -1967,6 +2015,7 @@ features:
       - MSVC
       - Xcode 12.5
       - R++
+    keywords: ["implicit lifetime"]
 
   - desc: "Checking for abstract class types"
     paper: P0929
@@ -2008,6 +2057,7 @@ features:
     ftm:
       - name: __cpp_lib_integer_comparison_functions
         value: 202002L
+    keywords: ["std::cmp_less", "std::cmp_equal", "std::in_range"]
 
   - desc: "`constexpr` `std::string`"
     paper: [P0426, P1032, P0980]

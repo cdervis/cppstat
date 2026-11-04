@@ -213,6 +213,7 @@ features:
     ftm:
       - name: __cpp_lib_atomic_min_max
         value: 202403L
+    keywords: ["fetch_max", "fetch_min"]
 
   - desc: "Extending associative containers with the remaining heterogeneous overloads"
     paper: P2363
@@ -307,6 +308,7 @@ features:
     ftm:
       - name: __cpp_lib_fstream_native_handle
         value: 202306L
+    keywords: ["native_handle"]
 
   - desc: "Interfacing `std::bitset` with `std::string_view`"
     paper: P2697
@@ -595,6 +597,7 @@ features:
       - Xcode 16.3
       - tool: R++
         status: unsupported
+    keywords: ["dangling"]
 
   - desc: "Clarifying rules for brace elision in [aggregate initialization](https://cppreference.com/cpp/language/aggregate_initialization)"
     paper: P3106
@@ -1032,6 +1035,7 @@ features:
         value: 202603L
       - name: __cpp_lib_stdckdint_h
         value: 202603L
+    keywords: ["ckd_add", "ckd_sub", "ckd_mul"]
 
   - desc: "`constexpr` `std::atomic` and `std::atomic_ref`"
     paper: P3309
@@ -1090,7 +1094,7 @@ features:
       - name: __cpp_lib_contracts
         value: 202502L
         desc: "Library API is available. This is a separate macro to allow for mixing language (compiler) support with different standard library implementations, where this macro specifies the level of support for contracts by that standard library implementation."
-    keywords: ["safety"]
+    keywords: ["safety", "contract_assert"]
 
   - desc: "Defang and deprecate `std::memory_order::consume`"
     paper: P3475
@@ -1367,7 +1371,7 @@ features:
 
   - desc: "Reflection for C++26 (`<meta>`)"
     paper: [P2996, P3289]
-    keywords: ["reflection", "consteval blocks"]
+    keywords: ["reflection", "consteval blocks", "std::meta", "^^"]
     summary: "Reflection allows programs to inspect and manipulate their own structure at compile time. This is one of the most significant additions to C++26."
     lib: true
     support:
@@ -1619,6 +1623,7 @@ features:
     ftm:
       - name: __cpp_lib_atomic_min_max
         value: 202506L
+    keywords: ["fetch_max", "fetch_min"]
 
   - desc: "Atomic reduction operations"
     paper: P3111
@@ -1626,6 +1631,7 @@ features:
     ftm:
       - name: __cpp_lib_atomic_reductions
         value: 202506L
+    keywords: ["store_add", "store_max"]
 
   - desc: "Add `std::views::indices(n)`"
     paper: P3060
@@ -1677,6 +1683,7 @@ features:
     ftm:
       - name: __cpp_lib_task
         value: 202506L
+    keywords: ["std::execution::task"]
 
   - desc: "Remove return type deduction in `std::apply()`"
     paper: P1317
@@ -1812,6 +1819,7 @@ features:
 
   - desc: "Class template argument deduction for type template template parameters"
     paper: P3865
+    keywords: ["CTAD"]
 
   - desc: "Const-ification of splice expressions in contract assertions"
     paper: P3598

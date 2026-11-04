@@ -159,6 +159,7 @@ features:
       - MSVC 12.0
       - Xcode
       - R++
+    keywords: ["= default", "= delete"]
 
   - desc: "[Strongly-typed `enum`](https://cppreference.com/cpp/language/enum#Scoped_enumerations)"
     paper: N2347
@@ -168,6 +169,7 @@ features:
       - MSVC 11.0
       - Xcode
       - R++
+    keywords: ["enum class"]
 
   - desc: "[Atomic operations](https://cppreference.com/cpp/atomic#Atomic_operations)"
     paper: N2427
@@ -177,6 +179,7 @@ features:
       - MSVC 11.0
       - Xcode
       - R++
+    keywords: ["std::memory_order"]
 
   - desc: "`nullptr`"
     paper: N2431
@@ -317,6 +320,7 @@ features:
       - MSVC 14.0
       - Xcode
       - R++
+    keywords: ["thread_local"]
 
   - desc: "Dynamic initialization and destruction with concurrency ([magic statics](https://cppreference.com/cpp/language/storage_duration#Static_local_variables))"
     paper: N2660
@@ -345,6 +349,7 @@ features:
     ftm:
       - name: __cpp_initializer_lists
         value: 200806L
+    keywords: ["initializer_list"]
 
   - desc: "[Non-static data member initializers](https://cppreference.com/cpp/language/data_members#Member_initialization)"
     paper: N2756
@@ -357,6 +362,7 @@ features:
     ftm:
       - name: __cpp_nsdmi
         value: 200809L
+    keywords: ["NSDMI"]
 
   - desc: "[Attributes](https://cppreference.com/cpp/language/attributes), (`[[noreturn]]`)"
     paper: N2761
@@ -403,6 +409,7 @@ features:
     ftm:
       - name: __cpp_user_defined_literals
         value: 200809L
+    keywords: ["UDL"]
 
   - desc: "[Rvalue references](https://cppreference.com/cpp/language/reference#Rvalue_references)"
     paper: [N2118, N2844, CWG1138]
@@ -417,6 +424,7 @@ features:
     ftm:
       - name: __cpp_rvalue_references
         value: 200610L
+    keywords: ["move semantics"]
 
   - desc: "[Lambda expressions](https://cppreference.com/cpp/language/lambda)"
     paper: [N2550, N2658, N2927]
@@ -562,6 +570,14 @@ features:
       - Clang 3.7
       - MSVC 14.0
       - Xcode
+    keywords:
+      [
+        "std::get_money",
+        "std::put_money",
+        "std::get_time",
+        "std::put_time",
+        "std::hexfloat",
+      ]
 
   - desc: "Disallowing [COW (copy-on-write)](https://cppreference.com/cpp/language/acronyms) `std::basic_string`"
     paper: N2668

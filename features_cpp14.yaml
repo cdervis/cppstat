@@ -21,6 +21,7 @@ features:
     ftm:
       - name: __cpp_binary_literals
         value: 201304L
+    keywords: ["0b"]
 
   - desc: "`decltype(auto)`, Return type deduction for normal functions"
     paper: N3638
@@ -164,6 +165,7 @@ features:
     ftm:
       - name: __cpp_lib_transparent_operators
         value: 201210L
+    keywords: ["std::less<>", "is_transparent"]
 
   - desc: "`std::result_of` and SFINAE"
     paper: N3462
@@ -229,6 +231,7 @@ features:
         value: 201304L
       - name: __cpp_lib_string_udls
         value: 201304L
+    keywords: ["std::literals", "chrono_literals", "string_literals"]
 
   - desc: "[Null forward iterators](https://cppreference.com/cpp/named_req/ForwardIterator#Singular_iterators)"
     paper: N3644
@@ -272,6 +275,7 @@ features:
     ftm:
       - name: __cpp_lib_transformation_trait_aliases
         value: 201304L
+    keywords: ["std::enable_if_t", "std::decay_t"]
 
   - desc: "`std::make_unique()`"
     paper: N3656
@@ -296,6 +300,7 @@ features:
     ftm:
       - name: __cpp_lib_generic_associative_lookup
         value: 201304L
+    keywords: ["is_transparent"]
 
   - desc: "`std::integer_sequence`"
     paper: N3658
@@ -308,6 +313,7 @@ features:
     ftm:
       - name: __cpp_lib_integer_sequence
         value: 201304L
+    keywords: ["std::index_sequence", "std::make_index_sequence"]
 
   - desc: "`std::exchange()`"
     paper: N3668
@@ -413,6 +419,7 @@ features:
     ftm:
       - name: __cpp_lib_shared_timed_mutex
         value: 201402L
+    keywords: ["std::shared_lock"]
 
   - desc: "`std::tuple_element_t`"
     paper: N3887

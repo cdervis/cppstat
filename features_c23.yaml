@@ -108,6 +108,7 @@ features:
         note: "Supported as an extension."
       - Xcode 16.3
       - R++
+    keywords: ["0b"]
   - desc: "[`__has_c_attribute`](https://cppreference.com/c/language/attributes#Attribute_testing) in preprocessor conditionals"
     paper: N2553
     support:
@@ -257,6 +258,7 @@ features:
       - Clang 16 (partial)
       - Xcode 16.1
       - R++
+    keywords: ["bool", "static_assert", "thread_local", "alignas", "alignof"]
   - desc: "Predefined `true` and `false`"
     paper: N2935
     support:

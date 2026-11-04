@@ -272,6 +272,7 @@ features:
     ftm:
       - name: __cpp_lib_allocate_at_least
         value: 202302L
+    keywords: ["allocate_at_least"]
 
   - desc: "`ranges::starts_with()` and `ranges::ends_with()`"
     paper: P1659
@@ -529,6 +530,7 @@ features:
     ftm:
       - name: __cpp_lib_ranges
         value: 202110L
+    keywords: ["views::all", "owning_view"]
 
   - desc: "Add support for `std::generator`-like types to `std::format()`"
     paper: P2418
@@ -867,6 +869,7 @@ features:
       - Clang 16
       - Xcode 16
       - MSVC 14.36
+    keywords: ["operator=="]
 
   - desc: "De-deprecating volatile compound operations."
     paper: P2327
@@ -946,6 +949,7 @@ features:
     ftm:
       - name: __cpp_named_character_escapes
         value: 202207L
+    keywords: ["\\N{"]
 
   - desc: "`static operator()` (static call operator)"
     paper: P1169
@@ -990,6 +994,15 @@ features:
     paper: P1467
     lib: true
     support: [GCC 13, MSVC 14.37]
+    keywords:
+      [
+        "<stdfloat>",
+        "std::float16_t",
+        "std::float32_t",
+        "std::float64_t",
+        "std::float128_t",
+        "std::bfloat16_t",
+      ]
 
   - desc: "Adjusting the value of feature-test macro `__cpp_concepts`"
     paper: P2493
@@ -1009,6 +1022,7 @@ features:
       - tool: R++
         status: unsupported
         issue: RSCPP-37818
+    keywords: ["CTAD"]
 
   - desc: "Attribute `[[assume]]`"
     paper: P1774
@@ -1082,6 +1096,7 @@ features:
     ftm:
       - name: __cpp_lib_flat_map
         value: 202207L
+    keywords: ["std::flat_multimap"]
 
   - desc: "`std::flat_set` (`<flat_set>`)"
     paper: P1222
@@ -1094,6 +1109,7 @@ features:
     ftm:
       - name: __cpp_lib_flat_set
         value: 202207L
+    keywords: ["std::flat_multiset"]
 
   - desc: "`ranges::find_last()`, `ranges::find_last_if()` and `ranges::find_last_if_not()`"
     paper: P1223
@@ -1175,6 +1191,7 @@ features:
     ftm:
       - name: __cpp_lib_ranges_as_const
         value: 202207L
+    keywords: ["std::const_iterator", "ranges::cbegin"]
 
   - desc: "Formatting ranges"
     paper: P2286
@@ -1246,6 +1263,13 @@ features:
     ftm:
       - name: __cpp_lib_ranges_fold
         value: 202207L
+    keywords:
+      [
+        "ranges::fold_left",
+        "ranges::fold_right",
+        "ranges::fold_left_first",
+        "ranges::fold_right_last",
+      ]
 
   - desc: "`views::cartesian_product()`"
     paper: [P2374, P2540]
@@ -1357,6 +1381,7 @@ features:
     ftm:
       - name: __cpp_lib_ios_noreplace
         value: 202207L
+    keywords: ["noreplace"]
 
   - desc: "`views::repeat()`"
     paper: P2474
@@ -1563,6 +1588,7 @@ features:
       - Clang 21
       - MSVC 14.37
       - Xcode 26.4
+    keywords: ["views::join"]
 
   - desc: "`views::enumerate()`"
     paper: P2164
@@ -1696,6 +1722,7 @@ features:
   - desc: "Declarations and where to find them"
     paper: P1787
     support: [MSVC]
+    keywords: ["name lookup"]
 
   - desc: "Remove strict pointer-safety language rules"
     paper: P2186
