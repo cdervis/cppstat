@@ -588,7 +588,7 @@ features:
       - Xcode 10
     ftm:
       - name: __cpp_lib_span
-        value: 202002L
+        value: 201803L
 
   - desc: "[ConstexprIterator](https://cppreference.com/cpp/named_req/ConstexprIterator) requirements"
     paper: P0858
@@ -1386,6 +1386,41 @@ features:
       - Clang 14
       - MSVC 14.26
       - Xcode 11.4
+    ftm:
+      - name: __cpp_lib_span
+        value: 201902L
+
+  - desc: "`std::span::size_type` replaces `index_type`"
+    paper: P1872
+    lib: true
+    support:
+      - GCC 10
+      - Clang 10
+      - MSVC 14.26
+
+  - desc: "Range constructor for `std::span`"
+    paper: P1394
+    summary: "`std::span` is constructible from contiguous iterator pairs and contiguous ranges, with deduction guides for both."
+    lib: true
+    support:
+      - GCC 10
+      - tool: Clang 14
+        status: partial
+        note: "libc++ 14 has the iterator constructors, but not the range constructor or the deduction guide for ranges."
+      - Clang 15
+      - MSVC 14.26
+
+  - desc: "Fixed-size `std::span` construction from a dynamic range"
+    paper: P1976
+    summary: "Constructing a `std::span` with a static extent from a span or range with a dynamic extent is `explicit`."
+    lib: true
+    support:
+      - GCC 10
+      - Clang 11
+      - MSVC 14.27
+    ftm:
+      - name: __cpp_lib_span
+        value: 202002L
 
   - desc: "Traits for (un)bounded arrays"
     paper: P1357
