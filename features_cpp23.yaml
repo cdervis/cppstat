@@ -256,9 +256,17 @@ features:
     paper: P0401
     lib: true
     support:
-      - Clang 15
-      - MSVC 14.30
-      - Xcode 14.3
+      - tool: Clang 15
+        status: partial
+        note: "`std::allocator_traits::allocate_at_least()` is missing, and a non-standard free function `std::allocate_at_least()` is provided. Both are fixed in Clang 19."
+      - Clang 19
+      - tool: MSVC 14.30
+        status: partial
+        note: "`std::allocator_traits::allocate_at_least()` is missing, and a non-standard free function `std::allocate_at_least()` is provided. Both are fixed in MSVC 14.37."
+      - MSVC 14.37
+      - tool: Xcode 14.3
+        status: partial
+        note: "`std::allocator_traits::allocate_at_least()` is missing, and a non-standard free function `std::allocate_at_least()` is provided."
       - tool: GCC 16
         note: "Not used by `std::vector` and `std::string` yet; container adoption is an optional optimization."
     ftm:
@@ -649,6 +657,12 @@ features:
         status: partial
         note: "Only implements tuple specializations and `views::zip()`."
       - Clang 22
+      - tool: MSVC 14.35
+        status: partial
+        note: "Only implements `views::zip()`."
+      - tool: MSVC 14.36
+        status: partial
+        note: "Implements `views::zip()` and `views::zip_transform()`."
       - MSVC 14.37
       - tool: Xcode 14.3
         status: partial
@@ -952,7 +966,7 @@ features:
     support:
       - GCC 13
       - Clang 16
-      - MSVC 14.39
+      - MSVC 14.44
       - Xcode 15
 
   - desc: "Using unknown pointers and references in constant expressions"
@@ -1170,7 +1184,10 @@ features:
         status: partial
         note: "Missing formatter specializations for `queue`, `stack`, and `priority_queue`."
       - GCC 15.2
-      - Clang 16
+      - tool: Clang 16
+        status: partial
+        note: "Requires `-fexperimental-library`."
+      - Clang 17
       - tool: MSVC 14.37
         status: partial
         note: "2022.7: Implemented the `?` format specifier for strings and characters."
@@ -1396,7 +1413,7 @@ features:
     lib: true
     support:
       - GCC 10
-      - Clang 18
+      - Clang 3.9
       - MSVC 14.34
       - Xcode 16
 
