@@ -555,7 +555,7 @@ features:
       - Xcode
 
   - desc: "Extending `<chrono>` to calendars and time zones"
-    paper: P0355
+    paper: [P0355, P1466, P1981, P1982]
     lib: true
     support:
       - GCC 11 (partial)
