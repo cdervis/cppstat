@@ -869,7 +869,7 @@ features:
       - Xcode 26
 
   - desc: "Concepts library"
-    paper: [P0898, P1248, P1754]
+    paper: [P0898, P1248, P1754, P1964]
     lib: true
     support:
       - GCC 10
