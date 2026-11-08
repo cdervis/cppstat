@@ -1136,7 +1136,7 @@ features:
         value: 201703L
 
   - desc: "`std::is_invocable` and `std::invoke_result`"
-    paper: P0604
+    paper: [P0077, P0604]
     lib: true
     support:
       - tool: GCC 7
