@@ -376,3 +376,4 @@ features:
     support:
       - GCC
       - Clang
+      - Xcode
