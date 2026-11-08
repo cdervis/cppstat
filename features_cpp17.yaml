@@ -878,7 +878,7 @@ features:
       - Xcode 10
 
   - desc: "Splicing maps and sets (`std::map::extract()`, `std::map::merge()` etc)"
-    paper: P0083
+    paper: [P0083, P0508]
     lib: true
     support:
       - tool: GCC 7
