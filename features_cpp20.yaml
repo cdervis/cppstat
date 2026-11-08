@@ -1220,6 +1220,18 @@ features:
         "views::reverse",
       ]
 
+  - desc: "Avoid template bloat for borrowed ranges in combination with subrange-like view adaptors"
+    paper: P1739
+    lib: true
+    support:
+      - GCC 12
+      - tool: Clang 16
+        status: partial
+        note: "`views::take` on an `iota_view` returns an `iota_view` with a different bound type."
+      - Clang 18
+      - MSVC 14.29
+    keywords: ["views::take", "views::drop", "views::counted", "std::ranges::subrange"]
+
   - desc: "`std::bind_front()`"
     paper: [P0356, P1651]
     lib: true
