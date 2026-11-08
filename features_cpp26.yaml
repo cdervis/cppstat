@@ -1580,7 +1580,7 @@ features:
     lib: true
 
   - desc: "`async_scope` - Creating scopes for non-sequential concurrency"
-    paper: P3149
+    paper: [P3149, P3815]
     lib: true
     ftm:
       - name: __cpp_lib_counting_scope
