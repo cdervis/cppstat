@@ -1141,7 +1141,7 @@ features:
     support:
       - tool: GCC 7
         note: "Before GCC 7.3, `std::is_nothrow_invocable_r` ignores whether the conversion to `R` can throw."
-      - Clang
+      - Clang 6
       - MSVC 14.11
       - Xcode
     ftm:
