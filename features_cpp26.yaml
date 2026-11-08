@@ -1120,6 +1120,8 @@ features:
         note: "Although this is a C++26 feature, this is available in GCC starting with C++20 (`-std=c++20`).\n"
       - tool: Clang 19
         note: "Supported as an extension.<br> Use the flag `-Wno-c23-extensions` to suppress warnings related to `#embed`.<br> Although this is a C++26 feature, this is available in Clang starting with C++20 (`-std=c++20`).<br> Clang does not define the `__cpp_pp_embed` feature-testing macro yet.\n"
+      - tool: Clang 24
+        note: "Supported in C++26 mode without an extension warning, and `__cpp_pp_embed` is defined."
       - tool: Xcode 16.3
         note: "Supported as an extension.<br> Use the flag `-Wno-c23-extensions` to suppress warnings related to `#embed`.<br> Although this is a C++26 feature, this is available in Apple Clang starting with C++20 (`-std=c++20`).<br> Apple Clang does not define the `__cpp_pp_embed` feature-testing macro yet.\n"
       - R++ 2026.1
