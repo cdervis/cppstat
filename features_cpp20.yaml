@@ -363,7 +363,9 @@ features:
     lib: true
     support:
       - GCC 11
-      - Clang 18
+      - tool: Clang 18
+        status: partial
+        note: "The `std::emit_on_flush`, `std::noemit_on_flush` and `std::flush_emit` manipulators are missing."
       - MSVC 14.29
     ftm:
       - name: __cpp_lib_syncbuf
