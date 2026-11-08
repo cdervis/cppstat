@@ -2102,4 +2102,8 @@ features:
   - desc: "Clarify placement new deallocation"
     paper: P3769
     summary: "Deduces placement-delete templates, filters constraints, and requires exactly one matching accessible, non-deleted deallocation function."
-    support: [GCC 17, Clang 10]
+    support:
+      - tool: GCC 17
+        status: partial
+        note: "A placement deallocation function that is selected but deleted is not diagnosed."
+      - Clang 10
