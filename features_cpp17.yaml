@@ -662,7 +662,7 @@ features:
         value: 201603L
 
   - desc: "The parallelism TS should be standardized (parallel algorithms)"
-    paper: P0024
+    paper: [P0024, P0336, P0394, P0452]
     lib: true
     support:
       - tool: GCC 9
