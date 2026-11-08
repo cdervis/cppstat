@@ -816,7 +816,7 @@ features:
         value: 201806L
 
   - desc: "Integral power-of-2 operations: `std::bit_ceil()`, `std::bit_floor()`, `std::bit_width()`, `std::has_single_bit()`"
-    paper: [P0556, P1956]
+    paper: [P0556, P1355, P1956]
     lib: true
     support:
       - GCC 9
