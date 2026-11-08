@@ -1185,7 +1185,7 @@ features:
       - Xcode 14.3
 
   - desc: "The One Ranges Proposal"
-    paper: [P0896, P1207, P1243, P1252, P1456, P1474, P1522, P1523, P1716, P1870, P1878, P2091, P2102]
+    paper: [P0896, P1207, P1243, P1252, P1456, P1474, P1522, P1523, P1716, P1870, P1878, P2091, P2102, P2367]
     lib: true
     support:
       - tool: GCC 10
