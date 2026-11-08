@@ -1188,7 +1188,10 @@ features:
     paper: P0896
     lib: true
     support:
-      - GCC 10
+      - tool: GCC 10
+        status: partial
+        note: "`std::ranges::single_view` lacks its deduction guide, `views::single` copies a `single_view` instead of wrapping it, and subtracting an `iota_view` iterator from its sentinel fails to compile when `Bound` differs from `W`."
+      - GCC 11.2
       - Clang 13 (partial)
       - tool: Clang 15
         status: partial
