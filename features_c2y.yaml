@@ -360,7 +360,9 @@ features:
   - desc: "Const integer declarations as implicit named constants"
     paper: N3833
     support:
-      - GCC (partial)
+      - tool: GCC
+        status: partial
+        note: "Only array sizes accept const integers; enumerator values and `static_assert` conditions are rejected."
       - Clang (partial)
       - tool: Xcode 16.3
         status: partial
