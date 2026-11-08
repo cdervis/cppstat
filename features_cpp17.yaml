@@ -1082,7 +1082,7 @@ features:
         value: 201611L
 
   - desc: "File system library (`std::filesystem` and `<filesystem>`)"
-    paper: [P0218, P0219, P0392]
+    paper: [P0218, P0219, P0317, P0392, P0492]
     summary: "Standard library for file and directory operations."
     lib: true
     support:
