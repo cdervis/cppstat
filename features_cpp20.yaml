@@ -1196,7 +1196,10 @@ features:
       - tool: Clang 15
         status: partial
         note: "`views::elements`, `views::keys`, `views::values`, `views::split` and `views::lazy_split` are missing."
-      - Clang 16
+      - tool: Clang 16
+        status: partial
+        note: "`views::join` requires `-fexperimental-library`."
+      - Clang 18
       - MSVC 14.29
       - tool: Xcode 14.3
         status: partial
