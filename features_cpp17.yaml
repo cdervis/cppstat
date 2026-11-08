@@ -1139,7 +1139,8 @@ features:
     paper: P0604
     lib: true
     support:
-      - GCC 7
+      - tool: GCC 7
+        note: "Before GCC 7.3, `std::is_nothrow_invocable_r` ignores whether the conversion to `R` can throw."
       - Clang
       - MSVC 14.11
       - Xcode
