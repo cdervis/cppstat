@@ -18,6 +18,7 @@ features:
   - desc: "Defaulting Postfix Increment and Decrement Operations"
     paper: P3668
     support:
+      - Clang 24
       - tool: R++
         status: unsupported
         issue: RSCPP-37867
