@@ -666,7 +666,7 @@ features:
     lib: true
     support:
       - tool: GCC 9
-        note: "`<execution>` includes Intel TBB headers, so they must be installed to compile. From GCC 10, `<execution>` compiles without TBB."
+        note: "`<execution>` includes Intel TBB headers, so they must be installed to compile. From GCC 10, `<execution>` compiles without TBB. Before GCC 9.3, the overloads of `std::reduce()`, `std::transform_reduce()` and the scan algorithms without an execution policy are missing."
       - tool: Clang 17
         status: partial
         note: "Requires `-fexperimental-library`. Some policy overloads, including `std::copy_if()` and `std::inclusive_scan()`, are missing."
