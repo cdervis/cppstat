@@ -881,7 +881,8 @@ features:
     paper: P0083
     lib: true
     support:
-      - GCC 7
+      - tool: GCC 7
+        note: "Before GCC 7.2, `insert_return_type` declares its members in a different order (and uses the wrong iterator type for `std::set`), so aggregate initialization and structured bindings do not follow the standard order."
       - Clang 8
       - MSVC 14.12
       - Xcode 10
