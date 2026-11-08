@@ -412,7 +412,7 @@ features:
         value: 201711L
 
   - desc: "Atomic `std::shared_ptr` and `std::weak_ptr`"
-    paper: P0718
+    paper: [P0718, P1644]
     lib: true
     support:
       - GCC 12
