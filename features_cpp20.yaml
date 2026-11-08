@@ -1200,7 +1200,8 @@ features:
         status: partial
         note: "`views::join` requires `-fexperimental-library`."
       - Clang 18
-      - MSVC 14.29
+      - tool: MSVC 14.29
+        note: "Requires Visual Studio 2019 version 16.11. Version 16.10 lacks the `single_view` deduction guide, copies a `single_view` in `views::single`, rejects `take_view::begin()` on non-random-access ranges because of a narrowing conversion, wraps an lvalue `reverse_view` again in `views::reverse`, computes wrong `iota_view` iterator differences for 32-bit integer types, and does not treat `empty_view` as a `borrowed_range`."
       - tool: Xcode 14.3
         status: partial
         note: "`views::elements`, `views::keys`, `views::values`, `views::split` and `views::lazy_split` are missing."
