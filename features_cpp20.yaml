@@ -1718,7 +1718,7 @@ features:
     keywords: ["<bit>"]
 
   - desc: "`std::format()`"
-    paper: P0645
+    paper: [P0645, P1652, P1892]
     lib: true
     support:
       - GCC 13
