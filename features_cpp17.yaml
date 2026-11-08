@@ -1087,7 +1087,7 @@ features:
     lib: true
     support:
       - tool: GCC 8
-        note: "GCC 8.x requires linking with `-lstdc++fs`."
+        note: "GCC 8.x requires linking with `-lstdc++fs`. Before GCC 8.3, `directory_entry::refresh(error_code&)` is not `noexcept`."
       - Clang 7
       - MSVC 14.14
       - tool: Xcode 11
