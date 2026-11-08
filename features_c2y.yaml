@@ -330,9 +330,7 @@ features:
   - desc: "Allow calling `static inline` within `extern inline`"
     paper: N3622
     support:
-      - tool: GCC
-        status: partial
-        note: "Code compiles but emits a warning."
+      - GCC
       - Clang 22
       - tool: Xcode 16.3
         status: partial
