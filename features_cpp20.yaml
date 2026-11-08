@@ -874,7 +874,10 @@ features:
     support:
       - GCC 10
       - Clang 13
-      - MSVC 14.23
+      - tool: MSVC 14.23
+        status: partial
+        note: "Comparison concepts still use the earlier `boolean` requirement instead of _`boolean-testable`_."
+      - MSVC 14.26
       - Xcode 13.4.1
     ftm:
       - name: __cpp_lib_concepts
