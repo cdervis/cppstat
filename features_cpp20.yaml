@@ -359,7 +359,7 @@ features:
       - Xcode 11.4
 
   - desc: "C++ Synchronized Buffered Ostream (`std::basic_osyncstream`)"
-    paper: P0053
+    paper: [P0053, P0753]
     lib: true
     support:
       - GCC 11
