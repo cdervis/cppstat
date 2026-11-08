@@ -823,7 +823,10 @@ features:
       - GCC 10
       - Clang 9
       - Clang 12
-      - MSVC 14.28
+      - tool: MSVC 14.28
+        status: partial
+        note: "`std::bit_ceil()` calls with out-of-range `unsigned char` or `unsigned short` arguments are still accepted as constant expressions."
+      - MSVC 14.30
       - Xcode 11.4
       - Xcode 13
     ftm:
