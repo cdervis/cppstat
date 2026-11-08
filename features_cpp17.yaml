@@ -999,7 +999,7 @@ features:
         value: 201606L
 
   - desc: "Elementary string conversions (`std::to_chars()` and `std::from_chars()`)"
-    paper: P0067
+    paper: [P0067, P0682]
     lib: true
     support:
       - tool: GCC 8
