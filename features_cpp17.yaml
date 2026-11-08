@@ -900,7 +900,7 @@ features:
       - Xcode
 
   - desc: "`std::variant`"
-    paper: [P0088, P0393]
+    paper: [P0088, P0393, P0510]
     summary: "Type-safe discriminated union."
     lib: true
     support:
