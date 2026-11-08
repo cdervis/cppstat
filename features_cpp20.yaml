@@ -414,7 +414,12 @@ features:
   - desc: "Atomic `std::shared_ptr` and `std::weak_ptr`"
     paper: P0718
     lib: true
-    support: [GCC 12, MSVC 14.27]
+    support:
+      - GCC 12
+      - tool: MSVC 14.27
+        status: partial
+        note: "`wait()`, `notify_one()` and `notify_all()` are missing."
+      - MSVC 14.28
     ftm:
       - name: __cpp_lib_atomic_shared_ptr
         value: 201711L
