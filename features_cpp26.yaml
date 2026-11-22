@@ -774,7 +774,7 @@ features:
   - desc: "Better `std::mdspan`'s [CTAD](https://cppreference.com/cpp/language/class_template_argument_deduction)"
     paper: P3029
     lib: true
-    support: 
+    support:
       - GCC 16
       - Clang 19
       - MSVC 14.53
