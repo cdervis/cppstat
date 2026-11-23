@@ -114,6 +114,21 @@ features:
       - name: __cpp_pp_embed
         value: 202606L
 
+  - desc: "`Oo`... adding a coherent character sequence to begin octal-literals"
+    paper: P0085
+    ftm:
+      - name: __cpp_0o_octals
+        value: 202611L
+
+  - desc: "Deduced return types for defaulted operator functions"
+    paper: P2952
+
+  - desc: "`break label;` and `continue label;`"
+    paper: P3568
+    ftm:
+      - name: __cpp_break_label
+        value: 202611L
+
   - desc: "Add an `iota` object for `simd` (and more)"
     paper: P3319
     lib: true
