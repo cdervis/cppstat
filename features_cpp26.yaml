@@ -80,15 +80,6 @@ features:
       - name: __cpp_placeholder_variables
         value: 202306L
 
-  - desc: "Selectively transparent using-declarators"
-    paper: P4466
-
-  - desc: "Early Adoption of an Always-Enforced Label"
-    paper: P4451
-    ftm:
-      - name: __cpp_lib_contracts
-        value: 202611L
-
   - desc: "Testing for success or failure of `<charconv>` functions"
     lib: true
     paper: P2497
@@ -2119,3 +2110,12 @@ features:
         status: partial
         note: "A placement deallocation function that is selected but deleted is not diagnosed."
       - Clang 10
+
+  - desc: "Selectively transparent using-declarators"
+    paper: P4466
+
+  - desc: "Early Adoption of an Always-Enforced Label"
+    paper: P4451
+    ftm:
+      - name: __cpp_lib_contracts
+        value: 202611L
