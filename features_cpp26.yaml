@@ -2119,3 +2119,14 @@ features:
     ftm:
       - name: __cpp_lib_contracts
         value: 202611L
+
+  - desc: "Memory allocation with senders/receivers"
+    paper: P4453
+    lib: true
+
+  - desc: "Pragmatic approach to standard structural types"
+    paper: P3861
+    lib: true
+    ftm:
+      - name: __cpp_lib_structural_types
+        value: 202611L

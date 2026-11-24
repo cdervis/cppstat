@@ -262,3 +262,40 @@ features:
     ftm:
       - name: __cpp_break_label
         value: 202611L
+
+  - desc: "Hazard Pointer Synchronous Reclamation"
+    paper: P3427
+    lib: true
+    ftm:
+      - name: __cpp_lib_hazard_pointer
+        value: 202611L
+
+  - desc: "`std::any_view`"
+    paper: P3411
+    lib: true
+    ftm:
+      - name: __cpp_lib_any_view
+        value: 202611L
+
+  - desc: "`views::slice`"
+    paper: P3216
+    lib: true
+    ftm:
+      - name: __cpp_lib_ranges_slice
+        value: 202611L
+
+  - desc: "`std::optional::get_ptr()`"
+    paper: P4189
+    lib: true
+    ftm:
+      - name: __cpp_lib_optional
+        value: 202611L
+
+  - desc: "Carry-less product: `std::clmul`"
+    paper: P3642
+    lib: true
+    ftm:
+      - name: __cpp_lib_clmul
+        value: 202611L
+      - name: __cpp_lib_simd_clmul
+        value: 202611L
